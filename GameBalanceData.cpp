@@ -1591,7 +1591,7 @@ namespace GameBalance {
                 return true;
             }),
             getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
-                ATrProjectile* proj = getWeaponDefaultProj(dev);
+                ATrProjectile* proj = getWeaponDefaultProj<ATrProjectile>(dev);
                 if(!proj) return false;
                 ret = PropValue::fromInt(proj->ObjectInternalInteger);
                 return true;
@@ -3287,88 +3287,88 @@ namespace GameBalance {
         // Fractals
         static const Property FRACTAL_DURATION(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fFractalTime = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fFractalTime);
                 return true;
             })
         );
         static const Property FRACTAL_SHARD_INTERVAL(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fFractalInterval = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fFractalInterval);
                 return true;
             })
         );
         static const Property FRACTAL_ASCENT_TIME(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fAscentTime = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fAscentTime);
                 return true;
             })
         );
         static const Property FRACTAL_ASCENT_HEIGHT(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fAscentHeight = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fAscentHeight);
                 return true;
             })
         );
         static const Property FRACTAL_SHARD_DISTANCE(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fFractalShotDistance = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fFractalShotDistance);
                 return true;
             })
         );
         static const Property FRACTAL_SHARD_HEIGHT(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fZFractalShotDistance = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fZFractalShotDistance);
                 return true;
             })
         );
         static const Property FRACTAL_SHARD_DAMAGE(
             ValueType::INTEGER,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_nFractalDamage = p.valInt;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromInt(proj->m_nFractalDamage);
                 return true;
             })
         );
         static const Property FRACTAL_SHARD_DAMAGE_RADIUS(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+            applierAdapter<ATrProj_SpikeGrenade>([](PropValue p, ATrProj_SpikeGrenade* proj) {
                 proj->m_fFractalDamageRadius = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeGrenade>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fFractalDamageRadius);
                 return true;
             })
@@ -3513,77 +3513,77 @@ namespace GameBalance {
         // Grenade
         static const Property STUCK_DAMAGE_MULTIPLIER(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_fStuckDamageMultiplier = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fStuckDamageMultiplier);
                 return true;
             })
         );
         static const Property STUCK_MOMENTUM_MULTIPLIER(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_fStuckMomentumMultiplier = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fStuckMomentumMultiplier);
                 return true;
             })
         );
         static const Property FUSE_TIMER(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_fExplosionTime = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fExplosionTime);
                 return true;
             })
         );
         static const Property EXPLODE_ON_CONTACT(
             ValueType::BOOLEAN,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_bExplodeOnTouchEvent = p.valBool;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromBool(proj->m_bExplodeOnTouchEvent);
                 return true;
             })
         );
         static const Property EXPLODE_ON_FUSE(
             ValueType::BOOLEAN,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_bTimedExplosion = p.valBool;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromBool(proj->m_bTimedExplosion);
                 return true;
             })
         );
         static const Property MUST_BOUNCE_BEFORE_EXPLODE(
             ValueType::BOOLEAN,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_bBounceRequiredForExplode = p.valBool;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromBool(proj->m_bBounceRequiredForExplode);
                 return true;
             })
         );
         static const Property FULLY_INHERIT_VELOCITY(
             ValueType::BOOLEAN,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
                 proj->m_bFullyInheritVelocity = p.valBool;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
                 ret = PropValue::fromBool(proj->m_bFullyInheritVelocity);
                 return true;
             })
@@ -3592,11 +3592,11 @@ namespace GameBalance {
         // Mines
         static const Property MINE_DEPLOY_TIME(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+            applierAdapter<ATrProj_Mine>([](PropValue p, ATrProj_Mine* proj) {
                 proj->m_fDeploySeconds = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Mine>([](ATrProj_Mine* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fDeploySeconds);
                 return true;
             })
@@ -3614,44 +3614,44 @@ namespace GameBalance {
         );
         static const Property MINE_COLLISION_CYLINDER_RADIUS(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+            applierAdapter<ATrProj_Mine>([](PropValue p, ATrProj_Mine* proj) {
                 proj->m_fDetonationRadius = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Mine>([](ATrProj_Mine* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fDetonationRadius);
                 return true;
             })
         );
         static const Property MINE_COLLISION_CYLINDER_HEIGHT(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+            applierAdapter<ATrProj_Mine>([](PropValue p, ATrProj_Mine* proj) {
                 proj->m_fDetonationHeight = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Mine>([](ATrProj_Mine* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fDetonationHeight);
                 return true;
             })
         );
         static const Property CLAYMORE_DETONATION_ANGLE(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Claymore* proj) {
+            applierAdapter<ATrProj_Claymore>([](PropValue p, ATrProj_Claymore* proj) {
                 proj->m_fDetonationAngle = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_Claymore* proj, PropValue& ret) {
+            getterAdapter<ATrProj_Claymore>([](ATrProj_Claymore* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fDetonationAngle);
                 return true;
             })
         );
         static const Property PRISM_MINE_TRIP_DISTANCE(
             ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_PrismMine* proj) {
+            applierAdapter<ATrProj_PrismMine>([](PropValue p, ATrProj_PrismMine* proj) {
                 proj->m_fTripDistance = p.valFloat;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_PrismMine* proj, PropValue& ret) {
+            getterAdapter<ATrProj_PrismMine>([](ATrProj_PrismMine* proj, PropValue& ret) {
                 ret = PropValue::fromFloat(proj->m_fTripDistance);
                 return true;
             })
@@ -3660,23 +3660,23 @@ namespace GameBalance {
         // MIRV
         static const Property MIRV_SECONDARY_EXPLOSIONS(
             ValueType::INTEGER,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_MIRVLauncher* proj) {
+            applierAdapter<ATrProj_MIRVLauncher>([](PropValue p, ATrProj_MIRVLauncher* proj) {
                 proj->m_nSecondaryExplosions = p.valInt;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+            getterAdapter<ATrProj_MIRVLauncher>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
                 ret = PropValue::fromInt(proj->m_nSecondaryExplosions);
                 return true;
             })
         );
         static const Property MIRV_SECONDARY_PROJECTILE(
             ValueType::INTEGER,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_MIRVLauncher* proj) {
+            applierAdapter<ATrProj_MIRVLauncher>([](PropValue p, ATrProj_MIRVLauncher* proj) {
                 UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
                 proj->m_SecondaryProjectile = projClass;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+            getterAdapter<ATrProj_MIRVLauncher>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
                 ret = PropValue::fromInt(proj->m_SecondaryProjectile->ObjectInternalInteger);
                 return true;
             })
@@ -3686,24 +3686,24 @@ namespace GameBalance {
 
         static const Property GLADIATOR_SECONDARY_PROJECTILE(
             ValueType::INTEGER,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeLauncher* proj) {
+            applierAdapter<ATrProj_SpikeLauncher>([](PropValue p, ATrProj_SpikeLauncher* proj) {
                 UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
                 proj->m_SecondProjectile = projClass;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeLauncher>([](ATrProj_SpikeLauncher* proj, PropValue& ret) {
                 ret = PropValue::fromInt(proj->m_SecondProjectile->ObjectInternalInteger);
                 return true;
             })
         );
         static const Property GLADIATOR_TERTIARY_PROJECTILE(
             ValueType::INTEGER,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeLauncher* proj) {
+            applierAdapter<ATrProj_SpikeLauncher>([](PropValue p, ATrProj_SpikeLauncher* proj) {
                 UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
                 proj->m_ThirdProjectile = projClass;
                 return true;
             }),
-            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+            getterAdapter<ATrProj_SpikeLauncher>([](ATrProj_SpikeLauncher* proj, PropValue& ret) {
                 ret = PropValue::fromInt(proj->m_ThirdProjectile->ObjectInternalInteger);
                 return true;
             })

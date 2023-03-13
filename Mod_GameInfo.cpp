@@ -279,7 +279,8 @@ bool TrGameReplicationInfo_Tick(int ID, UObject *dwCallingObject, UFunction* pFu
                 g_config.serverSettings.deviceValueProperties,
                 g_config.serverSettings.classProperties,
                 g_config.serverSettings.vehicleProperties,
-                g_config.serverSettings.vehicleWeaponProperties
+                g_config.serverSettings.vehicleWeaponProperties,
+                g_config.serverSettings.projectileProperties
             );
         });
 

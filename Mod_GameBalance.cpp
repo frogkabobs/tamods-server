@@ -956,7 +956,7 @@ namespace LuaAPI {
                 .addProperty<int, int>("ShocklanceEnergyCost", &getIdentity<CONST_MOD_TYPE_SHOCKLANCEENERGYCOSTPCT>)
                 .addProperty<int, int>("ExtraAmmoSpawnBuff", &getIdentity<CONST_MOD_TYPE_EXTRAAMMOSPAWNPCT>)
             .endNamespace()
-            .beginNameSpace("Projectiles")
+            .beginNamespace("Projectiles")
                 .addFunction("setProperty", &setProjectileProp)
                 .addFunction("getProperty", &getProjectileProp)
                 .beginNamespace("Properties")
