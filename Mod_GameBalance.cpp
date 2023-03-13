@@ -52,7 +52,8 @@ namespace DCServer {
             g_config.serverSettings.deviceValueProperties,
             g_config.serverSettings.classProperties,
             g_config.serverSettings.vehicleProperties,
-            g_config.serverSettings.vehicleWeaponProperties
+            g_config.serverSettings.vehicleWeaponProperties,
+            g_config.serverSettings.projectileProperties
         );
     }
 }
@@ -96,6 +97,7 @@ static std::vector<UObject*> getDefaultObjectsForProps(int elemId) {
     bool isClassCase = std::is_same<IdType, Classes::PropId>::value;
     bool isVehicleCase = std::is_same<IdType, Vehicles::PropId>::value;
     bool isVehicleWeaponCase = std::is_same<IdType, VehicleWeapons::PropId>::value;
+    bool isProjectileCase = std::is_same<IdType, Projectiles::PropId>::value;
     
     std::string prefix;
     std::vector<std::string> variants;
@@ -131,6 +133,11 @@ static std::vector<UObject*> getDefaultObjectsForProps(int elemId) {
         prefix = "TrVehicleWeapon";
         relevantClassNames = Data::vehicle_weapon_id_to_name;
         return getDefaultObjects<ATrVehicleWeapon>(relevantClassNames, prefix, variants, elemId);
+    }
+    else if (isProjectileCase) {
+        prefix = "TrProj";
+        relevantClassNames = Data::projectile_id_to_name; //CREATE THIS!!!!
+        return getDefaultObjects<ATrProjectile>(relevantClassNames, prefix, variants, elemId);
     }
 
     return std::vector<UObject*>();
@@ -203,6 +210,7 @@ void ServerSettings::ApplyGameBalanceProperties() {
     applyPropConfig(Classes::properties, classProperties);
     applyPropConfig(Vehicles::properties,vehicleProperties);
     applyPropConfig(VehicleWeapons::properties, vehicleWeaponProperties);
+    applyPropConfig(Projectiles::properties, projectileProperties);
 }
 
 template <typename IdType>
@@ -335,6 +343,22 @@ static LuaRef getVehicleWeaponProp(std::string vehicleWeaponName, int intPropId)
     }
 
     return getProp(VehicleWeapons::properties, propMap, vehicleWeaponId, intPropId);
+}
+
+static LuaRef getProjectileProp(std::string projectileName, int intPropId) {
+    int projectileId = Utils::searchMapId(Data::projectiles, projectileName, "", false); //CREATE DATA PROJECTILES
+    if (projectileId == 0) {
+        Logger::error("Unable to get property config; invalid projectile %s", projectileName.c_str());
+        return LuaRef(g_config.lua.getState());
+    }
+
+    Projectiles::PropMapping propMap;
+    auto& it = g_config.serverSettings.projectileProperties.find(projectileId);
+    if (it != g_config.serverSettings.projectileProperties.end()) {
+        propMap = it->second;
+    }
+
+    return getProp(Projectiles::properties, propMap, projectileId, intPropId);
 }
 
 static LuaRef getDeviceValueMod(std::string className, std::string itemName) {
@@ -502,6 +526,16 @@ static void setVehicleWeaponProp(std::string vehicleWeaponName, int intPropId, L
     setProp(VehicleWeapons::properties, g_config.serverSettings.vehicleWeaponProperties, vehicleWeaponId, intPropId, val);
 }
 
+static void setProjectileProp(std::string projectileName, int intPropId, LuaRef val) {
+    int projectileId = Utils::searchMapId(Data::projectiles, projectileName, "", false);
+    if (projectileId == 0) {
+        Logger::error("Unable to set property config; invalid projectile %s", projectileName.c_str());
+        return;
+    }
+
+    setProp(Projectiles::properties, g_config.serverSettings.projectileProperties, projectileId, intPropId, val);
+}
+
 static void setDeviceValueMod(std::string className, std::string itemName, LuaRef modDefs) {
     int itemId = Data::getItemId(className, itemName);
     if (itemId == 0) {
@@ -667,6 +701,8 @@ namespace LuaAPI {
                     .addProperty<int, int>("MineCollisionCylinderHeight", &getPropId<Items::PropId, Items::PropId::MINE_COLLISION_CYLINDER_HEIGHT>)
                     .addProperty<int, int>("ClaymoreDetonationAngle", &getPropId<Items::PropId, Items::PropId::CLAYMORE_DETONATION_ANGLE>)
                     .addProperty<int, int>("PrismMineTripDistance", &getPropId<Items::PropId, Items::PropId::PRISM_MINE_TRIP_DISTANCE>)
+                    // Device projectile
+                    .addProperty<int, int>("DeviceProjectile", &getPropId<Items::PropId, Items::PropId::DEVICE_PROJECTILE>)
 
                 .endNamespace()
             .endNamespace()
@@ -920,6 +956,80 @@ namespace LuaAPI {
                 .addProperty<int, int>("ShocklanceEnergyCost", &getIdentity<CONST_MOD_TYPE_SHOCKLANCEENERGYCOSTPCT>)
                 .addProperty<int, int>("ExtraAmmoSpawnBuff", &getIdentity<CONST_MOD_TYPE_EXTRAAMMOSPAWNPCT>)
             .endNamespace()
+            .beginNameSpace("Projectiles")
+                .addFunction("setProperty", &setProjectileProp)
+                .addFunction("getProperty", &getProjectileProp)
+                .beginNamespace("Properties")
+                    .addProperty<int, int>("Invalid", &getPropId<Projectiles::PropId, Projectiles::PropId::INVALID>)
+                    // Damage / Impact
+                    .addProperty<int, int>("Damage", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE>)
+                    .addProperty<int, int>("ExplosiveRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::EXPLOSIVE_RADIUS>)
+                    .addProperty<int, int>("DirectHitMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DIRECT_HIT_MULTIPLIER>)
+                    .addProperty<int, int>("ImpactMomentum", &getPropId<Projectiles::PropId, Projectiles::PropId::IMPACT_MOMENTUM>)
+                    .addProperty<int, int>("SelfImpactMomentumMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::SELF_IMPACT_MOMENTUM_MULTIPLIER>)
+                    .addProperty<int, int>("SelfImpactExtraZMomentum", &getPropId<Projectiles::PropId, Projectiles::PropId::SELF_IMPACT_EXTRA_Z_MOMENTUM>)
+                    .addProperty<int, int>("EnergyDrain", &getPropId<Projectiles::PropId, Projectiles::PropId::ENERGY_DRAIN>)
+                    .addProperty<int, int>("MaxDamageRangeProportion", &getPropId<Projectiles::PropId, Projectiles::PropId::MAX_DAMAGE_RANGE_PROPORTION>)
+                    .addProperty<int, int>("MinDamageRangeProportion", &getPropId<Projectiles::PropId, Projectiles::PropId::MIN_DAMAGE_RANGE_PROPORTION>)
+                    .addProperty<int, int>("MinDamageProportion", &getPropId<Projectiles::PropId, Projectiles::PropId::MIN_DAMAGE_PROPORTION>)
+                    .addProperty<int, int>("BulletDamageRange", &getPropId<Projectiles::PropId, Projectiles::PropId::BULLET_DAMAGE_RANGE>)
+                    .addProperty<int, int>("DamageAgainstArmorMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_ARMOR_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstGeneratorMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_GENERATOR_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstBaseTurretMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_BASE_TURRET_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstBaseSensorMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_BASE_SENSOR_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstGravCycleMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_GRAVCYCLE_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstBeowulfMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_BEOWULF_MULTIPLIER>)
+                    .addProperty<int, int>("DamageAgainstShrikeMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::DAMAGE_AGAINST_SHRIKE_MULTIPLIER>)
+                    .addProperty<int, int>("DoesGibOnKill", &getPropId<Projectiles::PropId, Projectiles::PropId::DOES_GIB_ON_KILL>)
+                    .addProperty<int, int>("GibImpulseRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::GIB_IMPULSE_RADIUS>)
+                    .addProperty<int, int>("GibStrength", &getPropId<Projectiles::PropId, Projectiles::PropId::GIB_STRENGTH>)
+                    .addProperty<int, int>("DoesImpulseFlag", &getPropId<Projectiles::PropId, Projectiles::PropId::DOES_IMPULSE_FLAG>)
+                    .addProperty<int, int>("FractalDuration", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_DURATION>)
+                    .addProperty<int, int>("FractalShardInterval", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_SHARD_INTERVAL>)
+                    .addProperty<int, int>("FractalAscentTime", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_ASCENT_TIME>)
+                    .addProperty<int, int>("FractalAscentHeight", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_ASCENT_HEIGHT>)
+                    .addProperty<int, int>("FractalShardDistance", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_SHARD_DISTANCE>)
+                    .addProperty<int, int>("FractalShardHeight", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_SHARD_HEIGHT>)
+                    .addProperty<int, int>("FractalShardDamage", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_SHARD_DAMAGE>)
+                    .addProperty<int, int>("FractalShardDamageRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::FRACTAL_SHARD_DAMAGE_RADIUS>)
+                    // Projectile / Tracer
+                    .addProperty<int, int>("ProjectileSpeed", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_SPEED>)
+                    .addProperty<int, int>("ProjectileMaxSpeed", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_MAX_SPEED>)
+                    .addProperty<int, int>("CollisionSize", &getPropId<Projectiles::PropId, Projectiles::PropId::COLLISION_SIZE>)
+                    .addProperty<int, int>("ProjectileInheritance", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_INHERITANCE>)
+                    .addProperty<int, int>("ProjectileLifespan", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_LIFESPAN>)
+                    .addProperty<int, int>("ProjectileGravity", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_GRAVITY>)
+                    .addProperty<int, int>("ProjectileTerminalVelocity", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_TERMINAL_VELOCITY>)
+                    .addProperty<int, int>("ProjectileBounceDamping", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_BOUNCE_DAMPING>)
+                    .addProperty<int, int>("ProjectileMeshScale", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_MESH_SCALE>)
+                    .addProperty<int, int>("ProjectileLightRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_LIGHT_RADIUS>)
+                    .addProperty<int, int>("ProjectileTossZ", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_TOSS_Z>)
+                    // Grenade
+                    .addProperty<int, int>("ThrowDelay", &getPropId<Projectiles::PropId, Projectiles::PropId::THROW_DELAY>)
+                    .addProperty<int, int>("ThrowPullPinTime", &getPropId<Projectiles::PropId, Projectiles::PropId::THROW_PULL_PIN_TIME>)
+                    .addProperty<int, int>("StuckDamageMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::STUCK_DAMAGE_MULTIPLIER>)
+                    .addProperty<int, int>("StuckMomentumMultiplier", &getPropId<Projectiles::PropId, Projectiles::PropId::STUCK_MOMENTUM_MULTIPLIER>)
+                    .addProperty<int, int>("FuseTimer", &getPropId<Projectiles::PropId, Projectiles::PropId::FUSE_TIMER>)
+                    .addProperty<int, int>("ExplodeOnContact", &getPropId<Projectiles::PropId, Projectiles::PropId::EXPLODE_ON_CONTACT>)
+                    .addProperty<int, int>("ExplodeOnFuse", &getPropId<Projectiles::PropId, Projectiles::PropId::EXPLODE_ON_FUSE>)
+                    .addProperty<int, int>("MustBounceBeforeExplode", &getPropId<Projectiles::PropId, Projectiles::PropId::MUST_BOUNCE_BEFORE_EXPLODE>)
+                    .addProperty<int, int>("FullyInheritVelocity", &getPropId<Projectiles::PropId, Projectiles::PropId::FULLY_INHERIT_VELOCITY>)
+                    // Mines
+                    .addProperty<int, int>("MineDeployTime", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_DEPLOY_TIME>)
+                    .addProperty<int, int>("MineMaxAllowed", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_MAX_ALLOWED>)
+                    .addProperty<int, int>("MineCollisionCylinderRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_COLLISION_CYLINDER_RADIUS>)
+                    .addProperty<int, int>("MineCollisionCylinderHeight", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_COLLISION_CYLINDER_HEIGHT>)
+                    .addProperty<int, int>("ClaymoreDetonationAngle", &getPropId<Projectiles::PropId, Projectiles::PropId::CLAYMORE_DETONATION_ANGLE>)
+                    .addProperty<int, int>("PrismMineTripDistance", &getPropId<Projectiles::PropId, Projectiles::PropId::PRISM_MINE_TRIP_DISTANCE>)
+                    // MIRV and Gladiator
+                    .addProperty<int, int>("MIRVSecondaryExplosions", &getPropId<Projectiles::PropId, Projectiles::PropId::MIRV_SECONDARY_EXPLOSIONS>)
+                    .addProperty<int, int>("MIRVSecondaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::MIRV_SECONDARY_PROJECTILE>)
+                    .addProperty<int, int>("GladiatorSecondaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_SECONDARY_PROJECTILE>)
+                    .addProperty<int, int>("GladiatorTertiaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_TERTIARY_PROJECTILE>)
+
+                .endNamespace()
+            .endNamespace()
+            
             ;
     }
 }

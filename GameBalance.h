@@ -317,6 +317,9 @@ namespace GameBalance {
             CLAYMORE_DETONATION_ANGLE = 9004,
             PRISM_MINE_TRIP_DISTANCE = 9005,
 
+            // Device projectile
+            DEVICE_PROJECTILE = 10000, //new
+
         };
 
         // Item property definitions
@@ -491,6 +494,91 @@ namespace GameBalance {
 
         typedef std::map<PropId, PropValue> PropMapping;
         typedef std::map<int, PropMapping> VehicleWeaponsConfig;
+    }
+
+    namespace Projectiles {
+
+        enum class PropId {
+            INVALID = 0,
+
+            // Damage / Impact
+            DAMAGE = 3000,
+            EXPLOSIVE_RADIUS = 3001,
+            DIRECT_HIT_MULTIPLIER = 3002,
+            IMPACT_MOMENTUM = 3003,
+            SELF_IMPACT_MOMENTUM_MULTIPLIER = 3004,
+            SELF_IMPACT_EXTRA_Z_MOMENTUM = 3005,
+            ENERGY_DRAIN = 3006,
+            MAX_DAMAGE_RANGE_PROPORTION = 3007,
+            MIN_DAMAGE_RANGE_PROPORTION = 3008,
+            MIN_DAMAGE_PROPORTION = 3009,
+            BULLET_DAMAGE_RANGE = 3010,
+            DAMAGE_AGAINST_ARMOR_MULTIPLIER = 3011,
+            DAMAGE_AGAINST_GENERATOR_MULTIPLIER = 3012,
+            DAMAGE_AGAINST_BASE_TURRET_MULTIPLIER = 3013,
+            DAMAGE_AGAINST_BASE_SENSOR_MULTIPLIER = 3014,
+            DAMAGE_AGAINST_GRAVCYCLE_MULTIPLIER = 3015,
+            DAMAGE_AGAINST_BEOWULF_MULTIPLIER = 3016,
+            DAMAGE_AGAINST_SHRIKE_MULTIPLIER = 3017,
+            DOES_GIB_ON_KILL = 3018,
+            GIB_IMPULSE_RADIUS = 3019,
+            GIB_STRENGTH = 3020,
+            DOES_IMPULSE_FLAG = 3021,
+            FRACTAL_DURATION = 3030,
+            FRACTAL_SHARD_INTERVAL = 3031,
+            FRACTAL_ASCENT_TIME = 3032,
+            FRACTAL_ASCENT_HEIGHT = 3033,
+            FRACTAL_SHARD_DISTANCE = 3034,
+            FRACTAL_SHARD_HEIGHT = 3035,
+            FRACTAL_SHARD_DAMAGE = 3036,
+            FRACTAL_SHARD_DAMAGE_RADIUS = 3037,
+
+            // Projectile / Tracer
+            PROJECTILE_SPEED = 4000,
+            PROJECTILE_MAX_SPEED = 4001,
+            COLLISION_SIZE = 4002,
+            PROJECTILE_INHERITANCE = 4003,
+            PROJECTILE_LIFESPAN = 4004,
+            PROJECTILE_GRAVITY = 4005,
+            PROJECTILE_TERMINAL_VELOCITY = 4006,
+            PROJECTILE_BOUNCE_DAMPING = 4007,
+            PROJECTILE_MESH_SCALE = 4008,
+            PROJECTILE_LIGHT_RADIUS = 4009,
+            PROJECTILE_TOSS_Z = 4010, //new
+
+            // Grenade
+            THROW_DELAY = 6000,
+            THROW_PULL_PIN_TIME = 6001,
+            STUCK_DAMAGE_MULTIPLIER = 6002,
+            STUCK_MOMENTUM_MULTIPLIER = 6003,
+            FUSE_TIMER = 6004,
+            EXPLODE_ON_CONTACT = 6005,
+            EXPLODE_ON_FUSE = 6006,
+            MUST_BOUNCE_BEFORE_EXPLODE = 6007,
+            FULLY_INHERIT_VELOCITY = 6008, //new
+
+            // Mines
+            MINE_DEPLOY_TIME = 9000,
+            MINE_MAX_ALLOWED = 9001,
+            MINE_COLLISION_CYLINDER_RADIUS = 9002,
+            MINE_COLLISION_CYLINDER_HEIGHT = 9003,
+            CLAYMORE_DETONATION_ANGLE = 9004,
+            PRISM_MINE_TRIP_DISTANCE = 9005,
+
+            // MIRV and Gladiator
+            MIRV_SECONDARY_EXPLOSIONS = 10000, //new
+            MIRV_SECONDARY_PROJECTILE = 10001, //new
+            GLADIATOR_SECONDARY_PROJECTILE = 10002, //new
+            GLADIATOR_TERTIARY_PROJECTILE = 100003, //new
+
+        };
+
+        // Item property definitions
+        extern std::map<PropId, Property> properties;
+
+        typedef std::map<PropId, PropValue> PropMapping;
+        typedef std::map<int, PropMapping> ProjectilesConfig;
+
     }
 
 }

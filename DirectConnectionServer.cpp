@@ -207,7 +207,9 @@ namespace DCServer {
         const GameBalance::Items::DeviceValuesConfig& deviceValueProperties,
         const GameBalance::Classes::ClassesConfig& classProperties,
         const GameBalance::Vehicles::VehiclesConfig& vehicleProperties,
-        const GameBalance::VehicleWeapons::VehicleWeaponsConfig& vehicleWeaponProperties
+        const GameBalance::VehicleWeapons::VehicleWeaponsConfig& vehicleWeaponProperties,
+        const GameBalance::Projectiles::ProjectilesConfig& projectileProperties
+
     ) 
     {
         GameBalanceDetailsMessage msg;
@@ -217,6 +219,7 @@ namespace DCServer {
         msg.classProperties = classProperties;
         msg.vehicleProperties = vehicleProperties;
         msg.vehicleWeaponProperties = vehicleWeaponProperties;
+        msg.projectileProperties = projectileProperties;
 
 
         json j;

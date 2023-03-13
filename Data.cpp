@@ -1248,6 +1248,258 @@ namespace Data
         { CONST_MAP_ID_BLITZ_DRYDOCK,              "TrCTFBlitz-Drydock" },
     };
 
+    std::map<std::string, int> projectiles = {
+        {R"rx(^(fraggrenades?|frags?)$)rx", CONST_PROJ_ID_GRENADE},
+        {R"rx(^(stickygrenades?|sticky|stickies)$)rx", CONST_PROJ_ID_STICKY_GRENADE},
+        {R"rx(^(lacerator)$)rx", CONST_PROJ_ID_LACERATOR}, // Trivial regex
+        {R"rx(^(mines?)$)rx", CONST_PROJ_ID_MINE},
+        {R"rx(^(claymores?|claymoremines?)$)rx", CONST_PROJ_ID_CLAYMORE},
+        {R"rx(^(prismmines?|mines?)$)rx", CONST_PROJ_ID_PRISM_MINE},
+        {R"rx(^(repairkits?)$)rx", CONST_PROJ_ID_REPAIR_DEPLOYABLE},
+        {R"rx(^(throwdeployable)$)rx", CONST_PROJ_ID_THROW_DEPLOYABLE}, // Trivial regex
+        {R"rx(^(saberlauncher|saber)$)rx", CONST_PROJ_ID_TRACKING_MISSILE},
+        {R"rx(^(tracer)$)rx", CONST_PROJ_ID_TRACER}, // Trivial regex
+        {R"rx(^(clienttracer)$)rx", CONST_PROJ_ID_CLIENT_TRACER}, // Trivial regex
+        {R"rx(^(callinbase)$)rx", CONST_PROJ_ID_CALL_IN_BASE}, // Trivial regex
+        {R"rx(^(orbitalstrike)$)rx", CONST_PROJ_ID_ORBITAL_STRIKE}, // Trivial regex
+        {R"rx(^(tacticalstrike)$)rx", CONST_PROJ_ID_TACTICAL_STRIKE}, // Trivial regex
+        {R"rx(^(anti-?personnelgrenades?|aps?|apgrenades?)$)rx", CONST_PROJ_ID_AP_GRENADE},
+        {R"rx(^(arc8)$)rx", CONST_PROJ_ID_ARC8}, // Trivial regex
+        {R"rx(^(motionmines?)$)rx", CONST_PROJ_ID_ARMORED_CLAYMORE},
+        {R"rx(^(arxbuster|arx)$)rx", CONST_PROJ_ID_ARX_BUSTER},
+        {R"rx(^(dustdevil)$)rx", CONST_PROJ_ID_ARX_BUSTER_MKD},
+        {R"rx(^(arxshotgun)$)rx", CONST_PROJ_ID_ARX_SHOTGUN}, // Trivial regex
+        {R"rx(^(assaultrifle|rifle|ar)$)rx", CONST_PROJ_ID_ASSAULT_RIFLE},
+        {R"rx(^(gast('s)?(rifle)?)$)rx", CONST_PROJ_ID_ASSAULT_RIFLE_MKD},
+        {R"rx(^(avmine)$)rx", CONST_PROJ_ID_AV_MINE}, // Trivial regex
+        {R"rx(^(bolt|boltlauncher)$)rx", CONST_PROJ_ID_BOLT_LAUNCHER},
+        {R"rx(^(buckler)$)rx", CONST_PROJ_ID_BUCKLER}, // Trivial regex
+        {R"rx(^(chaingun)$)rx", CONST_PROJ_ID_CHAINGUN},
+        {R"rx(^(chaincannon)$)rx", CONST_PROJ_ID_CHAINGUN_MKD},
+        {R"rx(^(claymore_mkd)$)rx", CONST_PROJ_ID_CLAYMORE_MKD}, // Trivial regex
+        {R"rx(^(nitrons?|impactnitrons?|impacts?)$)rx", CONST_PROJ_ID_CONCUSSION_GRENADE},
+        {R"rx(^(compactnitrons?|compacts?)$)rx", CONST_PROJ_ID_CONCUSSION_GRENADE_MKD},
+        {R"rx(^(spinfusordisks?|spinfusordiscs?|spins?|disks?|discs?|spindisks?|spindiscs?)$)rx", CONST_PROJ_ID_DISK_TOSS},
+        {R"rx(^(spinfusor|spin)$)rx", CONST_PROJ_ID_SPINFUSOR},
+        {R"rx(^(flak(cannon)?)$)rx", CONST_PROJ_ID_TC24},
+        {R"rx(^(efg)$)rx", CONST_PROJ_ID_ELF_FLAK},
+        {R"rx(^(emps?|empgrenades?)$)rx", CONST_PROJ_ID_EMP_GRENADE},
+        {R"rx(^(emps?xls?|emps?xlgrenades?)$)rx", CONST_PROJ_ID_EMP_GRENADE_MKD},
+        {R"rx(^(falcon)$)rx", CONST_PROJ_ID_FALCON},
+        {R"rx(^(flaregrenade)$)rx", CONST_PROJ_ID_FLARE_GRENADE}, // Trivial regex
+        {R"rx(^(grenade_mkd)$)rx", CONST_PROJ_ID_GRENADE_MKD}, // Trivial regex
+        {R"rx(^(grenadelauncher|nadelauncher|launcher|gl)$)rx", CONST_PROJ_ID_GRENADE_LAUNCHER},
+        {R"rx(^(grenadelauncher_light)$)rx", CONST_PROJ_ID_GRENADE_LAUNCHER_LIGHT}, // Trivial regex
+        {R"rx(^(t5s?(grenades?)?)$)rx", CONST_PROJ_ID_GRENADE_T5},
+        {R"rx(^(fraggrenades?(xl)?|frags?(xl)?|grenades?(xl)?)$)rx", CONST_PROJ_ID_GRENADE_XL},
+        {R"rx(^(short-?fusefrags?(grenades?)?|short-?fuses?)$)rx", CONST_PROJ_ID_GRENADE_XL_MKD},
+        {R"rx(^(heavyaps?(grenades?)?)$)rx", CONST_PROJ_ID_HEAVY_AP_GRENADE},
+        {R"rx(^(heavyaps?-?xls?(grenades?)?)$)rx", CONST_PROJ_ID_HEAVY_AP_GRENADE_MKD},
+        {R"rx(^(heavyboltlauncher|boltlauncher|bolt)$)rx", CONST_PROJ_ID_HEAVY_BOLT_LAUNCHER},
+        {R"rx(^(heavyimpactnitron)$)rx", CONST_PROJ_ID_HEAVY_IMPACT_NITRON}, // Trivial regex
+        {R"rx(^(heavy(spin)?(fusor)?|spin(fusor)?|fusor)$)rx", CONST_PROJ_ID_HEAVY_SPINFUSOR},
+        {R"rx(^((heavy)?blinks?(fusor)?)$)rx", CONST_PROJ_ID_HEAVY_SPINFUSOR_MKD},
+        {R"rx(^(twinfusor)$)rx", CONST_PROJ_ID_TWINFUSOR},
+        {R"rx(^(heavytwinfusor|twinfusor|twin)$)rx", CONST_PROJ_ID_HEAVY_TWINFUSOR},
+        {R"rx(^(honorfusor)$)rx", CONST_PROJ_ID_HONORFUSOR}, // Trivial regex
+        {R"rx(^(impactbomblets)$)rx", CONST_PROJ_ID_IMPACT_BOMBLETS}, // Trivial regex
+        {R"rx(^(lightassaultrifle|lar|ar|assaultrifle|rifle)$)rx", CONST_PROJ_ID_LIGHT_ASSAULT_RIFLE},
+        {R"rx(^(spin(fusor)?|light(spin)?(fusor)?)$)rx", CONST_PROJ_ID_LIGHT_SPINFUSOR},
+        {R"rx(^(blinks?|blinks?fusor)$)rx", CONST_PROJ_ID_LIGHT_SPINFUSOR_100X},
+        {R"rx(^(dueling(spin)?(fusor)?)$)rx", CONST_PROJ_ID_LIGHT_SPINFUSOR_MKD},
+        {R"rx(^((heavy|light)sticky(grenades?)?|lightstickies)$)rx", CONST_PROJ_ID_LIGHT_STICKY_GRENADE},
+        {R"rx(^(twin|twinfusor|lighttwinfusor)$)rx", CONST_PROJ_ID_LIGHT_TWINFUSOR},
+        {R"rx(^(lr1mortar)$)rx", CONST_PROJ_ID_LR1_MORTAR}, // Trivial regex
+        {R"rx(^(clustergrenades?|clusters?)$)rx", CONST_PROJ_ID_MIRV_GRENADE},
+        {R"rx(^(mirvlauncher|mirv)$)rx", CONST_PROJ_ID_MIRV_LAUNCHER},
+        {R"rx(^(fusionmortar|mortar)$)rx", CONST_PROJ_ID_MORTAR_LAUNCHER},
+        {R"rx(^((fusion)?mortardeluxe)$)rx", CONST_PROJ_ID_MORTAR_LAUNCHER_MKD},
+        {R"rx(^(motionsensors?)$)rx", CONST_PROJ_ID_MOTION_SENSOR},
+        {R"rx(^(chaffs?(grenades?)?)$)rx", CONST_PROJ_ID_NINJA_SMOKE},
+        {R"rx(^(nj4smg|nj4)$)rx", CONST_PROJ_ID_NJ4_SMG},
+        {R"rx(^(desertnj4|desertnj4smg)$)rx", CONST_PROJ_ID_NJ4_SMG_MKD},
+        {R"rx(^(nj5(-?b)?(smg)?)$)rx", CONST_PROJ_ID_NJ5_SMG},
+        {R"rx(^(nova|blaster|novablaster)$)rx", CONST_PROJ_ID_NOVA_COLT},
+        {R"rx(^(mx|novablastermx|novamx|blaster(mx)?)$)rx", CONST_PROJ_ID_NOVA_COLT_MKD},
+        {R"rx(^(plasmacannon)$)rx", CONST_PROJ_ID_PLASMA_CANNON}, // Trivial regex
+        {R"rx(^(plasmagun|plasma)$)rx", CONST_PROJ_ID_PLASMA_GUN},
+        {R"rx(^(proximitys?(grenades?)?|proxies|proxys?)$)rx", CONST_PROJ_ID_PROXIMITY_GRENADE},
+        {R"rx(^(jackal)$)rx", CONST_PROJ_ID_REMOTE_ARX_BUSTER},
+        {R"rx(^(rhino(smg)?)$)rx", CONST_PROJ_ID_RHINO_SMG},
+        {R"rx(^(arcticrhino(smg)?)$)rx", CONST_PROJ_ID_RHINO_SMG_MKD},
+        {R"rx(^(rocketlauncher)$)rx", CONST_PROJ_ID_ROCKET_LAUNCHER}, // Trivial regex
+        {R"rx(^(trackingmissile_dumbfire)$)rx", CONST_PROJ_ID_TRACKING_MISSILE_DUMBFIRE}, // Trivial regex
+        {R"rx(^(titanlauncher|titan)$)rx", CONST_PROJ_ID_TRACKING_MISSILE_MKD},
+        {R"rx(^(sn7(silenced)?(pistol)?)$)rx", CONST_PROJ_ID_SN7},
+        {R"rx(^(arcticsn7(silenced)?(pistol)?)$)rx", CONST_PROJ_ID_SN7_MKD},
+        {R"rx(^(fractals?|fractalgrenades?)$)rx", CONST_PROJ_ID_SPIKE_GRENADE},
+        {R"rx(^(extendedfractals?(grenades?)?)$)rx", CONST_PROJ_ID_SPIKE_GRENADE_MKD},
+        {R"rx(^(gladiator)$)rx", CONST_PROJ_ID_SPIKE_LAUNCHER},
+        {R"rx(^(blinks?|blinks?fusor|sparespin(fusor)?)$)rx", CONST_PROJ_ID_SPINFUSOR_100X},
+        {R"rx(^(spinfusormkd)$)rx", CONST_PROJ_ID_SPINFUSOR_D},
+        {R"rx(^(spinfusormk-?x)$)rx", CONST_PROJ_ID_SPINFUSOR_D_MKD},
+        {R"rx(^(stealth(spin)?(fusor)?)$)rx", CONST_PROJ_ID_STEALTH_SPINFUSOR},
+        {R"rx(^(explosivenitrons?|explosives?)$)rx", CONST_PROJ_ID_ST_GRENADE},
+        {R"rx(^(stickygrenades?xl|stickyxl|stickiesxl)$)rx", CONST_PROJ_ID_STICKY_GRENADE_MKD},
+        {R"rx(^(targetingbeacon)$)rx", CONST_PROJ_ID_TARGETING_BEACON}, // Trivial regex
+        {R"rx(^(tcn4(smg)?)$)rx", CONST_PROJ_ID_TCN4_SMG},
+        {R"rx(^(tcn4rockwind(smg)?)$)rx", CONST_PROJ_ID_TCN4_SMG_MKD},
+        {R"rx(^(tcng(grenade)?)$)rx", CONST_PROJ_ID_TCNG},
+        {R"rx(^(tcng(quick|short)?-?fuse(grenade)?)$)rx", CONST_PROJ_ID_TCNG_MKD},
+        {R"rx(^(throwingknives|knives)$)rx", CONST_PROJ_ID_THROWING_KNIVES},
+        {R"rx(^(thumper)$)rx", CONST_PROJ_ID_THUMPER},
+        {R"rx(^(thumperd)$)rx", CONST_PROJ_ID_THUMPER_D},
+        {R"rx(^(thumperdx)$)rx", CONST_PROJ_ID_THUMPER_D_MKD},
+        {R"rx(^(blackouts?|blackoutgrenades?)$)rx", CONST_PROJ_ID_WHITE_OUT},
+        {R"rx(^(x1|lmg|x1lmg)$)rx", CONST_PROJ_ID_X1_RIFLE},
+        {R"rx(^(antiairturret)$)rx", CONST_PROJ_ID_ANTI_AIR_TURRET}, // Trivial regex
+        {R"rx(^(baseturret)$)rx", CONST_PROJ_ID_BASE_TURRET}, // Trivial regex
+        {R"rx(^(beowulfgunner)$)rx", CONST_PROJ_ID_BEOWULF_GUNNER}, // Trivial regex
+        {R"rx(^(beowulfpilot)$)rx", CONST_PROJ_ID_BEOWULF_PILOT}, // Trivial regex
+        {R"rx(^(bxt)$)rx", CONST_PROJ_ID_BXT}, // Trivial regex
+        {R"rx(^(chaingunbullettracer)$)rx", CONST_PROJ_ID_CHAINGUN_BULLET_TRACER}, // Trivial regex
+        {R"rx(^(gravcyclepilot)$)rx", CONST_PROJ_ID_GRAV_CYCLE_PILOT}, // Trivial regex
+        {R"rx(^(havocpilot)$)rx", CONST_PROJ_ID_HAVOC_PILOT}, // Trivial regex
+        {R"rx(^(hercgunner)$)rx", CONST_PROJ_ID_HERC_GUNNER}, // Trivial regex
+        {R"rx(^(hercpilot)$)rx", CONST_PROJ_ID_HERC_PILOT}, // Trivial regex
+        {R"rx(^(lightturret)$)rx", CONST_PROJ_ID_LIGHT_TURRET}, // Trivial regex
+        {R"rx(^(mirvlaunchersecondary)$)rx", CONST_PROJ_ID_MIRV_LAUNCHER_SECONDARY}, // Trivial regex
+        {R"rx(^(mirvgrenadesecondary)$)rx", CONST_PROJ_ID_MIRV_GRENADE_SECONDARY}, // Trivial regex
+        {R"rx(^(pistolbullettracer)$)rx", CONST_PROJ_ID_PISTOL_BULLET_TRACER}, // Trivial regex
+        {R"rx(^(sap20)$)rx", CONST_PROJ_ID_SAP20}, // Trivial regex
+        {R"rx(^(shrikepilot)$)rx", CONST_PROJ_ID_SHRIKE_PILOT}, // Trivial regex
+        {R"rx(^(spikelaunchersecondary)$)rx", CONST_PROJ_ID_SPIKE_LAUNCHER_SECONDARY}, // Trivial regex
+        {R"rx(^(spikelauncherthird)$)rx", CONST_PROJ_ID_SPIKE_LAUNCHER_THIRD}, // Trivial regex
+        {R"rx(^(wallturret)$)rx", CONST_PROJ_ID_WALL_TURRET}, // Trivial regex
+    };
+
+    std::map<int, std::string> projectile_id_to_name = {    
+
+        {CONST_PROJ_ID_GRENADE, "Grenade"},
+        {CONST_PROJ_ID_STICKY_GRENADE, "StickyGrenade"},
+        {CONST_PROJ_ID_LACERATOR, "Lacerator"},
+        {CONST_PROJ_ID_MINE, "Mine"},
+        {CONST_PROJ_ID_CLAYMORE, "Claymore"},
+        {CONST_PROJ_ID_PRISM_MINE, "PrismMine"},
+        {CONST_PROJ_ID_REPAIR_DEPLOYABLE, "RepairDeployable"},
+        {CONST_PROJ_ID_THROW_DEPLOYABLE, "ThrowDeployable"},
+        {CONST_PROJ_ID_TRACKING_MISSILE, "TrackingMissile"},
+        {CONST_PROJ_ID_TRACER, "Tracer"},
+        {CONST_PROJ_ID_CLIENT_TRACER, "ClientTracer"},
+        {CONST_PROJ_ID_CALL_IN_BASE, "CallInBase"},
+        {CONST_PROJ_ID_ORBITAL_STRIKE, "OrbitalStrike"},
+        {CONST_PROJ_ID_TACTICAL_STRIKE, "TacticalStrike"},
+        {CONST_PROJ_ID_AP_GRENADE, "APGrenade"},
+        {CONST_PROJ_ID_ARC8, "ARC8"},
+        {CONST_PROJ_ID_ARMORED_CLAYMORE, "ArmoredClaymore"},
+        {CONST_PROJ_ID_ARX_BUSTER, "ArxBuster"},
+        {CONST_PROJ_ID_ARX_BUSTER_MKD, "ArxBuster_MKD"},
+        {CONST_PROJ_ID_ARX_SHOTGUN, "ArxShotgun"},
+        {CONST_PROJ_ID_ASSAULT_RIFLE, "AssaultRifle"},
+        {CONST_PROJ_ID_ASSAULT_RIFLE_MKD, "AssaultRifle_MKD"},
+        {CONST_PROJ_ID_AV_MINE, "AVMine"},
+        {CONST_PROJ_ID_BOLT_LAUNCHER, "BoltLauncher"},
+        {CONST_PROJ_ID_BUCKLER, "Buckler"},
+        {CONST_PROJ_ID_CHAINGUN, "Chaingun"},
+        {CONST_PROJ_ID_CHAINGUN_MKD, "Chaingun_MKD"},
+        {CONST_PROJ_ID_CLAYMORE_MKD, "Claymore_MKD"},
+        {CONST_PROJ_ID_CONCUSSION_GRENADE, "ConcussionGrenade"},
+        {CONST_PROJ_ID_CONCUSSION_GRENADE_MKD, "ConcussionGrenade_MKD"},
+        {CONST_PROJ_ID_DISK_TOSS, "DiskToss"},
+        {CONST_PROJ_ID_SPINFUSOR, "Spinfusor"},
+        {CONST_PROJ_ID_TC24, "TC24"},
+        {CONST_PROJ_ID_ELF_FLAK, "ElfFlak"},
+        {CONST_PROJ_ID_EMP_GRENADE, "EMPGrenade"},
+        {CONST_PROJ_ID_EMP_GRENADE_MKD, "EMPGrenade_MKD"},
+        {CONST_PROJ_ID_FALCON, "Falcon"},
+        {CONST_PROJ_ID_FLARE_GRENADE, "FlareGrenade"},
+        {CONST_PROJ_ID_GRENADE_MKD, "Grenade_MKD"},
+        {CONST_PROJ_ID_GRENADE_LAUNCHER, "GrenadeLauncher"},
+        {CONST_PROJ_ID_GRENADE_LAUNCHER_LIGHT, "GrenadeLauncher_Light"},
+        {CONST_PROJ_ID_GRENADE_T5, "GrenadeT5"},
+        {CONST_PROJ_ID_GRENADE_XL, "GrenadeXL"},
+        {CONST_PROJ_ID_GRENADE_XL_MKD, "GrenadeXL_MKD"},
+        {CONST_PROJ_ID_HEAVY_AP_GRENADE, "HeavyAPGrenade"},
+        {CONST_PROJ_ID_HEAVY_AP_GRENADE_MKD, "HeavyAPGrenade_MKD"},
+        {CONST_PROJ_ID_HEAVY_BOLT_LAUNCHER, "HeavyBoltLauncher"},
+        {CONST_PROJ_ID_HEAVY_IMPACT_NITRON, "HeavyImpactNitron"},
+        {CONST_PROJ_ID_HEAVY_SPINFUSOR, "HeavySpinfusor"},
+        {CONST_PROJ_ID_HEAVY_SPINFUSOR_MKD, "HeavySpinfusor_MKD"},
+        {CONST_PROJ_ID_TWINFUSOR, "Twinfusor"},
+        {CONST_PROJ_ID_HEAVY_TWINFUSOR, "HeavyTwinfusor"},
+        {CONST_PROJ_ID_HONORFUSOR, "Honorfusor"},
+        {CONST_PROJ_ID_IMPACT_BOMBLETS, "ImpactBomblets"},
+        {CONST_PROJ_ID_LIGHT_ASSAULT_RIFLE, "LightAssaultRifle"},
+        {CONST_PROJ_ID_LIGHT_SPINFUSOR, "LightSpinfusor"},
+        {CONST_PROJ_ID_LIGHT_SPINFUSOR_100X, "LightSpinfusor_100X"},
+        {CONST_PROJ_ID_LIGHT_SPINFUSOR_MKD, "LightSpinfusor_MKD"},
+        {CONST_PROJ_ID_LIGHT_STICKY_GRENADE, "LightStickyGrenade"},
+        {CONST_PROJ_ID_LIGHT_TWINFUSOR, "LightTwinfusor"},
+        {CONST_PROJ_ID_LR1_MORTAR, "LR1Mortar"},
+        {CONST_PROJ_ID_MIRV_GRENADE, "MIRVGrenade"},
+        {CONST_PROJ_ID_MIRV_LAUNCHER, "MIRVLauncher"},
+        {CONST_PROJ_ID_MORTAR_LAUNCHER, "MortarLauncher"},
+        {CONST_PROJ_ID_MORTAR_LAUNCHER_MKD, "MortarLauncher_MKD"},
+        {CONST_PROJ_ID_MOTION_SENSOR, "MotionSensor"},
+        {CONST_PROJ_ID_NINJA_SMOKE, "NinjaSmoke"},
+        {CONST_PROJ_ID_NJ4_SMG, "NJ4SMG"},
+        {CONST_PROJ_ID_NJ4_SMG_MKD, "NJ4SMG_MKD"},
+        {CONST_PROJ_ID_NJ5_SMG, "NJ5SMG"},
+        {CONST_PROJ_ID_NOVA_COLT, "NovaColt"},
+        {CONST_PROJ_ID_NOVA_COLT_MKD, "NovaColt_MKD"},
+        {CONST_PROJ_ID_PLASMA_CANNON, "PlasmaCannon"},
+        {CONST_PROJ_ID_PLASMA_GUN, "PlasmaGun"},
+        {CONST_PROJ_ID_PROXIMITY_GRENADE, "ProximityGrenade"},
+        {CONST_PROJ_ID_REMOTE_ARX_BUSTER, "RemoteArxBuster"},
+        {CONST_PROJ_ID_RHINO_SMG, "RhinoSMG"},
+        {CONST_PROJ_ID_RHINO_SMG_MKD, "RhinoSMG_MKD"},
+        {CONST_PROJ_ID_ROCKET_LAUNCHER, "RocketLauncher"},
+        {CONST_PROJ_ID_TRACKING_MISSILE_DUMBFIRE, "TrackingMissile_DumbFire"},
+        {CONST_PROJ_ID_TRACKING_MISSILE_MKD, "TrackingMissile_MKD"},
+        {CONST_PROJ_ID_SN7, "SN7"},
+        {CONST_PROJ_ID_SN7_MKD, "SN7_MKD"},
+        {CONST_PROJ_ID_SPIKE_GRENADE, "SpikeGrenade"},
+        {CONST_PROJ_ID_SPIKE_GRENADE_MKD, "SpikeGrenade_MKD"},
+        {CONST_PROJ_ID_SPIKE_LAUNCHER, "SpikeLauncher"},
+        {CONST_PROJ_ID_SPINFUSOR_100X, "Spinfusor_100X"},
+        {CONST_PROJ_ID_SPINFUSOR_D, "SpinfusorD"},
+        {CONST_PROJ_ID_SPINFUSOR_D_MKD, "SpinfusorD_MKD"},
+        {CONST_PROJ_ID_STEALTH_SPINFUSOR, "StealthSpinfusor"},
+        {CONST_PROJ_ID_ST_GRENADE, "STGrenade"},
+        {CONST_PROJ_ID_STICKY_GRENADE_MKD, "StickyGrenade_MKD"},
+        {CONST_PROJ_ID_TARGETING_BEACON, "TargetingBeacon"},
+        {CONST_PROJ_ID_TCN4_SMG, "TCN4SMG"},
+        {CONST_PROJ_ID_TCN4_SMG_MKD, "TCN4SMG_MKD"},
+        {CONST_PROJ_ID_TCNG, "TCNG"},
+        {CONST_PROJ_ID_TCNG_MKD, "TCNG_MKD"},
+        {CONST_PROJ_ID_THROWING_KNIVES, "ThrowingKnives"},
+        {CONST_PROJ_ID_THUMPER, "Thumper"},
+        {CONST_PROJ_ID_THUMPER_D, "ThumperD"},
+        {CONST_PROJ_ID_THUMPER_D_MKD, "ThumperD_MKD"},
+        {CONST_PROJ_ID_WHITE_OUT, "WhiteOut"},
+        {CONST_PROJ_ID_X1_RIFLE, "X1Rifle"},
+        {CONST_PROJ_ID_ANTI_AIR_TURRET, "AntiAirTurret"},
+        {CONST_PROJ_ID_BASE_TURRET, "BaseTurret"},
+        {CONST_PROJ_ID_BEOWULF_GUNNER, "BeowulfGunner"},
+        {CONST_PROJ_ID_BEOWULF_PILOT, "BeowulfPilot"},
+        {CONST_PROJ_ID_BXT, "BXT"},
+        {CONST_PROJ_ID_CHAINGUN_BULLET_TRACER, "ChaingunBulletTracer"},
+        {CONST_PROJ_ID_GRAV_CYCLE_PILOT, "GravCyclePilot"},
+        {CONST_PROJ_ID_HAVOC_PILOT, "HavocPilot"},
+        {CONST_PROJ_ID_HERC_GUNNER, "HERCGunner"},
+        {CONST_PROJ_ID_HERC_PILOT, "HERCPilot"},
+        {CONST_PROJ_ID_LIGHT_TURRET, "LightTurret"},
+        {CONST_PROJ_ID_MIRV_LAUNCHER_SECONDARY, "MIRVLauncherSecondary"},
+        {CONST_PROJ_ID_MIRV_GRENADE_SECONDARY, "MIRVGrenadeSecondary"},
+        {CONST_PROJ_ID_PISTOL_BULLET_TRACER, "PistolBulletTracer"},
+        {CONST_PROJ_ID_SAP20, "SAP20"},
+        {CONST_PROJ_ID_SHRIKE_PILOT, "ShrikePilot"},
+        {CONST_PROJ_ID_SPIKE_LAUNCHER_SECONDARY, "SpikeLauncherSecondary"},
+        {CONST_PROJ_ID_SPIKE_LAUNCHER_THIRD, "SpikeLauncherThird"},
+        {CONST_PROJ_ID_WALL_TURRET, "WallTurret"},
+
+    };
+
 }
 
 namespace Data {

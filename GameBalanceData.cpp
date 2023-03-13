@@ -40,6 +40,23 @@ namespace GameBalance {
         return (UTrDmgType_Base*)dmgTypeClass->Default;
     }
 
+    static UTrDmgType_Base* getProjDefaultDamageType(ATrProjectile* proj) {
+        UClass* dmgTypeClass = NULL;
+
+        if (proj) {
+            // Projectile
+            dmgTypeClass = proj->MyDamageType;
+        }
+
+        if (!dmgTypeClass) return NULL;
+
+        if (!dmgTypeClass->Default || !dmgTypeClass->Default->IsA(UTrDmgType_Base::StaticClass())) {
+            return NULL;
+        }
+
+        return (UTrDmgType_Base*)dmgTypeClass->Default;
+    }
+
     template <typename EffectType>
     static EffectType* getDefaultEffect(FEffectInfo effi) {
         UClass* effClass = effi.effectClass;
@@ -198,6 +215,22 @@ namespace GameBalance {
             UTrDmgType_Base* dmgType = getWeaponDefaultDamageType(dev);
             if (!dmgType) return false;
             return f(dev, dmgType, ret);
+        });
+    }
+
+    // Decorator functions to handle properties specific to DamageTypes associated with a TrProjectile
+    static std::function<bool(PropValue, UObject*)> projDamageTypeApplierAdapter(std::function<bool(PropValue, ATrProjectile*, UTrDmgType_Base*)> f) {
+        return applierAdapter<ATrProjectile>([f](PropValue p, ATrProjectile* proj) {
+            UTrDmgType_Base* dmgType = getProjDefaultDamageType(proj);
+            if (!dmgType) return false;
+            return f(p, proj, dmgType);
+        });
+    }
+    static std::function<bool(UObject*, PropValue&)> projDamageTypeGetterAdapter(std::function<bool(ATrProjectile*, UTrDmgType_Base*, PropValue&)> f) {
+        return getterAdapter<ATrProjectile>([f](ATrProjectile* proj, PropValue& ret) {
+            UTrDmgType_Base* dmgType = getProjDefaultDamageType(proj);
+            if (!dmgType) return false;
+            return f(proj, dmgType, ret);
         });
     }
 
@@ -1546,6 +1579,27 @@ namespace GameBalance {
             })
         );
 
+        // TODO: Projectile replacement
+        // ValueType::INTEGER
+        // Add Data/Util function to convert between UObj id and class
+
+        static const Property DEVICE_PROJECTILE(
+            ValueType::INTEGER,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                dev->WeaponProjectiles.Set(0, projClass);
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ATrProjectile* proj = getWeaponDefaultProj(dev);
+                if(!proj) return false;
+                ret = PropValue::fromInt(proj->ObjectInternalInteger);
+                return true;
+            })
+        );
+
+
+
         // Main mapping
         std::map<PropId, Property> properties = {
             // Ammo
@@ -1677,6 +1731,9 @@ namespace GameBalance {
             {PropId::MINE_COLLISION_CYLINDER_HEIGHT, MINE_COLLISION_CYLINDER_HEIGHT},
             {PropId::CLAYMORE_DETONATION_ANGLE, CLAYMORE_DETONATION_ANGLE},
             {PropId::PRISM_MINE_TRIP_DISTANCE, PRISM_MINE_TRIP_DISTANCE},
+
+            // Device projectile
+            {PropId::DEVICE_PROJECTILE, DEVICE_PROJECTILE},
         };
 
     }
@@ -2973,6 +3030,757 @@ namespace GameBalance {
             {PropId::ACCURACY_LOSS_ON_SHOT, ACCURACY_LOSS_ON_SHOT},
             {PropId::ACCURACY_LOSS_MAX, ACCURACY_LOSS_MAX},
             {PropId::ACCURACY_CORRECTION_RATE, ACCURACY_CORRECTION_RATE},
+        };
+    }
+
+    namespace Projectiles {
+        
+        // Damage
+        static const Property DAMAGE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                if (p.valFloat < 0) return false;
+
+                proj->Damage = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->Damage);
+                return true;
+            })
+        );
+        static const Property EXPLOSIVE_RADIUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                if (p.valFloat < 0) return false;
+
+                proj->DamageRadius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->DamageRadius);
+                return true;
+            })
+        );
+        static const Property DIRECT_HIT_MULTIPLIER(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_fDirectHitMultiplier = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fDirectHitMultiplier);
+                return true;
+            })
+        );
+        static const Property IMPACT_MOMENTUM(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                if (p.valFloat < 0) return false;
+                proj->MomentumTransfer = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->MomentumTransfer);
+                return true;
+            })
+        );
+        static const Property SELF_IMPACT_MOMENTUM_MULTIPLIER(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_fInstigatorMomentumTransferMultiplier = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fInstigatorMomentumTransferMultiplier);
+                return true;
+            })
+        );
+        static const Property SELF_IMPACT_EXTRA_Z_MOMENTUM(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_fInstigatorExtraZMomentum = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fInstigatorExtraZMomentum);
+                return true;
+            })
+        );
+        static const Property ENERGY_DRAIN(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_EnergyDrainAmount = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_EnergyDrainAmount);
+                return true;
+            })
+        );
+        static const Property MAX_DAMAGE_RANGE_PROPORTION(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fMaxDamageRangePct = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fMaxDamageRangePct);
+                return true;
+            })
+        );
+        static const Property MIN_DAMAGE_RANGE_PROPORTION(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fMinDamageRangePct = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fMinDamageRangePct);
+                return true;
+            })
+        );
+        static const Property MIN_DAMAGE_PROPORTION(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fMinDamagePct = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fMinDamagePct);
+                return true;
+            })
+        );
+        static const Property BULLET_DAMAGE_RANGE(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fBulletDamageRange = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fBulletDamageRange);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_ARMOR_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstArmor = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstArmor);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_GENERATOR_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstGenerators = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstGenerators);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_BASE_TURRET_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstBaseTurrets = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstBaseTurrets);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_BASE_SENSOR_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstBaseSensors = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstBaseSensors);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_GRAVCYCLE_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstGravCycle = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstGravCycle);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_BEOWULF_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstBeowulf = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstBeowulf);
+                return true;
+            })
+        );
+        static const Property DAMAGE_AGAINST_SHRIKE_MULTIPLIER(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fDamageMultiplierAgainstShrike = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fDamageMultiplierAgainstShrike);
+                return true;
+            })
+        );
+        static const Property DOES_GIB_ON_KILL(
+            ValueType::BOOLEAN,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_bCausesGib = p.valBool;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromBool(dmgType->m_bCausesGib);
+                return true;
+            })
+        );
+        static const Property GIB_IMPULSE_RADIUS(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fGibRadius = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fGibRadius);
+                return true;
+            })
+        );
+        static const Property GIB_STRENGTH(
+            ValueType::FLOAT,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_fGibStrength = p.valFloat;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromFloat(dmgType->m_fGibStrength);
+                return true;
+            })
+        );
+        static const Property DOES_IMPULSE_FLAG(
+            ValueType::BOOLEAN,
+            projDamageTypeApplierAdapter([](PropValue p, ATrProjectile* proj, UTrDmgType_Base* dmgType) {
+                dmgType->m_bImpulsesFlags = p.valBool;
+                return true;
+            }),
+            projDamageTypeGetterAdapter([](ATrProjectile* proj, UTrDmgType_Base* dmgType, PropValue& ret) {
+                ret = PropValue::fromBool(dmgType->m_bImpulsesFlags);
+                return true;
+            })
+        );
+
+        // Fractals
+        static const Property FRACTAL_DURATION(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fFractalTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fFractalTime);
+                return true;
+            })
+        );
+        static const Property FRACTAL_SHARD_INTERVAL(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fFractalInterval = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fFractalInterval);
+                return true;
+            })
+        );
+        static const Property FRACTAL_ASCENT_TIME(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fAscentTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fAscentTime);
+                return true;
+            })
+        );
+        static const Property FRACTAL_ASCENT_HEIGHT(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fAscentHeight = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fAscentHeight);
+                return true;
+            })
+        );
+        static const Property FRACTAL_SHARD_DISTANCE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fFractalShotDistance = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fFractalShotDistance);
+                return true;
+            })
+        );
+        static const Property FRACTAL_SHARD_HEIGHT(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fZFractalShotDistance = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fZFractalShotDistance);
+                return true;
+            })
+        );
+        static const Property FRACTAL_SHARD_DAMAGE(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_nFractalDamage = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_nFractalDamage);
+                return true;
+            })
+        );
+        static const Property FRACTAL_SHARD_DAMAGE_RADIUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeGrenade* proj) {
+                proj->m_fFractalDamageRadius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_SpikeGrenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fFractalDamageRadius);
+                return true;
+            })
+        );
+
+        // Projectile / Tracer
+        static const Property PROJECTILE_SPEED(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->Speed = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->Speed);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_MAX_SPEED(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->MaxSpeed = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->MaxSpeed);
+                return true;
+            })
+        );
+        static const Property COLLISION_SIZE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->CheckRadius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->CheckRadius);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_INHERITANCE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_fProjInheritVelocityPct = p.valFloat;
+                proj->m_fProjInheritVelocityPctZ = p.valFloat;
+                proj->m_fMaxProjInheritPct = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fProjInheritVelocityPct);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_LIFESPAN(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->LifeSpan = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->LifeSpan);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_GRAVITY(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->CustomGravityScaling = p.valFloat;
+                if (proj->CustomGravityScaling == 0.0f) {
+                    proj->Physics = PHYS_Projectile;
+                }
+                else {
+                    proj->Physics = PHYS_Falling;
+                }
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->CustomGravityScaling);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_TERMINAL_VELOCITY(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->TerminalVelocity = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->TerminalVelocity);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_BOUNCE_DAMPING(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_fBounceDampingPercent = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fBounceDampingPercent);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_MESH_SCALE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                if (!proj->m_ProjMesh) return false;
+                proj->m_ProjMesh->SetScale(p.valFloat);
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                if (!proj->m_ProjMesh) return false;
+                ret = PropValue::fromFloat(proj->m_ProjMesh->Scale);
+                return true;
+            })
+        );
+        static const Property PROJECTILE_LIGHT_RADIUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                if (!proj->m_ProjMesh) return false;
+                proj->ProjectileLight->Radius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                if (!proj->m_ProjMesh) return false;
+                ret = PropValue::fromFloat(proj->ProjectileLight->Radius);
+                return true;
+            })
+        ); 
+        static const Property PROJECTILE_TOSS_Z(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->TossZ = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->TossZ);
+                return true;
+            })
+        ); 
+        
+
+        // Grenade
+        static const Property STUCK_DAMAGE_MULTIPLIER(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fStuckDamageMultiplier = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fStuckDamageMultiplier);
+                return true;
+            })
+        );
+        static const Property STUCK_MOMENTUM_MULTIPLIER(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fStuckMomentumMultiplier = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fStuckMomentumMultiplier);
+                return true;
+            })
+        );
+        static const Property FUSE_TIMER(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fExplosionTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fExplosionTime);
+                return true;
+            })
+        );
+        static const Property EXPLODE_ON_CONTACT(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_bExplodeOnTouchEvent = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_bExplodeOnTouchEvent);
+                return true;
+            })
+        );
+        static const Property EXPLODE_ON_FUSE(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_bTimedExplosion = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_bTimedExplosion);
+                return true;
+            })
+        );
+        static const Property MUST_BOUNCE_BEFORE_EXPLODE(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_bBounceRequiredForExplode = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_bBounceRequiredForExplode);
+                return true;
+            })
+        );
+        static const Property FULLY_INHERIT_VELOCITY(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_bFullyInheritVelocity = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_bFullyInheritVelocity);
+                return true;
+            })
+        );
+
+        // Mines
+        static const Property MINE_DEPLOY_TIME(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+                proj->m_fDeploySeconds = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fDeploySeconds);
+                return true;
+            })
+        );
+        static const Property MINE_MAX_ALLOWED(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->m_nPerPlayerMaxDeployed = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_nPerPlayerMaxDeployed);
+                return true;
+            })
+        );
+        static const Property MINE_COLLISION_CYLINDER_RADIUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+                proj->m_fDetonationRadius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fDetonationRadius);
+                return true;
+            })
+        );
+        static const Property MINE_COLLISION_CYLINDER_HEIGHT(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Mine* proj) {
+                proj->m_fDetonationHeight = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Mine* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fDetonationHeight);
+                return true;
+            })
+        );
+        static const Property CLAYMORE_DETONATION_ANGLE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_Claymore* proj) {
+                proj->m_fDetonationAngle = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_Claymore* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fDetonationAngle);
+                return true;
+            })
+        );
+        static const Property PRISM_MINE_TRIP_DISTANCE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_PrismMine* proj) {
+                proj->m_fTripDistance = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_PrismMine* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fTripDistance);
+                return true;
+            })
+        );
+
+        // MIRV
+        static const Property MIRV_SECONDARY_EXPLOSIONS(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_MIRVLauncher* proj) {
+                proj->m_nSecondaryExplosions = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_nSecondaryExplosions);
+                return true;
+            })
+        );
+        static const Property MIRV_SECONDARY_PROJECTILE(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_MIRVLauncher* proj) {
+                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                proj->m_SecondaryProjectile = projClass;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_SecondaryProjectile->ObjectInternalInteger);
+                return true;
+            })
+        );
+
+        // Gladiator
+
+        static const Property GLADIATOR_SECONDARY_PROJECTILE(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeLauncher* proj) {
+                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                proj->m_SecondProjectile = projClass;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_SecondProjectile->ObjectInternalInteger);
+                return true;
+            })
+        );
+        static const Property GLADIATOR_TERTIARY_PROJECTILE(
+            ValueType::INTEGER,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProj_SpikeLauncher* proj) {
+                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                proj->m_ThirdProjectile = projClass;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProj_MIRVLauncher* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_ThirdProjectile->ObjectInternalInteger);
+                return true;
+            })
+        );
+
+
+        // Main mapping
+        std::map<PropId, Property> properties = {
+
+            // Damage / Impact
+            {PropId::DAMAGE, DAMAGE},
+            {PropId::EXPLOSIVE_RADIUS, EXPLOSIVE_RADIUS},
+            {PropId::DIRECT_HIT_MULTIPLIER, DIRECT_HIT_MULTIPLIER},
+            {PropId::IMPACT_MOMENTUM, IMPACT_MOMENTUM},
+            {PropId::SELF_IMPACT_MOMENTUM_MULTIPLIER, SELF_IMPACT_MOMENTUM_MULTIPLIER},
+            {PropId::SELF_IMPACT_EXTRA_Z_MOMENTUM, SELF_IMPACT_EXTRA_Z_MOMENTUM},
+            {PropId::ENERGY_DRAIN, ENERGY_DRAIN},
+            {PropId::MAX_DAMAGE_RANGE_PROPORTION, MAX_DAMAGE_RANGE_PROPORTION},
+            {PropId::MIN_DAMAGE_RANGE_PROPORTION, MIN_DAMAGE_RANGE_PROPORTION},
+            {PropId::MIN_DAMAGE_PROPORTION, MIN_DAMAGE_PROPORTION},
+            {PropId::BULLET_DAMAGE_RANGE, BULLET_DAMAGE_RANGE},
+            {PropId::DAMAGE_AGAINST_ARMOR_MULTIPLIER, DAMAGE_AGAINST_ARMOR_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_GENERATOR_MULTIPLIER, DAMAGE_AGAINST_GENERATOR_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_BASE_TURRET_MULTIPLIER, DAMAGE_AGAINST_BASE_TURRET_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_BASE_SENSOR_MULTIPLIER, DAMAGE_AGAINST_BASE_SENSOR_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_GRAVCYCLE_MULTIPLIER, DAMAGE_AGAINST_GRAVCYCLE_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_BEOWULF_MULTIPLIER, DAMAGE_AGAINST_BEOWULF_MULTIPLIER},
+            {PropId::DAMAGE_AGAINST_SHRIKE_MULTIPLIER, DAMAGE_AGAINST_SHRIKE_MULTIPLIER},
+            {PropId::DOES_GIB_ON_KILL, DOES_GIB_ON_KILL},
+            {PropId::GIB_IMPULSE_RADIUS, GIB_IMPULSE_RADIUS},
+            {PropId::GIB_STRENGTH, GIB_STRENGTH},
+            {PropId::DOES_IMPULSE_FLAG, DOES_IMPULSE_FLAG},
+            {PropId::FRACTAL_DURATION, FRACTAL_DURATION},
+            {PropId::FRACTAL_SHARD_INTERVAL, FRACTAL_SHARD_INTERVAL},
+            {PropId::FRACTAL_ASCENT_TIME, FRACTAL_ASCENT_TIME},
+            {PropId::FRACTAL_ASCENT_HEIGHT, FRACTAL_ASCENT_HEIGHT},
+            {PropId::FRACTAL_SHARD_DISTANCE, FRACTAL_SHARD_DISTANCE},
+            {PropId::FRACTAL_SHARD_HEIGHT, FRACTAL_SHARD_HEIGHT},
+            {PropId::FRACTAL_SHARD_DAMAGE, FRACTAL_SHARD_DAMAGE},
+            {PropId::FRACTAL_SHARD_DAMAGE_RADIUS, FRACTAL_SHARD_DAMAGE_RADIUS},
+
+            // Projectile / Tracer
+            {PropId::PROJECTILE_SPEED, PROJECTILE_SPEED},
+            {PropId::PROJECTILE_MAX_SPEED, PROJECTILE_MAX_SPEED},
+            {PropId::COLLISION_SIZE, COLLISION_SIZE},
+            {PropId::PROJECTILE_INHERITANCE, PROJECTILE_INHERITANCE},
+            {PropId::PROJECTILE_LIFESPAN, PROJECTILE_LIFESPAN},
+            {PropId::PROJECTILE_GRAVITY, PROJECTILE_GRAVITY},
+            {PropId::PROJECTILE_TERMINAL_VELOCITY, PROJECTILE_TERMINAL_VELOCITY},
+            {PropId::PROJECTILE_BOUNCE_DAMPING, PROJECTILE_BOUNCE_DAMPING},
+            {PropId::PROJECTILE_MESH_SCALE, PROJECTILE_MESH_SCALE},
+            {PropId::PROJECTILE_LIGHT_RADIUS, PROJECTILE_LIGHT_RADIUS},
+            {PropId::PROJECTILE_TOSS_Z, PROJECTILE_TOSS_Z},
+
+            // Grenade
+            {PropId::STUCK_DAMAGE_MULTIPLIER, STUCK_DAMAGE_MULTIPLIER},
+            {PropId::STUCK_MOMENTUM_MULTIPLIER, STUCK_MOMENTUM_MULTIPLIER},
+            {PropId::FUSE_TIMER, FUSE_TIMER},
+            {PropId::EXPLODE_ON_CONTACT, EXPLODE_ON_CONTACT},
+            {PropId::EXPLODE_ON_FUSE, EXPLODE_ON_FUSE},
+            {PropId::MUST_BOUNCE_BEFORE_EXPLODE, MUST_BOUNCE_BEFORE_EXPLODE},
+            {PropId::FULLY_INHERIT_VELOCITY, FULLY_INHERIT_VELOCITY},
+
+            // Mines
+            {PropId::MINE_DEPLOY_TIME, MINE_DEPLOY_TIME},
+            {PropId::MINE_MAX_ALLOWED, MINE_MAX_ALLOWED},
+            {PropId::MINE_COLLISION_CYLINDER_RADIUS, MINE_COLLISION_CYLINDER_RADIUS},
+            {PropId::MINE_COLLISION_CYLINDER_HEIGHT, MINE_COLLISION_CYLINDER_HEIGHT},
+            {PropId::CLAYMORE_DETONATION_ANGLE, CLAYMORE_DETONATION_ANGLE},
+            {PropId::PRISM_MINE_TRIP_DISTANCE, PRISM_MINE_TRIP_DISTANCE},
+
+            // MIRV and Gladiator
+
+            {PropId::MIRV_SECONDARY_EXPLOSIONS, MIRV_SECONDARY_EXPLOSIONS},
+            {PropId::MIRV_SECONDARY_PROJECTILE, MIRV_SECONDARY_PROJECTILE},
+            {PropId::GLADIATOR_SECONDARY_PROJECTILE, GLADIATOR_SECONDARY_PROJECTILE},
+            {PropId::GLADIATOR_TERTIARY_PROJECTILE, GLADIATOR_TERTIARY_PROJECTILE},
         };
     }
 }

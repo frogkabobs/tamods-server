@@ -80,6 +80,7 @@ namespace DCServer {
         GameBalance::Classes::ClassesConfig classProperties;
         GameBalance::Vehicles::VehiclesConfig vehicleProperties;
         GameBalance::VehicleWeapons::VehicleWeaponsConfig vehicleWeaponProperties;
+        GameBalance::Projectiles::ProjectilesConfig projectileProperties;
     private:
         void addPropValToJson(json& j, int propId, GameBalance::PropValue val) {
             switch (val.type) {
@@ -260,6 +261,7 @@ namespace DCServer {
             json jClassProps = json::object();
             json jVehicleProps = json::object();
             json jVehicleWeaponProps = json::object();
+            json jProjectileProps = json::object();
 
             for (auto& s : replicatedSettings) {
                 switch (s.second.type) {
@@ -325,6 +327,15 @@ namespace DCServer {
                 jVehicleWeaponProps[std::to_string(item.first)] = curItem;
             }
             j["vehicle_weapon_properties"] = jVehicleWeaponProps;
+
+            for (auto& item : projectileProperties) {
+                json curItem;
+                for (auto& prop : item.second) {
+                    addPropValToJson(curItem, (int)prop.first, prop.second);
+                }
+                jProjectileProps[std::to_string(item.first)] = curItem;
+            }
+            j["projectile_properties"] = jProjectileProps;
         }
 
         bool fromJson(const json& j) {
@@ -333,6 +344,7 @@ namespace DCServer {
             classProperties.clear();
             vehicleProperties.clear();
             vehicleWeaponProperties.clear();
+            projectileProperties.clear();
 
             auto& repSettingsIt = j.find("replicated_settings");
             if (repSettingsIt == j.end()) {
@@ -370,6 +382,12 @@ namespace DCServer {
             }
             json vehicleWeaponProps = j["vehicle_weapon_properties"];
 
+            auto& projectilePropsIt = j.find("projectile_properties");
+            if (projectilePropsIt == j.end()) {
+                return false;
+            }
+            json projectileProps = j["projectile_properties"];
+
             if (!readReplicatedSettings(repSettingsJson, replicatedSettings)) {
                 return false;
             }
@@ -387,6 +405,9 @@ namespace DCServer {
                 return false;
             }
             if (!readPropConfig(vehicleWeaponProps, GameBalance::VehicleWeapons::properties, vehicleWeaponProperties)) {
+                return false;
+            }
+            if (!readPropConfig(projectileProps, GameBalance::Projectiles::properties, projectileProperties)) {
                 return false;
             }
 
