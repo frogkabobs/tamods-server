@@ -136,7 +136,7 @@ static std::vector<UObject*> getDefaultObjectsForProps(int elemId) {
     }
     else if (isProjectileCase) {
         prefix = "TrProj";
-        relevantClassNames = Data::projectile_id_to_name; //CREATE THIS!!!!
+        relevantClassNames = Data::projectile_id_to_name; 
         return getDefaultObjects<ATrProjectile>(relevantClassNames, prefix, variants, elemId);
     }
 
