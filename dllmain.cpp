@@ -199,6 +199,21 @@ static void addHooks() {
     Hooks::addUScript(&TrVehicleStation_AbleToSpawnVehicleType, "Function TribesGame.TrVehicleStation.AbleToSpawnVehicleType");
     Hooks::add(&TrPlayerController_ServerRequestSpawnVehicle, "Function TribesGame.TrPlayerController.ServerRequestSpawnVehicle");
 
+    Hooks::add(&TrPlayerController_ServerSuicide, "Function TribesGame.TrPlayerController.ServerSuicide");
+    Hooks::addUScript(&TrProj_StickyGrenade_StickToTarget, "Function TribesGame.TrProj_StickyGrenade.StickToTarget");
+    Hooks::addUScript(&TrProj_Grenade_ShutDown, "Function TribesGame.TrProj_Grenade.ShutDown");
+
+    // Fix sticky MAs not registering
+    Hooks::add(&TrProjectile_Touch, "Function TribesGame.TrProjectile.Touch", Hooks::PRE, ATrProj_StickyGrenade::StaticClass());
+
+    // Allow negative damage
+    Hooks::addUScript(&TrProjectile_Explode, "Function TribesGame.TrProjectile.Explode");
+
+    Hooks::addUScript(&UTProjectile_Destroyed, "Function UTGame.UTProjectile.Destroyed");
+
+    // Fix saber passive reload
+    Hooks::addUScript(&TrDevice_SaberLauncher_OnSwitchToWeapon, "Function TribesGame.TrDevice_SaberLauncher.OnSwitchToWeapon");
+
     addStatsFunctionHooks();
 }
 

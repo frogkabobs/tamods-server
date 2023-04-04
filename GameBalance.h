@@ -203,6 +203,7 @@ namespace GameBalance {
             SPINUP_TIME = 2008,
             SHOTGUN_SHOT_COUNT = 2009,
             SHOT_ENERGY_COST = 2010,
+            TIME_BEFORE_PASSIVE_RELOAD = 2011,
 
             // Damage / Impact
             DAMAGE = 3000,
@@ -488,6 +489,9 @@ namespace GameBalance {
             ACCURACY_LOSS_ON_SHOT = 5001,
             ACCURACY_LOSS_MAX = 5004,
             ACCURACY_CORRECTION_RATE = 5005,
+
+            // Device projectile
+            DEVICE_PROJECTILE = 6000, //new
         };
 
         extern std::map<PropId, Property> properties;
@@ -545,6 +549,8 @@ namespace GameBalance {
             PROJECTILE_MESH_SCALE = 4008,
             PROJECTILE_LIGHT_RADIUS = 4009,
             PROJECTILE_TOSS_Z = 4010, //new
+            PROJECTILE_ACCEL_RATE = 4011, //new
+            PROJECTILE_BOUNCE = 4012, //new
 
             // Grenade
             THROW_DELAY = 6000,
@@ -565,11 +571,12 @@ namespace GameBalance {
             CLAYMORE_DETONATION_ANGLE = 9004,
             PRISM_MINE_TRIP_DISTANCE = 9005,
 
-            // MIRV and Gladiator
+            // Misc
             MIRV_SECONDARY_EXPLOSIONS = 10000, //new
             MIRV_SECONDARY_PROJECTILE = 10001, //new
             GLADIATOR_SECONDARY_PROJECTILE = 10002, //new
             GLADIATOR_TERTIARY_PROJECTILE = 100003, //new
+            NOVA_BOUNCES = 10004, //new
 
         };
 

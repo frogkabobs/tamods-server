@@ -1142,3 +1142,211 @@ bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObje
 
     return true;
 }
+
+bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
+    std::cout << "FUCK";
+    ATrPlayerController* that = (ATrPlayerController*)dwCallingObject;
+    ATrPawn* pawn = (ATrPawn*)that->Pawn;
+
+    for(int i = 0; i < pawn->Attached.Count; i++) {
+        std::cout << pawn->Attached.GetStd(i) << std::endl;
+    }
+
+    if(pawn) {/*
+        long long playerId = Utils::netIdToLong(pawn->PlayerReplicationInfo->UniqueId); // check if == -1?
+
+        std::cout << playerId << std::endl;
+
+        TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
+
+        std::cout << "Data found" << std::endl;
+
+        for(ATrProj_StickyGrenade* sticky : pData.attachedStickies) {
+            if (that->Role == ROLE_Authority) {
+                if(!sticky || sticky->bDeleteMe) {
+                    std::cout << "invalid pointer" << std::endl;
+                    continue;
+                }
+                std::cout << "Explode: " << sticky << std::endl;
+                std::cout << sizeof(sticky) << std::endl;
+                sticky->ExplodeFromTimeLimit();
+            }
+        }*/
+
+        for(int i = 0; i < pawn->Attached.Count; i++) {
+            AActor* stuck = pawn->Attached.GetStd(i);
+            if(stuck->IsA(ATrProj_StickyGrenade::StaticClass())) {
+                ((ATrProj_StickyGrenade*)stuck)->ExplodeFromTimeLimit();
+            }
+        }
+
+        //pData.attachedStickies.clear(); unnecessary bc the stickies get deleted in shutdown
+
+        //TenantedDataStore::playerData.set(playerId, pData);
+        if(pawn->Health > 0) {
+            that->m_bLastDeathWasUserSuicide = true;
+            pawn->Suicide();
+        }
+    }
+
+    return true;
+}
+
+// May only be necessary (and safest) to iterate through projectiles
+static ATrPlayerPawn* lowestPlayerBase(AActor* actor) {
+    if(!actor || !actor->IsA(ATrProjectile::StaticClass())) return NULL;
+    std::vector<AActor*> seen;
+    seen.push_back(actor);
+    while(seen.back() && !seen.back()->IsA(ATrPlayerPawn::StaticClass())) {
+        AActor* toAdd = seen.back()->Base;
+        if(std::find(seen.begin(), seen.end(), toAdd) != seen.end()) return NULL; // prevent circular loops
+        if(!toAdd->IsA(ATrProjectile::StaticClass())) return NULL;
+        seen.push_back(toAdd);
+    }
+    return (ATrPlayerPawn*)seen.back();
+}
+
+void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_StickyGrenade_execStickToTarget_Parms* params, bool* result) {
+    if (that->m_bHasStuckToTarget) {
+        ATrPlayerPawn* lowest = lowestPlayerBase(that);
+        if(lowest) that->ImpactedActor = lowest; // HACK: undo processtouch changing impactedactor when already stuck
+		*result = false;
+        std::cout << "False return1" << std::endl;
+        return;
+    }
+	if( that->ATrProj_Grenade::StickToTarget(params->Target, params->HitLocation, params->HitNormal) ) {
+        AActor* target = params->Target;
+
+        // give direct hit if it sticks to something already stuck to the player (e.g. jackal)
+        ATrPlayerPawn* lowest = lowestPlayerBase(target);
+        if(lowest) that->ImpactedActor = lowest;
+        if(target && target->IsA(ATrPawn::StaticClass())) {
+            ATrPawn* pawn = (ATrPawn*)target;
+            std::cout << "stick" << std::endl;
+            for(int i = 0; i < pawn->Attached.Count; i++) {
+                std::cout << pawn->Attached.GetStd(i) << std::endl;
+            }
+            long long playerId = Utils::netIdToLong(pawn->PlayerReplicationInfo->UniqueId); // check if == -1?
+            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
+            pData.attachedStickies.push_back(that);
+            TenantedDataStore::playerData.set(playerId, pData);
+            TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(that);
+            sData.attached = playerId;
+            TenantedDataStore::stickyData.set(that, sData);
+            std::cout << "Stick: " << that << std::endl;
+        }
+		that->m_bHasStuckToTarget = true;
+		*result = true;
+        std::cout << "True return" << std::endl;
+        return;
+	}
+	*result = false;
+    std::cout << "False return2" << std::endl;
+    return;
+}
+    
+// Prevent bug where stickies are no longer a direct hit if the stuck player passes through another hitbox
+bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
+    ATrProj_StickyGrenade* that = (ATrProj_StickyGrenade*)dwCallingObject;
+    return that->m_bHasStuckToTarget;
+}
+
+void TrProj_Grenade_ShutDown(ATrProj_Grenade* that, ATrProj_Grenade_execShutDown_Parms* params) {
+    std::cout << "Shutdown!" << std::endl;/*
+    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
+        std::cout << "Deleting data...." << std::endl;
+        ATrProj_StickyGrenade* sticky = (ATrProj_StickyGrenade*)that;
+        TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(sticky);
+        if(sData.attached) {
+            long long playerId = sData.attached;
+            TenantedDataStore::stickyData.remove(sticky);
+            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
+            std::cout << pData.attachedStickies.size() << std::endl;
+            remove(pData.attachedStickies.begin(), pData.attachedStickies.end(), sticky);
+            std::cout << pData.attachedStickies.size() << std::endl;
+            TenantedDataStore::playerData.set(playerId, pData);
+        } else {
+            std::cout << "No Attachment!" << std::endl;
+        }
+        
+    }*/
+    that->ShutDown();
+}
+
+
+// Allow negative damage projectiles
+
+void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* params) {
+    std::cout << "Proj explode" << std::endl;
+    
+	if (that->bShuttingDown) return;
+
+	if( that->c_ChildTetheredProjectile) {
+        that->Explode(params->HitLocation, params->HitNormal);
+        return;
+    }
+    /*
+    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
+        std::cout << "Deleting data...." << std::endl;
+        ATrProj_StickyGrenade* sticky = (ATrProj_StickyGrenade*)that;
+        TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(sticky);
+        if(sData.attached) {
+            long long playerId = sData.attached;
+            TenantedDataStore::stickyData.remove(sticky);
+            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
+            std::cout << pData.attachedStickies.size() << std::endl;
+            remove(pData.attachedStickies.begin(), pData.attachedStickies.end(), sticky);
+            std::cout << pData.attachedStickies.size() << std::endl;
+            TenantedDataStore::playerData.set(playerId, pData);
+        } else {
+            std::cout << "No Attachment!" << std::endl;
+        }
+        
+    }
+    */
+	if( that->m_bFastProjectile )
+	{
+		if (that->Damage < 0 && that->DamageRadius>0)
+		{
+			if ( that->Role == ROLE_Authority )
+			{
+				that->MakeNoise(1.0f, NULL);
+			}
+			
+			if( that->Role == ROLE_Authority && that->WorldInfo->NetMode != NM_Client )
+			{
+				that->ProjectileHurtRadius(params->HitLocation, params->HitNormal );
+			}
+		}
+	}
+	else
+	{
+        std::cout << "Proj explode2" << std::endl;
+		if( that->Damage < 0 )
+		{
+            std::cout << "Proj explode3" << std::endl;
+			if ( that->Role == ROLE_Authority )
+				that->MakeNoise(1.0f, NULL);
+			if ( !that->bShuttingDown )
+			{
+				that->ProjectileHurtRadius(params->HitLocation, params->HitNormal );
+			}
+		}
+	}
+    that->Explode(params->HitLocation, params->HitNormal);
+}
+
+void UTProjectile_Destroyed(AUTProjectile* that, AUTProjectile_execDestroyed_Parms* params) {
+    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
+        std::cout << "Destroyed" << std::endl;
+    }
+    std::cout << "Destroyed2" << std::endl;
+    that->Destroyed();
+}
+
+void TrDevice_SaberLauncher_OnSwitchToWeapon(ATrDevice_SaberLauncher* that, ATrDevice_SaberLauncher_execOnSwitchToWeapon_Parms* params) {
+    that->ATrDevice::OnSwitchToWeapon();
+    that->ResumeTargeting();
+}
+
+

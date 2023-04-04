@@ -28967,7 +28967,7 @@ void ATrMineCollisionProxy::OnPawnRemoved ( class APawn* aPawn )
     static UFunction* pFnOnPawnRemoved = NULL;
 
     if ( ! pFnOnPawnRemoved )
-        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 102652 ];
+        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 102651 ];
 
     ATrMineCollisionProxy_execOnPawnRemoved_Parms OnPawnRemoved_Parms;
     OnPawnRemoved_Parms.aPawn = aPawn;
@@ -28985,7 +28985,7 @@ void ATrMineCollisionProxy::OnPawnAdded ( class APawn* aPawn )
     static UFunction* pFnOnPawnAdded = NULL;
 
     if ( ! pFnOnPawnAdded )
-        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 102649 ];
+        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 102648 ];
 
     ATrMineCollisionProxy_execOnPawnAdded_Parms OnPawnAdded_Parms;
     OnPawnAdded_Parms.aPawn = aPawn;
@@ -29006,7 +29006,7 @@ void ATrProximityGrenadeCollisionProxy::eventTouch ( class AActor* Other, class 
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 115853 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 115852 ];
 
     ATrProximityGrenadeCollisionProxy_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -29027,7 +29027,7 @@ void ATrProximityGrenadeCollisionProxy::OnPawnRemoved ( class APawn* aPawn )
     static UFunction* pFnOnPawnRemoved = NULL;
 
     if ( ! pFnOnPawnRemoved )
-        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 115850 ];
+        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 115849 ];
 
     ATrProximityGrenadeCollisionProxy_execOnPawnRemoved_Parms OnPawnRemoved_Parms;
     OnPawnRemoved_Parms.aPawn = aPawn;
@@ -29045,7 +29045,7 @@ void ATrProximityGrenadeCollisionProxy::OnPawnAdded ( class APawn* aPawn )
     static UFunction* pFnOnPawnAdded = NULL;
 
     if ( ! pFnOnPawnAdded )
-        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 115847 ];
+        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 115846 ];
 
     ATrProximityGrenadeCollisionProxy_execOnPawnAdded_Parms OnPawnAdded_Parms;
     OnPawnAdded_Parms.aPawn = aPawn;
@@ -33123,7 +33123,7 @@ void ATrDevice_ConstantFire::PlayFireAnimation ( unsigned char FireModeNum )
     static UFunction* pFnPlayFireAnimation = NULL;
 
     if ( ! pFnPlayFireAnimation )
-        pFnPlayFireAnimation = (UFunction*) UObject::GObjObjects()->Data[ 85148 ];
+        pFnPlayFireAnimation = (UFunction*) UObject::GObjObjects()->Data[ 85147 ];
 
     ATrDevice_ConstantFire_execPlayFireAnimation_Parms PlayFireAnimation_Parms;
     PlayFireAnimation_Parms.FireModeNum = FireModeNum;
@@ -33141,7 +33141,7 @@ void ATrDevice_ConstantFire::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 85130 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 85129 ];
 
     ATrDevice_ConstantFire_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -33159,7 +33159,7 @@ void ATrDevice_ConstantFire::EndFire ( unsigned char FireModeNum )
     static UFunction* pFnEndFire = NULL;
 
     if ( ! pFnEndFire )
-        pFnEndFire = (UFunction*) UObject::GObjObjects()->Data[ 85128 ];
+        pFnEndFire = (UFunction*) UObject::GObjObjects()->Data[ 85127 ];
 
     ATrDevice_ConstantFire_execEndFire_Parms EndFire_Parms;
     EndFire_Parms.FireModeNum = FireModeNum;
@@ -33176,7 +33176,7 @@ void ATrDevice_ConstantFire::OnTickConstantFire ( )
     static UFunction* pFnOnTickConstantFire = NULL;
 
     if ( ! pFnOnTickConstantFire )
-        pFnOnTickConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85127 ];
+        pFnOnTickConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85126 ];
 
     ATrDevice_ConstantFire_execOnTickConstantFire_Parms OnTickConstantFire_Parms;
 
@@ -33192,7 +33192,7 @@ void ATrDevice_ConstantFire::OnStartConstantFire ( )
     static UFunction* pFnOnStartConstantFire = NULL;
 
     if ( ! pFnOnStartConstantFire )
-        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85126 ];
+        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85125 ];
 
     ATrDevice_ConstantFire_execOnStartConstantFire_Parms OnStartConstantFire_Parms;
 
@@ -33208,7 +33208,7 @@ void ATrDevice_ConstantFire::OnEndConstantFire ( )
     static UFunction* pFnOnEndConstantFire = NULL;
 
     if ( ! pFnOnEndConstantFire )
-        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85125 ];
+        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85124 ];
 
     ATrDevice_ConstantFire_execOnEndConstantFire_Parms OnEndConstantFire_Parms;
 
@@ -33225,7 +33225,7 @@ void ATrDevice_ConstantFire::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 85123 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 85122 ];
 
     ATrDevice_ConstantFire_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -34243,7 +34243,7 @@ void UTrDmgType_Base::GetCameraShake ( int Damage, struct FName* outCameraShakeN
     static UFunction* pFnGetCameraShake = NULL;
 
     if ( ! pFnGetCameraShake )
-        pFnGetCameraShake = (UFunction*) UObject::GObjObjects()->Data[ 86950 ];
+        pFnGetCameraShake = (UFunction*) UObject::GObjObjects()->Data[ 86949 ];
 
     UTrDmgType_Base_execGetCameraShake_Parms GetCameraShake_Parms;
     GetCameraShake_Parms.Damage = Damage;
@@ -34368,7 +34368,7 @@ float UTrDmgType_Base::VehicleDamageScalingFor ( class AVehicle* V )
     static UFunction* pFnVehicleDamageScalingFor = NULL;
 
     if ( ! pFnVehicleDamageScalingFor )
-        pFnVehicleDamageScalingFor = (UFunction*) UObject::GObjObjects()->Data[ 86921 ];
+        pFnVehicleDamageScalingFor = (UFunction*) UObject::GObjObjects()->Data[ 86920 ];
 
     UTrDmgType_Base_execVehicleDamageScalingFor_Parms VehicleDamageScalingFor_Parms;
     VehicleDamageScalingFor_Parms.V = V;
@@ -34389,7 +34389,7 @@ class UMaterial* UTrEffectForm::GetMatApplyToAttachment ( class UClass* attClass
     static UFunction* pFnGetMatApplyToAttachment = NULL;
 
     if ( ! pFnGetMatApplyToAttachment )
-        pFnGetMatApplyToAttachment = (UFunction*) UObject::GObjObjects()->Data[ 87746 ];
+        pFnGetMatApplyToAttachment = (UFunction*) UObject::GObjObjects()->Data[ 87745 ];
 
     UTrEffectForm_execGetMatApplyToAttachment_Parms GetMatApplyToAttachment_Parms;
     GetMatApplyToAttachment_Parms.attClass = attClass;
@@ -34410,7 +34410,7 @@ class UMaterial* UTrEffectForm::GetMatApplyToWeapon ( class UClass* devClass )
     static UFunction* pFnGetMatApplyToWeapon = NULL;
 
     if ( ! pFnGetMatApplyToWeapon )
-        pFnGetMatApplyToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 87743 ];
+        pFnGetMatApplyToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 87742 ];
 
     UTrEffectForm_execGetMatApplyToWeapon_Parms GetMatApplyToWeapon_Parms;
     GetMatApplyToWeapon_Parms.devClass = devClass;
@@ -34431,7 +34431,7 @@ class UMaterial* UTrEffectForm::GetMatApplyToPawn ( class UClass* PawnClass )
     static UFunction* pFnGetMatApplyToPawn = NULL;
 
     if ( ! pFnGetMatApplyToPawn )
-        pFnGetMatApplyToPawn = (UFunction*) UObject::GObjObjects()->Data[ 87740 ];
+        pFnGetMatApplyToPawn = (UFunction*) UObject::GObjObjects()->Data[ 87739 ];
 
     UTrEffectForm_execGetMatApplyToPawn_Parms GetMatApplyToPawn_Parms;
     GetMatApplyToPawn_Parms.PawnClass = PawnClass;
@@ -34452,7 +34452,7 @@ class UMaterial* UTrEffectForm::GetOverwriteMat ( TArray< struct FEffectFormOver
     static UFunction* pFnGetOverwriteMat = NULL;
 
     if ( ! pFnGetOverwriteMat )
-        pFnGetOverwriteMat = (UFunction*) UObject::GObjObjects()->Data[ 87735 ];
+        pFnGetOverwriteMat = (UFunction*) UObject::GObjObjects()->Data[ 87734 ];
 
     UTrEffectForm_execGetOverwriteMat_Parms GetOverwriteMat_Parms;
     memcpy ( &GetOverwriteMat_Parms.List, &List, 0xC );
@@ -34471,7 +34471,7 @@ void ATrEmitCameraEffect_Speed::Deactivate ( )
     static UFunction* pFnDeactivate = NULL;
 
     if ( ! pFnDeactivate )
-        pFnDeactivate = (UFunction*) UObject::GObjObjects()->Data[ 87761 ];
+        pFnDeactivate = (UFunction*) UObject::GObjObjects()->Data[ 87760 ];
 
     ATrEmitCameraEffect_Speed_execDeactivate_Parms Deactivate_Parms;
 
@@ -34487,7 +34487,7 @@ void ATrEmitCameraEffect_Speed::Activate ( )
     static UFunction* pFnActivate = NULL;
 
     if ( ! pFnActivate )
-        pFnActivate = (UFunction*) UObject::GObjObjects()->Data[ 87760 ];
+        pFnActivate = (UFunction*) UObject::GObjObjects()->Data[ 87759 ];
 
     ATrEmitCameraEffect_Speed_execActivate_Parms Activate_Parms;
 
@@ -34506,7 +34506,7 @@ void ATrEmitCameraEffect_Speed::UpdateLocation ( float CamFOVDeg, struct FVector
     static UFunction* pFnUpdateLocation = NULL;
 
     if ( ! pFnUpdateLocation )
-        pFnUpdateLocation = (UFunction*) UObject::GObjObjects()->Data[ 87756 ];
+        pFnUpdateLocation = (UFunction*) UObject::GObjObjects()->Data[ 87755 ];
 
     ATrEmitCameraEffect_Speed_execUpdateLocation_Parms UpdateLocation_Parms;
     UpdateLocation_Parms.CamFOVDeg = CamFOVDeg;
@@ -34533,7 +34533,7 @@ void ATrEntryGame::eventOnEngineHasLoaded ( )
     static UFunction* pFnOnEngineHasLoaded = NULL;
 
     if ( ! pFnOnEngineHasLoaded )
-        pFnOnEngineHasLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87792 ];
+        pFnOnEngineHasLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87791 ];
 
     ATrEntryGame_eventOnEngineHasLoaded_Parms OnEngineHasLoaded_Parms;
 
@@ -34553,7 +34553,7 @@ class UClass* ATrEntryGame::eventSetGameType ( struct FString MapName, struct FS
     static UFunction* pFnSetGameType = NULL;
 
     if ( ! pFnSetGameType )
-        pFnSetGameType = (UFunction*) UObject::GObjObjects()->Data[ 87787 ];
+        pFnSetGameType = (UFunction*) UObject::GObjObjects()->Data[ 87786 ];
 
     ATrEntryGame_eventSetGameType_Parms SetGameType_Parms;
     memcpy ( &SetGameType_Parms.MapName, &MapName, 0xC );
@@ -34574,7 +34574,7 @@ void ATrEntryGame::SendMenuEngineLoaded ( )
     static UFunction* pFnSendMenuEngineLoaded = NULL;
 
     if ( ! pFnSendMenuEngineLoaded )
-        pFnSendMenuEngineLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87786 ];
+        pFnSendMenuEngineLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87785 ];
 
     ATrEntryGame_execSendMenuEngineLoaded_Parms SendMenuEngineLoaded_Parms;
 
@@ -34594,7 +34594,7 @@ void ATrEntryHUD::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87794 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87793 ];
 
     ATrEntryHUD_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -34610,7 +34610,7 @@ void ATrEntryHUD::CreateMainMenu ( )
     static UFunction* pFnCreateMainMenu = NULL;
 
     if ( ! pFnCreateMainMenu )
-        pFnCreateMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87793 ];
+        pFnCreateMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87792 ];
 
     ATrEntryHUD_execCreateMainMenu_Parms CreateMainMenu_Parms;
 
@@ -34630,7 +34630,7 @@ void UTrEquipInterface::InitClassList ( )
     static UFunction* pFnInitClassList = NULL;
 
     if ( ! pFnInitClassList )
-        pFnInitClassList = (UFunction*) UObject::GObjObjects()->Data[ 88101 ];
+        pFnInitClassList = (UFunction*) UObject::GObjObjects()->Data[ 88100 ];
 
     UTrEquipInterface_execInitClassList_Parms InitClassList_Parms;
 
@@ -34646,7 +34646,7 @@ void UTrEquipInterface::InitEquipManager ( )
     static UFunction* pFnInitEquipManager = NULL;
 
     if ( ! pFnInitEquipManager )
-        pFnInitEquipManager = (UFunction*) UObject::GObjObjects()->Data[ 88100 ];
+        pFnInitEquipManager = (UFunction*) UObject::GObjObjects()->Data[ 88099 ];
 
     UTrEquipInterface_execInitEquipManager_Parms InitEquipManager_Parms;
 
@@ -35025,7 +35025,7 @@ void UTrEquipInterface::SaveProfile ( )
     static UFunction* pFnSaveProfile = NULL;
 
     if ( ! pFnSaveProfile )
-        pFnSaveProfile = (UFunction*) UObject::GObjObjects()->Data[ 88071 ];
+        pFnSaveProfile = (UFunction*) UObject::GObjObjects()->Data[ 88070 ];
 
     UTrEquipInterface_execSaveProfile_Parms SaveProfile_Parms;
 
@@ -35051,7 +35051,7 @@ bool UTrEquipInterface::RequestPurchaseUpgrade ( int ClassId, int Type, int equi
     static UFunction* pFnRequestPurchaseUpgrade = NULL;
 
     if ( ! pFnRequestPurchaseUpgrade )
-        pFnRequestPurchaseUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 88064 ];
+        pFnRequestPurchaseUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 88063 ];
 
     UTrEquipInterface_execRequestPurchaseUpgrade_Parms RequestPurchaseUpgrade_Parms;
     RequestPurchaseUpgrade_Parms.ClassId = ClassId;
@@ -35083,7 +35083,7 @@ bool UTrEquipInterface::RequestPurchaseReticule ( int ClassId, int Type, int equ
     static UFunction* pFnRequestPurchaseReticule = NULL;
 
     if ( ! pFnRequestPurchaseReticule )
-        pFnRequestPurchaseReticule = (UFunction*) UObject::GObjObjects()->Data[ 88058 ];
+        pFnRequestPurchaseReticule = (UFunction*) UObject::GObjObjects()->Data[ 88057 ];
 
     UTrEquipInterface_execRequestPurchaseReticule_Parms RequestPurchaseReticule_Parms;
     RequestPurchaseReticule_Parms.ClassId = ClassId;
@@ -35231,7 +35231,7 @@ int UTrEquipInterface::GetUpgradePrice ( int ClassId, int Type, int equip, int U
     static UFunction* pFnGetUpgradePrice = NULL;
 
     if ( ! pFnGetUpgradePrice )
-        pFnGetUpgradePrice = (UFunction*) UObject::GObjObjects()->Data[ 88039 ];
+        pFnGetUpgradePrice = (UFunction*) UObject::GObjObjects()->Data[ 88038 ];
 
     UTrEquipInterface_execGetUpgradePrice_Parms GetUpgradePrice_Parms;
     GetUpgradePrice_Parms.ClassId = ClassId;
@@ -35380,7 +35380,7 @@ void UTrEquipInterface::RetrieveActives ( )
     static UFunction* pFnRetrieveActives = NULL;
 
     if ( ! pFnRetrieveActives )
-        pFnRetrieveActives = (UFunction*) UObject::GObjObjects()->Data[ 88023 ];
+        pFnRetrieveActives = (UFunction*) UObject::GObjObjects()->Data[ 88022 ];
 
     UTrEquipInterface_execRetrieveActives_Parms RetrieveActives_Parms;
 
@@ -35495,7 +35495,7 @@ int UTrEquipInterface::GetDailyDealOldPrice ( )
     static UFunction* pFnGetDailyDealOldPrice = NULL;
 
     if ( ! pFnGetDailyDealOldPrice )
-        pFnGetDailyDealOldPrice = (UFunction*) UObject::GObjObjects()->Data[ 88020 ];
+        pFnGetDailyDealOldPrice = (UFunction*) UObject::GObjObjects()->Data[ 88019 ];
 
     UTrEquipInterface_execGetDailyDealOldPrice_Parms GetDailyDealOldPrice_Parms;
 
@@ -35541,7 +35541,7 @@ int UTrEquipInterface::GetDailyDealLootId ( )
     static UFunction* pFnGetDailyDealLootId = NULL;
 
     if ( ! pFnGetDailyDealLootId )
-        pFnGetDailyDealLootId = (UFunction*) UObject::GObjObjects()->Data[ 88018 ];
+        pFnGetDailyDealLootId = (UFunction*) UObject::GObjObjects()->Data[ 88017 ];
 
     UTrEquipInterface_execGetDailyDealLootId_Parms GetDailyDealLootId_Parms;
 
@@ -35610,7 +35610,7 @@ int UTrEquipInterface::GetDailyDealType ( )
     static UFunction* pFnGetDailyDealType = NULL;
 
     if ( ! pFnGetDailyDealType )
-        pFnGetDailyDealType = (UFunction*) UObject::GObjObjects()->Data[ 88016 ];
+        pFnGetDailyDealType = (UFunction*) UObject::GObjObjects()->Data[ 88015 ];
 
     UTrEquipInterface_execGetDailyDealType_Parms GetDailyDealType_Parms;
 
@@ -35906,7 +35906,7 @@ int UTrEquipInterface::GetEquipRibbon ( int ClassId, int Type, int equip )
     static UFunction* pFnGetEquipRibbon = NULL;
 
     if ( ! pFnGetEquipRibbon )
-        pFnGetEquipRibbon = (UFunction*) UObject::GObjObjects()->Data[ 87991 ];
+        pFnGetEquipRibbon = (UFunction*) UObject::GObjObjects()->Data[ 87990 ];
 
     UTrEquipInterface_execGetEquipRibbon_Parms GetEquipRibbon_Parms;
     GetEquipRibbon_Parms.ClassId = ClassId;
@@ -36025,7 +36025,7 @@ int UTrEquipInterface::GetEquipCount ( int ClassId, int Type )
     static UFunction* pFnGetEquipCount = NULL;
 
     if ( ! pFnGetEquipCount )
-        pFnGetEquipCount = (UFunction*) UObject::GObjObjects()->Data[ 87976 ];
+        pFnGetEquipCount = (UFunction*) UObject::GObjObjects()->Data[ 87975 ];
 
     UTrEquipInterface_execGetEquipCount_Parms GetEquipCount_Parms;
     GetEquipCount_Parms.ClassId = ClassId;
@@ -36246,7 +36246,7 @@ int UTrEquipInterface::GetClassRibbon ( int ClassId )
     static UFunction* pFnGetClassRibbon = NULL;
 
     if ( ! pFnGetClassRibbon )
-        pFnGetClassRibbon = (UFunction*) UObject::GObjObjects()->Data[ 87956 ];
+        pFnGetClassRibbon = (UFunction*) UObject::GObjObjects()->Data[ 87955 ];
 
     UTrEquipInterface_execGetClassRibbon_Parms GetClassRibbon_Parms;
     GetClassRibbon_Parms.ClassId = ClassId;
@@ -36322,7 +36322,7 @@ int UTrEquipInterface::GetClassCount ( )
     static UFunction* pFnGetClassCount = NULL;
 
     if ( ! pFnGetClassCount )
-        pFnGetClassCount = (UFunction*) UObject::GObjObjects()->Data[ 87951 ];
+        pFnGetClassCount = (UFunction*) UObject::GObjObjects()->Data[ 87950 ];
 
     UTrEquipInterface_execGetClassCount_Parms GetClassCount_Parms;
 
@@ -36396,7 +36396,7 @@ bool UTrEquipInterface::RegisterMarshalCallback ( struct FScriptDelegate Marshal
     static UFunction* pFnRegisterMarshalCallback = NULL;
 
     if ( ! pFnRegisterMarshalCallback )
-        pFnRegisterMarshalCallback = (UFunction*) UObject::GObjObjects()->Data[ 87946 ];
+        pFnRegisterMarshalCallback = (UFunction*) UObject::GObjObjects()->Data[ 87945 ];
 
     UTrEquipInterface_execRegisterMarshalCallback_Parms RegisterMarshalCallback_Parms;
     memcpy ( &RegisterMarshalCallback_Parms.MarshalEventDelegate, &MarshalEventDelegate, 0xC );
@@ -36420,7 +36420,7 @@ void UTrEquipInterface::OnMarshalEvent ( struct FPointer pMarEvent )
     static UFunction* pFnOnMarshalEvent = NULL;
 
     if ( ! pFnOnMarshalEvent )
-        pFnOnMarshalEvent = (UFunction*) UObject::GObjObjects()->Data[ 87944 ];
+        pFnOnMarshalEvent = (UFunction*) UObject::GObjObjects()->Data[ 87943 ];
 
     UTrEquipInterface_execOnMarshalEvent_Parms OnMarshalEvent_Parms;
     memcpy ( &OnMarshalEvent_Parms.pMarEvent, &pMarEvent, 0x4 );
@@ -36445,7 +36445,7 @@ void UTrEquipInterface::SetDefaultEquip ( int ClassId, int Type, int equip, unsi
     static UFunction* pFnSetDefaultEquip = NULL;
 
     if ( ! pFnSetDefaultEquip )
-        pFnSetDefaultEquip = (UFunction*) UObject::GObjObjects()->Data[ 87939 ];
+        pFnSetDefaultEquip = (UFunction*) UObject::GObjObjects()->Data[ 87938 ];
 
     UTrEquipInterface_execSetDefaultEquip_Parms SetDefaultEquip_Parms;
     SetDefaultEquip_Parms.ClassId = ClassId;
@@ -36470,7 +36470,7 @@ void UTrEquipInterface::InitClass ( int ClassId )
     static UFunction* pFnInitClass = NULL;
 
     if ( ! pFnInitClass )
-        pFnInitClass = (UFunction*) UObject::GObjObjects()->Data[ 87937 ];
+        pFnInitClass = (UFunction*) UObject::GObjObjects()->Data[ 87936 ];
 
     UTrEquipInterface_execInitClass_Parms InitClass_Parms;
     InitClass_Parms.ClassId = ClassId;
@@ -36491,7 +36491,7 @@ void UTrEquipInterface::LoadInventory ( )
     static UFunction* pFnLoadInventory = NULL;
 
     if ( ! pFnLoadInventory )
-        pFnLoadInventory = (UFunction*) UObject::GObjObjects()->Data[ 87936 ];
+        pFnLoadInventory = (UFunction*) UObject::GObjObjects()->Data[ 87935 ];
 
     UTrEquipInterface_execLoadInventory_Parms LoadInventory_Parms;
 
@@ -36512,7 +36512,7 @@ void UTrEquipInterface::DelegateOnMarshalEvent ( struct FPointer pMarEvent )
     static UFunction* pFnDelegateOnMarshalEvent = NULL;
 
     if ( ! pFnDelegateOnMarshalEvent )
-        pFnDelegateOnMarshalEvent = (UFunction*) UObject::GObjObjects()->Data[ 87933 ];
+        pFnDelegateOnMarshalEvent = (UFunction*) UObject::GObjObjects()->Data[ 87932 ];
 
     UTrEquipInterface_execDelegateOnMarshalEvent_Parms DelegateOnMarshalEvent_Parms;
     memcpy ( &DelegateOnMarshalEvent_Parms.pMarEvent, &pMarEvent, 0x4 );
@@ -36531,7 +36531,7 @@ struct FString UTrFamilyInfo::GetContentDeviceClassStringByEquipPoint ( unsigned
     static UFunction* pFnGetContentDeviceClassStringByEquipPoint = NULL;
 
     if ( ! pFnGetContentDeviceClassStringByEquipPoint )
-        pFnGetContentDeviceClassStringByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 88213 ];
+        pFnGetContentDeviceClassStringByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 88212 ];
 
     UTrFamilyInfo_execGetContentDeviceClassStringByEquipPoint_Parms GetContentDeviceClassStringByEquipPoint_Parms;
     GetContentDeviceClassStringByEquipPoint_Parms.equipPoint = equipPoint;
@@ -36552,7 +36552,7 @@ class UClass* UTrFamilyInfo::GetDeviceClassByEquipPoint ( unsigned char equipPoi
     static UFunction* pFnGetDeviceClassByEquipPoint = NULL;
 
     if ( ! pFnGetDeviceClassByEquipPoint )
-        pFnGetDeviceClassByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 88209 ];
+        pFnGetDeviceClassByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 88208 ];
 
     UTrFamilyInfo_execGetDeviceClassByEquipPoint_Parms GetDeviceClassByEquipPoint_Parms;
     GetDeviceClassByEquipPoint_Parms.equipPoint = equipPoint;
@@ -36571,7 +36571,7 @@ void ATrFlagBase::UpdatePhysicsProperties ( )
     static UFunction* pFnUpdatePhysicsProperties = NULL;
 
     if ( ! pFnUpdatePhysicsProperties )
-        pFnUpdatePhysicsProperties = (UFunction*) UObject::GObjObjects()->Data[ 90540 ];
+        pFnUpdatePhysicsProperties = (UFunction*) UObject::GObjObjects()->Data[ 90539 ];
 
     ATrFlagBase_execUpdatePhysicsProperties_Parms UpdatePhysicsProperties_Parms;
 
@@ -36588,7 +36588,7 @@ void ATrFlagBase::OnCollisionProxyTouched ( class ATrPawn* TRP )
     static UFunction* pFnOnCollisionProxyTouched = NULL;
 
     if ( ! pFnOnCollisionProxyTouched )
-        pFnOnCollisionProxyTouched = (UFunction*) UObject::GObjObjects()->Data[ 90538 ];
+        pFnOnCollisionProxyTouched = (UFunction*) UObject::GObjObjects()->Data[ 90537 ];
 
     ATrFlagBase_execOnCollisionProxyTouched_Parms OnCollisionProxyTouched_Parms;
     OnCollisionProxyTouched_Parms.TRP = TRP;
@@ -36606,7 +36606,7 @@ struct FString ATrFlagBase::GetSpectatorDescription ( )
     static UFunction* pFnGetSpectatorDescription = NULL;
 
     if ( ! pFnGetSpectatorDescription )
-        pFnGetSpectatorDescription = (UFunction*) UObject::GObjObjects()->Data[ 90536 ];
+        pFnGetSpectatorDescription = (UFunction*) UObject::GObjObjects()->Data[ 90535 ];
 
     ATrFlagBase_execGetSpectatorDescription_Parms GetSpectatorDescription_Parms;
 
@@ -36625,7 +36625,7 @@ struct FString ATrFlagBase::GetSpectatorName ( )
     static UFunction* pFnGetSpectatorName = NULL;
 
     if ( ! pFnGetSpectatorName )
-        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90534 ];
+        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90533 ];
 
     ATrFlagBase_execGetSpectatorName_Parms GetSpectatorName_Parms;
 
@@ -36646,7 +36646,7 @@ void ATrFlagBase::DisplayDebug ( class AHUD* HUD, float* out_YL, float* out_YPos
     static UFunction* pFnDisplayDebug = NULL;
 
     if ( ! pFnDisplayDebug )
-        pFnDisplayDebug = (UFunction*) UObject::GObjObjects()->Data[ 90529 ];
+        pFnDisplayDebug = (UFunction*) UObject::GObjObjects()->Data[ 90528 ];
 
     ATrFlagBase_execDisplayDebug_Parms DisplayDebug_Parms;
     DisplayDebug_Parms.HUD = HUD;
@@ -36673,7 +36673,7 @@ void ATrFlagBase::eventPostRenderFor ( class APlayerController* PC, class UCanva
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 90513 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 90512 ];
 
     ATrFlagBase_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -36693,7 +36693,7 @@ void ATrFlagBase::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 90511 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 90510 ];
 
     ATrFlagBase_eventDestroyed_Parms Destroyed_Parms;
 
@@ -36709,7 +36709,7 @@ void ATrFlagBase::SetFlagDynamicLightToNotBeDynamic ( )
     static UFunction* pFnSetFlagDynamicLightToNotBeDynamic = NULL;
 
     if ( ! pFnSetFlagDynamicLightToNotBeDynamic )
-        pFnSetFlagDynamicLightToNotBeDynamic = (UFunction*) UObject::GObjObjects()->Data[ 90510 ];
+        pFnSetFlagDynamicLightToNotBeDynamic = (UFunction*) UObject::GObjObjects()->Data[ 90509 ];
 
     ATrFlagBase_execSetFlagDynamicLightToNotBeDynamic_Parms SetFlagDynamicLightToNotBeDynamic_Parms;
 
@@ -36725,7 +36725,7 @@ void ATrFlagBase::SetFlagPropertiesToStationaryFlagState ( )
     static UFunction* pFnSetFlagPropertiesToStationaryFlagState = NULL;
 
     if ( ! pFnSetFlagPropertiesToStationaryFlagState )
-        pFnSetFlagPropertiesToStationaryFlagState = (UFunction*) UObject::GObjObjects()->Data[ 90509 ];
+        pFnSetFlagPropertiesToStationaryFlagState = (UFunction*) UObject::GObjObjects()->Data[ 90508 ];
 
     ATrFlagBase_execSetFlagPropertiesToStationaryFlagState_Parms SetFlagPropertiesToStationaryFlagState_Parms;
 
@@ -36743,7 +36743,7 @@ void ATrFlagBase::eventDrop ( class AController* Killer, unsigned long bNoThrow 
     static UFunction* pFnDrop = NULL;
 
     if ( ! pFnDrop )
-        pFnDrop = (UFunction*) UObject::GObjObjects()->Data[ 90499 ];
+        pFnDrop = (UFunction*) UObject::GObjObjects()->Data[ 90498 ];
 
     ATrFlagBase_eventDrop_Parms Drop_Parms;
     Drop_Parms.Killer = Killer;
@@ -36762,7 +36762,7 @@ void ATrFlagBase::eventEncroachedBy ( class AActor* Other )
     static UFunction* pFnEncroachedBy = NULL;
 
     if ( ! pFnEncroachedBy )
-        pFnEncroachedBy = (UFunction*) UObject::GObjObjects()->Data[ 90497 ];
+        pFnEncroachedBy = (UFunction*) UObject::GObjObjects()->Data[ 90496 ];
 
     ATrFlagBase_eventEncroachedBy_Parms EncroachedBy_Parms;
     EncroachedBy_Parms.Other = Other;
@@ -36781,7 +36781,7 @@ void ATrFlagBase::eventLanded ( struct FVector HitNormal, class AActor* FloorAct
     static UFunction* pFnLanded = NULL;
 
     if ( ! pFnLanded )
-        pFnLanded = (UFunction*) UObject::GObjObjects()->Data[ 90489 ];
+        pFnLanded = (UFunction*) UObject::GObjObjects()->Data[ 90488 ];
 
     ATrFlagBase_eventLanded_Parms Landed_Parms;
     memcpy ( &Landed_Parms.HitNormal, &HitNormal, 0xC );
@@ -36799,7 +36799,7 @@ void ATrFlagBase::CustomFadeOutEffects ( )
     static UFunction* pFnCustomFadeOutEffects = NULL;
 
     if ( ! pFnCustomFadeOutEffects )
-        pFnCustomFadeOutEffects = (UFunction*) UObject::GObjObjects()->Data[ 90454 ];
+        pFnCustomFadeOutEffects = (UFunction*) UObject::GObjObjects()->Data[ 90453 ];
 
     ATrFlagBase_execCustomFadeOutEffects_Parms CustomFadeOutEffects_Parms;
 
@@ -36815,7 +36815,7 @@ void ATrFlagBase::bringUpBrightOff ( )
     static UFunction* pFnbringUpBrightOff = NULL;
 
     if ( ! pFnbringUpBrightOff )
-        pFnbringUpBrightOff = (UFunction*) UObject::GObjObjects()->Data[ 90452 ];
+        pFnbringUpBrightOff = (UFunction*) UObject::GObjObjects()->Data[ 90451 ];
 
     ATrFlagBase_execbringUpBrightOff_Parms bringUpBrightOff_Parms;
 
@@ -36831,7 +36831,7 @@ void ATrFlagBase::CustomRespawnEffects ( )
     static UFunction* pFnCustomRespawnEffects = NULL;
 
     if ( ! pFnCustomRespawnEffects )
-        pFnCustomRespawnEffects = (UFunction*) UObject::GObjObjects()->Data[ 90450 ];
+        pFnCustomRespawnEffects = (UFunction*) UObject::GObjObjects()->Data[ 90449 ];
 
     ATrFlagBase_execCustomRespawnEffects_Parms CustomRespawnEffects_Parms;
 
@@ -36848,7 +36848,7 @@ void ATrFlagBase::SameTeamTouch ( class AController* C )
     static UFunction* pFnSameTeamTouch = NULL;
 
     if ( ! pFnSameTeamTouch )
-        pFnSameTeamTouch = (UFunction*) UObject::GObjObjects()->Data[ 90448 ];
+        pFnSameTeamTouch = (UFunction*) UObject::GObjObjects()->Data[ 90447 ];
 
     ATrFlagBase_execSameTeamTouch_Parms SameTeamTouch_Parms;
     SameTeamTouch_Parms.C = C;
@@ -36867,7 +36867,7 @@ bool ATrFlagBase::ValidHolder ( class AActor* Other )
     static UFunction* pFnValidHolder = NULL;
 
     if ( ! pFnValidHolder )
-        pFnValidHolder = (UFunction*) UObject::GObjObjects()->Data[ 90442 ];
+        pFnValidHolder = (UFunction*) UObject::GObjObjects()->Data[ 90441 ];
 
     ATrFlagBase_execValidHolder_Parms ValidHolder_Parms;
     ValidHolder_Parms.Other = Other;
@@ -36887,7 +36887,7 @@ void ATrFlagBase::SetHolder ( class AController* C )
     static UFunction* pFnSetHolder = NULL;
 
     if ( ! pFnSetHolder )
-        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90434 ];
+        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90433 ];
 
     ATrFlagBase_execSetHolder_Parms SetHolder_Parms;
     SetHolder_Parms.C = C;
@@ -36904,7 +36904,7 @@ void ATrFlagBase::ClientReturnedHome ( )
     static UFunction* pFnClientReturnedHome = NULL;
 
     if ( ! pFnClientReturnedHome )
-        pFnClientReturnedHome = (UFunction*) UObject::GObjObjects()->Data[ 90433 ];
+        pFnClientReturnedHome = (UFunction*) UObject::GObjObjects()->Data[ 90432 ];
 
     ATrFlagBase_execClientReturnedHome_Parms ClientReturnedHome_Parms;
 
@@ -36922,7 +36922,7 @@ bool ATrFlagBase::ShouldMinimapRenderFor ( class APlayerController* PC )
     static UFunction* pFnShouldMinimapRenderFor = NULL;
 
     if ( ! pFnShouldMinimapRenderFor )
-        pFnShouldMinimapRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 90430 ];
+        pFnShouldMinimapRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 90429 ];
 
     ATrFlagBase_execShouldMinimapRenderFor_Parms ShouldMinimapRenderFor_Parms;
     ShouldMinimapRenderFor_Parms.PC = PC;
@@ -36941,7 +36941,7 @@ void ATrFlagBase::eventOnBaseChainChanged ( )
     static UFunction* pFnOnBaseChainChanged = NULL;
 
     if ( ! pFnOnBaseChainChanged )
-        pFnOnBaseChainChanged = (UFunction*) UObject::GObjObjects()->Data[ 90427 ];
+        pFnOnBaseChainChanged = (UFunction*) UObject::GObjObjects()->Data[ 90426 ];
 
     ATrFlagBase_eventOnBaseChainChanged_Parms OnBaseChainChanged_Parms;
 
@@ -36958,7 +36958,7 @@ void ATrFlagBase::Tick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 90420 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 90419 ];
 
     ATrFlagBase_execTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -36975,7 +36975,7 @@ void ATrFlagBase::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 90417 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 90416 ];
 
     ATrFlagBase_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -36992,7 +36992,7 @@ void ATrFlagBase::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 90415 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 90414 ];
 
     ATrFlagBase_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -37013,7 +37013,7 @@ class ANavigationPoint* ATrGame::FindPlayerStart ( class AController* Player, un
     static UFunction* pFnFindPlayerStart = NULL;
 
     if ( ! pFnFindPlayerStart )
-        pFnFindPlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92432 ];
+        pFnFindPlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92431 ];
 
     ATrGame_execFindPlayerStart_Parms FindPlayerStart_Parms;
     FindPlayerStart_Parms.Player = Player;
@@ -37035,7 +37035,7 @@ void ATrGame::eventTgGetSpectators ( TArray< struct FString >* List )
     static UFunction* pFnTgGetSpectators = NULL;
 
     if ( ! pFnTgGetSpectators )
-        pFnTgGetSpectators = (UFunction*) UObject::GObjObjects()->Data[ 92429 ];
+        pFnTgGetSpectators = (UFunction*) UObject::GObjObjects()->Data[ 92428 ];
 
     ATrGame_eventTgGetSpectators_Parms TgGetSpectators_Parms;
 
@@ -37055,7 +37055,7 @@ void ATrGame::eventTgChangeTime ( int nSeconds )
     static UFunction* pFnTgChangeTime = NULL;
 
     if ( ! pFnTgChangeTime )
-        pFnTgChangeTime = (UFunction*) UObject::GObjObjects()->Data[ 92427 ];
+        pFnTgChangeTime = (UFunction*) UObject::GObjObjects()->Data[ 92426 ];
 
     ATrGame_eventTgChangeTime_Parms TgChangeTime_Parms;
     TgChangeTime_Parms.nSeconds = nSeconds;
@@ -37074,7 +37074,7 @@ void ATrGame::eventTgChangeScore ( int nTeam, int nCount )
     static UFunction* pFnTgChangeScore = NULL;
 
     if ( ! pFnTgChangeScore )
-        pFnTgChangeScore = (UFunction*) UObject::GObjObjects()->Data[ 92424 ];
+        pFnTgChangeScore = (UFunction*) UObject::GObjObjects()->Data[ 92423 ];
 
     ATrGame_eventTgChangeScore_Parms TgChangeScore_Parms;
     TgChangeScore_Parms.nTeam = nTeam;
@@ -37093,7 +37093,7 @@ void ATrGame::eventTgEndGame ( struct FString* Reason )
     static UFunction* pFnTgEndGame = NULL;
 
     if ( ! pFnTgEndGame )
-        pFnTgEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92422 ];
+        pFnTgEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92421 ];
 
     ATrGame_eventTgEndGame_Parms TgEndGame_Parms;
 
@@ -37113,7 +37113,7 @@ void ATrGame::eventTgStartGame ( struct FString* Reason )
     static UFunction* pFnTgStartGame = NULL;
 
     if ( ! pFnTgStartGame )
-        pFnTgStartGame = (UFunction*) UObject::GObjObjects()->Data[ 92420 ];
+        pFnTgStartGame = (UFunction*) UObject::GObjObjects()->Data[ 92419 ];
 
     ATrGame_eventTgStartGame_Parms TgStartGame_Parms;
 
@@ -37133,7 +37133,7 @@ void ATrGame::OnGeneratorPowerChange ( class ATrPowerGenerator* G )
     static UFunction* pFnOnGeneratorPowerChange = NULL;
 
     if ( ! pFnOnGeneratorPowerChange )
-        pFnOnGeneratorPowerChange = (UFunction*) UObject::GObjObjects()->Data[ 92418 ];
+        pFnOnGeneratorPowerChange = (UFunction*) UObject::GObjObjects()->Data[ 92417 ];
 
     ATrGame_execOnGeneratorPowerChange_Parms OnGeneratorPowerChange_Parms;
     OnGeneratorPowerChange_Parms.G = G;
@@ -37174,7 +37174,7 @@ int ATrGame::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92414 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92413 ];
 
     ATrGame_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -37193,7 +37193,7 @@ int ATrGame::eventFindGameTypeId ( )
     static UFunction* pFnFindGameTypeId = NULL;
 
     if ( ! pFnFindGameTypeId )
-        pFnFindGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92412 ];
+        pFnFindGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92411 ];
 
     ATrGame_eventFindGameTypeId_Parms FindGameTypeId_Parms;
 
@@ -37212,7 +37212,7 @@ void ATrGame::OnServerSpawnedPlayer ( class ATrPlayerController* TrPC )
     static UFunction* pFnOnServerSpawnedPlayer = NULL;
 
     if ( ! pFnOnServerSpawnedPlayer )
-        pFnOnServerSpawnedPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92410 ];
+        pFnOnServerSpawnedPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92409 ];
 
     ATrGame_execOnServerSpawnedPlayer_Parms OnServerSpawnedPlayer_Parms;
     OnServerSpawnedPlayer_Parms.TrPC = TrPC;
@@ -37231,7 +37231,7 @@ void ATrGame::SendMessageToAll ( class UClass* InMessageClass, int Switch )
     static UFunction* pFnSendMessageToAll = NULL;
 
     if ( ! pFnSendMessageToAll )
-        pFnSendMessageToAll = (UFunction*) UObject::GObjObjects()->Data[ 92406 ];
+        pFnSendMessageToAll = (UFunction*) UObject::GObjObjects()->Data[ 92405 ];
 
     ATrGame_execSendMessageToAll_Parms SendMessageToAll_Parms;
     SendMessageToAll_Parms.InMessageClass = InMessageClass;
@@ -37250,7 +37250,7 @@ void ATrGame::BroadcastAccolade ( struct FString Message )
     static UFunction* pFnBroadcastAccolade = NULL;
 
     if ( ! pFnBroadcastAccolade )
-        pFnBroadcastAccolade = (UFunction*) UObject::GObjObjects()->Data[ 92403 ];
+        pFnBroadcastAccolade = (UFunction*) UObject::GObjObjects()->Data[ 92402 ];
 
     ATrGame_execBroadcastAccolade_Parms BroadcastAccolade_Parms;
     memcpy ( &BroadcastAccolade_Parms.Message, &Message, 0xC );
@@ -37291,7 +37291,7 @@ bool ATrGame::CanSpectate ( class APlayerController* Viewer, class APlayerReplic
     static UFunction* pFnCanSpectate = NULL;
 
     if ( ! pFnCanSpectate )
-        pFnCanSpectate = (UFunction*) UObject::GObjObjects()->Data[ 92398 ];
+        pFnCanSpectate = (UFunction*) UObject::GObjObjects()->Data[ 92397 ];
 
     ATrGame_execCanSpectate_Parms CanSpectate_Parms;
     CanSpectate_Parms.Viewer = Viewer;
@@ -37313,7 +37313,7 @@ int ATrGame::GetRankFromXP ( int XP )
     static UFunction* pFnGetRankFromXP = NULL;
 
     if ( ! pFnGetRankFromXP )
-        pFnGetRankFromXP = (UFunction*) UObject::GObjObjects()->Data[ 92392 ];
+        pFnGetRankFromXP = (UFunction*) UObject::GObjObjects()->Data[ 92391 ];
 
     ATrGame_execGetRankFromXP_Parms GetRankFromXP_Parms;
     GetRankFromXP_Parms.XP = XP;
@@ -37334,7 +37334,7 @@ void ATrGame::SetPRI ( class APlayerController* PC, class APlayerReplicationInfo
     static UFunction* pFnSetPRI = NULL;
 
     if ( ! pFnSetPRI )
-        pFnSetPRI = (UFunction*) UObject::GObjObjects()->Data[ 92384 ];
+        pFnSetPRI = (UFunction*) UObject::GObjObjects()->Data[ 92383 ];
 
     ATrGame_execSetPRI_Parms SetPRI_Parms;
     SetPRI_Parms.PC = PC;
@@ -37354,7 +37354,7 @@ void ATrGame::eventInitGame ( struct FString Options, struct FString* ErrorMessa
     static UFunction* pFnInitGame = NULL;
 
     if ( ! pFnInitGame )
-        pFnInitGame = (UFunction*) UObject::GObjObjects()->Data[ 92380 ];
+        pFnInitGame = (UFunction*) UObject::GObjObjects()->Data[ 92379 ];
 
     ATrGame_eventInitGame_Parms InitGame_Parms;
     memcpy ( &InitGame_Parms.Options, &Options, 0xC );
@@ -37376,7 +37376,7 @@ void ATrGame::MoveRandomPlayerFromTeam ( TArray< class APlayerController* > Team
     static UFunction* pFnMoveRandomPlayerFromTeam = NULL;
 
     if ( ! pFnMoveRandomPlayerFromTeam )
-        pFnMoveRandomPlayerFromTeam = (UFunction*) UObject::GObjObjects()->Data[ 92372 ];
+        pFnMoveRandomPlayerFromTeam = (UFunction*) UObject::GObjObjects()->Data[ 92371 ];
 
     ATrGame_execMoveRandomPlayerFromTeam_Parms MoveRandomPlayerFromTeam_Parms;
     memcpy ( &MoveRandomPlayerFromTeam_Parms.TeamList, &TeamList, 0xC );
@@ -37394,7 +37394,7 @@ void ATrGame::AutoBalanceTeams ( )
     static UFunction* pFnAutoBalanceTeams = NULL;
 
     if ( ! pFnAutoBalanceTeams )
-        pFnAutoBalanceTeams = (UFunction*) UObject::GObjObjects()->Data[ 92364 ];
+        pFnAutoBalanceTeams = (UFunction*) UObject::GObjObjects()->Data[ 92363 ];
 
     ATrGame_execAutoBalanceTeams_Parms AutoBalanceTeams_Parms;
 
@@ -37410,7 +37410,7 @@ void ATrGame::AutoBalanceInFive ( )
     static UFunction* pFnAutoBalanceInFive = NULL;
 
     if ( ! pFnAutoBalanceInFive )
-        pFnAutoBalanceInFive = (UFunction*) UObject::GObjObjects()->Data[ 92363 ];
+        pFnAutoBalanceInFive = (UFunction*) UObject::GObjObjects()->Data[ 92362 ];
 
     ATrGame_execAutoBalanceInFive_Parms AutoBalanceInFive_Parms;
 
@@ -37426,7 +37426,7 @@ void ATrGame::AutoBalanceInTwenty ( )
     static UFunction* pFnAutoBalanceInTwenty = NULL;
 
     if ( ! pFnAutoBalanceInTwenty )
-        pFnAutoBalanceInTwenty = (UFunction*) UObject::GObjObjects()->Data[ 92362 ];
+        pFnAutoBalanceInTwenty = (UFunction*) UObject::GObjObjects()->Data[ 92361 ];
 
     ATrGame_execAutoBalanceInTwenty_Parms AutoBalanceInTwenty_Parms;
 
@@ -37442,7 +37442,7 @@ void ATrGame::CheckForAutoBalance ( )
     static UFunction* pFnCheckForAutoBalance = NULL;
 
     if ( ! pFnCheckForAutoBalance )
-        pFnCheckForAutoBalance = (UFunction*) UObject::GObjObjects()->Data[ 92361 ];
+        pFnCheckForAutoBalance = (UFunction*) UObject::GObjObjects()->Data[ 92360 ];
 
     ATrGame_execCheckForAutoBalance_Parms CheckForAutoBalance_Parms;
 
@@ -37459,7 +37459,7 @@ bool ATrGame::AreTeamsUnbalanced ( )
     static UFunction* pFnAreTeamsUnbalanced = NULL;
 
     if ( ! pFnAreTeamsUnbalanced )
-        pFnAreTeamsUnbalanced = (UFunction*) UObject::GObjObjects()->Data[ 92356 ];
+        pFnAreTeamsUnbalanced = (UFunction*) UObject::GObjObjects()->Data[ 92355 ];
 
     ATrGame_execAreTeamsUnbalanced_Parms AreTeamsUnbalanced_Parms;
 
@@ -37479,7 +37479,7 @@ bool ATrGame::AllowCheats ( class APlayerController* P )
     static UFunction* pFnAllowCheats = NULL;
 
     if ( ! pFnAllowCheats )
-        pFnAllowCheats = (UFunction*) UObject::GObjObjects()->Data[ 92353 ];
+        pFnAllowCheats = (UFunction*) UObject::GObjObjects()->Data[ 92352 ];
 
     ATrGame_execAllowCheats_Parms AllowCheats_Parms;
     AllowCheats_Parms.P = P;
@@ -37501,7 +37501,7 @@ int ATrGame::CreditsSortViaPC ( class APlayerController* A, class APlayerControl
     static UFunction* pFnCreditsSortViaPC = NULL;
 
     if ( ! pFnCreditsSortViaPC )
-        pFnCreditsSortViaPC = (UFunction*) UObject::GObjObjects()->Data[ 92092 ];
+        pFnCreditsSortViaPC = (UFunction*) UObject::GObjObjects()->Data[ 92091 ];
 
     ATrGame_execCreditsSortViaPC_Parms CreditsSortViaPC_Parms;
     CreditsSortViaPC_Parms.A = A;
@@ -37524,7 +37524,7 @@ int ATrGame::CreditSort ( class APlayerReplicationInfo* A, class APlayerReplicat
     static UFunction* pFnCreditSort = NULL;
 
     if ( ! pFnCreditSort )
-        pFnCreditSort = (UFunction*) UObject::GObjObjects()->Data[ 92094 ];
+        pFnCreditSort = (UFunction*) UObject::GObjObjects()->Data[ 92093 ];
 
     ATrGame_execCreditSort_Parms CreditSort_Parms;
     CreditSort_Parms.A = A;
@@ -37547,7 +37547,7 @@ int ATrGame::ScoreSort ( class APlayerReplicationInfo* A, class APlayerReplicati
     static UFunction* pFnScoreSort = NULL;
 
     if ( ! pFnScoreSort )
-        pFnScoreSort = (UFunction*) UObject::GObjObjects()->Data[ 92096 ];
+        pFnScoreSort = (UFunction*) UObject::GObjObjects()->Data[ 92095 ];
 
     ATrGame_execScoreSort_Parms ScoreSort_Parms;
     ScoreSort_Parms.A = A;
@@ -37571,7 +37571,7 @@ void ATrGame::Killed ( class AController* Killer, class AController* KilledPlaye
     static UFunction* pFnKilled = NULL;
 
     if ( ! pFnKilled )
-        pFnKilled = (UFunction*) UObject::GObjObjects()->Data[ 92335 ];
+        pFnKilled = (UFunction*) UObject::GObjObjects()->Data[ 92334 ];
 
     ATrGame_execKilled_Parms Killed_Parms;
     Killed_Parms.Killer = Killer;
@@ -37592,7 +37592,7 @@ void ATrGame::SetPlayerDefaults ( class APawn* PlayerPawn )
     static UFunction* pFnSetPlayerDefaults = NULL;
 
     if ( ! pFnSetPlayerDefaults )
-        pFnSetPlayerDefaults = (UFunction*) UObject::GObjObjects()->Data[ 92331 ];
+        pFnSetPlayerDefaults = (UFunction*) UObject::GObjObjects()->Data[ 92330 ];
 
     ATrGame_execSetPlayerDefaults_Parms SetPlayerDefaults_Parms;
     SetPlayerDefaults_Parms.PlayerPawn = PlayerPawn;
@@ -37610,7 +37610,7 @@ void ATrGame::eventHandleSeamlessTravelPlayer ( class AController** C )
     static UFunction* pFnHandleSeamlessTravelPlayer = NULL;
 
     if ( ! pFnHandleSeamlessTravelPlayer )
-        pFnHandleSeamlessTravelPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92322 ];
+        pFnHandleSeamlessTravelPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92321 ];
 
     ATrGame_eventHandleSeamlessTravelPlayer_Parms HandleSeamlessTravelPlayer_Parms;
 
@@ -37675,7 +37675,7 @@ unsigned char ATrGame::PickTeamForMigration ( class AController* C )
     static UFunction* pFnPickTeamForMigration = NULL;
 
     if ( ! pFnPickTeamForMigration )
-        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 92311 ];
+        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 92310 ];
 
     ATrGame_execPickTeamForMigration_Parms PickTeamForMigration_Parms;
     PickTeamForMigration_Parms.C = C;
@@ -37697,7 +37697,7 @@ unsigned char ATrGame::PickTeam ( unsigned char Num, class AController* C )
     static UFunction* pFnPickTeam = NULL;
 
     if ( ! pFnPickTeam )
-        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 92307 ];
+        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 92306 ];
 
     ATrGame_execPickTeam_Parms PickTeam_Parms;
     PickTeam_Parms.Num = Num;
@@ -37721,7 +37721,7 @@ bool ATrGame::ChangeTeam ( class AController* Other, int Num, unsigned long bNew
     static UFunction* pFnChangeTeam = NULL;
 
     if ( ! pFnChangeTeam )
-        pFnChangeTeam = (UFunction*) UObject::GObjObjects()->Data[ 92301 ];
+        pFnChangeTeam = (UFunction*) UObject::GObjObjects()->Data[ 92300 ];
 
     ATrGame_execChangeTeam_Parms ChangeTeam_Parms;
     ChangeTeam_Parms.Other = Other;
@@ -37743,7 +37743,7 @@ void ATrGame::RestartPlayer ( class AController* aPlayer )
     static UFunction* pFnRestartPlayer = NULL;
 
     if ( ! pFnRestartPlayer )
-        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92298 ];
+        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92297 ];
 
     ATrGame_execRestartPlayer_Parms RestartPlayer_Parms;
     RestartPlayer_Parms.aPlayer = aPlayer;
@@ -37761,7 +37761,7 @@ bool ATrGame::ForceRespawn ( )
     static UFunction* pFnForceRespawn = NULL;
 
     if ( ! pFnForceRespawn )
-        pFnForceRespawn = (UFunction*) UObject::GObjObjects()->Data[ 92296 ];
+        pFnForceRespawn = (UFunction*) UObject::GObjObjects()->Data[ 92295 ];
 
     ATrGame_execForceRespawn_Parms ForceRespawn_Parms;
 
@@ -37781,7 +37781,7 @@ void ATrGame::ScoreKill ( class AController* Killer, class AController* Other )
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92275 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92274 ];
 
     ATrGame_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -37800,7 +37800,7 @@ void ATrGame::SendMatchCountdown ( int Seconds )
     static UFunction* pFnSendMatchCountdown = NULL;
 
     if ( ! pFnSendMatchCountdown )
-        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92271 ];
+        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92270 ];
 
     ATrGame_execSendMatchCountdown_Parms SendMatchCountdown_Parms;
     SendMatchCountdown_Parms.Seconds = Seconds;
@@ -37818,7 +37818,7 @@ void ATrGame::SendNextMatchCountdown ( int Seconds )
     static UFunction* pFnSendNextMatchCountdown = NULL;
 
     if ( ! pFnSendNextMatchCountdown )
-        pFnSendNextMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92268 ];
+        pFnSendNextMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92267 ];
 
     ATrGame_execSendNextMatchCountdown_Parms SendNextMatchCountdown_Parms;
     SendNextMatchCountdown_Parms.Seconds = Seconds;
@@ -37835,7 +37835,7 @@ void ATrGame::SendShowSummary ( )
     static UFunction* pFnSendShowSummary = NULL;
 
     if ( ! pFnSendShowSummary )
-        pFnSendShowSummary = (UFunction*) UObject::GObjObjects()->Data[ 92266 ];
+        pFnSendShowSummary = (UFunction*) UObject::GObjObjects()->Data[ 92265 ];
 
     ATrGame_execSendShowSummary_Parms SendShowSummary_Parms;
 
@@ -37851,7 +37851,7 @@ void ATrGame::SendMatchOver ( )
     static UFunction* pFnSendMatchOver = NULL;
 
     if ( ! pFnSendMatchOver )
-        pFnSendMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 92264 ];
+        pFnSendMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 92263 ];
 
     ATrGame_execSendMatchOver_Parms SendMatchOver_Parms;
 
@@ -37867,7 +37867,7 @@ void ATrGame::PlayEndOfMatchMessage ( )
     static UFunction* pFnPlayEndOfMatchMessage = NULL;
 
     if ( ! pFnPlayEndOfMatchMessage )
-        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 92262 ];
+        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 92261 ];
 
     ATrGame_execPlayEndOfMatchMessage_Parms PlayEndOfMatchMessage_Parms;
 
@@ -37887,7 +37887,7 @@ class UClass* ATrGame::eventSetGameType ( struct FString MapName, struct FString
     static UFunction* pFnSetGameType = NULL;
 
     if ( ! pFnSetGameType )
-        pFnSetGameType = (UFunction*) UObject::GObjObjects()->Data[ 92251 ];
+        pFnSetGameType = (UFunction*) UObject::GObjObjects()->Data[ 92250 ];
 
     ATrGame_eventSetGameType_Parms SetGameType_Parms;
     memcpy ( &SetGameType_Parms.MapName, &MapName, 0xC );
@@ -37909,7 +37909,7 @@ void ATrGame::GenericPlayerInitialization ( class AController* C )
     static UFunction* pFnGenericPlayerInitialization = NULL;
 
     if ( ! pFnGenericPlayerInitialization )
-        pFnGenericPlayerInitialization = (UFunction*) UObject::GObjObjects()->Data[ 92248 ];
+        pFnGenericPlayerInitialization = (UFunction*) UObject::GObjObjects()->Data[ 92247 ];
 
     ATrGame_execGenericPlayerInitialization_Parms GenericPlayerInitialization_Parms;
     GenericPlayerInitialization_Parms.C = C;
@@ -37928,7 +37928,7 @@ void ATrGame::EndSpree ( class AUTPlayerReplicationInfo* Killer, class AUTPlayer
     static UFunction* pFnEndSpree = NULL;
 
     if ( ! pFnEndSpree )
-        pFnEndSpree = (UFunction*) UObject::GObjObjects()->Data[ 92243 ];
+        pFnEndSpree = (UFunction*) UObject::GObjObjects()->Data[ 92242 ];
 
     ATrGame_execEndSpree_Parms EndSpree_Parms;
     EndSpree_Parms.Killer = Killer;
@@ -37948,7 +37948,7 @@ void ATrGame::NotifySpree ( class AUTPlayerReplicationInfo* Other, int Num )
     static UFunction* pFnNotifySpree = NULL;
 
     if ( ! pFnNotifySpree )
-        pFnNotifySpree = (UFunction*) UObject::GObjObjects()->Data[ 92239 ];
+        pFnNotifySpree = (UFunction*) UObject::GObjObjects()->Data[ 92238 ];
 
     ATrGame_execNotifySpree_Parms NotifySpree_Parms;
     NotifySpree_Parms.Other = Other;
@@ -37966,7 +37966,7 @@ void ATrGame::ForceRoundStart ( )
     static UFunction* pFnForceRoundStart = NULL;
 
     if ( ! pFnForceRoundStart )
-        pFnForceRoundStart = (UFunction*) UObject::GObjObjects()->Data[ 92233 ];
+        pFnForceRoundStart = (UFunction*) UObject::GObjObjects()->Data[ 92232 ];
 
     ATrGame_execForceRoundStart_Parms ForceRoundStart_Parms;
 
@@ -37982,7 +37982,7 @@ void ATrGame::ResetRound ( )
     static UFunction* pFnResetRound = NULL;
 
     if ( ! pFnResetRound )
-        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92207 ];
+        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92206 ];
 
     ATrGame_execResetRound_Parms ResetRound_Parms;
 
@@ -37998,7 +37998,7 @@ void ATrGame::ResetScores ( )
     static UFunction* pFnResetScores = NULL;
 
     if ( ! pFnResetScores )
-        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92206 ];
+        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92205 ];
 
     ATrGame_execResetScores_Parms ResetScores_Parms;
 
@@ -38014,7 +38014,7 @@ void ATrGame::RespawnPlayers ( )
     static UFunction* pFnRespawnPlayers = NULL;
 
     if ( ! pFnRespawnPlayers )
-        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92204 ];
+        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92203 ];
 
     ATrGame_execRespawnPlayers_Parms RespawnPlayers_Parms;
 
@@ -38030,7 +38030,7 @@ void ATrGame::TrackPlayerMovement ( )
     static UFunction* pFnTrackPlayerMovement = NULL;
 
     if ( ! pFnTrackPlayerMovement )
-        pFnTrackPlayerMovement = (UFunction*) UObject::GObjObjects()->Data[ 92203 ];
+        pFnTrackPlayerMovement = (UFunction*) UObject::GObjObjects()->Data[ 92202 ];
 
     ATrGame_execTrackPlayerMovement_Parms TrackPlayerMovement_Parms;
 
@@ -38047,7 +38047,7 @@ void ATrGame::SetEndGameFocus ( class APlayerReplicationInfo* Winner )
     static UFunction* pFnSetEndGameFocus = NULL;
 
     if ( ! pFnSetEndGameFocus )
-        pFnSetEndGameFocus = (UFunction*) UObject::GObjObjects()->Data[ 92192 ];
+        pFnSetEndGameFocus = (UFunction*) UObject::GObjObjects()->Data[ 92191 ];
 
     ATrGame_execSetEndGameFocus_Parms SetEndGameFocus_Parms;
     SetEndGameFocus_Parms.Winner = Winner;
@@ -38064,7 +38064,7 @@ void ATrGame::EndOnlineGame ( )
     static UFunction* pFnEndOnlineGame = NULL;
 
     if ( ! pFnEndOnlineGame )
-        pFnEndOnlineGame = (UFunction*) UObject::GObjObjects()->Data[ 92190 ];
+        pFnEndOnlineGame = (UFunction*) UObject::GObjObjects()->Data[ 92189 ];
 
     ATrGame_execEndOnlineGame_Parms EndOnlineGame_Parms;
 
@@ -38082,7 +38082,7 @@ void ATrGame::EndGame ( class APlayerReplicationInfo* Winner, struct FString Rea
     static UFunction* pFnEndGame = NULL;
 
     if ( ! pFnEndGame )
-        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92182 ];
+        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92181 ];
 
     ATrGame_execEndGame_Parms EndGame_Parms;
     EndGame_Parms.Winner = Winner;
@@ -38101,7 +38101,7 @@ int ATrGame::DetermineWinningTeam ( )
     static UFunction* pFnDetermineWinningTeam = NULL;
 
     if ( ! pFnDetermineWinningTeam )
-        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92179 ];
+        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92178 ];
 
     ATrGame_execDetermineWinningTeam_Parms DetermineWinningTeam_Parms;
 
@@ -38122,7 +38122,7 @@ class APawn* ATrGame::SpawnDefaultPawnFor ( class AController* NewPlayer, class 
     static UFunction* pFnSpawnDefaultPawnFor = NULL;
 
     if ( ! pFnSpawnDefaultPawnFor )
-        pFnSpawnDefaultPawnFor = (UFunction*) UObject::GObjObjects()->Data[ 92172 ];
+        pFnSpawnDefaultPawnFor = (UFunction*) UObject::GObjObjects()->Data[ 92171 ];
 
     ATrGame_execSpawnDefaultPawnFor_Parms SpawnDefaultPawnFor_Parms;
     SpawnDefaultPawnFor_Parms.NewPlayer = NewPlayer;
@@ -38147,7 +38147,7 @@ class APlayerController* ATrGame::eventLogin ( struct FString Portal, struct FSt
     static UFunction* pFnLogin = NULL;
 
     if ( ! pFnLogin )
-        pFnLogin = (UFunction*) UObject::GObjObjects()->Data[ 92165 ];
+        pFnLogin = (UFunction*) UObject::GObjObjects()->Data[ 92164 ];
 
     ATrGame_eventLogin_Parms Login_Parms;
     memcpy ( &Login_Parms.Portal, &Portal, 0xC );
@@ -38172,7 +38172,7 @@ void ATrGame::eventKickIdler ( class APlayerController* PC )
     static UFunction* pFnKickIdler = NULL;
 
     if ( ! pFnKickIdler )
-        pFnKickIdler = (UFunction*) UObject::GObjObjects()->Data[ 92162 ];
+        pFnKickIdler = (UFunction*) UObject::GObjObjects()->Data[ 92161 ];
 
     ATrGame_eventKickIdler_Parms KickIdler_Parms;
     KickIdler_Parms.PC = PC;
@@ -38189,7 +38189,7 @@ void ATrGame::StartBots ( )
     static UFunction* pFnStartBots = NULL;
 
     if ( ! pFnStartBots )
-        pFnStartBots = (UFunction*) UObject::GObjObjects()->Data[ 92161 ];
+        pFnStartBots = (UFunction*) UObject::GObjObjects()->Data[ 92160 ];
 
     ATrGame_execStartBots_Parms StartBots_Parms;
 
@@ -38208,7 +38208,7 @@ void ATrGame::InitializeBot ( class AUTBot* NewBot, class AUTTeamInfo* BotTeam, 
     static UFunction* pFnInitializeBot = NULL;
 
     if ( ! pFnInitializeBot )
-        pFnInitializeBot = (UFunction*) UObject::GObjObjects()->Data[ 92157 ];
+        pFnInitializeBot = (UFunction*) UObject::GObjObjects()->Data[ 92156 ];
 
     ATrGame_execInitializeBot_Parms InitializeBot_Parms;
     InitializeBot_Parms.NewBot = NewBot;
@@ -38233,7 +38233,7 @@ class AUTBot* ATrGame::SpawnBot ( struct FString BotName, unsigned long bUseTeam
     static UFunction* pFnSpawnBot = NULL;
 
     if ( ! pFnSpawnBot )
-        pFnSpawnBot = (UFunction*) UObject::GObjObjects()->Data[ 92152 ];
+        pFnSpawnBot = (UFunction*) UObject::GObjObjects()->Data[ 92151 ];
 
     ATrGame_execSpawnBot_Parms SpawnBot_Parms;
     memcpy ( &SpawnBot_Parms.BotName, &BotName, 0xC );
@@ -38255,7 +38255,7 @@ void ATrGame::AddBots ( int Num )
     static UFunction* pFnAddBots = NULL;
 
     if ( ! pFnAddBots )
-        pFnAddBots = (UFunction*) UObject::GObjObjects()->Data[ 92150 ];
+        pFnAddBots = (UFunction*) UObject::GObjObjects()->Data[ 92149 ];
 
     ATrGame_execAddBots_Parms AddBots_Parms;
     AddBots_Parms.Num = Num;
@@ -38276,7 +38276,7 @@ class AUTBot* ATrGame::AddBot ( struct FString BotName, unsigned long bUseTeamIn
     static UFunction* pFnAddBot = NULL;
 
     if ( ! pFnAddBot )
-        pFnAddBot = (UFunction*) UObject::GObjObjects()->Data[ 92145 ];
+        pFnAddBot = (UFunction*) UObject::GObjObjects()->Data[ 92144 ];
 
     ATrGame_execAddBot_Parms AddBot_Parms;
     memcpy ( &AddBot_Parms.BotName, &BotName, 0xC );
@@ -38297,7 +38297,7 @@ void ATrGame::AddInitialBots ( )
     static UFunction* pFnAddInitialBots = NULL;
 
     if ( ! pFnAddInitialBots )
-        pFnAddInitialBots = (UFunction*) UObject::GObjObjects()->Data[ 92144 ];
+        pFnAddInitialBots = (UFunction*) UObject::GObjObjects()->Data[ 92143 ];
 
     ATrGame_execAddInitialBots_Parms AddInitialBots_Parms;
 
@@ -38313,7 +38313,7 @@ void ATrGame::PreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92143 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92142 ];
 
     ATrGame_execPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -38336,7 +38336,7 @@ void ATrGame::ReduceDamage ( class APawn* injured, class AController* Instigated
     static UFunction* pFnReduceDamage = NULL;
 
     if ( ! pFnReduceDamage )
-        pFnReduceDamage = (UFunction*) UObject::GObjObjects()->Data[ 92134 ];
+        pFnReduceDamage = (UFunction*) UObject::GObjObjects()->Data[ 92133 ];
 
     ATrGame_execReduceDamage_Parms ReduceDamage_Parms;
     ReduceDamage_Parms.injured = injured;
@@ -38363,7 +38363,7 @@ void ATrGame::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92127 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92126 ];
 
     ATrGame_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -38380,7 +38380,7 @@ void ATrGame::SetOnlinePlayerName ( class APlayerReplicationInfo* PRI )
     static UFunction* pFnSetOnlinePlayerName = NULL;
 
     if ( ! pFnSetOnlinePlayerName )
-        pFnSetOnlinePlayerName = (UFunction*) UObject::GObjObjects()->Data[ 92125 ];
+        pFnSetOnlinePlayerName = (UFunction*) UObject::GObjObjects()->Data[ 92124 ];
 
     ATrGame_execSetOnlinePlayerName_Parms SetOnlinePlayerName_Parms;
     SetOnlinePlayerName_Parms.PRI = PRI;
@@ -38401,7 +38401,7 @@ void ATrGame::OnServerInitialized ( )
     static UFunction* pFnOnServerInitialized = NULL;
 
     if ( ! pFnOnServerInitialized )
-        pFnOnServerInitialized = (UFunction*) UObject::GObjObjects()->Data[ 92124 ];
+        pFnOnServerInitialized = (UFunction*) UObject::GObjObjects()->Data[ 92123 ];
 
     ATrGame_execOnServerInitialized_Parms OnServerInitialized_Parms;
 
@@ -38421,7 +38421,7 @@ void ATrGame::LocalLeaveGame ( )
     static UFunction* pFnLocalLeaveGame = NULL;
 
     if ( ! pFnLocalLeaveGame )
-        pFnLocalLeaveGame = (UFunction*) UObject::GObjObjects()->Data[ 92123 ];
+        pFnLocalLeaveGame = (UFunction*) UObject::GObjObjects()->Data[ 92122 ];
 
     ATrGame_execLocalLeaveGame_Parms LocalLeaveGame_Parms;
 
@@ -38442,7 +38442,7 @@ int ATrGame::GetNextEffectInstanceId ( )
     static UFunction* pFnGetNextEffectInstanceId = NULL;
 
     if ( ! pFnGetNextEffectInstanceId )
-        pFnGetNextEffectInstanceId = (UFunction*) UObject::GObjObjects()->Data[ 92121 ];
+        pFnGetNextEffectInstanceId = (UFunction*) UObject::GObjObjects()->Data[ 92120 ];
 
     ATrGame_execGetNextEffectInstanceId_Parms GetNextEffectInstanceId_Parms;
 
@@ -39562,7 +39562,7 @@ bool ATrStation::eventBlocksLineChecksFromSourceActor ( class AActor* SourceActo
     static UFunction* pFnBlocksLineChecksFromSourceActor = NULL;
 
     if ( ! pFnBlocksLineChecksFromSourceActor )
-        pFnBlocksLineChecksFromSourceActor = (UFunction*) UObject::GObjObjects()->Data[ 100581 ];
+        pFnBlocksLineChecksFromSourceActor = (UFunction*) UObject::GObjObjects()->Data[ 100580 ];
 
     ATrStation_eventBlocksLineChecksFromSourceActor_Parms BlocksLineChecksFromSourceActor_Parms;
     BlocksLineChecksFromSourceActor_Parms.SourceActor = SourceActor;
@@ -39581,7 +39581,7 @@ void ATrStation::PlayStationLeftEffects ( )
     static UFunction* pFnPlayStationLeftEffects = NULL;
 
     if ( ! pFnPlayStationLeftEffects )
-        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 100580 ];
+        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 100579 ];
 
     ATrStation_execPlayStationLeftEffects_Parms PlayStationLeftEffects_Parms;
 
@@ -39597,7 +39597,7 @@ void ATrStation::PlayStationEnteredEffects ( )
     static UFunction* pFnPlayStationEnteredEffects = NULL;
 
     if ( ! pFnPlayStationEnteredEffects )
-        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 100578 ];
+        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 100577 ];
 
     ATrStation_execPlayStationEnteredEffects_Parms PlayStationEnteredEffects_Parms;
 
@@ -39614,7 +39614,7 @@ void ATrStation::PawnLeftStation ( class ATrPawn* P )
     static UFunction* pFnPawnLeftStation = NULL;
 
     if ( ! pFnPawnLeftStation )
-        pFnPawnLeftStation = (UFunction*) UObject::GObjObjects()->Data[ 100575 ];
+        pFnPawnLeftStation = (UFunction*) UObject::GObjObjects()->Data[ 100574 ];
 
     ATrStation_execPawnLeftStation_Parms PawnLeftStation_Parms;
     PawnLeftStation_Parms.P = P;
@@ -39632,7 +39632,7 @@ void ATrStation::PawnEnteredStation ( class ATrPawn* P )
     static UFunction* pFnPawnEnteredStation = NULL;
 
     if ( ! pFnPawnEnteredStation )
-        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 100572 ];
+        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 100571 ];
 
     ATrStation_execPawnEnteredStation_Parms PawnEnteredStation_Parms;
     PawnEnteredStation_Parms.P = P;
@@ -39649,7 +39649,7 @@ void ATrStation::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 100571 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 100570 ];
 
     ATrStation_execDestroyed_Parms Destroyed_Parms;
 
@@ -39666,7 +39666,7 @@ void ATrStation::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 100569 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 100568 ];
 
     ATrStation_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -39683,7 +39683,7 @@ void ATrStation::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100568 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100567 ];
 
     ATrStation_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -39700,7 +39700,7 @@ class UTexture2D* ATrInventoryStation::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 100614 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 100613 ];
 
     ATrInventoryStation_execGetMarker_Parms GetMarker_Parms;
 
@@ -39718,7 +39718,7 @@ void ATrInventoryStation::Timer ( )
     static UFunction* pFnTimer = NULL;
 
     if ( ! pFnTimer )
-        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 100612 ];
+        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 100611 ];
 
     ATrInventoryStation_execTimer_Parms Timer_Parms;
 
@@ -39734,7 +39734,7 @@ void ATrInventoryStation::PlayStationEnteredEffects ( )
     static UFunction* pFnPlayStationEnteredEffects = NULL;
 
     if ( ! pFnPlayStationEnteredEffects )
-        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 100608 ];
+        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 100607 ];
 
     ATrInventoryStation_execPlayStationEnteredEffects_Parms PlayStationEnteredEffects_Parms;
 
@@ -39750,7 +39750,7 @@ void ATrInventoryStation::OnPowerStatusChanged ( )
     static UFunction* pFnOnPowerStatusChanged = NULL;
 
     if ( ! pFnOnPowerStatusChanged )
-        pFnOnPowerStatusChanged = (UFunction*) UObject::GObjObjects()->Data[ 100607 ];
+        pFnOnPowerStatusChanged = (UFunction*) UObject::GObjObjects()->Data[ 100606 ];
 
     ATrInventoryStation_execOnPowerStatusChanged_Parms OnPowerStatusChanged_Parms;
 
@@ -39767,7 +39767,7 @@ void ATrInventoryStation::PawnEnteredStation ( class ATrPawn* P )
     static UFunction* pFnPawnEnteredStation = NULL;
 
     if ( ! pFnPawnEnteredStation )
-        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 100602 ];
+        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 100601 ];
 
     ATrInventoryStation_execPawnEnteredStation_Parms PawnEnteredStation_Parms;
     PawnEnteredStation_Parms.P = P;
@@ -39791,7 +39791,7 @@ void ATrInventoryStation_Spawnable::eventTakeDamage ( int DamageAmount, class AC
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 100668 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 100667 ];
 
     ATrInventoryStation_Spawnable_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -39815,7 +39815,7 @@ void UTrGameObjectiveUpgrade::InitUpgrade ( class ATrGameObjective* OwnerObject 
     static UFunction* pFnInitUpgrade = NULL;
 
     if ( ! pFnInitUpgrade )
-        pFnInitUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 93196 ];
+        pFnInitUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 93195 ];
 
     UTrGameObjectiveUpgrade_execInitUpgrade_Parms InitUpgrade_Parms;
     InitUpgrade_Parms.OwnerObject = OwnerObject;
@@ -39881,7 +39881,7 @@ void ATrGameReplicationInfo::AddPRI ( class APlayerReplicationInfo* PRI )
     static UFunction* pFnAddPRI = NULL;
 
     if ( ! pFnAddPRI )
-        pFnAddPRI = (UFunction*) UObject::GObjObjects()->Data[ 94736 ];
+        pFnAddPRI = (UFunction*) UObject::GObjObjects()->Data[ 94735 ];
 
     ATrGameReplicationInfo_execAddPRI_Parms AddPRI_Parms;
     AddPRI_Parms.PRI = PRI;
@@ -39899,7 +39899,7 @@ void ATrGameReplicationInfo::SetWarmingUp ( unsigned long bWarmup )
     static UFunction* pFnSetWarmingUp = NULL;
 
     if ( ! pFnSetWarmingUp )
-        pFnSetWarmingUp = (UFunction*) UObject::GObjObjects()->Data[ 94733 ];
+        pFnSetWarmingUp = (UFunction*) UObject::GObjObjects()->Data[ 94732 ];
 
     ATrGameReplicationInfo_execSetWarmingUp_Parms SetWarmingUp_Parms;
     SetWarmingUp_Parms.bWarmup = bWarmup;
@@ -39918,7 +39918,7 @@ bool ATrGameReplicationInfo::IsValidTeamPlayer ( class ATrPlayerReplicationInfo*
     static UFunction* pFnIsValidTeamPlayer = NULL;
 
     if ( ! pFnIsValidTeamPlayer )
-        pFnIsValidTeamPlayer = (UFunction*) UObject::GObjObjects()->Data[ 94730 ];
+        pFnIsValidTeamPlayer = (UFunction*) UObject::GObjObjects()->Data[ 94729 ];
 
     ATrGameReplicationInfo_execIsValidTeamPlayer_Parms IsValidTeamPlayer_Parms;
     IsValidTeamPlayer_Parms.TrPRI = TrPRI;
@@ -39961,7 +39961,7 @@ void ATrGameReplicationInfo::ChangePhysicsType ( int Type )
     static UFunction* pFnChangePhysicsType = NULL;
 
     if ( ! pFnChangePhysicsType )
-        pFnChangePhysicsType = (UFunction*) UObject::GObjObjects()->Data[ 94720 ];
+        pFnChangePhysicsType = (UFunction*) UObject::GObjObjects()->Data[ 94719 ];
 
     ATrGameReplicationInfo_execChangePhysicsType_Parms ChangePhysicsType_Parms;
     ChangePhysicsType_Parms.Type = Type;
@@ -40055,7 +40055,7 @@ void ATrGameReplicationInfo::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 94718 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 94717 ];
 
     ATrGameReplicationInfo_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -40072,7 +40072,7 @@ void ATrGameReplicationInfo::Blip ( )
     static UFunction* pFnBlip = NULL;
 
     if ( ! pFnBlip )
-        pFnBlip = (UFunction*) UObject::GObjObjects()->Data[ 94717 ];
+        pFnBlip = (UFunction*) UObject::GObjObjects()->Data[ 94716 ];
 
     ATrGameReplicationInfo_execBlip_Parms Blip_Parms;
 
@@ -40091,7 +40091,7 @@ bool ATrGameReplicationInfo::OnSameTeam ( class AActor* A, class AActor* B )
     static UFunction* pFnOnSameTeam = NULL;
 
     if ( ! pFnOnSameTeam )
-        pFnOnSameTeam = (UFunction*) UObject::GObjObjects()->Data[ 94713 ];
+        pFnOnSameTeam = (UFunction*) UObject::GObjObjects()->Data[ 94712 ];
 
     ATrGameReplicationInfo_execOnSameTeam_Parms OnSameTeam_Parms;
     OnSameTeam_Parms.A = A;
@@ -40111,7 +40111,7 @@ void ATrGameReplicationInfo::Timer ( )
     static UFunction* pFnTimer = NULL;
 
     if ( ! pFnTimer )
-        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 94710 ];
+        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 94709 ];
 
     ATrGameReplicationInfo_execTimer_Parms Timer_Parms;
 
@@ -40127,7 +40127,7 @@ void ATrGameReplicationInfo::OnResetGame ( )
     static UFunction* pFnOnResetGame = NULL;
 
     if ( ! pFnOnResetGame )
-        pFnOnResetGame = (UFunction*) UObject::GObjObjects()->Data[ 94708 ];
+        pFnOnResetGame = (UFunction*) UObject::GObjObjects()->Data[ 94707 ];
 
     ATrGameReplicationInfo_execOnResetGame_Parms OnResetGame_Parms;
 
@@ -40143,7 +40143,7 @@ void ATrGameReplicationInfo::OnPhase0SiegeEnded ( )
     static UFunction* pFnOnPhase0SiegeEnded = NULL;
 
     if ( ! pFnOnPhase0SiegeEnded )
-        pFnOnPhase0SiegeEnded = (UFunction*) UObject::GObjObjects()->Data[ 94706 ];
+        pFnOnPhase0SiegeEnded = (UFunction*) UObject::GObjObjects()->Data[ 94705 ];
 
     ATrGameReplicationInfo_execOnPhase0SiegeEnded_Parms OnPhase0SiegeEnded_Parms;
 
@@ -40160,7 +40160,7 @@ void ATrGameReplicationInfo::CanPlaceDeployables ( unsigned long Value )
     static UFunction* pFnCanPlaceDeployables = NULL;
 
     if ( ! pFnCanPlaceDeployables )
-        pFnCanPlaceDeployables = (UFunction*) UObject::GObjObjects()->Data[ 94704 ];
+        pFnCanPlaceDeployables = (UFunction*) UObject::GObjObjects()->Data[ 94703 ];
 
     ATrGameReplicationInfo_execCanPlaceDeployables_Parms CanPlaceDeployables_Parms;
     CanPlaceDeployables_Parms.Value = Value;
@@ -40177,7 +40177,7 @@ void ATrGameReplicationInfo::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 94700 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 94699 ];
 
     ATrGameReplicationInfo_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -40193,7 +40193,7 @@ void ATrGameReplicationInfo::PrintPhysicsReport ( )
     static UFunction* pFnPrintPhysicsReport = NULL;
 
     if ( ! pFnPrintPhysicsReport )
-        pFnPrintPhysicsReport = (UFunction*) UObject::GObjObjects()->Data[ 94699 ];
+        pFnPrintPhysicsReport = (UFunction*) UObject::GObjObjects()->Data[ 94698 ];
 
     ATrGameReplicationInfo_execPrintPhysicsReport_Parms PrintPhysicsReport_Parms;
 
@@ -40209,7 +40209,7 @@ void ATrGameReplicationInfo::UpdateAllPhysics ( )
     static UFunction* pFnUpdateAllPhysics = NULL;
 
     if ( ! pFnUpdateAllPhysics )
-        pFnUpdateAllPhysics = (UFunction*) UObject::GObjObjects()->Data[ 94696 ];
+        pFnUpdateAllPhysics = (UFunction*) UObject::GObjObjects()->Data[ 94695 ];
 
     ATrGameReplicationInfo_execUpdateAllPhysics_Parms UpdateAllPhysics_Parms;
 
@@ -40228,7 +40228,7 @@ bool ATrGameReplicationInfo::SetPhysicsPresetProperty ( int PhysicsProperty, flo
     static UFunction* pFnSetPhysicsPresetProperty = NULL;
 
     if ( ! pFnSetPhysicsPresetProperty )
-        pFnSetPhysicsPresetProperty = (UFunction*) UObject::GObjObjects()->Data[ 94689 ];
+        pFnSetPhysicsPresetProperty = (UFunction*) UObject::GObjObjects()->Data[ 94688 ];
 
     ATrGameReplicationInfo_execSetPhysicsPresetProperty_Parms SetPhysicsPresetProperty_Parms;
     SetPhysicsPresetProperty_Parms.PhysicsProperty = PhysicsProperty;
@@ -40250,7 +40250,7 @@ void ATrGameReplicationInfo::SetPhysicsPresetPropertyByName ( struct FString Pro
     static UFunction* pFnSetPhysicsPresetPropertyByName = NULL;
 
     if ( ! pFnSetPhysicsPresetPropertyByName )
-        pFnSetPhysicsPresetPropertyByName = (UFunction*) UObject::GObjObjects()->Data[ 94683 ];
+        pFnSetPhysicsPresetPropertyByName = (UFunction*) UObject::GObjObjects()->Data[ 94682 ];
 
     ATrGameReplicationInfo_execSetPhysicsPresetPropertyByName_Parms SetPhysicsPresetPropertyByName_Parms;
     memcpy ( &SetPhysicsPresetPropertyByName_Parms.PropertyName, &PropertyName, 0xC );
@@ -40269,7 +40269,7 @@ void ATrGameReplicationInfo::SetPhysicsPresetPropertyBatch ( struct FString Batc
     static UFunction* pFnSetPhysicsPresetPropertyBatch = NULL;
 
     if ( ! pFnSetPhysicsPresetPropertyBatch )
-        pFnSetPhysicsPresetPropertyBatch = (UFunction*) UObject::GObjObjects()->Data[ 94676 ];
+        pFnSetPhysicsPresetPropertyBatch = (UFunction*) UObject::GObjObjects()->Data[ 94675 ];
 
     ATrGameReplicationInfo_execSetPhysicsPresetPropertyBatch_Parms SetPhysicsPresetPropertyBatch_Parms;
     memcpy ( &SetPhysicsPresetPropertyBatch_Parms.BatchProperties, &BatchProperties, 0xC );
@@ -40307,7 +40307,7 @@ void ATrGameReplicationInfo::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 94667 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 94666 ];
 
     ATrGameReplicationInfo_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -40323,7 +40323,7 @@ void ATrGameReplicationInfo::PreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 94666 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 94665 ];
 
     ATrGameReplicationInfo_execPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -40340,7 +40340,7 @@ void ATrGameReplicationInfo::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 94664 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 94663 ];
 
     ATrGameReplicationInfo_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -40357,7 +40357,7 @@ void ATrHUD::UpdateDebugDraws ( )
     static UFunction* pFnUpdateDebugDraws = NULL;
 
     if ( ! pFnUpdateDebugDraws )
-        pFnUpdateDebugDraws = (UFunction*) UObject::GObjObjects()->Data[ 98856 ];
+        pFnUpdateDebugDraws = (UFunction*) UObject::GObjObjects()->Data[ 98855 ];
 
     ATrHUD_execUpdateDebugDraws_Parms UpdateDebugDraws_Parms;
 
@@ -40377,7 +40377,7 @@ void ATrHUD::UpdateOwnedItems ( )
     static UFunction* pFnUpdateOwnedItems = NULL;
 
     if ( ! pFnUpdateOwnedItems )
-        pFnUpdateOwnedItems = (UFunction*) UObject::GObjObjects()->Data[ 98849 ];
+        pFnUpdateOwnedItems = (UFunction*) UObject::GObjObjects()->Data[ 98848 ];
 
     ATrHUD_execUpdateOwnedItems_Parms UpdateOwnedItems_Parms;
 
@@ -40394,7 +40394,7 @@ void ATrHUD::MineReplicated ( class ATrProj_Mine* NewMine )
     static UFunction* pFnMineReplicated = NULL;
 
     if ( ! pFnMineReplicated )
-        pFnMineReplicated = (UFunction*) UObject::GObjObjects()->Data[ 98846 ];
+        pFnMineReplicated = (UFunction*) UObject::GObjObjects()->Data[ 98845 ];
 
     ATrHUD_execMineReplicated_Parms MineReplicated_Parms;
     MineReplicated_Parms.NewMine = NewMine;
@@ -40412,7 +40412,7 @@ void ATrHUD::DeployableReplicated ( class ATrDeployable* NewDep )
     static UFunction* pFnDeployableReplicated = NULL;
 
     if ( ! pFnDeployableReplicated )
-        pFnDeployableReplicated = (UFunction*) UObject::GObjObjects()->Data[ 98844 ];
+        pFnDeployableReplicated = (UFunction*) UObject::GObjObjects()->Data[ 98843 ];
 
     ATrHUD_execDeployableReplicated_Parms DeployableReplicated_Parms;
     DeployableReplicated_Parms.NewDep = NewDep;
@@ -40429,7 +40429,7 @@ void ATrHUD::ClearQueuedAccoladesTimer ( )
     static UFunction* pFnClearQueuedAccoladesTimer = NULL;
 
     if ( ! pFnClearQueuedAccoladesTimer )
-        pFnClearQueuedAccoladesTimer = (UFunction*) UObject::GObjObjects()->Data[ 98843 ];
+        pFnClearQueuedAccoladesTimer = (UFunction*) UObject::GObjObjects()->Data[ 98842 ];
 
     ATrHUD_execClearQueuedAccoladesTimer_Parms ClearQueuedAccoladesTimer_Parms;
 
@@ -40446,7 +40446,7 @@ void ATrHUD::RunQueuedAccoladesTimer ( unsigned long bIsBadge )
     static UFunction* pFnRunQueuedAccoladesTimer = NULL;
 
     if ( ! pFnRunQueuedAccoladesTimer )
-        pFnRunQueuedAccoladesTimer = (UFunction*) UObject::GObjObjects()->Data[ 98840 ];
+        pFnRunQueuedAccoladesTimer = (UFunction*) UObject::GObjObjects()->Data[ 98839 ];
 
     ATrHUD_execRunQueuedAccoladesTimer_Parms RunQueuedAccoladesTimer_Parms;
     RunQueuedAccoladesTimer_Parms.bIsBadge = bIsBadge;
@@ -40463,7 +40463,7 @@ void ATrHUD::CheckQueuedAccolades ( )
     static UFunction* pFnCheckQueuedAccolades = NULL;
 
     if ( ! pFnCheckQueuedAccolades )
-        pFnCheckQueuedAccolades = (UFunction*) UObject::GObjObjects()->Data[ 98839 ];
+        pFnCheckQueuedAccolades = (UFunction*) UObject::GObjObjects()->Data[ 98838 ];
 
     ATrHUD_execCheckQueuedAccolades_Parms CheckQueuedAccolades_Parms;
 
@@ -40483,7 +40483,7 @@ void ATrHUD::QueueAccolade ( int Icon, struct FString Title, struct FString Subt
     static UFunction* pFnQueueAccolade = NULL;
 
     if ( ! pFnQueueAccolade )
-        pFnQueueAccolade = (UFunction*) UObject::GObjObjects()->Data[ 98833 ];
+        pFnQueueAccolade = (UFunction*) UObject::GObjObjects()->Data[ 98832 ];
 
     ATrHUD_execQueueAccolade_Parms QueueAccolade_Parms;
     QueueAccolade_Parms.Icon = Icon;
@@ -40504,7 +40504,7 @@ void ATrHUD::PlayAward ( class UCanvas* DrawCanvas )
     static UFunction* pFnPlayAward = NULL;
 
     if ( ! pFnPlayAward )
-        pFnPlayAward = (UFunction*) UObject::GObjObjects()->Data[ 98826 ];
+        pFnPlayAward = (UFunction*) UObject::GObjObjects()->Data[ 98825 ];
 
     ATrHUD_execPlayAward_Parms PlayAward_Parms;
     PlayAward_Parms.DrawCanvas = DrawCanvas;
@@ -40525,7 +40525,7 @@ void ATrHUD::eventPostRenderFor ( class APlayerController* PC, class UCanvas* Dr
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 98821 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 98820 ];
 
     ATrHUD_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -40546,7 +40546,7 @@ void ATrHUD::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 98819 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 98818 ];
 
     ATrHUD_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -40564,7 +40564,7 @@ void ATrHUD::UpdateOverheadNumbers ( float DeltaTime )
     static UFunction* pFnUpdateOverheadNumbers = NULL;
 
     if ( ! pFnUpdateOverheadNumbers )
-        pFnUpdateOverheadNumbers = (UFunction*) UObject::GObjObjects()->Data[ 98810 ];
+        pFnUpdateOverheadNumbers = (UFunction*) UObject::GObjObjects()->Data[ 98809 ];
 
     ATrHUD_execUpdateOverheadNumbers_Parms UpdateOverheadNumbers_Parms;
     UpdateOverheadNumbers_Parms.DeltaTime = DeltaTime;
@@ -40584,7 +40584,7 @@ void ATrHUD::AddOverheadNumber ( int Value, struct FVector4 WorldLocation, unsig
     static UFunction* pFnAddOverheadNumber = NULL;
 
     if ( ! pFnAddOverheadNumber )
-        pFnAddOverheadNumber = (UFunction*) UObject::GObjObjects()->Data[ 98805 ];
+        pFnAddOverheadNumber = (UFunction*) UObject::GObjObjects()->Data[ 98804 ];
 
     ATrHUD_execAddOverheadNumber_Parms AddOverheadNumber_Parms;
     AddOverheadNumber_Parms.Value = Value;
@@ -40604,7 +40604,7 @@ void ATrHUD::TestNumber ( int Value )
     static UFunction* pFnTestNumber = NULL;
 
     if ( ! pFnTestNumber )
-        pFnTestNumber = (UFunction*) UObject::GObjObjects()->Data[ 98803 ];
+        pFnTestNumber = (UFunction*) UObject::GObjObjects()->Data[ 98802 ];
 
     ATrHUD_execTestNumber_Parms TestNumber_Parms;
     TestNumber_Parms.Value = Value;
@@ -40622,7 +40622,7 @@ void ATrHUD::OnViewTargetChange ( class AActor* NewViewTarget )
     static UFunction* pFnOnViewTargetChange = NULL;
 
     if ( ! pFnOnViewTargetChange )
-        pFnOnViewTargetChange = (UFunction*) UObject::GObjObjects()->Data[ 98801 ];
+        pFnOnViewTargetChange = (UFunction*) UObject::GObjObjects()->Data[ 98800 ];
 
     ATrHUD_execOnViewTargetChange_Parms OnViewTargetChange_Parms;
     OnViewTargetChange_Parms.NewViewTarget = NewViewTarget;
@@ -40639,7 +40639,7 @@ void ATrHUD::HideAllSpectatorPanels ( )
     static UFunction* pFnHideAllSpectatorPanels = NULL;
 
     if ( ! pFnHideAllSpectatorPanels )
-        pFnHideAllSpectatorPanels = (UFunction*) UObject::GObjObjects()->Data[ 98800 ];
+        pFnHideAllSpectatorPanels = (UFunction*) UObject::GObjObjects()->Data[ 98799 ];
 
     ATrHUD_execHideAllSpectatorPanels_Parms HideAllSpectatorPanels_Parms;
 
@@ -40655,7 +40655,7 @@ void ATrHUD::UpdateSpectatorFloatCameraPanel ( )
     static UFunction* pFnUpdateSpectatorFloatCameraPanel = NULL;
 
     if ( ! pFnUpdateSpectatorFloatCameraPanel )
-        pFnUpdateSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98799 ];
+        pFnUpdateSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98798 ];
 
     ATrHUD_execUpdateSpectatorFloatCameraPanel_Parms UpdateSpectatorFloatCameraPanel_Parms;
 
@@ -40671,7 +40671,7 @@ void ATrHUD::HideSpectatorFloatCameraPanel ( )
     static UFunction* pFnHideSpectatorFloatCameraPanel = NULL;
 
     if ( ! pFnHideSpectatorFloatCameraPanel )
-        pFnHideSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98798 ];
+        pFnHideSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98797 ];
 
     ATrHUD_execHideSpectatorFloatCameraPanel_Parms HideSpectatorFloatCameraPanel_Parms;
 
@@ -40687,7 +40687,7 @@ void ATrHUD::ShowSpectatorFloatCameraPanel ( )
     static UFunction* pFnShowSpectatorFloatCameraPanel = NULL;
 
     if ( ! pFnShowSpectatorFloatCameraPanel )
-        pFnShowSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98797 ];
+        pFnShowSpectatorFloatCameraPanel = (UFunction*) UObject::GObjObjects()->Data[ 98796 ];
 
     ATrHUD_execShowSpectatorFloatCameraPanel_Parms ShowSpectatorFloatCameraPanel_Parms;
 
@@ -40704,7 +40704,7 @@ void ATrHUD::UpdateSpectatorObjectivePanel ( class AActor* ObjectiveActor )
     static UFunction* pFnUpdateSpectatorObjectivePanel = NULL;
 
     if ( ! pFnUpdateSpectatorObjectivePanel )
-        pFnUpdateSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98793 ];
+        pFnUpdateSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98792 ];
 
     ATrHUD_execUpdateSpectatorObjectivePanel_Parms UpdateSpectatorObjectivePanel_Parms;
     UpdateSpectatorObjectivePanel_Parms.ObjectiveActor = ObjectiveActor;
@@ -40721,7 +40721,7 @@ void ATrHUD::HideSpectatorObjectivePanel ( )
     static UFunction* pFnHideSpectatorObjectivePanel = NULL;
 
     if ( ! pFnHideSpectatorObjectivePanel )
-        pFnHideSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98792 ];
+        pFnHideSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98791 ];
 
     ATrHUD_execHideSpectatorObjectivePanel_Parms HideSpectatorObjectivePanel_Parms;
 
@@ -40737,7 +40737,7 @@ void ATrHUD::ShowSpectatorObjectivePanel ( )
     static UFunction* pFnShowSpectatorObjectivePanel = NULL;
 
     if ( ! pFnShowSpectatorObjectivePanel )
-        pFnShowSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98791 ];
+        pFnShowSpectatorObjectivePanel = (UFunction*) UObject::GObjObjects()->Data[ 98790 ];
 
     ATrHUD_execShowSpectatorObjectivePanel_Parms ShowSpectatorObjectivePanel_Parms;
 
@@ -40754,7 +40754,7 @@ void ATrHUD::UpdateSpectatorBookmarkPanel ( class ATrCamera_SpectatorBookmark* B
     static UFunction* pFnUpdateSpectatorBookmarkPanel = NULL;
 
     if ( ! pFnUpdateSpectatorBookmarkPanel )
-        pFnUpdateSpectatorBookmarkPanel = (UFunction*) UObject::GObjObjects()->Data[ 98789 ];
+        pFnUpdateSpectatorBookmarkPanel = (UFunction*) UObject::GObjObjects()->Data[ 98788 ];
 
     ATrHUD_execUpdateSpectatorBookmarkPanel_Parms UpdateSpectatorBookmarkPanel_Parms;
     UpdateSpectatorBookmarkPanel_Parms.BookMark = BookMark;
@@ -40771,7 +40771,7 @@ void ATrHUD::HideSpectatorBookmark ( )
     static UFunction* pFnHideSpectatorBookmark = NULL;
 
     if ( ! pFnHideSpectatorBookmark )
-        pFnHideSpectatorBookmark = (UFunction*) UObject::GObjObjects()->Data[ 98788 ];
+        pFnHideSpectatorBookmark = (UFunction*) UObject::GObjObjects()->Data[ 98787 ];
 
     ATrHUD_execHideSpectatorBookmark_Parms HideSpectatorBookmark_Parms;
 
@@ -40787,7 +40787,7 @@ void ATrHUD::ShowSpectatorBookmark ( )
     static UFunction* pFnShowSpectatorBookmark = NULL;
 
     if ( ! pFnShowSpectatorBookmark )
-        pFnShowSpectatorBookmark = (UFunction*) UObject::GObjObjects()->Data[ 98787 ];
+        pFnShowSpectatorBookmark = (UFunction*) UObject::GObjObjects()->Data[ 98786 ];
 
     ATrHUD_execShowSpectatorBookmark_Parms ShowSpectatorBookmark_Parms;
 
@@ -40804,7 +40804,7 @@ void ATrHUD::UpdateSpectatorVehiclePanel ( class ATrVehicle* ViewTargetVehicle )
     static UFunction* pFnUpdateSpectatorVehiclePanel = NULL;
 
     if ( ! pFnUpdateSpectatorVehiclePanel )
-        pFnUpdateSpectatorVehiclePanel = (UFunction*) UObject::GObjObjects()->Data[ 98781 ];
+        pFnUpdateSpectatorVehiclePanel = (UFunction*) UObject::GObjObjects()->Data[ 98780 ];
 
     ATrHUD_execUpdateSpectatorVehiclePanel_Parms UpdateSpectatorVehiclePanel_Parms;
     UpdateSpectatorVehiclePanel_Parms.ViewTargetVehicle = ViewTargetVehicle;
@@ -40821,7 +40821,7 @@ void ATrHUD::HideSpectatorVehicle ( )
     static UFunction* pFnHideSpectatorVehicle = NULL;
 
     if ( ! pFnHideSpectatorVehicle )
-        pFnHideSpectatorVehicle = (UFunction*) UObject::GObjObjects()->Data[ 98780 ];
+        pFnHideSpectatorVehicle = (UFunction*) UObject::GObjObjects()->Data[ 98779 ];
 
     ATrHUD_execHideSpectatorVehicle_Parms HideSpectatorVehicle_Parms;
 
@@ -40837,7 +40837,7 @@ void ATrHUD::ShowSpectatorVehicle ( )
     static UFunction* pFnShowSpectatorVehicle = NULL;
 
     if ( ! pFnShowSpectatorVehicle )
-        pFnShowSpectatorVehicle = (UFunction*) UObject::GObjObjects()->Data[ 98779 ];
+        pFnShowSpectatorVehicle = (UFunction*) UObject::GObjObjects()->Data[ 98778 ];
 
     ATrHUD_execShowSpectatorVehicle_Parms ShowSpectatorVehicle_Parms;
 
@@ -40854,7 +40854,7 @@ void ATrHUD::UpdateSpectatorPlayerPanel ( class ATrPawn* ViewTargetTrPawn )
     static UFunction* pFnUpdateSpectatorPlayerPanel = NULL;
 
     if ( ! pFnUpdateSpectatorPlayerPanel )
-        pFnUpdateSpectatorPlayerPanel = (UFunction*) UObject::GObjObjects()->Data[ 98776 ];
+        pFnUpdateSpectatorPlayerPanel = (UFunction*) UObject::GObjObjects()->Data[ 98775 ];
 
     ATrHUD_execUpdateSpectatorPlayerPanel_Parms UpdateSpectatorPlayerPanel_Parms;
     UpdateSpectatorPlayerPanel_Parms.ViewTargetTrPawn = ViewTargetTrPawn;
@@ -40871,7 +40871,7 @@ void ATrHUD::HideSpectatorPlayer ( )
     static UFunction* pFnHideSpectatorPlayer = NULL;
 
     if ( ! pFnHideSpectatorPlayer )
-        pFnHideSpectatorPlayer = (UFunction*) UObject::GObjObjects()->Data[ 98775 ];
+        pFnHideSpectatorPlayer = (UFunction*) UObject::GObjObjects()->Data[ 98774 ];
 
     ATrHUD_execHideSpectatorPlayer_Parms HideSpectatorPlayer_Parms;
 
@@ -40887,7 +40887,7 @@ void ATrHUD::ShowSpectatorPlayer ( )
     static UFunction* pFnShowSpectatorPlayer = NULL;
 
     if ( ! pFnShowSpectatorPlayer )
-        pFnShowSpectatorPlayer = (UFunction*) UObject::GObjObjects()->Data[ 98774 ];
+        pFnShowSpectatorPlayer = (UFunction*) UObject::GObjObjects()->Data[ 98773 ];
 
     ATrHUD_execShowSpectatorPlayer_Parms ShowSpectatorPlayer_Parms;
 
@@ -40903,7 +40903,7 @@ void ATrHUD::EnableGameTypeHUD ( )
     static UFunction* pFnEnableGameTypeHUD = NULL;
 
     if ( ! pFnEnableGameTypeHUD )
-        pFnEnableGameTypeHUD = (UFunction*) UObject::GObjObjects()->Data[ 98773 ];
+        pFnEnableGameTypeHUD = (UFunction*) UObject::GObjObjects()->Data[ 98772 ];
 
     ATrHUD_execEnableGameTypeHUD_Parms EnableGameTypeHUD_Parms;
 
@@ -40921,7 +40921,7 @@ void ATrHUD::KickVoteMessage ( unsigned long bComplete, struct FString Message )
     static UFunction* pFnKickVoteMessage = NULL;
 
     if ( ! pFnKickVoteMessage )
-        pFnKickVoteMessage = (UFunction*) UObject::GObjObjects()->Data[ 98769 ];
+        pFnKickVoteMessage = (UFunction*) UObject::GObjObjects()->Data[ 98768 ];
 
     ATrHUD_execKickVoteMessage_Parms KickVoteMessage_Parms;
     KickVoteMessage_Parms.bComplete = bComplete;
@@ -40939,7 +40939,7 @@ void ATrHUD::HideGlobalAlert ( )
     static UFunction* pFnHideGlobalAlert = NULL;
 
     if ( ! pFnHideGlobalAlert )
-        pFnHideGlobalAlert = (UFunction*) UObject::GObjObjects()->Data[ 98768 ];
+        pFnHideGlobalAlert = (UFunction*) UObject::GObjObjects()->Data[ 98767 ];
 
     ATrHUD_execHideGlobalAlert_Parms HideGlobalAlert_Parms;
 
@@ -40958,7 +40958,7 @@ void ATrHUD::SetPlayerClassObjects ( struct FString ClassName, int PerkIcon1, in
     static UFunction* pFnSetPlayerClassObjects = NULL;
 
     if ( ! pFnSetPlayerClassObjects )
-        pFnSetPlayerClassObjects = (UFunction*) UObject::GObjObjects()->Data[ 98764 ];
+        pFnSetPlayerClassObjects = (UFunction*) UObject::GObjObjects()->Data[ 98763 ];
 
     ATrHUD_execSetPlayerClassObjects_Parms SetPlayerClassObjects_Parms;
     memcpy ( &SetPlayerClassObjects_Parms.ClassName, &ClassName, 0xC );
@@ -40978,7 +40978,7 @@ void ATrHUD::SendLocalMessageToChat ( struct FString Message )
     static UFunction* pFnSendLocalMessageToChat = NULL;
 
     if ( ! pFnSendLocalMessageToChat )
-        pFnSendLocalMessageToChat = (UFunction*) UObject::GObjObjects()->Data[ 98760 ];
+        pFnSendLocalMessageToChat = (UFunction*) UObject::GObjObjects()->Data[ 98759 ];
 
     ATrHUD_execSendLocalMessageToChat_Parms SendLocalMessageToChat_Parms;
     memcpy ( &SendLocalMessageToChat_Parms.Message, &Message, 0xC );
@@ -40996,7 +40996,7 @@ void ATrHUD::SendLocalMessageToGlobalAlert ( struct FString Message )
     static UFunction* pFnSendLocalMessageToGlobalAlert = NULL;
 
     if ( ! pFnSendLocalMessageToGlobalAlert )
-        pFnSendLocalMessageToGlobalAlert = (UFunction*) UObject::GObjObjects()->Data[ 98758 ];
+        pFnSendLocalMessageToGlobalAlert = (UFunction*) UObject::GObjObjects()->Data[ 98757 ];
 
     ATrHUD_execSendLocalMessageToGlobalAlert_Parms SendLocalMessageToGlobalAlert_Parms;
     memcpy ( &SendLocalMessageToGlobalAlert_Parms.Message, &Message, 0xC );
@@ -41015,7 +41015,7 @@ struct FString ATrHUD::StripTag ( struct FString sValue )
     static UFunction* pFnStripTag = NULL;
 
     if ( ! pFnStripTag )
-        pFnStripTag = (UFunction*) UObject::GObjObjects()->Data[ 98754 ];
+        pFnStripTag = (UFunction*) UObject::GObjObjects()->Data[ 98753 ];
 
     ATrHUD_execStripTag_Parms StripTag_Parms;
     memcpy ( &StripTag_Parms.sValue, &sValue, 0xC );
@@ -41037,7 +41037,7 @@ void ATrHUD::ChatMessageReceived ( int Channel, struct FString Sender, struct FS
     static UFunction* pFnChatMessageReceived = NULL;
 
     if ( ! pFnChatMessageReceived )
-        pFnChatMessageReceived = (UFunction*) UObject::GObjObjects()->Data[ 98739 ];
+        pFnChatMessageReceived = (UFunction*) UObject::GObjObjects()->Data[ 98738 ];
 
     ATrHUD_execChatMessageReceived_Parms ChatMessageReceived_Parms;
     ChatMessageReceived_Parms.Channel = Channel;
@@ -41066,7 +41066,7 @@ void ATrHUD::LocalizedMessage ( class UClass* InMessageClass, class APlayerRepli
     static UFunction* pFnLocalizedMessage = NULL;
 
     if ( ! pFnLocalizedMessage )
-        pFnLocalizedMessage = (UFunction*) UObject::GObjObjects()->Data[ 98721 ];
+        pFnLocalizedMessage = (UFunction*) UObject::GObjObjects()->Data[ 98720 ];
 
     ATrHUD_execLocalizedMessage_Parms LocalizedMessage_Parms;
     LocalizedMessage_Parms.InMessageClass = InMessageClass;
@@ -41092,7 +41092,7 @@ void ATrHUD::UpdateWhiteoutEffect ( )
     static UFunction* pFnUpdateWhiteoutEffect = NULL;
 
     if ( ! pFnUpdateWhiteoutEffect )
-        pFnUpdateWhiteoutEffect = (UFunction*) UObject::GObjObjects()->Data[ 98720 ];
+        pFnUpdateWhiteoutEffect = (UFunction*) UObject::GObjObjects()->Data[ 98719 ];
 
     ATrHUD_execUpdateWhiteoutEffect_Parms UpdateWhiteoutEffect_Parms;
 
@@ -41108,7 +41108,7 @@ void ATrHUD::ClearWhiteout ( )
     static UFunction* pFnClearWhiteout = NULL;
 
     if ( ! pFnClearWhiteout )
-        pFnClearWhiteout = (UFunction*) UObject::GObjObjects()->Data[ 98719 ];
+        pFnClearWhiteout = (UFunction*) UObject::GObjObjects()->Data[ 98718 ];
 
     ATrHUD_execClearWhiteout_Parms ClearWhiteout_Parms;
 
@@ -41126,7 +41126,7 @@ void ATrHUD::Whiteout ( float Speed, float Amount )
     static UFunction* pFnWhiteout = NULL;
 
     if ( ! pFnWhiteout )
-        pFnWhiteout = (UFunction*) UObject::GObjObjects()->Data[ 98716 ];
+        pFnWhiteout = (UFunction*) UObject::GObjObjects()->Data[ 98715 ];
 
     ATrHUD_execWhiteout_Parms Whiteout_Parms;
     Whiteout_Parms.Speed = Speed;
@@ -41144,7 +41144,7 @@ void ATrHUD::UpdateFumbledFlagEffect ( )
     static UFunction* pFnUpdateFumbledFlagEffect = NULL;
 
     if ( ! pFnUpdateFumbledFlagEffect )
-        pFnUpdateFumbledFlagEffect = (UFunction*) UObject::GObjObjects()->Data[ 98715 ];
+        pFnUpdateFumbledFlagEffect = (UFunction*) UObject::GObjObjects()->Data[ 98714 ];
 
     ATrHUD_execUpdateFumbledFlagEffect_Parms UpdateFumbledFlagEffect_Parms;
 
@@ -41161,7 +41161,7 @@ void ATrHUD::FumbleFlag ( float Speed )
     static UFunction* pFnFumbleFlag = NULL;
 
     if ( ! pFnFumbleFlag )
-        pFnFumbleFlag = (UFunction*) UObject::GObjObjects()->Data[ 98713 ];
+        pFnFumbleFlag = (UFunction*) UObject::GObjObjects()->Data[ 98712 ];
 
     ATrHUD_execFumbleFlag_Parms FumbleFlag_Parms;
     FumbleFlag_Parms.Speed = Speed;
@@ -41178,7 +41178,7 @@ void ATrHUD::UpdateFadeEffect ( )
     static UFunction* pFnUpdateFadeEffect = NULL;
 
     if ( ! pFnUpdateFadeEffect )
-        pFnUpdateFadeEffect = (UFunction*) UObject::GObjObjects()->Data[ 98711 ];
+        pFnUpdateFadeEffect = (UFunction*) UObject::GObjObjects()->Data[ 98710 ];
 
     ATrHUD_execUpdateFadeEffect_Parms UpdateFadeEffect_Parms;
 
@@ -41194,7 +41194,7 @@ void ATrHUD::UpdateJammerEffect ( )
     static UFunction* pFnUpdateJammerEffect = NULL;
 
     if ( ! pFnUpdateJammerEffect )
-        pFnUpdateJammerEffect = (UFunction*) UObject::GObjObjects()->Data[ 98708 ];
+        pFnUpdateJammerEffect = (UFunction*) UObject::GObjObjects()->Data[ 98707 ];
 
     ATrHUD_execUpdateJammerEffect_Parms UpdateJammerEffect_Parms;
 
@@ -41210,7 +41210,7 @@ void ATrHUD::PulseShieldEffect ( )
     static UFunction* pFnPulseShieldEffect = NULL;
 
     if ( ! pFnPulseShieldEffect )
-        pFnPulseShieldEffect = (UFunction*) UObject::GObjObjects()->Data[ 98707 ];
+        pFnPulseShieldEffect = (UFunction*) UObject::GObjObjects()->Data[ 98706 ];
 
     ATrHUD_execPulseShieldEffect_Parms PulseShieldEffect_Parms;
 
@@ -41226,7 +41226,7 @@ void ATrHUD::UpdateShieldEffect ( )
     static UFunction* pFnUpdateShieldEffect = NULL;
 
     if ( ! pFnUpdateShieldEffect )
-        pFnUpdateShieldEffect = (UFunction*) UObject::GObjObjects()->Data[ 98703 ];
+        pFnUpdateShieldEffect = (UFunction*) UObject::GObjObjects()->Data[ 98702 ];
 
     ATrHUD_execUpdateShieldEffect_Parms UpdateShieldEffect_Parms;
 
@@ -41242,7 +41242,7 @@ void ATrHUD::UpdateInvulnerableEfect ( )
     static UFunction* pFnUpdateInvulnerableEfect = NULL;
 
     if ( ! pFnUpdateInvulnerableEfect )
-        pFnUpdateInvulnerableEfect = (UFunction*) UObject::GObjObjects()->Data[ 98699 ];
+        pFnUpdateInvulnerableEfect = (UFunction*) UObject::GObjObjects()->Data[ 98698 ];
 
     ATrHUD_execUpdateInvulnerableEfect_Parms UpdateInvulnerableEfect_Parms;
 
@@ -41260,7 +41260,7 @@ void ATrHUD::PulsePickupFlashEffect ( float PulseAmount, float PulseSpeed )
     static UFunction* pFnPulsePickupFlashEffect = NULL;
 
     if ( ! pFnPulsePickupFlashEffect )
-        pFnPulsePickupFlashEffect = (UFunction*) UObject::GObjObjects()->Data[ 98696 ];
+        pFnPulsePickupFlashEffect = (UFunction*) UObject::GObjObjects()->Data[ 98695 ];
 
     ATrHUD_execPulsePickupFlashEffect_Parms PulsePickupFlashEffect_Parms;
     PulsePickupFlashEffect_Parms.PulseAmount = PulseAmount;
@@ -41278,7 +41278,7 @@ void ATrHUD::UpdatePickupFlashEffect ( )
     static UFunction* pFnUpdatePickupFlashEffect = NULL;
 
     if ( ! pFnUpdatePickupFlashEffect )
-        pFnUpdatePickupFlashEffect = (UFunction*) UObject::GObjObjects()->Data[ 98694 ];
+        pFnUpdatePickupFlashEffect = (UFunction*) UObject::GObjObjects()->Data[ 98693 ];
 
     ATrHUD_execUpdatePickupFlashEffect_Parms UpdatePickupFlashEffect_Parms;
 
@@ -41294,7 +41294,7 @@ void ATrHUD::UpdateSkiEffect ( )
     static UFunction* pFnUpdateSkiEffect = NULL;
 
     if ( ! pFnUpdateSkiEffect )
-        pFnUpdateSkiEffect = (UFunction*) UObject::GObjObjects()->Data[ 98692 ];
+        pFnUpdateSkiEffect = (UFunction*) UObject::GObjObjects()->Data[ 98691 ];
 
     ATrHUD_execUpdateSkiEffect_Parms UpdateSkiEffect_Parms;
 
@@ -41311,7 +41311,7 @@ float ATrHUD::GetRemainingEnemyGeneratorRestoreTime ( )
     static UFunction* pFnGetRemainingEnemyGeneratorRestoreTime = NULL;
 
     if ( ! pFnGetRemainingEnemyGeneratorRestoreTime )
-        pFnGetRemainingEnemyGeneratorRestoreTime = (UFunction*) UObject::GObjObjects()->Data[ 98690 ];
+        pFnGetRemainingEnemyGeneratorRestoreTime = (UFunction*) UObject::GObjObjects()->Data[ 98689 ];
 
     ATrHUD_execGetRemainingEnemyGeneratorRestoreTime_Parms GetRemainingEnemyGeneratorRestoreTime_Parms;
 
@@ -41330,7 +41330,7 @@ float ATrHUD::GetRemainingFriendlyGeneratorRestoreTime ( )
     static UFunction* pFnGetRemainingFriendlyGeneratorRestoreTime = NULL;
 
     if ( ! pFnGetRemainingFriendlyGeneratorRestoreTime )
-        pFnGetRemainingFriendlyGeneratorRestoreTime = (UFunction*) UObject::GObjObjects()->Data[ 98688 ];
+        pFnGetRemainingFriendlyGeneratorRestoreTime = (UFunction*) UObject::GObjObjects()->Data[ 98687 ];
 
     ATrHUD_execGetRemainingFriendlyGeneratorRestoreTime_Parms GetRemainingFriendlyGeneratorRestoreTime_Parms;
 
@@ -41348,7 +41348,7 @@ void ATrHUD::eventPostRender ( )
     static UFunction* pFnPostRender = NULL;
 
     if ( ! pFnPostRender )
-        pFnPostRender = (UFunction*) UObject::GObjObjects()->Data[ 98687 ];
+        pFnPostRender = (UFunction*) UObject::GObjObjects()->Data[ 98686 ];
 
     ATrHUD_eventPostRender_Parms PostRender_Parms;
 
@@ -41436,7 +41436,7 @@ void ATrHUD::DrawHealthBar ( class UMaterialInstanceConstant* HealthBarMIC, unsi
     static UFunction* pFnDrawHealthBar = NULL;
 
     if ( ! pFnDrawHealthBar )
-        pFnDrawHealthBar = (UFunction*) UObject::GObjObjects()->Data[ 98658 ];
+        pFnDrawHealthBar = (UFunction*) UObject::GObjObjects()->Data[ 98657 ];
 
     ATrHUD_execDrawHealthBar_Parms DrawHealthBar_Parms;
     DrawHealthBar_Parms.HealthBarMIC = HealthBarMIC;
@@ -41464,7 +41464,7 @@ void ATrHUD::DrawSmallText ( struct FString ShowText, unsigned long bFriend, str
     static UFunction* pFnDrawSmallText = NULL;
 
     if ( ! pFnDrawSmallText )
-        pFnDrawSmallText = (UFunction*) UObject::GObjObjects()->Data[ 98651 ];
+        pFnDrawSmallText = (UFunction*) UObject::GObjObjects()->Data[ 98650 ];
 
     ATrHUD_execDrawSmallText_Parms DrawSmallText_Parms;
     memcpy ( &DrawSmallText_Parms.ShowText, &ShowText, 0xC );
@@ -41491,7 +41491,7 @@ struct FVector ATrHUD::DrawColoredMarkerText ( struct FString ShowText, struct F
     static UFunction* pFnDrawColoredMarkerText = NULL;
 
     if ( ! pFnDrawColoredMarkerText )
-        pFnDrawColoredMarkerText = (UFunction*) UObject::GObjObjects()->Data[ 98641 ];
+        pFnDrawColoredMarkerText = (UFunction*) UObject::GObjObjects()->Data[ 98640 ];
 
     ATrHUD_execDrawColoredMarkerText_Parms DrawColoredMarkerText_Parms;
     memcpy ( &DrawColoredMarkerText_Parms.ShowText, &ShowText, 0xC );
@@ -41613,7 +41613,7 @@ bool ATrHUD::CheckCrosshairOnFriendly ( )
     static UFunction* pFnCheckCrosshairOnFriendly = NULL;
 
     if ( ! pFnCheckCrosshairOnFriendly )
-        pFnCheckCrosshairOnFriendly = (UFunction*) UObject::GObjObjects()->Data[ 98598 ];
+        pFnCheckCrosshairOnFriendly = (UFunction*) UObject::GObjObjects()->Data[ 98597 ];
 
     ATrHUD_execCheckCrosshairOnFriendly_Parms CheckCrosshairOnFriendly_Parms;
 
@@ -41631,7 +41631,7 @@ void ATrHUD::ClearCrosshairOnFriendly ( )
     static UFunction* pFnClearCrosshairOnFriendly = NULL;
 
     if ( ! pFnClearCrosshairOnFriendly )
-        pFnClearCrosshairOnFriendly = (UFunction*) UObject::GObjObjects()->Data[ 98597 ];
+        pFnClearCrosshairOnFriendly = (UFunction*) UObject::GObjObjects()->Data[ 98596 ];
 
     ATrHUD_execClearCrosshairOnFriendly_Parms ClearCrosshairOnFriendly_Parms;
 
@@ -41647,7 +41647,7 @@ void ATrHUD::CompleteTeamSelectionMenuClose ( )
     static UFunction* pFnCompleteTeamSelectionMenuClose = NULL;
 
     if ( ! pFnCompleteTeamSelectionMenuClose )
-        pFnCompleteTeamSelectionMenuClose = (UFunction*) UObject::GObjObjects()->Data[ 98596 ];
+        pFnCompleteTeamSelectionMenuClose = (UFunction*) UObject::GObjObjects()->Data[ 98595 ];
 
     ATrHUD_execCompleteTeamSelectionMenuClose_Parms CompleteTeamSelectionMenuClose_Parms;
 
@@ -41663,7 +41663,7 @@ void ATrHUD::CompleteVehicleMenuClose ( )
     static UFunction* pFnCompleteVehicleMenuClose = NULL;
 
     if ( ! pFnCompleteVehicleMenuClose )
-        pFnCompleteVehicleMenuClose = (UFunction*) UObject::GObjObjects()->Data[ 98595 ];
+        pFnCompleteVehicleMenuClose = (UFunction*) UObject::GObjObjects()->Data[ 98594 ];
 
     ATrHUD_execCompleteVehicleMenuClose_Parms CompleteVehicleMenuClose_Parms;
 
@@ -41679,7 +41679,7 @@ void ATrHUD::RemoveMovies ( )
     static UFunction* pFnRemoveMovies = NULL;
 
     if ( ! pFnRemoveMovies )
-        pFnRemoveMovies = (UFunction*) UObject::GObjObjects()->Data[ 98594 ];
+        pFnRemoveMovies = (UFunction*) UObject::GObjObjects()->Data[ 98593 ];
 
     ATrHUD_execRemoveMovies_Parms RemoveMovies_Parms;
 
@@ -41695,7 +41695,7 @@ void ATrHUD::HideMenus ( )
     static UFunction* pFnHideMenus = NULL;
 
     if ( ! pFnHideMenus )
-        pFnHideMenus = (UFunction*) UObject::GObjObjects()->Data[ 98593 ];
+        pFnHideMenus = (UFunction*) UObject::GObjObjects()->Data[ 98592 ];
 
     ATrHUD_execHideMenus_Parms HideMenus_Parms;
 
@@ -41711,7 +41711,7 @@ void ATrHUD::RestoreHUDState ( )
     static UFunction* pFnRestoreHUDState = NULL;
 
     if ( ! pFnRestoreHUDState )
-        pFnRestoreHUDState = (UFunction*) UObject::GObjObjects()->Data[ 98589 ];
+        pFnRestoreHUDState = (UFunction*) UObject::GObjObjects()->Data[ 98588 ];
 
     ATrHUD_execRestoreHUDState_Parms RestoreHUDState_Parms;
 
@@ -41727,7 +41727,7 @@ void ATrHUD::ResolutionChanged ( )
     static UFunction* pFnResolutionChanged = NULL;
 
     if ( ! pFnResolutionChanged )
-        pFnResolutionChanged = (UFunction*) UObject::GObjObjects()->Data[ 98586 ];
+        pFnResolutionChanged = (UFunction*) UObject::GObjObjects()->Data[ 98585 ];
 
     ATrHUD_execResolutionChanged_Parms ResolutionChanged_Parms;
 
@@ -41745,7 +41745,7 @@ void ATrHUD::RabbitScoreboardActivePlayer ( int Index, unsigned long bVisible )
     static UFunction* pFnRabbitScoreboardActivePlayer = NULL;
 
     if ( ! pFnRabbitScoreboardActivePlayer )
-        pFnRabbitScoreboardActivePlayer = (UFunction*) UObject::GObjObjects()->Data[ 98583 ];
+        pFnRabbitScoreboardActivePlayer = (UFunction*) UObject::GObjObjects()->Data[ 98582 ];
 
     ATrHUD_execRabbitScoreboardActivePlayer_Parms RabbitScoreboardActivePlayer_Parms;
     RabbitScoreboardActivePlayer_Parms.Index = Index;
@@ -41764,7 +41764,7 @@ void ATrHUD::TeamScoreboardActivePlayer ( int Index )
     static UFunction* pFnTeamScoreboardActivePlayer = NULL;
 
     if ( ! pFnTeamScoreboardActivePlayer )
-        pFnTeamScoreboardActivePlayer = (UFunction*) UObject::GObjObjects()->Data[ 98581 ];
+        pFnTeamScoreboardActivePlayer = (UFunction*) UObject::GObjObjects()->Data[ 98580 ];
 
     ATrHUD_execTeamScoreboardActivePlayer_Parms TeamScoreboardActivePlayer_Parms;
     TeamScoreboardActivePlayer_Parms.Index = Index;
@@ -41782,7 +41782,7 @@ void ATrHUD::RabbitScoreboardUpdateTime ( struct FString Time )
     static UFunction* pFnRabbitScoreboardUpdateTime = NULL;
 
     if ( ! pFnRabbitScoreboardUpdateTime )
-        pFnRabbitScoreboardUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98579 ];
+        pFnRabbitScoreboardUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98578 ];
 
     ATrHUD_execRabbitScoreboardUpdateTime_Parms RabbitScoreboardUpdateTime_Parms;
     memcpy ( &RabbitScoreboardUpdateTime_Parms.Time, &Time, 0xC );
@@ -41800,7 +41800,7 @@ void ATrHUD::TeamScoreboardUpdateTime ( struct FString Time )
     static UFunction* pFnTeamScoreboardUpdateTime = NULL;
 
     if ( ! pFnTeamScoreboardUpdateTime )
-        pFnTeamScoreboardUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98577 ];
+        pFnTeamScoreboardUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98576 ];
 
     ATrHUD_execTeamScoreboardUpdateTime_Parms TeamScoreboardUpdateTime_Parms;
     memcpy ( &TeamScoreboardUpdateTime_Parms.Time, &Time, 0xC );
@@ -41819,7 +41819,7 @@ void ATrHUD::TeamScoreboardUpdateTeamScore ( int Index, int Score )
     static UFunction* pFnTeamScoreboardUpdateTeamScore = NULL;
 
     if ( ! pFnTeamScoreboardUpdateTeamScore )
-        pFnTeamScoreboardUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 98574 ];
+        pFnTeamScoreboardUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 98573 ];
 
     ATrHUD_execTeamScoreboardUpdateTeamScore_Parms TeamScoreboardUpdateTeamScore_Parms;
     TeamScoreboardUpdateTeamScore_Parms.Index = Index;
@@ -41846,7 +41846,7 @@ void ATrHUD::RabbitScoreboardUpdateSlot ( int Index, struct FString PlayerName, 
     static UFunction* pFnRabbitScoreboardUpdateSlot = NULL;
 
     if ( ! pFnRabbitScoreboardUpdateSlot )
-        pFnRabbitScoreboardUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 98564 ];
+        pFnRabbitScoreboardUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 98563 ];
 
     ATrHUD_execRabbitScoreboardUpdateSlot_Parms RabbitScoreboardUpdateSlot_Parms;
     RabbitScoreboardUpdateSlot_Parms.Index = Index;
@@ -41880,7 +41880,7 @@ void ATrHUD::TeamScoreboardUpdateSlot ( int Index, struct FString PlayerName, st
     static UFunction* pFnTeamScoreboardUpdateSlot = NULL;
 
     if ( ! pFnTeamScoreboardUpdateSlot )
-        pFnTeamScoreboardUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 98554 ];
+        pFnTeamScoreboardUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 98553 ];
 
     ATrHUD_execTeamScoreboardUpdateSlot_Parms TeamScoreboardUpdateSlot_Parms;
     TeamScoreboardUpdateSlot_Parms.Index = Index;
@@ -41906,7 +41906,7 @@ void ATrHUD::RabbitScoreboardShow ( unsigned long bVisible )
     static UFunction* pFnRabbitScoreboardShow = NULL;
 
     if ( ! pFnRabbitScoreboardShow )
-        pFnRabbitScoreboardShow = (UFunction*) UObject::GObjObjects()->Data[ 98552 ];
+        pFnRabbitScoreboardShow = (UFunction*) UObject::GObjObjects()->Data[ 98551 ];
 
     ATrHUD_execRabbitScoreboardShow_Parms RabbitScoreboardShow_Parms;
     RabbitScoreboardShow_Parms.bVisible = bVisible;
@@ -41924,7 +41924,7 @@ void ATrHUD::TeamScoreboardShow ( unsigned long bVisible )
     static UFunction* pFnTeamScoreboardShow = NULL;
 
     if ( ! pFnTeamScoreboardShow )
-        pFnTeamScoreboardShow = (UFunction*) UObject::GObjObjects()->Data[ 98550 ];
+        pFnTeamScoreboardShow = (UFunction*) UObject::GObjObjects()->Data[ 98549 ];
 
     ATrHUD_execTeamScoreboardShow_Parms TeamScoreboardShow_Parms;
     TeamScoreboardShow_Parms.bVisible = bVisible;
@@ -41943,7 +41943,7 @@ void ATrHUD::UpdateHUDCredits ( int changeAmount, int newTotal )
     static UFunction* pFnUpdateHUDCredits = NULL;
 
     if ( ! pFnUpdateHUDCredits )
-        pFnUpdateHUDCredits = (UFunction*) UObject::GObjObjects()->Data[ 98547 ];
+        pFnUpdateHUDCredits = (UFunction*) UObject::GObjObjects()->Data[ 98546 ];
 
     ATrHUD_execUpdateHUDCredits_Parms UpdateHUDCredits_Parms;
     UpdateHUDCredits_Parms.changeAmount = changeAmount;
@@ -41962,7 +41962,7 @@ void ATrHUD::UpdateRespawnTimer ( int TimeRemaining )
     static UFunction* pFnUpdateRespawnTimer = NULL;
 
     if ( ! pFnUpdateRespawnTimer )
-        pFnUpdateRespawnTimer = (UFunction*) UObject::GObjObjects()->Data[ 98545 ];
+        pFnUpdateRespawnTimer = (UFunction*) UObject::GObjObjects()->Data[ 98544 ];
 
     ATrHUD_execUpdateRespawnTimer_Parms UpdateRespawnTimer_Parms;
     UpdateRespawnTimer_Parms.TimeRemaining = TimeRemaining;
@@ -41980,7 +41980,7 @@ void ATrHUD::UpdateRespawnText ( struct FString Text )
     static UFunction* pFnUpdateRespawnText = NULL;
 
     if ( ! pFnUpdateRespawnText )
-        pFnUpdateRespawnText = (UFunction*) UObject::GObjObjects()->Data[ 98543 ];
+        pFnUpdateRespawnText = (UFunction*) UObject::GObjObjects()->Data[ 98542 ];
 
     ATrHUD_execUpdateRespawnText_Parms UpdateRespawnText_Parms;
     memcpy ( &UpdateRespawnText_Parms.Text, &Text, 0xC );
@@ -41998,7 +41998,7 @@ void ATrHUD::ShowCenterHUDElements ( unsigned long bShow )
     static UFunction* pFnShowCenterHUDElements = NULL;
 
     if ( ! pFnShowCenterHUDElements )
-        pFnShowCenterHUDElements = (UFunction*) UObject::GObjObjects()->Data[ 98541 ];
+        pFnShowCenterHUDElements = (UFunction*) UObject::GObjObjects()->Data[ 98540 ];
 
     ATrHUD_execShowCenterHUDElements_Parms ShowCenterHUDElements_Parms;
     ShowCenterHUDElements_Parms.bShow = bShow;
@@ -42015,7 +42015,7 @@ void ATrHUD::ShowHUDPlayerAlive ( )
     static UFunction* pFnShowHUDPlayerAlive = NULL;
 
     if ( ! pFnShowHUDPlayerAlive )
-        pFnShowHUDPlayerAlive = (UFunction*) UObject::GObjObjects()->Data[ 98540 ];
+        pFnShowHUDPlayerAlive = (UFunction*) UObject::GObjObjects()->Data[ 98539 ];
 
     ATrHUD_execShowHUDPlayerAlive_Parms ShowHUDPlayerAlive_Parms;
 
@@ -42031,7 +42031,7 @@ void ATrHUD::ShowHUDPlayerSpawning ( )
     static UFunction* pFnShowHUDPlayerSpawning = NULL;
 
     if ( ! pFnShowHUDPlayerSpawning )
-        pFnShowHUDPlayerSpawning = (UFunction*) UObject::GObjObjects()->Data[ 98539 ];
+        pFnShowHUDPlayerSpawning = (UFunction*) UObject::GObjObjects()->Data[ 98538 ];
 
     ATrHUD_execShowHUDPlayerSpawning_Parms ShowHUDPlayerSpawning_Parms;
 
@@ -42049,7 +42049,7 @@ void ATrHUD::HideHUDElements ( unsigned long bShowStats, unsigned long bForceCre
     static UFunction* pFnHideHUDElements = NULL;
 
     if ( ! pFnHideHUDElements )
-        pFnHideHUDElements = (UFunction*) UObject::GObjObjects()->Data[ 98536 ];
+        pFnHideHUDElements = (UFunction*) UObject::GObjObjects()->Data[ 98535 ];
 
     ATrHUD_execHideHUDElements_Parms HideHUDElements_Parms;
     HideHUDElements_Parms.bShowStats = bShowStats;
@@ -42067,7 +42067,7 @@ void ATrHUD::ClearSpectatorHUDCache ( )
     static UFunction* pFnClearSpectatorHUDCache = NULL;
 
     if ( ! pFnClearSpectatorHUDCache )
-        pFnClearSpectatorHUDCache = (UFunction*) UObject::GObjObjects()->Data[ 98535 ];
+        pFnClearSpectatorHUDCache = (UFunction*) UObject::GObjObjects()->Data[ 98534 ];
 
     ATrHUD_execClearSpectatorHUDCache_Parms ClearSpectatorHUDCache_Parms;
 
@@ -42083,7 +42083,7 @@ void ATrHUD::CreateSpectatorHUDCache ( )
     static UFunction* pFnCreateSpectatorHUDCache = NULL;
 
     if ( ! pFnCreateSpectatorHUDCache )
-        pFnCreateSpectatorHUDCache = (UFunction*) UObject::GObjObjects()->Data[ 98534 ];
+        pFnCreateSpectatorHUDCache = (UFunction*) UObject::GObjObjects()->Data[ 98533 ];
 
     ATrHUD_execCreateSpectatorHUDCache_Parms CreateSpectatorHUDCache_Parms;
 
@@ -42100,7 +42100,7 @@ void ATrHUD::OnSpectate ( unsigned long bUpdateTeamState )
     static UFunction* pFnOnSpectate = NULL;
 
     if ( ! pFnOnSpectate )
-        pFnOnSpectate = (UFunction*) UObject::GObjObjects()->Data[ 98532 ];
+        pFnOnSpectate = (UFunction*) UObject::GObjObjects()->Data[ 98531 ];
 
     ATrHUD_execOnSpectate_Parms OnSpectate_Parms;
     OnSpectate_Parms.bUpdateTeamState = bUpdateTeamState;
@@ -42121,7 +42121,7 @@ void ATrHUD::AddFlyingIcon ( int iconNumber, struct FString Description, struct 
     static UFunction* pFnAddFlyingIcon = NULL;
 
     if ( ! pFnAddFlyingIcon )
-        pFnAddFlyingIcon = (UFunction*) UObject::GObjObjects()->Data[ 98527 ];
+        pFnAddFlyingIcon = (UFunction*) UObject::GObjObjects()->Data[ 98526 ];
 
     ATrHUD_execAddFlyingIcon_Parms AddFlyingIcon_Parms;
     AddFlyingIcon_Parms.iconNumber = iconNumber;
@@ -42145,7 +42145,7 @@ void ATrHUD::AddUpdateToKillMessage ( int RankIcon, int PlayerIcon, struct FStri
     static UFunction* pFnAddUpdateToKillMessage = NULL;
 
     if ( ! pFnAddUpdateToKillMessage )
-        pFnAddUpdateToKillMessage = (UFunction*) UObject::GObjObjects()->Data[ 98522 ];
+        pFnAddUpdateToKillMessage = (UFunction*) UObject::GObjObjects()->Data[ 98521 ];
 
     ATrHUD_execAddUpdateToKillMessage_Parms AddUpdateToKillMessage_Parms;
     AddUpdateToKillMessage_Parms.RankIcon = RankIcon;
@@ -42165,7 +42165,7 @@ void ATrHUD::ClearHelpText ( )
     static UFunction* pFnClearHelpText = NULL;
 
     if ( ! pFnClearHelpText )
-        pFnClearHelpText = (UFunction*) UObject::GObjObjects()->Data[ 98521 ];
+        pFnClearHelpText = (UFunction*) UObject::GObjObjects()->Data[ 98520 ];
 
     ATrHUD_execClearHelpText_Parms ClearHelpText_Parms;
 
@@ -42186,7 +42186,7 @@ void ATrHUD::AddToHelpText ( struct FString Title, struct FString Body, float Pi
     static UFunction* pFnAddToHelpText = NULL;
 
     if ( ! pFnAddToHelpText )
-        pFnAddToHelpText = (UFunction*) UObject::GObjObjects()->Data[ 98515 ];
+        pFnAddToHelpText = (UFunction*) UObject::GObjObjects()->Data[ 98514 ];
 
     ATrHUD_execAddToHelpText_Parms AddToHelpText_Parms;
     memcpy ( &AddToHelpText_Parms.Title, &Title, 0xC );
@@ -42207,7 +42207,7 @@ void ATrHUD::HideVGSMenu ( )
     static UFunction* pFnHideVGSMenu = NULL;
 
     if ( ! pFnHideVGSMenu )
-        pFnHideVGSMenu = (UFunction*) UObject::GObjObjects()->Data[ 98514 ];
+        pFnHideVGSMenu = (UFunction*) UObject::GObjObjects()->Data[ 98513 ];
 
     ATrHUD_execHideVGSMenu_Parms HideVGSMenu_Parms;
 
@@ -42223,7 +42223,7 @@ void ATrHUD::UpdateVGSMenu ( )
     static UFunction* pFnUpdateVGSMenu = NULL;
 
     if ( ! pFnUpdateVGSMenu )
-        pFnUpdateVGSMenu = (UFunction*) UObject::GObjObjects()->Data[ 98513 ];
+        pFnUpdateVGSMenu = (UFunction*) UObject::GObjObjects()->Data[ 98512 ];
 
     ATrHUD_execUpdateVGSMenu_Parms UpdateVGSMenu_Parms;
 
@@ -42240,7 +42240,7 @@ void ATrHUD::ClearPromptPanelMessage ( struct FString Message )
     static UFunction* pFnClearPromptPanelMessage = NULL;
 
     if ( ! pFnClearPromptPanelMessage )
-        pFnClearPromptPanelMessage = (UFunction*) UObject::GObjObjects()->Data[ 98511 ];
+        pFnClearPromptPanelMessage = (UFunction*) UObject::GObjObjects()->Data[ 98510 ];
 
     ATrHUD_execClearPromptPanelMessage_Parms ClearPromptPanelMessage_Parms;
     memcpy ( &ClearPromptPanelMessage_Parms.Message, &Message, 0xC );
@@ -42257,7 +42257,7 @@ void ATrHUD::ClearHeroStatus ( )
     static UFunction* pFnClearHeroStatus = NULL;
 
     if ( ! pFnClearHeroStatus )
-        pFnClearHeroStatus = (UFunction*) UObject::GObjObjects()->Data[ 98510 ];
+        pFnClearHeroStatus = (UFunction*) UObject::GObjObjects()->Data[ 98509 ];
 
     ATrHUD_execClearHeroStatus_Parms ClearHeroStatus_Parms;
 
@@ -42275,7 +42275,7 @@ void ATrHUD::AddToHeroStatus ( struct FString Message, float ShowTime )
     static UFunction* pFnAddToHeroStatus = NULL;
 
     if ( ! pFnAddToHeroStatus )
-        pFnAddToHeroStatus = (UFunction*) UObject::GObjObjects()->Data[ 98507 ];
+        pFnAddToHeroStatus = (UFunction*) UObject::GObjObjects()->Data[ 98506 ];
 
     ATrHUD_execAddToHeroStatus_Parms AddToHeroStatus_Parms;
     memcpy ( &AddToHeroStatus_Parms.Message, &Message, 0xC );
@@ -42293,7 +42293,7 @@ void ATrHUD::ClearPromptPanel ( )
     static UFunction* pFnClearPromptPanel = NULL;
 
     if ( ! pFnClearPromptPanel )
-        pFnClearPromptPanel = (UFunction*) UObject::GObjObjects()->Data[ 98506 ];
+        pFnClearPromptPanel = (UFunction*) UObject::GObjObjects()->Data[ 98505 ];
 
     ATrHUD_execClearPromptPanel_Parms ClearPromptPanel_Parms;
 
@@ -42312,7 +42312,7 @@ void ATrHUD::AddToPromptPanelTime ( struct FString Message, float EndTime, unsig
     static UFunction* pFnAddToPromptPanelTime = NULL;
 
     if ( ! pFnAddToPromptPanelTime )
-        pFnAddToPromptPanelTime = (UFunction*) UObject::GObjObjects()->Data[ 98502 ];
+        pFnAddToPromptPanelTime = (UFunction*) UObject::GObjObjects()->Data[ 98501 ];
 
     ATrHUD_execAddToPromptPanelTime_Parms AddToPromptPanelTime_Parms;
     memcpy ( &AddToPromptPanelTime_Parms.Message, &Message, 0xC );
@@ -42333,7 +42333,7 @@ void ATrHUD::AddToPromptPanel ( struct FString Message, unsigned char Priority )
     static UFunction* pFnAddToPromptPanel = NULL;
 
     if ( ! pFnAddToPromptPanel )
-        pFnAddToPromptPanel = (UFunction*) UObject::GObjObjects()->Data[ 98499 ];
+        pFnAddToPromptPanel = (UFunction*) UObject::GObjObjects()->Data[ 98498 ];
 
     ATrHUD_execAddToPromptPanel_Parms AddToPromptPanel_Parms;
     memcpy ( &AddToPromptPanel_Parms.Message, &Message, 0xC );
@@ -42355,7 +42355,7 @@ void ATrHUD::AddUpdateToCombatLog ( int CombatType, struct FString Aggressor, in
     static UFunction* pFnAddUpdateToCombatLog = NULL;
 
     if ( ! pFnAddUpdateToCombatLog )
-        pFnAddUpdateToCombatLog = (UFunction*) UObject::GObjObjects()->Data[ 98494 ];
+        pFnAddUpdateToCombatLog = (UFunction*) UObject::GObjObjects()->Data[ 98493 ];
 
     ATrHUD_execAddUpdateToCombatLog_Parms AddUpdateToCombatLog_Parms;
     AddUpdateToCombatLog_Parms.CombatType = CombatType;
@@ -42376,7 +42376,7 @@ void ATrHUD::SetPowerOscillation ( unsigned long bEnable )
     static UFunction* pFnSetPowerOscillation = NULL;
 
     if ( ! pFnSetPowerOscillation )
-        pFnSetPowerOscillation = (UFunction*) UObject::GObjObjects()->Data[ 98492 ];
+        pFnSetPowerOscillation = (UFunction*) UObject::GObjObjects()->Data[ 98491 ];
 
     ATrHUD_execSetPowerOscillation_Parms SetPowerOscillation_Parms;
     SetPowerOscillation_Parms.bEnable = bEnable;
@@ -42393,7 +42393,7 @@ void ATrHUD::ToggleTeamSelectionMenu ( )
     static UFunction* pFnToggleTeamSelectionMenu = NULL;
 
     if ( ! pFnToggleTeamSelectionMenu )
-        pFnToggleTeamSelectionMenu = (UFunction*) UObject::GObjObjects()->Data[ 98490 ];
+        pFnToggleTeamSelectionMenu = (UFunction*) UObject::GObjObjects()->Data[ 98489 ];
 
     ATrHUD_execToggleTeamSelectionMenu_Parms ToggleTeamSelectionMenu_Parms;
 
@@ -42409,7 +42409,7 @@ void ATrHUD::ToggleVehicleMenu ( )
     static UFunction* pFnToggleVehicleMenu = NULL;
 
     if ( ! pFnToggleVehicleMenu )
-        pFnToggleVehicleMenu = (UFunction*) UObject::GObjObjects()->Data[ 98487 ];
+        pFnToggleVehicleMenu = (UFunction*) UObject::GObjObjects()->Data[ 98486 ];
 
     ATrHUD_execToggleVehicleMenu_Parms ToggleVehicleMenu_Parms;
 
@@ -42425,7 +42425,7 @@ void ATrHUD::ToggleMovieHUD ( )
     static UFunction* pFnToggleMovieHUD = NULL;
 
     if ( ! pFnToggleMovieHUD )
-        pFnToggleMovieHUD = (UFunction*) UObject::GObjObjects()->Data[ 98486 ];
+        pFnToggleMovieHUD = (UFunction*) UObject::GObjObjects()->Data[ 98485 ];
 
     ATrHUD_execToggleMovieHUD_Parms ToggleMovieHUD_Parms;
 
@@ -42441,7 +42441,7 @@ void ATrHUD::TogglePauseMenu ( )
     static UFunction* pFnTogglePauseMenu = NULL;
 
     if ( ! pFnTogglePauseMenu )
-        pFnTogglePauseMenu = (UFunction*) UObject::GObjObjects()->Data[ 98484 ];
+        pFnTogglePauseMenu = (UFunction*) UObject::GObjObjects()->Data[ 98483 ];
 
     ATrHUD_execTogglePauseMenu_Parms TogglePauseMenu_Parms;
 
@@ -42459,7 +42459,7 @@ void ATrHUD::ToggleSkiEffect ( unsigned long bEnabled, float fSpeed )
     static UFunction* pFnToggleSkiEffect = NULL;
 
     if ( ! pFnToggleSkiEffect )
-        pFnToggleSkiEffect = (UFunction*) UObject::GObjObjects()->Data[ 98481 ];
+        pFnToggleSkiEffect = (UFunction*) UObject::GObjObjects()->Data[ 98480 ];
 
     ATrHUD_execToggleSkiEffect_Parms ToggleSkiEffect_Parms;
     ToggleSkiEffect_Parms.bEnabled = bEnabled;
@@ -42479,7 +42479,7 @@ void ATrHUD::ScaleformJoystickInputEvent ( float leftAngle, float rightAngle )
     static UFunction* pFnScaleformJoystickInputEvent = NULL;
 
     if ( ! pFnScaleformJoystickInputEvent )
-        pFnScaleformJoystickInputEvent = (UFunction*) UObject::GObjObjects()->Data[ 98478 ];
+        pFnScaleformJoystickInputEvent = (UFunction*) UObject::GObjObjects()->Data[ 98477 ];
 
     ATrHUD_execScaleformJoystickInputEvent_Parms ScaleformJoystickInputEvent_Parms;
     ScaleformJoystickInputEvent_Parms.leftAngle = leftAngle;
@@ -42497,7 +42497,7 @@ void ATrHUD::FadeInSummary ( )
     static UFunction* pFnFadeInSummary = NULL;
 
     if ( ! pFnFadeInSummary )
-        pFnFadeInSummary = (UFunction*) UObject::GObjObjects()->Data[ 98477 ];
+        pFnFadeInSummary = (UFunction*) UObject::GObjObjects()->Data[ 98476 ];
 
     ATrHUD_execFadeInSummary_Parms FadeInSummary_Parms;
 
@@ -42513,7 +42513,7 @@ void ATrHUD::ShowEnding ( )
     static UFunction* pFnShowEnding = NULL;
 
     if ( ! pFnShowEnding )
-        pFnShowEnding = (UFunction*) UObject::GObjObjects()->Data[ 98474 ];
+        pFnShowEnding = (UFunction*) UObject::GObjObjects()->Data[ 98473 ];
 
     ATrHUD_execShowEnding_Parms ShowEnding_Parms;
 
@@ -42531,7 +42531,7 @@ void ATrHUD::PlayMatchOver ( int Winner, struct FString WinnerName )
     static UFunction* pFnPlayMatchOver = NULL;
 
     if ( ! pFnPlayMatchOver )
-        pFnPlayMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 98471 ];
+        pFnPlayMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 98470 ];
 
     ATrHUD_execPlayMatchOver_Parms PlayMatchOver_Parms;
     PlayMatchOver_Parms.Winner = Winner;
@@ -42549,7 +42549,7 @@ void ATrHUD::ShowRoundEnding ( )
     static UFunction* pFnShowRoundEnding = NULL;
 
     if ( ! pFnShowRoundEnding )
-        pFnShowRoundEnding = (UFunction*) UObject::GObjObjects()->Data[ 98470 ];
+        pFnShowRoundEnding = (UFunction*) UObject::GObjObjects()->Data[ 98469 ];
 
     ATrHUD_execShowRoundEnding_Parms ShowRoundEnding_Parms;
 
@@ -42566,7 +42566,7 @@ void ATrHUD::PlayRoundOver ( int WinningTeam )
     static UFunction* pFnPlayRoundOver = NULL;
 
     if ( ! pFnPlayRoundOver )
-        pFnPlayRoundOver = (UFunction*) UObject::GObjObjects()->Data[ 98468 ];
+        pFnPlayRoundOver = (UFunction*) UObject::GObjObjects()->Data[ 98467 ];
 
     ATrHUD_execPlayRoundOver_Parms PlayRoundOver_Parms;
     PlayRoundOver_Parms.WinningTeam = WinningTeam;
@@ -42586,7 +42586,7 @@ void ATrHUD::Fade ( float FadeTarget, float FadeSpeed, float bForceFadeInStartAl
     static UFunction* pFnFade = NULL;
 
     if ( ! pFnFade )
-        pFnFade = (UFunction*) UObject::GObjObjects()->Data[ 98463 ];
+        pFnFade = (UFunction*) UObject::GObjObjects()->Data[ 98462 ];
 
     ATrHUD_execFade_Parms Fade_Parms;
     Fade_Parms.FadeTarget = FadeTarget;
@@ -42605,7 +42605,7 @@ void ATrHUD::FadeInTimer ( )
     static UFunction* pFnFadeInTimer = NULL;
 
     if ( ! pFnFadeInTimer )
-        pFnFadeInTimer = (UFunction*) UObject::GObjObjects()->Data[ 98462 ];
+        pFnFadeInTimer = (UFunction*) UObject::GObjObjects()->Data[ 98461 ];
 
     ATrHUD_execFadeInTimer_Parms FadeInTimer_Parms;
 
@@ -42621,7 +42621,7 @@ void ATrHUD::OnUpdatedGraphicsSettings ( )
     static UFunction* pFnOnUpdatedGraphicsSettings = NULL;
 
     if ( ! pFnOnUpdatedGraphicsSettings )
-        pFnOnUpdatedGraphicsSettings = (UFunction*) UObject::GObjObjects()->Data[ 98461 ];
+        pFnOnUpdatedGraphicsSettings = (UFunction*) UObject::GObjObjects()->Data[ 98460 ];
 
     ATrHUD_execOnUpdatedGraphicsSettings_Parms OnUpdatedGraphicsSettings_Parms;
 
@@ -42637,7 +42637,7 @@ void ATrHUD::InitializeGameHUD ( )
     static UFunction* pFnInitializeGameHUD = NULL;
 
     if ( ! pFnInitializeGameHUD )
-        pFnInitializeGameHUD = (UFunction*) UObject::GObjObjects()->Data[ 98454 ];
+        pFnInitializeGameHUD = (UFunction*) UObject::GObjObjects()->Data[ 98453 ];
 
     ATrHUD_execInitializeGameHUD_Parms InitializeGameHUD_Parms;
 
@@ -42653,7 +42653,7 @@ void ATrHUD::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 98453 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 98452 ];
 
     ATrHUD_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -42670,7 +42670,7 @@ void ATrHUD::SetShowScores ( unsigned long bEnableShowScores )
     static UFunction* pFnSetShowScores = NULL;
 
     if ( ! pFnSetShowScores )
-        pFnSetShowScores = (UFunction*) UObject::GObjObjects()->Data[ 98449 ];
+        pFnSetShowScores = (UFunction*) UObject::GObjObjects()->Data[ 98448 ];
 
     ATrHUD_execSetShowScores_Parms SetShowScores_Parms;
     SetShowScores_Parms.bEnableShowScores = bEnableShowScores;
@@ -42688,7 +42688,7 @@ void ATrHUD::ShowSpectatorControls ( unsigned long bForceEnabled )
     static UFunction* pFnShowSpectatorControls = NULL;
 
     if ( ! pFnShowSpectatorControls )
-        pFnShowSpectatorControls = (UFunction*) UObject::GObjObjects()->Data[ 98447 ];
+        pFnShowSpectatorControls = (UFunction*) UObject::GObjObjects()->Data[ 98446 ];
 
     ATrHUD_execShowSpectatorControls_Parms ShowSpectatorControls_Parms;
     ShowSpectatorControls_Parms.bForceEnabled = bForceEnabled;
@@ -42705,7 +42705,7 @@ void ATrHUD::CreateHUDMovie ( )
     static UFunction* pFnCreateHUDMovie = NULL;
 
     if ( ! pFnCreateHUDMovie )
-        pFnCreateHUDMovie = (UFunction*) UObject::GObjObjects()->Data[ 98437 ];
+        pFnCreateHUDMovie = (UFunction*) UObject::GObjObjects()->Data[ 98436 ];
 
     ATrHUD_execCreateHUDMovie_Parms CreateHUDMovie_Parms;
 
@@ -42723,7 +42723,7 @@ void ATrHUD::ShowDebugInfo ( float* out_YL, float* out_YPos )
     static UFunction* pFnShowDebugInfo = NULL;
 
     if ( ! pFnShowDebugInfo )
-        pFnShowDebugInfo = (UFunction*) UObject::GObjObjects()->Data[ 98432 ];
+        pFnShowDebugInfo = (UFunction*) UObject::GObjObjects()->Data[ 98431 ];
 
     ATrHUD_execShowDebugInfo_Parms ShowDebugInfo_Parms;
 
@@ -42745,7 +42745,7 @@ void UTrKeyBindings::SaveInterceptKeys ( )
     static UFunction* pFnSaveInterceptKeys = NULL;
 
     if ( ! pFnSaveInterceptKeys )
-        pFnSaveInterceptKeys = (UFunction*) UObject::GObjObjects()->Data[ 100851 ];
+        pFnSaveInterceptKeys = (UFunction*) UObject::GObjObjects()->Data[ 100850 ];
 
     UTrKeyBindings_execSaveInterceptKeys_Parms SaveInterceptKeys_Parms;
 
@@ -42762,7 +42762,7 @@ void UTrKeyBindings::UpdateRuntimeSpectator ( class UTrPlayerInput_Spectator* Sp
     static UFunction* pFnUpdateRuntimeSpectator = NULL;
 
     if ( ! pFnUpdateRuntimeSpectator )
-        pFnUpdateRuntimeSpectator = (UFunction*) UObject::GObjObjects()->Data[ 100848 ];
+        pFnUpdateRuntimeSpectator = (UFunction*) UObject::GObjObjects()->Data[ 100847 ];
 
     UTrKeyBindings_execUpdateRuntimeSpectator_Parms UpdateRuntimeSpectator_Parms;
     UpdateRuntimeSpectator_Parms.SpecInput = SpecInput;
@@ -42780,7 +42780,7 @@ void UTrKeyBindings::UpdateRuntimePlayer ( class UPlayerInput* EngineInput )
     static UFunction* pFnUpdateRuntimePlayer = NULL;
 
     if ( ! pFnUpdateRuntimePlayer )
-        pFnUpdateRuntimePlayer = (UFunction*) UObject::GObjObjects()->Data[ 100845 ];
+        pFnUpdateRuntimePlayer = (UFunction*) UObject::GObjObjects()->Data[ 100844 ];
 
     UTrKeyBindings_execUpdateRuntimePlayer_Parms UpdateRuntimePlayer_Parms;
     UpdateRuntimePlayer_Parms.EngineInput = EngineInput;
@@ -42798,7 +42798,7 @@ class UTrPlayerInput_Spectator* UTrKeyBindings::GetSpectatorInput ( )
     static UFunction* pFnGetSpectatorInput = NULL;
 
     if ( ! pFnGetSpectatorInput )
-        pFnGetSpectatorInput = (UFunction*) UObject::GObjObjects()->Data[ 100842 ];
+        pFnGetSpectatorInput = (UFunction*) UObject::GObjObjects()->Data[ 100841 ];
 
     UTrKeyBindings_execGetSpectatorInput_Parms GetSpectatorInput_Parms;
 
@@ -42817,7 +42817,7 @@ class UPlayerInput* UTrKeyBindings::GetPlayerInput ( )
     static UFunction* pFnGetPlayerInput = NULL;
 
     if ( ! pFnGetPlayerInput )
-        pFnGetPlayerInput = (UFunction*) UObject::GObjObjects()->Data[ 100839 ];
+        pFnGetPlayerInput = (UFunction*) UObject::GObjObjects()->Data[ 100838 ];
 
     UTrKeyBindings_execGetPlayerInput_Parms GetPlayerInput_Parms;
 
@@ -42835,7 +42835,7 @@ void UTrKeyBindings::ApplyDefaultSettings ( )
     static UFunction* pFnApplyDefaultSettings = NULL;
 
     if ( ! pFnApplyDefaultSettings )
-        pFnApplyDefaultSettings = (UFunction*) UObject::GObjObjects()->Data[ 100835 ];
+        pFnApplyDefaultSettings = (UFunction*) UObject::GObjObjects()->Data[ 100834 ];
 
     UTrKeyBindings_execApplyDefaultSettings_Parms ApplyDefaultSettings_Parms;
 
@@ -42853,7 +42853,7 @@ struct FString UTrKeyBindings::GetCommandName ( unsigned char Index )
     static UFunction* pFnGetCommandName = NULL;
 
     if ( ! pFnGetCommandName )
-        pFnGetCommandName = (UFunction*) UObject::GObjObjects()->Data[ 100832 ];
+        pFnGetCommandName = (UFunction*) UObject::GObjObjects()->Data[ 100831 ];
 
     UTrKeyBindings_execGetCommandName_Parms GetCommandName_Parms;
     GetCommandName_Parms.Index = Index;
@@ -42875,7 +42875,7 @@ struct FString UTrKeyBindings::GetCurrentBinding ( class UPlayerInput* pInput, s
     static UFunction* pFnGetCurrentBinding = NULL;
 
     if ( ! pFnGetCurrentBinding )
-        pFnGetCurrentBinding = (UFunction*) UObject::GObjObjects()->Data[ 100827 ];
+        pFnGetCurrentBinding = (UFunction*) UObject::GObjObjects()->Data[ 100826 ];
 
     UTrKeyBindings_execGetCurrentBinding_Parms GetCurrentBinding_Parms;
     GetCurrentBinding_Parms.pInput = pInput;
@@ -42897,7 +42897,7 @@ void UTrKeyBindings::UnbindSpectatorCommand ( class UTrPlayerInput_Spectator* pI
     static UFunction* pFnUnbindSpectatorCommand = NULL;
 
     if ( ! pFnUnbindSpectatorCommand )
-        pFnUnbindSpectatorCommand = (UFunction*) UObject::GObjObjects()->Data[ 100822 ];
+        pFnUnbindSpectatorCommand = (UFunction*) UObject::GObjObjects()->Data[ 100821 ];
 
     UTrKeyBindings_execUnbindSpectatorCommand_Parms UnbindSpectatorCommand_Parms;
     UnbindSpectatorCommand_Parms.pInput = pInput;
@@ -42917,7 +42917,7 @@ void UTrKeyBindings::UnbindPlayerCommand ( class UPlayerInput* pInput, struct FS
     static UFunction* pFnUnbindPlayerCommand = NULL;
 
     if ( ! pFnUnbindPlayerCommand )
-        pFnUnbindPlayerCommand = (UFunction*) UObject::GObjObjects()->Data[ 100817 ];
+        pFnUnbindPlayerCommand = (UFunction*) UObject::GObjObjects()->Data[ 100816 ];
 
     UTrKeyBindings_execUnbindPlayerCommand_Parms UnbindPlayerCommand_Parms;
     UnbindPlayerCommand_Parms.pInput = pInput;
@@ -42939,7 +42939,7 @@ struct FString UTrKeyBindings::SaveSpectatorKeyBind ( int Index, struct FString 
     static UFunction* pFnSaveSpectatorKeyBind = NULL;
 
     if ( ! pFnSaveSpectatorKeyBind )
-        pFnSaveSpectatorKeyBind = (UFunction*) UObject::GObjObjects()->Data[ 100808 ];
+        pFnSaveSpectatorKeyBind = (UFunction*) UObject::GObjObjects()->Data[ 100807 ];
 
     UTrKeyBindings_execSaveSpectatorKeyBind_Parms SaveSpectatorKeyBind_Parms;
     SaveSpectatorKeyBind_Parms.Index = Index;
@@ -42964,7 +42964,7 @@ struct FString UTrKeyBindings::SavePlayerKeyBind ( int Index, struct FString Key
     static UFunction* pFnSavePlayerKeyBind = NULL;
 
     if ( ! pFnSavePlayerKeyBind )
-        pFnSavePlayerKeyBind = (UFunction*) UObject::GObjObjects()->Data[ 100799 ];
+        pFnSavePlayerKeyBind = (UFunction*) UObject::GObjObjects()->Data[ 100798 ];
 
     UTrKeyBindings_execSavePlayerKeyBind_Parms SavePlayerKeyBind_Parms;
     SavePlayerKeyBind_Parms.Index = Index;
@@ -43012,7 +43012,7 @@ void UTrKeyBindings::ApplyKeyBinding ( int Index, struct FString val )
     static UFunction* pFnApplyKeyBinding = NULL;
 
     if ( ! pFnApplyKeyBinding )
-        pFnApplyKeyBinding = (UFunction*) UObject::GObjObjects()->Data[ 100792 ];
+        pFnApplyKeyBinding = (UFunction*) UObject::GObjObjects()->Data[ 100791 ];
 
     UTrKeyBindings_execApplyKeyBinding_Parms ApplyKeyBinding_Parms;
     ApplyKeyBinding_Parms.Index = Index;
@@ -43032,7 +43032,7 @@ void UTrKeyBindings::AddBinding ( struct FString Command, struct FString KeyName
     static UFunction* pFnAddBinding = NULL;
 
     if ( ! pFnAddBinding )
-        pFnAddBinding = (UFunction*) UObject::GObjObjects()->Data[ 100788 ];
+        pFnAddBinding = (UFunction*) UObject::GObjObjects()->Data[ 100787 ];
 
     UTrKeyBindings_execAddBinding_Parms AddBinding_Parms;
     memcpy ( &AddBinding_Parms.Command, &Command, 0xC );
@@ -43071,7 +43071,7 @@ void UTrKeyBindings::ReadBindings ( )
     static UFunction* pFnReadBindings = NULL;
 
     if ( ! pFnReadBindings )
-        pFnReadBindings = (UFunction*) UObject::GObjObjects()->Data[ 100782 ];
+        pFnReadBindings = (UFunction*) UObject::GObjObjects()->Data[ 100781 ];
 
     UTrKeyBindings_execReadBindings_Parms ReadBindings_Parms;
 
@@ -43088,7 +43088,7 @@ void UTrKeyBindings::ResetDefaultSpectatorBindings ( class UTrPlayerInput_Specta
     static UFunction* pFnResetDefaultSpectatorBindings = NULL;
 
     if ( ! pFnResetDefaultSpectatorBindings )
-        pFnResetDefaultSpectatorBindings = (UFunction*) UObject::GObjObjects()->Data[ 100780 ];
+        pFnResetDefaultSpectatorBindings = (UFunction*) UObject::GObjObjects()->Data[ 100779 ];
 
     UTrKeyBindings_execResetDefaultSpectatorBindings_Parms ResetDefaultSpectatorBindings_Parms;
     ResetDefaultSpectatorBindings_Parms.pInput = pInput;
@@ -43110,7 +43110,7 @@ void UTrKeyBindings::ResetDefaultKeyBindings ( class UPlayerInput* pInput )
     static UFunction* pFnResetDefaultKeyBindings = NULL;
 
     if ( ! pFnResetDefaultKeyBindings )
-        pFnResetDefaultKeyBindings = (UFunction*) UObject::GObjObjects()->Data[ 100778 ];
+        pFnResetDefaultKeyBindings = (UFunction*) UObject::GObjObjects()->Data[ 100777 ];
 
     UTrKeyBindings_execResetDefaultKeyBindings_Parms ResetDefaultKeyBindings_Parms;
     ResetDefaultKeyBindings_Parms.pInput = pInput;
@@ -43131,7 +43131,7 @@ void UTrKeyBindings::CaptureNextKey ( )
     static UFunction* pFnCaptureNextKey = NULL;
 
     if ( ! pFnCaptureNextKey )
-        pFnCaptureNextKey = (UFunction*) UObject::GObjObjects()->Data[ 100777 ];
+        pFnCaptureNextKey = (UFunction*) UObject::GObjObjects()->Data[ 100776 ];
 
     UTrKeyBindings_execCaptureNextKey_Parms CaptureNextKey_Parms;
 
@@ -43153,7 +43153,7 @@ struct FString UTrKeyBindings::ReadSetting ( int SettingId )
     static UFunction* pFnReadSetting = NULL;
 
     if ( ! pFnReadSetting )
-        pFnReadSetting = (UFunction*) UObject::GObjObjects()->Data[ 100774 ];
+        pFnReadSetting = (UFunction*) UObject::GObjObjects()->Data[ 100773 ];
 
     UTrKeyBindings_execReadSetting_Parms ReadSetting_Parms;
     ReadSetting_Parms.SettingId = SettingId;
@@ -43178,7 +43178,7 @@ void UTrKeyBindings::StoreSetting ( int SettingId, struct FString KeyBind )
     static UFunction* pFnStoreSetting = NULL;
 
     if ( ! pFnStoreSetting )
-        pFnStoreSetting = (UFunction*) UObject::GObjObjects()->Data[ 100771 ];
+        pFnStoreSetting = (UFunction*) UObject::GObjObjects()->Data[ 100770 ];
 
     UTrKeyBindings_execStoreSetting_Parms StoreSetting_Parms;
     StoreSetting_Parms.SettingId = SettingId;
@@ -43201,7 +43201,7 @@ void UTrKeyBindings::ClearSettingByValue ( struct FString StrValue )
     static UFunction* pFnClearSettingByValue = NULL;
 
     if ( ! pFnClearSettingByValue )
-        pFnClearSettingByValue = (UFunction*) UObject::GObjObjects()->Data[ 100769 ];
+        pFnClearSettingByValue = (UFunction*) UObject::GObjObjects()->Data[ 100768 ];
 
     UTrKeyBindings_execClearSettingByValue_Parms ClearSettingByValue_Parms;
     memcpy ( &ClearSettingByValue_Parms.StrValue, &StrValue, 0xC );
@@ -43223,7 +43223,7 @@ void UTrKeyBindings::ClearSettingById ( int SettingId )
     static UFunction* pFnClearSettingById = NULL;
 
     if ( ! pFnClearSettingById )
-        pFnClearSettingById = (UFunction*) UObject::GObjObjects()->Data[ 100767 ];
+        pFnClearSettingById = (UFunction*) UObject::GObjObjects()->Data[ 100766 ];
 
     UTrKeyBindings_execClearSettingById_Parms ClearSettingById_Parms;
     ClearSettingById_Parms.SettingId = SettingId;
@@ -43244,7 +43244,7 @@ void UTrKeyBindings::FlushSettings ( )
     static UFunction* pFnFlushSettings = NULL;
 
     if ( ! pFnFlushSettings )
-        pFnFlushSettings = (UFunction*) UObject::GObjObjects()->Data[ 100766 ];
+        pFnFlushSettings = (UFunction*) UObject::GObjObjects()->Data[ 100765 ];
 
     UTrKeyBindings_execFlushSettings_Parms FlushSettings_Parms;
 
@@ -43269,7 +43269,7 @@ void ATrLaserTarget::RenderForTeammate ( class APlayerController* PC, class UCan
     static UFunction* pFnRenderForTeammate = NULL;
 
     if ( ! pFnRenderForTeammate )
-        pFnRenderForTeammate = (UFunction*) UObject::GObjObjects()->Data[ 100921 ];
+        pFnRenderForTeammate = (UFunction*) UObject::GObjObjects()->Data[ 100920 ];
 
     ATrLaserTarget_execRenderForTeammate_Parms RenderForTeammate_Parms;
     RenderForTeammate_Parms.PC = PC;
@@ -43295,7 +43295,7 @@ void ATrLaserTarget::RenderForOwner ( class APlayerController* PC, class UCanvas
     static UFunction* pFnRenderForOwner = NULL;
 
     if ( ! pFnRenderForOwner )
-        pFnRenderForOwner = (UFunction*) UObject::GObjObjects()->Data[ 100920 ];
+        pFnRenderForOwner = (UFunction*) UObject::GObjObjects()->Data[ 100919 ];
 
     ATrLaserTarget_execRenderForOwner_Parms RenderForOwner_Parms;
     RenderForOwner_Parms.PC = PC;
@@ -43320,7 +43320,7 @@ void ATrLaserTarget::eventPostRenderFor ( class APlayerController* PC, class UCa
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 100914 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 100913 ];
 
     ATrLaserTarget_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -43340,7 +43340,7 @@ void ATrLaserTarget::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100912 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100911 ];
 
     ATrLaserTarget_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -43356,7 +43356,7 @@ void ATrLaserTarget::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 100910 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 100909 ];
 
     ATrLaserTarget_execDestroyed_Parms Destroyed_Parms;
 
@@ -43373,7 +43373,7 @@ void ATrLaserTarget::UpdateLocation ( struct FVector NewLocation )
     static UFunction* pFnUpdateLocation = NULL;
 
     if ( ! pFnUpdateLocation )
-        pFnUpdateLocation = (UFunction*) UObject::GObjObjects()->Data[ 100908 ];
+        pFnUpdateLocation = (UFunction*) UObject::GObjObjects()->Data[ 100907 ];
 
     ATrLaserTarget_execUpdateLocation_Parms UpdateLocation_Parms;
     memcpy ( &UpdateLocation_Parms.NewLocation, &NewLocation, 0xC );
@@ -43391,7 +43391,7 @@ unsigned char ATrLaserTarget::GetTeamNum ( )
     static UFunction* pFnGetTeamNum = NULL;
 
     if ( ! pFnGetTeamNum )
-        pFnGetTeamNum = (UFunction*) UObject::GObjObjects()->Data[ 100906 ];
+        pFnGetTeamNum = (UFunction*) UObject::GObjObjects()->Data[ 100905 ];
 
     ATrLaserTarget_execGetTeamNum_Parms GetTeamNum_Parms;
 
@@ -43414,7 +43414,7 @@ void ATrLaserTarget::SetTeamNum ( unsigned char TeamID )
     static UFunction* pFnSetTeamNum = NULL;
 
     if ( ! pFnSetTeamNum )
-        pFnSetTeamNum = (UFunction*) UObject::GObjObjects()->Data[ 100904 ];
+        pFnSetTeamNum = (UFunction*) UObject::GObjObjects()->Data[ 100903 ];
 
     ATrLaserTarget_execSetTeamNum_Parms SetTeamNum_Parms;
     SetTeamNum_Parms.TeamID = TeamID;
@@ -43431,7 +43431,7 @@ void UTrLoadingData::SetDataFields ( )
     static UFunction* pFnSetDataFields = NULL;
 
     if ( ! pFnSetDataFields )
-        pFnSetDataFields = (UFunction*) UObject::GObjObjects()->Data[ 101014 ];
+        pFnSetDataFields = (UFunction*) UObject::GObjObjects()->Data[ 101013 ];
 
     UTrLoadingData_execSetDataFields_Parms SetDataFields_Parms;
 
@@ -43447,7 +43447,7 @@ void UTrLoadingData::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 101013 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 101012 ];
 
     UTrLoadingData_execInitialize_Parms Initialize_Parms;
 
@@ -43465,7 +43465,7 @@ struct FString UTrLoadingData::GetRandomTip ( int GameIndex )
     static UFunction* pFnGetRandomTip = NULL;
 
     if ( ! pFnGetRandomTip )
-        pFnGetRandomTip = (UFunction*) UObject::GObjObjects()->Data[ 101010 ];
+        pFnGetRandomTip = (UFunction*) UObject::GObjObjects()->Data[ 101009 ];
 
     UTrLoadingData_execGetRandomTip_Parms GetRandomTip_Parms;
     GetRandomTip_Parms.GameIndex = GameIndex;
@@ -43489,7 +43489,7 @@ void UTrLoginManager::PopupData ( class UGFxObject* Obj )
     static UFunction* pFnPopupData = NULL;
 
     if ( ! pFnPopupData )
-        pFnPopupData = (UFunction*) UObject::GObjObjects()->Data[ 101082 ];
+        pFnPopupData = (UFunction*) UObject::GObjObjects()->Data[ 101081 ];
 
     UTrLoginManager_execPopupData_Parms PopupData_Parms;
     PopupData_Parms.Obj = Obj;
@@ -43506,7 +43506,7 @@ void UTrLoginManager::LoginWaitPopup ( )
     static UFunction* pFnLoginWaitPopup = NULL;
 
     if ( ! pFnLoginWaitPopup )
-        pFnLoginWaitPopup = (UFunction*) UObject::GObjObjects()->Data[ 101081 ];
+        pFnLoginWaitPopup = (UFunction*) UObject::GObjObjects()->Data[ 101080 ];
 
     UTrLoginManager_execLoginWaitPopup_Parms LoginWaitPopup_Parms;
 
@@ -43523,7 +43523,7 @@ void UTrLoginManager::SubmitPlayerName ( struct FString PlayerName )
     static UFunction* pFnSubmitPlayerName = NULL;
 
     if ( ! pFnSubmitPlayerName )
-        pFnSubmitPlayerName = (UFunction*) UObject::GObjObjects()->Data[ 101079 ];
+        pFnSubmitPlayerName = (UFunction*) UObject::GObjObjects()->Data[ 101078 ];
 
     UTrLoginManager_execSubmitPlayerName_Parms SubmitPlayerName_Parms;
     memcpy ( &SubmitPlayerName_Parms.PlayerName, &PlayerName, 0xC );
@@ -43540,7 +43540,7 @@ void UTrLoginManager::Logout ( )
     static UFunction* pFnLogout = NULL;
 
     if ( ! pFnLogout )
-        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 101078 ];
+        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 101077 ];
 
     UTrLoginManager_execLogout_Parms Logout_Parms;
 
@@ -43556,7 +43556,7 @@ void UTrLoginManager::RetryLogin ( )
     static UFunction* pFnRetryLogin = NULL;
 
     if ( ! pFnRetryLogin )
-        pFnRetryLogin = (UFunction*) UObject::GObjObjects()->Data[ 101077 ];
+        pFnRetryLogin = (UFunction*) UObject::GObjObjects()->Data[ 101076 ];
 
     UTrLoginManager_execRetryLogin_Parms RetryLogin_Parms;
 
@@ -43574,7 +43574,7 @@ void UTrLoginManager::OnUserLoginFailed ( unsigned char LocalUserNum, unsigned c
     static UFunction* pFnOnUserLoginFailed = NULL;
 
     if ( ! pFnOnUserLoginFailed )
-        pFnOnUserLoginFailed = (UFunction*) UObject::GObjObjects()->Data[ 101073 ];
+        pFnOnUserLoginFailed = (UFunction*) UObject::GObjObjects()->Data[ 101072 ];
 
     UTrLoginManager_execOnUserLoginFailed_Parms OnUserLoginFailed_Parms;
     OnUserLoginFailed_Parms.LocalUserNum = LocalUserNum;
@@ -43596,7 +43596,7 @@ bool UTrLoginManager::Login ( struct FString UserName, struct FString Password, 
     static UFunction* pFnLogin = NULL;
 
     if ( ! pFnLogin )
-        pFnLogin = (UFunction*) UObject::GObjObjects()->Data[ 101068 ];
+        pFnLogin = (UFunction*) UObject::GObjObjects()->Data[ 101067 ];
 
     UTrLoginManager_execLogin_Parms Login_Parms;
     memcpy ( &Login_Parms.UserName, &UserName, 0xC );
@@ -43617,7 +43617,7 @@ void UTrLoginManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 101067 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 101066 ];
 
     UTrLoginManager_execInitialize_Parms Initialize_Parms;
 
@@ -43903,7 +43903,7 @@ void UTrOrientedBoxComponent::SetBoxSize ( float NewHeight, float NewLength, flo
     static UFunction* pFnSetBoxSize = NULL;
 
     if ( ! pFnSetBoxSize )
-        pFnSetBoxSize = (UFunction*) UObject::GObjObjects()->Data[ 102643 ];
+        pFnSetBoxSize = (UFunction*) UObject::GObjObjects()->Data[ 102642 ];
 
     UTrOrientedBoxComponent_execSetBoxSize_Parms SetBoxSize_Parms;
     SetBoxSize_Parms.NewHeight = NewHeight;
@@ -43927,7 +43927,7 @@ void ATrPaperDoll::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 102968 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 102967 ];
 
     ATrPaperDoll_eventDestroyed_Parms Destroyed_Parms;
 
@@ -43944,7 +43944,7 @@ void ATrPaperDoll::SetMainMesh ( struct FPaperDollInfo NewInfo )
     static UFunction* pFnSetMainMesh = NULL;
 
     if ( ! pFnSetMainMesh )
-        pFnSetMainMesh = (UFunction*) UObject::GObjObjects()->Data[ 102963 ];
+        pFnSetMainMesh = (UFunction*) UObject::GObjObjects()->Data[ 102962 ];
 
     ATrPaperDoll_execSetMainMesh_Parms SetMainMesh_Parms;
     memcpy ( &SetMainMesh_Parms.NewInfo, &NewInfo, 0x38 );
@@ -43963,7 +43963,7 @@ struct FPaperDollInfo ATrPaperDoll::GetDevicePaperDollInfo ( class UClass* Weapo
     static UFunction* pFnGetDevicePaperDollInfo = NULL;
 
     if ( ! pFnGetDevicePaperDollInfo )
-        pFnGetDevicePaperDollInfo = (UFunction*) UObject::GObjObjects()->Data[ 102960 ];
+        pFnGetDevicePaperDollInfo = (UFunction*) UObject::GObjObjects()->Data[ 102959 ];
 
     ATrPaperDoll_execGetDevicePaperDollInfo_Parms GetDevicePaperDollInfo_Parms;
     GetDevicePaperDollInfo_Parms.WeaponClass = WeaponClass;
@@ -43983,7 +43983,7 @@ void ATrPaperDoll::SetWeaponOnlyMesh ( class UClass* WeaponClass )
     static UFunction* pFnSetWeaponOnlyMesh = NULL;
 
     if ( ! pFnSetWeaponOnlyMesh )
-        pFnSetWeaponOnlyMesh = (UFunction*) UObject::GObjObjects()->Data[ 102958 ];
+        pFnSetWeaponOnlyMesh = (UFunction*) UObject::GObjObjects()->Data[ 102957 ];
 
     ATrPaperDoll_execSetWeaponOnlyMesh_Parms SetWeaponOnlyMesh_Parms;
     SetWeaponOnlyMesh_Parms.WeaponClass = WeaponClass;
@@ -44001,7 +44001,7 @@ void ATrPaperDoll::eventOnWeaponFinishedStreaming ( struct FPaperDollInfo NewPap
     static UFunction* pFnOnWeaponFinishedStreaming = NULL;
 
     if ( ! pFnOnWeaponFinishedStreaming )
-        pFnOnWeaponFinishedStreaming = (UFunction*) UObject::GObjObjects()->Data[ 102956 ];
+        pFnOnWeaponFinishedStreaming = (UFunction*) UObject::GObjObjects()->Data[ 102955 ];
 
     ATrPaperDoll_eventOnWeaponFinishedStreaming_Parms OnWeaponFinishedStreaming_Parms;
     memcpy ( &OnWeaponFinishedStreaming_Parms.NewPaperDollInfo, &NewPaperDollInfo, 0x38 );
@@ -44018,7 +44018,7 @@ void ATrPaperDoll::StopLoadingGraphic ( )
     static UFunction* pFnStopLoadingGraphic = NULL;
 
     if ( ! pFnStopLoadingGraphic )
-        pFnStopLoadingGraphic = (UFunction*) UObject::GObjObjects()->Data[ 102955 ];
+        pFnStopLoadingGraphic = (UFunction*) UObject::GObjObjects()->Data[ 102954 ];
 
     ATrPaperDoll_execStopLoadingGraphic_Parms StopLoadingGraphic_Parms;
 
@@ -44034,7 +44034,7 @@ void ATrPaperDoll::PlayLoadingGraphic ( )
     static UFunction* pFnPlayLoadingGraphic = NULL;
 
     if ( ! pFnPlayLoadingGraphic )
-        pFnPlayLoadingGraphic = (UFunction*) UObject::GObjObjects()->Data[ 102954 ];
+        pFnPlayLoadingGraphic = (UFunction*) UObject::GObjObjects()->Data[ 102953 ];
 
     ATrPaperDoll_execPlayLoadingGraphic_Parms PlayLoadingGraphic_Parms;
 
@@ -44051,7 +44051,7 @@ void ATrPaperDoll::OnDeviceContentDataClassLoaded ( class UClass* DeviceContentD
     static UFunction* pFnOnDeviceContentDataClassLoaded = NULL;
 
     if ( ! pFnOnDeviceContentDataClassLoaded )
-        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102948 ];
+        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102947 ];
 
     ATrPaperDoll_execOnDeviceContentDataClassLoaded_Parms OnDeviceContentDataClassLoaded_Parms;
     OnDeviceContentDataClassLoaded_Parms.DeviceContentDataClass = DeviceContentDataClass;
@@ -44071,7 +44071,7 @@ void ATrPaperDoll::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode, float Play
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 102944 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 102943 ];
 
     ATrPaperDoll_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -44090,7 +44090,7 @@ void ATrPaperDoll::ResetCustomAnimTimer ( )
     static UFunction* pFnResetCustomAnimTimer = NULL;
 
     if ( ! pFnResetCustomAnimTimer )
-        pFnResetCustomAnimTimer = (UFunction*) UObject::GObjObjects()->Data[ 102943 ];
+        pFnResetCustomAnimTimer = (UFunction*) UObject::GObjObjects()->Data[ 102942 ];
 
     ATrPaperDoll_execResetCustomAnimTimer_Parms ResetCustomAnimTimer_Parms;
 
@@ -44107,7 +44107,7 @@ void ATrPaperDoll::StopCustomAnimation ( float FadeOutTime )
     static UFunction* pFnStopCustomAnimation = NULL;
 
     if ( ! pFnStopCustomAnimation )
-        pFnStopCustomAnimation = (UFunction*) UObject::GObjObjects()->Data[ 102941 ];
+        pFnStopCustomAnimation = (UFunction*) UObject::GObjObjects()->Data[ 102940 ];
 
     ATrPaperDoll_execStopCustomAnimation_Parms StopCustomAnimation_Parms;
     StopCustomAnimation_Parms.FadeOutTime = FadeOutTime;
@@ -44124,7 +44124,7 @@ void ATrPaperDoll::PlayCustomAnimation ( )
     static UFunction* pFnPlayCustomAnimation = NULL;
 
     if ( ! pFnPlayCustomAnimation )
-        pFnPlayCustomAnimation = (UFunction*) UObject::GObjObjects()->Data[ 102940 ];
+        pFnPlayCustomAnimation = (UFunction*) UObject::GObjObjects()->Data[ 102939 ];
 
     ATrPaperDoll_execPlayCustomAnimation_Parms PlayCustomAnimation_Parms;
 
@@ -44144,7 +44144,7 @@ void ATrPaperDoll::SetFamilyInfo ( class UClass* NewFamilyInfoClass, class UClas
     static UFunction* pFnSetFamilyInfo = NULL;
 
     if ( ! pFnSetFamilyInfo )
-        pFnSetFamilyInfo = (UFunction*) UObject::GObjObjects()->Data[ 102934 ];
+        pFnSetFamilyInfo = (UFunction*) UObject::GObjObjects()->Data[ 102933 ];
 
     ATrPaperDoll_execSetFamilyInfo_Parms SetFamilyInfo_Parms;
     SetFamilyInfo_Parms.NewFamilyInfoClass = NewFamilyInfoClass;
@@ -44164,7 +44164,7 @@ void ATrPaperDoll::TryUpdatingPaperDoll ( )
     static UFunction* pFnTryUpdatingPaperDoll = NULL;
 
     if ( ! pFnTryUpdatingPaperDoll )
-        pFnTryUpdatingPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 102931 ];
+        pFnTryUpdatingPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 102930 ];
 
     ATrPaperDoll_execTryUpdatingPaperDoll_Parms TryUpdatingPaperDoll_Parms;
 
@@ -44181,7 +44181,7 @@ void ATrPaperDoll::eventOnSkeletalMeshFinishedStreaming ( class USkeletalMesh* N
     static UFunction* pFnOnSkeletalMeshFinishedStreaming = NULL;
 
     if ( ! pFnOnSkeletalMeshFinishedStreaming )
-        pFnOnSkeletalMeshFinishedStreaming = (UFunction*) UObject::GObjObjects()->Data[ 102929 ];
+        pFnOnSkeletalMeshFinishedStreaming = (UFunction*) UObject::GObjObjects()->Data[ 102928 ];
 
     ATrPaperDoll_eventOnSkeletalMeshFinishedStreaming_Parms OnSkeletalMeshFinishedStreaming_Parms;
     OnSkeletalMeshFinishedStreaming_Parms.NewSkelMesh = NewSkelMesh;
@@ -44199,7 +44199,7 @@ void ATrPaperDoll::OnCharacterMeshContentDataClassLoaded ( class UClass* Skin3PD
     static UFunction* pFnOnCharacterMeshContentDataClassLoaded = NULL;
 
     if ( ! pFnOnCharacterMeshContentDataClassLoaded )
-        pFnOnCharacterMeshContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102925 ];
+        pFnOnCharacterMeshContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102924 ];
 
     ATrPaperDoll_execOnCharacterMeshContentDataClassLoaded_Parms OnCharacterMeshContentDataClassLoaded_Parms;
     OnCharacterMeshContentDataClassLoaded_Parms.Skin3PDataClass = Skin3PDataClass;
@@ -44219,7 +44219,7 @@ class USkeletalMesh* ATrPaperDoll::GetCharacterSkeletalMesh ( class UClass* Fami
     static UFunction* pFnGetCharacterSkeletalMesh = NULL;
 
     if ( ! pFnGetCharacterSkeletalMesh )
-        pFnGetCharacterSkeletalMesh = (UFunction*) UObject::GObjObjects()->Data[ 102919 ];
+        pFnGetCharacterSkeletalMesh = (UFunction*) UObject::GObjObjects()->Data[ 102918 ];
 
     ATrPaperDoll_execGetCharacterSkeletalMesh_Parms GetCharacterSkeletalMesh_Parms;
     GetCharacterSkeletalMesh_Parms.FamilyInfoClass = FamilyInfoClass;
@@ -44240,7 +44240,7 @@ void ATrPaperDoll::eventPostInitAnimTree ( class USkeletalMeshComponent* SkelCom
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 102916 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 102915 ];
 
     ATrPaperDoll_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -44257,7 +44257,7 @@ void ATrPaperDoll::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102914 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102913 ];
 
     ATrPaperDoll_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -44275,7 +44275,7 @@ bool ATrPaperDoll::IsFullyStreamed ( struct FPaperDollInfo PaperDoll )
     static UFunction* pFnIsFullyStreamed = NULL;
 
     if ( ! pFnIsFullyStreamed )
-        pFnIsFullyStreamed = (UFunction*) UObject::GObjObjects()->Data[ 102911 ];
+        pFnIsFullyStreamed = (UFunction*) UObject::GObjObjects()->Data[ 102910 ];
 
     ATrPaperDoll_execIsFullyStreamed_Parms IsFullyStreamed_Parms;
     memcpy ( &IsFullyStreamed_Parms.PaperDoll, &PaperDoll, 0x38 );
@@ -44299,7 +44299,7 @@ void UTrPartyManager::LeaveParty ( unsigned long bHandle )
     static UFunction* pFnLeaveParty = NULL;
 
     if ( ! pFnLeaveParty )
-        pFnLeaveParty = (UFunction*) UObject::GObjObjects()->Data[ 103085 ];
+        pFnLeaveParty = (UFunction*) UObject::GObjObjects()->Data[ 103084 ];
 
     UTrPartyManager_execLeaveParty_Parms LeaveParty_Parms;
     LeaveParty_Parms.bHandle = bHandle;
@@ -44316,7 +44316,7 @@ void UTrPartyManager::eventOnUpdate ( )
     static UFunction* pFnOnUpdate = NULL;
 
     if ( ! pFnOnUpdate )
-        pFnOnUpdate = (UFunction*) UObject::GObjObjects()->Data[ 103084 ];
+        pFnOnUpdate = (UFunction*) UObject::GObjObjects()->Data[ 103083 ];
 
     UTrPartyManager_eventOnUpdate_Parms OnUpdate_Parms;
 
@@ -44333,7 +44333,7 @@ void UTrPartyManager::InvitationComplete ( int Action )
     static UFunction* pFnInvitationComplete = NULL;
 
     if ( ! pFnInvitationComplete )
-        pFnInvitationComplete = (UFunction*) UObject::GObjObjects()->Data[ 103082 ];
+        pFnInvitationComplete = (UFunction*) UObject::GObjObjects()->Data[ 103081 ];
 
     UTrPartyManager_execInvitationComplete_Parms InvitationComplete_Parms;
     InvitationComplete_Parms.Action = Action;
@@ -44351,7 +44351,7 @@ void UTrPartyManager::InvitationPopup ( class UGFxObject* Obj )
     static UFunction* pFnInvitationPopup = NULL;
 
     if ( ! pFnInvitationPopup )
-        pFnInvitationPopup = (UFunction*) UObject::GObjObjects()->Data[ 103077 ];
+        pFnInvitationPopup = (UFunction*) UObject::GObjObjects()->Data[ 103076 ];
 
     UTrPartyManager_execInvitationPopup_Parms InvitationPopup_Parms;
     InvitationPopup_Parms.Obj = Obj;
@@ -44369,7 +44369,7 @@ void UTrPartyManager::eventShowInvitation ( struct FString LeaderName )
     static UFunction* pFnShowInvitation = NULL;
 
     if ( ! pFnShowInvitation )
-        pFnShowInvitation = (UFunction*) UObject::GObjObjects()->Data[ 103075 ];
+        pFnShowInvitation = (UFunction*) UObject::GObjObjects()->Data[ 103074 ];
 
     UTrPartyManager_eventShowInvitation_Parms ShowInvitation_Parms;
     memcpy ( &ShowInvitation_Parms.LeaderName, &LeaderName, 0xC );
@@ -44386,7 +44386,7 @@ void UTrPartyManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 103074 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 103073 ];
 
     UTrPartyManager_execInitialize_Parms Initialize_Parms;
 
@@ -44428,7 +44428,7 @@ struct FString UTrPartyManager::GetLeaderName ( )
     static UFunction* pFnGetLeaderName = NULL;
 
     if ( ! pFnGetLeaderName )
-        pFnGetLeaderName = (UFunction*) UObject::GObjObjects()->Data[ 103071 ];
+        pFnGetLeaderName = (UFunction*) UObject::GObjObjects()->Data[ 103070 ];
 
     UTrPartyManager_execGetLeaderName_Parms GetLeaderName_Parms;
 
@@ -44451,7 +44451,7 @@ bool UTrPartyManager::AcceptInvite ( )
     static UFunction* pFnAcceptInvite = NULL;
 
     if ( ! pFnAcceptInvite )
-        pFnAcceptInvite = (UFunction*) UObject::GObjObjects()->Data[ 103069 ];
+        pFnAcceptInvite = (UFunction*) UObject::GObjObjects()->Data[ 103068 ];
 
     UTrPartyManager_execAcceptInvite_Parms AcceptInvite_Parms;
 
@@ -44549,7 +44549,7 @@ bool UTrPartyManager::Leave ( )
     static UFunction* pFnLeave = NULL;
 
     if ( ! pFnLeave )
-        pFnLeave = (UFunction*) UObject::GObjObjects()->Data[ 103064 ];
+        pFnLeave = (UFunction*) UObject::GObjObjects()->Data[ 103063 ];
 
     UTrPartyManager_execLeave_Parms Leave_Parms;
 
@@ -44713,7 +44713,7 @@ void ATrTurretPawn::IncrementFlashCount ( class AWeapon* W, unsigned char FireMo
     static UFunction* pFnIncrementFlashCount = NULL;
 
     if ( ! pFnIncrementFlashCount )
-        pFnIncrementFlashCount = (UFunction*) UObject::GObjObjects()->Data[ 119945 ];
+        pFnIncrementFlashCount = (UFunction*) UObject::GObjObjects()->Data[ 119944 ];
 
     ATrTurretPawn_execIncrementFlashCount_Parms IncrementFlashCount_Parms;
     IncrementFlashCount_Parms.W = W;
@@ -44735,7 +44735,7 @@ void ATrTurretPawn::eventPostRenderFor ( class APlayerController* PC, class UCan
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119940 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119939 ];
 
     ATrTurretPawn_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -44757,7 +44757,7 @@ void ATrTurretPawn::SetCharacterClassFromInfo ( class UClass* Info, unsigned lon
     static UFunction* pFnSetCharacterClassFromInfo = NULL;
 
     if ( ! pFnSetCharacterClassFromInfo )
-        pFnSetCharacterClassFromInfo = (UFunction*) UObject::GObjObjects()->Data[ 119937 ];
+        pFnSetCharacterClassFromInfo = (UFunction*) UObject::GObjObjects()->Data[ 119936 ];
 
     ATrTurretPawn_execSetCharacterClassFromInfo_Parms SetCharacterClassFromInfo_Parms;
     SetCharacterClassFromInfo_Parms.Info = Info;
@@ -44777,7 +44777,7 @@ void ATrTurretPawn::RefreshInventory ( unsigned long bIsRespawn, unsigned long b
     static UFunction* pFnRefreshInventory = NULL;
 
     if ( ! pFnRefreshInventory )
-        pFnRefreshInventory = (UFunction*) UObject::GObjObjects()->Data[ 119934 ];
+        pFnRefreshInventory = (UFunction*) UObject::GObjObjects()->Data[ 119933 ];
 
     ATrTurretPawn_execRefreshInventory_Parms RefreshInventory_Parms;
     RefreshInventory_Parms.bIsRespawn = bIsRespawn;
@@ -44795,7 +44795,7 @@ void ATrTurretPawn::RefreshPlayer ( )
     static UFunction* pFnRefreshPlayer = NULL;
 
     if ( ! pFnRefreshPlayer )
-        pFnRefreshPlayer = (UFunction*) UObject::GObjObjects()->Data[ 119933 ];
+        pFnRefreshPlayer = (UFunction*) UObject::GObjObjects()->Data[ 119932 ];
 
     ATrTurretPawn_execRefreshPlayer_Parms RefreshPlayer_Parms;
 
@@ -44820,7 +44820,7 @@ void ATrTurretPawn::TakeRadiusDamage ( class AController* EventInstigator, float
     static UFunction* pFnTakeRadiusDamage = NULL;
 
     if ( ! pFnTakeRadiusDamage )
-        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 119923 ];
+        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 119922 ];
 
     ATrTurretPawn_execTakeRadiusDamage_Parms TakeRadiusDamage_Parms;
     TakeRadiusDamage_Parms.EventInstigator = EventInstigator;
@@ -44852,7 +44852,7 @@ void ATrTurretPawn::eventTakeDamage ( int Damage, class AController* EventInstig
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 119915 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 119914 ];
 
     ATrTurretPawn_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.Damage = Damage;
@@ -44875,7 +44875,7 @@ void ATrTurretPawn::Reset ( )
     static UFunction* pFnReset = NULL;
 
     if ( ! pFnReset )
-        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 119914 ];
+        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 119913 ];
 
     ATrTurretPawn_execReset_Parms Reset_Parms;
 
@@ -44893,7 +44893,7 @@ struct FVector ATrTurretPawn::GetWeaponStartTraceLocation ( class AWeapon* Curre
     static UFunction* pFnGetWeaponStartTraceLocation = NULL;
 
     if ( ! pFnGetWeaponStartTraceLocation )
-        pFnGetWeaponStartTraceLocation = (UFunction*) UObject::GObjObjects()->Data[ 119911 ];
+        pFnGetWeaponStartTraceLocation = (UFunction*) UObject::GObjObjects()->Data[ 119910 ];
 
     ATrTurretPawn_execGetWeaponStartTraceLocation_Parms GetWeaponStartTraceLocation_Parms;
     GetWeaponStartTraceLocation_Parms.CurrentWeapon = CurrentWeapon;
@@ -44936,7 +44936,7 @@ struct FRotator ATrTurretPawn::GetAdjustedAimFor ( class AWeapon* InWeapon, stru
     static UFunction* pFnGetAdjustedAimFor = NULL;
 
     if ( ! pFnGetAdjustedAimFor )
-        pFnGetAdjustedAimFor = (UFunction*) UObject::GObjObjects()->Data[ 119906 ];
+        pFnGetAdjustedAimFor = (UFunction*) UObject::GObjObjects()->Data[ 119905 ];
 
     ATrTurretPawn_execGetAdjustedAimFor_Parms GetAdjustedAimFor_Parms;
     GetAdjustedAimFor_Parms.InWeapon = InWeapon;
@@ -44960,7 +44960,7 @@ struct FVector ATrTurretPawn::GetAimVectorFor ( class AWeapon* InWeapon, struct 
     static UFunction* pFnGetAimVectorFor = NULL;
 
     if ( ! pFnGetAimVectorFor )
-        pFnGetAimVectorFor = (UFunction*) UObject::GObjObjects()->Data[ 119893 ];
+        pFnGetAimVectorFor = (UFunction*) UObject::GObjObjects()->Data[ 119892 ];
 
     ATrTurretPawn_execGetAimVectorFor_Parms GetAimVectorFor_Parms;
     GetAimVectorFor_Parms.InWeapon = InWeapon;
@@ -44984,7 +44984,7 @@ void ATrTurretPawn::WeaponFired ( class AWeapon* InWeapon, unsigned long bViaRep
     static UFunction* pFnWeaponFired = NULL;
 
     if ( ! pFnWeaponFired )
-        pFnWeaponFired = (UFunction*) UObject::GObjObjects()->Data[ 119889 ];
+        pFnWeaponFired = (UFunction*) UObject::GObjObjects()->Data[ 119888 ];
 
     ATrTurretPawn_execWeaponFired_Parms WeaponFired_Parms;
     WeaponFired_Parms.InWeapon = InWeapon;
@@ -45003,7 +45003,7 @@ void ATrTurretPawn::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119888 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119887 ];
 
     ATrTurretPawn_execDestroyed_Parms Destroyed_Parms;
 
@@ -45019,7 +45019,7 @@ void ATrTurretPawn::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119887 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119886 ];
 
     ATrTurretPawn_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -45038,7 +45038,7 @@ struct FVector ATrTurretPawn::GetValidAimTarget ( struct FVector PawnLocation, s
     static UFunction* pFnGetValidAimTarget = NULL;
 
     if ( ! pFnGetValidAimTarget )
-        pFnGetValidAimTarget = (UFunction*) UObject::GObjObjects()->Data[ 119883 ];
+        pFnGetValidAimTarget = (UFunction*) UObject::GObjObjects()->Data[ 119882 ];
 
     ATrTurretPawn_execGetValidAimTarget_Parms GetValidAimTarget_Parms;
     memcpy ( &GetValidAimTarget_Parms.PawnLocation, &PawnLocation, 0xC );
@@ -45062,7 +45062,7 @@ void ATrPhysicsPresetInfo::ResetAllProperties ( )
     static UFunction* pFnResetAllProperties = NULL;
 
     if ( ! pFnResetAllProperties )
-        pFnResetAllProperties = (UFunction*) UObject::GObjObjects()->Data[ 104851 ];
+        pFnResetAllProperties = (UFunction*) UObject::GObjObjects()->Data[ 104850 ];
 
     ATrPhysicsPresetInfo_execResetAllProperties_Parms ResetAllProperties_Parms;
 
@@ -45079,7 +45079,7 @@ void ATrPhysicsPresetInfo::PrintReportNative ( struct FString Report )
     static UFunction* pFnPrintReportNative = NULL;
 
     if ( ! pFnPrintReportNative )
-        pFnPrintReportNative = (UFunction*) UObject::GObjObjects()->Data[ 104849 ];
+        pFnPrintReportNative = (UFunction*) UObject::GObjObjects()->Data[ 104848 ];
 
     ATrPhysicsPresetInfo_execPrintReportNative_Parms PrintReportNative_Parms;
     memcpy ( &PrintReportNative_Parms.Report, &Report, 0xC );
@@ -45103,7 +45103,7 @@ void ATrPhysicsPresetInfo::PrintReportHelper ( struct FString NewEntry, unsigned
     static UFunction* pFnPrintReportHelper = NULL;
 
     if ( ! pFnPrintReportHelper )
-        pFnPrintReportHelper = (UFunction*) UObject::GObjObjects()->Data[ 104845 ];
+        pFnPrintReportHelper = (UFunction*) UObject::GObjObjects()->Data[ 104844 ];
 
     ATrPhysicsPresetInfo_execPrintReportHelper_Parms PrintReportHelper_Parms;
     memcpy ( &PrintReportHelper_Parms.NewEntry, &NewEntry, 0xC );
@@ -45124,7 +45124,7 @@ void ATrPhysicsPresetInfo::PrintReport ( )
     static UFunction* pFnPrintReport = NULL;
 
     if ( ! pFnPrintReport )
-        pFnPrintReport = (UFunction*) UObject::GObjObjects()->Data[ 104843 ];
+        pFnPrintReport = (UFunction*) UObject::GObjObjects()->Data[ 104842 ];
 
     ATrPhysicsPresetInfo_execPrintReport_Parms PrintReport_Parms;
 
@@ -45142,7 +45142,7 @@ float ATrPhysicsPresetInfo::GetPhysicsProperty ( int PhysicsProperty )
     static UFunction* pFnGetPhysicsProperty = NULL;
 
     if ( ! pFnGetPhysicsProperty )
-        pFnGetPhysicsProperty = (UFunction*) UObject::GObjObjects()->Data[ 94674 ];
+        pFnGetPhysicsProperty = (UFunction*) UObject::GObjObjects()->Data[ 94673 ];
 
     ATrPhysicsPresetInfo_execGetPhysicsProperty_Parms GetPhysicsProperty_Parms;
     GetPhysicsProperty_Parms.PhysicsProperty = PhysicsProperty;
@@ -45164,7 +45164,7 @@ bool ATrPhysicsPresetInfo::eventSetPhysicsProperty ( int PhysicsProperty, float 
     static UFunction* pFnSetPhysicsProperty = NULL;
 
     if ( ! pFnSetPhysicsProperty )
-        pFnSetPhysicsProperty = (UFunction*) UObject::GObjObjects()->Data[ 94694 ];
+        pFnSetPhysicsProperty = (UFunction*) UObject::GObjObjects()->Data[ 94693 ];
 
     ATrPhysicsPresetInfo_eventSetPhysicsProperty_Parms SetPhysicsProperty_Parms;
     SetPhysicsProperty_Parms.PhysicsProperty = PhysicsProperty;
@@ -45186,7 +45186,7 @@ int ATrPhysicsPresetInfo::GetPropertyIDByName ( struct FString PropertyName )
     static UFunction* pFnGetPropertyIDByName = NULL;
 
     if ( ! pFnGetPropertyIDByName )
-        pFnGetPropertyIDByName = (UFunction*) UObject::GObjObjects()->Data[ 94687 ];
+        pFnGetPropertyIDByName = (UFunction*) UObject::GObjObjects()->Data[ 94686 ];
 
     ATrPhysicsPresetInfo_execGetPropertyIDByName_Parms GetPropertyIDByName_Parms;
     memcpy ( &GetPropertyIDByName_Parms.PropertyName, &PropertyName, 0xC );
@@ -45205,7 +45205,7 @@ void ATrPhysicsPresetInfo::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 104835 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 104834 ];
 
     ATrPhysicsPresetInfo_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -45222,7 +45222,7 @@ void ATrPhysicsPresetInfo::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 104831 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 104830 ];
 
     ATrPhysicsPresetInfo_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -45241,7 +45241,7 @@ bool ATrPhysicsPresetInfo::FindAndApplyPhysics ( int PhysicsId )
     static UFunction* pFnFindAndApplyPhysics = NULL;
 
     if ( ! pFnFindAndApplyPhysics )
-        pFnFindAndApplyPhysics = (UFunction*) UObject::GObjObjects()->Data[ 94670 ];
+        pFnFindAndApplyPhysics = (UFunction*) UObject::GObjObjects()->Data[ 94669 ];
 
     ATrPhysicsPresetInfo_execFindAndApplyPhysics_Parms FindAndApplyPhysics_Parms;
     FindAndApplyPhysics_Parms.PhysicsId = PhysicsId;
@@ -45300,7 +45300,7 @@ void ATrEntryPlayerController::ShowPeachTimer ( )
     static UFunction* pFnShowPeachTimer = NULL;
 
     if ( ! pFnShowPeachTimer )
-        pFnShowPeachTimer = (UFunction*) UObject::GObjObjects()->Data[ 87919 ];
+        pFnShowPeachTimer = (UFunction*) UObject::GObjObjects()->Data[ 87918 ];
 
     ATrEntryPlayerController_execShowPeachTimer_Parms ShowPeachTimer_Parms;
 
@@ -45316,7 +45316,7 @@ void ATrEntryPlayerController::SwapModelTimer ( )
     static UFunction* pFnSwapModelTimer = NULL;
 
     if ( ! pFnSwapModelTimer )
-        pFnSwapModelTimer = (UFunction*) UObject::GObjObjects()->Data[ 87918 ];
+        pFnSwapModelTimer = (UFunction*) UObject::GObjObjects()->Data[ 87917 ];
 
     ATrEntryPlayerController_execSwapModelTimer_Parms SwapModelTimer_Parms;
 
@@ -45332,7 +45332,7 @@ void ATrEntryPlayerController::RefreshFriendsTimer ( )
     static UFunction* pFnRefreshFriendsTimer = NULL;
 
     if ( ! pFnRefreshFriendsTimer )
-        pFnRefreshFriendsTimer = (UFunction*) UObject::GObjObjects()->Data[ 87917 ];
+        pFnRefreshFriendsTimer = (UFunction*) UObject::GObjObjects()->Data[ 87916 ];
 
     ATrEntryPlayerController_execRefreshFriendsTimer_Parms RefreshFriendsTimer_Parms;
 
@@ -45349,7 +45349,7 @@ void ATrEntryPlayerController::eventOn3PSkinContentLoaded ( class UClass* Skin3P
     static UFunction* pFnOn3PSkinContentLoaded = NULL;
 
     if ( ! pFnOn3PSkinContentLoaded )
-        pFnOn3PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87915 ];
+        pFnOn3PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87914 ];
 
     ATrEntryPlayerController_eventOn3PSkinContentLoaded_Parms On3PSkinContentLoaded_Parms;
     On3PSkinContentLoaded_Parms.Skin3PDataClass = Skin3PDataClass;
@@ -45366,7 +45366,7 @@ void ATrEntryPlayerController::OnClassSelectedMainMenu ( )
     static UFunction* pFnOnClassSelectedMainMenu = NULL;
 
     if ( ! pFnOnClassSelectedMainMenu )
-        pFnOnClassSelectedMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87914 ];
+        pFnOnClassSelectedMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87913 ];
 
     ATrEntryPlayerController_execOnClassSelectedMainMenu_Parms OnClassSelectedMainMenu_Parms;
 
@@ -45383,7 +45383,7 @@ void ATrEntryPlayerController::eventOnDeviceContentDataClassLoaded ( class UClas
     static UFunction* pFnOnDeviceContentDataClassLoaded = NULL;
 
     if ( ! pFnOnDeviceContentDataClassLoaded )
-        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87912 ];
+        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 87911 ];
 
     ATrEntryPlayerController_eventOnDeviceContentDataClassLoaded_Parms OnDeviceContentDataClassLoaded_Parms;
     OnDeviceContentDataClassLoaded_Parms.DeviceContentDataClass = DeviceContentDataClass;
@@ -45404,7 +45404,7 @@ void ATrEntryPlayerController::UpdatePaperDoll ( class UClass* FamilyInfoClass, 
     static UFunction* pFnUpdatePaperDoll = NULL;
 
     if ( ! pFnUpdatePaperDoll )
-        pFnUpdatePaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87907 ];
+        pFnUpdatePaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87906 ];
 
     ATrEntryPlayerController_execUpdatePaperDoll_Parms UpdatePaperDoll_Parms;
     UpdatePaperDoll_Parms.FamilyInfoClass = FamilyInfoClass;
@@ -45425,7 +45425,7 @@ void ATrEntryPlayerController::UpdateMainMenuPaperDoll_Mesh ( unsigned char Type
     static UFunction* pFnUpdateMainMenuPaperDoll_Mesh = NULL;
 
     if ( ! pFnUpdateMainMenuPaperDoll_Mesh )
-        pFnUpdateMainMenuPaperDoll_Mesh = (UFunction*) UObject::GObjObjects()->Data[ 87904 ];
+        pFnUpdateMainMenuPaperDoll_Mesh = (UFunction*) UObject::GObjObjects()->Data[ 87903 ];
 
     ATrEntryPlayerController_execUpdateMainMenuPaperDoll_Mesh_Parms UpdateMainMenuPaperDoll_Mesh_Parms;
     UpdateMainMenuPaperDoll_Mesh_Parms.Type = Type;
@@ -45442,7 +45442,7 @@ void ATrEntryPlayerController::ClearMainMenuPaperDoll ( )
     static UFunction* pFnClearMainMenuPaperDoll = NULL;
 
     if ( ! pFnClearMainMenuPaperDoll )
-        pFnClearMainMenuPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87903 ];
+        pFnClearMainMenuPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87902 ];
 
     ATrEntryPlayerController_execClearMainMenuPaperDoll_Parms ClearMainMenuPaperDoll_Parms;
 
@@ -45459,7 +45459,7 @@ void ATrEntryPlayerController::UpdatePaperDoll_Device ( class UClass* DeviceClas
     static UFunction* pFnUpdatePaperDoll_Device = NULL;
 
     if ( ! pFnUpdatePaperDoll_Device )
-        pFnUpdatePaperDoll_Device = (UFunction*) UObject::GObjObjects()->Data[ 87901 ];
+        pFnUpdatePaperDoll_Device = (UFunction*) UObject::GObjObjects()->Data[ 87900 ];
 
     ATrEntryPlayerController_execUpdatePaperDoll_Device_Parms UpdatePaperDoll_Device_Parms;
     UpdatePaperDoll_Device_Parms.DeviceClass = DeviceClass;
@@ -45477,7 +45477,7 @@ void ATrEntryPlayerController::Char ( int CharID )
     static UFunction* pFnChar = NULL;
 
     if ( ! pFnChar )
-        pFnChar = (UFunction*) UObject::GObjObjects()->Data[ 87892 ];
+        pFnChar = (UFunction*) UObject::GObjObjects()->Data[ 87891 ];
 
     ATrEntryPlayerController_execChar_Parms Char_Parms;
     Char_Parms.CharID = CharID;
@@ -45495,7 +45495,7 @@ void ATrEntryPlayerController::Weap ( int WeapId )
     static UFunction* pFnWeap = NULL;
 
     if ( ! pFnWeap )
-        pFnWeap = (UFunction*) UObject::GObjObjects()->Data[ 87890 ];
+        pFnWeap = (UFunction*) UObject::GObjObjects()->Data[ 87889 ];
 
     ATrEntryPlayerController_execWeap_Parms Weap_Parms;
     Weap_Parms.WeapId = WeapId;
@@ -45513,7 +45513,7 @@ void ATrEntryPlayerController::Pose ( int PoseId )
     static UFunction* pFnPose = NULL;
 
     if ( ! pFnPose )
-        pFnPose = (UFunction*) UObject::GObjObjects()->Data[ 87888 ];
+        pFnPose = (UFunction*) UObject::GObjObjects()->Data[ 87887 ];
 
     ATrEntryPlayerController_execPose_Parms Pose_Parms;
     Pose_Parms.PoseId = PoseId;
@@ -45530,7 +45530,7 @@ void ATrEntryPlayerController::ShowScoreboard ( )
     static UFunction* pFnShowScoreboard = NULL;
 
     if ( ! pFnShowScoreboard )
-        pFnShowScoreboard = (UFunction*) UObject::GObjObjects()->Data[ 87887 ];
+        pFnShowScoreboard = (UFunction*) UObject::GObjObjects()->Data[ 87886 ];
 
     ATrEntryPlayerController_execShowScoreboard_Parms ShowScoreboard_Parms;
 
@@ -45548,7 +45548,7 @@ void ATrEntryPlayerController::ShowMidGameMenu ( struct FName TabTag, unsigned l
     static UFunction* pFnShowMidGameMenu = NULL;
 
     if ( ! pFnShowMidGameMenu )
-        pFnShowMidGameMenu = (UFunction*) UObject::GObjObjects()->Data[ 87884 ];
+        pFnShowMidGameMenu = (UFunction*) UObject::GObjObjects()->Data[ 87883 ];
 
     ATrEntryPlayerController_execShowMidGameMenu_Parms ShowMidGameMenu_Parms;
     memcpy ( &ShowMidGameMenu_Parms.TabTag, &TabTag, 0x8 );
@@ -45567,7 +45567,7 @@ void ATrEntryPlayerController::SetPawnConstructionScene ( unsigned long bShow )
     static UFunction* pFnSetPawnConstructionScene = NULL;
 
     if ( ! pFnSetPawnConstructionScene )
-        pFnSetPawnConstructionScene = (UFunction*) UObject::GObjObjects()->Data[ 87882 ];
+        pFnSetPawnConstructionScene = (UFunction*) UObject::GObjObjects()->Data[ 87881 ];
 
     ATrEntryPlayerController_execSetPawnConstructionScene_Parms SetPawnConstructionScene_Parms;
     SetPawnConstructionScene_Parms.bShow = bShow;
@@ -45584,7 +45584,7 @@ void ATrEntryPlayerController::QuitToMainMenu ( )
     static UFunction* pFnQuitToMainMenu = NULL;
 
     if ( ! pFnQuitToMainMenu )
-        pFnQuitToMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87881 ];
+        pFnQuitToMainMenu = (UFunction*) UObject::GObjObjects()->Data[ 87880 ];
 
     ATrEntryPlayerController_execQuitToMainMenu_Parms QuitToMainMenu_Parms;
 
@@ -45601,7 +45601,7 @@ void ATrEntryPlayerController::OnLinkStatusChanged ( unsigned long bConnected )
     static UFunction* pFnOnLinkStatusChanged = NULL;
 
     if ( ! pFnOnLinkStatusChanged )
-        pFnOnLinkStatusChanged = (UFunction*) UObject::GObjObjects()->Data[ 87878 ];
+        pFnOnLinkStatusChanged = (UFunction*) UObject::GObjObjects()->Data[ 87877 ];
 
     ATrEntryPlayerController_execOnLinkStatusChanged_Parms OnLinkStatusChanged_Parms;
     OnLinkStatusChanged_Parms.bConnected = bConnected;
@@ -45619,7 +45619,7 @@ void ATrEntryPlayerController::OnConnectionStatusChange ( unsigned char Connecti
     static UFunction* pFnOnConnectionStatusChange = NULL;
 
     if ( ! pFnOnConnectionStatusChange )
-        pFnOnConnectionStatusChange = (UFunction*) UObject::GObjObjects()->Data[ 87875 ];
+        pFnOnConnectionStatusChange = (UFunction*) UObject::GObjObjects()->Data[ 87874 ];
 
     ATrEntryPlayerController_execOnConnectionStatusChange_Parms OnConnectionStatusChange_Parms;
     OnConnectionStatusChange_Parms.ConnectionStatus = ConnectionStatus;
@@ -45640,7 +45640,7 @@ void ATrEntryPlayerController::OnFriendMessageReceived ( unsigned char LocalUser
     static UFunction* pFnOnFriendMessageReceived = NULL;
 
     if ( ! pFnOnFriendMessageReceived )
-        pFnOnFriendMessageReceived = (UFunction*) UObject::GObjObjects()->Data[ 87870 ];
+        pFnOnFriendMessageReceived = (UFunction*) UObject::GObjObjects()->Data[ 87869 ];
 
     ATrEntryPlayerController_execOnFriendMessageReceived_Parms OnFriendMessageReceived_Parms;
     OnFriendMessageReceived_Parms.LocalUserNum = LocalUserNum;
@@ -45664,7 +45664,7 @@ void ATrEntryPlayerController::OnFriendInviteReceived ( unsigned char LocalUserN
     static UFunction* pFnOnFriendInviteReceived = NULL;
 
     if ( ! pFnOnFriendInviteReceived )
-        pFnOnFriendInviteReceived = (UFunction*) UObject::GObjObjects()->Data[ 87865 ];
+        pFnOnFriendInviteReceived = (UFunction*) UObject::GObjObjects()->Data[ 87864 ];
 
     ATrEntryPlayerController_execOnFriendInviteReceived_Parms OnFriendInviteReceived_Parms;
     OnFriendInviteReceived_Parms.LocalUserNum = LocalUserNum;
@@ -45686,7 +45686,7 @@ void ATrEntryPlayerController::OnGameInviteReceived ( unsigned char LocalUserNum
     static UFunction* pFnOnGameInviteReceived = NULL;
 
     if ( ! pFnOnGameInviteReceived )
-        pFnOnGameInviteReceived = (UFunction*) UObject::GObjObjects()->Data[ 87862 ];
+        pFnOnGameInviteReceived = (UFunction*) UObject::GObjObjects()->Data[ 87861 ];
 
     ATrEntryPlayerController_execOnGameInviteReceived_Parms OnGameInviteReceived_Parms;
     OnGameInviteReceived_Parms.LocalUserNum = LocalUserNum;
@@ -45706,7 +45706,7 @@ void ATrEntryPlayerController::OnControllerChanged ( int ControllerId, unsigned 
     static UFunction* pFnOnControllerChanged = NULL;
 
     if ( ! pFnOnControllerChanged )
-        pFnOnControllerChanged = (UFunction*) UObject::GObjObjects()->Data[ 87858 ];
+        pFnOnControllerChanged = (UFunction*) UObject::GObjObjects()->Data[ 87857 ];
 
     ATrEntryPlayerController_execOnControllerChanged_Parms OnControllerChanged_Parms;
     OnControllerChanged_Parms.ControllerId = ControllerId;
@@ -45724,7 +45724,7 @@ void ATrEntryPlayerController::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 87857 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 87856 ];
 
     ATrEntryPlayerController_eventDestroyed_Parms Destroyed_Parms;
 
@@ -45740,7 +45740,7 @@ void ATrEntryPlayerController::eventInitInputSystem ( )
     static UFunction* pFnInitInputSystem = NULL;
 
     if ( ! pFnInitInputSystem )
-        pFnInitInputSystem = (UFunction*) UObject::GObjObjects()->Data[ 87856 ];
+        pFnInitInputSystem = (UFunction*) UObject::GObjObjects()->Data[ 87855 ];
 
     ATrEntryPlayerController_eventInitInputSystem_Parms InitInputSystem_Parms;
 
@@ -45757,7 +45757,7 @@ void ATrEntryPlayerController::LoadingTimer ( unsigned long bStart )
     static UFunction* pFnLoadingTimer = NULL;
 
     if ( ! pFnLoadingTimer )
-        pFnLoadingTimer = (UFunction*) UObject::GObjObjects()->Data[ 87854 ];
+        pFnLoadingTimer = (UFunction*) UObject::GObjObjects()->Data[ 87853 ];
 
     ATrEntryPlayerController_execLoadingTimer_Parms LoadingTimer_Parms;
     LoadingTimer_Parms.bStart = bStart;
@@ -45774,7 +45774,7 @@ void ATrEntryPlayerController::ClearQueueResendTimer ( )
     static UFunction* pFnClearQueueResendTimer = NULL;
 
     if ( ! pFnClearQueueResendTimer )
-        pFnClearQueueResendTimer = (UFunction*) UObject::GObjObjects()->Data[ 87853 ];
+        pFnClearQueueResendTimer = (UFunction*) UObject::GObjObjects()->Data[ 87852 ];
 
     ATrEntryPlayerController_execClearQueueResendTimer_Parms ClearQueueResendTimer_Parms;
 
@@ -45791,7 +45791,7 @@ void ATrEntryPlayerController::eventBeginQueueResendTimer ( int SecondsLeft )
     static UFunction* pFnBeginQueueResendTimer = NULL;
 
     if ( ! pFnBeginQueueResendTimer )
-        pFnBeginQueueResendTimer = (UFunction*) UObject::GObjObjects()->Data[ 87851 ];
+        pFnBeginQueueResendTimer = (UFunction*) UObject::GObjObjects()->Data[ 87850 ];
 
     ATrEntryPlayerController_eventBeginQueueResendTimer_Parms BeginQueueResendTimer_Parms;
     BeginQueueResendTimer_Parms.SecondsLeft = SecondsLeft;
@@ -45808,7 +45808,7 @@ void ATrEntryPlayerController::RequestPaperDollTimer ( )
     static UFunction* pFnRequestPaperDollTimer = NULL;
 
     if ( ! pFnRequestPaperDollTimer )
-        pFnRequestPaperDollTimer = (UFunction*) UObject::GObjObjects()->Data[ 87850 ];
+        pFnRequestPaperDollTimer = (UFunction*) UObject::GObjObjects()->Data[ 87849 ];
 
     ATrEntryPlayerController_execRequestPaperDollTimer_Parms RequestPaperDollTimer_Parms;
 
@@ -45824,7 +45824,7 @@ void ATrEntryPlayerController::NotifyMenuReadyTimer ( )
     static UFunction* pFnNotifyMenuReadyTimer = NULL;
 
     if ( ! pFnNotifyMenuReadyTimer )
-        pFnNotifyMenuReadyTimer = (UFunction*) UObject::GObjObjects()->Data[ 87849 ];
+        pFnNotifyMenuReadyTimer = (UFunction*) UObject::GObjObjects()->Data[ 87848 ];
 
     ATrEntryPlayerController_execNotifyMenuReadyTimer_Parms NotifyMenuReadyTimer_Parms;
 
@@ -45840,7 +45840,7 @@ void ATrEntryPlayerController::PreloadTexturesTimer ( )
     static UFunction* pFnPreloadTexturesTimer = NULL;
 
     if ( ! pFnPreloadTexturesTimer )
-        pFnPreloadTexturesTimer = (UFunction*) UObject::GObjObjects()->Data[ 87848 ];
+        pFnPreloadTexturesTimer = (UFunction*) UObject::GObjObjects()->Data[ 87847 ];
 
     ATrEntryPlayerController_execPreloadTexturesTimer_Parms PreloadTexturesTimer_Parms;
 
@@ -45856,7 +45856,7 @@ void ATrEntryPlayerController::SwingCameraBack ( )
     static UFunction* pFnSwingCameraBack = NULL;
 
     if ( ! pFnSwingCameraBack )
-        pFnSwingCameraBack = (UFunction*) UObject::GObjObjects()->Data[ 87846 ];
+        pFnSwingCameraBack = (UFunction*) UObject::GObjObjects()->Data[ 87845 ];
 
     ATrEntryPlayerController_execSwingCameraBack_Parms SwingCameraBack_Parms;
 
@@ -45875,7 +45875,7 @@ void ATrEntryPlayerController::SwingCamera ( float TargetPitch, float TargetYaw,
     static UFunction* pFnSwingCamera = NULL;
 
     if ( ! pFnSwingCamera )
-        pFnSwingCamera = (UFunction*) UObject::GObjObjects()->Data[ 87841 ];
+        pFnSwingCamera = (UFunction*) UObject::GObjObjects()->Data[ 87840 ];
 
     ATrEntryPlayerController_execSwingCamera_Parms SwingCamera_Parms;
     SwingCamera_Parms.TargetPitch = TargetPitch;
@@ -45896,7 +45896,7 @@ void ATrEntryPlayerController::eventGetPlayerViewPoint ( struct FVector* POVLoca
     static UFunction* pFnGetPlayerViewPoint = NULL;
 
     if ( ! pFnGetPlayerViewPoint )
-        pFnGetPlayerViewPoint = (UFunction*) UObject::GObjObjects()->Data[ 87834 ];
+        pFnGetPlayerViewPoint = (UFunction*) UObject::GObjObjects()->Data[ 87833 ];
 
     ATrEntryPlayerController_eventGetPlayerViewPoint_Parms GetPlayerViewPoint_Parms;
 
@@ -45918,7 +45918,7 @@ void ATrEntryPlayerController::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87830 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87829 ];
 
     ATrEntryPlayerController_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -45934,7 +45934,7 @@ void ATrEntryPlayerController::ToggleMenuVisible ( )
     static UFunction* pFnToggleMenuVisible = NULL;
 
     if ( ! pFnToggleMenuVisible )
-        pFnToggleMenuVisible = (UFunction*) UObject::GObjObjects()->Data[ 87829 ];
+        pFnToggleMenuVisible = (UFunction*) UObject::GObjObjects()->Data[ 87828 ];
 
     ATrEntryPlayerController_execToggleMenuVisible_Parms ToggleMenuVisible_Parms;
 
@@ -45954,7 +45954,7 @@ void ATrEntryPlayerController::Credits ( )
     static UFunction* pFnCredits = NULL;
 
     if ( ! pFnCredits )
-        pFnCredits = (UFunction*) UObject::GObjObjects()->Data[ 87828 ];
+        pFnCredits = (UFunction*) UObject::GObjObjects()->Data[ 87827 ];
 
     ATrEntryPlayerController_execCredits_Parms Credits_Parms;
 
@@ -45974,7 +45974,7 @@ void ATrEntryPlayerController::ShowPeach ( )
     static UFunction* pFnShowPeach = NULL;
 
     if ( ! pFnShowPeach )
-        pFnShowPeach = (UFunction*) UObject::GObjObjects()->Data[ 87827 ];
+        pFnShowPeach = (UFunction*) UObject::GObjObjects()->Data[ 87826 ];
 
     ATrEntryPlayerController_execShowPeach_Parms ShowPeach_Parms;
 
@@ -45994,7 +45994,7 @@ void ATrEntryPlayerController::SwapModel ( )
     static UFunction* pFnSwapModel = NULL;
 
     if ( ! pFnSwapModel )
-        pFnSwapModel = (UFunction*) UObject::GObjObjects()->Data[ 87826 ];
+        pFnSwapModel = (UFunction*) UObject::GObjObjects()->Data[ 87825 ];
 
     ATrEntryPlayerController_execSwapModel_Parms SwapModel_Parms;
 
@@ -46014,7 +46014,7 @@ void ATrEntryPlayerController::RefreshFriends ( )
     static UFunction* pFnRefreshFriends = NULL;
 
     if ( ! pFnRefreshFriends )
-        pFnRefreshFriends = (UFunction*) UObject::GObjObjects()->Data[ 87825 ];
+        pFnRefreshFriends = (UFunction*) UObject::GObjObjects()->Data[ 87824 ];
 
     ATrEntryPlayerController_execRefreshFriends_Parms RefreshFriends_Parms;
 
@@ -46034,7 +46034,7 @@ void ATrEntryPlayerController::NotifyMenuReady ( )
     static UFunction* pFnNotifyMenuReady = NULL;
 
     if ( ! pFnNotifyMenuReady )
-        pFnNotifyMenuReady = (UFunction*) UObject::GObjObjects()->Data[ 87824 ];
+        pFnNotifyMenuReady = (UFunction*) UObject::GObjObjects()->Data[ 87823 ];
 
     ATrEntryPlayerController_execNotifyMenuReady_Parms NotifyMenuReady_Parms;
 
@@ -46055,7 +46055,7 @@ int ATrEntryPlayerController::GetWaitRemaining ( )
     static UFunction* pFnGetWaitRemaining = NULL;
 
     if ( ! pFnGetWaitRemaining )
-        pFnGetWaitRemaining = (UFunction*) UObject::GObjObjects()->Data[ 87822 ];
+        pFnGetWaitRemaining = (UFunction*) UObject::GObjObjects()->Data[ 87821 ];
 
     ATrEntryPlayerController_execGetWaitRemaining_Parms GetWaitRemaining_Parms;
 
@@ -46078,7 +46078,7 @@ void ATrEntryPlayerController::UpdateMenuTimer ( int Seconds )
     static UFunction* pFnUpdateMenuTimer = NULL;
 
     if ( ! pFnUpdateMenuTimer )
-        pFnUpdateMenuTimer = (UFunction*) UObject::GObjObjects()->Data[ 87820 ];
+        pFnUpdateMenuTimer = (UFunction*) UObject::GObjObjects()->Data[ 87819 ];
 
     ATrEntryPlayerController_execUpdateMenuTimer_Parms UpdateMenuTimer_Parms;
     UpdateMenuTimer_Parms.Seconds = Seconds;
@@ -46099,7 +46099,7 @@ void ATrEntryPlayerController::ResendReadyCheck ( )
     static UFunction* pFnResendReadyCheck = NULL;
 
     if ( ! pFnResendReadyCheck )
-        pFnResendReadyCheck = (UFunction*) UObject::GObjObjects()->Data[ 87819 ];
+        pFnResendReadyCheck = (UFunction*) UObject::GObjObjects()->Data[ 87818 ];
 
     ATrEntryPlayerController_execResendReadyCheck_Parms ResendReadyCheck_Parms;
 
@@ -46119,7 +46119,7 @@ void ATrEntryPlayerController::SendMenuToLobby ( )
     static UFunction* pFnSendMenuToLobby = NULL;
 
     if ( ! pFnSendMenuToLobby )
-        pFnSendMenuToLobby = (UFunction*) UObject::GObjObjects()->Data[ 87818 ];
+        pFnSendMenuToLobby = (UFunction*) UObject::GObjObjects()->Data[ 87817 ];
 
     ATrEntryPlayerController_execSendMenuToLobby_Parms SendMenuToLobby_Parms;
 
@@ -46140,7 +46140,7 @@ bool ATrEntryPlayerController::RequestPaperDoll ( )
     static UFunction* pFnRequestPaperDoll = NULL;
 
     if ( ! pFnRequestPaperDoll )
-        pFnRequestPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87816 ];
+        pFnRequestPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 87815 ];
 
     ATrEntryPlayerController_execRequestPaperDoll_Parms RequestPaperDoll_Parms;
 
@@ -46562,7 +46562,7 @@ void ATrPlayerReplicationInfo::ServerPingRedFlag ( float CurrentPingMS )
     static UFunction* pFnServerPingRedFlag = NULL;
 
     if ( ! pFnServerPingRedFlag )
-        pFnServerPingRedFlag = (UFunction*) UObject::GObjObjects()->Data[ 107029 ];
+        pFnServerPingRedFlag = (UFunction*) UObject::GObjObjects()->Data[ 107028 ];
 
     ATrPlayerReplicationInfo_execServerPingRedFlag_Parms ServerPingRedFlag_Parms;
     ServerPingRedFlag_Parms.CurrentPingMS = CurrentPingMS;
@@ -46579,7 +46579,7 @@ void ATrPlayerReplicationInfo::eventOnPingRedFlagged ( )
     static UFunction* pFnOnPingRedFlagged = NULL;
 
     if ( ! pFnOnPingRedFlagged )
-        pFnOnPingRedFlagged = (UFunction*) UObject::GObjObjects()->Data[ 107028 ];
+        pFnOnPingRedFlagged = (UFunction*) UObject::GObjObjects()->Data[ 107027 ];
 
     ATrPlayerReplicationInfo_eventOnPingRedFlagged_Parms OnPingRedFlagged_Parms;
 
@@ -46764,7 +46764,7 @@ void ATrPlayerReplicationInfo::Update1PMesh ( class UClass* FamilyInfo )
     static UFunction* pFnUpdate1PMesh = NULL;
 
     if ( ! pFnUpdate1PMesh )
-        pFnUpdate1PMesh = (UFunction*) UObject::GObjObjects()->Data[ 106997 ];
+        pFnUpdate1PMesh = (UFunction*) UObject::GObjObjects()->Data[ 106996 ];
 
     ATrPlayerReplicationInfo_execUpdate1PMesh_Parms Update1PMesh_Parms;
     Update1PMesh_Parms.FamilyInfo = FamilyInfo;
@@ -46801,7 +46801,7 @@ void ATrPlayerReplicationInfo::On1PSkinContentLoaded ( class UClass* Skin1PDataC
     static UFunction* pFnOn1PSkinContentLoaded = NULL;
 
     if ( ! pFnOn1PSkinContentLoaded )
-        pFnOn1PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 106995 ];
+        pFnOn1PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 106994 ];
 
     ATrPlayerReplicationInfo_execOn1PSkinContentLoaded_Parms On1PSkinContentLoaded_Parms;
     On1PSkinContentLoaded_Parms.Skin1PDataClass = Skin1PDataClass;
@@ -46819,7 +46819,7 @@ void ATrPlayerReplicationInfo::On3PSkinContentLoaded ( class UClass* Skin3PDataC
     static UFunction* pFnOn3PSkinContentLoaded = NULL;
 
     if ( ! pFnOn3PSkinContentLoaded )
-        pFnOn3PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 106992 ];
+        pFnOn3PSkinContentLoaded = (UFunction*) UObject::GObjObjects()->Data[ 106991 ];
 
     ATrPlayerReplicationInfo_execOn3PSkinContentLoaded_Parms On3PSkinContentLoaded_Parms;
     On3PSkinContentLoaded_Parms.Skin3PDataClass = Skin3PDataClass;
@@ -46836,7 +46836,7 @@ void ATrPlayerReplicationInfo::UpdateCachedSkin ( )
     static UFunction* pFnUpdateCachedSkin = NULL;
 
     if ( ! pFnUpdateCachedSkin )
-        pFnUpdateCachedSkin = (UFunction*) UObject::GObjObjects()->Data[ 106984 ];
+        pFnUpdateCachedSkin = (UFunction*) UObject::GObjObjects()->Data[ 106983 ];
 
     ATrPlayerReplicationInfo_execUpdateCachedSkin_Parms UpdateCachedSkin_Parms;
 
@@ -46854,7 +46854,7 @@ class UClass* ATrPlayerReplicationInfo::GetCurrentVoiceClass ( class UClass* Fam
     static UFunction* pFnGetCurrentVoiceClass = NULL;
 
     if ( ! pFnGetCurrentVoiceClass )
-        pFnGetCurrentVoiceClass = (UFunction*) UObject::GObjObjects()->Data[ 106980 ];
+        pFnGetCurrentVoiceClass = (UFunction*) UObject::GObjObjects()->Data[ 106979 ];
 
     ATrPlayerReplicationInfo_execGetCurrentVoiceClass_Parms GetCurrentVoiceClass_Parms;
     GetCurrentVoiceClass_Parms.FamilyInfo = FamilyInfo;
@@ -46895,7 +46895,7 @@ void ATrPlayerReplicationInfo::SetCached3PSkin ( class UClass* NewCachedSkin )
     static UFunction* pFnSetCached3PSkin = NULL;
 
     if ( ! pFnSetCached3PSkin )
-        pFnSetCached3PSkin = (UFunction*) UObject::GObjObjects()->Data[ 106976 ];
+        pFnSetCached3PSkin = (UFunction*) UObject::GObjObjects()->Data[ 106975 ];
 
     ATrPlayerReplicationInfo_execSetCached3PSkin_Parms SetCached3PSkin_Parms;
     SetCached3PSkin_Parms.NewCachedSkin = NewCachedSkin;
@@ -46913,7 +46913,7 @@ void ATrPlayerReplicationInfo::CopyProperties ( class APlayerReplicationInfo* PR
     static UFunction* pFnCopyProperties = NULL;
 
     if ( ! pFnCopyProperties )
-        pFnCopyProperties = (UFunction*) UObject::GObjObjects()->Data[ 106973 ];
+        pFnCopyProperties = (UFunction*) UObject::GObjObjects()->Data[ 106972 ];
 
     ATrPlayerReplicationInfo_execCopyProperties_Parms CopyProperties_Parms;
     CopyProperties_Parms.PRI = PRI;
@@ -46931,7 +46931,7 @@ class APlayerReplicationInfo* ATrPlayerReplicationInfo::Duplicate ( )
     static UFunction* pFnDuplicate = NULL;
 
     if ( ! pFnDuplicate )
-        pFnDuplicate = (UFunction*) UObject::GObjObjects()->Data[ 106970 ];
+        pFnDuplicate = (UFunction*) UObject::GObjObjects()->Data[ 106969 ];
 
     ATrPlayerReplicationInfo_execDuplicate_Parms Duplicate_Parms;
 
@@ -46950,7 +46950,7 @@ void ATrPlayerReplicationInfo::SetFlag ( class AUTCarriedObject* NewFlag )
     static UFunction* pFnSetFlag = NULL;
 
     if ( ! pFnSetFlag )
-        pFnSetFlag = (UFunction*) UObject::GObjObjects()->Data[ 106967 ];
+        pFnSetFlag = (UFunction*) UObject::GObjObjects()->Data[ 106966 ];
 
     ATrPlayerReplicationInfo_execSetFlag_Parms SetFlag_Parms;
     SetFlag_Parms.NewFlag = NewFlag;
@@ -46969,7 +46969,7 @@ class UClass* ATrPlayerReplicationInfo::eventGetPerkFromId ( int PerkId )
     static UFunction* pFnGetPerkFromId = NULL;
 
     if ( ! pFnGetPerkFromId )
-        pFnGetPerkFromId = (UFunction*) UObject::GObjObjects()->Data[ 106961 ];
+        pFnGetPerkFromId = (UFunction*) UObject::GObjObjects()->Data[ 106960 ];
 
     ATrPlayerReplicationInfo_eventGetPerkFromId_Parms GetPerkFromId_Parms;
     GetPerkFromId_Parms.PerkId = PerkId;
@@ -46990,7 +46990,7 @@ class UClass* ATrPlayerReplicationInfo::GetRankFromXP ( int XP )
     static UFunction* pFnGetRankFromXP = NULL;
 
     if ( ! pFnGetRankFromXP )
-        pFnGetRankFromXP = (UFunction*) UObject::GObjObjects()->Data[ 106955 ];
+        pFnGetRankFromXP = (UFunction*) UObject::GObjObjects()->Data[ 106954 ];
 
     ATrPlayerReplicationInfo_execGetRankFromXP_Parms GetRankFromXP_Parms;
     GetRankFromXP_Parms.XP = XP;
@@ -47010,7 +47010,7 @@ void ATrPlayerReplicationInfo::SetPlayerXP ( int XP )
     static UFunction* pFnSetPlayerXP = NULL;
 
     if ( ! pFnSetPlayerXP )
-        pFnSetPlayerXP = (UFunction*) UObject::GObjObjects()->Data[ 106953 ];
+        pFnSetPlayerXP = (UFunction*) UObject::GObjObjects()->Data[ 106952 ];
 
     ATrPlayerReplicationInfo_execSetPlayerXP_Parms SetPlayerXP_Parms;
     SetPlayerXP_Parms.XP = XP;
@@ -47028,7 +47028,7 @@ void ATrPlayerReplicationInfo::SetPlayerGP ( int GP )
     static UFunction* pFnSetPlayerGP = NULL;
 
     if ( ! pFnSetPlayerGP )
-        pFnSetPlayerGP = (UFunction*) UObject::GObjObjects()->Data[ 106951 ];
+        pFnSetPlayerGP = (UFunction*) UObject::GObjObjects()->Data[ 106950 ];
 
     ATrPlayerReplicationInfo_execSetPlayerGP_Parms SetPlayerGP_Parms;
     SetPlayerGP_Parms.GP = GP;
@@ -47046,7 +47046,7 @@ int ATrPlayerReplicationInfo::GetBaseXP ( )
     static UFunction* pFnGetBaseXP = NULL;
 
     if ( ! pFnGetBaseXP )
-        pFnGetBaseXP = (UFunction*) UObject::GObjObjects()->Data[ 106949 ];
+        pFnGetBaseXP = (UFunction*) UObject::GObjObjects()->Data[ 106948 ];
 
     ATrPlayerReplicationInfo_execGetBaseXP_Parms GetBaseXP_Parms;
 
@@ -47065,7 +47065,7 @@ int ATrPlayerReplicationInfo::GetBaseGP ( )
     static UFunction* pFnGetBaseGP = NULL;
 
     if ( ! pFnGetBaseGP )
-        pFnGetBaseGP = (UFunction*) UObject::GObjObjects()->Data[ 106947 ];
+        pFnGetBaseGP = (UFunction*) UObject::GObjObjects()->Data[ 106946 ];
 
     ATrPlayerReplicationInfo_execGetBaseGP_Parms GetBaseGP_Parms;
 
@@ -47103,7 +47103,7 @@ int ATrPlayerReplicationInfo::GetPlayerRankNum ( )
     static UFunction* pFnGetPlayerRankNum = NULL;
 
     if ( ! pFnGetPlayerRankNum )
-        pFnGetPlayerRankNum = (UFunction*) UObject::GObjObjects()->Data[ 106945 ];
+        pFnGetPlayerRankNum = (UFunction*) UObject::GObjObjects()->Data[ 106944 ];
 
     ATrPlayerReplicationInfo_execGetPlayerRankNum_Parms GetPlayerRankNum_Parms;
 
@@ -47141,7 +47141,7 @@ struct FString ATrPlayerReplicationInfo::GetCurrentClassAbb ( )
     static UFunction* pFnGetCurrentClassAbb = NULL;
 
     if ( ! pFnGetCurrentClassAbb )
-        pFnGetCurrentClassAbb = (UFunction*) UObject::GObjObjects()->Data[ 106943 ];
+        pFnGetCurrentClassAbb = (UFunction*) UObject::GObjObjects()->Data[ 106942 ];
 
     ATrPlayerReplicationInfo_execGetCurrentClassAbb_Parms GetCurrentClassAbb_Parms;
 
@@ -47160,7 +47160,7 @@ class UClass* ATrPlayerReplicationInfo::GetPendingClass ( )
     static UFunction* pFnGetPendingClass = NULL;
 
     if ( ! pFnGetPendingClass )
-        pFnGetPendingClass = (UFunction*) UObject::GObjObjects()->Data[ 106941 ];
+        pFnGetPendingClass = (UFunction*) UObject::GObjObjects()->Data[ 106940 ];
 
     ATrPlayerReplicationInfo_execGetPendingClass_Parms GetPendingClass_Parms;
 
@@ -47198,7 +47198,7 @@ int ATrPlayerReplicationInfo::GetPlayerClassId ( )
     static UFunction* pFnGetPlayerClassId = NULL;
 
     if ( ! pFnGetPlayerClassId )
-        pFnGetPlayerClassId = (UFunction*) UObject::GObjObjects()->Data[ 106939 ];
+        pFnGetPlayerClassId = (UFunction*) UObject::GObjObjects()->Data[ 106938 ];
 
     ATrPlayerReplicationInfo_execGetPlayerClassId_Parms GetPlayerClassId_Parms;
 
@@ -47216,7 +47216,7 @@ void ATrPlayerReplicationInfo::CheckMultiKill ( )
     static UFunction* pFnCheckMultiKill = NULL;
 
     if ( ! pFnCheckMultiKill )
-        pFnCheckMultiKill = (UFunction*) UObject::GObjObjects()->Data[ 106937 ];
+        pFnCheckMultiKill = (UFunction*) UObject::GObjObjects()->Data[ 106936 ];
 
     ATrPlayerReplicationInfo_execCheckMultiKill_Parms CheckMultiKill_Parms;
 
@@ -47233,7 +47233,7 @@ void ATrPlayerReplicationInfo::IncrementKills ( unsigned long bEnemyKill )
     static UFunction* pFnIncrementKills = NULL;
 
     if ( ! pFnIncrementKills )
-        pFnIncrementKills = (UFunction*) UObject::GObjObjects()->Data[ 106935 ];
+        pFnIncrementKills = (UFunction*) UObject::GObjObjects()->Data[ 106934 ];
 
     ATrPlayerReplicationInfo_execIncrementKills_Parms IncrementKills_Parms;
     IncrementKills_Parms.bEnemyKill = bEnemyKill;
@@ -47252,7 +47252,7 @@ void ATrPlayerReplicationInfo::SetActiveEquip ( unsigned char EquipId, int ItemI
     static UFunction* pFnSetActiveEquip = NULL;
 
     if ( ! pFnSetActiveEquip )
-        pFnSetActiveEquip = (UFunction*) UObject::GObjObjects()->Data[ 106931 ];
+        pFnSetActiveEquip = (UFunction*) UObject::GObjObjects()->Data[ 106930 ];
 
     ATrPlayerReplicationInfo_execSetActiveEquip_Parms SetActiveEquip_Parms;
     SetActiveEquip_Parms.EquipId = EquipId;
@@ -47315,7 +47315,7 @@ void ATrPlayerReplicationInfo::ResolveDefaultEquip ( class UClass* FamilyInfo )
     static UFunction* pFnResolveDefaultEquip = NULL;
 
     if ( ! pFnResolveDefaultEquip )
-        pFnResolveDefaultEquip = (UFunction*) UObject::GObjObjects()->Data[ 106914 ];
+        pFnResolveDefaultEquip = (UFunction*) UObject::GObjObjects()->Data[ 106913 ];
 
     ATrPlayerReplicationInfo_execResolveDefaultEquip_Parms ResolveDefaultEquip_Parms;
     ResolveDefaultEquip_Parms.FamilyInfo = FamilyInfo;
@@ -47333,7 +47333,7 @@ bool ATrPlayerReplicationInfo::ShouldVisitStation ( )
     static UFunction* pFnShouldVisitStation = NULL;
 
     if ( ! pFnShouldVisitStation )
-        pFnShouldVisitStation = (UFunction*) UObject::GObjObjects()->Data[ 106912 ];
+        pFnShouldVisitStation = (UFunction*) UObject::GObjObjects()->Data[ 106911 ];
 
     ATrPlayerReplicationInfo_execShouldVisitStation_Parms ShouldVisitStation_Parms;
 
@@ -47352,7 +47352,7 @@ struct FString ATrPlayerReplicationInfo::GetSelectedLoadout ( )
     static UFunction* pFnGetSelectedLoadout = NULL;
 
     if ( ! pFnGetSelectedLoadout )
-        pFnGetSelectedLoadout = (UFunction*) UObject::GObjObjects()->Data[ 106910 ];
+        pFnGetSelectedLoadout = (UFunction*) UObject::GObjObjects()->Data[ 106909 ];
 
     ATrPlayerReplicationInfo_execGetSelectedLoadout_Parms GetSelectedLoadout_Parms;
 
@@ -47396,7 +47396,7 @@ bool ATrPlayerReplicationInfo::VerifyAndLoadCharacter ( class UClass* FamilyInfo
     static UFunction* pFnVerifyAndLoadCharacter = NULL;
 
     if ( ! pFnVerifyAndLoadCharacter )
-        pFnVerifyAndLoadCharacter = (UFunction*) UObject::GObjObjects()->Data[ 106897 ];
+        pFnVerifyAndLoadCharacter = (UFunction*) UObject::GObjObjects()->Data[ 106896 ];
 
     ATrPlayerReplicationInfo_execVerifyAndLoadCharacter_Parms VerifyAndLoadCharacter_Parms;
     VerifyAndLoadCharacter_Parms.FamilyInfo = FamilyInfo;
@@ -47418,7 +47418,7 @@ void ATrPlayerReplicationInfo::SwapToPendingCharClass ( unsigned long bIsRespawn
     static UFunction* pFnSwapToPendingCharClass = NULL;
 
     if ( ! pFnSwapToPendingCharClass )
-        pFnSwapToPendingCharClass = (UFunction*) UObject::GObjObjects()->Data[ 106887 ];
+        pFnSwapToPendingCharClass = (UFunction*) UObject::GObjObjects()->Data[ 106886 ];
 
     ATrPlayerReplicationInfo_execSwapToPendingCharClass_Parms SwapToPendingCharClass_Parms;
     SwapToPendingCharClass_Parms.bIsRespawn = bIsRespawn;
@@ -47437,7 +47437,7 @@ unsigned char ATrPlayerReplicationInfo::eventGetPendingArmorType ( )
     static UFunction* pFnGetPendingArmorType = NULL;
 
     if ( ! pFnGetPendingArmorType )
-        pFnGetPendingArmorType = (UFunction*) UObject::GObjObjects()->Data[ 106885 ];
+        pFnGetPendingArmorType = (UFunction*) UObject::GObjObjects()->Data[ 106884 ];
 
     ATrPlayerReplicationInfo_eventGetPendingArmorType_Parms GetPendingArmorType_Parms;
 
@@ -47475,7 +47475,7 @@ void ATrPlayerReplicationInfo::SetPlayerTeam ( class ATeamInfo* NewTeam )
     static UFunction* pFnSetPlayerTeam = NULL;
 
     if ( ! pFnSetPlayerTeam )
-        pFnSetPlayerTeam = (UFunction*) UObject::GObjObjects()->Data[ 106880 ];
+        pFnSetPlayerTeam = (UFunction*) UObject::GObjObjects()->Data[ 106879 ];
 
     ATrPlayerReplicationInfo_execSetPlayerTeam_Parms SetPlayerTeam_Parms;
     SetPlayerTeam_Parms.NewTeam = NewTeam;
@@ -47492,7 +47492,7 @@ void ATrPlayerReplicationInfo::Reset ( )
     static UFunction* pFnReset = NULL;
 
     if ( ! pFnReset )
-        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 106879 ];
+        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 106878 ];
 
     ATrPlayerReplicationInfo_execReset_Parms Reset_Parms;
 
@@ -47527,7 +47527,7 @@ void ATrPlayerReplicationInfo::UpdateValueModifier ( )
     static UFunction* pFnUpdateValueModifier = NULL;
 
     if ( ! pFnUpdateValueModifier )
-        pFnUpdateValueModifier = (UFunction*) UObject::GObjObjects()->Data[ 106873 ];
+        pFnUpdateValueModifier = (UFunction*) UObject::GObjObjects()->Data[ 106872 ];
 
     ATrPlayerReplicationInfo_execUpdateValueModifier_Parms UpdateValueModifier_Parms;
 
@@ -47543,7 +47543,7 @@ void ATrPlayerReplicationInfo::RegisterPlayerWithSession ( )
     static UFunction* pFnRegisterPlayerWithSession = NULL;
 
     if ( ! pFnRegisterPlayerWithSession )
-        pFnRegisterPlayerWithSession = (UFunction*) UObject::GObjObjects()->Data[ 106872 ];
+        pFnRegisterPlayerWithSession = (UFunction*) UObject::GObjObjects()->Data[ 106871 ];
 
     ATrPlayerReplicationInfo_execRegisterPlayerWithSession_Parms RegisterPlayerWithSession_Parms;
 
@@ -47559,7 +47559,7 @@ void ATrPlayerReplicationInfo::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 106871 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 106870 ];
 
     ATrPlayerReplicationInfo_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -47576,7 +47576,7 @@ void ATrPlayerReplicationInfo::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 106866 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 106865 ];
 
     ATrPlayerReplicationInfo_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -47595,7 +47595,7 @@ class UClass* ATrPlayerReplicationInfo::Load1PData ( struct FString ContentPath 
     static UFunction* pFnLoad1PData = NULL;
 
     if ( ! pFnLoad1PData )
-        pFnLoad1PData = (UFunction*) UObject::GObjObjects()->Data[ 106863 ];
+        pFnLoad1PData = (UFunction*) UObject::GObjObjects()->Data[ 106862 ];
 
     ATrPlayerReplicationInfo_execLoad1PData_Parms Load1PData_Parms;
     memcpy ( &Load1PData_Parms.ContentPath, &ContentPath, 0xC );
@@ -47618,7 +47618,7 @@ void ATrPlayerReplicationInfo::RegisterBuddy ( )
     static UFunction* pFnRegisterBuddy = NULL;
 
     if ( ! pFnRegisterBuddy )
-        pFnRegisterBuddy = (UFunction*) UObject::GObjObjects()->Data[ 106862 ];
+        pFnRegisterBuddy = (UFunction*) UObject::GObjObjects()->Data[ 106861 ];
 
     ATrPlayerReplicationInfo_execRegisterBuddy_Parms RegisterBuddy_Parms;
 
@@ -47639,7 +47639,7 @@ void ATrPlayerReplicationInfo::UpdatePing ( float TimeStamp )
     static UFunction* pFnUpdatePing = NULL;
 
     if ( ! pFnUpdatePing )
-        pFnUpdatePing = (UFunction*) UObject::GObjObjects()->Data[ 106860 ];
+        pFnUpdatePing = (UFunction*) UObject::GObjObjects()->Data[ 106859 ];
 
     ATrPlayerReplicationInfo_execUpdatePing_Parms UpdatePing_Parms;
     UpdatePing_Parms.TimeStamp = TimeStamp;
@@ -47664,7 +47664,7 @@ int ATrPlayerReplicationInfo::GetUpgradeLevelLocal ( int ClassId, int Type, TArr
     static UFunction* pFnGetUpgradeLevelLocal = NULL;
 
     if ( ! pFnGetUpgradeLevelLocal )
-        pFnGetUpgradeLevelLocal = (UFunction*) UObject::GObjObjects()->Data[ 106854 ];
+        pFnGetUpgradeLevelLocal = (UFunction*) UObject::GObjObjects()->Data[ 106853 ];
 
     ATrPlayerReplicationInfo_execGetUpgradeLevelLocal_Parms GetUpgradeLevelLocal_Parms;
     GetUpgradeLevelLocal_Parms.ClassId = ClassId;
@@ -47693,7 +47693,7 @@ int ATrPlayerReplicationInfo::GetUpgradeLevel ( int ClassId, int Type, TArray< i
     static UFunction* pFnGetUpgradeLevel = NULL;
 
     if ( ! pFnGetUpgradeLevel )
-        pFnGetUpgradeLevel = (UFunction*) UObject::GObjObjects()->Data[ 106848 ];
+        pFnGetUpgradeLevel = (UFunction*) UObject::GObjObjects()->Data[ 106847 ];
 
     ATrPlayerReplicationInfo_execGetUpgradeLevel_Parms GetUpgradeLevel_Parms;
     GetUpgradeLevel_Parms.ClassId = ClassId;
@@ -47720,7 +47720,7 @@ void ATrPlayerReplicationInfo::GetCharacterEquipLocal ( int ClassId, int Loadout
     static UFunction* pFnGetCharacterEquipLocal = NULL;
 
     if ( ! pFnGetCharacterEquipLocal )
-        pFnGetCharacterEquipLocal = (UFunction*) UObject::GObjObjects()->Data[ 106845 ];
+        pFnGetCharacterEquipLocal = (UFunction*) UObject::GObjObjects()->Data[ 106844 ];
 
     ATrPlayerReplicationInfo_execGetCharacterEquipLocal_Parms GetCharacterEquipLocal_Parms;
     GetCharacterEquipLocal_Parms.ClassId = ClassId;
@@ -47744,7 +47744,7 @@ void ATrPlayerReplicationInfo::GetCharacterEquip ( int ClassId, int Loadout )
     static UFunction* pFnGetCharacterEquip = NULL;
 
     if ( ! pFnGetCharacterEquip )
-        pFnGetCharacterEquip = (UFunction*) UObject::GObjObjects()->Data[ 106842 ];
+        pFnGetCharacterEquip = (UFunction*) UObject::GObjObjects()->Data[ 106841 ];
 
     ATrPlayerReplicationInfo_execGetCharacterEquip_Parms GetCharacterEquip_Parms;
     GetCharacterEquip_Parms.ClassId = ClassId;
@@ -47768,7 +47768,7 @@ bool ATrPlayerReplicationInfo::VerifyCharacter ( int ClassId )
     static UFunction* pFnVerifyCharacter = NULL;
 
     if ( ! pFnVerifyCharacter )
-        pFnVerifyCharacter = (UFunction*) UObject::GObjObjects()->Data[ 106839 ];
+        pFnVerifyCharacter = (UFunction*) UObject::GObjObjects()->Data[ 106838 ];
 
     ATrPlayerReplicationInfo_execVerifyCharacter_Parms VerifyCharacter_Parms;
     VerifyCharacter_Parms.ClassId = ClassId;
@@ -47794,7 +47794,7 @@ void ATrProjectile::ProcessTouch ( class AActor* Other, struct FVector HitLocati
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114089 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114088 ];
 
     ATrProjectile_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -47817,7 +47817,7 @@ void ATrProjectile::eventTouch ( class AActor* Other, class UPrimitiveComponent*
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 114084 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 114083 ];
 
     ATrProjectile_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -47840,7 +47840,7 @@ void ATrProjectile::eventHitWall ( struct FVector HitNormal, class AActor* Wall,
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114074 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114073 ];
 
     ATrProjectile_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -47868,7 +47868,7 @@ bool ATrProjectile::HurtRadius_Internal ( float DamageAmount, float InDamageRadi
     static UFunction* pFnHurtRadius_Internal = NULL;
 
     if ( ! pFnHurtRadius_Internal )
-        pFnHurtRadius_Internal = (UFunction*) UObject::GObjObjects()->Data[ 114053 ];
+        pFnHurtRadius_Internal = (UFunction*) UObject::GObjObjects()->Data[ 114052 ];
 
     ATrProjectile_execHurtRadius_Internal_Parms HurtRadius_Internal_Parms;
     HurtRadius_Internal_Parms.DamageAmount = DamageAmount;
@@ -47897,7 +47897,7 @@ bool ATrProjectile::ProjectileHurtRadius ( struct FVector HurtOrigin, struct FVe
     static UFunction* pFnProjectileHurtRadius = NULL;
 
     if ( ! pFnProjectileHurtRadius )
-        pFnProjectileHurtRadius = (UFunction*) UObject::GObjObjects()->Data[ 114049 ];
+        pFnProjectileHurtRadius = (UFunction*) UObject::GObjObjects()->Data[ 114048 ];
 
     ATrProjectile_execProjectileHurtRadius_Parms ProjectileHurtRadius_Parms;
     memcpy ( &ProjectileHurtRadius_Parms.HurtOrigin, &HurtOrigin, 0xC );
@@ -47919,7 +47919,7 @@ void ATrProjectile::Bounce ( class AActor* Other, struct FVector WallNormal )
     static UFunction* pFnBounce = NULL;
 
     if ( ! pFnBounce )
-        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 114046 ];
+        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 114045 ];
 
     ATrProjectile_execBounce_Parms Bounce_Parms;
     Bounce_Parms.Other = Other;
@@ -47937,7 +47937,7 @@ void ATrProjectile::ShutDown ( )
     static UFunction* pFnShutDown = NULL;
 
     if ( ! pFnShutDown )
-        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114044 ];
+        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114043 ];
 
     ATrProjectile_execShutDown_Parms ShutDown_Parms;
 
@@ -47955,7 +47955,7 @@ void ATrProjectile::Explode ( struct FVector HitLocation, struct FVector HitNorm
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114041 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114040 ];
 
     ATrProjectile_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -47976,7 +47976,7 @@ class USoundCue* ATrProjectile::GetExplosionSound ( class UPhysicalMaterial* Hit
     static UFunction* pFnGetExplosionSound = NULL;
 
     if ( ! pFnGetExplosionSound )
-        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 114033 ];
+        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 114032 ];
 
     ATrProjectile_execGetExplosionSound_Parms GetExplosionSound_Parms;
     GetExplosionSound_Parms.HitMaterial = HitMaterial;
@@ -47998,7 +47998,7 @@ void ATrProjectile::SpawnExplosionEffects ( struct FVector HitLocation, struct F
     static UFunction* pFnSpawnExplosionEffects = NULL;
 
     if ( ! pFnSpawnExplosionEffects )
-        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 114019 ];
+        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 114018 ];
 
     ATrProjectile_execSpawnExplosionEffects_Parms SpawnExplosionEffects_Parms;
     memcpy ( &SpawnExplosionEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -48016,7 +48016,7 @@ void ATrProjectile::ClientCheckFastSpawnExplode ( )
     static UFunction* pFnClientCheckFastSpawnExplode = NULL;
 
     if ( ! pFnClientCheckFastSpawnExplode )
-        pFnClientCheckFastSpawnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114015 ];
+        pFnClientCheckFastSpawnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114014 ];
 
     ATrProjectile_execClientCheckFastSpawnExplode_Parms ClientCheckFastSpawnExplode_Parms;
 
@@ -48033,7 +48033,7 @@ void ATrProjectile::ApplyInheritance ( struct FVector ProjectileDir )
     static UFunction* pFnApplyInheritance = NULL;
 
     if ( ! pFnApplyInheritance )
-        pFnApplyInheritance = (UFunction*) UObject::GObjObjects()->Data[ 114010 ];
+        pFnApplyInheritance = (UFunction*) UObject::GObjObjects()->Data[ 114009 ];
 
     ATrProjectile_execApplyInheritance_Parms ApplyInheritance_Parms;
     memcpy ( &ApplyInheritance_Parms.ProjectileDir, &ProjectileDir, 0xC );
@@ -48052,7 +48052,7 @@ void ATrProjectile::InitProjectile ( struct FVector Direction, class UClass* Cla
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114007 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114006 ];
 
     ATrProjectile_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -48071,7 +48071,7 @@ void ATrProjectile::Init ( struct FVector Direction )
     static UFunction* pFnInit = NULL;
 
     if ( ! pFnInit )
-        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 114005 ];
+        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 114004 ];
 
     ATrProjectile_execInit_Parms Init_Parms;
     memcpy ( &Init_Parms.Direction, &Direction, 0xC );
@@ -48089,7 +48089,7 @@ int ATrProjectile::GetMaxDeployedLimit ( )
     static UFunction* pFnGetMaxDeployedLimit = NULL;
 
     if ( ! pFnGetMaxDeployedLimit )
-        pFnGetMaxDeployedLimit = (UFunction*) UObject::GObjObjects()->Data[ 113999 ];
+        pFnGetMaxDeployedLimit = (UFunction*) UObject::GObjObjects()->Data[ 113998 ];
 
     ATrProjectile_execGetMaxDeployedLimit_Parms GetMaxDeployedLimit_Parms;
 
@@ -48107,7 +48107,7 @@ void ATrProjectile::DestroyOldestOverLimit ( )
     static UFunction* pFnDestroyOldestOverLimit = NULL;
 
     if ( ! pFnDestroyOldestOverLimit )
-        pFnDestroyOldestOverLimit = (UFunction*) UObject::GObjObjects()->Data[ 113992 ];
+        pFnDestroyOldestOverLimit = (UFunction*) UObject::GObjObjects()->Data[ 113991 ];
 
     ATrProjectile_execDestroyOldestOverLimit_Parms DestroyOldestOverLimit_Parms;
 
@@ -48124,7 +48124,7 @@ void ATrProjectile::DetonateObsolete ( unsigned long bDetonateFromAOE )
     static UFunction* pFnDetonateObsolete = NULL;
 
     if ( ! pFnDetonateObsolete )
-        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 113990 ];
+        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 113989 ];
 
     ATrProjectile_execDetonateObsolete_Parms DetonateObsolete_Parms;
     DetonateObsolete_Parms.bDetonateFromAOE = bDetonateFromAOE;
@@ -48141,7 +48141,7 @@ void ATrProjectile::eventCreateProjectileLight ( )
     static UFunction* pFnCreateProjectileLight = NULL;
 
     if ( ! pFnCreateProjectileLight )
-        pFnCreateProjectileLight = (UFunction*) UObject::GObjObjects()->Data[ 113989 ];
+        pFnCreateProjectileLight = (UFunction*) UObject::GObjObjects()->Data[ 113988 ];
 
     ATrProjectile_eventCreateProjectileLight_Parms CreateProjectileLight_Parms;
 
@@ -48157,7 +48157,7 @@ void ATrProjectile::ClientReceivedProjectileToTether ( )
     static UFunction* pFnClientReceivedProjectileToTether = NULL;
 
     if ( ! pFnClientReceivedProjectileToTether )
-        pFnClientReceivedProjectileToTether = (UFunction*) UObject::GObjObjects()->Data[ 113983 ];
+        pFnClientReceivedProjectileToTether = (UFunction*) UObject::GObjObjects()->Data[ 113982 ];
 
     ATrProjectile_execClientReceivedProjectileToTether_Parms ClientReceivedProjectileToTether_Parms;
 
@@ -48173,7 +48173,7 @@ void ATrProjectile::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113979 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113978 ];
 
     ATrProjectile_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -48189,7 +48189,7 @@ void ATrProjectile::ExplodeFromTimeLimit ( )
     static UFunction* pFnExplodeFromTimeLimit = NULL;
 
     if ( ! pFnExplodeFromTimeLimit )
-        pFnExplodeFromTimeLimit = (UFunction*) UObject::GObjObjects()->Data[ 113978 ];
+        pFnExplodeFromTimeLimit = (UFunction*) UObject::GObjObjects()->Data[ 113977 ];
 
     ATrProjectile_execExplodeFromTimeLimit_Parms ExplodeFromTimeLimit_Parms;
 
@@ -48205,7 +48205,7 @@ void ATrProjectile::eventPreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113976 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113975 ];
 
     ATrProjectile_eventPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -48222,7 +48222,7 @@ void ATrProjectile::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 113974 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 113973 ];
 
     ATrProjectile_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -48244,7 +48244,7 @@ struct FVector ATrProjectile::CalculateHitLocation ( class AActor* shooter, stru
     static UFunction* pFnCalculateHitLocation = NULL;
 
     if ( ! pFnCalculateHitLocation )
-        pFnCalculateHitLocation = (UFunction*) UObject::GObjObjects()->Data[ 113968 ];
+        pFnCalculateHitLocation = (UFunction*) UObject::GObjObjects()->Data[ 113967 ];
 
     ATrProjectile_execCalculateHitLocation_Parms CalculateHitLocation_Parms;
     CalculateHitLocation_Parms.shooter = shooter;
@@ -48271,7 +48271,7 @@ void ATrProjectile::OrientToSlope ( struct FVector HitNormal )
     static UFunction* pFnOrientToSlope = NULL;
 
     if ( ! pFnOrientToSlope )
-        pFnOrientToSlope = (UFunction*) UObject::GObjObjects()->Data[ 113966 ];
+        pFnOrientToSlope = (UFunction*) UObject::GObjObjects()->Data[ 113965 ];
 
     ATrProjectile_execOrientToSlope_Parms OrientToSlope_Parms;
     memcpy ( &OrientToSlope_Parms.HitNormal, &HitNormal, 0xC );
@@ -48327,7 +48327,7 @@ void ATrProj_Grenade::eventNativeExplode ( struct FVector HitLocation, struct FV
     static UFunction* pFnNativeExplode = NULL;
 
     if ( ! pFnNativeExplode )
-        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 114178 ];
+        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 114177 ];
 
     ATrProj_Grenade_eventNativeExplode_Parms NativeExplode_Parms;
     memcpy ( &NativeExplode_Parms.HitLocation, &HitLocation, 0xC );
@@ -48346,7 +48346,7 @@ void ATrProj_Grenade::PawnLeftDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnLeftDetonationArea = NULL;
 
     if ( ! pFnPawnLeftDetonationArea )
-        pFnPawnLeftDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114176 ];
+        pFnPawnLeftDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114175 ];
 
     ATrProj_Grenade_execPawnLeftDetonationArea_Parms PawnLeftDetonationArea_Parms;
     PawnLeftDetonationArea_Parms.Other = Other;
@@ -48364,7 +48364,7 @@ void ATrProj_Grenade::PawnEnteredDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnEnteredDetonationArea = NULL;
 
     if ( ! pFnPawnEnteredDetonationArea )
-        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114174 ];
+        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114173 ];
 
     ATrProj_Grenade_execPawnEnteredDetonationArea_Parms PawnEnteredDetonationArea_Parms;
     PawnEnteredDetonationArea_Parms.Other = Other;
@@ -48382,7 +48382,7 @@ void ATrProj_Grenade::MyOnParticleSystemFinished ( class UParticleSystemComponen
     static UFunction* pFnMyOnParticleSystemFinished = NULL;
 
     if ( ! pFnMyOnParticleSystemFinished )
-        pFnMyOnParticleSystemFinished = (UFunction*) UObject::GObjObjects()->Data[ 114172 ];
+        pFnMyOnParticleSystemFinished = (UFunction*) UObject::GObjObjects()->Data[ 114171 ];
 
     ATrProj_Grenade_execMyOnParticleSystemFinished_Parms MyOnParticleSystemFinished_Parms;
     MyOnParticleSystemFinished_Parms.PSC = PSC;
@@ -48399,7 +48399,7 @@ void ATrProj_Grenade::PlayStuckOnEffects ( )
     static UFunction* pFnPlayStuckOnEffects = NULL;
 
     if ( ! pFnPlayStuckOnEffects )
-        pFnPlayStuckOnEffects = (UFunction*) UObject::GObjObjects()->Data[ 114170 ];
+        pFnPlayStuckOnEffects = (UFunction*) UObject::GObjObjects()->Data[ 114169 ];
 
     ATrProj_Grenade_execPlayStuckOnEffects_Parms PlayStuckOnEffects_Parms;
 
@@ -48419,7 +48419,7 @@ bool ATrProj_Grenade::StickToTarget ( class AActor* Target, struct FVector HitLo
     static UFunction* pFnStickToTarget = NULL;
 
     if ( ! pFnStickToTarget )
-        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 114164 ];
+        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 114163 ];
 
     ATrProj_Grenade_execStickToTarget_Parms StickToTarget_Parms;
     StickToTarget_Parms.Target = Target;
@@ -48442,7 +48442,7 @@ void ATrProj_Grenade::Explode ( struct FVector HitLocation, struct FVector HitNo
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114161 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114160 ];
 
     ATrProj_Grenade_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -48461,7 +48461,7 @@ void ATrProj_Grenade::PhysicsVolumeChange ( class APhysicsVolume* NewVolume )
     static UFunction* pFnPhysicsVolumeChange = NULL;
 
     if ( ! pFnPhysicsVolumeChange )
-        pFnPhysicsVolumeChange = (UFunction*) UObject::GObjObjects()->Data[ 114159 ];
+        pFnPhysicsVolumeChange = (UFunction*) UObject::GObjObjects()->Data[ 114158 ];
 
     ATrProj_Grenade_execPhysicsVolumeChange_Parms PhysicsVolumeChange_Parms;
     PhysicsVolumeChange_Parms.NewVolume = NewVolume;
@@ -48481,7 +48481,7 @@ void ATrProj_Grenade::ProcessTouch ( class AActor* Other, struct FVector HitLoca
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114152 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114151 ];
 
     ATrProj_Grenade_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -48503,7 +48503,7 @@ void ATrProj_Grenade::eventHitWall ( struct FVector HitNormal, class AActor* Wal
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114148 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114147 ];
 
     ATrProj_Grenade_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -48522,7 +48522,7 @@ void ATrProj_Grenade::PawnExplosionTime ( )
     static UFunction* pFnPawnExplosionTime = NULL;
 
     if ( ! pFnPawnExplosionTime )
-        pFnPawnExplosionTime = (UFunction*) UObject::GObjObjects()->Data[ 114147 ];
+        pFnPawnExplosionTime = (UFunction*) UObject::GObjObjects()->Data[ 114146 ];
 
     ATrProj_Grenade_execPawnExplosionTime_Parms PawnExplosionTime_Parms;
 
@@ -48538,7 +48538,7 @@ void ATrProj_Grenade::Timer ( )
     static UFunction* pFnTimer = NULL;
 
     if ( ! pFnTimer )
-        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 114146 ];
+        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 114145 ];
 
     ATrProj_Grenade_execTimer_Parms Timer_Parms;
 
@@ -48555,7 +48555,7 @@ void ATrProj_Grenade::ApplyInheritance ( struct FVector ProjectileDir )
     static UFunction* pFnApplyInheritance = NULL;
 
     if ( ! pFnApplyInheritance )
-        pFnApplyInheritance = (UFunction*) UObject::GObjObjects()->Data[ 114143 ];
+        pFnApplyInheritance = (UFunction*) UObject::GObjObjects()->Data[ 114142 ];
 
     ATrProj_Grenade_execApplyInheritance_Parms ApplyInheritance_Parms;
     memcpy ( &ApplyInheritance_Parms.ProjectileDir, &ProjectileDir, 0xC );
@@ -48572,7 +48572,7 @@ void ATrProj_Grenade::ShutDown ( )
     static UFunction* pFnShutDown = NULL;
 
     if ( ! pFnShutDown )
-        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114142 ];
+        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114141 ];
 
     ATrProj_Grenade_execShutDown_Parms ShutDown_Parms;
 
@@ -48588,7 +48588,7 @@ void ATrProj_Grenade::DestroyCollisionProxy ( )
     static UFunction* pFnDestroyCollisionProxy = NULL;
 
     if ( ! pFnDestroyCollisionProxy )
-        pFnDestroyCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 114141 ];
+        pFnDestroyCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 114140 ];
 
     ATrProj_Grenade_execDestroyCollisionProxy_Parms DestroyCollisionProxy_Parms;
 
@@ -48604,7 +48604,7 @@ void ATrProj_Grenade::SpawnCollisionProxy ( )
     static UFunction* pFnSpawnCollisionProxy = NULL;
 
     if ( ! pFnSpawnCollisionProxy )
-        pFnSpawnCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 114140 ];
+        pFnSpawnCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 114139 ];
 
     ATrProj_Grenade_execSpawnCollisionProxy_Parms SpawnCollisionProxy_Parms;
 
@@ -48622,7 +48622,7 @@ void ATrProj_Grenade::InitProjectile ( struct FVector Direction, class UClass* C
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114136 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114135 ];
 
     ATrProj_Grenade_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -48640,7 +48640,7 @@ void ATrProj_Grenade::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114135 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114134 ];
 
     ATrProj_Grenade_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -48656,7 +48656,7 @@ void ATrProj_StickyGrenade::eventOnBaseChanged ( )
     static UFunction* pFnOnBaseChanged = NULL;
 
     if ( ! pFnOnBaseChanged )
-        pFnOnBaseChanged = (UFunction*) UObject::GObjObjects()->Data[ 114368 ];
+        pFnOnBaseChanged = (UFunction*) UObject::GObjObjects()->Data[ 114367 ];
 
     ATrProj_StickyGrenade_eventOnBaseChanged_Parms OnBaseChanged_Parms;
 
@@ -48676,7 +48676,7 @@ bool ATrProj_StickyGrenade::StickToTarget ( class AActor* Target, struct FVector
     static UFunction* pFnStickToTarget = NULL;
 
     if ( ! pFnStickToTarget )
-        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 114363 ];
+        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 114362 ];
 
     ATrProj_StickyGrenade_execStickToTarget_Parms StickToTarget_Parms;
     StickToTarget_Parms.Target = Target;
@@ -48700,7 +48700,7 @@ void ATrProj_StickyGrenade::ProcessTouch ( class AActor* Other, struct FVector H
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114359 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114358 ];
 
     ATrProj_StickyGrenade_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -48722,7 +48722,7 @@ void ATrProj_StickyGrenade::eventHitWall ( struct FVector HitNormal, class AActo
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114355 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114354 ];
 
     ATrProj_StickyGrenade_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -48741,7 +48741,7 @@ void ATrProj_StickyGrenade::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114354 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114353 ];
 
     ATrProj_StickyGrenade_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -48758,7 +48758,7 @@ void ATrProj_Lacerator::MyOnParticleSystemFinished ( class UParticleSystemCompon
     static UFunction* pFnMyOnParticleSystemFinished = NULL;
 
     if ( ! pFnMyOnParticleSystemFinished )
-        pFnMyOnParticleSystemFinished = (UFunction*) UObject::GObjObjects()->Data[ 114939 ];
+        pFnMyOnParticleSystemFinished = (UFunction*) UObject::GObjObjects()->Data[ 114938 ];
 
     ATrProj_Lacerator_execMyOnParticleSystemFinished_Parms MyOnParticleSystemFinished_Parms;
     MyOnParticleSystemFinished_Parms.PSC = PSC;
@@ -48775,7 +48775,7 @@ void ATrProj_Lacerator::StartToShrink ( )
     static UFunction* pFnStartToShrink = NULL;
 
     if ( ! pFnStartToShrink )
-        pFnStartToShrink = (UFunction*) UObject::GObjObjects()->Data[ 114938 ];
+        pFnStartToShrink = (UFunction*) UObject::GObjObjects()->Data[ 114937 ];
 
     ATrProj_Lacerator_execStartToShrink_Parms StartToShrink_Parms;
 
@@ -48794,7 +48794,7 @@ void ATrProj_Lacerator::eventHitWall ( struct FVector HitNormal, class AActor* W
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114932 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114931 ];
 
     ATrProj_Lacerator_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -48816,7 +48816,7 @@ bool ATrProj_Lacerator::SpawnImpactEffect ( struct FVector HitLocation, struct F
     static UFunction* pFnSpawnImpactEffect = NULL;
 
     if ( ! pFnSpawnImpactEffect )
-        pFnSpawnImpactEffect = (UFunction*) UObject::GObjObjects()->Data[ 114928 ];
+        pFnSpawnImpactEffect = (UFunction*) UObject::GObjObjects()->Data[ 114927 ];
 
     ATrProj_Lacerator_execSpawnImpactEffect_Parms SpawnImpactEffect_Parms;
     memcpy ( &SpawnImpactEffect_Parms.HitLocation, &HitLocation, 0xC );
@@ -48838,7 +48838,7 @@ void ATrProj_Lacerator::Landed ( struct FVector HitNormal, class AActor* FloorAc
     static UFunction* pFnLanded = NULL;
 
     if ( ! pFnLanded )
-        pFnLanded = (UFunction*) UObject::GObjObjects()->Data[ 114925 ];
+        pFnLanded = (UFunction*) UObject::GObjObjects()->Data[ 114924 ];
 
     ATrProj_Lacerator_execLanded_Parms Landed_Parms;
     memcpy ( &Landed_Parms.HitNormal, &HitNormal, 0xC );
@@ -48859,7 +48859,7 @@ void ATrProj_Lacerator::ProcessTouch ( class AActor* Other, struct FVector HitLo
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114919 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114918 ];
 
     ATrProj_Lacerator_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -48879,7 +48879,7 @@ float ATrProj_Lacerator::GetMomentumTransfer ( )
     static UFunction* pFnGetMomentumTransfer = NULL;
 
     if ( ! pFnGetMomentumTransfer )
-        pFnGetMomentumTransfer = (UFunction*) UObject::GObjObjects()->Data[ 114917 ];
+        pFnGetMomentumTransfer = (UFunction*) UObject::GObjObjects()->Data[ 114916 ];
 
     ATrProj_Lacerator_execGetMomentumTransfer_Parms GetMomentumTransfer_Parms;
 
@@ -48900,7 +48900,7 @@ float ATrProj_Lacerator::GetDamage ( class AActor* Other, struct FVector HitLoca
     static UFunction* pFnGetDamage = NULL;
 
     if ( ! pFnGetDamage )
-        pFnGetDamage = (UFunction*) UObject::GObjObjects()->Data[ 114913 ];
+        pFnGetDamage = (UFunction*) UObject::GObjObjects()->Data[ 114912 ];
 
     ATrProj_Lacerator_execGetDamage_Parms GetDamage_Parms;
     GetDamage_Parms.Other = Other;
@@ -48920,7 +48920,7 @@ void ATrProj_Lacerator::InternalSpawnFlightEffects ( )
     static UFunction* pFnInternalSpawnFlightEffects = NULL;
 
     if ( ! pFnInternalSpawnFlightEffects )
-        pFnInternalSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114912 ];
+        pFnInternalSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114911 ];
 
     ATrProj_Lacerator_execInternalSpawnFlightEffects_Parms InternalSpawnFlightEffects_Parms;
 
@@ -48936,7 +48936,7 @@ void ATrProj_Lacerator::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114911 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114910 ];
 
     ATrProj_Lacerator_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -48954,7 +48954,7 @@ void ATrProj_Lacerator::InitProjectile ( struct FVector Direction, class UClass*
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114908 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114907 ];
 
     ATrProj_Lacerator_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -48976,7 +48976,7 @@ void ATrProj_Mine::eventPostRenderFor ( class APlayerController* PC, class UCanv
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 114301 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 114300 ];
 
     ATrProj_Mine_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -48997,7 +48997,7 @@ class UTexture2D* ATrProj_Mine::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 114299 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 114298 ];
 
     ATrProj_Mine_execGetMarker_Parms GetMarker_Parms;
 
@@ -49015,7 +49015,7 @@ void ATrProj_Mine::ShutDown ( )
     static UFunction* pFnShutDown = NULL;
 
     if ( ! pFnShutDown )
-        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114298 ];
+        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 114297 ];
 
     ATrProj_Mine_execShutDown_Parms ShutDown_Parms;
 
@@ -49033,7 +49033,7 @@ void ATrProj_Mine::Bounce ( class AActor* Other, struct FVector WallNormal )
     static UFunction* pFnBounce = NULL;
 
     if ( ! pFnBounce )
-        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 114295 ];
+        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 114294 ];
 
     ATrProj_Mine_execBounce_Parms Bounce_Parms;
     Bounce_Parms.Other = Other;
@@ -49054,7 +49054,7 @@ void ATrProj_Mine::ProcessTouch ( class AActor* Other, struct FVector HitLocatio
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114291 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114290 ];
 
     ATrProj_Mine_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -49075,7 +49075,7 @@ void ATrProj_Mine::eventNativeExplode ( struct FVector HitLocation, struct FVect
     static UFunction* pFnNativeExplode = NULL;
 
     if ( ! pFnNativeExplode )
-        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 114288 ];
+        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 114287 ];
 
     ATrProj_Mine_eventNativeExplode_Parms NativeExplode_Parms;
     memcpy ( &NativeExplode_Parms.HitLocation, &HitLocation, 0xC );
@@ -49094,7 +49094,7 @@ void ATrProj_Mine::PawnLeftDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnLeftDetonationArea = NULL;
 
     if ( ! pFnPawnLeftDetonationArea )
-        pFnPawnLeftDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114286 ];
+        pFnPawnLeftDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114285 ];
 
     ATrProj_Mine_execPawnLeftDetonationArea_Parms PawnLeftDetonationArea_Parms;
     PawnLeftDetonationArea_Parms.Other = Other;
@@ -49113,7 +49113,7 @@ bool ATrProj_Mine::eventMeetsDetonationRequirements ( class APawn* Other )
     static UFunction* pFnMeetsDetonationRequirements = NULL;
 
     if ( ! pFnMeetsDetonationRequirements )
-        pFnMeetsDetonationRequirements = (UFunction*) UObject::GObjObjects()->Data[ 114283 ];
+        pFnMeetsDetonationRequirements = (UFunction*) UObject::GObjObjects()->Data[ 114282 ];
 
     ATrProj_Mine_eventMeetsDetonationRequirements_Parms MeetsDetonationRequirements_Parms;
     MeetsDetonationRequirements_Parms.Other = Other;
@@ -49133,7 +49133,7 @@ void ATrProj_Mine::PawnEnteredDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnEnteredDetonationArea = NULL;
 
     if ( ! pFnPawnEnteredDetonationArea )
-        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114281 ];
+        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114280 ];
 
     ATrProj_Mine_execPawnEnteredDetonationArea_Parms PawnEnteredDetonationArea_Parms;
     PawnEnteredDetonationArea_Parms.Other = Other;
@@ -49152,7 +49152,7 @@ void ATrProj_Mine::InitProjectile ( struct FVector Direction, class UClass* Clas
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114278 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114277 ];
 
     ATrProj_Mine_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -49177,7 +49177,7 @@ void ATrProj_Mine::eventTakeDamage ( int DamageAmount, class AController* EventI
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 114270 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 114269 ];
 
     ATrProj_Mine_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -49209,7 +49209,7 @@ void ATrProj_Mine::TakeRadiusDamage ( class AController* EventInstigator, float 
     static UFunction* pFnTakeRadiusDamage = NULL;
 
     if ( ! pFnTakeRadiusDamage )
-        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 114259 ];
+        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 114258 ];
 
     ATrProj_Mine_execTakeRadiusDamage_Parms TakeRadiusDamage_Parms;
     TakeRadiusDamage_Parms.EventInstigator = EventInstigator;
@@ -49237,7 +49237,7 @@ void ATrProj_Mine::eventHitWall ( struct FVector HitNormal, class AActor* Wall, 
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114254 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114253 ];
 
     ATrProj_Mine_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -49256,7 +49256,7 @@ void ATrProj_Mine::ArmedTimer ( )
     static UFunction* pFnArmedTimer = NULL;
 
     if ( ! pFnArmedTimer )
-        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 114252 ];
+        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 114251 ];
 
     ATrProj_Mine_execArmedTimer_Parms ArmedTimer_Parms;
 
@@ -49272,7 +49272,7 @@ void ATrProj_Mine::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114250 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114249 ];
 
     ATrProj_Mine_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -49289,7 +49289,7 @@ bool ATrProj_Mine::IsAliveAndWell ( )
     static UFunction* pFnIsAliveAndWell = NULL;
 
     if ( ! pFnIsAliveAndWell )
-        pFnIsAliveAndWell = (UFunction*) UObject::GObjObjects()->Data[ 98853 ];
+        pFnIsAliveAndWell = (UFunction*) UObject::GObjObjects()->Data[ 98852 ];
 
     ATrProj_Mine_execIsAliveAndWell_Parms IsAliveAndWell_Parms;
 
@@ -49307,7 +49307,7 @@ void ATrProj_Mine::OnPRIReplicated ( )
     static UFunction* pFnOnPRIReplicated = NULL;
 
     if ( ! pFnOnPRIReplicated )
-        pFnOnPRIReplicated = (UFunction*) UObject::GObjObjects()->Data[ 114248 ];
+        pFnOnPRIReplicated = (UFunction*) UObject::GObjObjects()->Data[ 114247 ];
 
     ATrProj_Mine_execOnPRIReplicated_Parms OnPRIReplicated_Parms;
 
@@ -49324,7 +49324,7 @@ void ATrProj_Mine::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114246 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114245 ];
 
     ATrProj_Mine_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -49342,7 +49342,7 @@ class UTexture2D* ATrProj_Claymore::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 114580 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 114579 ];
 
     ATrProj_Claymore_execGetMarker_Parms GetMarker_Parms;
 
@@ -49361,7 +49361,7 @@ void ATrProj_Claymore::PawnEnteredDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnEnteredDetonationArea = NULL;
 
     if ( ! pFnPawnEnteredDetonationArea )
-        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114578 ];
+        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 114577 ];
 
     ATrProj_Claymore_execPawnEnteredDetonationArea_Parms PawnEnteredDetonationArea_Parms;
     PawnEnteredDetonationArea_Parms.Other = Other;
@@ -49379,7 +49379,7 @@ void ATrProj_Claymore::SetExplosionEffectParameters ( class UParticleSystemCompo
     static UFunction* pFnSetExplosionEffectParameters = NULL;
 
     if ( ! pFnSetExplosionEffectParameters )
-        pFnSetExplosionEffectParameters = (UFunction*) UObject::GObjObjects()->Data[ 114576 ];
+        pFnSetExplosionEffectParameters = (UFunction*) UObject::GObjObjects()->Data[ 114575 ];
 
     ATrProj_Claymore_execSetExplosionEffectParameters_Parms SetExplosionEffectParameters_Parms;
     SetExplosionEffectParameters_Parms.ProjExplosion = ProjExplosion;
@@ -49398,7 +49398,7 @@ void ATrProj_Claymore::InitProjectile ( struct FVector Direction, class UClass* 
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114573 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114572 ];
 
     ATrProj_Claymore_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -49417,7 +49417,7 @@ void ATrProj_PrismMine::RemoveTripActor ( class ATrTripActor* RemoveTrip )
     static UFunction* pFnRemoveTripActor = NULL;
 
     if ( ! pFnRemoveTripActor )
-        pFnRemoveTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115258 ];
+        pFnRemoveTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115257 ];
 
     ATrProj_PrismMine_execRemoveTripActor_Parms RemoveTripActor_Parms;
     RemoveTripActor_Parms.RemoveTrip = RemoveTrip;
@@ -49435,7 +49435,7 @@ void ATrProj_PrismMine::AddTripActor ( class ATrTripActor* NewTrip )
     static UFunction* pFnAddTripActor = NULL;
 
     if ( ! pFnAddTripActor )
-        pFnAddTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115256 ];
+        pFnAddTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115255 ];
 
     ATrProj_PrismMine_execAddTripActor_Parms AddTripActor_Parms;
     AddTripActor_Parms.NewTrip = NewTrip;
@@ -49452,7 +49452,7 @@ void ATrProj_PrismMine::eventOnTripSleep ( )
     static UFunction* pFnOnTripSleep = NULL;
 
     if ( ! pFnOnTripSleep )
-        pFnOnTripSleep = (UFunction*) UObject::GObjObjects()->Data[ 115255 ];
+        pFnOnTripSleep = (UFunction*) UObject::GObjObjects()->Data[ 115254 ];
 
     ATrProj_PrismMine_eventOnTripSleep_Parms OnTripSleep_Parms;
 
@@ -49468,7 +49468,7 @@ void ATrProj_PrismMine::eventOnTripAwake ( )
     static UFunction* pFnOnTripAwake = NULL;
 
     if ( ! pFnOnTripAwake )
-        pFnOnTripAwake = (UFunction*) UObject::GObjObjects()->Data[ 115254 ];
+        pFnOnTripAwake = (UFunction*) UObject::GObjObjects()->Data[ 115253 ];
 
     ATrProj_PrismMine_eventOnTripAwake_Parms OnTripAwake_Parms;
 
@@ -49487,7 +49487,7 @@ bool ATrProj_PrismMine::eventGetTripSocketPosition ( unsigned long bIsLeft, stru
     static UFunction* pFnGetTripSocketPosition = NULL;
 
     if ( ! pFnGetTripSocketPosition )
-        pFnGetTripSocketPosition = (UFunction*) UObject::GObjObjects()->Data[ 115250 ];
+        pFnGetTripSocketPosition = (UFunction*) UObject::GObjObjects()->Data[ 115249 ];
 
     ATrProj_PrismMine_eventGetTripSocketPosition_Parms GetTripSocketPosition_Parms;
     GetTripSocketPosition_Parms.bIsLeft = bIsLeft;
@@ -49510,7 +49510,7 @@ class UParticleSystem* ATrProj_PrismMine::GetParticleSystemName ( )
     static UFunction* pFnGetParticleSystemName = NULL;
 
     if ( ! pFnGetParticleSystemName )
-        pFnGetParticleSystemName = (UFunction*) UObject::GObjObjects()->Data[ 115248 ];
+        pFnGetParticleSystemName = (UFunction*) UObject::GObjObjects()->Data[ 115247 ];
 
     ATrProj_PrismMine_execGetParticleSystemName_Parms GetParticleSystemName_Parms;
 
@@ -49531,7 +49531,7 @@ void ATrProj_PrismMine::TripActivated ( class APawn* Other, struct FVector Activ
     static UFunction* pFnTripActivated = NULL;
 
     if ( ! pFnTripActivated )
-        pFnTripActivated = (UFunction*) UObject::GObjObjects()->Data[ 115244 ];
+        pFnTripActivated = (UFunction*) UObject::GObjObjects()->Data[ 115243 ];
 
     ATrProj_PrismMine_execTripActivated_Parms TripActivated_Parms;
     TripActivated_Parms.Other = Other;
@@ -49550,7 +49550,7 @@ void ATrProj_PrismMine::CreateTripActor ( )
     static UFunction* pFnCreateTripActor = NULL;
 
     if ( ! pFnCreateTripActor )
-        pFnCreateTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115240 ];
+        pFnCreateTripActor = (UFunction*) UObject::GObjObjects()->Data[ 115239 ];
 
     ATrProj_PrismMine_execCreateTripActor_Parms CreateTripActor_Parms;
 
@@ -49566,7 +49566,7 @@ void ATrProj_PrismMine::ShutDown ( )
     static UFunction* pFnShutDown = NULL;
 
     if ( ! pFnShutDown )
-        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 115239 ];
+        pFnShutDown = (UFunction*) UObject::GObjObjects()->Data[ 115238 ];
 
     ATrProj_PrismMine_execShutDown_Parms ShutDown_Parms;
 
@@ -49582,7 +49582,7 @@ void ATrProj_PrismMine::ArmedTimer ( )
     static UFunction* pFnArmedTimer = NULL;
 
     if ( ! pFnArmedTimer )
-        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115230 ];
+        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115229 ];
 
     ATrProj_PrismMine_execArmedTimer_Parms ArmedTimer_Parms;
 
@@ -49600,7 +49600,7 @@ void ATrProj_PrismMine::InitProjectile ( struct FVector Direction, class UClass*
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115227 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115226 ];
 
     ATrProj_PrismMine_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -49619,7 +49619,7 @@ void ATrProj_PrismMine::PawnEnteredDetonationArea ( class APawn* Other )
     static UFunction* pFnPawnEnteredDetonationArea = NULL;
 
     if ( ! pFnPawnEnteredDetonationArea )
-        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 115225 ];
+        pFnPawnEnteredDetonationArea = (UFunction*) UObject::GObjObjects()->Data[ 115224 ];
 
     ATrProj_PrismMine_execPawnEnteredDetonationArea_Parms PawnEnteredDetonationArea_Parms;
     PawnEnteredDetonationArea_Parms.Other = Other;
@@ -49637,7 +49637,7 @@ void ATrProj_RepairDeployable::DetonateObsolete ( unsigned long bDetonateFromDam
     static UFunction* pFnDetonateObsolete = NULL;
 
     if ( ! pFnDetonateObsolete )
-        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 115361 ];
+        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 115360 ];
 
     ATrProj_RepairDeployable_execDetonateObsolete_Parms DetonateObsolete_Parms;
     DetonateObsolete_Parms.bDetonateFromDamage = bDetonateFromDamage;
@@ -49656,7 +49656,7 @@ void ATrProj_RepairDeployable::Explode ( struct FVector HitLocation, struct FVec
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115358 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115357 ];
 
     ATrProj_RepairDeployable_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -49674,7 +49674,7 @@ void ATrProj_RepairDeployable::CheckRepair ( )
     static UFunction* pFnCheckRepair = NULL;
 
     if ( ! pFnCheckRepair )
-        pFnCheckRepair = (UFunction*) UObject::GObjObjects()->Data[ 115352 ];
+        pFnCheckRepair = (UFunction*) UObject::GObjObjects()->Data[ 115351 ];
 
     ATrProj_RepairDeployable_execCheckRepair_Parms CheckRepair_Parms;
 
@@ -49693,7 +49693,7 @@ void ATrProj_RepairDeployable::eventHitWall ( struct FVector HitNormal, class AA
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 115347 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 115346 ];
 
     ATrProj_RepairDeployable_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -49712,7 +49712,7 @@ void ATrProj_RepairDeployable::ArmedTimer ( )
     static UFunction* pFnArmedTimer = NULL;
 
     if ( ! pFnArmedTimer )
-        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115346 ];
+        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115345 ];
 
     ATrProj_RepairDeployable_execArmedTimer_Parms ArmedTimer_Parms;
 
@@ -49730,7 +49730,7 @@ void ATrProj_RepairDeployable::InitProjectile ( struct FVector Direction, class 
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115340 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115339 ];
 
     ATrProj_RepairDeployable_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -49748,7 +49748,7 @@ void ATrProj_RepairDeployable::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115339 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115338 ];
 
     ATrProj_RepairDeployable_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -49764,7 +49764,7 @@ void ATrProj_ThrowDeployable::ArmedTimer ( )
     static UFunction* pFnArmedTimer = NULL;
 
     if ( ! pFnArmedTimer )
-        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115626 ];
+        pFnArmedTimer = (UFunction*) UObject::GObjObjects()->Data[ 115625 ];
 
     ATrProj_ThrowDeployable_execArmedTimer_Parms ArmedTimer_Parms;
 
@@ -49781,7 +49781,7 @@ int ATrProj_ThrowDeployable::GetMaxDeployedLimit ( )
     static UFunction* pFnGetMaxDeployedLimit = NULL;
 
     if ( ! pFnGetMaxDeployedLimit )
-        pFnGetMaxDeployedLimit = (UFunction*) UObject::GObjObjects()->Data[ 115622 ];
+        pFnGetMaxDeployedLimit = (UFunction*) UObject::GObjObjects()->Data[ 115621 ];
 
     ATrProj_ThrowDeployable_execGetMaxDeployedLimit_Parms GetMaxDeployedLimit_Parms;
 
@@ -49799,7 +49799,7 @@ void ATrProj_ThrowDeployable::DestroyOldestOverLimit ( )
     static UFunction* pFnDestroyOldestOverLimit = NULL;
 
     if ( ! pFnDestroyOldestOverLimit )
-        pFnDestroyOldestOverLimit = (UFunction*) UObject::GObjObjects()->Data[ 115615 ];
+        pFnDestroyOldestOverLimit = (UFunction*) UObject::GObjObjects()->Data[ 115614 ];
 
     ATrProj_ThrowDeployable_execDestroyOldestOverLimit_Parms DestroyOldestOverLimit_Parms;
 
@@ -49816,7 +49816,7 @@ class ATrDeployable* ATrProj_ThrowDeployable::SpawnDeployable ( )
     static UFunction* pFnSpawnDeployable = NULL;
 
     if ( ! pFnSpawnDeployable )
-        pFnSpawnDeployable = (UFunction*) UObject::GObjObjects()->Data[ 115613 ];
+        pFnSpawnDeployable = (UFunction*) UObject::GObjObjects()->Data[ 115612 ];
 
     ATrProj_ThrowDeployable_execSpawnDeployable_Parms SpawnDeployable_Parms;
 
@@ -49842,7 +49842,7 @@ void ATrProj_TrackingMissile::eventPostRenderFor ( class APlayerController* PC, 
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 115758 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 115757 ];
 
     ATrProj_TrackingMissile_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -49863,7 +49863,7 @@ void ATrProj_TrackingMissile::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 115756 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 115755 ];
 
     ATrProj_TrackingMissile_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -49887,7 +49887,7 @@ void ATrProj_TrackingMissile::eventTakeDamage ( int DamageAmount, class AControl
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 115744 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 115743 ];
 
     ATrProj_TrackingMissile_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -49910,7 +49910,7 @@ void ATrProj_TrackingMissile::SpawnFlightEffectsTimer ( )
     static UFunction* pFnSpawnFlightEffectsTimer = NULL;
 
     if ( ! pFnSpawnFlightEffectsTimer )
-        pFnSpawnFlightEffectsTimer = (UFunction*) UObject::GObjObjects()->Data[ 115738 ];
+        pFnSpawnFlightEffectsTimer = (UFunction*) UObject::GObjObjects()->Data[ 115737 ];
 
     ATrProj_TrackingMissile_execSpawnFlightEffectsTimer_Parms SpawnFlightEffectsTimer_Parms;
 
@@ -49926,7 +49926,7 @@ void ATrProj_TrackingMissile::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115737 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115736 ];
 
     ATrProj_TrackingMissile_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -49943,7 +49943,7 @@ class ATrSeekingMissileManager* ATrProj_TrackingMissile::GetSeekingMissileManage
     static UFunction* pFnGetSeekingMissileManager = NULL;
 
     if ( ! pFnGetSeekingMissileManager )
-        pFnGetSeekingMissileManager = (UFunction*) UObject::GObjObjects()->Data[ 115734 ];
+        pFnGetSeekingMissileManager = (UFunction*) UObject::GObjObjects()->Data[ 115733 ];
 
     ATrProj_TrackingMissile_execGetSeekingMissileManager_Parms GetSeekingMissileManager_Parms;
 
@@ -49961,7 +49961,7 @@ void ATrProj_TrackingMissile::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115733 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115732 ];
 
     ATrProj_TrackingMissile_eventDestroyed_Parms Destroyed_Parms;
 
@@ -49979,7 +49979,7 @@ void ATrProj_TrackingMissile::Explode ( struct FVector HitLocation, struct FVect
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115730 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115729 ];
 
     ATrProj_TrackingMissile_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -49997,7 +49997,7 @@ void ATrProj_TrackingMissile::OnExploded ( )
     static UFunction* pFnOnExploded = NULL;
 
     if ( ! pFnOnExploded )
-        pFnOnExploded = (UFunction*) UObject::GObjObjects()->Data[ 115728 ];
+        pFnOnExploded = (UFunction*) UObject::GObjObjects()->Data[ 115727 ];
 
     ATrProj_TrackingMissile_execOnExploded_Parms OnExploded_Parms;
 
@@ -50015,7 +50015,7 @@ void ATrProj_TrackingMissile::eventNativeExplode ( struct FVector HitLocation, s
     static UFunction* pFnNativeExplode = NULL;
 
     if ( ! pFnNativeExplode )
-        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 115725 ];
+        pFnNativeExplode = (UFunction*) UObject::GObjObjects()->Data[ 115724 ];
 
     ATrProj_TrackingMissile_eventNativeExplode_Parms NativeExplode_Parms;
     memcpy ( &NativeExplode_Parms.HitLocation, &HitLocation, 0xC );
@@ -50034,7 +50034,7 @@ void ATrProj_TrackingMissile::SetSeekTarget ( class AActor* NewSeekTarget )
     static UFunction* pFnSetSeekTarget = NULL;
 
     if ( ! pFnSetSeekTarget )
-        pFnSetSeekTarget = (UFunction*) UObject::GObjObjects()->Data[ 115722 ];
+        pFnSetSeekTarget = (UFunction*) UObject::GObjObjects()->Data[ 115721 ];
 
     ATrProj_TrackingMissile_execSetSeekTarget_Parms SetSeekTarget_Parms;
     SetSeekTarget_Parms.NewSeekTarget = NewSeekTarget;
@@ -50051,7 +50051,7 @@ void ATrProj_TrackingMissile::EnableCollisionTimer ( )
     static UFunction* pFnEnableCollisionTimer = NULL;
 
     if ( ! pFnEnableCollisionTimer )
-        pFnEnableCollisionTimer = (UFunction*) UObject::GObjObjects()->Data[ 115721 ];
+        pFnEnableCollisionTimer = (UFunction*) UObject::GObjObjects()->Data[ 115720 ];
 
     ATrProj_TrackingMissile_execEnableCollisionTimer_Parms EnableCollisionTimer_Parms;
 
@@ -50070,7 +50070,7 @@ void ATrProj_TrackingMissile::ProcessTouch ( class AActor* Other, struct FVector
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 115717 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 115716 ];
 
     ATrProj_TrackingMissile_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -50090,7 +50090,7 @@ void ATrProj_TrackingMissile::Init ( struct FVector Direction )
     static UFunction* pFnInit = NULL;
 
     if ( ! pFnInit )
-        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 115715 ];
+        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 115714 ];
 
     ATrProj_TrackingMissile_execInit_Parms Init_Parms;
     memcpy ( &Init_Parms.Direction, &Direction, 0xC );
@@ -50107,7 +50107,7 @@ void ATrProj_TrackingMissile::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115713 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115712 ];
 
     ATrProj_TrackingMissile_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -50125,7 +50125,7 @@ int UTrQueueManager::eventGetRegionFilterAtIndex ( int Index )
     static UFunction* pFnGetRegionFilterAtIndex = NULL;
 
     if ( ! pFnGetRegionFilterAtIndex )
-        pFnGetRegionFilterAtIndex = (UFunction*) UObject::GObjObjects()->Data[ 116209 ];
+        pFnGetRegionFilterAtIndex = (UFunction*) UObject::GObjObjects()->Data[ 116208 ];
 
     UTrQueueManager_eventGetRegionFilterAtIndex_Parms GetRegionFilterAtIndex_Parms;
     GetRegionFilterAtIndex_Parms.Index = Index;
@@ -50145,7 +50145,7 @@ int UTrQueueManager::eventGetRegionFilterCount ( )
     static UFunction* pFnGetRegionFilterCount = NULL;
 
     if ( ! pFnGetRegionFilterCount )
-        pFnGetRegionFilterCount = (UFunction*) UObject::GObjObjects()->Data[ 116207 ];
+        pFnGetRegionFilterCount = (UFunction*) UObject::GObjObjects()->Data[ 116206 ];
 
     UTrQueueManager_eventGetRegionFilterCount_Parms GetRegionFilterCount_Parms;
 
@@ -50165,7 +50165,7 @@ struct FServerInfo UTrQueueManager::GetDisplayedInfo ( int Index )
     static UFunction* pFnGetDisplayedInfo = NULL;
 
     if ( ! pFnGetDisplayedInfo )
-        pFnGetDisplayedInfo = (UFunction*) UObject::GObjObjects()->Data[ 116204 ];
+        pFnGetDisplayedInfo = (UFunction*) UObject::GObjObjects()->Data[ 116203 ];
 
     UTrQueueManager_execGetDisplayedInfo_Parms GetDisplayedInfo_Parms;
     GetDisplayedInfo_Parms.Index = Index;
@@ -50184,7 +50184,7 @@ void UTrQueueManager::ServerTimer ( )
     static UFunction* pFnServerTimer = NULL;
 
     if ( ! pFnServerTimer )
-        pFnServerTimer = (UFunction*) UObject::GObjObjects()->Data[ 116201 ];
+        pFnServerTimer = (UFunction*) UObject::GObjObjects()->Data[ 116200 ];
 
     UTrQueueManager_execServerTimer_Parms ServerTimer_Parms;
 
@@ -50200,7 +50200,7 @@ void UTrQueueManager::StartServerTimer ( )
     static UFunction* pFnStartServerTimer = NULL;
 
     if ( ! pFnStartServerTimer )
-        pFnStartServerTimer = (UFunction*) UObject::GObjObjects()->Data[ 116199 ];
+        pFnStartServerTimer = (UFunction*) UObject::GObjObjects()->Data[ 116198 ];
 
     UTrQueueManager_execStartServerTimer_Parms StartServerTimer_Parms;
 
@@ -50239,7 +50239,7 @@ void UTrQueueManager::FilterRuleset ( int Id, unsigned long bFilter )
     static UFunction* pFnFilterRuleset = NULL;
 
     if ( ! pFnFilterRuleset )
-        pFnFilterRuleset = (UFunction*) UObject::GObjObjects()->Data[ 116193 ];
+        pFnFilterRuleset = (UFunction*) UObject::GObjObjects()->Data[ 116192 ];
 
     UTrQueueManager_execFilterRuleset_Parms FilterRuleset_Parms;
     FilterRuleset_Parms.Id = Id;
@@ -50280,7 +50280,7 @@ void UTrQueueManager::FilterGameType ( int Id, unsigned long bFilter )
     static UFunction* pFnFilterGameType = NULL;
 
     if ( ! pFnFilterGameType )
-        pFnFilterGameType = (UFunction*) UObject::GObjObjects()->Data[ 116187 ];
+        pFnFilterGameType = (UFunction*) UObject::GObjObjects()->Data[ 116186 ];
 
     UTrQueueManager_execFilterGameType_Parms FilterGameType_Parms;
     FilterGameType_Parms.Id = Id;
@@ -50299,7 +50299,7 @@ void UTrQueueManager::eventMarkFavorite ( int Index )
     static UFunction* pFnMarkFavorite = NULL;
 
     if ( ! pFnMarkFavorite )
-        pFnMarkFavorite = (UFunction*) UObject::GObjObjects()->Data[ 116185 ];
+        pFnMarkFavorite = (UFunction*) UObject::GObjObjects()->Data[ 116184 ];
 
     UTrQueueManager_eventMarkFavorite_Parms MarkFavorite_Parms;
     MarkFavorite_Parms.Index = Index;
@@ -50317,7 +50317,7 @@ int UTrQueueManager::GetDefaultMapId ( )
     static UFunction* pFnGetDefaultMapId = NULL;
 
     if ( ! pFnGetDefaultMapId )
-        pFnGetDefaultMapId = (UFunction*) UObject::GObjObjects()->Data[ 116183 ];
+        pFnGetDefaultMapId = (UFunction*) UObject::GObjObjects()->Data[ 116182 ];
 
     UTrQueueManager_execGetDefaultMapId_Parms GetDefaultMapId_Parms;
 
@@ -50335,7 +50335,7 @@ void UTrQueueManager::ResetRotation ( )
     static UFunction* pFnResetRotation = NULL;
 
     if ( ! pFnResetRotation )
-        pFnResetRotation = (UFunction*) UObject::GObjObjects()->Data[ 116181 ];
+        pFnResetRotation = (UFunction*) UObject::GObjObjects()->Data[ 116180 ];
 
     UTrQueueManager_execResetRotation_Parms ResetRotation_Parms;
 
@@ -50353,7 +50353,7 @@ void UTrQueueManager::eventAddProfileConfig ( int Index, struct FProfileConfig D
     static UFunction* pFnAddProfileConfig = NULL;
 
     if ( ! pFnAddProfileConfig )
-        pFnAddProfileConfig = (UFunction*) UObject::GObjObjects()->Data[ 116178 ];
+        pFnAddProfileConfig = (UFunction*) UObject::GObjObjects()->Data[ 116177 ];
 
     UTrQueueManager_eventAddProfileConfig_Parms AddProfileConfig_Parms;
     AddProfileConfig_Parms.Index = Index;
@@ -50372,7 +50372,7 @@ void UTrQueueManager::eventAddServerConfig ( int MatchQueueId )
     static UFunction* pFnAddServerConfig = NULL;
 
     if ( ! pFnAddServerConfig )
-        pFnAddServerConfig = (UFunction*) UObject::GObjObjects()->Data[ 116175 ];
+        pFnAddServerConfig = (UFunction*) UObject::GObjObjects()->Data[ 116174 ];
 
     UTrQueueManager_eventAddServerConfig_Parms AddServerConfig_Parms;
     AddServerConfig_Parms.MatchQueueId = MatchQueueId;
@@ -50700,7 +50700,7 @@ int UTrQueueManager::GetGameCaseId ( )
     static UFunction* pFnGetGameCaseId = NULL;
 
     if ( ! pFnGetGameCaseId )
-        pFnGetGameCaseId = (UFunction*) UObject::GObjObjects()->Data[ 116164 ];
+        pFnGetGameCaseId = (UFunction*) UObject::GObjObjects()->Data[ 116163 ];
 
     UTrQueueManager_execGetGameCaseId_Parms GetGameCaseId_Parms;
 
@@ -50719,7 +50719,7 @@ int UTrQueueManager::GetSlots ( )
     static UFunction* pFnGetSlots = NULL;
 
     if ( ! pFnGetSlots )
-        pFnGetSlots = (UFunction*) UObject::GObjObjects()->Data[ 116162 ];
+        pFnGetSlots = (UFunction*) UObject::GObjObjects()->Data[ 116161 ];
 
     UTrQueueManager_execGetSlots_Parms GetSlots_Parms;
 
@@ -50740,7 +50740,7 @@ int UTrQueueManager::FavoriteSortB ( int A, int B )
     static UFunction* pFnFavoriteSortB = NULL;
 
     if ( ! pFnFavoriteSortB )
-        pFnFavoriteSortB = (UFunction*) UObject::GObjObjects()->Data[ 115873 ];
+        pFnFavoriteSortB = (UFunction*) UObject::GObjObjects()->Data[ 115872 ];
 
     UTrQueueManager_execFavoriteSortB_Parms FavoriteSortB_Parms;
     FavoriteSortB_Parms.A = A;
@@ -50763,7 +50763,7 @@ int UTrQueueManager::PasswordSortB ( int A, int B )
     static UFunction* pFnPasswordSortB = NULL;
 
     if ( ! pFnPasswordSortB )
-        pFnPasswordSortB = (UFunction*) UObject::GObjObjects()->Data[ 115875 ];
+        pFnPasswordSortB = (UFunction*) UObject::GObjObjects()->Data[ 115874 ];
 
     UTrQueueManager_execPasswordSortB_Parms PasswordSortB_Parms;
     PasswordSortB_Parms.A = A;
@@ -50786,7 +50786,7 @@ int UTrQueueManager::SlotsSortB ( int A, int B )
     static UFunction* pFnSlotsSortB = NULL;
 
     if ( ! pFnSlotsSortB )
-        pFnSlotsSortB = (UFunction*) UObject::GObjObjects()->Data[ 115877 ];
+        pFnSlotsSortB = (UFunction*) UObject::GObjObjects()->Data[ 115876 ];
 
     UTrQueueManager_execSlotsSortB_Parms SlotsSortB_Parms;
     SlotsSortB_Parms.A = A;
@@ -50809,7 +50809,7 @@ int UTrQueueManager::RangeSortB ( int A, int B )
     static UFunction* pFnRangeSortB = NULL;
 
     if ( ! pFnRangeSortB )
-        pFnRangeSortB = (UFunction*) UObject::GObjObjects()->Data[ 115879 ];
+        pFnRangeSortB = (UFunction*) UObject::GObjObjects()->Data[ 115878 ];
 
     UTrQueueManager_execRangeSortB_Parms RangeSortB_Parms;
     RangeSortB_Parms.A = A;
@@ -50832,7 +50832,7 @@ int UTrQueueManager::RulesSortB ( int A, int B )
     static UFunction* pFnRulesSortB = NULL;
 
     if ( ! pFnRulesSortB )
-        pFnRulesSortB = (UFunction*) UObject::GObjObjects()->Data[ 115881 ];
+        pFnRulesSortB = (UFunction*) UObject::GObjObjects()->Data[ 115880 ];
 
     UTrQueueManager_execRulesSortB_Parms RulesSortB_Parms;
     RulesSortB_Parms.A = A;
@@ -50855,7 +50855,7 @@ int UTrQueueManager::TypeSortB ( int A, int B )
     static UFunction* pFnTypeSortB = NULL;
 
     if ( ! pFnTypeSortB )
-        pFnTypeSortB = (UFunction*) UObject::GObjObjects()->Data[ 115883 ];
+        pFnTypeSortB = (UFunction*) UObject::GObjObjects()->Data[ 115882 ];
 
     UTrQueueManager_execTypeSortB_Parms TypeSortB_Parms;
     TypeSortB_Parms.A = A;
@@ -50878,7 +50878,7 @@ int UTrQueueManager::PingSortB ( int A, int B )
     static UFunction* pFnPingSortB = NULL;
 
     if ( ! pFnPingSortB )
-        pFnPingSortB = (UFunction*) UObject::GObjObjects()->Data[ 115885 ];
+        pFnPingSortB = (UFunction*) UObject::GObjObjects()->Data[ 115884 ];
 
     UTrQueueManager_execPingSortB_Parms PingSortB_Parms;
     PingSortB_Parms.A = A;
@@ -50901,7 +50901,7 @@ int UTrQueueManager::NameSortB ( int A, int B )
     static UFunction* pFnNameSortB = NULL;
 
     if ( ! pFnNameSortB )
-        pFnNameSortB = (UFunction*) UObject::GObjObjects()->Data[ 115887 ];
+        pFnNameSortB = (UFunction*) UObject::GObjObjects()->Data[ 115886 ];
 
     UTrQueueManager_execNameSortB_Parms NameSortB_Parms;
     NameSortB_Parms.A = A;
@@ -50924,7 +50924,7 @@ int UTrQueueManager::MapSortB ( int A, int B )
     static UFunction* pFnMapSortB = NULL;
 
     if ( ! pFnMapSortB )
-        pFnMapSortB = (UFunction*) UObject::GObjObjects()->Data[ 115889 ];
+        pFnMapSortB = (UFunction*) UObject::GObjObjects()->Data[ 115888 ];
 
     UTrQueueManager_execMapSortB_Parms MapSortB_Parms;
     MapSortB_Parms.A = A;
@@ -50947,7 +50947,7 @@ int UTrQueueManager::FavoriteSortA ( int A, int B )
     static UFunction* pFnFavoriteSortA = NULL;
 
     if ( ! pFnFavoriteSortA )
-        pFnFavoriteSortA = (UFunction*) UObject::GObjObjects()->Data[ 115891 ];
+        pFnFavoriteSortA = (UFunction*) UObject::GObjObjects()->Data[ 115890 ];
 
     UTrQueueManager_execFavoriteSortA_Parms FavoriteSortA_Parms;
     FavoriteSortA_Parms.A = A;
@@ -50970,7 +50970,7 @@ int UTrQueueManager::PasswordSortA ( int A, int B )
     static UFunction* pFnPasswordSortA = NULL;
 
     if ( ! pFnPasswordSortA )
-        pFnPasswordSortA = (UFunction*) UObject::GObjObjects()->Data[ 115893 ];
+        pFnPasswordSortA = (UFunction*) UObject::GObjObjects()->Data[ 115892 ];
 
     UTrQueueManager_execPasswordSortA_Parms PasswordSortA_Parms;
     PasswordSortA_Parms.A = A;
@@ -50993,7 +50993,7 @@ int UTrQueueManager::SlotsSortA ( int A, int B )
     static UFunction* pFnSlotsSortA = NULL;
 
     if ( ! pFnSlotsSortA )
-        pFnSlotsSortA = (UFunction*) UObject::GObjObjects()->Data[ 115895 ];
+        pFnSlotsSortA = (UFunction*) UObject::GObjObjects()->Data[ 115894 ];
 
     UTrQueueManager_execSlotsSortA_Parms SlotsSortA_Parms;
     SlotsSortA_Parms.A = A;
@@ -51016,7 +51016,7 @@ int UTrQueueManager::RangeSortA ( int A, int B )
     static UFunction* pFnRangeSortA = NULL;
 
     if ( ! pFnRangeSortA )
-        pFnRangeSortA = (UFunction*) UObject::GObjObjects()->Data[ 115897 ];
+        pFnRangeSortA = (UFunction*) UObject::GObjObjects()->Data[ 115896 ];
 
     UTrQueueManager_execRangeSortA_Parms RangeSortA_Parms;
     RangeSortA_Parms.A = A;
@@ -51039,7 +51039,7 @@ int UTrQueueManager::RulesSortA ( int A, int B )
     static UFunction* pFnRulesSortA = NULL;
 
     if ( ! pFnRulesSortA )
-        pFnRulesSortA = (UFunction*) UObject::GObjObjects()->Data[ 115899 ];
+        pFnRulesSortA = (UFunction*) UObject::GObjObjects()->Data[ 115898 ];
 
     UTrQueueManager_execRulesSortA_Parms RulesSortA_Parms;
     RulesSortA_Parms.A = A;
@@ -51062,7 +51062,7 @@ int UTrQueueManager::TypeSortA ( int A, int B )
     static UFunction* pFnTypeSortA = NULL;
 
     if ( ! pFnTypeSortA )
-        pFnTypeSortA = (UFunction*) UObject::GObjObjects()->Data[ 115901 ];
+        pFnTypeSortA = (UFunction*) UObject::GObjObjects()->Data[ 115900 ];
 
     UTrQueueManager_execTypeSortA_Parms TypeSortA_Parms;
     TypeSortA_Parms.A = A;
@@ -51085,7 +51085,7 @@ int UTrQueueManager::PingSortA ( int A, int B )
     static UFunction* pFnPingSortA = NULL;
 
     if ( ! pFnPingSortA )
-        pFnPingSortA = (UFunction*) UObject::GObjObjects()->Data[ 115903 ];
+        pFnPingSortA = (UFunction*) UObject::GObjObjects()->Data[ 115902 ];
 
     UTrQueueManager_execPingSortA_Parms PingSortA_Parms;
     PingSortA_Parms.A = A;
@@ -51108,7 +51108,7 @@ int UTrQueueManager::NameSortA ( int A, int B )
     static UFunction* pFnNameSortA = NULL;
 
     if ( ! pFnNameSortA )
-        pFnNameSortA = (UFunction*) UObject::GObjObjects()->Data[ 115905 ];
+        pFnNameSortA = (UFunction*) UObject::GObjObjects()->Data[ 115904 ];
 
     UTrQueueManager_execNameSortA_Parms NameSortA_Parms;
     NameSortA_Parms.A = A;
@@ -51131,7 +51131,7 @@ int UTrQueueManager::MapSortA ( int A, int B )
     static UFunction* pFnMapSortA = NULL;
 
     if ( ! pFnMapSortA )
-        pFnMapSortA = (UFunction*) UObject::GObjObjects()->Data[ 115907 ];
+        pFnMapSortA = (UFunction*) UObject::GObjObjects()->Data[ 115906 ];
 
     UTrQueueManager_execMapSortA_Parms MapSortA_Parms;
     MapSortA_Parms.A = A;
@@ -51153,7 +51153,7 @@ void UTrQueueManager::SortOn ( struct FString SortName, unsigned long bUpdateSor
     static UFunction* pFnSortOn = NULL;
 
     if ( ! pFnSortOn )
-        pFnSortOn = (UFunction*) UObject::GObjObjects()->Data[ 116096 ];
+        pFnSortOn = (UFunction*) UObject::GObjObjects()->Data[ 116095 ];
 
     UTrQueueManager_execSortOn_Parms SortOn_Parms;
     memcpy ( &SortOn_Parms.SortName, &SortName, 0xC );
@@ -51172,7 +51172,7 @@ void UTrQueueManager::ServerSort ( struct FString SortName )
     static UFunction* pFnServerSort = NULL;
 
     if ( ! pFnServerSort )
-        pFnServerSort = (UFunction*) UObject::GObjObjects()->Data[ 116094 ];
+        pFnServerSort = (UFunction*) UObject::GObjObjects()->Data[ 116093 ];
 
     UTrQueueManager_execServerSort_Parms ServerSort_Parms;
     memcpy ( &ServerSort_Parms.SortName, &SortName, 0xC );
@@ -51192,7 +51192,7 @@ int UTrQueueManager::NewServerPage ( int Direction, int currIndex )
     static UFunction* pFnNewServerPage = NULL;
 
     if ( ! pFnNewServerPage )
-        pFnNewServerPage = (UFunction*) UObject::GObjObjects()->Data[ 116088 ];
+        pFnNewServerPage = (UFunction*) UObject::GObjObjects()->Data[ 116087 ];
 
     UTrQueueManager_execNewServerPage_Parms NewServerPage_Parms;
     NewServerPage_Parms.Direction = Direction;
@@ -51213,7 +51213,7 @@ void UTrQueueManager::ServerPage ( int Index )
     static UFunction* pFnServerPage = NULL;
 
     if ( ! pFnServerPage )
-        pFnServerPage = (UFunction*) UObject::GObjObjects()->Data[ 116086 ];
+        pFnServerPage = (UFunction*) UObject::GObjObjects()->Data[ 116085 ];
 
     UTrQueueManager_execServerPage_Parms ServerPage_Parms;
     ServerPage_Parms.Index = Index;
@@ -51231,7 +51231,7 @@ void UTrQueueManager::SetActiveServer ( int Index )
     static UFunction* pFnSetActiveServer = NULL;
 
     if ( ! pFnSetActiveServer )
-        pFnSetActiveServer = (UFunction*) UObject::GObjObjects()->Data[ 116084 ];
+        pFnSetActiveServer = (UFunction*) UObject::GObjObjects()->Data[ 116083 ];
 
     UTrQueueManager_execSetActiveServer_Parms SetActiveServer_Parms;
     SetActiveServer_Parms.Index = Index;
@@ -51249,7 +51249,7 @@ void UTrQueueManager::PasswordServer ( int Index )
     static UFunction* pFnPasswordServer = NULL;
 
     if ( ! pFnPasswordServer )
-        pFnPasswordServer = (UFunction*) UObject::GObjObjects()->Data[ 116081 ];
+        pFnPasswordServer = (UFunction*) UObject::GObjObjects()->Data[ 116080 ];
 
     UTrQueueManager_execPasswordServer_Parms PasswordServer_Parms;
     PasswordServer_Parms.Index = Index;
@@ -51267,7 +51267,7 @@ void UTrQueueManager::FavoriteServer ( int Index )
     static UFunction* pFnFavoriteServer = NULL;
 
     if ( ! pFnFavoriteServer )
-        pFnFavoriteServer = (UFunction*) UObject::GObjObjects()->Data[ 116078 ];
+        pFnFavoriteServer = (UFunction*) UObject::GObjObjects()->Data[ 116077 ];
 
     UTrQueueManager_execFavoriteServer_Parms FavoriteServer_Parms;
     FavoriteServer_Parms.Index = Index;
@@ -51285,7 +51285,7 @@ void UTrQueueManager::JoinProtectedServer ( struct FString Password )
     static UFunction* pFnJoinProtectedServer = NULL;
 
     if ( ! pFnJoinProtectedServer )
-        pFnJoinProtectedServer = (UFunction*) UObject::GObjObjects()->Data[ 116075 ];
+        pFnJoinProtectedServer = (UFunction*) UObject::GObjObjects()->Data[ 116074 ];
 
     UTrQueueManager_execJoinProtectedServer_Parms JoinProtectedServer_Parms;
     memcpy ( &JoinProtectedServer_Parms.Password, &Password, 0xC );
@@ -51303,7 +51303,7 @@ void UTrQueueManager::JoinCustomServer ( int Index )
     static UFunction* pFnJoinCustomServer = NULL;
 
     if ( ! pFnJoinCustomServer )
-        pFnJoinCustomServer = (UFunction*) UObject::GObjObjects()->Data[ 116072 ];
+        pFnJoinCustomServer = (UFunction*) UObject::GObjObjects()->Data[ 116071 ];
 
     UTrQueueManager_execJoinCustomServer_Parms JoinCustomServer_Parms;
     JoinCustomServer_Parms.Index = Index;
@@ -51323,7 +51323,7 @@ struct FString UTrQueueManager::GetLevelReq ( int Min, int Max )
     static UFunction* pFnGetLevelReq = NULL;
 
     if ( ! pFnGetLevelReq )
-        pFnGetLevelReq = (UFunction*) UObject::GObjObjects()->Data[ 116068 ];
+        pFnGetLevelReq = (UFunction*) UObject::GObjObjects()->Data[ 116067 ];
 
     UTrQueueManager_execGetLevelReq_Parms GetLevelReq_Parms;
     GetLevelReq_Parms.Min = Min;
@@ -51344,7 +51344,7 @@ void UTrQueueManager::ServerPopupComplete ( int Id )
     static UFunction* pFnServerPopupComplete = NULL;
 
     if ( ! pFnServerPopupComplete )
-        pFnServerPopupComplete = (UFunction*) UObject::GObjObjects()->Data[ 116066 ];
+        pFnServerPopupComplete = (UFunction*) UObject::GObjObjects()->Data[ 116065 ];
 
     UTrQueueManager_execServerPopupComplete_Parms ServerPopupComplete_Parms;
     ServerPopupComplete_Parms.Id = Id;
@@ -51362,7 +51362,7 @@ struct FString UTrQueueManager::GetFormattedGameTime ( )
     static UFunction* pFnGetFormattedGameTime = NULL;
 
     if ( ! pFnGetFormattedGameTime )
-        pFnGetFormattedGameTime = (UFunction*) UObject::GObjObjects()->Data[ 116062 ];
+        pFnGetFormattedGameTime = (UFunction*) UObject::GObjObjects()->Data[ 116061 ];
 
     UTrQueueManager_execGetFormattedGameTime_Parms GetFormattedGameTime_Parms;
 
@@ -51380,7 +51380,7 @@ void UTrQueueManager::eventOnReceivedServerInfo ( )
     static UFunction* pFnOnReceivedServerInfo = NULL;
 
     if ( ! pFnOnReceivedServerInfo )
-        pFnOnReceivedServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 116057 ];
+        pFnOnReceivedServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 116056 ];
 
     UTrQueueManager_eventOnReceivedServerInfo_Parms OnReceivedServerInfo_Parms;
 
@@ -51398,7 +51398,7 @@ void UTrQueueManager::eventOnReceivedServerPing ( int ServerID, int Ping )
     static UFunction* pFnOnReceivedServerPing = NULL;
 
     if ( ! pFnOnReceivedServerPing )
-        pFnOnReceivedServerPing = (UFunction*) UObject::GObjObjects()->Data[ 116053 ];
+        pFnOnReceivedServerPing = (UFunction*) UObject::GObjObjects()->Data[ 116052 ];
 
     UTrQueueManager_eventOnReceivedServerPing_Parms OnReceivedServerPing_Parms;
     OnReceivedServerPing_Parms.ServerID = ServerID;
@@ -51417,7 +51417,7 @@ void UTrQueueManager::ShowServerInfo ( int Index )
     static UFunction* pFnShowServerInfo = NULL;
 
     if ( ! pFnShowServerInfo )
-        pFnShowServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 116047 ];
+        pFnShowServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 116046 ];
 
     UTrQueueManager_execShowServerInfo_Parms ShowServerInfo_Parms;
     ShowServerInfo_Parms.Index = Index;
@@ -51456,7 +51456,7 @@ void UTrQueueManager::UpdateServerTab ( int Id )
     static UFunction* pFnUpdateServerTab = NULL;
 
     if ( ! pFnUpdateServerTab )
-        pFnUpdateServerTab = (UFunction*) UObject::GObjObjects()->Data[ 116041 ];
+        pFnUpdateServerTab = (UFunction*) UObject::GObjObjects()->Data[ 116040 ];
 
     UTrQueueManager_execUpdateServerTab_Parms UpdateServerTab_Parms;
     UpdateServerTab_Parms.Id = Id;
@@ -51474,7 +51474,7 @@ void UTrQueueManager::eventSendServerData ( int Index )
     static UFunction* pFnSendServerData = NULL;
 
     if ( ! pFnSendServerData )
-        pFnSendServerData = (UFunction*) UObject::GObjObjects()->Data[ 116036 ];
+        pFnSendServerData = (UFunction*) UObject::GObjObjects()->Data[ 116035 ];
 
     UTrQueueManager_eventSendServerData_Parms SendServerData_Parms;
     SendServerData_Parms.Index = Index;
@@ -51494,7 +51494,7 @@ bool UTrQueueManager::eventCheckFilter ( int Index, unsigned long bRecent )
     static UFunction* pFnCheckFilter = NULL;
 
     if ( ! pFnCheckFilter )
-        pFnCheckFilter = (UFunction*) UObject::GObjObjects()->Data[ 116032 ];
+        pFnCheckFilter = (UFunction*) UObject::GObjObjects()->Data[ 116031 ];
 
     UTrQueueManager_eventCheckFilter_Parms CheckFilter_Parms;
     CheckFilter_Parms.Index = Index;
@@ -51514,7 +51514,7 @@ void UTrQueueManager::UpdateFilter ( )
     static UFunction* pFnUpdateFilter = NULL;
 
     if ( ! pFnUpdateFilter )
-        pFnUpdateFilter = (UFunction*) UObject::GObjObjects()->Data[ 116024 ];
+        pFnUpdateFilter = (UFunction*) UObject::GObjObjects()->Data[ 116023 ];
 
     UTrQueueManager_execUpdateFilter_Parms UpdateFilter_Parms;
 
@@ -51532,7 +51532,7 @@ bool UTrQueueManager::HaveServerData ( int Index )
     static UFunction* pFnHaveServerData = NULL;
 
     if ( ! pFnHaveServerData )
-        pFnHaveServerData = (UFunction*) UObject::GObjObjects()->Data[ 116021 ];
+        pFnHaveServerData = (UFunction*) UObject::GObjObjects()->Data[ 116020 ];
 
     UTrQueueManager_execHaveServerData_Parms HaveServerData_Parms;
     HaveServerData_Parms.Index = Index;
@@ -51551,7 +51551,7 @@ void UTrQueueManager::eventServerInfoLoaded ( )
     static UFunction* pFnServerInfoLoaded = NULL;
 
     if ( ! pFnServerInfoLoaded )
-        pFnServerInfoLoaded = (UFunction*) UObject::GObjObjects()->Data[ 116020 ];
+        pFnServerInfoLoaded = (UFunction*) UObject::GObjObjects()->Data[ 116019 ];
 
     UTrQueueManager_eventServerInfoLoaded_Parms ServerInfoLoaded_Parms;
 
@@ -51569,7 +51569,7 @@ void UTrQueueManager::eventExitGameInProgress ( unsigned long bForceDrop, unsign
     static UFunction* pFnExitGameInProgress = NULL;
 
     if ( ! pFnExitGameInProgress )
-        pFnExitGameInProgress = (UFunction*) UObject::GObjObjects()->Data[ 116016 ];
+        pFnExitGameInProgress = (UFunction*) UObject::GObjObjects()->Data[ 116015 ];
 
     UTrQueueManager_eventExitGameInProgress_Parms ExitGameInProgress_Parms;
     ExitGameInProgress_Parms.bForceDrop = bForceDrop;
@@ -51589,7 +51589,7 @@ void UTrQueueManager::JoinFriend ( struct FString PlayerName, struct FString Pas
     static UFunction* pFnJoinFriend = NULL;
 
     if ( ! pFnJoinFriend )
-        pFnJoinFriend = (UFunction*) UObject::GObjObjects()->Data[ 116013 ];
+        pFnJoinFriend = (UFunction*) UObject::GObjObjects()->Data[ 116012 ];
 
     UTrQueueManager_execJoinFriend_Parms JoinFriend_Parms;
     memcpy ( &JoinFriend_Parms.PlayerName, &PlayerName, 0xC );
@@ -51626,7 +51626,7 @@ void UTrQueueManager::eventSetPlayerQueued ( )
     static UFunction* pFnSetPlayerQueued = NULL;
 
     if ( ! pFnSetPlayerQueued )
-        pFnSetPlayerQueued = (UFunction*) UObject::GObjObjects()->Data[ 116012 ];
+        pFnSetPlayerQueued = (UFunction*) UObject::GObjObjects()->Data[ 116011 ];
 
     UTrQueueManager_eventSetPlayerQueued_Parms SetPlayerQueued_Parms;
 
@@ -51643,7 +51643,7 @@ void UTrQueueManager::JoinQueue ( int nQueueId )
     static UFunction* pFnJoinQueue = NULL;
 
     if ( ! pFnJoinQueue )
-        pFnJoinQueue = (UFunction*) UObject::GObjObjects()->Data[ 116010 ];
+        pFnJoinQueue = (UFunction*) UObject::GObjObjects()->Data[ 116009 ];
 
     UTrQueueManager_execJoinQueue_Parms JoinQueue_Parms;
     JoinQueue_Parms.nQueueId = nQueueId;
@@ -51661,7 +51661,7 @@ void UTrQueueManager::LeaveMatchmaking ( unsigned long bForced )
     static UFunction* pFnLeaveMatchmaking = NULL;
 
     if ( ! pFnLeaveMatchmaking )
-        pFnLeaveMatchmaking = (UFunction*) UObject::GObjObjects()->Data[ 116008 ];
+        pFnLeaveMatchmaking = (UFunction*) UObject::GObjObjects()->Data[ 116007 ];
 
     UTrQueueManager_execLeaveMatchmaking_Parms LeaveMatchmaking_Parms;
     LeaveMatchmaking_Parms.bForced = bForced;
@@ -51678,7 +51678,7 @@ void UTrQueueManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 116004 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 116003 ];
 
     UTrQueueManager_execInitialize_Parms Initialize_Parms;
 
@@ -51695,7 +51695,7 @@ void UTrQueueManager::AddDisplayedServer ( int Index )
     static UFunction* pFnAddDisplayedServer = NULL;
 
     if ( ! pFnAddDisplayedServer )
-        pFnAddDisplayedServer = (UFunction*) UObject::GObjObjects()->Data[ 116002 ];
+        pFnAddDisplayedServer = (UFunction*) UObject::GObjObjects()->Data[ 116001 ];
 
     UTrQueueManager_execAddDisplayedServer_Parms AddDisplayedServer_Parms;
     AddDisplayedServer_Parms.Index = Index;
@@ -51718,7 +51718,7 @@ void UTrQueueManager::VerifyAndAddServer ( int Index, unsigned long bSend )
     static UFunction* pFnVerifyAndAddServer = NULL;
 
     if ( ! pFnVerifyAndAddServer )
-        pFnVerifyAndAddServer = (UFunction*) UObject::GObjObjects()->Data[ 115999 ];
+        pFnVerifyAndAddServer = (UFunction*) UObject::GObjObjects()->Data[ 115998 ];
 
     UTrQueueManager_execVerifyAndAddServer_Parms VerifyAndAddServer_Parms;
     VerifyAndAddServer_Parms.Index = Index;
@@ -51740,7 +51740,7 @@ void UTrQueueManager::PopulateDisplayedServer ( )
     static UFunction* pFnPopulateDisplayedServer = NULL;
 
     if ( ! pFnPopulateDisplayedServer )
-        pFnPopulateDisplayedServer = (UFunction*) UObject::GObjObjects()->Data[ 115998 ];
+        pFnPopulateDisplayedServer = (UFunction*) UObject::GObjObjects()->Data[ 115997 ];
 
     UTrQueueManager_execPopulateDisplayedServer_Parms PopulateDisplayedServer_Parms;
 
@@ -51762,7 +51762,7 @@ int UTrQueueManager::GetServerIndex ( int nQueueId )
     static UFunction* pFnGetServerIndex = NULL;
 
     if ( ! pFnGetServerIndex )
-        pFnGetServerIndex = (UFunction*) UObject::GObjObjects()->Data[ 115995 ];
+        pFnGetServerIndex = (UFunction*) UObject::GObjObjects()->Data[ 115994 ];
 
     UTrQueueManager_execGetServerIndex_Parms GetServerIndex_Parms;
     GetServerIndex_Parms.nQueueId = nQueueId;
@@ -51785,7 +51785,7 @@ void UTrQueueManager::ClearDisplayedServers ( )
     static UFunction* pFnClearDisplayedServers = NULL;
 
     if ( ! pFnClearDisplayedServers )
-        pFnClearDisplayedServers = (UFunction*) UObject::GObjObjects()->Data[ 115994 ];
+        pFnClearDisplayedServers = (UFunction*) UObject::GObjObjects()->Data[ 115993 ];
 
     UTrQueueManager_execClearDisplayedServers_Parms ClearDisplayedServers_Parms;
 
@@ -51805,7 +51805,7 @@ void UTrQueueManager::ClearServerInfo ( )
     static UFunction* pFnClearServerInfo = NULL;
 
     if ( ! pFnClearServerInfo )
-        pFnClearServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 115993 ];
+        pFnClearServerInfo = (UFunction*) UObject::GObjObjects()->Data[ 115992 ];
 
     UTrQueueManager_execClearServerInfo_Parms ClearServerInfo_Parms;
 
@@ -51825,7 +51825,7 @@ void UTrQueueManager::ClearDirtyInfo ( )
     static UFunction* pFnClearDirtyInfo = NULL;
 
     if ( ! pFnClearDirtyInfo )
-        pFnClearDirtyInfo = (UFunction*) UObject::GObjObjects()->Data[ 115992 ];
+        pFnClearDirtyInfo = (UFunction*) UObject::GObjObjects()->Data[ 115991 ];
 
     UTrQueueManager_execClearDirtyInfo_Parms ClearDirtyInfo_Parms;
 
@@ -51904,7 +51904,7 @@ bool UTrQueueManager::MatchQueueJoin ( int Queue, struct FString Password )
     static UFunction* pFnMatchQueueJoin = NULL;
 
     if ( ! pFnMatchQueueJoin )
-        pFnMatchQueueJoin = (UFunction*) UObject::GObjObjects()->Data[ 115985 ];
+        pFnMatchQueueJoin = (UFunction*) UObject::GObjObjects()->Data[ 115984 ];
 
     UTrQueueManager_execMatchQueueJoin_Parms MatchQueueJoin_Parms;
     MatchQueueJoin_Parms.Queue = Queue;
@@ -52124,7 +52124,7 @@ bool UTrQueueManager::CustomLogin ( struct FString Password )
     static UFunction* pFnCustomLogin = NULL;
 
     if ( ! pFnCustomLogin )
-        pFnCustomLogin = (UFunction*) UObject::GObjObjects()->Data[ 102826 ];
+        pFnCustomLogin = (UFunction*) UObject::GObjObjects()->Data[ 102825 ];
 
     UTrQueueManager_execCustomLogin_Parms CustomLogin_Parms;
     memcpy ( &CustomLogin_Parms.Password, &Password, 0xC );
@@ -52259,7 +52259,7 @@ bool UTrQueueManager::SetLocalName ( struct FString val )
     static UFunction* pFnSetLocalName = NULL;
 
     if ( ! pFnSetLocalName )
-        pFnSetLocalName = (UFunction*) UObject::GObjObjects()->Data[ 115969 ];
+        pFnSetLocalName = (UFunction*) UObject::GObjObjects()->Data[ 115968 ];
 
     UTrQueueManager_execSetLocalName_Parms SetLocalName_Parms;
     memcpy ( &SetLocalName_Parms.val, &val, 0xC );
@@ -52343,7 +52343,7 @@ struct FString UTrQueueManager::GetPropString ( int PropId, int PropType )
     static UFunction* pFnGetPropString = NULL;
 
     if ( ! pFnGetPropString )
-        pFnGetPropString = (UFunction*) UObject::GObjObjects()->Data[ 115959 ];
+        pFnGetPropString = (UFunction*) UObject::GObjObjects()->Data[ 115958 ];
 
     UTrQueueManager_execGetPropString_Parms GetPropString_Parms;
     GetPropString_Parms.PropId = PropId;
@@ -52449,7 +52449,7 @@ void UTrQueueManager::RequestServerDetail ( int Id )
     static UFunction* pFnRequestServerDetail = NULL;
 
     if ( ! pFnRequestServerDetail )
-        pFnRequestServerDetail = (UFunction*) UObject::GObjObjects()->Data[ 115952 ];
+        pFnRequestServerDetail = (UFunction*) UObject::GObjObjects()->Data[ 115951 ];
 
     UTrQueueManager_execRequestServerDetail_Parms RequestServerDetail_Parms;
     RequestServerDetail_Parms.Id = Id;
@@ -52470,7 +52470,7 @@ void UTrQueueManager::RefreshRentedServers ( )
     static UFunction* pFnRefreshRentedServers = NULL;
 
     if ( ! pFnRefreshRentedServers )
-        pFnRefreshRentedServers = (UFunction*) UObject::GObjObjects()->Data[ 115951 ];
+        pFnRefreshRentedServers = (UFunction*) UObject::GObjObjects()->Data[ 115950 ];
 
     UTrQueueManager_execRefreshRentedServers_Parms RefreshRentedServers_Parms;
 
@@ -52490,7 +52490,7 @@ void UTrQueueManager::RequestCustomServers ( )
     static UFunction* pFnRequestCustomServers = NULL;
 
     if ( ! pFnRequestCustomServers )
-        pFnRequestCustomServers = (UFunction*) UObject::GObjObjects()->Data[ 115950 ];
+        pFnRequestCustomServers = (UFunction*) UObject::GObjObjects()->Data[ 115949 ];
 
     UTrQueueManager_execRequestCustomServers_Parms RequestCustomServers_Parms;
 
@@ -52510,7 +52510,7 @@ void UTrQueueManager::GetCustomServers ( )
     static UFunction* pFnGetCustomServers = NULL;
 
     if ( ! pFnGetCustomServers )
-        pFnGetCustomServers = (UFunction*) UObject::GObjObjects()->Data[ 115949 ];
+        pFnGetCustomServers = (UFunction*) UObject::GObjObjects()->Data[ 115948 ];
 
     UTrQueueManager_execGetCustomServers_Parms GetCustomServers_Parms;
 
@@ -52531,7 +52531,7 @@ void UTrQueueManager::OpenLocal ( struct FString URL )
     static UFunction* pFnOpenLocal = NULL;
 
     if ( ! pFnOpenLocal )
-        pFnOpenLocal = (UFunction*) UObject::GObjObjects()->Data[ 115947 ];
+        pFnOpenLocal = (UFunction*) UObject::GObjObjects()->Data[ 115946 ];
 
     UTrQueueManager_execOpenLocal_Parms OpenLocal_Parms;
     memcpy ( &OpenLocal_Parms.URL, &URL, 0xC );
@@ -52552,7 +52552,7 @@ void UTrQueueManager::ForceGoHome ( )
     static UFunction* pFnForceGoHome = NULL;
 
     if ( ! pFnForceGoHome )
-        pFnForceGoHome = (UFunction*) UObject::GObjObjects()->Data[ 115946 ];
+        pFnForceGoHome = (UFunction*) UObject::GObjObjects()->Data[ 115945 ];
 
     UTrQueueManager_execForceGoHome_Parms ForceGoHome_Parms;
 
@@ -52574,7 +52574,7 @@ void UTrRegionSettings::AddSetting ( struct FName regionName, int Id )
     static UFunction* pFnAddSetting = NULL;
 
     if ( ! pFnAddSetting )
-        pFnAddSetting = (UFunction*) UObject::GObjObjects()->Data[ 116997 ];
+        pFnAddSetting = (UFunction*) UObject::GObjObjects()->Data[ 116996 ];
 
     UTrRegionSettings_execAddSetting_Parms AddSetting_Parms;
     memcpy ( &AddSetting_Parms.regionName, &regionName, 0x8 );
@@ -52595,7 +52595,7 @@ void UTrRegionSettings::eventAddRegion ( struct FString regionName, int Id, unsi
     static UFunction* pFnAddRegion = NULL;
 
     if ( ! pFnAddRegion )
-        pFnAddRegion = (UFunction*) UObject::GObjObjects()->Data[ 116991 ];
+        pFnAddRegion = (UFunction*) UObject::GObjObjects()->Data[ 116990 ];
 
     UTrRegionSettings_eventAddRegion_Parms AddRegion_Parms;
     memcpy ( &AddRegion_Parms.regionName, &regionName, 0xC );
@@ -52615,7 +52615,7 @@ void UTrRegionSettings::SetPreferredRegion ( int Index )
     static UFunction* pFnSetPreferredRegion = NULL;
 
     if ( ! pFnSetPreferredRegion )
-        pFnSetPreferredRegion = (UFunction*) UObject::GObjObjects()->Data[ 116989 ];
+        pFnSetPreferredRegion = (UFunction*) UObject::GObjObjects()->Data[ 116988 ];
 
     UTrRegionSettings_execSetPreferredRegion_Parms SetPreferredRegion_Parms;
     SetPreferredRegion_Parms.Index = Index;
@@ -52715,7 +52715,7 @@ void UTrRegionSettings::LoadRegionLabels ( class UGFxObject* List )
     static UFunction* pFnLoadRegionLabels = NULL;
 
     if ( ! pFnLoadRegionLabels )
-        pFnLoadRegionLabels = (UFunction*) UObject::GObjObjects()->Data[ 116979 ];
+        pFnLoadRegionLabels = (UFunction*) UObject::GObjObjects()->Data[ 116978 ];
 
     UTrRegionSettings_execLoadRegionLabels_Parms LoadRegionLabels_Parms;
     LoadRegionLabels_Parms.List = List;
@@ -52733,7 +52733,7 @@ void UTrRegionSettings::SetPreferredSiteId ( int siteId )
     static UFunction* pFnSetPreferredSiteId = NULL;
 
     if ( ! pFnSetPreferredSiteId )
-        pFnSetPreferredSiteId = (UFunction*) UObject::GObjObjects()->Data[ 116977 ];
+        pFnSetPreferredSiteId = (UFunction*) UObject::GObjObjects()->Data[ 116976 ];
 
     UTrRegionSettings_execSetPreferredSiteId_Parms SetPreferredSiteId_Parms;
     SetPreferredSiteId_Parms.siteId = siteId;
@@ -52777,7 +52777,7 @@ void UTrRegionSettings::LoadRegions ( )
     static UFunction* pFnLoadRegions = NULL;
 
     if ( ! pFnLoadRegions )
-        pFnLoadRegions = (UFunction*) UObject::GObjObjects()->Data[ 116976 ];
+        pFnLoadRegions = (UFunction*) UObject::GObjObjects()->Data[ 116975 ];
 
     UTrRegionSettings_execLoadRegions_Parms LoadRegions_Parms;
 
@@ -52801,7 +52801,7 @@ bool ATrServerSettingsInfo::IsWeaponAllowed ( int ClassId, unsigned char Slot, i
     static UFunction* pFnIsWeaponAllowed = NULL;
 
     if ( ! pFnIsWeaponAllowed )
-        pFnIsWeaponAllowed = (UFunction*) UObject::GObjObjects()->Data[ 106927 ];
+        pFnIsWeaponAllowed = (UFunction*) UObject::GObjObjects()->Data[ 106926 ];
 
     ATrServerSettingsInfo_execIsWeaponAllowed_Parms IsWeaponAllowed_Parms;
     IsWeaponAllowed_Parms.ClassId = ClassId;
@@ -52846,7 +52846,7 @@ bool ATrServerSettingsInfo::IsClassAllowed ( unsigned char ClassType, int Curren
     static UFunction* pFnIsClassAllowed = NULL;
 
     if ( ! pFnIsClassAllowed )
-        pFnIsClassAllowed = (UFunction*) UObject::GObjObjects()->Data[ 94728 ];
+        pFnIsClassAllowed = (UFunction*) UObject::GObjObjects()->Data[ 94727 ];
 
     ATrServerSettingsInfo_execIsClassAllowed_Parms IsClassAllowed_Parms;
     IsClassAllowed_Parms.ClassType = ClassType;
@@ -52868,7 +52868,7 @@ bool ATrServerSettingsInfo::IsCallinAllowed ( int Index )
     static UFunction* pFnIsCallinAllowed = NULL;
 
     if ( ! pFnIsCallinAllowed )
-        pFnIsCallinAllowed = (UFunction*) UObject::GObjObjects()->Data[ 118913 ];
+        pFnIsCallinAllowed = (UFunction*) UObject::GObjObjects()->Data[ 118912 ];
 
     ATrServerSettingsInfo_execIsCallinAllowed_Parms IsCallinAllowed_Parms;
     IsCallinAllowed_Parms.Index = Index;
@@ -52889,7 +52889,7 @@ float ATrServerSettingsInfo::GetVehicleTime ( int Index )
     static UFunction* pFnGetVehicleTime = NULL;
 
     if ( ! pFnGetVehicleTime )
-        pFnGetVehicleTime = (UFunction*) UObject::GObjObjects()->Data[ 118910 ];
+        pFnGetVehicleTime = (UFunction*) UObject::GObjObjects()->Data[ 118909 ];
 
     ATrServerSettingsInfo_execGetVehicleTime_Parms GetVehicleTime_Parms;
     GetVehicleTime_Parms.Index = Index;
@@ -52910,7 +52910,7 @@ int ATrServerSettingsInfo::GetVehicleLimit ( int Index )
     static UFunction* pFnGetVehicleLimit = NULL;
 
     if ( ! pFnGetVehicleLimit )
-        pFnGetVehicleLimit = (UFunction*) UObject::GObjObjects()->Data[ 118907 ];
+        pFnGetVehicleLimit = (UFunction*) UObject::GObjObjects()->Data[ 118906 ];
 
     ATrServerSettingsInfo_execGetVehicleLimit_Parms GetVehicleLimit_Parms;
     GetVehicleLimit_Parms.Index = Index;
@@ -52929,7 +52929,7 @@ void ATrServerSettingsInfo::eventLoadServerSettings ( )
     static UFunction* pFnLoadServerSettings = NULL;
 
     if ( ! pFnLoadServerSettings )
-        pFnLoadServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 118905 ];
+        pFnLoadServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 118904 ];
 
     ATrServerSettingsInfo_eventLoadServerSettings_Parms LoadServerSettings_Parms;
 
@@ -52945,7 +52945,7 @@ void ATrServerSettingsInfo::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 118904 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 118903 ];
 
     ATrServerSettingsInfo_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -52968,7 +52968,7 @@ bool ATrServerSettingsInfo::GetPropAsString ( int PropId, struct FString* Value 
     static UFunction* pFnGetPropAsString = NULL;
 
     if ( ! pFnGetPropAsString )
-        pFnGetPropAsString = (UFunction*) UObject::GObjObjects()->Data[ 118900 ];
+        pFnGetPropAsString = (UFunction*) UObject::GObjObjects()->Data[ 118899 ];
 
     ATrServerSettingsInfo_execGetPropAsString_Parms GetPropAsString_Parms;
     GetPropAsString_Parms.PropId = PropId;
@@ -52997,7 +52997,7 @@ bool ATrServerSettingsInfo::GetPropAsInt ( int PropId, int* Value )
     static UFunction* pFnGetPropAsInt = NULL;
 
     if ( ! pFnGetPropAsInt )
-        pFnGetPropAsInt = (UFunction*) UObject::GObjObjects()->Data[ 118896 ];
+        pFnGetPropAsInt = (UFunction*) UObject::GObjObjects()->Data[ 118895 ];
 
     ATrServerSettingsInfo_execGetPropAsInt_Parms GetPropAsInt_Parms;
     GetPropAsInt_Parms.PropId = PropId;
@@ -53026,7 +53026,7 @@ bool ATrServerSettingsInfo::GetPropAsFloat ( int PropId, float* Value )
     static UFunction* pFnGetPropAsFloat = NULL;
 
     if ( ! pFnGetPropAsFloat )
-        pFnGetPropAsFloat = (UFunction*) UObject::GObjObjects()->Data[ 118892 ];
+        pFnGetPropAsFloat = (UFunction*) UObject::GObjObjects()->Data[ 118891 ];
 
     ATrServerSettingsInfo_execGetPropAsFloat_Parms GetPropAsFloat_Parms;
     GetPropAsFloat_Parms.PropId = PropId;
@@ -53055,7 +53055,7 @@ void UTrSkelControl_SpinControl::SpinToTargetRotation ( struct FRotator TargetRo
     static UFunction* pFnSpinToTargetRotation = NULL;
 
     if ( ! pFnSpinToTargetRotation )
-        pFnSpinToTargetRotation = (UFunction*) UObject::GObjObjects()->Data[ 118952 ];
+        pFnSpinToTargetRotation = (UFunction*) UObject::GObjObjects()->Data[ 118951 ];
 
     UTrSkelControl_SpinControl_execSpinToTargetRotation_Parms SpinToTargetRotation_Parms;
     memcpy ( &SpinToTargetRotation_Parms.TargetRotation, &TargetRotation, 0xC );
@@ -53079,7 +53079,7 @@ void UTrSkelControl_SpinControl::Spin ( unsigned long bEnabled )
     static UFunction* pFnSpin = NULL;
 
     if ( ! pFnSpin )
-        pFnSpin = (UFunction*) UObject::GObjObjects()->Data[ 118950 ];
+        pFnSpin = (UFunction*) UObject::GObjObjects()->Data[ 118949 ];
 
     UTrSkelControl_SpinControl_execSpin_Parms Spin_Parms;
     Spin_Parms.bEnabled = bEnabled;
@@ -53101,7 +53101,7 @@ void UTrSkeletalMeshComponent::SetFOV ( float NewFOV )
     static UFunction* pFnSetFOV = NULL;
 
     if ( ! pFnSetFOV )
-        pFnSetFOV = (UFunction*) UObject::GObjObjects()->Data[ 118992 ];
+        pFnSetFOV = (UFunction*) UObject::GObjObjects()->Data[ 118991 ];
 
     UTrSkeletalMeshComponent_execSetFOV_Parms SetFOV_Parms;
     SetFOV_Parms.NewFOV = NewFOV;
@@ -53124,7 +53124,7 @@ void UTrSkeletalMeshComponent::eventPreloadTextures ( unsigned long bForcePreloa
     static UFunction* pFnPreloadTextures = NULL;
 
     if ( ! pFnPreloadTextures )
-        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 118988 ];
+        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 118987 ];
 
     UTrSkeletalMeshComponent_eventPreloadTextures_Parms PreloadTextures_Parms;
     PreloadTextures_Parms.bForcePreload = bForcePreload;
@@ -53143,7 +53143,7 @@ struct FLinearColor ATrSpottedTarget::GetMarkerColor ( )
     static UFunction* pFnGetMarkerColor = NULL;
 
     if ( ! pFnGetMarkerColor )
-        pFnGetMarkerColor = (UFunction*) UObject::GObjObjects()->Data[ 119150 ];
+        pFnGetMarkerColor = (UFunction*) UObject::GObjObjects()->Data[ 119149 ];
 
     ATrSpottedTarget_execGetMarkerColor_Parms GetMarkerColor_Parms;
 
@@ -53162,7 +53162,7 @@ class UTexture2D* ATrSpottedTarget::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 119148 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 119147 ];
 
     ATrSpottedTarget_execGetMarker_Parms GetMarker_Parms;
 
@@ -53181,7 +53181,7 @@ bool ATrSpottedTarget::ShouldRenderMarker ( )
     static UFunction* pFnShouldRenderMarker = NULL;
 
     if ( ! pFnShouldRenderMarker )
-        pFnShouldRenderMarker = (UFunction*) UObject::GObjObjects()->Data[ 119146 ];
+        pFnShouldRenderMarker = (UFunction*) UObject::GObjObjects()->Data[ 119145 ];
 
     ATrSpottedTarget_execShouldRenderMarker_Parms ShouldRenderMarker_Parms;
 
@@ -53203,7 +53203,7 @@ void ATrSpottedTarget::eventPostRenderFor ( class APlayerController* PC, class U
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119136 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119135 ];
 
     ATrSpottedTarget_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -53224,7 +53224,7 @@ void ATrSpottedTarget::SetSpottedActor ( class AActor* NewSpottedActor )
     static UFunction* pFnSetSpottedActor = NULL;
 
     if ( ! pFnSetSpottedActor )
-        pFnSetSpottedActor = (UFunction*) UObject::GObjObjects()->Data[ 119134 ];
+        pFnSetSpottedActor = (UFunction*) UObject::GObjObjects()->Data[ 119133 ];
 
     ATrSpottedTarget_execSetSpottedActor_Parms SetSpottedActor_Parms;
     SetSpottedActor_Parms.NewSpottedActor = NewSpottedActor;
@@ -53241,7 +53241,7 @@ void ATrSpottedTarget::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119132 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119131 ];
 
     ATrSpottedTarget_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -53258,7 +53258,7 @@ bool ATrSpottedTarget_MotionMine::ShouldRenderMarker ( )
     static UFunction* pFnShouldRenderMarker = NULL;
 
     if ( ! pFnShouldRenderMarker )
-        pFnShouldRenderMarker = (UFunction*) UObject::GObjObjects()->Data[ 119160 ];
+        pFnShouldRenderMarker = (UFunction*) UObject::GObjObjects()->Data[ 119159 ];
 
     ATrSpottedTarget_MotionMine_execShouldRenderMarker_Parms ShouldRenderMarker_Parms;
 
@@ -53277,7 +53277,7 @@ struct FLinearColor ATrSpottedTarget_MotionMine::GetMarkerColor ( )
     static UFunction* pFnGetMarkerColor = NULL;
 
     if ( ! pFnGetMarkerColor )
-        pFnGetMarkerColor = (UFunction*) UObject::GObjObjects()->Data[ 119158 ];
+        pFnGetMarkerColor = (UFunction*) UObject::GObjObjects()->Data[ 119157 ];
 
     ATrSpottedTarget_MotionMine_execGetMarkerColor_Parms GetMarkerColor_Parms;
 
@@ -53296,7 +53296,7 @@ class UTexture2D* ATrSpottedTarget_MotionMine::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 119156 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 119155 ];
 
     ATrSpottedTarget_MotionMine_execGetMarker_Parms GetMarker_Parms;
 
@@ -53315,7 +53315,7 @@ void ATrSpottedTarget_MotionMine::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119154 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119153 ];
 
     ATrSpottedTarget_MotionMine_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -53332,7 +53332,7 @@ void UTrStatsInterface::Flush ( )
     static UFunction* pFnFlush = NULL;
 
     if ( ! pFnFlush )
-        pFnFlush = (UFunction*) UObject::GObjObjects()->Data[ 119305 ];
+        pFnFlush = (UFunction*) UObject::GObjObjects()->Data[ 119304 ];
 
     UTrStatsInterface_execFlush_Parms Flush_Parms;
 
@@ -53352,7 +53352,7 @@ void UTrStatsInterface::GameEnd ( )
     static UFunction* pFnGameEnd = NULL;
 
     if ( ! pFnGameEnd )
-        pFnGameEnd = (UFunction*) UObject::GObjObjects()->Data[ 119304 ];
+        pFnGameEnd = (UFunction*) UObject::GObjObjects()->Data[ 119303 ];
 
     UTrStatsInterface_execGameEnd_Parms GameEnd_Parms;
 
@@ -53373,7 +53373,7 @@ void UTrStatsInterface::WritePlayerStats ( TArray< class APlayerReplicationInfo*
     static UFunction* pFnWritePlayerStats = NULL;
 
     if ( ! pFnWritePlayerStats )
-        pFnWritePlayerStats = (UFunction*) UObject::GObjObjects()->Data[ 119301 ];
+        pFnWritePlayerStats = (UFunction*) UObject::GObjObjects()->Data[ 119300 ];
 
     UTrStatsInterface_execWritePlayerStats_Parms WritePlayerStats_Parms;
     memcpy ( &WritePlayerStats_Parms.PRIArray, &PRIArray, 0xC );
@@ -53394,7 +53394,7 @@ void UTrStatsInterface::WriteMatchStats ( )
     static UFunction* pFnWriteMatchStats = NULL;
 
     if ( ! pFnWriteMatchStats )
-        pFnWriteMatchStats = (UFunction*) UObject::GObjObjects()->Data[ 119300 ];
+        pFnWriteMatchStats = (UFunction*) UObject::GObjObjects()->Data[ 119299 ];
 
     UTrStatsInterface_execWriteMatchStats_Parms WriteMatchStats_Parms;
 
@@ -53414,7 +53414,7 @@ void UTrStatsInterface::AddGeneratorDestruction ( )
     static UFunction* pFnAddGeneratorDestruction = NULL;
 
     if ( ! pFnAddGeneratorDestruction )
-        pFnAddGeneratorDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119299 ];
+        pFnAddGeneratorDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119298 ];
 
     UTrStatsInterface_execAddGeneratorDestruction_Parms AddGeneratorDestruction_Parms;
 
@@ -53434,7 +53434,7 @@ void UTrStatsInterface::AddVehicleSpawn ( )
     static UFunction* pFnAddVehicleSpawn = NULL;
 
     if ( ! pFnAddVehicleSpawn )
-        pFnAddVehicleSpawn = (UFunction*) UObject::GObjObjects()->Data[ 119298 ];
+        pFnAddVehicleSpawn = (UFunction*) UObject::GObjObjects()->Data[ 119297 ];
 
     UTrStatsInterface_execAddVehicleSpawn_Parms AddVehicleSpawn_Parms;
 
@@ -53456,7 +53456,7 @@ void UTrStatsInterface::TrackPlayerMovement ( class ATrPlayerController* PC, int
     static UFunction* pFnTrackPlayerMovement = NULL;
 
     if ( ! pFnTrackPlayerMovement )
-        pFnTrackPlayerMovement = (UFunction*) UObject::GObjObjects()->Data[ 119295 ];
+        pFnTrackPlayerMovement = (UFunction*) UObject::GObjObjects()->Data[ 119294 ];
 
     UTrStatsInterface_execTrackPlayerMovement_Parms TrackPlayerMovement_Parms;
     TrackPlayerMovement_Parms.PC = PC;
@@ -53479,7 +53479,7 @@ void UTrStatsInterface::BaseUpgrade ( class ATrPlayerController* PC )
     static UFunction* pFnBaseUpgrade = NULL;
 
     if ( ! pFnBaseUpgrade )
-        pFnBaseUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 119293 ];
+        pFnBaseUpgrade = (UFunction*) UObject::GObjObjects()->Data[ 119292 ];
 
     UTrStatsInterface_execBaseUpgrade_Parms BaseUpgrade_Parms;
     BaseUpgrade_Parms.PC = PC;
@@ -53502,7 +53502,7 @@ void UTrStatsInterface::SkiSpeed ( class ATrPlayerController* PC, int Speed )
     static UFunction* pFnSkiSpeed = NULL;
 
     if ( ! pFnSkiSpeed )
-        pFnSkiSpeed = (UFunction*) UObject::GObjObjects()->Data[ 119290 ];
+        pFnSkiSpeed = (UFunction*) UObject::GObjObjects()->Data[ 119289 ];
 
     UTrStatsInterface_execSkiSpeed_Parms SkiSpeed_Parms;
     SkiSpeed_Parms.PC = PC;
@@ -53525,7 +53525,7 @@ void UTrStatsInterface::InvStationVisited ( class ATrPlayerController* PC )
     static UFunction* pFnInvStationVisited = NULL;
 
     if ( ! pFnInvStationVisited )
-        pFnInvStationVisited = (UFunction*) UObject::GObjObjects()->Data[ 119288 ];
+        pFnInvStationVisited = (UFunction*) UObject::GObjObjects()->Data[ 119287 ];
 
     UTrStatsInterface_execInvStationVisited_Parms InvStationVisited_Parms;
     InvStationVisited_Parms.PC = PC;
@@ -53547,7 +53547,7 @@ void UTrStatsInterface::VEHICLEKILL ( class ATrPlayerController* PC )
     static UFunction* pFnVEHICLEKILL = NULL;
 
     if ( ! pFnVEHICLEKILL )
-        pFnVEHICLEKILL = (UFunction*) UObject::GObjObjects()->Data[ 119286 ];
+        pFnVEHICLEKILL = (UFunction*) UObject::GObjObjects()->Data[ 119285 ];
 
     UTrStatsInterface_execVEHICLEKILL_Parms VEHICLEKILL_Parms;
     VEHICLEKILL_Parms.PC = PC;
@@ -53570,7 +53570,7 @@ void UTrStatsInterface::FlagGrabSpeed ( class ATrPlayerController* PC, int Speed
     static UFunction* pFnFlagGrabSpeed = NULL;
 
     if ( ! pFnFlagGrabSpeed )
-        pFnFlagGrabSpeed = (UFunction*) UObject::GObjObjects()->Data[ 119283 ];
+        pFnFlagGrabSpeed = (UFunction*) UObject::GObjObjects()->Data[ 119282 ];
 
     UTrStatsInterface_execFlagGrabSpeed_Parms FlagGrabSpeed_Parms;
     FlagGrabSpeed_Parms.PC = PC;
@@ -53593,7 +53593,7 @@ void UTrStatsInterface::RegeneratedToFull ( class ATrPlayerController* PC )
     static UFunction* pFnRegeneratedToFull = NULL;
 
     if ( ! pFnRegeneratedToFull )
-        pFnRegeneratedToFull = (UFunction*) UObject::GObjObjects()->Data[ 119281 ];
+        pFnRegeneratedToFull = (UFunction*) UObject::GObjObjects()->Data[ 119280 ];
 
     UTrStatsInterface_execRegeneratedToFull_Parms RegeneratedToFull_Parms;
     RegeneratedToFull_Parms.PC = PC;
@@ -53615,7 +53615,7 @@ void UTrStatsInterface::CallInKill ( class ATrPlayerController* PC )
     static UFunction* pFnCallInKill = NULL;
 
     if ( ! pFnCallInKill )
-        pFnCallInKill = (UFunction*) UObject::GObjObjects()->Data[ 119279 ];
+        pFnCallInKill = (UFunction*) UObject::GObjObjects()->Data[ 119278 ];
 
     UTrStatsInterface_execCallInKill_Parms CallInKill_Parms;
     CallInKill_Parms.PC = PC;
@@ -53637,7 +53637,7 @@ void UTrStatsInterface::CallIn ( class ATrPlayerController* PC )
     static UFunction* pFnCallIn = NULL;
 
     if ( ! pFnCallIn )
-        pFnCallIn = (UFunction*) UObject::GObjObjects()->Data[ 119277 ];
+        pFnCallIn = (UFunction*) UObject::GObjObjects()->Data[ 119276 ];
 
     UTrStatsInterface_execCallIn_Parms CallIn_Parms;
     CallIn_Parms.PC = PC;
@@ -53659,7 +53659,7 @@ void UTrStatsInterface::BeltKill ( class ATrPlayerController* PC )
     static UFunction* pFnBeltKill = NULL;
 
     if ( ! pFnBeltKill )
-        pFnBeltKill = (UFunction*) UObject::GObjObjects()->Data[ 119275 ];
+        pFnBeltKill = (UFunction*) UObject::GObjObjects()->Data[ 119274 ];
 
     UTrStatsInterface_execBeltKill_Parms BeltKill_Parms;
     BeltKill_Parms.PC = PC;
@@ -53682,7 +53682,7 @@ void UTrStatsInterface::SkiDistance ( class ATrPlayerController* PC, int Distanc
     static UFunction* pFnSkiDistance = NULL;
 
     if ( ! pFnSkiDistance )
-        pFnSkiDistance = (UFunction*) UObject::GObjObjects()->Data[ 119272 ];
+        pFnSkiDistance = (UFunction*) UObject::GObjObjects()->Data[ 119271 ];
 
     UTrStatsInterface_execSkiDistance_Parms SkiDistance_Parms;
     SkiDistance_Parms.PC = PC;
@@ -53705,7 +53705,7 @@ void UTrStatsInterface::FallingDeath ( class ATrPlayerController* PC )
     static UFunction* pFnFallingDeath = NULL;
 
     if ( ! pFnFallingDeath )
-        pFnFallingDeath = (UFunction*) UObject::GObjObjects()->Data[ 119270 ];
+        pFnFallingDeath = (UFunction*) UObject::GObjObjects()->Data[ 119269 ];
 
     UTrStatsInterface_execFallingDeath_Parms FallingDeath_Parms;
     FallingDeath_Parms.PC = PC;
@@ -53728,7 +53728,7 @@ void UTrStatsInterface::SetDistanceHeadshot ( class ATrPlayerController* PC, int
     static UFunction* pFnSetDistanceHeadshot = NULL;
 
     if ( ! pFnSetDistanceHeadshot )
-        pFnSetDistanceHeadshot = (UFunction*) UObject::GObjObjects()->Data[ 119267 ];
+        pFnSetDistanceHeadshot = (UFunction*) UObject::GObjObjects()->Data[ 119266 ];
 
     UTrStatsInterface_execSetDistanceHeadshot_Parms SetDistanceHeadshot_Parms;
     SetDistanceHeadshot_Parms.PC = PC;
@@ -53752,7 +53752,7 @@ void UTrStatsInterface::SetSpeedFlagGrab ( class ATrPlayerController* PC, int va
     static UFunction* pFnSetSpeedFlagGrab = NULL;
 
     if ( ! pFnSetSpeedFlagGrab )
-        pFnSetSpeedFlagGrab = (UFunction*) UObject::GObjObjects()->Data[ 119264 ];
+        pFnSetSpeedFlagGrab = (UFunction*) UObject::GObjObjects()->Data[ 119263 ];
 
     UTrStatsInterface_execSetSpeedFlagGrab_Parms SetSpeedFlagGrab_Parms;
     SetSpeedFlagGrab_Parms.PC = PC;
@@ -53776,7 +53776,7 @@ void UTrStatsInterface::AddDistanceSkied ( class ATrPlayerController* PC, int va
     static UFunction* pFnAddDistanceSkied = NULL;
 
     if ( ! pFnAddDistanceSkied )
-        pFnAddDistanceSkied = (UFunction*) UObject::GObjObjects()->Data[ 119261 ];
+        pFnAddDistanceSkied = (UFunction*) UObject::GObjObjects()->Data[ 119260 ];
 
     UTrStatsInterface_execAddDistanceSkied_Parms AddDistanceSkied_Parms;
     AddDistanceSkied_Parms.PC = PC;
@@ -53800,7 +53800,7 @@ void UTrStatsInterface::AddCreditsEarned ( class ATrPlayerController* PC, int va
     static UFunction* pFnAddCreditsEarned = NULL;
 
     if ( ! pFnAddCreditsEarned )
-        pFnAddCreditsEarned = (UFunction*) UObject::GObjObjects()->Data[ 119258 ];
+        pFnAddCreditsEarned = (UFunction*) UObject::GObjObjects()->Data[ 119257 ];
 
     UTrStatsInterface_execAddCreditsEarned_Parms AddCreditsEarned_Parms;
     AddCreditsEarned_Parms.PC = PC;
@@ -53824,7 +53824,7 @@ void UTrStatsInterface::SetSpeedFlagCap ( class ATrPlayerController* PC, int val
     static UFunction* pFnSetSpeedFlagCap = NULL;
 
     if ( ! pFnSetSpeedFlagCap )
-        pFnSetSpeedFlagCap = (UFunction*) UObject::GObjObjects()->Data[ 119255 ];
+        pFnSetSpeedFlagCap = (UFunction*) UObject::GObjObjects()->Data[ 119254 ];
 
     UTrStatsInterface_execSetSpeedFlagCap_Parms SetSpeedFlagCap_Parms;
     SetSpeedFlagCap_Parms.PC = PC;
@@ -53848,7 +53848,7 @@ void UTrStatsInterface::SetDistanceKill ( class ATrPlayerController* PC, int val
     static UFunction* pFnSetDistanceKill = NULL;
 
     if ( ! pFnSetDistanceKill )
-        pFnSetDistanceKill = (UFunction*) UObject::GObjObjects()->Data[ 119252 ];
+        pFnSetDistanceKill = (UFunction*) UObject::GObjObjects()->Data[ 119251 ];
 
     UTrStatsInterface_execSetDistanceKill_Parms SetDistanceKill_Parms;
     SetDistanceKill_Parms.PC = PC;
@@ -53872,7 +53872,7 @@ void UTrStatsInterface::AddCreditsSpent ( class ATrPlayerController* PC, int val
     static UFunction* pFnAddCreditsSpent = NULL;
 
     if ( ! pFnAddCreditsSpent )
-        pFnAddCreditsSpent = (UFunction*) UObject::GObjObjects()->Data[ 119249 ];
+        pFnAddCreditsSpent = (UFunction*) UObject::GObjObjects()->Data[ 119248 ];
 
     UTrStatsInterface_execAddCreditsSpent_Parms AddCreditsSpent_Parms;
     AddCreditsSpent_Parms.PC = PC;
@@ -53895,7 +53895,7 @@ void UTrStatsInterface::AddDeployableDestruction ( class ATrPlayerController* PC
     static UFunction* pFnAddDeployableDestruction = NULL;
 
     if ( ! pFnAddDeployableDestruction )
-        pFnAddDeployableDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119247 ];
+        pFnAddDeployableDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119246 ];
 
     UTrStatsInterface_execAddDeployableDestruction_Parms AddDeployableDestruction_Parms;
     AddDeployableDestruction_Parms.PC = PC;
@@ -53918,7 +53918,7 @@ void UTrStatsInterface::SetSpeedSkied ( class ATrPlayerController* PC, int val )
     static UFunction* pFnSetSpeedSkied = NULL;
 
     if ( ! pFnSetSpeedSkied )
-        pFnSetSpeedSkied = (UFunction*) UObject::GObjObjects()->Data[ 119244 ];
+        pFnSetSpeedSkied = (UFunction*) UObject::GObjObjects()->Data[ 119243 ];
 
     UTrStatsInterface_execSetSpeedSkied_Parms SetSpeedSkied_Parms;
     SetSpeedSkied_Parms.PC = PC;
@@ -53941,7 +53941,7 @@ void UTrStatsInterface::AddVehicleDestruction ( class ATrPlayerController* PC )
     static UFunction* pFnAddVehicleDestruction = NULL;
 
     if ( ! pFnAddVehicleDestruction )
-        pFnAddVehicleDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119242 ];
+        pFnAddVehicleDestruction = (UFunction*) UObject::GObjObjects()->Data[ 119241 ];
 
     UTrStatsInterface_execAddVehicleDestruction_Parms AddVehicleDestruction_Parms;
     AddVehicleDestruction_Parms.PC = PC;
@@ -53964,7 +53964,7 @@ void UTrStatsInterface::SetTeam ( class ATrPlayerController* PC, int TeamNum )
     static UFunction* pFnSetTeam = NULL;
 
     if ( ! pFnSetTeam )
-        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 119239 ];
+        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 119238 ];
 
     UTrStatsInterface_execSetTeam_Parms SetTeam_Parms;
     SetTeam_Parms.PC = PC;
@@ -53988,7 +53988,7 @@ void UTrStatsInterface::SetXP ( class ATrPlayerController* PC, int val )
     static UFunction* pFnSetXP = NULL;
 
     if ( ! pFnSetXP )
-        pFnSetXP = (UFunction*) UObject::GObjObjects()->Data[ 119236 ];
+        pFnSetXP = (UFunction*) UObject::GObjObjects()->Data[ 119235 ];
 
     UTrStatsInterface_execSetXP_Parms SetXP_Parms;
     SetXP_Parms.PC = PC;
@@ -54011,7 +54011,7 @@ void UTrStatsInterface::AddVehicleKill ( class ATrPlayerController* PC )
     static UFunction* pFnAddVehicleKill = NULL;
 
     if ( ! pFnAddVehicleKill )
-        pFnAddVehicleKill = (UFunction*) UObject::GObjObjects()->Data[ 119234 ];
+        pFnAddVehicleKill = (UFunction*) UObject::GObjObjects()->Data[ 119233 ];
 
     UTrStatsInterface_execAddVehicleKill_Parms AddVehicleKill_Parms;
     AddVehicleKill_Parms.PC = PC;
@@ -54033,7 +54033,7 @@ void UTrStatsInterface::AddMidairKill ( class ATrPlayerController* PC )
     static UFunction* pFnAddMidairKill = NULL;
 
     if ( ! pFnAddMidairKill )
-        pFnAddMidairKill = (UFunction*) UObject::GObjObjects()->Data[ 119232 ];
+        pFnAddMidairKill = (UFunction*) UObject::GObjObjects()->Data[ 119231 ];
 
     UTrStatsInterface_execAddMidairKill_Parms AddMidairKill_Parms;
     AddMidairKill_Parms.PC = PC;
@@ -54055,7 +54055,7 @@ void UTrStatsInterface::AddFlagReturn ( class ATrPlayerController* PC )
     static UFunction* pFnAddFlagReturn = NULL;
 
     if ( ! pFnAddFlagReturn )
-        pFnAddFlagReturn = (UFunction*) UObject::GObjObjects()->Data[ 119230 ];
+        pFnAddFlagReturn = (UFunction*) UObject::GObjObjects()->Data[ 119229 ];
 
     UTrStatsInterface_execAddFlagReturn_Parms AddFlagReturn_Parms;
     AddFlagReturn_Parms.PC = PC;
@@ -54077,7 +54077,7 @@ void UTrStatsInterface::AddFlagGrab ( class ATrPlayerController* PC )
     static UFunction* pFnAddFlagGrab = NULL;
 
     if ( ! pFnAddFlagGrab )
-        pFnAddFlagGrab = (UFunction*) UObject::GObjObjects()->Data[ 119228 ];
+        pFnAddFlagGrab = (UFunction*) UObject::GObjObjects()->Data[ 119227 ];
 
     UTrStatsInterface_execAddFlagGrab_Parms AddFlagGrab_Parms;
     AddFlagGrab_Parms.PC = PC;
@@ -54099,7 +54099,7 @@ void UTrStatsInterface::AddFlagCap ( class ATrPlayerController* PC )
     static UFunction* pFnAddFlagCap = NULL;
 
     if ( ! pFnAddFlagCap )
-        pFnAddFlagCap = (UFunction*) UObject::GObjObjects()->Data[ 119226 ];
+        pFnAddFlagCap = (UFunction*) UObject::GObjObjects()->Data[ 119225 ];
 
     UTrStatsInterface_execAddFlagCap_Parms AddFlagCap_Parms;
     AddFlagCap_Parms.PC = PC;
@@ -54121,7 +54121,7 @@ void UTrStatsInterface::AddRepair ( class ATrPlayerController* PC )
     static UFunction* pFnAddRepair = NULL;
 
     if ( ! pFnAddRepair )
-        pFnAddRepair = (UFunction*) UObject::GObjObjects()->Data[ 119224 ];
+        pFnAddRepair = (UFunction*) UObject::GObjObjects()->Data[ 119223 ];
 
     UTrStatsInterface_execAddRepair_Parms AddRepair_Parms;
     AddRepair_Parms.PC = PC;
@@ -54144,7 +54144,7 @@ void UTrStatsInterface::SetActiveClass ( class ATrPlayerController* PC, int Clas
     static UFunction* pFnSetActiveClass = NULL;
 
     if ( ! pFnSetActiveClass )
-        pFnSetActiveClass = (UFunction*) UObject::GObjObjects()->Data[ 119221 ];
+        pFnSetActiveClass = (UFunction*) UObject::GObjObjects()->Data[ 119220 ];
 
     UTrStatsInterface_execSetActiveClass_Parms SetActiveClass_Parms;
     SetActiveClass_Parms.PC = PC;
@@ -54167,7 +54167,7 @@ void UTrStatsInterface::SetIdentification ( class ATrPlayerController* PC )
     static UFunction* pFnSetIdentification = NULL;
 
     if ( ! pFnSetIdentification )
-        pFnSetIdentification = (UFunction*) UObject::GObjObjects()->Data[ 119219 ];
+        pFnSetIdentification = (UFunction*) UObject::GObjObjects()->Data[ 119218 ];
 
     UTrStatsInterface_execSetIdentification_Parms SetIdentification_Parms;
     SetIdentification_Parms.PC = PC;
@@ -54194,7 +54194,7 @@ void UTrStatsInterface::UpdateDamage ( class ATrPlayerController* PC, int Weapon
     static UFunction* pFnUpdateDamage = NULL;
 
     if ( ! pFnUpdateDamage )
-        pFnUpdateDamage = (UFunction*) UObject::GObjObjects()->Data[ 119212 ];
+        pFnUpdateDamage = (UFunction*) UObject::GObjObjects()->Data[ 119211 ];
 
     UTrStatsInterface_execUpdateDamage_Parms UpdateDamage_Parms;
     UpdateDamage_Parms.PC = PC;
@@ -54225,7 +54225,7 @@ void UTrStatsInterface::UpdateWeapon ( class ATrPlayerController* PC, int Weapon
     static UFunction* pFnUpdateWeapon = NULL;
 
     if ( ! pFnUpdateWeapon )
-        pFnUpdateWeapon = (UFunction*) UObject::GObjObjects()->Data[ 119206 ];
+        pFnUpdateWeapon = (UFunction*) UObject::GObjObjects()->Data[ 119205 ];
 
     UTrStatsInterface_execUpdateWeapon_Parms UpdateWeapon_Parms;
     UpdateWeapon_Parms.PC = PC;
@@ -54252,7 +54252,7 @@ void UTrStatsInterface::UpdateTimePlayed ( class ATrPlayerController* PC, int Ti
     static UFunction* pFnUpdateTimePlayed = NULL;
 
     if ( ! pFnUpdateTimePlayed )
-        pFnUpdateTimePlayed = (UFunction*) UObject::GObjObjects()->Data[ 119203 ];
+        pFnUpdateTimePlayed = (UFunction*) UObject::GObjObjects()->Data[ 119202 ];
 
     UTrStatsInterface_execUpdateTimePlayed_Parms UpdateTimePlayed_Parms;
     UpdateTimePlayed_Parms.PC = PC;
@@ -54278,7 +54278,7 @@ void UTrStatsInterface::AddCredits ( class ATrPlayerController* PC, int val, uns
     static UFunction* pFnAddCredits = NULL;
 
     if ( ! pFnAddCredits )
-        pFnAddCredits = (UFunction*) UObject::GObjObjects()->Data[ 119198 ];
+        pFnAddCredits = (UFunction*) UObject::GObjObjects()->Data[ 119197 ];
 
     UTrStatsInterface_execAddCredits_Parms AddCredits_Parms;
     AddCredits_Parms.PC = PC;
@@ -54305,7 +54305,7 @@ void UTrStatsInterface::AddAccolade ( class ATrPlayerController* PC, int Id, int
     static UFunction* pFnAddAccolade = NULL;
 
     if ( ! pFnAddAccolade )
-        pFnAddAccolade = (UFunction*) UObject::GObjObjects()->Data[ 119194 ];
+        pFnAddAccolade = (UFunction*) UObject::GObjObjects()->Data[ 119193 ];
 
     UTrStatsInterface_execAddAccolade_Parms AddAccolade_Parms;
     AddAccolade_Parms.PC = PC;
@@ -54329,7 +54329,7 @@ void UTrStatsInterface::AddAssist ( class ATrPlayerController* PC )
     static UFunction* pFnAddAssist = NULL;
 
     if ( ! pFnAddAssist )
-        pFnAddAssist = (UFunction*) UObject::GObjObjects()->Data[ 119192 ];
+        pFnAddAssist = (UFunction*) UObject::GObjObjects()->Data[ 119191 ];
 
     UTrStatsInterface_execAddAssist_Parms AddAssist_Parms;
     AddAssist_Parms.PC = PC;
@@ -54351,7 +54351,7 @@ void UTrStatsInterface::AddDeath ( class ATrPlayerController* PC )
     static UFunction* pFnAddDeath = NULL;
 
     if ( ! pFnAddDeath )
-        pFnAddDeath = (UFunction*) UObject::GObjObjects()->Data[ 119190 ];
+        pFnAddDeath = (UFunction*) UObject::GObjObjects()->Data[ 119189 ];
 
     UTrStatsInterface_execAddDeath_Parms AddDeath_Parms;
     AddDeath_Parms.PC = PC;
@@ -54373,7 +54373,7 @@ void UTrStatsInterface::AddKill ( class ATrPlayerController* PC )
     static UFunction* pFnAddKill = NULL;
 
     if ( ! pFnAddKill )
-        pFnAddKill = (UFunction*) UObject::GObjObjects()->Data[ 119188 ];
+        pFnAddKill = (UFunction*) UObject::GObjObjects()->Data[ 119187 ];
 
     UTrStatsInterface_execAddKill_Parms AddKill_Parms;
     AddKill_Parms.PC = PC;
@@ -54395,7 +54395,7 @@ void UTrStatsInterface::Initialize ( class UOnlineSubsystem* Sub )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119186 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119185 ];
 
     UTrStatsInterface_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.Sub = Sub;
@@ -54627,7 +54627,7 @@ int UTrStreamManager::ViewerSort ( struct FGameStream A, struct FGameStream B )
     static UFunction* pFnViewerSort = NULL;
 
     if ( ! pFnViewerSort )
-        pFnViewerSort = (UFunction*) UObject::GObjObjects()->Data[ 119504 ];
+        pFnViewerSort = (UFunction*) UObject::GObjObjects()->Data[ 119503 ];
 
     UTrStreamManager_execViewerSort_Parms ViewerSort_Parms;
     memcpy ( &ViewerSort_Parms.A, &A, 0x44 );
@@ -54647,7 +54647,7 @@ void UTrStreamManager::eventCompleteUpdate ( )
     static UFunction* pFnCompleteUpdate = NULL;
 
     if ( ! pFnCompleteUpdate )
-        pFnCompleteUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119536 ];
+        pFnCompleteUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119535 ];
 
     UTrStreamManager_eventCompleteUpdate_Parms CompleteUpdate_Parms;
 
@@ -54663,7 +54663,7 @@ void UTrStreamManager::GetLatestNews ( )
     static UFunction* pFnGetLatestNews = NULL;
 
     if ( ! pFnGetLatestNews )
-        pFnGetLatestNews = (UFunction*) UObject::GObjObjects()->Data[ 119533 ];
+        pFnGetLatestNews = (UFunction*) UObject::GObjObjects()->Data[ 119532 ];
 
     UTrStreamManager_execGetLatestNews_Parms GetLatestNews_Parms;
 
@@ -54680,7 +54680,7 @@ void UTrStreamManager::CheckForUpdate ( unsigned long bRunIfReady )
     static UFunction* pFnCheckForUpdate = NULL;
 
     if ( ! pFnCheckForUpdate )
-        pFnCheckForUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119531 ];
+        pFnCheckForUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119530 ];
 
     UTrStreamManager_execCheckForUpdate_Parms CheckForUpdate_Parms;
     CheckForUpdate_Parms.bRunIfReady = bRunIfReady;
@@ -54698,7 +54698,7 @@ void UTrStreamManager::eventUpdateStreams ( unsigned long bForce )
     static UFunction* pFnUpdateStreams = NULL;
 
     if ( ! pFnUpdateStreams )
-        pFnUpdateStreams = (UFunction*) UObject::GObjObjects()->Data[ 119529 ];
+        pFnUpdateStreams = (UFunction*) UObject::GObjObjects()->Data[ 119528 ];
 
     UTrStreamManager_eventUpdateStreams_Parms UpdateStreams_Parms;
     UpdateStreams_Parms.bForce = bForce;
@@ -54715,7 +54715,7 @@ void UTrStreamManager::StartTVTimer ( )
     static UFunction* pFnStartTVTimer = NULL;
 
     if ( ! pFnStartTVTimer )
-        pFnStartTVTimer = (UFunction*) UObject::GObjObjects()->Data[ 119527 ];
+        pFnStartTVTimer = (UFunction*) UObject::GObjObjects()->Data[ 119526 ];
 
     UTrStreamManager_execStartTVTimer_Parms StartTVTimer_Parms;
 
@@ -54732,7 +54732,7 @@ void UTrStreamManager::ViewVideoIndex ( int Index )
     static UFunction* pFnViewVideoIndex = NULL;
 
     if ( ! pFnViewVideoIndex )
-        pFnViewVideoIndex = (UFunction*) UObject::GObjObjects()->Data[ 119525 ];
+        pFnViewVideoIndex = (UFunction*) UObject::GObjObjects()->Data[ 119524 ];
 
     UTrStreamManager_execViewVideoIndex_Parms ViewVideoIndex_Parms;
     ViewVideoIndex_Parms.Index = Index;
@@ -54750,7 +54750,7 @@ void UTrStreamManager::ViewStreamIndex ( int Index )
     static UFunction* pFnViewStreamIndex = NULL;
 
     if ( ! pFnViewStreamIndex )
-        pFnViewStreamIndex = (UFunction*) UObject::GObjObjects()->Data[ 119523 ];
+        pFnViewStreamIndex = (UFunction*) UObject::GObjObjects()->Data[ 119522 ];
 
     UTrStreamManager_execViewStreamIndex_Parms ViewStreamIndex_Parms;
     ViewStreamIndex_Parms.Index = Index;
@@ -54767,7 +54767,7 @@ void UTrStreamManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119522 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119521 ];
 
     UTrStreamManager_execInitialize_Parms Initialize_Parms;
 
@@ -54784,7 +54784,7 @@ void UTrStreamManager::OpenStream ( struct FString URL )
     static UFunction* pFnOpenStream = NULL;
 
     if ( ! pFnOpenStream )
-        pFnOpenStream = (UFunction*) UObject::GObjObjects()->Data[ 119520 ];
+        pFnOpenStream = (UFunction*) UObject::GObjObjects()->Data[ 119519 ];
 
     UTrStreamManager_execOpenStream_Parms OpenStream_Parms;
     memcpy ( &OpenStream_Parms.URL, &URL, 0xC );
@@ -54805,7 +54805,7 @@ void UTrStreamManager::GetStreamData ( )
     static UFunction* pFnGetStreamData = NULL;
 
     if ( ! pFnGetStreamData )
-        pFnGetStreamData = (UFunction*) UObject::GObjObjects()->Data[ 119519 ];
+        pFnGetStreamData = (UFunction*) UObject::GObjObjects()->Data[ 119518 ];
 
     UTrStreamManager_execGetStreamData_Parms GetStreamData_Parms;
 
@@ -54825,7 +54825,7 @@ void UTrStreamManager::LoadStreams ( )
     static UFunction* pFnLoadStreams = NULL;
 
     if ( ! pFnLoadStreams )
-        pFnLoadStreams = (UFunction*) UObject::GObjObjects()->Data[ 119518 ];
+        pFnLoadStreams = (UFunction*) UObject::GObjObjects()->Data[ 119517 ];
 
     UTrStreamManager_execLoadStreams_Parms LoadStreams_Parms;
 
@@ -54955,7 +54955,7 @@ float UTrSummaryHelper::GetTieredWeight ( int AwardId, int val )
     static UFunction* pFnGetTieredWeight = NULL;
 
     if ( ! pFnGetTieredWeight )
-        pFnGetTieredWeight = (UFunction*) UObject::GObjObjects()->Data[ 119658 ];
+        pFnGetTieredWeight = (UFunction*) UObject::GObjObjects()->Data[ 119657 ];
 
     UTrSummaryHelper_execGetTieredWeight_Parms GetTieredWeight_Parms;
     GetTieredWeight_Parms.AwardId = AwardId;
@@ -54977,7 +54977,7 @@ int UTrSummaryHelper::GetMinTierValue ( int AwardId )
     static UFunction* pFnGetMinTierValue = NULL;
 
     if ( ! pFnGetMinTierValue )
-        pFnGetMinTierValue = (UFunction*) UObject::GObjObjects()->Data[ 119654 ];
+        pFnGetMinTierValue = (UFunction*) UObject::GObjObjects()->Data[ 119653 ];
 
     UTrSummaryHelper_execGetMinTierValue_Parms GetMinTierValue_Parms;
     GetMinTierValue_Parms.AwardId = AwardId;
@@ -55082,7 +55082,7 @@ void ATrTeamBlockerStaticMeshActor::CreateMICs ( )
     static UFunction* pFnCreateMICs = NULL;
 
     if ( ! pFnCreateMICs )
-        pFnCreateMICs = (UFunction*) UObject::GObjObjects()->Data[ 119700 ];
+        pFnCreateMICs = (UFunction*) UObject::GObjObjects()->Data[ 119699 ];
 
     ATrTeamBlockerStaticMeshActor_execCreateMICs_Parms CreateMICs_Parms;
 
@@ -55099,7 +55099,7 @@ void ATrTeamBlockerStaticMeshActor::UpdateMaterialForPawn ( class ATrPawn* P )
     static UFunction* pFnUpdateMaterialForPawn = NULL;
 
     if ( ! pFnUpdateMaterialForPawn )
-        pFnUpdateMaterialForPawn = (UFunction*) UObject::GObjObjects()->Data[ 119697 ];
+        pFnUpdateMaterialForPawn = (UFunction*) UObject::GObjObjects()->Data[ 119696 ];
 
     ATrTeamBlockerStaticMeshActor_execUpdateMaterialForPawn_Parms UpdateMaterialForPawn_Parms;
     UpdateMaterialForPawn_Parms.P = P;
@@ -55116,7 +55116,7 @@ void ATrTeamBlockerStaticMeshActor::EnableBlocking ( )
     static UFunction* pFnEnableBlocking = NULL;
 
     if ( ! pFnEnableBlocking )
-        pFnEnableBlocking = (UFunction*) UObject::GObjObjects()->Data[ 119696 ];
+        pFnEnableBlocking = (UFunction*) UObject::GObjObjects()->Data[ 119695 ];
 
     ATrTeamBlockerStaticMeshActor_execEnableBlocking_Parms EnableBlocking_Parms;
 
@@ -55132,7 +55132,7 @@ void ATrTeamBlockerStaticMeshActor::DisableBlocking ( )
     static UFunction* pFnDisableBlocking = NULL;
 
     if ( ! pFnDisableBlocking )
-        pFnDisableBlocking = (UFunction*) UObject::GObjObjects()->Data[ 119695 ];
+        pFnDisableBlocking = (UFunction*) UObject::GObjObjects()->Data[ 119694 ];
 
     ATrTeamBlockerStaticMeshActor_execDisableBlocking_Parms DisableBlocking_Parms;
 
@@ -55148,7 +55148,7 @@ void ATrTeamBlockerStaticMeshActor::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119694 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119693 ];
 
     ATrTeamBlockerStaticMeshActor_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -55168,7 +55168,7 @@ void ATrTripActor::eventTouch ( class AActor* Other, class UPrimitiveComponent* 
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119859 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119858 ];
 
     ATrTripActor_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -55189,7 +55189,7 @@ void ATrTripActor::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119856 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119855 ];
 
     ATrTripActor_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -55207,7 +55207,7 @@ void ATrTripActor::GoToSleep ( unsigned long bIsPowered )
     static UFunction* pFnGoToSleep = NULL;
 
     if ( ! pFnGoToSleep )
-        pFnGoToSleep = (UFunction*) UObject::GObjObjects()->Data[ 119854 ];
+        pFnGoToSleep = (UFunction*) UObject::GObjObjects()->Data[ 119853 ];
 
     ATrTripActor_execGoToSleep_Parms GoToSleep_Parms;
     GoToSleep_Parms.bIsPowered = bIsPowered;
@@ -55226,7 +55226,7 @@ void ATrTripActor::InitializeTripPhysics ( class UInterface_TrTripNotifier* Left
     static UFunction* pFnInitializeTripPhysics = NULL;
 
     if ( ! pFnInitializeTripPhysics )
-        pFnInitializeTripPhysics = (UFunction*) UObject::GObjObjects()->Data[ 119851 ];
+        pFnInitializeTripPhysics = (UFunction*) UObject::GObjObjects()->Data[ 119850 ];
 
     ATrTripActor_execInitializeTripPhysics_Parms InitializeTripPhysics_Parms;
     InitializeTripPhysics_Parms.Left = Left;
@@ -55244,7 +55244,7 @@ void ATrTripActor::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119850 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119849 ];
 
     ATrTripActor_execDestroyed_Parms Destroyed_Parms;
 
@@ -55261,7 +55261,7 @@ void ATrTripActor::DestroyNotify ( class UInterface_TrTripNotifier* Notifier )
     static UFunction* pFnDestroyNotify = NULL;
 
     if ( ! pFnDestroyNotify )
-        pFnDestroyNotify = (UFunction*) UObject::GObjObjects()->Data[ 119848 ];
+        pFnDestroyNotify = (UFunction*) UObject::GObjObjects()->Data[ 119847 ];
 
     ATrTripActor_execDestroyNotify_Parms DestroyNotify_Parms;
     DestroyNotify_Parms.Notifier = Notifier;
@@ -55278,7 +55278,7 @@ void ATrTripActor::ClientCreateVisualEffect ( )
     static UFunction* pFnClientCreateVisualEffect = NULL;
 
     if ( ! pFnClientCreateVisualEffect )
-        pFnClientCreateVisualEffect = (UFunction*) UObject::GObjObjects()->Data[ 119844 ];
+        pFnClientCreateVisualEffect = (UFunction*) UObject::GObjObjects()->Data[ 119843 ];
 
     ATrTripActor_execClientCreateVisualEffect_Parms ClientCreateVisualEffect_Parms;
 
@@ -55294,7 +55294,7 @@ void ATrTripActor::CreateTripComponent ( )
     static UFunction* pFnCreateTripComponent = NULL;
 
     if ( ! pFnCreateTripComponent )
-        pFnCreateTripComponent = (UFunction*) UObject::GObjObjects()->Data[ 119843 ];
+        pFnCreateTripComponent = (UFunction*) UObject::GObjObjects()->Data[ 119842 ];
 
     ATrTripActor_execCreateTripComponent_Parms CreateTripComponent_Parms;
 
@@ -55315,7 +55315,7 @@ void ATrTripActor::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 119841 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 119840 ];
 
     ATrTripActor_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -55353,7 +55353,7 @@ void UTrUser::RemoveLastRecentServer ( )
     static UFunction* pFnRemoveLastRecentServer = NULL;
 
     if ( ! pFnRemoveLastRecentServer )
-        pFnRemoveLastRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120074 ];
+        pFnRemoveLastRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120073 ];
 
     UTrUser_execRemoveLastRecentServer_Parms RemoveLastRecentServer_Parms;
 
@@ -55370,7 +55370,7 @@ int UTrUser::GetNextStamp ( )
     static UFunction* pFnGetNextStamp = NULL;
 
     if ( ! pFnGetNextStamp )
-        pFnGetNextStamp = (UFunction*) UObject::GObjObjects()->Data[ 120070 ];
+        pFnGetNextStamp = (UFunction*) UObject::GObjObjects()->Data[ 120069 ];
 
     UTrUser_execGetNextStamp_Parms GetNextStamp_Parms;
 
@@ -55390,7 +55390,7 @@ int UTrUser::GetNextRecentServer ( int LastId )
     static UFunction* pFnGetNextRecentServer = NULL;
 
     if ( ! pFnGetNextRecentServer )
-        pFnGetNextRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 116030 ];
+        pFnGetNextRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 116029 ];
 
     UTrUser_execGetNextRecentServer_Parms GetNextRecentServer_Parms;
     GetNextRecentServer_Parms.LastId = LastId;
@@ -55410,7 +55410,7 @@ int UTrUser::GetFirstRecentServer ( )
     static UFunction* pFnGetFirstRecentServer = NULL;
 
     if ( ! pFnGetFirstRecentServer )
-        pFnGetFirstRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 116028 ];
+        pFnGetFirstRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 116027 ];
 
     UTrUser_execGetFirstRecentServer_Parms GetFirstRecentServer_Parms;
 
@@ -55430,7 +55430,7 @@ bool UTrUser::IsRecentServer ( int ServerID )
     static UFunction* pFnIsRecentServer = NULL;
 
     if ( ! pFnIsRecentServer )
-        pFnIsRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120058 ];
+        pFnIsRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120057 ];
 
     UTrUser_execIsRecentServer_Parms IsRecentServer_Parms;
     IsRecentServer_Parms.ServerID = ServerID;
@@ -55450,7 +55450,7 @@ void UTrUser::SetRecentServer ( int ServerID )
     static UFunction* pFnSetRecentServer = NULL;
 
     if ( ! pFnSetRecentServer )
-        pFnSetRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120053 ];
+        pFnSetRecentServer = (UFunction*) UObject::GObjObjects()->Data[ 120052 ];
 
     UTrUser_execSetRecentServer_Parms SetRecentServer_Parms;
     SetRecentServer_Parms.ServerID = ServerID;
@@ -55468,7 +55468,7 @@ void UTrUser::SetFavoriteServer ( int ServerID )
     static UFunction* pFnSetFavoriteServer = NULL;
 
     if ( ! pFnSetFavoriteServer )
-        pFnSetFavoriteServer = (UFunction*) UObject::GObjObjects()->Data[ 120050 ];
+        pFnSetFavoriteServer = (UFunction*) UObject::GObjObjects()->Data[ 120049 ];
 
     UTrUser_execSetFavoriteServer_Parms SetFavoriteServer_Parms;
     SetFavoriteServer_Parms.ServerID = ServerID;
@@ -55527,7 +55527,7 @@ bool UTrUser::NeedsToSeeNewBundle ( int ItemId )
     static UFunction* pFnNeedsToSeeNewBundle = NULL;
 
     if ( ! pFnNeedsToSeeNewBundle )
-        pFnNeedsToSeeNewBundle = (UFunction*) UObject::GObjObjects()->Data[ 120046 ];
+        pFnNeedsToSeeNewBundle = (UFunction*) UObject::GObjObjects()->Data[ 120045 ];
 
     UTrUser_execNeedsToSeeNewBundle_Parms NeedsToSeeNewBundle_Parms;
     NeedsToSeeNewBundle_Parms.ItemId = ItemId;
@@ -55632,7 +55632,7 @@ void UTrUser::SeenNewItemsType ( int ClassId, int Type )
     static UFunction* pFnSeenNewItemsType = NULL;
 
     if ( ! pFnSeenNewItemsType )
-        pFnSeenNewItemsType = (UFunction*) UObject::GObjObjects()->Data[ 120036 ];
+        pFnSeenNewItemsType = (UFunction*) UObject::GObjObjects()->Data[ 120035 ];
 
     UTrUser_execSeenNewItemsType_Parms SeenNewItemsType_Parms;
     SeenNewItemsType_Parms.ClassId = ClassId;
@@ -55651,7 +55651,7 @@ void UTrUser::SeenNewItemsClass ( int ClassId )
     static UFunction* pFnSeenNewItemsClass = NULL;
 
     if ( ! pFnSeenNewItemsClass )
-        pFnSeenNewItemsClass = (UFunction*) UObject::GObjObjects()->Data[ 120033 ];
+        pFnSeenNewItemsClass = (UFunction*) UObject::GObjObjects()->Data[ 120032 ];
 
     UTrUser_execSeenNewItemsClass_Parms SeenNewItemsClass_Parms;
     SeenNewItemsClass_Parms.ClassId = ClassId;
@@ -55669,7 +55669,7 @@ void UTrUser::SeenNewBundle ( int ItemId )
     static UFunction* pFnSeenNewBundle = NULL;
 
     if ( ! pFnSeenNewBundle )
-        pFnSeenNewBundle = (UFunction*) UObject::GObjObjects()->Data[ 120030 ];
+        pFnSeenNewBundle = (UFunction*) UObject::GObjObjects()->Data[ 120029 ];
 
     UTrUser_execSeenNewBundle_Parms SeenNewBundle_Parms;
     SeenNewBundle_Parms.ItemId = ItemId;
@@ -55686,7 +55686,7 @@ void UTrUser::SeenClanTags ( )
     static UFunction* pFnSeenClanTags = NULL;
 
     if ( ! pFnSeenClanTags )
-        pFnSeenClanTags = (UFunction*) UObject::GObjObjects()->Data[ 120029 ];
+        pFnSeenClanTags = (UFunction*) UObject::GObjObjects()->Data[ 120028 ];
 
     UTrUser_execSeenClanTags_Parms SeenClanTags_Parms;
 
@@ -55702,7 +55702,7 @@ void UTrUser::SeenNewBundlesMain ( )
     static UFunction* pFnSeenNewBundlesMain = NULL;
 
     if ( ! pFnSeenNewBundlesMain )
-        pFnSeenNewBundlesMain = (UFunction*) UObject::GObjObjects()->Data[ 120028 ];
+        pFnSeenNewBundlesMain = (UFunction*) UObject::GObjObjects()->Data[ 120027 ];
 
     UTrUser_execSeenNewBundlesMain_Parms SeenNewBundlesMain_Parms;
 
@@ -55718,7 +55718,7 @@ void UTrUser::SeenNewItemsMain ( )
     static UFunction* pFnSeenNewItemsMain = NULL;
 
     if ( ! pFnSeenNewItemsMain )
-        pFnSeenNewItemsMain = (UFunction*) UObject::GObjObjects()->Data[ 120027 ];
+        pFnSeenNewItemsMain = (UFunction*) UObject::GObjObjects()->Data[ 120026 ];
 
     UTrUser_execSeenNewItemsMain_Parms SeenNewItemsMain_Parms;
 
@@ -55734,7 +55734,7 @@ void UTrUser::SeenNewGametype ( )
     static UFunction* pFnSeenNewGametype = NULL;
 
     if ( ! pFnSeenNewGametype )
-        pFnSeenNewGametype = (UFunction*) UObject::GObjObjects()->Data[ 120026 ];
+        pFnSeenNewGametype = (UFunction*) UObject::GObjObjects()->Data[ 120025 ];
 
     UTrUser_execSeenNewGametype_Parms SeenNewGametype_Parms;
 
@@ -55750,7 +55750,7 @@ void UTrUser::SaveChoseRegion ( )
     static UFunction* pFnSaveChoseRegion = NULL;
 
     if ( ! pFnSaveChoseRegion )
-        pFnSaveChoseRegion = (UFunction*) UObject::GObjObjects()->Data[ 120025 ];
+        pFnSaveChoseRegion = (UFunction*) UObject::GObjObjects()->Data[ 120024 ];
 
     UTrUser_execSaveChoseRegion_Parms SaveChoseRegion_Parms;
 
@@ -55766,7 +55766,7 @@ void UTrUser::SaveDidLogin ( )
     static UFunction* pFnSaveDidLogin = NULL;
 
     if ( ! pFnSaveDidLogin )
-        pFnSaveDidLogin = (UFunction*) UObject::GObjObjects()->Data[ 120024 ];
+        pFnSaveDidLogin = (UFunction*) UObject::GObjObjects()->Data[ 120023 ];
 
     UTrUser_execSaveDidLogin_Parms SaveDidLogin_Parms;
 
@@ -55783,7 +55783,7 @@ void UTrUser::SaveGameType ( struct FString NewGameType )
     static UFunction* pFnSaveGameType = NULL;
 
     if ( ! pFnSaveGameType )
-        pFnSaveGameType = (UFunction*) UObject::GObjObjects()->Data[ 120022 ];
+        pFnSaveGameType = (UFunction*) UObject::GObjObjects()->Data[ 120021 ];
 
     UTrUser_execSaveGameType_Parms SaveGameType_Parms;
     memcpy ( &SaveGameType_Parms.NewGameType, &NewGameType, 0xC );
@@ -55801,7 +55801,7 @@ void UTrUser::SaveClassId ( int NewClassId )
     static UFunction* pFnSaveClassId = NULL;
 
     if ( ! pFnSaveClassId )
-        pFnSaveClassId = (UFunction*) UObject::GObjObjects()->Data[ 120020 ];
+        pFnSaveClassId = (UFunction*) UObject::GObjObjects()->Data[ 120019 ];
 
     UTrUser_execSaveClassId_Parms SaveClassId_Parms;
     SaveClassId_Parms.NewClassId = NewClassId;
@@ -55820,7 +55820,7 @@ void UTrUser::SaveCredentials ( struct FString NewUserName, struct FString NewPa
     static UFunction* pFnSaveCredentials = NULL;
 
     if ( ! pFnSaveCredentials )
-        pFnSaveCredentials = (UFunction*) UObject::GObjObjects()->Data[ 120017 ];
+        pFnSaveCredentials = (UFunction*) UObject::GObjObjects()->Data[ 120016 ];
 
     UTrUser_execSaveCredentials_Parms SaveCredentials_Parms;
     memcpy ( &SaveCredentials_Parms.NewUserName, &NewUserName, 0xC );
@@ -55839,7 +55839,7 @@ void UTrUser::Initialize ( class UGFxTrMenuMoviePlayer* Movie )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 120015 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 120014 ];
 
     UTrUser_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.Movie = Movie;
@@ -55881,7 +55881,7 @@ struct FString UTrUser::EncryptPassword ( struct FString Password )
     static UFunction* pFnEncryptPassword = NULL;
 
     if ( ! pFnEncryptPassword )
-        pFnEncryptPassword = (UFunction*) UObject::GObjObjects()->Data[ 120012 ];
+        pFnEncryptPassword = (UFunction*) UObject::GObjObjects()->Data[ 120011 ];
 
     UTrUser_execEncryptPassword_Parms EncryptPassword_Parms;
     memcpy ( &EncryptPassword_Parms.Password, &Password, 0xC );
@@ -55904,7 +55904,7 @@ void ATrVehicle::ClearInvulnerability ( )
     static UFunction* pFnClearInvulnerability = NULL;
 
     if ( ! pFnClearInvulnerability )
-        pFnClearInvulnerability = (UFunction*) UObject::GObjObjects()->Data[ 121256 ];
+        pFnClearInvulnerability = (UFunction*) UObject::GObjObjects()->Data[ 121255 ];
 
     ATrVehicle_execClearInvulnerability_Parms ClearInvulnerability_Parms;
 
@@ -55921,7 +55921,7 @@ void ATrVehicle::GoInvulnerable ( float InvulnerableTime )
     static UFunction* pFnGoInvulnerable = NULL;
 
     if ( ! pFnGoInvulnerable )
-        pFnGoInvulnerable = (UFunction*) UObject::GObjObjects()->Data[ 121254 ];
+        pFnGoInvulnerable = (UFunction*) UObject::GObjObjects()->Data[ 121253 ];
 
     ATrVehicle_execGoInvulnerable_Parms GoInvulnerable_Parms;
     GoInvulnerable_Parms.InvulnerableTime = InvulnerableTime;
@@ -55938,7 +55938,7 @@ void ATrVehicle::PlayHorn ( )
     static UFunction* pFnPlayHorn = NULL;
 
     if ( ! pFnPlayHorn )
-        pFnPlayHorn = (UFunction*) UObject::GObjObjects()->Data[ 121253 ];
+        pFnPlayHorn = (UFunction*) UObject::GObjObjects()->Data[ 121252 ];
 
     ATrVehicle_execPlayHorn_Parms PlayHorn_Parms;
 
@@ -55955,7 +55955,7 @@ struct FString ATrVehicle::GetSpectatorName ( )
     static UFunction* pFnGetSpectatorName = NULL;
 
     if ( ! pFnGetSpectatorName )
-        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 121177 ];
+        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 121176 ];
 
     ATrVehicle_execGetSpectatorName_Parms GetSpectatorName_Parms;
 
@@ -55975,7 +55975,7 @@ struct FVector ATrVehicle::GetCameraFocus ( int SeatIndex )
     static UFunction* pFnGetCameraFocus = NULL;
 
     if ( ! pFnGetCameraFocus )
-        pFnGetCameraFocus = (UFunction*) UObject::GObjObjects()->Data[ 121167 ];
+        pFnGetCameraFocus = (UFunction*) UObject::GObjObjects()->Data[ 121166 ];
 
     ATrVehicle_execGetCameraFocus_Parms GetCameraFocus_Parms;
     GetCameraFocus_Parms.SeatIndex = SeatIndex;
@@ -56029,7 +56029,7 @@ void ATrVehicle::StopVehicleSounds ( )
     static UFunction* pFnStopVehicleSounds = NULL;
 
     if ( ! pFnStopVehicleSounds )
-        pFnStopVehicleSounds = (UFunction*) UObject::GObjObjects()->Data[ 121152 ];
+        pFnStopVehicleSounds = (UFunction*) UObject::GObjObjects()->Data[ 121151 ];
 
     ATrVehicle_execStopVehicleSounds_Parms StopVehicleSounds_Parms;
 
@@ -56047,7 +56047,7 @@ void ATrVehicle::MigrateVehicleSounds ( class APawn* P, unsigned long bIsRiding 
     static UFunction* pFnMigrateVehicleSounds = NULL;
 
     if ( ! pFnMigrateVehicleSounds )
-        pFnMigrateVehicleSounds = (UFunction*) UObject::GObjObjects()->Data[ 121147 ];
+        pFnMigrateVehicleSounds = (UFunction*) UObject::GObjObjects()->Data[ 121146 ];
 
     ATrVehicle_execMigrateVehicleSounds_Parms MigrateVehicleSounds_Parms;
     MigrateVehicleSounds_Parms.P = P;
@@ -56066,7 +56066,7 @@ void ATrVehicle::PlayClientVehicleSound ( struct FName SoundTag )
     static UFunction* pFnPlayClientVehicleSound = NULL;
 
     if ( ! pFnPlayClientVehicleSound )
-        pFnPlayClientVehicleSound = (UFunction*) UObject::GObjObjects()->Data[ 121143 ];
+        pFnPlayClientVehicleSound = (UFunction*) UObject::GObjObjects()->Data[ 121142 ];
 
     ATrVehicle_execPlayClientVehicleSound_Parms PlayClientVehicleSound_Parms;
     memcpy ( &PlayClientVehicleSound_Parms.SoundTag, &SoundTag, 0x8 );
@@ -56084,7 +56084,7 @@ void ATrVehicle::VehicleEvent ( struct FName EventTag )
     static UFunction* pFnVehicleEvent = NULL;
 
     if ( ! pFnVehicleEvent )
-        pFnVehicleEvent = (UFunction*) UObject::GObjObjects()->Data[ 121141 ];
+        pFnVehicleEvent = (UFunction*) UObject::GObjObjects()->Data[ 121140 ];
 
     ATrVehicle_execVehicleEvent_Parms VehicleEvent_Parms;
     memcpy ( &VehicleEvent_Parms.EventTag, &EventTag, 0x8 );
@@ -56102,7 +56102,7 @@ void ATrVehicle::eventPlayVehicleEvent ( struct FName EventTag )
     static UFunction* pFnPlayVehicleEvent = NULL;
 
     if ( ! pFnPlayVehicleEvent )
-        pFnPlayVehicleEvent = (UFunction*) UObject::GObjObjects()->Data[ 121139 ];
+        pFnPlayVehicleEvent = (UFunction*) UObject::GObjObjects()->Data[ 121138 ];
 
     ATrVehicle_eventPlayVehicleEvent_Parms PlayVehicleEvent_Parms;
     memcpy ( &PlayVehicleEvent_Parms.EventTag, &EventTag, 0x8 );
@@ -56120,7 +56120,7 @@ void ATrVehicle::SetDriving ( unsigned long bNewDriving )
     static UFunction* pFnSetDriving = NULL;
 
     if ( ! pFnSetDriving )
-        pFnSetDriving = (UFunction*) UObject::GObjObjects()->Data[ 121137 ];
+        pFnSetDriving = (UFunction*) UObject::GObjObjects()->Data[ 121136 ];
 
     ATrVehicle_execSetDriving_Parms SetDriving_Parms;
     SetDriving_Parms.bNewDriving = bNewDriving;
@@ -56140,7 +56140,7 @@ bool ATrVehicle::ShouldShowUseable ( class APlayerController* PC, float Dist )
     static UFunction* pFnShouldShowUseable = NULL;
 
     if ( ! pFnShouldShowUseable )
-        pFnShouldShowUseable = (UFunction*) UObject::GObjObjects()->Data[ 121133 ];
+        pFnShouldShowUseable = (UFunction*) UObject::GObjObjects()->Data[ 121132 ];
 
     ATrVehicle_execShouldShowUseable_Parms ShouldShowUseable_Parms;
     ShouldShowUseable_Parms.PC = PC;
@@ -56164,7 +56164,7 @@ void ATrVehicle::ProcessViewRotationBasedOnSeat ( int SeatIndex, float DeltaTime
     static UFunction* pFnProcessViewRotationBasedOnSeat = NULL;
 
     if ( ! pFnProcessViewRotationBasedOnSeat )
-        pFnProcessViewRotationBasedOnSeat = (UFunction*) UObject::GObjObjects()->Data[ 121128 ];
+        pFnProcessViewRotationBasedOnSeat = (UFunction*) UObject::GObjObjects()->Data[ 121127 ];
 
     ATrVehicle_execProcessViewRotationBasedOnSeat_Parms ProcessViewRotationBasedOnSeat_Parms;
     ProcessViewRotationBasedOnSeat_Parms.SeatIndex = SeatIndex;
@@ -56191,7 +56191,7 @@ void ATrVehicle::ProcessViewRotation ( float DeltaTime, struct FRotator* out_Vie
     static UFunction* pFnProcessViewRotation = NULL;
 
     if ( ! pFnProcessViewRotation )
-        pFnProcessViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 121124 ];
+        pFnProcessViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 121123 ];
 
     ATrVehicle_execProcessViewRotation_Parms ProcessViewRotation_Parms;
     ProcessViewRotation_Parms.DeltaTime = DeltaTime;
@@ -56219,7 +56219,7 @@ class ATrProj_Tracer* ATrVehicle::SpawnTracerEffect ( unsigned char TracerType, 
     static UFunction* pFnSpawnTracerEffect = NULL;
 
     if ( ! pFnSpawnTracerEffect )
-        pFnSpawnTracerEffect = (UFunction*) UObject::GObjObjects()->Data[ 121115 ];
+        pFnSpawnTracerEffect = (UFunction*) UObject::GObjObjects()->Data[ 121114 ];
 
     ATrVehicle_execSpawnTracerEffect_Parms SpawnTracerEffect_Parms;
     SpawnTracerEffect_Parms.TracerType = TracerType;
@@ -56244,7 +56244,7 @@ void ATrVehicle::SpawnTracerBeam ( struct FVector Start, struct FVector End, cla
     static UFunction* pFnSpawnTracerBeam = NULL;
 
     if ( ! pFnSpawnTracerBeam )
-        pFnSpawnTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121110 ];
+        pFnSpawnTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121109 ];
 
     ATrVehicle_execSpawnTracerBeam_Parms SpawnTracerBeam_Parms;
     memcpy ( &SpawnTracerBeam_Parms.Start, &Start, 0xC );
@@ -56265,7 +56265,7 @@ void ATrVehicle::ThirdPersonFireEffects ( struct FVector HitLocation, int SeatIn
     static UFunction* pFnThirdPersonFireEffects = NULL;
 
     if ( ! pFnThirdPersonFireEffects )
-        pFnThirdPersonFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121098 ];
+        pFnThirdPersonFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121097 ];
 
     ATrVehicle_execThirdPersonFireEffects_Parms ThirdPersonFireEffects_Parms;
     memcpy ( &ThirdPersonFireEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -56285,7 +56285,7 @@ void ATrVehicle::VehicleWeaponStoppedFiring ( unsigned long bViaReplication, int
     static UFunction* pFnVehicleWeaponStoppedFiring = NULL;
 
     if ( ! pFnVehicleWeaponStoppedFiring )
-        pFnVehicleWeaponStoppedFiring = (UFunction*) UObject::GObjObjects()->Data[ 121093 ];
+        pFnVehicleWeaponStoppedFiring = (UFunction*) UObject::GObjObjects()->Data[ 121092 ];
 
     ATrVehicle_execVehicleWeaponStoppedFiring_Parms VehicleWeaponStoppedFiring_Parms;
     VehicleWeaponStoppedFiring_Parms.bViaReplication = bViaReplication;
@@ -56305,7 +56305,7 @@ void ATrVehicle::VehicleWeaponFireEffects ( struct FVector HitLocation, int Seat
     static UFunction* pFnVehicleWeaponFireEffects = NULL;
 
     if ( ! pFnVehicleWeaponFireEffects )
-        pFnVehicleWeaponFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121089 ];
+        pFnVehicleWeaponFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121088 ];
 
     ATrVehicle_execVehicleWeaponFireEffects_Parms VehicleWeaponFireEffects_Parms;
     memcpy ( &VehicleWeaponFireEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -56323,7 +56323,7 @@ void ATrVehicle::BlowupVehicle ( )
     static UFunction* pFnBlowupVehicle = NULL;
 
     if ( ! pFnBlowupVehicle )
-        pFnBlowupVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121088 ];
+        pFnBlowupVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121087 ];
 
     ATrVehicle_execBlowupVehicle_Parms BlowupVehicle_Parms;
 
@@ -56339,7 +56339,7 @@ void ATrVehicle::CheckDamageSmoke ( )
     static UFunction* pFnCheckDamageSmoke = NULL;
 
     if ( ! pFnCheckDamageSmoke )
-        pFnCheckDamageSmoke = (UFunction*) UObject::GObjObjects()->Data[ 121086 ];
+        pFnCheckDamageSmoke = (UFunction*) UObject::GObjObjects()->Data[ 121085 ];
 
     ATrVehicle_execCheckDamageSmoke_Parms CheckDamageSmoke_Parms;
 
@@ -56362,7 +56362,7 @@ void ATrVehicle::eventTakeDamage ( int Damage, class AController* EventInstigato
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 121054 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 121053 ];
 
     ATrVehicle_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.Damage = Damage;
@@ -56394,7 +56394,7 @@ void ATrVehicle::TakeRadiusDamage ( class AController* InstigatedBy, float BaseD
     static UFunction* pFnTakeRadiusDamage = NULL;
 
     if ( ! pFnTakeRadiusDamage )
-        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 121038 ];
+        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 121037 ];
 
     ATrVehicle_execTakeRadiusDamage_Parms TakeRadiusDamage_Parms;
     TakeRadiusDamage_Parms.InstigatedBy = InstigatedBy;
@@ -56419,7 +56419,7 @@ void ATrVehicle::Suicide ( )
     static UFunction* pFnSuicide = NULL;
 
     if ( ! pFnSuicide )
-        pFnSuicide = (UFunction*) UObject::GObjObjects()->Data[ 121037 ];
+        pFnSuicide = (UFunction*) UObject::GObjObjects()->Data[ 121036 ];
 
     ATrVehicle_execSuicide_Parms Suicide_Parms;
 
@@ -56443,7 +56443,7 @@ void ATrVehicle::DriverRadiusDamage ( float DamageAmount, float DamageRadius, cl
     static UFunction* pFnDriverRadiusDamage = NULL;
 
     if ( ! pFnDriverRadiusDamage )
-        pFnDriverRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 121019 ];
+        pFnDriverRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 121018 ];
 
     ATrVehicle_execDriverRadiusDamage_Parms DriverRadiusDamage_Parms;
     DriverRadiusDamage_Parms.DamageAmount = DamageAmount;
@@ -56474,7 +56474,7 @@ void ATrVehicle::DoRepairs ( int HealAmount, class AController* EventInstigator,
     static UFunction* pFnDoRepairs = NULL;
 
     if ( ! pFnDoRepairs )
-        pFnDoRepairs = (UFunction*) UObject::GObjObjects()->Data[ 121009 ];
+        pFnDoRepairs = (UFunction*) UObject::GObjObjects()->Data[ 121008 ];
 
     ATrVehicle_execDoRepairs_Parms DoRepairs_Parms;
     DoRepairs_Parms.HealAmount = HealAmount;
@@ -56501,7 +56501,7 @@ bool ATrVehicle::HealDamage ( int Amount, class AController* Healer, class UClas
     static UFunction* pFnHealDamage = NULL;
 
     if ( ! pFnHealDamage )
-        pFnHealDamage = (UFunction*) UObject::GObjObjects()->Data[ 121004 ];
+        pFnHealDamage = (UFunction*) UObject::GObjObjects()->Data[ 121003 ];
 
     ATrVehicle_execHealDamage_Parms HealDamage_Parms;
     HealDamage_Parms.Amount = Amount;
@@ -56523,7 +56523,7 @@ void ATrVehicle::WeaponRotationChanged ( int SeatIndex )
     static UFunction* pFnWeaponRotationChanged = NULL;
 
     if ( ! pFnWeaponRotationChanged )
-        pFnWeaponRotationChanged = (UFunction*) UObject::GObjObjects()->Data[ 120999 ];
+        pFnWeaponRotationChanged = (UFunction*) UObject::GObjObjects()->Data[ 120998 ];
 
     ATrVehicle_execWeaponRotationChanged_Parms WeaponRotationChanged_Parms;
     WeaponRotationChanged_Parms.SeatIndex = SeatIndex;
@@ -56542,7 +56542,7 @@ struct FRotator ATrVehicle::GetWeaponAim ( class AUTVehicleWeapon* VWeapon )
     static UFunction* pFnGetWeaponAim = NULL;
 
     if ( ! pFnGetWeaponAim )
-        pFnGetWeaponAim = (UFunction*) UObject::GObjObjects()->Data[ 120989 ];
+        pFnGetWeaponAim = (UFunction*) UObject::GObjObjects()->Data[ 120988 ];
 
     ATrVehicle_execGetWeaponAim_Parms GetWeaponAim_Parms;
     GetWeaponAim_Parms.VWeapon = VWeapon;
@@ -56562,7 +56562,7 @@ bool ATrVehicle::AnySeatAvailable ( )
     static UFunction* pFnAnySeatAvailable = NULL;
 
     if ( ! pFnAnySeatAvailable )
-        pFnAnySeatAvailable = (UFunction*) UObject::GObjObjects()->Data[ 120986 ];
+        pFnAnySeatAvailable = (UFunction*) UObject::GObjObjects()->Data[ 120985 ];
 
     ATrVehicle_execAnySeatAvailable_Parms AnySeatAvailable_Parms;
 
@@ -56582,7 +56582,7 @@ bool ATrVehicle::SeatAvailable ( int SeatIndex )
     static UFunction* pFnSeatAvailable = NULL;
 
     if ( ! pFnSeatAvailable )
-        pFnSeatAvailable = (UFunction*) UObject::GObjObjects()->Data[ 120983 ];
+        pFnSeatAvailable = (UFunction*) UObject::GObjObjects()->Data[ 120982 ];
 
     ATrVehicle_execSeatAvailable_Parms SeatAvailable_Parms;
     SeatAvailable_Parms.SeatIndex = SeatIndex;
@@ -56605,7 +56605,7 @@ bool ATrVehicle::TryExitPos ( class APawn* ExitingDriver, struct FVector ExitPos
     static UFunction* pFnTryExitPos = NULL;
 
     if ( ! pFnTryExitPos )
-        pFnTryExitPos = (UFunction*) UObject::GObjObjects()->Data[ 120973 ];
+        pFnTryExitPos = (UFunction*) UObject::GObjObjects()->Data[ 120972 ];
 
     ATrVehicle_execTryExitPos_Parms TryExitPos_Parms;
     TryExitPos_Parms.ExitingDriver = ExitingDriver;
@@ -56628,7 +56628,7 @@ bool ATrVehicle::PlaceExitingDriver ( class APawn* ExitingDriver )
     static UFunction* pFnPlaceExitingDriver = NULL;
 
     if ( ! pFnPlaceExitingDriver )
-        pFnPlaceExitingDriver = (UFunction*) UObject::GObjObjects()->Data[ 120966 ];
+        pFnPlaceExitingDriver = (UFunction*) UObject::GObjObjects()->Data[ 120965 ];
 
     ATrVehicle_execPlaceExitingDriver_Parms PlaceExitingDriver_Parms;
     PlaceExitingDriver_Parms.ExitingDriver = ExitingDriver;
@@ -56649,7 +56649,7 @@ int ATrVehicle::GetSeatIndexForStoragePawn ( class APawn* P )
     static UFunction* pFnGetSeatIndexForStoragePawn = NULL;
 
     if ( ! pFnGetSeatIndexForStoragePawn )
-        pFnGetSeatIndexForStoragePawn = (UFunction*) UObject::GObjObjects()->Data[ 120962 ];
+        pFnGetSeatIndexForStoragePawn = (UFunction*) UObject::GObjObjects()->Data[ 120961 ];
 
     ATrVehicle_execGetSeatIndexForStoragePawn_Parms GetSeatIndexForStoragePawn_Parms;
     GetSeatIndexForStoragePawn_Parms.P = P;
@@ -56690,7 +56690,7 @@ void ATrVehicle::SwitchWeapon ( unsigned char NewGroup )
     static UFunction* pFnSwitchWeapon = NULL;
 
     if ( ! pFnSwitchWeapon )
-        pFnSwitchWeapon = (UFunction*) UObject::GObjObjects()->Data[ 120958 ];
+        pFnSwitchWeapon = (UFunction*) UObject::GObjObjects()->Data[ 120957 ];
 
     ATrVehicle_execSwitchWeapon_Parms SwitchWeapon_Parms;
     SwitchWeapon_Parms.NewGroup = NewGroup;
@@ -56710,7 +56710,7 @@ bool ATrVehicle::ChangeSeat ( class AController* ControllerToMove, int Requested
     static UFunction* pFnChangeSeat = NULL;
 
     if ( ! pFnChangeSeat )
-        pFnChangeSeat = (UFunction*) UObject::GObjObjects()->Data[ 120951 ];
+        pFnChangeSeat = (UFunction*) UObject::GObjObjects()->Data[ 120950 ];
 
     ATrVehicle_execChangeSeat_Parms ChangeSeat_Parms;
     ChangeSeat_Parms.ControllerToMove = ControllerToMove;
@@ -56732,7 +56732,7 @@ void ATrVehicle::SwitchSeat ( int RequestedSeat, class AController* ControllerRe
     static UFunction* pFnSwitchSeat = NULL;
 
     if ( ! pFnSwitchSeat )
-        pFnSwitchSeat = (UFunction*) UObject::GObjObjects()->Data[ 120948 ];
+        pFnSwitchSeat = (UFunction*) UObject::GObjObjects()->Data[ 120947 ];
 
     ATrVehicle_execSwitchSeat_Parms SwitchSeat_Parms;
     SwitchSeat_Parms.RequestedSeat = RequestedSeat;
@@ -56751,7 +56751,7 @@ void ATrVehicle::ServerChangeSeat ( int RequestedSeat )
     static UFunction* pFnServerChangeSeat = NULL;
 
     if ( ! pFnServerChangeSeat )
-        pFnServerChangeSeat = (UFunction*) UObject::GObjObjects()->Data[ 120946 ];
+        pFnServerChangeSeat = (UFunction*) UObject::GObjObjects()->Data[ 120945 ];
 
     ATrVehicle_execServerChangeSeat_Parms ServerChangeSeat_Parms;
     ServerChangeSeat_Parms.RequestedSeat = RequestedSeat;
@@ -56770,7 +56770,7 @@ class APlayerReplicationInfo* ATrVehicle::GetSeatPRI ( int SeatNum )
     static UFunction* pFnGetSeatPRI = NULL;
 
     if ( ! pFnGetSeatPRI )
-        pFnGetSeatPRI = (UFunction*) UObject::GObjObjects()->Data[ 120943 ];
+        pFnGetSeatPRI = (UFunction*) UObject::GObjObjects()->Data[ 120942 ];
 
     ATrVehicle_execGetSeatPRI_Parms GetSeatPRI_Parms;
     GetSeatPRI_Parms.SeatNum = SeatNum;
@@ -56791,7 +56791,7 @@ bool ATrVehicle::DriverEnter ( class APawn* P )
     static UFunction* pFnDriverEnter = NULL;
 
     if ( ! pFnDriverEnter )
-        pFnDriverEnter = (UFunction*) UObject::GObjObjects()->Data[ 120937 ];
+        pFnDriverEnter = (UFunction*) UObject::GObjObjects()->Data[ 120936 ];
 
     ATrVehicle_execDriverEnter_Parms DriverEnter_Parms;
     DriverEnter_Parms.P = P;
@@ -56835,7 +56835,7 @@ void ATrVehicle::HandleEnteringFlag ( class AUTPlayerReplicationInfo* EnteringPR
     static UFunction* pFnHandleEnteringFlag = NULL;
 
     if ( ! pFnHandleEnteringFlag )
-        pFnHandleEnteringFlag = (UFunction*) UObject::GObjObjects()->Data[ 120927 ];
+        pFnHandleEnteringFlag = (UFunction*) UObject::GObjObjects()->Data[ 120926 ];
 
     ATrVehicle_execHandleEnteringFlag_Parms HandleEnteringFlag_Parms;
     HandleEnteringFlag_Parms.EnteringPRI = EnteringPRI;
@@ -56854,7 +56854,7 @@ void ATrVehicle::eventHoldGameObject ( class AUDKCarriedObject* GameObj )
     static UFunction* pFnHoldGameObject = NULL;
 
     if ( ! pFnHoldGameObject )
-        pFnHoldGameObject = (UFunction*) UObject::GObjObjects()->Data[ 120925 ];
+        pFnHoldGameObject = (UFunction*) UObject::GObjObjects()->Data[ 120924 ];
 
     ATrVehicle_eventHoldGameObject_Parms HoldGameObject_Parms;
     HoldGameObject_Parms.GameObj = GameObj;
@@ -56873,7 +56873,7 @@ void ATrVehicle::UpdateSeatAnimations ( class ATrPawn* PawnToSit, int SeatIndex 
     static UFunction* pFnUpdateSeatAnimations = NULL;
 
     if ( ! pFnUpdateSeatAnimations )
-        pFnUpdateSeatAnimations = (UFunction*) UObject::GObjObjects()->Data[ 120916 ];
+        pFnUpdateSeatAnimations = (UFunction*) UObject::GObjObjects()->Data[ 120915 ];
 
     ATrVehicle_execUpdateSeatAnimations_Parms UpdateSeatAnimations_Parms;
     UpdateSeatAnimations_Parms.PawnToSit = PawnToSit;
@@ -56892,7 +56892,7 @@ void ATrVehicle::DetachRidingPawn ( class ATrPawn* PawnLeft )
     static UFunction* pFnDetachRidingPawn = NULL;
 
     if ( ! pFnDetachRidingPawn )
-        pFnDetachRidingPawn = (UFunction*) UObject::GObjObjects()->Data[ 120914 ];
+        pFnDetachRidingPawn = (UFunction*) UObject::GObjObjects()->Data[ 120913 ];
 
     ATrVehicle_execDetachRidingPawn_Parms DetachRidingPawn_Parms;
     DetachRidingPawn_Parms.PawnLeft = PawnLeft;
@@ -56911,7 +56911,7 @@ void ATrVehicle::AttachRidingPawn ( class ATrPawn* PawnToSit, int SeatIndex )
     static UFunction* pFnAttachRidingPawn = NULL;
 
     if ( ! pFnAttachRidingPawn )
-        pFnAttachRidingPawn = (UFunction*) UObject::GObjObjects()->Data[ 120910 ];
+        pFnAttachRidingPawn = (UFunction*) UObject::GObjObjects()->Data[ 120909 ];
 
     ATrVehicle_execAttachRidingPawn_Parms AttachRidingPawn_Parms;
     AttachRidingPawn_Parms.PawnToSit = PawnToSit;
@@ -56930,7 +56930,7 @@ void ATrVehicle::AttachDriver ( class APawn* P )
     static UFunction* pFnAttachDriver = NULL;
 
     if ( ! pFnAttachDriver )
-        pFnAttachDriver = (UFunction*) UObject::GObjObjects()->Data[ 120908 ];
+        pFnAttachDriver = (UFunction*) UObject::GObjObjects()->Data[ 120907 ];
 
     ATrVehicle_execAttachDriver_Parms AttachDriver_Parms;
     AttachDriver_Parms.P = P;
@@ -56950,7 +56950,7 @@ bool ATrVehicle::PassengerEnter ( class APawn* P, int SeatIndex )
     static UFunction* pFnPassengerEnter = NULL;
 
     if ( ! pFnPassengerEnter )
-        pFnPassengerEnter = (UFunction*) UObject::GObjObjects()->Data[ 120901 ];
+        pFnPassengerEnter = (UFunction*) UObject::GObjObjects()->Data[ 120900 ];
 
     ATrVehicle_execPassengerEnter_Parms PassengerEnter_Parms;
     PassengerEnter_Parms.P = P;
@@ -56970,7 +56970,7 @@ void ATrVehicle::InitializeSeats ( )
     static UFunction* pFnInitializeSeats = NULL;
 
     if ( ! pFnInitializeSeats )
-        pFnInitializeSeats = (UFunction*) UObject::GObjObjects()->Data[ 120899 ];
+        pFnInitializeSeats = (UFunction*) UObject::GObjObjects()->Data[ 120898 ];
 
     ATrVehicle_execInitializeSeats_Parms InitializeSeats_Parms;
 
@@ -56987,7 +56987,7 @@ void ATrVehicle::GetSVehicleDebug ( TArray< struct FString >* DebugInfo )
     static UFunction* pFnGetSVehicleDebug = NULL;
 
     if ( ! pFnGetSVehicleDebug )
-        pFnGetSVehicleDebug = (UFunction*) UObject::GObjObjects()->Data[ 120896 ];
+        pFnGetSVehicleDebug = (UFunction*) UObject::GObjObjects()->Data[ 120895 ];
 
     ATrVehicle_execGetSVehicleDebug_Parms GetSVehicleDebug_Parms;
 
@@ -57008,7 +57008,7 @@ void ATrVehicle::SetSeatStoragePawn ( int SeatIndex, class APawn* PawnToSit )
     static UFunction* pFnSetSeatStoragePawn = NULL;
 
     if ( ! pFnSetSeatStoragePawn )
-        pFnSetSeatStoragePawn = (UFunction*) UObject::GObjObjects()->Data[ 120892 ];
+        pFnSetSeatStoragePawn = (UFunction*) UObject::GObjObjects()->Data[ 120891 ];
 
     ATrVehicle_execSetSeatStoragePawn_Parms SetSeatStoragePawn_Parms;
     SetSeatStoragePawn_Parms.SeatIndex = SeatIndex;
@@ -57031,7 +57031,7 @@ bool ATrVehicle::RenderDriverPassengerMarker ( class UCanvas* Canvas, unsigned l
     static UFunction* pFnRenderDriverPassengerMarker = NULL;
 
     if ( ! pFnRenderDriverPassengerMarker )
-        pFnRenderDriverPassengerMarker = (UFunction*) UObject::GObjObjects()->Data[ 120875 ];
+        pFnRenderDriverPassengerMarker = (UFunction*) UObject::GObjObjects()->Data[ 120874 ];
 
     ATrVehicle_execRenderDriverPassengerMarker_Parms RenderDriverPassengerMarker_Parms;
     RenderDriverPassengerMarker_Parms.Canvas = Canvas;
@@ -57057,7 +57057,7 @@ void ATrVehicle::eventPostRenderFor ( class APlayerController* PC, class UCanvas
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 120843 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 120842 ];
 
     ATrVehicle_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -57078,7 +57078,7 @@ bool ATrVehicle::Occupied ( )
     static UFunction* pFnOccupied = NULL;
 
     if ( ! pFnOccupied )
-        pFnOccupied = (UFunction*) UObject::GObjObjects()->Data[ 120840 ];
+        pFnOccupied = (UFunction*) UObject::GObjObjects()->Data[ 120839 ];
 
     ATrVehicle_execOccupied_Parms Occupied_Parms;
 
@@ -57097,7 +57097,7 @@ void ATrVehicle::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 120838 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 120837 ];
 
     ATrVehicle_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -57114,7 +57114,7 @@ void ATrVehicle::PlayMissileLockSounds ( )
     static UFunction* pFnPlayMissileLockSounds = NULL;
 
     if ( ! pFnPlayMissileLockSounds )
-        pFnPlayMissileLockSounds = (UFunction*) UObject::GObjObjects()->Data[ 120835 ];
+        pFnPlayMissileLockSounds = (UFunction*) UObject::GObjObjects()->Data[ 120834 ];
 
     ATrVehicle_execPlayMissileLockSounds_Parms PlayMissileLockSounds_Parms;
 
@@ -57131,7 +57131,7 @@ void ATrVehicle::PlayBoosterEffects ( unsigned long bEnabled )
     static UFunction* pFnPlayBoosterEffects = NULL;
 
     if ( ! pFnPlayBoosterEffects )
-        pFnPlayBoosterEffects = (UFunction*) UObject::GObjObjects()->Data[ 120833 ];
+        pFnPlayBoosterEffects = (UFunction*) UObject::GObjObjects()->Data[ 120832 ];
 
     ATrVehicle_execPlayBoosterEffects_Parms PlayBoosterEffects_Parms;
     PlayBoosterEffects_Parms.bEnabled = bEnabled;
@@ -57149,7 +57149,7 @@ void ATrVehicle::BoostSoundFinished ( class UAudioComponent* AC )
     static UFunction* pFnBoostSoundFinished = NULL;
 
     if ( ! pFnBoostSoundFinished )
-        pFnBoostSoundFinished = (UFunction*) UObject::GObjObjects()->Data[ 120831 ];
+        pFnBoostSoundFinished = (UFunction*) UObject::GObjObjects()->Data[ 120830 ];
 
     ATrVehicle_execBoostSoundFinished_Parms BoostSoundFinished_Parms;
     BoostSoundFinished_Parms.AC = AC;
@@ -57167,7 +57167,7 @@ void ATrVehicle::ServerToggleLevelFlight ( unsigned long bEnabled )
     static UFunction* pFnServerToggleLevelFlight = NULL;
 
     if ( ! pFnServerToggleLevelFlight )
-        pFnServerToggleLevelFlight = (UFunction*) UObject::GObjObjects()->Data[ 120829 ];
+        pFnServerToggleLevelFlight = (UFunction*) UObject::GObjObjects()->Data[ 120828 ];
 
     ATrVehicle_execServerToggleLevelFlight_Parms ServerToggleLevelFlight_Parms;
     ServerToggleLevelFlight_Parms.bEnabled = bEnabled;
@@ -57185,7 +57185,7 @@ bool ATrVehicle::eventShouldRechargePowerPool ( )
     static UFunction* pFnShouldRechargePowerPool = NULL;
 
     if ( ! pFnShouldRechargePowerPool )
-        pFnShouldRechargePowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120827 ];
+        pFnShouldRechargePowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120826 ];
 
     ATrVehicle_eventShouldRechargePowerPool_Parms ShouldRechargePowerPool_Parms;
 
@@ -57204,7 +57204,7 @@ bool ATrVehicle::CanActivateBoosters ( )
     static UFunction* pFnCanActivateBoosters = NULL;
 
     if ( ! pFnCanActivateBoosters )
-        pFnCanActivateBoosters = (UFunction*) UObject::GObjObjects()->Data[ 120825 ];
+        pFnCanActivateBoosters = (UFunction*) UObject::GObjObjects()->Data[ 120824 ];
 
     ATrVehicle_execCanActivateBoosters_Parms CanActivateBoosters_Parms;
 
@@ -57222,7 +57222,7 @@ void ATrVehicle::ConsumeBoostPowerPool ( )
     static UFunction* pFnConsumeBoostPowerPool = NULL;
 
     if ( ! pFnConsumeBoostPowerPool )
-        pFnConsumeBoostPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120824 ];
+        pFnConsumeBoostPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120823 ];
 
     ATrVehicle_execConsumeBoostPowerPool_Parms ConsumeBoostPowerPool_Parms;
 
@@ -57240,7 +57240,7 @@ void ATrVehicle::ToggleBoosters ( unsigned long bEnabled, unsigned long ToggleTi
     static UFunction* pFnToggleBoosters = NULL;
 
     if ( ! pFnToggleBoosters )
-        pFnToggleBoosters = (UFunction*) UObject::GObjObjects()->Data[ 120820 ];
+        pFnToggleBoosters = (UFunction*) UObject::GObjObjects()->Data[ 120819 ];
 
     ATrVehicle_execToggleBoosters_Parms ToggleBoosters_Parms;
     ToggleBoosters_Parms.bEnabled = bEnabled;
@@ -57262,7 +57262,7 @@ void ATrVehicle::HandleMomentum ( struct FVector Momentum, struct FVector HitLoc
     static UFunction* pFnHandleMomentum = NULL;
 
     if ( ! pFnHandleMomentum )
-        pFnHandleMomentum = (UFunction*) UObject::GObjObjects()->Data[ 120815 ];
+        pFnHandleMomentum = (UFunction*) UObject::GObjObjects()->Data[ 120814 ];
 
     ATrVehicle_execHandleMomentum_Parms HandleMomentum_Parms;
     memcpy ( &HandleMomentum_Parms.Momentum, &Momentum, 0xC );
@@ -57282,7 +57282,7 @@ void ATrVehicle::ResetResetTime ( )
     static UFunction* pFnResetResetTime = NULL;
 
     if ( ! pFnResetResetTime )
-        pFnResetResetTime = (UFunction*) UObject::GObjObjects()->Data[ 120814 ];
+        pFnResetResetTime = (UFunction*) UObject::GObjObjects()->Data[ 120813 ];
 
     ATrVehicle_execResetResetTime_Parms ResetResetTime_Parms;
 
@@ -57298,7 +57298,7 @@ void ATrVehicle::eventCheckReset ( )
     static UFunction* pFnCheckReset = NULL;
 
     if ( ! pFnCheckReset )
-        pFnCheckReset = (UFunction*) UObject::GObjObjects()->Data[ 120813 ];
+        pFnCheckReset = (UFunction*) UObject::GObjObjects()->Data[ 120812 ];
 
     ATrVehicle_eventCheckReset_Parms CheckReset_Parms;
 
@@ -57315,7 +57315,7 @@ void ATrVehicle::PassengerLeave ( int SeatIndex )
     static UFunction* pFnPassengerLeave = NULL;
 
     if ( ! pFnPassengerLeave )
-        pFnPassengerLeave = (UFunction*) UObject::GObjObjects()->Data[ 120810 ];
+        pFnPassengerLeave = (UFunction*) UObject::GObjObjects()->Data[ 120809 ];
 
     ATrVehicle_execPassengerLeave_Parms PassengerLeave_Parms;
     PassengerLeave_Parms.SeatIndex = SeatIndex;
@@ -57332,7 +57332,7 @@ void ATrVehicle::DriverLeft ( )
     static UFunction* pFnDriverLeft = NULL;
 
     if ( ! pFnDriverLeft )
-        pFnDriverLeft = (UFunction*) UObject::GObjObjects()->Data[ 120805 ];
+        pFnDriverLeft = (UFunction*) UObject::GObjObjects()->Data[ 120804 ];
 
     ATrVehicle_execDriverLeft_Parms DriverLeft_Parms;
 
@@ -57350,7 +57350,7 @@ bool ATrVehicle::TryToDrive ( class APawn* P )
     static UFunction* pFnTryToDrive = NULL;
 
     if ( ! pFnTryToDrive )
-        pFnTryToDrive = (UFunction*) UObject::GObjObjects()->Data[ 120793 ];
+        pFnTryToDrive = (UFunction*) UObject::GObjObjects()->Data[ 120792 ];
 
     ATrVehicle_execTryToDrive_Parms TryToDrive_Parms;
     TryToDrive_Parms.P = P;
@@ -57371,7 +57371,7 @@ int ATrVehicle::GetFirstAvailableSeat ( unsigned long bSeatMustAllowFlag )
     static UFunction* pFnGetFirstAvailableSeat = NULL;
 
     if ( ! pFnGetFirstAvailableSeat )
-        pFnGetFirstAvailableSeat = (UFunction*) UObject::GObjObjects()->Data[ 120789 ];
+        pFnGetFirstAvailableSeat = (UFunction*) UObject::GObjObjects()->Data[ 120788 ];
 
     ATrVehicle_execGetFirstAvailableSeat_Parms GetFirstAvailableSeat_Parms;
     GetFirstAvailableSeat_Parms.bSeatMustAllowFlag = bSeatMustAllowFlag;
@@ -57392,7 +57392,7 @@ bool ATrVehicle::CanArmorEnterVehicle ( class UClass* FamilyInfo )
     static UFunction* pFnCanArmorEnterVehicle = NULL;
 
     if ( ! pFnCanArmorEnterVehicle )
-        pFnCanArmorEnterVehicle = (UFunction*) UObject::GObjObjects()->Data[ 120784 ];
+        pFnCanArmorEnterVehicle = (UFunction*) UObject::GObjObjects()->Data[ 120783 ];
 
     ATrVehicle_execCanArmorEnterVehicle_Parms CanArmorEnterVehicle_Parms;
     CanArmorEnterVehicle_Parms.FamilyInfo = FamilyInfo;
@@ -57413,7 +57413,7 @@ bool ATrVehicle::CanArmorDriveVehicle ( class UClass* FamilyInfo )
     static UFunction* pFnCanArmorDriveVehicle = NULL;
 
     if ( ! pFnCanArmorDriveVehicle )
-        pFnCanArmorDriveVehicle = (UFunction*) UObject::GObjObjects()->Data[ 120779 ];
+        pFnCanArmorDriveVehicle = (UFunction*) UObject::GObjObjects()->Data[ 120778 ];
 
     ATrVehicle_execCanArmorDriveVehicle_Parms CanArmorDriveVehicle_Parms;
     CanArmorDriveVehicle_Parms.FamilyInfo = FamilyInfo;
@@ -57432,7 +57432,7 @@ void ATrVehicle::TeleportDriverToSeat ( )
     static UFunction* pFnTeleportDriverToSeat = NULL;
 
     if ( ! pFnTeleportDriverToSeat )
-        pFnTeleportDriverToSeat = (UFunction*) UObject::GObjObjects()->Data[ 120778 ];
+        pFnTeleportDriverToSeat = (UFunction*) UObject::GObjObjects()->Data[ 120777 ];
 
     ATrVehicle_execTeleportDriverToSeat_Parms TeleportDriverToSeat_Parms;
 
@@ -57449,7 +57449,7 @@ void ATrVehicle::KillControllerForTeamChange ( class AController* ControllerToKi
     static UFunction* pFnKillControllerForTeamChange = NULL;
 
     if ( ! pFnKillControllerForTeamChange )
-        pFnKillControllerForTeamChange = (UFunction*) UObject::GObjObjects()->Data[ 120774 ];
+        pFnKillControllerForTeamChange = (UFunction*) UObject::GObjObjects()->Data[ 120773 ];
 
     ATrVehicle_execKillControllerForTeamChange_Parms KillControllerForTeamChange_Parms;
     KillControllerForTeamChange_Parms.ControllerToKill = ControllerToKill;
@@ -57470,7 +57470,7 @@ bool ATrVehicle::Died ( class AController* Killer, class UClass* DamageType, str
     static UFunction* pFnDied = NULL;
 
     if ( ! pFnDied )
-        pFnDied = (UFunction*) UObject::GObjObjects()->Data[ 120766 ];
+        pFnDied = (UFunction*) UObject::GObjObjects()->Data[ 120765 ];
 
     ATrVehicle_execDied_Parms Died_Parms;
     Died_Parms.Killer = Killer;
@@ -57492,7 +57492,7 @@ bool ATrVehicle::DoesVehicleHaveEjectionSeat ( )
     static UFunction* pFnDoesVehicleHaveEjectionSeat = NULL;
 
     if ( ! pFnDoesVehicleHaveEjectionSeat )
-        pFnDoesVehicleHaveEjectionSeat = (UFunction*) UObject::GObjObjects()->Data[ 120764 ];
+        pFnDoesVehicleHaveEjectionSeat = (UFunction*) UObject::GObjObjects()->Data[ 120763 ];
 
     ATrVehicle_execDoesVehicleHaveEjectionSeat_Parms DoesVehicleHaveEjectionSeat_Parms;
 
@@ -57511,7 +57511,7 @@ void ATrVehicle::SendLockOnMessage ( int Switch )
     static UFunction* pFnSendLockOnMessage = NULL;
 
     if ( ! pFnSendLockOnMessage )
-        pFnSendLockOnMessage = (UFunction*) UObject::GObjObjects()->Data[ 120760 ];
+        pFnSendLockOnMessage = (UFunction*) UObject::GObjObjects()->Data[ 120759 ];
 
     ATrVehicle_execSendLockOnMessage_Parms SendLockOnMessage_Parms;
     SendLockOnMessage_Parms.Switch = Switch;
@@ -57529,7 +57529,7 @@ void ATrVehicle::SetPostSpawnLocked ( unsigned long bLocked )
     static UFunction* pFnSetPostSpawnLocked = NULL;
 
     if ( ! pFnSetPostSpawnLocked )
-        pFnSetPostSpawnLocked = (UFunction*) UObject::GObjObjects()->Data[ 120758 ];
+        pFnSetPostSpawnLocked = (UFunction*) UObject::GObjObjects()->Data[ 120757 ];
 
     ATrVehicle_execSetPostSpawnLocked_Parms SetPostSpawnLocked_Parms;
     SetPostSpawnLocked_Parms.bLocked = bLocked;
@@ -57547,7 +57547,7 @@ void ATrVehicle::SetPawnToTeleport ( class ATrPawn* P )
     static UFunction* pFnSetPawnToTeleport = NULL;
 
     if ( ! pFnSetPawnToTeleport )
-        pFnSetPawnToTeleport = (UFunction*) UObject::GObjObjects()->Data[ 120752 ];
+        pFnSetPawnToTeleport = (UFunction*) UObject::GObjObjects()->Data[ 120751 ];
 
     ATrVehicle_execSetPawnToTeleport_Parms SetPawnToTeleport_Parms;
     SetPawnToTeleport_Parms.P = P;
@@ -57584,7 +57584,7 @@ void ATrVehicle::DetachDriver ( class APawn* P )
     static UFunction* pFnDetachDriver = NULL;
 
     if ( ! pFnDetachDriver )
-        pFnDetachDriver = (UFunction*) UObject::GObjObjects()->Data[ 120749 ];
+        pFnDetachDriver = (UFunction*) UObject::GObjObjects()->Data[ 120748 ];
 
     ATrVehicle_execDetachDriver_Parms DetachDriver_Parms;
     DetachDriver_Parms.P = P;
@@ -57603,7 +57603,7 @@ void ATrVehicle::SitDriver ( class AUTPawn* UTP, int SeatIndex )
     static UFunction* pFnSitDriver = NULL;
 
     if ( ! pFnSitDriver )
-        pFnSitDriver = (UFunction*) UObject::GObjObjects()->Data[ 120746 ];
+        pFnSitDriver = (UFunction*) UObject::GObjObjects()->Data[ 120745 ];
 
     ATrVehicle_execSitDriver_Parms SitDriver_Parms;
     SitDriver_Parms.UTP = UTP;
@@ -57623,7 +57623,7 @@ bool ATrVehicle::StopsProjectile ( class AProjectile* P )
     static UFunction* pFnStopsProjectile = NULL;
 
     if ( ! pFnStopsProjectile )
-        pFnStopsProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114082 ];
+        pFnStopsProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114081 ];
 
     ATrVehicle_execStopsProjectile_Parms StopsProjectile_Parms;
     StopsProjectile_Parms.P = P;
@@ -57643,7 +57643,7 @@ void ATrVehicle::eventRanInto ( class AActor* Other )
     static UFunction* pFnRanInto = NULL;
 
     if ( ! pFnRanInto )
-        pFnRanInto = (UFunction*) UObject::GObjObjects()->Data[ 120733 ];
+        pFnRanInto = (UFunction*) UObject::GObjObjects()->Data[ 120732 ];
 
     ATrVehicle_eventRanInto_Parms RanInto_Parms;
     RanInto_Parms.Other = Other;
@@ -57664,7 +57664,7 @@ void ATrVehicle::eventRigidBodyCollision ( class UPrimitiveComponent* HitCompone
     static UFunction* pFnRigidBodyCollision = NULL;
 
     if ( ! pFnRigidBodyCollision )
-        pFnRigidBodyCollision = (UFunction*) UObject::GObjObjects()->Data[ 120719 ];
+        pFnRigidBodyCollision = (UFunction*) UObject::GObjObjects()->Data[ 120718 ];
 
     ATrVehicle_eventRigidBodyCollision_Parms RigidBodyCollision_Parms;
     RigidBodyCollision_Parms.HitComponent = HitComponent;
@@ -57688,7 +57688,7 @@ float ATrVehicle::GetDamageAmountForCollision ( float Speed )
     static UFunction* pFnGetDamageAmountForCollision = NULL;
 
     if ( ! pFnGetDamageAmountForCollision )
-        pFnGetDamageAmountForCollision = (UFunction*) UObject::GObjObjects()->Data[ 120716 ];
+        pFnGetDamageAmountForCollision = (UFunction*) UObject::GObjObjects()->Data[ 120715 ];
 
     ATrVehicle_execGetDamageAmountForCollision_Parms GetDamageAmountForCollision_Parms;
     GetDamageAmountForCollision_Parms.Speed = Speed;
@@ -57708,7 +57708,7 @@ class AController* ATrVehicle::GetCollisionDamageInstigator ( )
     static UFunction* pFnGetCollisionDamageInstigator = NULL;
 
     if ( ! pFnGetCollisionDamageInstigator )
-        pFnGetCollisionDamageInstigator = (UFunction*) UObject::GObjObjects()->Data[ 120714 ];
+        pFnGetCollisionDamageInstigator = (UFunction*) UObject::GObjObjects()->Data[ 120713 ];
 
     ATrVehicle_execGetCollisionDamageInstigator_Parms GetCollisionDamageInstigator_Parms;
 
@@ -57727,7 +57727,7 @@ void ATrVehicle::PancakeOther ( class APawn* Other )
     static UFunction* pFnPancakeOther = NULL;
 
     if ( ! pFnPancakeOther )
-        pFnPancakeOther = (UFunction*) UObject::GObjObjects()->Data[ 120712 ];
+        pFnPancakeOther = (UFunction*) UObject::GObjObjects()->Data[ 120711 ];
 
     ATrVehicle_execPancakeOther_Parms PancakeOther_Parms;
     PancakeOther_Parms.Other = Other;
@@ -57766,7 +57766,7 @@ bool ATrVehicle::GetDetectedByEnemyScanner ( )
     static UFunction* pFnGetDetectedByEnemyScanner = NULL;
 
     if ( ! pFnGetDetectedByEnemyScanner )
-        pFnGetDetectedByEnemyScanner = (UFunction*) UObject::GObjObjects()->Data[ 120709 ];
+        pFnGetDetectedByEnemyScanner = (UFunction*) UObject::GObjObjects()->Data[ 120708 ];
 
     ATrVehicle_execGetDetectedByEnemyScanner_Parms GetDetectedByEnemyScanner_Parms;
 
@@ -57785,7 +57785,7 @@ void ATrVehicle::SetDetectedByEnemyScanner ( unsigned long detected )
     static UFunction* pFnSetDetectedByEnemyScanner = NULL;
 
     if ( ! pFnSetDetectedByEnemyScanner )
-        pFnSetDetectedByEnemyScanner = (UFunction*) UObject::GObjObjects()->Data[ 120707 ];
+        pFnSetDetectedByEnemyScanner = (UFunction*) UObject::GObjObjects()->Data[ 120706 ];
 
     ATrVehicle_execSetDetectedByEnemyScanner_Parms SetDetectedByEnemyScanner_Parms;
     SetDetectedByEnemyScanner_Parms.detected = detected;
@@ -57803,7 +57803,7 @@ void ATrVehicle::eventPostInitAnimTree ( class USkeletalMeshComponent* SkelComp 
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 120701 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 120700 ];
 
     ATrVehicle_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -57820,7 +57820,7 @@ void ATrVehicle::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 120700 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 120699 ];
 
     ATrVehicle_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -57837,7 +57837,7 @@ void ATrVehicle::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 120696 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 120695 ];
 
     ATrVehicle_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -57854,7 +57854,7 @@ void ATrVehicle::SyncClientCurrentPowerPool ( )
     static UFunction* pFnSyncClientCurrentPowerPool = NULL;
 
     if ( ! pFnSyncClientCurrentPowerPool )
-        pFnSyncClientCurrentPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120695 ];
+        pFnSyncClientCurrentPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120694 ];
 
     ATrVehicle_execSyncClientCurrentPowerPool_Parms SyncClientCurrentPowerPool_Parms;
 
@@ -57875,7 +57875,7 @@ void ATrVehicle::RegainPowerPool ( float fDeltaTime )
     static UFunction* pFnRegainPowerPool = NULL;
 
     if ( ! pFnRegainPowerPool )
-        pFnRegainPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120693 ];
+        pFnRegainPowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120692 ];
 
     ATrVehicle_execRegainPowerPool_Parms RegainPowerPool_Parms;
     RegainPowerPool_Parms.fDeltaTime = fDeltaTime;
@@ -57897,7 +57897,7 @@ float ATrVehicle::GetPowerPoolPercent ( )
     static UFunction* pFnGetPowerPoolPercent = NULL;
 
     if ( ! pFnGetPowerPoolPercent )
-        pFnGetPowerPoolPercent = (UFunction*) UObject::GObjObjects()->Data[ 120691 ];
+        pFnGetPowerPoolPercent = (UFunction*) UObject::GObjObjects()->Data[ 120690 ];
 
     ATrVehicle_execGetPowerPoolPercent_Parms GetPowerPoolPercent_Parms;
 
@@ -57920,7 +57920,7 @@ void ATrVehicle::ConsumePowerPool ( float fAmount )
     static UFunction* pFnConsumePowerPool = NULL;
 
     if ( ! pFnConsumePowerPool )
-        pFnConsumePowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120689 ];
+        pFnConsumePowerPool = (UFunction*) UObject::GObjObjects()->Data[ 120688 ];
 
     ATrVehicle_execConsumePowerPool_Parms ConsumePowerPool_Parms;
     ConsumePowerPool_Parms.fAmount = fAmount;
@@ -57945,7 +57945,7 @@ void ATrVehicle::NativePostRenderFor ( class APlayerController* PC, class UCanva
     static UFunction* pFnNativePostRenderFor = NULL;
 
     if ( ! pFnNativePostRenderFor )
-        pFnNativePostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 120684 ];
+        pFnNativePostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 120683 ];
 
     ATrVehicle_execNativePostRenderFor_Parms NativePostRenderFor_Parms;
     NativePostRenderFor_Parms.PC = PC;
@@ -57975,7 +57975,7 @@ void ATrVehicle_BaseFlying::VehicleCalcCamera ( float DeltaTime, int SeatIndex, 
     static UFunction* pFnVehicleCalcCamera = NULL;
 
     if ( ! pFnVehicleCalcCamera )
-        pFnVehicleCalcCamera = (UFunction*) UObject::GObjObjects()->Data[ 121289 ];
+        pFnVehicleCalcCamera = (UFunction*) UObject::GObjObjects()->Data[ 121288 ];
 
     ATrVehicle_BaseFlying_execVehicleCalcCamera_Parms VehicleCalcCamera_Parms;
     VehicleCalcCamera_Parms.DeltaTime = DeltaTime;
@@ -58006,7 +58006,7 @@ void ATrVehicle_BaseFlying::SetInputs ( float InForward, float InStrafe, float I
     static UFunction* pFnSetInputs = NULL;
 
     if ( ! pFnSetInputs )
-        pFnSetInputs = (UFunction*) UObject::GObjObjects()->Data[ 121285 ];
+        pFnSetInputs = (UFunction*) UObject::GObjObjects()->Data[ 121284 ];
 
     ATrVehicle_BaseFlying_execSetInputs_Parms SetInputs_Parms;
     SetInputs_Parms.InForward = InForward;
@@ -58025,7 +58025,7 @@ void ATrVehicle_BaseFlying::CreateParticleSystems ( )
     static UFunction* pFnCreateParticleSystems = NULL;
 
     if ( ! pFnCreateParticleSystems )
-        pFnCreateParticleSystems = (UFunction*) UObject::GObjObjects()->Data[ 121283 ];
+        pFnCreateParticleSystems = (UFunction*) UObject::GObjObjects()->Data[ 121282 ];
 
     ATrVehicle_BaseFlying_execCreateParticleSystems_Parms CreateParticleSystems_Parms;
 
@@ -58041,7 +58041,7 @@ void ATrVehicle_BaseFlying::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121282 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121281 ];
 
     ATrVehicle_BaseFlying_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -58058,7 +58058,7 @@ void UTrVehicleSimChopper::SetVehicleControls ( unsigned long bInvert )
     static UFunction* pFnSetVehicleControls = NULL;
 
     if ( ! pFnSetVehicleControls )
-        pFnSetVehicleControls = (UFunction*) UObject::GObjObjects()->Data[ 121469 ];
+        pFnSetVehicleControls = (UFunction*) UObject::GObjObjects()->Data[ 121468 ];
 
     UTrVehicleSimChopper_execSetVehicleControls_Parms SetVehicleControls_Parms;
     SetVehicleControls_Parms.bInvert = bInvert;
@@ -58079,7 +58079,7 @@ void ATrVehicleWeapon::ResetAltReticule ( )
     static UFunction* pFnResetAltReticule = NULL;
 
     if ( ! pFnResetAltReticule )
-        pFnResetAltReticule = (UFunction*) UObject::GObjObjects()->Data[ 121869 ];
+        pFnResetAltReticule = (UFunction*) UObject::GObjObjects()->Data[ 121868 ];
 
     ATrVehicleWeapon_execResetAltReticule_Parms ResetAltReticule_Parms;
 
@@ -58095,7 +58095,7 @@ void ATrVehicleWeapon::SetAltReticule ( )
     static UFunction* pFnSetAltReticule = NULL;
 
     if ( ! pFnSetAltReticule )
-        pFnSetAltReticule = (UFunction*) UObject::GObjObjects()->Data[ 121864 ];
+        pFnSetAltReticule = (UFunction*) UObject::GObjObjects()->Data[ 121863 ];
 
     ATrVehicleWeapon_execSetAltReticule_Parms SetAltReticule_Parms;
 
@@ -58113,7 +58113,7 @@ void ATrVehicleWeapon::EndZoom ( class AUTPlayerController* PC, unsigned long bR
     static UFunction* pFnEndZoom = NULL;
 
     if ( ! pFnEndZoom )
-        pFnEndZoom = (UFunction*) UObject::GObjObjects()->Data[ 121860 ];
+        pFnEndZoom = (UFunction*) UObject::GObjObjects()->Data[ 121859 ];
 
     ATrVehicleWeapon_execEndZoom_Parms EndZoom_Parms;
     EndZoom_Parms.PC = PC;
@@ -58132,7 +58132,7 @@ void ATrVehicleWeapon::StartZoom ( class AUTPlayerController* PC )
     static UFunction* pFnStartZoom = NULL;
 
     if ( ! pFnStartZoom )
-        pFnStartZoom = (UFunction*) UObject::GObjObjects()->Data[ 121856 ];
+        pFnStartZoom = (UFunction*) UObject::GObjObjects()->Data[ 121855 ];
 
     ATrVehicleWeapon_execStartZoom_Parms StartZoom_Parms;
     StartZoom_Parms.PC = PC;
@@ -58168,7 +58168,7 @@ void ATrVehicleWeapon::UpdateReplicatedCarriedAmmo ( )
     static UFunction* pFnUpdateReplicatedCarriedAmmo = NULL;
 
     if ( ! pFnUpdateReplicatedCarriedAmmo )
-        pFnUpdateReplicatedCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 121855 ];
+        pFnUpdateReplicatedCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 121854 ];
 
     ATrVehicleWeapon_execUpdateReplicatedCarriedAmmo_Parms UpdateReplicatedCarriedAmmo_Parms;
 
@@ -58186,7 +58186,7 @@ int ATrVehicleWeapon::AddCarriedAmmo ( int Amount )
     static UFunction* pFnAddCarriedAmmo = NULL;
 
     if ( ! pFnAddCarriedAmmo )
-        pFnAddCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 121852 ];
+        pFnAddCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 121851 ];
 
     ATrVehicleWeapon_execAddCarriedAmmo_Parms AddCarriedAmmo_Parms;
     AddCarriedAmmo_Parms.Amount = Amount;
@@ -58205,7 +58205,7 @@ void ATrVehicleWeapon::BeginAReload ( )
     static UFunction* pFnBeginAReload = NULL;
 
     if ( ! pFnBeginAReload )
-        pFnBeginAReload = (UFunction*) UObject::GObjObjects()->Data[ 121851 ];
+        pFnBeginAReload = (UFunction*) UObject::GObjObjects()->Data[ 121850 ];
 
     ATrVehicleWeapon_execBeginAReload_Parms BeginAReload_Parms;
 
@@ -58240,7 +58240,7 @@ void ATrVehicleWeapon::OnReloadComplete ( )
     static UFunction* pFnOnReloadComplete = NULL;
 
     if ( ! pFnOnReloadComplete )
-        pFnOnReloadComplete = (UFunction*) UObject::GObjObjects()->Data[ 121848 ];
+        pFnOnReloadComplete = (UFunction*) UObject::GObjObjects()->Data[ 121847 ];
 
     ATrVehicleWeapon_execOnReloadComplete_Parms OnReloadComplete_Parms;
 
@@ -58256,7 +58256,7 @@ void ATrVehicleWeapon::ClientFinishedReload ( )
     static UFunction* pFnClientFinishedReload = NULL;
 
     if ( ! pFnClientFinishedReload )
-        pFnClientFinishedReload = (UFunction*) UObject::GObjObjects()->Data[ 121847 ];
+        pFnClientFinishedReload = (UFunction*) UObject::GObjObjects()->Data[ 121846 ];
 
     ATrVehicleWeapon_execClientFinishedReload_Parms ClientFinishedReload_Parms;
 
@@ -58272,7 +58272,7 @@ void ATrVehicleWeapon::OnClientReloaded ( )
     static UFunction* pFnOnClientReloaded = NULL;
 
     if ( ! pFnOnClientReloaded )
-        pFnOnClientReloaded = (UFunction*) UObject::GObjObjects()->Data[ 121823 ];
+        pFnOnClientReloaded = (UFunction*) UObject::GObjObjects()->Data[ 121822 ];
 
     ATrVehicleWeapon_execOnClientReloaded_Parms OnClientReloaded_Parms;
 
@@ -58288,7 +58288,7 @@ void ATrVehicleWeapon::RequestReload ( )
     static UFunction* pFnRequestReload = NULL;
 
     if ( ! pFnRequestReload )
-        pFnRequestReload = (UFunction*) UObject::GObjObjects()->Data[ 121822 ];
+        pFnRequestReload = (UFunction*) UObject::GObjObjects()->Data[ 121821 ];
 
     ATrVehicleWeapon_execRequestReload_Parms RequestReload_Parms;
 
@@ -58342,7 +58342,7 @@ void ATrVehicleWeapon::PutDownWeapon ( )
     static UFunction* pFnPutDownWeapon = NULL;
 
     if ( ! pFnPutDownWeapon )
-        pFnPutDownWeapon = (UFunction*) UObject::GObjObjects()->Data[ 121803 ];
+        pFnPutDownWeapon = (UFunction*) UObject::GObjObjects()->Data[ 121802 ];
 
     ATrVehicleWeapon_execPutDownWeapon_Parms PutDownWeapon_Parms;
 
@@ -58359,7 +58359,7 @@ void ATrVehicleWeapon::BeginFire ( unsigned char FireModeNum )
     static UFunction* pFnBeginFire = NULL;
 
     if ( ! pFnBeginFire )
-        pFnBeginFire = (UFunction*) UObject::GObjObjects()->Data[ 121801 ];
+        pFnBeginFire = (UFunction*) UObject::GObjObjects()->Data[ 121800 ];
 
     ATrVehicleWeapon_execBeginFire_Parms BeginFire_Parms;
     BeginFire_Parms.FireModeNum = FireModeNum;
@@ -58376,7 +58376,7 @@ void ATrVehicleWeapon::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 121800 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 121799 ];
 
     ATrVehicleWeapon_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -58394,7 +58394,7 @@ struct FRotator ATrVehicleWeapon::AddSpread ( struct FRotator BaseAim )
     static UFunction* pFnAddSpread = NULL;
 
     if ( ! pFnAddSpread )
-        pFnAddSpread = (UFunction*) UObject::GObjObjects()->Data[ 121797 ];
+        pFnAddSpread = (UFunction*) UObject::GObjObjects()->Data[ 121796 ];
 
     ATrVehicleWeapon_execAddSpread_Parms AddSpread_Parms;
     memcpy ( &AddSpread_Parms.BaseAim, &BaseAim, 0xC );
@@ -58415,7 +58415,7 @@ struct FRotator ATrVehicleWeapon::GetAdjustedAim ( struct FVector StartFireLoc )
     static UFunction* pFnGetAdjustedAim = NULL;
 
     if ( ! pFnGetAdjustedAim )
-        pFnGetAdjustedAim = (UFunction*) UObject::GObjObjects()->Data[ 121791 ];
+        pFnGetAdjustedAim = (UFunction*) UObject::GObjObjects()->Data[ 121790 ];
 
     ATrVehicleWeapon_execGetAdjustedAim_Parms GetAdjustedAim_Parms;
     memcpy ( &GetAdjustedAim_Parms.StartFireLoc, &StartFireLoc, 0xC );
@@ -58437,7 +58437,7 @@ struct FRotator ATrVehicleWeapon::AddSpreadWithAccuracy ( struct FRotator BaseAi
     static UFunction* pFnAddSpreadWithAccuracy = NULL;
 
     if ( ! pFnAddSpreadWithAccuracy )
-        pFnAddSpreadWithAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121780 ];
+        pFnAddSpreadWithAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121779 ];
 
     ATrVehicleWeapon_execAddSpreadWithAccuracy_Parms AddSpreadWithAccuracy_Parms;
     memcpy ( &AddSpreadWithAccuracy_Parms.BaseAim, &BaseAim, 0xC );
@@ -58457,7 +58457,7 @@ void ATrVehicleWeapon::PayAccuracyForShot ( )
     static UFunction* pFnPayAccuracyForShot = NULL;
 
     if ( ! pFnPayAccuracyForShot )
-        pFnPayAccuracyForShot = (UFunction*) UObject::GObjObjects()->Data[ 121777 ];
+        pFnPayAccuracyForShot = (UFunction*) UObject::GObjObjects()->Data[ 121776 ];
 
     ATrVehicleWeapon_execPayAccuracyForShot_Parms PayAccuracyForShot_Parms;
 
@@ -58476,7 +58476,7 @@ class ATrProj_Tracer* ATrVehicleWeapon::GetTracer ( struct FVector SpawnLocation
     static UFunction* pFnGetTracer = NULL;
 
     if ( ! pFnGetTracer )
-        pFnGetTracer = (UFunction*) UObject::GObjObjects()->Data[ 121773 ];
+        pFnGetTracer = (UFunction*) UObject::GObjObjects()->Data[ 121772 ];
 
     ATrVehicleWeapon_execGetTracer_Parms GetTracer_Parms;
     memcpy ( &GetTracer_Parms.SpawnLocation, &SpawnLocation, 0xC );
@@ -58499,7 +58499,7 @@ void ATrVehicleWeapon::WeaponPlaySoundLocal ( class USoundCue* Sound, float Nois
     static UFunction* pFnWeaponPlaySoundLocal = NULL;
 
     if ( ! pFnWeaponPlaySoundLocal )
-        pFnWeaponPlaySoundLocal = (UFunction*) UObject::GObjObjects()->Data[ 121769 ];
+        pFnWeaponPlaySoundLocal = (UFunction*) UObject::GObjObjects()->Data[ 121768 ];
 
     ATrVehicleWeapon_execWeaponPlaySoundLocal_Parms WeaponPlaySoundLocal_Parms;
     WeaponPlaySoundLocal_Parms.Sound = Sound;
@@ -58521,7 +58521,7 @@ class ATrProj_Tracer* ATrVehicleWeapon::SpawnTracerEffect ( struct FVector HitLo
     static UFunction* pFnSpawnTracerEffect = NULL;
 
     if ( ! pFnSpawnTracerEffect )
-        pFnSpawnTracerEffect = (UFunction*) UObject::GObjObjects()->Data[ 121762 ];
+        pFnSpawnTracerEffect = (UFunction*) UObject::GObjObjects()->Data[ 121761 ];
 
     ATrVehicleWeapon_execSpawnTracerEffect_Parms SpawnTracerEffect_Parms;
     memcpy ( &SpawnTracerEffect_Parms.HitLocation, &HitLocation, 0xC );
@@ -58543,7 +58543,7 @@ void ATrVehicleWeapon::SpawnTracerBeam ( struct FVector Start, struct FVector En
     static UFunction* pFnSpawnTracerBeam = NULL;
 
     if ( ! pFnSpawnTracerBeam )
-        pFnSpawnTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121758 ];
+        pFnSpawnTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121757 ];
 
     ATrVehicleWeapon_execSpawnTracerBeam_Parms SpawnTracerBeam_Parms;
     memcpy ( &SpawnTracerBeam_Parms.Start, &Start, 0xC );
@@ -58562,7 +58562,7 @@ bool ATrVehicleWeapon::ShouldFireTracerBeam ( )
     static UFunction* pFnShouldFireTracerBeam = NULL;
 
     if ( ! pFnShouldFireTracerBeam )
-        pFnShouldFireTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121756 ];
+        pFnShouldFireTracerBeam = (UFunction*) UObject::GObjObjects()->Data[ 121755 ];
 
     ATrVehicleWeapon_execShouldFireTracerBeam_Parms ShouldFireTracerBeam_Parms;
 
@@ -58581,7 +58581,7 @@ bool ATrVehicleWeapon::ShouldFireTracer ( )
     static UFunction* pFnShouldFireTracer = NULL;
 
     if ( ! pFnShouldFireTracer )
-        pFnShouldFireTracer = (UFunction*) UObject::GObjObjects()->Data[ 121754 ];
+        pFnShouldFireTracer = (UFunction*) UObject::GObjObjects()->Data[ 121753 ];
 
     ATrVehicleWeapon_execShouldFireTracer_Parms ShouldFireTracer_Parms;
 
@@ -58599,7 +58599,7 @@ void ATrVehicleWeapon::ShakeView ( )
     static UFunction* pFnShakeView = NULL;
 
     if ( ! pFnShakeView )
-        pFnShakeView = (UFunction*) UObject::GObjObjects()->Data[ 121753 ];
+        pFnShakeView = (UFunction*) UObject::GObjObjects()->Data[ 121752 ];
 
     ATrVehicleWeapon_execShakeView_Parms ShakeView_Parms;
 
@@ -58617,7 +58617,7 @@ void ATrVehicleWeapon::PlayFireEffects ( unsigned char FireModeNum, struct FVect
     static UFunction* pFnPlayFireEffects = NULL;
 
     if ( ! pFnPlayFireEffects )
-        pFnPlayFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121750 ];
+        pFnPlayFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121749 ];
 
     ATrVehicleWeapon_execPlayFireEffects_Parms PlayFireEffects_Parms;
     PlayFireEffects_Parms.FireModeNum = FireModeNum;
@@ -58635,7 +58635,7 @@ void ATrVehicleWeapon::StopMuzzleFlash ( )
     static UFunction* pFnStopMuzzleFlash = NULL;
 
     if ( ! pFnStopMuzzleFlash )
-        pFnStopMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121749 ];
+        pFnStopMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121748 ];
 
     ATrVehicleWeapon_execStopMuzzleFlash_Parms StopMuzzleFlash_Parms;
 
@@ -58651,7 +58651,7 @@ void ATrVehicleWeapon::CauseMuzzleFlash ( )
     static UFunction* pFnCauseMuzzleFlash = NULL;
 
     if ( ! pFnCauseMuzzleFlash )
-        pFnCauseMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121747 ];
+        pFnCauseMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121746 ];
 
     ATrVehicleWeapon_execCauseMuzzleFlash_Parms CauseMuzzleFlash_Parms;
 
@@ -58667,7 +58667,7 @@ void ATrVehicleWeapon::MuzzleFlashTimer ( )
     static UFunction* pFnMuzzleFlashTimer = NULL;
 
     if ( ! pFnMuzzleFlashTimer )
-        pFnMuzzleFlashTimer = (UFunction*) UObject::GObjObjects()->Data[ 121746 ];
+        pFnMuzzleFlashTimer = (UFunction*) UObject::GObjObjects()->Data[ 121745 ];
 
     ATrVehicleWeapon_execMuzzleFlashTimer_Parms MuzzleFlashTimer_Parms;
 
@@ -58683,7 +58683,7 @@ void ATrVehicleWeapon::AttachMuzzleFlash ( )
     static UFunction* pFnAttachMuzzleFlash = NULL;
 
     if ( ! pFnAttachMuzzleFlash )
-        pFnAttachMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121744 ];
+        pFnAttachMuzzleFlash = (UFunction*) UObject::GObjObjects()->Data[ 121743 ];
 
     ATrVehicleWeapon_execAttachMuzzleFlash_Parms AttachMuzzleFlash_Parms;
 
@@ -58700,7 +58700,7 @@ struct FVector ATrVehicleWeapon::GetEffectLocation ( )
     static UFunction* pFnGetEffectLocation = NULL;
 
     if ( ! pFnGetEffectLocation )
-        pFnGetEffectLocation = (UFunction*) UObject::GObjObjects()->Data[ 121741 ];
+        pFnGetEffectLocation = (UFunction*) UObject::GObjObjects()->Data[ 121740 ];
 
     ATrVehicleWeapon_execGetEffectLocation_Parms GetEffectLocation_Parms;
 
@@ -58719,7 +58719,7 @@ int ATrVehicleWeapon::GetNumRoundsCurrentlyInClip ( )
     static UFunction* pFnGetNumRoundsCurrentlyInClip = NULL;
 
     if ( ! pFnGetNumRoundsCurrentlyInClip )
-        pFnGetNumRoundsCurrentlyInClip = (UFunction*) UObject::GObjObjects()->Data[ 121739 ];
+        pFnGetNumRoundsCurrentlyInClip = (UFunction*) UObject::GObjObjects()->Data[ 121738 ];
 
     ATrVehicleWeapon_execGetNumRoundsCurrentlyInClip_Parms GetNumRoundsCurrentlyInClip_Parms;
 
@@ -58738,7 +58738,7 @@ void ATrVehicleWeapon::eventUpdateShotsFired ( unsigned long Reset )
     static UFunction* pFnUpdateShotsFired = NULL;
 
     if ( ! pFnUpdateShotsFired )
-        pFnUpdateShotsFired = (UFunction*) UObject::GObjObjects()->Data[ 121737 ];
+        pFnUpdateShotsFired = (UFunction*) UObject::GObjObjects()->Data[ 121736 ];
 
     ATrVehicleWeapon_eventUpdateShotsFired_Parms UpdateShotsFired_Parms;
     UpdateShotsFired_Parms.Reset = Reset;
@@ -58756,7 +58756,7 @@ class UClass* ATrVehicleWeapon::GetProjectileClass ( )
     static UFunction* pFnGetProjectileClass = NULL;
 
     if ( ! pFnGetProjectileClass )
-        pFnGetProjectileClass = (UFunction*) UObject::GObjObjects()->Data[ 121735 ];
+        pFnGetProjectileClass = (UFunction*) UObject::GObjObjects()->Data[ 121734 ];
 
     ATrVehicleWeapon_execGetProjectileClass_Parms GetProjectileClass_Parms;
 
@@ -58775,7 +58775,7 @@ class AProjectile* ATrVehicleWeapon::ProjectileFire ( )
     static UFunction* pFnProjectileFire = NULL;
 
     if ( ! pFnProjectileFire )
-        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 121730 ];
+        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 121729 ];
 
     ATrVehicleWeapon_execProjectileFire_Parms ProjectileFire_Parms;
 
@@ -58794,7 +58794,7 @@ bool ATrVehicleWeapon::IsWeaponInFiringCone ( )
     static UFunction* pFnIsWeaponInFiringCone = NULL;
 
     if ( ! pFnIsWeaponInFiringCone )
-        pFnIsWeaponInFiringCone = (UFunction*) UObject::GObjObjects()->Data[ 121726 ];
+        pFnIsWeaponInFiringCone = (UFunction*) UObject::GObjObjects()->Data[ 121725 ];
 
     ATrVehicleWeapon_execIsWeaponInFiringCone_Parms IsWeaponInFiringCone_Parms;
 
@@ -58813,7 +58813,7 @@ void ATrVehicleWeapon::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 121724 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 121723 ];
 
     ATrVehicleWeapon_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -58830,7 +58830,7 @@ void ATrVehicleWeapon::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121723 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121722 ];
 
     ATrVehicleWeapon_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -58847,7 +58847,7 @@ float ATrVehicleWeapon::CalculateReloadTime ( )
     static UFunction* pFnCalculateReloadTime = NULL;
 
     if ( ! pFnCalculateReloadTime )
-        pFnCalculateReloadTime = (UFunction*) UObject::GObjObjects()->Data[ 121721 ];
+        pFnCalculateReloadTime = (UFunction*) UObject::GObjObjects()->Data[ 121720 ];
 
     ATrVehicleWeapon_execCalculateReloadTime_Parms CalculateReloadTime_Parms;
 
@@ -58865,7 +58865,7 @@ void ATrVehicleWeapon::InitVehicleGun ( )
     static UFunction* pFnInitVehicleGun = NULL;
 
     if ( ! pFnInitVehicleGun )
-        pFnInitVehicleGun = (UFunction*) UObject::GObjObjects()->Data[ 121720 ];
+        pFnInitVehicleGun = (UFunction*) UObject::GObjObjects()->Data[ 121719 ];
 
     ATrVehicleWeapon_execInitVehicleGun_Parms InitVehicleGun_Parms;
 
@@ -58882,7 +58882,7 @@ void ATrVehicleWeapon::RestoreAccuracy ( float fTimeStep )
     static UFunction* pFnRestoreAccuracy = NULL;
 
     if ( ! pFnRestoreAccuracy )
-        pFnRestoreAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121718 ];
+        pFnRestoreAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121717 ];
 
     ATrVehicleWeapon_execRestoreAccuracy_Parms RestoreAccuracy_Parms;
     RestoreAccuracy_Parms.fTimeStep = fTimeStep;
@@ -58904,7 +58904,7 @@ float ATrVehicleWeapon::GetTargetAccuracy ( )
     static UFunction* pFnGetTargetAccuracy = NULL;
 
     if ( ! pFnGetTargetAccuracy )
-        pFnGetTargetAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121716 ];
+        pFnGetTargetAccuracy = (UFunction*) UObject::GObjObjects()->Data[ 121715 ];
 
     ATrVehicleWeapon_execGetTargetAccuracy_Parms GetTargetAccuracy_Parms;
 
@@ -58950,7 +58950,7 @@ void UTrVideoSettings::eventSetSmoothFramerateValue ( int val )
     static UFunction* pFnSetSmoothFramerateValue = NULL;
 
     if ( ! pFnSetSmoothFramerateValue )
-        pFnSetSmoothFramerateValue = (UFunction*) UObject::GObjObjects()->Data[ 122183 ];
+        pFnSetSmoothFramerateValue = (UFunction*) UObject::GObjObjects()->Data[ 122182 ];
 
     UTrVideoSettings_eventSetSmoothFramerateValue_Parms SetSmoothFramerateValue_Parms;
     SetSmoothFramerateValue_Parms.val = val;
@@ -58988,7 +58988,7 @@ void UTrVideoSettings::CacheVideoSetting ( int Index, int val )
     static UFunction* pFnCacheVideoSetting = NULL;
 
     if ( ! pFnCacheVideoSetting )
-        pFnCacheVideoSetting = (UFunction*) UObject::GObjObjects()->Data[ 122173 ];
+        pFnCacheVideoSetting = (UFunction*) UObject::GObjObjects()->Data[ 122172 ];
 
     UTrVideoSettings_execCacheVideoSetting_Parms CacheVideoSetting_Parms;
     CacheVideoSetting_Parms.Index = Index;
@@ -59008,7 +59008,7 @@ unsigned char UTrVideoSettings::GetSettingTypeFromName ( struct FString val )
     static UFunction* pFnGetSettingTypeFromName = NULL;
 
     if ( ! pFnGetSettingTypeFromName )
-        pFnGetSettingTypeFromName = (UFunction*) UObject::GObjObjects()->Data[ 122170 ];
+        pFnGetSettingTypeFromName = (UFunction*) UObject::GObjObjects()->Data[ 122169 ];
 
     UTrVideoSettings_execGetSettingTypeFromName_Parms GetSettingTypeFromName_Parms;
     memcpy ( &GetSettingTypeFromName_Parms.val, &val, 0xC );
@@ -59029,7 +59029,7 @@ struct FString UTrVideoSettings::GetSettingNameFromType ( unsigned char Index )
     static UFunction* pFnGetSettingNameFromType = NULL;
 
     if ( ! pFnGetSettingNameFromType )
-        pFnGetSettingNameFromType = (UFunction*) UObject::GObjObjects()->Data[ 122167 ];
+        pFnGetSettingNameFromType = (UFunction*) UObject::GObjObjects()->Data[ 122166 ];
 
     UTrVideoSettings_execGetSettingNameFromType_Parms GetSettingNameFromType_Parms;
     GetSettingNameFromType_Parms.Index = Index;
@@ -59049,7 +59049,7 @@ void UTrVideoSettings::AddResolutionToList ( struct FString Resolution )
     static UFunction* pFnAddResolutionToList = NULL;
 
     if ( ! pFnAddResolutionToList )
-        pFnAddResolutionToList = (UFunction*) UObject::GObjObjects()->Data[ 122164 ];
+        pFnAddResolutionToList = (UFunction*) UObject::GObjObjects()->Data[ 122163 ];
 
     UTrVideoSettings_execAddResolutionToList_Parms AddResolutionToList_Parms;
     memcpy ( &AddResolutionToList_Parms.Resolution, &Resolution, 0xC );
@@ -59067,7 +59067,7 @@ void UTrVideoSettings::LoadResolutions ( class UGFxObject* List )
     static UFunction* pFnLoadResolutions = NULL;
 
     if ( ! pFnLoadResolutions )
-        pFnLoadResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122156 ];
+        pFnLoadResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122155 ];
 
     UTrVideoSettings_execLoadResolutions_Parms LoadResolutions_Parms;
     LoadResolutions_Parms.List = List;
@@ -59085,7 +59085,7 @@ void UTrVideoSettings::LoadVideoResolutions ( class UGFxObject* List )
     static UFunction* pFnLoadVideoResolutions = NULL;
 
     if ( ! pFnLoadVideoResolutions )
-        pFnLoadVideoResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122154 ];
+        pFnLoadVideoResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122153 ];
 
     UTrVideoSettings_execLoadVideoResolutions_Parms LoadVideoResolutions_Parms;
     LoadVideoResolutions_Parms.List = List;
@@ -59104,7 +59104,7 @@ void UTrVideoSettings::AddVideoSettingToList ( struct FString SettingName, int v
     static UFunction* pFnAddVideoSettingToList = NULL;
 
     if ( ! pFnAddVideoSettingToList )
-        pFnAddVideoSettingToList = (UFunction*) UObject::GObjObjects()->Data[ 122150 ];
+        pFnAddVideoSettingToList = (UFunction*) UObject::GObjObjects()->Data[ 122149 ];
 
     UTrVideoSettings_execAddVideoSettingToList_Parms AddVideoSettingToList_Parms;
     memcpy ( &AddVideoSettingToList_Parms.SettingName, &SettingName, 0xC );
@@ -59123,7 +59123,7 @@ void UTrVideoSettings::LoadVideoSettings ( class UGFxObject* List )
     static UFunction* pFnLoadVideoSettings = NULL;
 
     if ( ! pFnLoadVideoSettings )
-        pFnLoadVideoSettings = (UFunction*) UObject::GObjObjects()->Data[ 122143 ];
+        pFnLoadVideoSettings = (UFunction*) UObject::GObjObjects()->Data[ 122142 ];
 
     UTrVideoSettings_execLoadVideoSettings_Parms LoadVideoSettings_Parms;
     LoadVideoSettings_Parms.List = List;
@@ -59141,7 +59141,7 @@ void UTrVideoSettings::SetMotionBlur ( unsigned long bEnable )
     static UFunction* pFnSetMotionBlur = NULL;
 
     if ( ! pFnSetMotionBlur )
-        pFnSetMotionBlur = (UFunction*) UObject::GObjObjects()->Data[ 122141 ];
+        pFnSetMotionBlur = (UFunction*) UObject::GObjObjects()->Data[ 122140 ];
 
     UTrVideoSettings_execSetMotionBlur_Parms SetMotionBlur_Parms;
     SetMotionBlur_Parms.bEnable = bEnable;
@@ -59163,7 +59163,7 @@ void UTrVideoSettings::SetVSync ( unsigned long bEnable )
     static UFunction* pFnSetVSync = NULL;
 
     if ( ! pFnSetVSync )
-        pFnSetVSync = (UFunction*) UObject::GObjObjects()->Data[ 122139 ];
+        pFnSetVSync = (UFunction*) UObject::GObjObjects()->Data[ 122138 ];
 
     UTrVideoSettings_execSetVSync_Parms SetVSync_Parms;
     SetVSync_Parms.bEnable = bEnable;
@@ -59185,7 +59185,7 @@ void UTrVideoSettings::GetResolutions ( TArray< struct FPropertyPair >* Resoluti
     static UFunction* pFnGetResolutions = NULL;
 
     if ( ! pFnGetResolutions )
-        pFnGetResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122136 ];
+        pFnGetResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122135 ];
 
     UTrVideoSettings_execGetResolutions_Parms GetResolutions_Parms;
 
@@ -59209,7 +59209,7 @@ void UTrVideoSettings::ChangeTextureDetail ( int Index )
     static UFunction* pFnChangeTextureDetail = NULL;
 
     if ( ! pFnChangeTextureDetail )
-        pFnChangeTextureDetail = (UFunction*) UObject::GObjObjects()->Data[ 122134 ];
+        pFnChangeTextureDetail = (UFunction*) UObject::GObjObjects()->Data[ 122133 ];
 
     UTrVideoSettings_execChangeTextureDetail_Parms ChangeTextureDetail_Parms;
     ChangeTextureDetail_Parms.Index = Index;
@@ -59231,7 +59231,7 @@ void UTrVideoSettings::ChangeShadowDetail ( int Index )
     static UFunction* pFnChangeShadowDetail = NULL;
 
     if ( ! pFnChangeShadowDetail )
-        pFnChangeShadowDetail = (UFunction*) UObject::GObjObjects()->Data[ 122132 ];
+        pFnChangeShadowDetail = (UFunction*) UObject::GObjObjects()->Data[ 122131 ];
 
     UTrVideoSettings_execChangeShadowDetail_Parms ChangeShadowDetail_Parms;
     ChangeShadowDetail_Parms.Index = Index;
@@ -59253,7 +59253,7 @@ void UTrVideoSettings::ChangeResolution ( int Index )
     static UFunction* pFnChangeResolution = NULL;
 
     if ( ! pFnChangeResolution )
-        pFnChangeResolution = (UFunction*) UObject::GObjObjects()->Data[ 122130 ];
+        pFnChangeResolution = (UFunction*) UObject::GObjObjects()->Data[ 122129 ];
 
     UTrVideoSettings_execChangeResolution_Parms ChangeResolution_Parms;
     ChangeResolution_Parms.Index = Index;
@@ -59275,7 +59275,7 @@ void UTrVideoSettings::ChangeScreenType ( int Index )
     static UFunction* pFnChangeScreenType = NULL;
 
     if ( ! pFnChangeScreenType )
-        pFnChangeScreenType = (UFunction*) UObject::GObjObjects()->Data[ 122128 ];
+        pFnChangeScreenType = (UFunction*) UObject::GObjObjects()->Data[ 122127 ];
 
     UTrVideoSettings_execChangeScreenType_Parms ChangeScreenType_Parms;
     ChangeScreenType_Parms.Index = Index;
@@ -59296,7 +59296,7 @@ void UTrVideoSettings::ApplyVideoSettings ( )
     static UFunction* pFnApplyVideoSettings = NULL;
 
     if ( ! pFnApplyVideoSettings )
-        pFnApplyVideoSettings = (UFunction*) UObject::GObjObjects()->Data[ 122127 ];
+        pFnApplyVideoSettings = (UFunction*) UObject::GObjObjects()->Data[ 122126 ];
 
     UTrVideoSettings_execApplyVideoSettings_Parms ApplyVideoSettings_Parms;
 
@@ -59317,7 +59317,7 @@ void UTrVideoSettings::GetAllowedResolutions ( TArray< struct FResolutionData >*
     static UFunction* pFnGetAllowedResolutions = NULL;
 
     if ( ! pFnGetAllowedResolutions )
-        pFnGetAllowedResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122124 ];
+        pFnGetAllowedResolutions = (UFunction*) UObject::GObjObjects()->Data[ 122123 ];
 
     UTrVideoSettings_execGetAllowedResolutions_Parms GetAllowedResolutions_Parms;
 
@@ -59367,7 +59367,7 @@ void ATrWeaponPawn::PlayLoopingSound ( class USoundCue* InSound, unsigned long P
     static UFunction* pFnPlayLoopingSound = NULL;
 
     if ( ! pFnPlayLoopingSound )
-        pFnPlayLoopingSound = (UFunction*) UObject::GObjObjects()->Data[ 122215 ];
+        pFnPlayLoopingSound = (UFunction*) UObject::GObjObjects()->Data[ 122214 ];
 
     ATrWeaponPawn_execPlayLoopingSound_Parms PlayLoopingSound_Parms;
     PlayLoopingSound_Parms.InSound = InSound;
@@ -59385,7 +59385,7 @@ void ATrWeaponPawn::ClientPlayLoopSound ( )
     static UFunction* pFnClientPlayLoopSound = NULL;
 
     if ( ! pFnClientPlayLoopSound )
-        pFnClientPlayLoopSound = (UFunction*) UObject::GObjObjects()->Data[ 122214 ];
+        pFnClientPlayLoopSound = (UFunction*) UObject::GObjObjects()->Data[ 122213 ];
 
     ATrWeaponPawn_execClientPlayLoopSound_Parms ClientPlayLoopSound_Parms;
 
@@ -59404,7 +59404,7 @@ void ATrWeaponPawn::ProcessViewRotation ( float DeltaTime, struct FRotator* out_
     static UFunction* pFnProcessViewRotation = NULL;
 
     if ( ! pFnProcessViewRotation )
-        pFnProcessViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 122210 ];
+        pFnProcessViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 122209 ];
 
     ATrWeaponPawn_execProcessViewRotation_Parms ProcessViewRotation_Parms;
     ProcessViewRotation_Parms.DeltaTime = DeltaTime;
@@ -59427,7 +59427,7 @@ void ATrWeaponPawn::PlayReload ( )
     static UFunction* pFnPlayReload = NULL;
 
     if ( ! pFnPlayReload )
-        pFnPlayReload = (UFunction*) UObject::GObjObjects()->Data[ 122209 ];
+        pFnPlayReload = (UFunction*) UObject::GObjObjects()->Data[ 122208 ];
 
     ATrWeaponPawn_execPlayReload_Parms PlayReload_Parms;
 
@@ -59444,7 +59444,7 @@ void ATrWeaponPawn::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 122207 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 122206 ];
 
     ATrWeaponPawn_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -60875,7 +60875,7 @@ void UTrVGSNode::GetGametypeSpecificChildrenNodes ( class UClass* GameClass, TAr
     static UFunction* pFnGetGametypeSpecificChildrenNodes = NULL;
 
     if ( ! pFnGetGametypeSpecificChildrenNodes )
-        pFnGetGametypeSpecificChildrenNodes = (UFunction*) UObject::GObjObjects()->Data[ 122028 ];
+        pFnGetGametypeSpecificChildrenNodes = (UFunction*) UObject::GObjObjects()->Data[ 122027 ];
 
     UTrVGSNode_execGetGametypeSpecificChildrenNodes_Parms GetGametypeSpecificChildrenNodes_Parms;
     GetGametypeSpecificChildrenNodes_Parms.GameClass = GameClass;
@@ -60897,7 +60897,7 @@ void UTrVGSNode::GetGametypeSpecificCommands ( class UClass* GameClass, TArray< 
     static UFunction* pFnGetGametypeSpecificCommands = NULL;
 
     if ( ! pFnGetGametypeSpecificCommands )
-        pFnGetGametypeSpecificCommands = (UFunction*) UObject::GObjObjects()->Data[ 122023 ];
+        pFnGetGametypeSpecificCommands = (UFunction*) UObject::GObjObjects()->Data[ 122022 ];
 
     UTrVGSNode_execGetGametypeSpecificCommands_Parms GetGametypeSpecificCommands_Parms;
     GetGametypeSpecificCommands_Parms.GameClass = GameClass;
@@ -60920,7 +60920,7 @@ bool UTrVGSNode::VerifyVGSChild ( class UClass* VGSNodeClass, class UClass* Game
     static UFunction* pFnVerifyVGSChild = NULL;
 
     if ( ! pFnVerifyVGSChild )
-        pFnVerifyVGSChild = (UFunction*) UObject::GObjObjects()->Data[ 122019 ];
+        pFnVerifyVGSChild = (UFunction*) UObject::GObjObjects()->Data[ 122018 ];
 
     UTrVGSNode_execVerifyVGSChild_Parms VerifyVGSChild_Parms;
     VerifyVGSChild_Parms.VGSNodeClass = VGSNodeClass;
@@ -61028,7 +61028,7 @@ void ATrDevice_LaserTargeter::UpdateTarget ( unsigned long hasHitSomething, stru
     static UFunction* pFnUpdateTarget = NULL;
 
     if ( ! pFnUpdateTarget )
-        pFnUpdateTarget = (UFunction*) UObject::GObjObjects()->Data[ 86003 ];
+        pFnUpdateTarget = (UFunction*) UObject::GObjObjects()->Data[ 86002 ];
 
     ATrDevice_LaserTargeter_execUpdateTarget_Parms UpdateTarget_Parms;
     UpdateTarget_Parms.hasHitSomething = hasHitSomething;
@@ -61046,7 +61046,7 @@ void ATrDevice_LaserTargeter::UpdateLaserEffect ( )
     static UFunction* pFnUpdateLaserEffect = NULL;
 
     if ( ! pFnUpdateLaserEffect )
-        pFnUpdateLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85999 ];
+        pFnUpdateLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85998 ];
 
     ATrDevice_LaserTargeter_execUpdateLaserEffect_Parms UpdateLaserEffect_Parms;
 
@@ -61062,7 +61062,7 @@ void ATrDevice_LaserTargeter::SpawnLaserEffect ( )
     static UFunction* pFnSpawnLaserEffect = NULL;
 
     if ( ! pFnSpawnLaserEffect )
-        pFnSpawnLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85994 ];
+        pFnSpawnLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85993 ];
 
     ATrDevice_LaserTargeter_execSpawnLaserEffect_Parms SpawnLaserEffect_Parms;
 
@@ -61078,7 +61078,7 @@ void ATrDevice_LaserTargeter::KillLaserEffect ( )
     static UFunction* pFnKillLaserEffect = NULL;
 
     if ( ! pFnKillLaserEffect )
-        pFnKillLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85993 ];
+        pFnKillLaserEffect = (UFunction*) UObject::GObjObjects()->Data[ 85992 ];
 
     ATrDevice_LaserTargeter_execKillLaserEffect_Parms KillLaserEffect_Parms;
 
@@ -61097,7 +61097,7 @@ bool ATrDevice_LaserTargeter::GetLaserStartAndEnd ( struct FVector* StartLocatio
     static UFunction* pFnGetLaserStartAndEnd = NULL;
 
     if ( ! pFnGetLaserStartAndEnd )
-        pFnGetLaserStartAndEnd = (UFunction*) UObject::GObjObjects()->Data[ 85986 ];
+        pFnGetLaserStartAndEnd = (UFunction*) UObject::GObjObjects()->Data[ 85985 ];
 
     ATrDevice_LaserTargeter_execGetLaserStartAndEnd_Parms GetLaserStartAndEnd_Parms;
 
@@ -61121,7 +61121,7 @@ void ATrDevice_LaserTargeter::OnStartConstantFire ( )
     static UFunction* pFnOnStartConstantFire = NULL;
 
     if ( ! pFnOnStartConstantFire )
-        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85982 ];
+        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85981 ];
 
     ATrDevice_LaserTargeter_execOnStartConstantFire_Parms OnStartConstantFire_Parms;
 
@@ -61137,7 +61137,7 @@ void ATrDevice_LaserTargeter::OnEndConstantFire ( )
     static UFunction* pFnOnEndConstantFire = NULL;
 
     if ( ! pFnOnEndConstantFire )
-        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85980 ];
+        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85979 ];
 
     ATrDevice_LaserTargeter_execOnEndConstantFire_Parms OnEndConstantFire_Parms;
 
@@ -61522,7 +61522,7 @@ void UTrPageManager::SaveReticule ( class UGFxObject* Data )
     static UFunction* pFnSaveReticule = NULL;
 
     if ( ! pFnSaveReticule )
-        pFnSaveReticule = (UFunction*) UObject::GObjObjects()->Data[ 102876 ];
+        pFnSaveReticule = (UFunction*) UObject::GObjObjects()->Data[ 102875 ];
 
     UTrPageManager_execSaveReticule_Parms SaveReticule_Parms;
     SaveReticule_Parms.Data = Data;
@@ -61540,7 +61540,7 @@ void UTrPageManager::ShowReticule ( int Index )
     static UFunction* pFnShowReticule = NULL;
 
     if ( ! pFnShowReticule )
-        pFnShowReticule = (UFunction*) UObject::GObjObjects()->Data[ 102874 ];
+        pFnShowReticule = (UFunction*) UObject::GObjObjects()->Data[ 102873 ];
 
     UTrPageManager_execShowReticule_Parms ShowReticule_Parms;
     ShowReticule_Parms.Index = Index;
@@ -61558,7 +61558,7 @@ void UTrPageManager::SelectedFeature ( int ActionIndex )
     static UFunction* pFnSelectedFeature = NULL;
 
     if ( ! pFnSelectedFeature )
-        pFnSelectedFeature = (UFunction*) UObject::GObjObjects()->Data[ 102872 ];
+        pFnSelectedFeature = (UFunction*) UObject::GObjObjects()->Data[ 102871 ];
 
     UTrPageManager_execSelectedFeature_Parms SelectedFeature_Parms;
     SelectedFeature_Parms.ActionIndex = ActionIndex;
@@ -61576,7 +61576,7 @@ void UTrPageManager::PromoAction ( int ActionIndex )
     static UFunction* pFnPromoAction = NULL;
 
     if ( ! pFnPromoAction )
-        pFnPromoAction = (UFunction*) UObject::GObjObjects()->Data[ 102870 ];
+        pFnPromoAction = (UFunction*) UObject::GObjObjects()->Data[ 102869 ];
 
     UTrPageManager_execPromoAction_Parms PromoAction_Parms;
     PromoAction_Parms.ActionIndex = ActionIndex;
@@ -61593,7 +61593,7 @@ void UTrPageManager::ShowInGameModel ( )
     static UFunction* pFnShowInGameModel = NULL;
 
     if ( ! pFnShowInGameModel )
-        pFnShowInGameModel = (UFunction*) UObject::GObjObjects()->Data[ 102869 ];
+        pFnShowInGameModel = (UFunction*) UObject::GObjObjects()->Data[ 102868 ];
 
     UTrPageManager_execShowInGameModel_Parms ShowInGameModel_Parms;
 
@@ -61630,7 +61630,7 @@ void UTrPageManager::TravelToStore ( )
     static UFunction* pFnTravelToStore = NULL;
 
     if ( ! pFnTravelToStore )
-        pFnTravelToStore = (UFunction*) UObject::GObjObjects()->Data[ 102867 ];
+        pFnTravelToStore = (UFunction*) UObject::GObjObjects()->Data[ 102866 ];
 
     UTrPageManager_execTravelToStore_Parms TravelToStore_Parms;
 
@@ -61646,7 +61646,7 @@ void UTrPageManager::TravelToBundles ( )
     static UFunction* pFnTravelToBundles = NULL;
 
     if ( ! pFnTravelToBundles )
-        pFnTravelToBundles = (UFunction*) UObject::GObjObjects()->Data[ 102866 ];
+        pFnTravelToBundles = (UFunction*) UObject::GObjObjects()->Data[ 102865 ];
 
     UTrPageManager_execTravelToBundles_Parms TravelToBundles_Parms;
 
@@ -61662,7 +61662,7 @@ void UTrPageManager::TravelToSettings ( )
     static UFunction* pFnTravelToSettings = NULL;
 
     if ( ! pFnTravelToSettings )
-        pFnTravelToSettings = (UFunction*) UObject::GObjObjects()->Data[ 102865 ];
+        pFnTravelToSettings = (UFunction*) UObject::GObjObjects()->Data[ 102864 ];
 
     UTrPageManager_execTravelToSettings_Parms TravelToSettings_Parms;
 
@@ -61678,7 +61678,7 @@ void UTrPageManager::TravelToFriends ( )
     static UFunction* pFnTravelToFriends = NULL;
 
     if ( ! pFnTravelToFriends )
-        pFnTravelToFriends = (UFunction*) UObject::GObjObjects()->Data[ 102864 ];
+        pFnTravelToFriends = (UFunction*) UObject::GObjObjects()->Data[ 102863 ];
 
     UTrPageManager_execTravelToFriends_Parms TravelToFriends_Parms;
 
@@ -61694,7 +61694,7 @@ void UTrPageManager::TravelToClasses ( )
     static UFunction* pFnTravelToClasses = NULL;
 
     if ( ! pFnTravelToClasses )
-        pFnTravelToClasses = (UFunction*) UObject::GObjObjects()->Data[ 102863 ];
+        pFnTravelToClasses = (UFunction*) UObject::GObjObjects()->Data[ 102862 ];
 
     UTrPageManager_execTravelToClasses_Parms TravelToClasses_Parms;
 
@@ -61710,7 +61710,7 @@ void UTrPageManager::TravelToMain ( )
     static UFunction* pFnTravelToMain = NULL;
 
     if ( ! pFnTravelToMain )
-        pFnTravelToMain = (UFunction*) UObject::GObjObjects()->Data[ 102862 ];
+        pFnTravelToMain = (UFunction*) UObject::GObjObjects()->Data[ 102861 ];
 
     UTrPageManager_execTravelToMain_Parms TravelToMain_Parms;
 
@@ -61726,7 +61726,7 @@ void UTrPageManager::PushOpenLogin ( )
     static UFunction* pFnPushOpenLogin = NULL;
 
     if ( ! pFnPushOpenLogin )
-        pFnPushOpenLogin = (UFunction*) UObject::GObjObjects()->Data[ 102861 ];
+        pFnPushOpenLogin = (UFunction*) UObject::GObjObjects()->Data[ 102860 ];
 
     UTrPageManager_execPushOpenLogin_Parms PushOpenLogin_Parms;
 
@@ -61742,7 +61742,7 @@ void UTrPageManager::PushOpenClassSelect ( )
     static UFunction* pFnPushOpenClassSelect = NULL;
 
     if ( ! pFnPushOpenClassSelect )
-        pFnPushOpenClassSelect = (UFunction*) UObject::GObjObjects()->Data[ 102860 ];
+        pFnPushOpenClassSelect = (UFunction*) UObject::GObjObjects()->Data[ 102859 ];
 
     UTrPageManager_execPushOpenClassSelect_Parms PushOpenClassSelect_Parms;
 
@@ -61758,7 +61758,7 @@ void UTrPageManager::PushOpenParty ( )
     static UFunction* pFnPushOpenParty = NULL;
 
     if ( ! pFnPushOpenParty )
-        pFnPushOpenParty = (UFunction*) UObject::GObjObjects()->Data[ 102859 ];
+        pFnPushOpenParty = (UFunction*) UObject::GObjObjects()->Data[ 102858 ];
 
     UTrPageManager_execPushOpenParty_Parms PushOpenParty_Parms;
 
@@ -61774,7 +61774,7 @@ void UTrPageManager::PushOpenMain ( )
     static UFunction* pFnPushOpenMain = NULL;
 
     if ( ! pFnPushOpenMain )
-        pFnPushOpenMain = (UFunction*) UObject::GObjObjects()->Data[ 102858 ];
+        pFnPushOpenMain = (UFunction*) UObject::GObjObjects()->Data[ 102857 ];
 
     UTrPageManager_execPushOpenMain_Parms PushOpenMain_Parms;
 
@@ -61809,7 +61809,7 @@ void UTrPageManager::ClearStack ( )
     static UFunction* pFnClearStack = NULL;
 
     if ( ! pFnClearStack )
-        pFnClearStack = (UFunction*) UObject::GObjObjects()->Data[ 102856 ];
+        pFnClearStack = (UFunction*) UObject::GObjObjects()->Data[ 102855 ];
 
     UTrPageManager_execClearStack_Parms ClearStack_Parms;
 
@@ -61844,7 +61844,7 @@ void UTrPageManager::PopBack ( )
     static UFunction* pFnPopBack = NULL;
 
     if ( ! pFnPopBack )
-        pFnPopBack = (UFunction*) UObject::GObjObjects()->Data[ 102855 ];
+        pFnPopBack = (UFunction*) UObject::GObjObjects()->Data[ 102854 ];
 
     UTrPageManager_execPopBack_Parms PopBack_Parms;
 
@@ -61861,7 +61861,7 @@ void UTrPageManager::PushOpen ( class UGFxTrPage* Page )
     static UFunction* pFnPushOpen = NULL;
 
     if ( ! pFnPushOpen )
-        pFnPushOpen = (UFunction*) UObject::GObjObjects()->Data[ 102853 ];
+        pFnPushOpen = (UFunction*) UObject::GObjObjects()->Data[ 102852 ];
 
     UTrPageManager_execPushOpen_Parms PushOpen_Parms;
     PushOpen_Parms.Page = Page;
@@ -61879,7 +61879,7 @@ void UTrPageManager::PushPage ( class UGFxTrPage* Page )
     static UFunction* pFnPushPage = NULL;
 
     if ( ! pFnPushPage )
-        pFnPushPage = (UFunction*) UObject::GObjObjects()->Data[ 102851 ];
+        pFnPushPage = (UFunction*) UObject::GObjObjects()->Data[ 102850 ];
 
     UTrPageManager_execPushPage_Parms PushPage_Parms;
     PushPage_Parms.Page = Page;
@@ -61897,7 +61897,7 @@ void UTrPageManager::ProfileDown ( int ActionIndex )
     static UFunction* pFnProfileDown = NULL;
 
     if ( ! pFnProfileDown )
-        pFnProfileDown = (UFunction*) UObject::GObjObjects()->Data[ 102849 ];
+        pFnProfileDown = (UFunction*) UObject::GObjObjects()->Data[ 102848 ];
 
     UTrPageManager_execProfileDown_Parms ProfileDown_Parms;
     ProfileDown_Parms.ActionIndex = ActionIndex;
@@ -61915,7 +61915,7 @@ void UTrPageManager::ProfileUp ( int ActionIndex )
     static UFunction* pFnProfileUp = NULL;
 
     if ( ! pFnProfileUp )
-        pFnProfileUp = (UFunction*) UObject::GObjObjects()->Data[ 102847 ];
+        pFnProfileUp = (UFunction*) UObject::GObjObjects()->Data[ 102846 ];
 
     UTrPageManager_execProfileUp_Parms ProfileUp_Parms;
     ProfileUp_Parms.ActionIndex = ActionIndex;
@@ -61933,7 +61933,7 @@ void UTrPageManager::HelpButton ( int ActionIndex )
     static UFunction* pFnHelpButton = NULL;
 
     if ( ! pFnHelpButton )
-        pFnHelpButton = (UFunction*) UObject::GObjObjects()->Data[ 102845 ];
+        pFnHelpButton = (UFunction*) UObject::GObjObjects()->Data[ 102844 ];
 
     UTrPageManager_execHelpButton_Parms HelpButton_Parms;
     HelpButton_Parms.ActionIndex = ActionIndex;
@@ -61951,7 +61951,7 @@ void UTrPageManager::ModifyFocus ( int ActionIndex )
     static UFunction* pFnModifyFocus = NULL;
 
     if ( ! pFnModifyFocus )
-        pFnModifyFocus = (UFunction*) UObject::GObjObjects()->Data[ 102843 ];
+        pFnModifyFocus = (UFunction*) UObject::GObjObjects()->Data[ 102842 ];
 
     UTrPageManager_execModifyFocus_Parms ModifyFocus_Parms;
     ModifyFocus_Parms.ActionIndex = ActionIndex;
@@ -61971,7 +61971,7 @@ int UTrPageManager::ModifyAction ( int ActionIndex, class UGFxObject* DataList )
     static UFunction* pFnModifyAction = NULL;
 
     if ( ! pFnModifyAction )
-        pFnModifyAction = (UFunction*) UObject::GObjObjects()->Data[ 102839 ];
+        pFnModifyAction = (UFunction*) UObject::GObjObjects()->Data[ 102838 ];
 
     UTrPageManager_execModifyAction_Parms ModifyAction_Parms;
     ModifyAction_Parms.ActionIndex = ActionIndex;
@@ -61991,7 +61991,7 @@ void UTrPageManager::ActionDown ( )
     static UFunction* pFnActionDown = NULL;
 
     if ( ! pFnActionDown )
-        pFnActionDown = (UFunction*) UObject::GObjObjects()->Data[ 102838 ];
+        pFnActionDown = (UFunction*) UObject::GObjObjects()->Data[ 102837 ];
 
     UTrPageManager_execActionDown_Parms ActionDown_Parms;
 
@@ -62007,7 +62007,7 @@ void UTrPageManager::ActionUp ( )
     static UFunction* pFnActionUp = NULL;
 
     if ( ! pFnActionUp )
-        pFnActionUp = (UFunction*) UObject::GObjObjects()->Data[ 102837 ];
+        pFnActionUp = (UFunction*) UObject::GObjObjects()->Data[ 102836 ];
 
     UTrPageManager_execActionUp_Parms ActionUp_Parms;
 
@@ -62026,7 +62026,7 @@ int UTrPageManager::TakeAction ( int Index, class UGFxObject* DataList )
     static UFunction* pFnTakeAction = NULL;
 
     if ( ! pFnTakeAction )
-        pFnTakeAction = (UFunction*) UObject::GObjObjects()->Data[ 102832 ];
+        pFnTakeAction = (UFunction*) UObject::GObjObjects()->Data[ 102831 ];
 
     UTrPageManager_execTakeAction_Parms TakeAction_Parms;
     TakeAction_Parms.Index = Index;
@@ -62049,7 +62049,7 @@ int UTrPageManager::TakeFocus ( int Index, class UGFxObject* DataList )
     static UFunction* pFnTakeFocus = NULL;
 
     if ( ! pFnTakeFocus )
-        pFnTakeFocus = (UFunction*) UObject::GObjObjects()->Data[ 102828 ];
+        pFnTakeFocus = (UFunction*) UObject::GObjObjects()->Data[ 102827 ];
 
     UTrPageManager_execTakeFocus_Parms TakeFocus_Parms;
     TakeFocus_Parms.Index = Index;
@@ -62071,7 +62071,7 @@ void UTrPageManager::PopupComplete ( int Action, struct FString TextInput )
     static UFunction* pFnPopupComplete = NULL;
 
     if ( ! pFnPopupComplete )
-        pFnPopupComplete = (UFunction*) UObject::GObjObjects()->Data[ 102822 ];
+        pFnPopupComplete = (UFunction*) UObject::GObjObjects()->Data[ 102821 ];
 
     UTrPageManager_execPopupComplete_Parms PopupComplete_Parms;
     PopupComplete_Parms.Action = Action;
@@ -62090,7 +62090,7 @@ void UTrPageManager::PopupData ( class UGFxObject* Obj )
     static UFunction* pFnPopupData = NULL;
 
     if ( ! pFnPopupData )
-        pFnPopupData = (UFunction*) UObject::GObjObjects()->Data[ 102820 ];
+        pFnPopupData = (UFunction*) UObject::GObjObjects()->Data[ 102819 ];
 
     UTrPageManager_execPopupData_Parms PopupData_Parms;
     PopupData_Parms.Obj = Obj;
@@ -62107,7 +62107,7 @@ void UTrPageManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 102819 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 102818 ];
 
     UTrPageManager_execInitialize_Parms Initialize_Parms;
 
@@ -62123,7 +62123,7 @@ void UTrSettingsManager::Initialize ( )
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 118924 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 118923 ];
 
     UTrSettingsManager_execInitialize_Parms Initialize_Parms;
 
@@ -62207,7 +62207,7 @@ void UTrRibbonManager::CalculateRibbons ( int Gold, int XP, unsigned long bForce
     static UFunction* pFnCalculateRibbons = NULL;
 
     if ( ! pFnCalculateRibbons )
-        pFnCalculateRibbons = (UFunction*) UObject::GObjObjects()->Data[ 117107 ];
+        pFnCalculateRibbons = (UFunction*) UObject::GObjObjects()->Data[ 117106 ];
 
     UTrRibbonManager_execCalculateRibbons_Parms CalculateRibbons_Parms;
     CalculateRibbons_Parms.Gold = Gold;
@@ -67717,7 +67717,7 @@ void ATrPlayerVoice::PlayRandomSample ( class ATrPlayerController* TrPC )
     static UFunction* pFnPlayRandomSample = NULL;
 
     if ( ! pFnPlayRandomSample )
-        pFnPlayRandomSample = (UFunction*) UObject::GObjObjects()->Data[ 107064 ];
+        pFnPlayRandomSample = (UFunction*) UObject::GObjObjects()->Data[ 107063 ];
 
     ATrPlayerVoice_execPlayRandomSample_Parms PlayRandomSample_Parms;
     PlayRandomSample_Parms.TrPC = TrPC;
@@ -67739,7 +67739,7 @@ void ATrPlayerVoice::PlaySoundContext ( class ATrPlayerController* TrPC, unsigne
     static UFunction* pFnPlaySoundContext = NULL;
 
     if ( ! pFnPlaySoundContext )
-        pFnPlaySoundContext = (UFunction*) UObject::GObjObjects()->Data[ 107056 ];
+        pFnPlaySoundContext = (UFunction*) UObject::GObjObjects()->Data[ 107055 ];
 
     ATrPlayerVoice_execPlaySoundContext_Parms PlaySoundContext_Parms;
     PlaySoundContext_Parms.TrPC = TrPC;
@@ -67763,7 +67763,7 @@ void ATrPlayerVoice::PlaySoundEx ( unsigned char Command, class ATrPlayerControl
     static UFunction* pFnPlaySoundEx = NULL;
 
     if ( ! pFnPlaySoundEx )
-        pFnPlaySoundEx = (UFunction*) UObject::GObjObjects()->Data[ 107050 ];
+        pFnPlaySoundEx = (UFunction*) UObject::GObjObjects()->Data[ 107049 ];
 
     ATrPlayerVoice_execPlaySoundEx_Parms PlaySoundEx_Parms;
     PlaySoundEx_Parms.Command = Command;
@@ -69925,7 +69925,7 @@ void UTrHUDSettings::SaveSetting ( int Index, float val )
     static UFunction* pFnSaveSetting = NULL;
 
     if ( ! pFnSaveSetting )
-        pFnSaveSetting = (UFunction*) UObject::GObjObjects()->Data[ 98926 ];
+        pFnSaveSetting = (UFunction*) UObject::GObjObjects()->Data[ 98925 ];
 
     UTrHUDSettings_execSaveSetting_Parms SaveSetting_Parms;
     SaveSetting_Parms.Index = Index;
@@ -78365,7 +78365,7 @@ int ATrGame_TRCTF::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92743 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92742 ];
 
     ATrGame_TRCTF_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -78385,7 +78385,7 @@ bool ATrGame_TRCTF::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92740 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92739 ];
 
     ATrGame_TRCTF_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -78405,7 +78405,7 @@ void ATrGame_TRCTF::AnnounceScore ( int ScoringTeam )
     static UFunction* pFnAnnounceScore = NULL;
 
     if ( ! pFnAnnounceScore )
-        pFnAnnounceScore = (UFunction*) UObject::GObjObjects()->Data[ 92735 ];
+        pFnAnnounceScore = (UFunction*) UObject::GObjObjects()->Data[ 92734 ];
 
     ATrGame_TRCTF_execAnnounceScore_Parms AnnounceScore_Parms;
     AnnounceScore_Parms.ScoringTeam = ScoringTeam;
@@ -78424,7 +78424,7 @@ class AActor* ATrGame_TRCTF::GetAutoObjectiveFor ( class AUTPlayerController* PC
     static UFunction* pFnGetAutoObjectiveFor = NULL;
 
     if ( ! pFnGetAutoObjectiveFor )
-        pFnGetAutoObjectiveFor = (UFunction*) UObject::GObjObjects()->Data[ 92732 ];
+        pFnGetAutoObjectiveFor = (UFunction*) UObject::GObjObjects()->Data[ 92731 ];
 
     ATrGame_TRCTF_execGetAutoObjectiveFor_Parms GetAutoObjectiveFor_Parms;
     GetAutoObjectiveFor_Parms.PC = PC;
@@ -78444,7 +78444,7 @@ void ATrGame_TRCTF::ViewObjective ( class APlayerController* PC )
     static UFunction* pFnViewObjective = NULL;
 
     if ( ! pFnViewObjective )
-        pFnViewObjective = (UFunction*) UObject::GObjObjects()->Data[ 92729 ];
+        pFnViewObjective = (UFunction*) UObject::GObjObjects()->Data[ 92728 ];
 
     ATrGame_TRCTF_execViewObjective_Parms ViewObjective_Parms;
     ViewObjective_Parms.PC = PC;
@@ -78463,7 +78463,7 @@ void ATrGame_TRCTF::ScoreFlag ( class AController* Scorer, class ATrFlagBase* th
     static UFunction* pFnScoreFlag = NULL;
 
     if ( ! pFnScoreFlag )
-        pFnScoreFlag = (UFunction*) UObject::GObjObjects()->Data[ 92707 ];
+        pFnScoreFlag = (UFunction*) UObject::GObjObjects()->Data[ 92706 ];
 
     ATrGame_TRCTF_execScoreFlag_Parms ScoreFlag_Parms;
     ScoreFlag_Parms.Scorer = Scorer;
@@ -78484,7 +78484,7 @@ bool ATrGame_TRCTF::CheckEndGame ( class APlayerReplicationInfo* Winner, struct 
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92701 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92700 ];
 
     ATrGame_TRCTF_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -78506,7 +78506,7 @@ bool ATrGame_TRCTF::WantFastSpawnFor ( class AAIController* B )
     static UFunction* pFnWantFastSpawnFor = NULL;
 
     if ( ! pFnWantFastSpawnFor )
-        pFnWantFastSpawnFor = (UFunction*) UObject::GObjObjects()->Data[ 92698 ];
+        pFnWantFastSpawnFor = (UFunction*) UObject::GObjObjects()->Data[ 92697 ];
 
     ATrGame_TRCTF_execWantFastSpawnFor_Parms WantFastSpawnFor_Parms;
     WantFastSpawnFor_Parms.B = B;
@@ -78527,7 +78527,7 @@ bool ATrGame_TRCTF::NearGoal ( class AController* C )
     static UFunction* pFnNearGoal = NULL;
 
     if ( ! pFnNearGoal )
-        pFnNearGoal = (UFunction*) UObject::GObjObjects()->Data[ 92694 ];
+        pFnNearGoal = (UFunction*) UObject::GObjObjects()->Data[ 92693 ];
 
     ATrGame_TRCTF_execNearGoal_Parms NearGoal_Parms;
     NearGoal_Parms.C = C;
@@ -78548,7 +78548,7 @@ void ATrGame_TRCTF::RegisterFlag ( class AUTCarriedObject* F, int TeamIndex )
     static UFunction* pFnRegisterFlag = NULL;
 
     if ( ! pFnRegisterFlag )
-        pFnRegisterFlag = (UFunction*) UObject::GObjObjects()->Data[ 92690 ];
+        pFnRegisterFlag = (UFunction*) UObject::GObjObjects()->Data[ 92689 ];
 
     ATrGame_TRCTF_execRegisterFlag_Parms RegisterFlag_Parms;
     RegisterFlag_Parms.F = F;
@@ -78571,7 +78571,7 @@ bool ATrGame_TRCTF::GetLocationFor ( class APawn* StatusPawn, int LocationSpeech
     static UFunction* pFnGetLocationFor = NULL;
 
     if ( ! pFnGetLocationFor )
-        pFnGetLocationFor = (UFunction*) UObject::GObjObjects()->Data[ 92681 ];
+        pFnGetLocationFor = (UFunction*) UObject::GObjObjects()->Data[ 92680 ];
 
     ATrGame_TRCTF_execGetLocationFor_Parms GetLocationFor_Parms;
     GetLocationFor_Parms.StatusPawn = StatusPawn;
@@ -78599,7 +78599,7 @@ int ATrGame_TRCTF::GetHandicapNeed ( class APawn* Other )
     static UFunction* pFnGetHandicapNeed = NULL;
 
     if ( ! pFnGetHandicapNeed )
-        pFnGetHandicapNeed = (UFunction*) UObject::GObjObjects()->Data[ 92678 ];
+        pFnGetHandicapNeed = (UFunction*) UObject::GObjObjects()->Data[ 92677 ];
 
     ATrGame_TRCTF_execGetHandicapNeed_Parms GetHandicapNeed_Parms;
     GetHandicapNeed_Parms.Other = Other;
@@ -78618,7 +78618,7 @@ void ATrGame_TRCTF::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92676 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92675 ];
 
     ATrGame_TRCTF_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -78634,7 +78634,7 @@ void ATrGame_TRCTF::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92674 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92673 ];
 
     ATrGame_TRCTF_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -78654,7 +78654,7 @@ struct FRotator ATrVehicle_Tank::LimitViewRotation ( struct FRotator LimitViewRo
     static UFunction* pFnLimitViewRotation = NULL;
 
     if ( ! pFnLimitViewRotation )
-        pFnLimitViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 121346 ];
+        pFnLimitViewRotation = (UFunction*) UObject::GObjObjects()->Data[ 121345 ];
 
     ATrVehicle_Tank_execLimitViewRotation_Parms LimitViewRotation_Parms;
     memcpy ( &LimitViewRotation_Parms.LimitViewRotation, &LimitViewRotation, 0xC );
@@ -78679,7 +78679,7 @@ void ATrVehicle_Tank::ProcessViewRotationBasedOnSeat ( int SeatIndex, float Delt
     static UFunction* pFnProcessViewRotationBasedOnSeat = NULL;
 
     if ( ! pFnProcessViewRotationBasedOnSeat )
-        pFnProcessViewRotationBasedOnSeat = (UFunction*) UObject::GObjObjects()->Data[ 121336 ];
+        pFnProcessViewRotationBasedOnSeat = (UFunction*) UObject::GObjObjects()->Data[ 121335 ];
 
     ATrVehicle_Tank_execProcessViewRotationBasedOnSeat_Parms ProcessViewRotationBasedOnSeat_Parms;
     ProcessViewRotationBasedOnSeat_Parms.SeatIndex = SeatIndex;
@@ -78705,7 +78705,7 @@ void ATrVehicle_Tank::VehicleWeaponFireEffects ( struct FVector HitLocation, int
     static UFunction* pFnVehicleWeaponFireEffects = NULL;
 
     if ( ! pFnVehicleWeaponFireEffects )
-        pFnVehicleWeaponFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121330 ];
+        pFnVehicleWeaponFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 121329 ];
 
     ATrVehicle_Tank_execVehicleWeaponFireEffects_Parms VehicleWeaponFireEffects_Parms;
     memcpy ( &VehicleWeaponFireEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -78724,7 +78724,7 @@ void ATrVehicle_Tank::eventPostInitAnimTree ( class USkeletalMeshComponent* Skel
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121326 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121325 ];
 
     ATrVehicle_Tank_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -78742,7 +78742,7 @@ int ATrGame_TRTeamRabbit::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 93113 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 93112 ];
 
     ATrGame_TRTeamRabbit_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -78764,7 +78764,7 @@ float ATrGame_TRTeamRabbit::RatePlayerStart ( class APlayerStart* P, unsigned ch
     static UFunction* pFnRatePlayerStart = NULL;
 
     if ( ! pFnRatePlayerStart )
-        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 93107 ];
+        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 93106 ];
 
     ATrGame_TRTeamRabbit_execRatePlayerStart_Parms RatePlayerStart_Parms;
     RatePlayerStart_Parms.P = P;
@@ -78788,7 +78788,7 @@ bool ATrGame_TRTeamRabbit::CheckEndGame ( class APlayerReplicationInfo* Winner, 
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93099 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93098 ];
 
     ATrGame_TRTeamRabbit_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -78810,7 +78810,7 @@ bool ATrGame_TRTeamRabbit::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93096 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93095 ];
 
     ATrGame_TRTeamRabbit_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -78831,7 +78831,7 @@ void ATrGame_TRTeamRabbit::ScoreKill ( class AController* Killer, class AControl
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 93080 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 93079 ];
 
     ATrGame_TRTeamRabbit_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -78849,7 +78849,7 @@ void ATrGame_TRTeamRabbit::AwardFlagHolder ( )
     static UFunction* pFnAwardFlagHolder = NULL;
 
     if ( ! pFnAwardFlagHolder )
-        pFnAwardFlagHolder = (UFunction*) UObject::GObjObjects()->Data[ 93078 ];
+        pFnAwardFlagHolder = (UFunction*) UObject::GObjObjects()->Data[ 93077 ];
 
     ATrGame_TRTeamRabbit_execAwardFlagHolder_Parms AwardFlagHolder_Parms;
 
@@ -78865,7 +78865,7 @@ void ATrGame_TRTeamRabbit::DroppedFlag ( )
     static UFunction* pFnDroppedFlag = NULL;
 
     if ( ! pFnDroppedFlag )
-        pFnDroppedFlag = (UFunction*) UObject::GObjObjects()->Data[ 93076 ];
+        pFnDroppedFlag = (UFunction*) UObject::GObjObjects()->Data[ 93075 ];
 
     ATrGame_TRTeamRabbit_execDroppedFlag_Parms DroppedFlag_Parms;
 
@@ -78882,7 +78882,7 @@ void ATrGame_TRTeamRabbit::PickedUpFlag ( class AController* Holder )
     static UFunction* pFnPickedUpFlag = NULL;
 
     if ( ! pFnPickedUpFlag )
-        pFnPickedUpFlag = (UFunction*) UObject::GObjObjects()->Data[ 93071 ];
+        pFnPickedUpFlag = (UFunction*) UObject::GObjObjects()->Data[ 93070 ];
 
     ATrGame_TRTeamRabbit_execPickedUpFlag_Parms PickedUpFlag_Parms;
     PickedUpFlag_Parms.Holder = Holder;
@@ -78899,7 +78899,7 @@ void ATrGame_TRTeamRabbit::FlagDestoyed ( )
     static UFunction* pFnFlagDestoyed = NULL;
 
     if ( ! pFnFlagDestoyed )
-        pFnFlagDestoyed = (UFunction*) UObject::GObjObjects()->Data[ 93070 ];
+        pFnFlagDestoyed = (UFunction*) UObject::GObjObjects()->Data[ 93069 ];
 
     ATrGame_TRTeamRabbit_execFlagDestoyed_Parms FlagDestoyed_Parms;
 
@@ -78919,7 +78919,7 @@ void ATrGame_TRTeamRabbit::Killed ( class AController* Killer, class AController
     static UFunction* pFnKilled = NULL;
 
     if ( ! pFnKilled )
-        pFnKilled = (UFunction*) UObject::GObjObjects()->Data[ 93064 ];
+        pFnKilled = (UFunction*) UObject::GObjObjects()->Data[ 93063 ];
 
     ATrGame_TRTeamRabbit_execKilled_Parms Killed_Parms;
     Killed_Parms.Killer = Killer;
@@ -78941,7 +78941,7 @@ void ATrGame_TRTeamRabbit::SpawnFlag ( struct FVector SpawnLocation, struct FVec
     static UFunction* pFnSpawnFlag = NULL;
 
     if ( ! pFnSpawnFlag )
-        pFnSpawnFlag = (UFunction*) UObject::GObjObjects()->Data[ 93052 ];
+        pFnSpawnFlag = (UFunction*) UObject::GObjObjects()->Data[ 93051 ];
 
     ATrGame_TRTeamRabbit_execSpawnFlag_Parms SpawnFlag_Parms;
     memcpy ( &SpawnFlag_Parms.SpawnLocation, &SpawnLocation, 0xC );
@@ -78959,7 +78959,7 @@ void ATrGame_TRTeamRabbit::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 93050 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 93049 ];
 
     ATrGame_TRTeamRabbit_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -78975,7 +78975,7 @@ void ATrGame_TRTeamRabbit::ResetScores ( )
     static UFunction* pFnResetScores = NULL;
 
     if ( ! pFnResetScores )
-        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 93049 ];
+        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 93048 ];
 
     ATrGame_TRTeamRabbit_execResetScores_Parms ResetScores_Parms;
 
@@ -78991,7 +78991,7 @@ void ATrGame_TRTeamRabbit::ResetLevel ( )
     static UFunction* pFnResetLevel = NULL;
 
     if ( ! pFnResetLevel )
-        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 93048 ];
+        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 93047 ];
 
     ATrGame_TRTeamRabbit_execResetLevel_Parms ResetLevel_Parms;
 
@@ -79007,7 +79007,7 @@ void ATrGame_TRTeamRabbit::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 93047 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 93046 ];
 
     ATrGame_TRTeamRabbit_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -80119,7 +80119,7 @@ bool UTrEffect::CanBeApplied ( class AActor* Target )
     static UFunction* pFnCanBeApplied = NULL;
 
     if ( ! pFnCanBeApplied )
-        pFnCanBeApplied = (UFunction*) UObject::GObjObjects()->Data[ 87591 ];
+        pFnCanBeApplied = (UFunction*) UObject::GObjObjects()->Data[ 87590 ];
 
     UTrEffect_execCanBeApplied_Parms CanBeApplied_Parms;
     CanBeApplied_Parms.Target = Target;
@@ -80139,7 +80139,7 @@ void UTrEffect::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87589 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87588 ];
 
     UTrEffect_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -80158,7 +80158,7 @@ void UTrEffect::Apply ( class AActor* Target, struct FImpactInfo Impact )
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87586 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87585 ];
 
     UTrEffect_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -80176,7 +80176,7 @@ void UTrValueModifier::LogModifiedValues ( )
     static UFunction* pFnLogModifiedValues = NULL;
 
     if ( ! pFnLogModifiedValues )
-        pFnLogModifiedValues = (UFunction*) UObject::GObjObjects()->Data[ 120610 ];
+        pFnLogModifiedValues = (UFunction*) UObject::GObjObjects()->Data[ 120609 ];
 
     UTrValueModifier_execLogModifiedValues_Parms LogModifiedValues_Parms;
 
@@ -80195,7 +80195,7 @@ void UTrValueModifier::MergeModification ( int ModType, float Value, int EquipSl
     static UFunction* pFnMergeModification = NULL;
 
     if ( ! pFnMergeModification )
-        pFnMergeModification = (UFunction*) UObject::GObjObjects()->Data[ 120605 ];
+        pFnMergeModification = (UFunction*) UObject::GObjObjects()->Data[ 120604 ];
 
     UTrValueModifier_execMergeModification_Parms MergeModification_Parms;
     MergeModification_Parms.ModType = ModType;
@@ -80215,7 +80215,7 @@ void UTrValueModifier::MergeClass ( class UClass* ModifierClassToMerge )
     static UFunction* pFnMergeClass = NULL;
 
     if ( ! pFnMergeClass )
-        pFnMergeClass = (UFunction*) UObject::GObjObjects()->Data[ 120603 ];
+        pFnMergeClass = (UFunction*) UObject::GObjObjects()->Data[ 120602 ];
 
     UTrValueModifier_execMergeClass_Parms MergeClass_Parms;
     MergeClass_Parms.ModifierClassToMerge = ModifierClassToMerge;
@@ -80233,7 +80233,7 @@ void UTrValueModifier::Merge ( class UTrValueModifier* ModifierToMerge )
     static UFunction* pFnMerge = NULL;
 
     if ( ! pFnMerge )
-        pFnMerge = (UFunction*) UObject::GObjObjects()->Data[ 120601 ];
+        pFnMerge = (UFunction*) UObject::GObjObjects()->Data[ 120600 ];
 
     UTrValueModifier_execMerge_Parms Merge_Parms;
     Merge_Parms.ModifierToMerge = ModifierToMerge;
@@ -80250,7 +80250,7 @@ void UTrValueModifier::Reset ( )
     static UFunction* pFnReset = NULL;
 
     if ( ! pFnReset )
-        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 120600 ];
+        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 120599 ];
 
     UTrValueModifier_execReset_Parms Reset_Parms;
 
@@ -80267,7 +80267,7 @@ void ATrInventoryManager::ServerAutoFireWeapon ( unsigned char equipPoint )
     static UFunction* pFnServerAutoFireWeapon = NULL;
 
     if ( ! pFnServerAutoFireWeapon )
-        pFnServerAutoFireWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100557 ];
+        pFnServerAutoFireWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100556 ];
 
     ATrInventoryManager_execServerAutoFireWeapon_Parms ServerAutoFireWeapon_Parms;
     ServerAutoFireWeapon_Parms.equipPoint = equipPoint;
@@ -80284,7 +80284,7 @@ void ATrInventoryManager::SwitchToPreviousWeapon ( )
     static UFunction* pFnSwitchToPreviousWeapon = NULL;
 
     if ( ! pFnSwitchToPreviousWeapon )
-        pFnSwitchToPreviousWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100556 ];
+        pFnSwitchToPreviousWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100555 ];
 
     ATrInventoryManager_execSwitchToPreviousWeapon_Parms SwitchToPreviousWeapon_Parms;
 
@@ -80301,7 +80301,7 @@ void ATrInventoryManager::SwitchWeaponByEquipPoint ( unsigned char equipPoint )
     static UFunction* pFnSwitchWeaponByEquipPoint = NULL;
 
     if ( ! pFnSwitchWeaponByEquipPoint )
-        pFnSwitchWeaponByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 100552 ];
+        pFnSwitchWeaponByEquipPoint = (UFunction*) UObject::GObjObjects()->Data[ 100551 ];
 
     ATrInventoryManager_execSwitchWeaponByEquipPoint_Parms SwitchWeaponByEquipPoint_Parms;
     SwitchWeaponByEquipPoint_Parms.equipPoint = equipPoint;
@@ -80319,7 +80319,7 @@ void ATrInventoryManager::AutoFireWeapon ( unsigned char equipPoint )
     static UFunction* pFnAutoFireWeapon = NULL;
 
     if ( ! pFnAutoFireWeapon )
-        pFnAutoFireWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100547 ];
+        pFnAutoFireWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100546 ];
 
     ATrInventoryManager_execAutoFireWeapon_Parms AutoFireWeapon_Parms;
     AutoFireWeapon_Parms.equipPoint = equipPoint;
@@ -80337,7 +80337,7 @@ void ATrInventoryManager::RemoveFromInventory ( class AInventory* ItemToRemove )
     static UFunction* pFnRemoveFromInventory = NULL;
 
     if ( ! pFnRemoveFromInventory )
-        pFnRemoveFromInventory = (UFunction*) UObject::GObjObjects()->Data[ 100544 ];
+        pFnRemoveFromInventory = (UFunction*) UObject::GObjObjects()->Data[ 100543 ];
 
     ATrInventoryManager_execRemoveFromInventory_Parms RemoveFromInventory_Parms;
     RemoveFromInventory_Parms.ItemToRemove = ItemToRemove;
@@ -80378,7 +80378,7 @@ void ATrInventoryManager::SetPendingWeapon ( class AWeapon* DesiredWeapon )
     static UFunction* pFnSetPendingWeapon = NULL;
 
     if ( ! pFnSetPendingWeapon )
-        pFnSetPendingWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100535 ];
+        pFnSetPendingWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100534 ];
 
     ATrInventoryManager_execSetPendingWeapon_Parms SetPendingWeapon_Parms;
     SetPendingWeapon_Parms.DesiredWeapon = DesiredWeapon;
@@ -80396,7 +80396,7 @@ void ATrInventoryManager::AdjustWeapon ( int NewOffset )
     static UFunction* pFnAdjustWeapon = NULL;
 
     if ( ! pFnAdjustWeapon )
-        pFnAdjustWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100528 ];
+        pFnAdjustWeapon = (UFunction*) UObject::GObjObjects()->Data[ 100527 ];
 
     ATrInventoryManager_execAdjustWeapon_Parms AdjustWeapon_Parms;
     AdjustWeapon_Parms.NewOffset = NewOffset;
@@ -80413,7 +80413,7 @@ void ATrInventoryManager::DiscardEquippedDeployable ( )
     static UFunction* pFnDiscardEquippedDeployable = NULL;
 
     if ( ! pFnDiscardEquippedDeployable )
-        pFnDiscardEquippedDeployable = (UFunction*) UObject::GObjObjects()->Data[ 100526 ];
+        pFnDiscardEquippedDeployable = (UFunction*) UObject::GObjObjects()->Data[ 100525 ];
 
     ATrInventoryManager_execDiscardEquippedDeployable_Parms DiscardEquippedDeployable_Parms;
 
@@ -80431,7 +80431,7 @@ void ATrInventoryManager::TrGetWeaponList ( unsigned long bInhandOnly, TArray< c
     static UFunction* pFnTrGetWeaponList = NULL;
 
     if ( ! pFnTrGetWeaponList )
-        pFnTrGetWeaponList = (UFunction*) UObject::GObjObjects()->Data[ 100521 ];
+        pFnTrGetWeaponList = (UFunction*) UObject::GObjObjects()->Data[ 100520 ];
 
     ATrInventoryManager_execTrGetWeaponList_Parms TrGetWeaponList_Parms;
     TrGetWeaponList_Parms.bInhandOnly = bInhandOnly;
@@ -80453,7 +80453,7 @@ class ATrDevice* ATrInventoryManager::GetDeviceByWeaponId ( int WeaponId )
     static UFunction* pFnGetDeviceByWeaponId = NULL;
 
     if ( ! pFnGetDeviceByWeaponId )
-        pFnGetDeviceByWeaponId = (UFunction*) UObject::GObjObjects()->Data[ 100515 ];
+        pFnGetDeviceByWeaponId = (UFunction*) UObject::GObjObjects()->Data[ 100514 ];
 
     ATrInventoryManager_execGetDeviceByWeaponId_Parms GetDeviceByWeaponId_Parms;
     GetDeviceByWeaponId_Parms.WeaponId = WeaponId;
@@ -80474,7 +80474,7 @@ class ATrDevice* ATrInventoryManager::GetDeviceByWeaponClass ( class UClass* Dev
     static UFunction* pFnGetDeviceByWeaponClass = NULL;
 
     if ( ! pFnGetDeviceByWeaponClass )
-        pFnGetDeviceByWeaponClass = (UFunction*) UObject::GObjObjects()->Data[ 100509 ];
+        pFnGetDeviceByWeaponClass = (UFunction*) UObject::GObjObjects()->Data[ 100508 ];
 
     ATrInventoryManager_execGetDeviceByWeaponClass_Parms GetDeviceByWeaponClass_Parms;
     GetDeviceByWeaponClass_Parms.DeviceClass = DeviceClass;
@@ -80538,7 +80538,7 @@ void ATrInventoryManager::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 100499 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 100498 ];
 
     ATrInventoryManager_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -80555,7 +80555,7 @@ void ATrInventoryManager::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100498 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100497 ];
 
     ATrInventoryManager_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -80574,7 +80574,7 @@ void ATrProj_Tracer::ProcessTouch ( class AActor* Other, struct FVector HitLocat
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114555 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114554 ];
 
     ATrProj_Tracer_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -80593,7 +80593,7 @@ void ATrProj_Tracer::WakeProjectile ( )
     static UFunction* pFnWakeProjectile = NULL;
 
     if ( ! pFnWakeProjectile )
-        pFnWakeProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114554 ];
+        pFnWakeProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114553 ];
 
     ATrProj_Tracer_execWakeProjectile_Parms WakeProjectile_Parms;
 
@@ -80609,7 +80609,7 @@ void ATrProj_Tracer::Reset ( )
     static UFunction* pFnReset = NULL;
 
     if ( ! pFnReset )
-        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 114553 ];
+        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 114552 ];
 
     ATrProj_Tracer_execReset_Parms Reset_Parms;
 
@@ -80625,7 +80625,7 @@ void ATrProj_Tracer::Recycle ( )
     static UFunction* pFnRecycle = NULL;
 
     if ( ! pFnRecycle )
-        pFnRecycle = (UFunction*) UObject::GObjObjects()->Data[ 114552 ];
+        pFnRecycle = (UFunction*) UObject::GObjObjects()->Data[ 114551 ];
 
     ATrProj_Tracer_execRecycle_Parms Recycle_Parms;
 
@@ -80643,7 +80643,7 @@ void ATrProj_Tracer::Explode ( struct FVector HitLocation, struct FVector HitNor
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114549 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 114548 ];
 
     ATrProj_Tracer_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -80662,7 +80662,7 @@ void ATrProj_Tracer::Tick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 114546 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 114545 ];
 
     ATrProj_Tracer_execTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -80679,7 +80679,7 @@ void ATrProj_Tracer::eventOutsideWorldBounds ( )
     static UFunction* pFnOutsideWorldBounds = NULL;
 
     if ( ! pFnOutsideWorldBounds )
-        pFnOutsideWorldBounds = (UFunction*) UObject::GObjObjects()->Data[ 114545 ];
+        pFnOutsideWorldBounds = (UFunction*) UObject::GObjObjects()->Data[ 114544 ];
 
     ATrProj_Tracer_eventOutsideWorldBounds_Parms OutsideWorldBounds_Parms;
 
@@ -80695,7 +80695,7 @@ void ATrProj_Tracer::ScaleUpFinishedNotify ( )
     static UFunction* pFnScaleUpFinishedNotify = NULL;
 
     if ( ! pFnScaleUpFinishedNotify )
-        pFnScaleUpFinishedNotify = (UFunction*) UObject::GObjObjects()->Data[ 114544 ];
+        pFnScaleUpFinishedNotify = (UFunction*) UObject::GObjObjects()->Data[ 114543 ];
 
     ATrProj_Tracer_execScaleUpFinishedNotify_Parms ScaleUpFinishedNotify_Parms;
 
@@ -80711,7 +80711,7 @@ void ATrProj_Tracer::ScaleDownFinishedNotify ( )
     static UFunction* pFnScaleDownFinishedNotify = NULL;
 
     if ( ! pFnScaleDownFinishedNotify )
-        pFnScaleDownFinishedNotify = (UFunction*) UObject::GObjObjects()->Data[ 114543 ];
+        pFnScaleDownFinishedNotify = (UFunction*) UObject::GObjObjects()->Data[ 114542 ];
 
     ATrProj_Tracer_execScaleDownFinishedNotify_Parms ScaleDownFinishedNotify_Parms;
 
@@ -80727,7 +80727,7 @@ void ATrProj_Tracer::KillProjectile ( )
     static UFunction* pFnKillProjectile = NULL;
 
     if ( ! pFnKillProjectile )
-        pFnKillProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114542 ];
+        pFnKillProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114541 ];
 
     ATrProj_Tracer_execKillProjectile_Parms KillProjectile_Parms;
 
@@ -80745,7 +80745,7 @@ void ATrProj_Tracer::InitTracer ( struct FVector Start, struct FVector End )
     static UFunction* pFnInitTracer = NULL;
 
     if ( ! pFnInitTracer )
-        pFnInitTracer = (UFunction*) UObject::GObjObjects()->Data[ 114537 ];
+        pFnInitTracer = (UFunction*) UObject::GObjObjects()->Data[ 114536 ];
 
     ATrProj_Tracer_execInitTracer_Parms InitTracer_Parms;
     memcpy ( &InitTracer_Parms.Start, &Start, 0xC );
@@ -80763,7 +80763,7 @@ void ATrProj_Tracer::CalcTracerAccel ( )
     static UFunction* pFnCalcTracerAccel = NULL;
 
     if ( ! pFnCalcTracerAccel )
-        pFnCalcTracerAccel = (UFunction*) UObject::GObjObjects()->Data[ 114535 ];
+        pFnCalcTracerAccel = (UFunction*) UObject::GObjObjects()->Data[ 114534 ];
 
     ATrProj_Tracer_execCalcTracerAccel_Parms CalcTracerAccel_Parms;
 
@@ -80780,7 +80780,7 @@ void ATrProj_Tracer::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114533 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114532 ];
 
     ATrProj_Tracer_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -80797,7 +80797,7 @@ void ATrProj_Tracer::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114532 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114531 ];
 
     ATrProj_Tracer_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -80844,7 +80844,7 @@ void ATrObjectPool::CreateTracer ( unsigned char TracerType, class UClass* Trace
     static UFunction* pFnCreateTracer = NULL;
 
     if ( ! pFnCreateTracer )
-        pFnCreateTracer = (UFunction*) UObject::GObjObjects()->Data[ 102792 ];
+        pFnCreateTracer = (UFunction*) UObject::GObjObjects()->Data[ 102791 ];
 
     ATrObjectPool_execCreateTracer_Parms CreateTracer_Parms;
     CreateTracer_Parms.TracerType = TracerType;
@@ -80864,7 +80864,7 @@ void ATrObjectPool::CreateTracers ( )
     static UFunction* pFnCreateTracers = NULL;
 
     if ( ! pFnCreateTracers )
-        pFnCreateTracers = (UFunction*) UObject::GObjObjects()->Data[ 102787 ];
+        pFnCreateTracers = (UFunction*) UObject::GObjObjects()->Data[ 102786 ];
 
     ATrObjectPool_execCreateTracers_Parms CreateTracers_Parms;
 
@@ -80880,7 +80880,7 @@ void ATrObjectPool::CleanupTracers ( )
     static UFunction* pFnCleanupTracers = NULL;
 
     if ( ! pFnCleanupTracers )
-        pFnCleanupTracers = (UFunction*) UObject::GObjObjects()->Data[ 102788 ];
+        pFnCleanupTracers = (UFunction*) UObject::GObjObjects()->Data[ 102787 ];
 
     ATrObjectPool_execCleanupTracers_Parms CleanupTracers_Parms;
 
@@ -80896,7 +80896,7 @@ void ATrObjectPool::CleanUpPools ( )
     static UFunction* pFnCleanUpPools = NULL;
 
     if ( ! pFnCleanUpPools )
-        pFnCleanUpPools = (UFunction*) UObject::GObjObjects()->Data[ 102786 ];
+        pFnCleanUpPools = (UFunction*) UObject::GObjObjects()->Data[ 102785 ];
 
     ATrObjectPool_execCleanUpPools_Parms CleanUpPools_Parms;
 
@@ -80912,7 +80912,7 @@ void ATrObjectPool::CreatePools ( )
     static UFunction* pFnCreatePools = NULL;
 
     if ( ! pFnCreatePools )
-        pFnCreatePools = (UFunction*) UObject::GObjObjects()->Data[ 102784 ];
+        pFnCreatePools = (UFunction*) UObject::GObjObjects()->Data[ 102783 ];
 
     ATrObjectPool_execCreatePools_Parms CreatePools_Parms;
 
@@ -80928,7 +80928,7 @@ void ATrObjectPool::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 102785 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 102784 ];
 
     ATrObjectPool_eventDestroyed_Parms Destroyed_Parms;
 
@@ -80944,7 +80944,7 @@ void ATrObjectPool::eventPreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102783 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102782 ];
 
     ATrObjectPool_eventPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -80963,7 +80963,7 @@ void ATrProj_ClientTracer::ProcessTouch ( class AActor* Other, struct FVector Hi
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114613 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114612 ];
 
     ATrProj_ClientTracer_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -80985,7 +80985,7 @@ class USoundCue* ATrProj_ClientTracer::GetExplosionSound ( class UPhysicalMateri
     static UFunction* pFnGetExplosionSound = NULL;
 
     if ( ! pFnGetExplosionSound )
-        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 114605 ];
+        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 114604 ];
 
     ATrProj_ClientTracer_execGetExplosionSound_Parms GetExplosionSound_Parms;
     GetExplosionSound_Parms.HitMaterial = HitMaterial;
@@ -81007,7 +81007,7 @@ void ATrProj_ClientTracer::InitProjectile ( struct FVector Direction, class UCla
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114602 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 114601 ];
 
     ATrProj_ClientTracer_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -81700,7 +81700,7 @@ void ATrDroppedPickup::eventPostRenderFor ( class APlayerController* PC, class U
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 87566 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 87565 ];
 
     ATrDroppedPickup_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -81721,7 +81721,7 @@ void ATrDroppedPickup::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 87564 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 87563 ];
 
     ATrDroppedPickup_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -81739,7 +81739,7 @@ void ATrDroppedPickup::OnCollisionProxyTouched ( class ATrPawn* TRP )
     static UFunction* pFnOnCollisionProxyTouched = NULL;
 
     if ( ! pFnOnCollisionProxyTouched )
-        pFnOnCollisionProxyTouched = (UFunction*) UObject::GObjObjects()->Data[ 87533 ];
+        pFnOnCollisionProxyTouched = (UFunction*) UObject::GObjObjects()->Data[ 87532 ];
 
     ATrDroppedPickup_execOnCollisionProxyTouched_Parms OnCollisionProxyTouched_Parms;
     OnCollisionProxyTouched_Parms.TRP = TRP;
@@ -81759,7 +81759,7 @@ void ATrDroppedPickup::eventHitWall ( struct FVector HitNormal, class AActor* Wa
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 87529 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 87528 ];
 
     ATrDroppedPickup_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -81780,7 +81780,7 @@ void ATrDroppedPickup::DoBounce ( class AActor* Other, struct FVector HitNormal 
     static UFunction* pFnDoBounce = NULL;
 
     if ( ! pFnDoBounce )
-        pFnDoBounce = (UFunction*) UObject::GObjObjects()->Data[ 87526 ];
+        pFnDoBounce = (UFunction*) UObject::GObjObjects()->Data[ 87525 ];
 
     ATrDroppedPickup_execDoBounce_Parms DoBounce_Parms;
     DoBounce_Parms.Other = Other;
@@ -81798,7 +81798,7 @@ void ATrDroppedPickup::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87524 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87523 ];
 
     ATrDroppedPickup_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -81815,7 +81815,7 @@ void ATrDroppedPickup::GiveTo ( class APawn* P )
     static UFunction* pFnGiveTo = NULL;
 
     if ( ! pFnGiveTo )
-        pFnGiveTo = (UFunction*) UObject::GObjObjects()->Data[ 87522 ];
+        pFnGiveTo = (UFunction*) UObject::GObjObjects()->Data[ 87521 ];
 
     ATrDroppedPickup_execGiveTo_Parms GiveTo_Parms;
     GiveTo_Parms.P = P;
@@ -81832,7 +81832,7 @@ void ATrDroppedPickup::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 87521 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 87520 ];
 
     ATrDroppedPickup_eventDestroyed_Parms Destroyed_Parms;
 
@@ -81849,7 +81849,7 @@ class AProjectile* ATrDevice_Claymore::ProjectileFire ( )
     static UFunction* pFnProjectileFire = NULL;
 
     if ( ! pFnProjectileFire )
-        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 85175 ];
+        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 85174 ];
 
     ATrDevice_Claymore_execProjectileFire_Parms ProjectileFire_Parms;
 
@@ -81869,7 +81869,7 @@ struct FVector ATrDevice_Claymore::GetPhysicalFireStartLoc ( struct FVector AimD
     static UFunction* pFnGetPhysicalFireStartLoc = NULL;
 
     if ( ! pFnGetPhysicalFireStartLoc )
-        pFnGetPhysicalFireStartLoc = (UFunction*) UObject::GObjObjects()->Data[ 85171 ];
+        pFnGetPhysicalFireStartLoc = (UFunction*) UObject::GObjObjects()->Data[ 85170 ];
 
     ATrDevice_Claymore_execGetPhysicalFireStartLoc_Parms GetPhysicalFireStartLoc_Parms;
     memcpy ( &GetPhysicalFireStartLoc_Parms.AimDir, &AimDir, 0xC );
@@ -81925,7 +81925,7 @@ int ATrDevice_ChainGun::GetBasePickupAmmoAmount ( )
     static UFunction* pFnGetBasePickupAmmoAmount = NULL;
 
     if ( ! pFnGetBasePickupAmmoAmount )
-        pFnGetBasePickupAmmoAmount = (UFunction*) UObject::GObjObjects()->Data[ 85361 ];
+        pFnGetBasePickupAmmoAmount = (UFunction*) UObject::GObjObjects()->Data[ 85360 ];
 
     ATrDevice_ChainGun_execGetBasePickupAmmoAmount_Parms GetBasePickupAmmoAmount_Parms;
 
@@ -81945,7 +81945,7 @@ int ATrDevice_ChainGun::AddCarriedAmmo ( int Amount )
     static UFunction* pFnAddCarriedAmmo = NULL;
 
     if ( ! pFnAddCarriedAmmo )
-        pFnAddCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85358 ];
+        pFnAddCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85357 ];
 
     ATrDevice_ChainGun_execAddCarriedAmmo_Parms AddCarriedAmmo_Parms;
     AddCarriedAmmo_Parms.Amount = Amount;
@@ -81965,7 +81965,7 @@ void ATrDevice_ChainGun::BuffMaxCarriedAmmo ( int Amount )
     static UFunction* pFnBuffMaxCarriedAmmo = NULL;
 
     if ( ! pFnBuffMaxCarriedAmmo )
-        pFnBuffMaxCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85356 ];
+        pFnBuffMaxCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85355 ];
 
     ATrDevice_ChainGun_execBuffMaxCarriedAmmo_Parms BuffMaxCarriedAmmo_Parms;
     BuffMaxCarriedAmmo_Parms.Amount = Amount;
@@ -81982,7 +81982,7 @@ void ATrDevice_ChainGun::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85355 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85354 ];
 
     ATrDevice_ChainGun_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -81998,7 +81998,7 @@ void ATrDevice_ChainGun::OnSwitchToWeapon ( )
     static UFunction* pFnOnSwitchToWeapon = NULL;
 
     if ( ! pFnOnSwitchToWeapon )
-        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85354 ];
+        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85353 ];
 
     ATrDevice_ChainGun_execOnSwitchToWeapon_Parms OnSwitchToWeapon_Parms;
 
@@ -82014,7 +82014,7 @@ void ATrDevice_ChainGun::PlayBuildupAnimation ( )
     static UFunction* pFnPlayBuildupAnimation = NULL;
 
     if ( ! pFnPlayBuildupAnimation )
-        pFnPlayBuildupAnimation = (UFunction*) UObject::GObjObjects()->Data[ 85321 ];
+        pFnPlayBuildupAnimation = (UFunction*) UObject::GObjObjects()->Data[ 85320 ];
 
     ATrDevice_ChainGun_execPlayBuildupAnimation_Parms PlayBuildupAnimation_Parms;
 
@@ -82053,7 +82053,7 @@ void ATrDevice_ChainGun::UpdateSoundModulation ( )
     static UFunction* pFnUpdateSoundModulation = NULL;
 
     if ( ! pFnUpdateSoundModulation )
-        pFnUpdateSoundModulation = (UFunction*) UObject::GObjObjects()->Data[ 85312 ];
+        pFnUpdateSoundModulation = (UFunction*) UObject::GObjObjects()->Data[ 85311 ];
 
     ATrDevice_ChainGun_execUpdateSoundModulation_Parms UpdateSoundModulation_Parms;
 
@@ -82070,7 +82070,7 @@ void ATrDevice_ChainGun::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 85310 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 85309 ];
 
     ATrDevice_ChainGun_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -82088,7 +82088,7 @@ void ATrDevice_ChainGun::eventPostInitAnimTree ( class USkeletalMeshComponent* S
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85307 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85306 ];
 
     ATrDevice_ChainGun_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -82106,7 +82106,7 @@ void ATrDevice_ChainGun::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 85305 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 85304 ];
 
     ATrDevice_ChainGun_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -82159,7 +82159,7 @@ void ATrDevice_TC24::CustomFire ( )
     static UFunction* pFnCustomFire = NULL;
 
     if ( ! pFnCustomFire )
-        pFnCustomFire = (UFunction*) UObject::GObjObjects()->Data[ 85451 ];
+        pFnCustomFire = (UFunction*) UObject::GObjObjects()->Data[ 85450 ];
 
     ATrDevice_TC24_execCustomFire_Parms CustomFire_Parms;
 
@@ -82176,7 +82176,7 @@ void ATrDevice_TC24::ConsumeAmmo ( unsigned char FireModeNum )
     static UFunction* pFnConsumeAmmo = NULL;
 
     if ( ! pFnConsumeAmmo )
-        pFnConsumeAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85449 ];
+        pFnConsumeAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85448 ];
 
     ATrDevice_TC24_execConsumeAmmo_Parms ConsumeAmmo_Parms;
     ConsumeAmmo_Parms.FireModeNum = FireModeNum;
@@ -82303,7 +82303,7 @@ void ATrDevice_RepairTool::EnableWeaponReadyToFire ( )
     static UFunction* pFnEnableWeaponReadyToFire = NULL;
 
     if ( ! pFnEnableWeaponReadyToFire )
-        pFnEnableWeaponReadyToFire = (UFunction*) UObject::GObjObjects()->Data[ 85562 ];
+        pFnEnableWeaponReadyToFire = (UFunction*) UObject::GObjObjects()->Data[ 85561 ];
 
     ATrDevice_RepairTool_execEnableWeaponReadyToFire_Parms EnableWeaponReadyToFire_Parms;
 
@@ -82320,7 +82320,7 @@ bool ATrDevice_RepairTool::HasAnyAmmo ( )
     static UFunction* pFnHasAnyAmmo = NULL;
 
     if ( ! pFnHasAnyAmmo )
-        pFnHasAnyAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85560 ];
+        pFnHasAnyAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85559 ];
 
     ATrDevice_RepairTool_execHasAnyAmmo_Parms HasAnyAmmo_Parms;
 
@@ -82342,7 +82342,7 @@ float ATrDevice_RepairTool::ModifyInstantHitDamage ( unsigned char FiringMode, s
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85544 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85543 ];
 
     ATrDevice_RepairTool_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -82363,7 +82363,7 @@ void ATrDevice_RepairTool::UpdateDamageMaterial ( )
     static UFunction* pFnUpdateDamageMaterial = NULL;
 
     if ( ! pFnUpdateDamageMaterial )
-        pFnUpdateDamageMaterial = (UFunction*) UObject::GObjObjects()->Data[ 85541 ];
+        pFnUpdateDamageMaterial = (UFunction*) UObject::GObjObjects()->Data[ 85540 ];
 
     ATrDevice_RepairTool_execUpdateDamageMaterial_Parms UpdateDamageMaterial_Parms;
 
@@ -82380,7 +82380,7 @@ void ATrDevice_RepairTool::UpdateRepairEffect ( float DeltaTime )
     static UFunction* pFnUpdateRepairEffect = NULL;
 
     if ( ! pFnUpdateRepairEffect )
-        pFnUpdateRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85536 ];
+        pFnUpdateRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85535 ];
 
     ATrDevice_RepairTool_execUpdateRepairEffect_Parms UpdateRepairEffect_Parms;
     UpdateRepairEffect_Parms.DeltaTime = DeltaTime;
@@ -82397,7 +82397,7 @@ void ATrDevice_RepairTool::SpawnRepairEffect ( )
     static UFunction* pFnSpawnRepairEffect = NULL;
 
     if ( ! pFnSpawnRepairEffect )
-        pFnSpawnRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85529 ];
+        pFnSpawnRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85528 ];
 
     ATrDevice_RepairTool_execSpawnRepairEffect_Parms SpawnRepairEffect_Parms;
 
@@ -82414,7 +82414,7 @@ bool ATrDevice_RepairTool::HasViewModeSwitched ( )
     static UFunction* pFnHasViewModeSwitched = NULL;
 
     if ( ! pFnHasViewModeSwitched )
-        pFnHasViewModeSwitched = (UFunction*) UObject::GObjObjects()->Data[ 85525 ];
+        pFnHasViewModeSwitched = (UFunction*) UObject::GObjObjects()->Data[ 85524 ];
 
     ATrDevice_RepairTool_execHasViewModeSwitched_Parms HasViewModeSwitched_Parms;
 
@@ -82432,7 +82432,7 @@ void ATrDevice_RepairTool::KillRepairEffect ( )
     static UFunction* pFnKillRepairEffect = NULL;
 
     if ( ! pFnKillRepairEffect )
-        pFnKillRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85524 ];
+        pFnKillRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85523 ];
 
     ATrDevice_RepairTool_execKillRepairEffect_Parms KillRepairEffect_Parms;
 
@@ -82452,7 +82452,7 @@ bool ATrDevice_RepairTool::GetRepairEndAndTangent ( struct FVector* EndLocation,
     static UFunction* pFnGetRepairEndAndTangent = NULL;
 
     if ( ! pFnGetRepairEndAndTangent )
-        pFnGetRepairEndAndTangent = (UFunction*) UObject::GObjObjects()->Data[ 85516 ];
+        pFnGetRepairEndAndTangent = (UFunction*) UObject::GObjObjects()->Data[ 85515 ];
 
     ATrDevice_RepairTool_execGetRepairEndAndTangent_Parms GetRepairEndAndTangent_Parms;
 
@@ -82482,7 +82482,7 @@ void ATrDevice_RepairTool::ProcessInstantHit_Internal ( unsigned char FiringMode
     static UFunction* pFnProcessInstantHit_Internal = NULL;
 
     if ( ! pFnProcessInstantHit_Internal )
-        pFnProcessInstantHit_Internal = (UFunction*) UObject::GObjObjects()->Data[ 85501 ];
+        pFnProcessInstantHit_Internal = (UFunction*) UObject::GObjObjects()->Data[ 85500 ];
 
     ATrDevice_RepairTool_execProcessInstantHit_Internal_Parms ProcessInstantHit_Internal_Parms;
     ProcessInstantHit_Internal_Parms.FiringMode = FiringMode;
@@ -82501,7 +82501,7 @@ void ATrDevice_RepairTool::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85492 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85491 ];
 
     ATrDevice_RepairTool_execInstantFire_Parms InstantFire_Parms;
 
@@ -82517,7 +82517,7 @@ void ATrDevice_RepairTool::OnStartConstantFire ( )
     static UFunction* pFnOnStartConstantFire = NULL;
 
     if ( ! pFnOnStartConstantFire )
-        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85491 ];
+        pFnOnStartConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85490 ];
 
     ATrDevice_RepairTool_execOnStartConstantFire_Parms OnStartConstantFire_Parms;
 
@@ -82533,7 +82533,7 @@ void ATrDevice_RepairTool::OnEndConstantFire ( )
     static UFunction* pFnOnEndConstantFire = NULL;
 
     if ( ! pFnOnEndConstantFire )
-        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85489 ];
+        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85488 ];
 
     ATrDevice_RepairTool_execOnEndConstantFire_Parms OnEndConstantFire_Parms;
 
@@ -82550,7 +82550,7 @@ int ATrDevice_RepairTool::GetAmmoCount ( )
     static UFunction* pFnGetAmmoCount = NULL;
 
     if ( ! pFnGetAmmoCount )
-        pFnGetAmmoCount = (UFunction*) UObject::GObjObjects()->Data[ 85487 ];
+        pFnGetAmmoCount = (UFunction*) UObject::GObjObjects()->Data[ 85486 ];
 
     ATrDevice_RepairTool_execGetAmmoCount_Parms GetAmmoCount_Parms;
 
@@ -82570,7 +82570,7 @@ float ATrDevice_RepairTool::GetActorHealth ( class AActor* HitActor )
     static UFunction* pFnGetActorHealth = NULL;
 
     if ( ! pFnGetActorHealth )
-        pFnGetActorHealth = (UFunction*) UObject::GObjObjects()->Data[ 85482 ];
+        pFnGetActorHealth = (UFunction*) UObject::GObjObjects()->Data[ 85481 ];
 
     ATrDevice_RepairTool_execGetActorHealth_Parms GetActorHealth_Parms;
     GetActorHealth_Parms.HitActor = HitActor;
@@ -82591,7 +82591,7 @@ bool ATrDevice_RepairTool::CanActorBeRepaired ( class AActor* HitActor )
     static UFunction* pFnCanActorBeRepaired = NULL;
 
     if ( ! pFnCanActorBeRepaired )
-        pFnCanActorBeRepaired = (UFunction*) UObject::GObjObjects()->Data[ 85479 ];
+        pFnCanActorBeRepaired = (UFunction*) UObject::GObjObjects()->Data[ 85478 ];
 
     ATrDevice_RepairTool_execCanActorBeRepaired_Parms CanActorBeRepaired_Parms;
     CanActorBeRepaired_Parms.HitActor = HitActor;
@@ -82610,7 +82610,7 @@ void ATrDevice_ElfProjector::OnEndConstantFire ( )
     static UFunction* pFnOnEndConstantFire = NULL;
 
     if ( ! pFnOnEndConstantFire )
-        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85641 ];
+        pFnOnEndConstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85640 ];
 
     ATrDevice_ElfProjector_execOnEndConstantFire_Parms OnEndConstantFire_Parms;
 
@@ -82627,7 +82627,7 @@ void ATrDevice_ElfProjector::UpdateRepairEffect ( float DeltaTime )
     static UFunction* pFnUpdateRepairEffect = NULL;
 
     if ( ! pFnUpdateRepairEffect )
-        pFnUpdateRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85636 ];
+        pFnUpdateRepairEffect = (UFunction*) UObject::GObjObjects()->Data[ 85635 ];
 
     ATrDevice_ElfProjector_execUpdateRepairEffect_Parms UpdateRepairEffect_Parms;
     UpdateRepairEffect_Parms.DeltaTime = DeltaTime;
@@ -82648,7 +82648,7 @@ float ATrDevice_ElfProjector::ModifyInstantHitDamage ( unsigned char FiringMode,
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85626 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85625 ];
 
     ATrDevice_ElfProjector_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -82673,7 +82673,7 @@ bool ATrDevice_ElfProjector::GetRepairEndAndTangent ( struct FVector* EndLocatio
     static UFunction* pFnGetRepairEndAndTangent = NULL;
 
     if ( ! pFnGetRepairEndAndTangent )
-        pFnGetRepairEndAndTangent = (UFunction*) UObject::GObjObjects()->Data[ 85617 ];
+        pFnGetRepairEndAndTangent = (UFunction*) UObject::GObjObjects()->Data[ 85616 ];
 
     ATrDevice_ElfProjector_execGetRepairEndAndTangent_Parms GetRepairEndAndTangent_Parms;
 
@@ -82701,7 +82701,7 @@ void ATrDevice_ElfProjector::ServerSetImpact ( class AActor* HitActor )
     static UFunction* pFnServerSetImpact = NULL;
 
     if ( ! pFnServerSetImpact )
-        pFnServerSetImpact = (UFunction*) UObject::GObjObjects()->Data[ 85615 ];
+        pFnServerSetImpact = (UFunction*) UObject::GObjObjects()->Data[ 85614 ];
 
     ATrDevice_ElfProjector_execServerSetImpact_Parms ServerSetImpact_Parms;
     ServerSetImpact_Parms.HitActor = HitActor;
@@ -82719,7 +82719,7 @@ void ATrDevice_ElfProjector::SetImpact ( class AActor* HitActor )
     static UFunction* pFnSetImpact = NULL;
 
     if ( ! pFnSetImpact )
-        pFnSetImpact = (UFunction*) UObject::GObjObjects()->Data[ 85613 ];
+        pFnSetImpact = (UFunction*) UObject::GObjObjects()->Data[ 85612 ];
 
     ATrDevice_ElfProjector_execSetImpact_Parms SetImpact_Parms;
     SetImpact_Parms.HitActor = HitActor;
@@ -82739,7 +82739,7 @@ void ATrDevice_ElfProjector::ProcessInstantHit_Internal ( unsigned char FiringMo
     static UFunction* pFnProcessInstantHit_Internal = NULL;
 
     if ( ! pFnProcessInstantHit_Internal )
-        pFnProcessInstantHit_Internal = (UFunction*) UObject::GObjObjects()->Data[ 85608 ];
+        pFnProcessInstantHit_Internal = (UFunction*) UObject::GObjObjects()->Data[ 85607 ];
 
     ATrDevice_ElfProjector_execProcessInstantHit_Internal_Parms ProcessInstantHit_Internal_Parms;
     ProcessInstantHit_Internal_Parms.FiringMode = FiringMode;
@@ -82758,7 +82758,7 @@ void ATrDevice_ElfProjector::InstantFire_RepairTool ( )
     static UFunction* pFnInstantFire_RepairTool = NULL;
 
     if ( ! pFnInstantFire_RepairTool )
-        pFnInstantFire_RepairTool = (UFunction*) UObject::GObjObjects()->Data[ 85599 ];
+        pFnInstantFire_RepairTool = (UFunction*) UObject::GObjObjects()->Data[ 85598 ];
 
     ATrDevice_ElfProjector_execInstantFire_RepairTool_Parms InstantFire_RepairTool_Parms;
 
@@ -82774,7 +82774,7 @@ void ATrDevice_ElfProjector::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85587 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85586 ];
 
     ATrDevice_ElfProjector_execInstantFire_Parms InstantFire_Parms;
 
@@ -82790,7 +82790,7 @@ void ATrDevice_ElfProjector::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 85586 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 85585 ];
 
     ATrDevice_ElfProjector_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -82808,7 +82808,7 @@ bool ATrDevice_ElfProjector::CanActorBeRepaired ( class AActor* HitActor )
     static UFunction* pFnCanActorBeRepaired = NULL;
 
     if ( ! pFnCanActorBeRepaired )
-        pFnCanActorBeRepaired = (UFunction*) UObject::GObjObjects()->Data[ 85583 ];
+        pFnCanActorBeRepaired = (UFunction*) UObject::GObjObjects()->Data[ 85582 ];
 
     ATrDevice_ElfProjector_execCanActorBeRepaired_Parms CanActorBeRepaired_Parms;
     CanActorBeRepaired_Parms.HitActor = HitActor;
@@ -82827,7 +82827,7 @@ void ATrDevice_H1::PlayReloadAnim ( )
     static UFunction* pFnPlayReloadAnim = NULL;
 
     if ( ! pFnPlayReloadAnim )
-        pFnPlayReloadAnim = (UFunction*) UObject::GObjObjects()->Data[ 85777 ];
+        pFnPlayReloadAnim = (UFunction*) UObject::GObjObjects()->Data[ 85776 ];
 
     ATrDevice_H1_execPlayReloadAnim_Parms PlayReloadAnim_Parms;
 
@@ -82843,7 +82843,7 @@ void ATrDevice_H1::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85776 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85775 ];
 
     ATrDevice_H1_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -82859,7 +82859,7 @@ void ATrDevice_H1::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85775 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85774 ];
 
     ATrDevice_H1_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -82876,7 +82876,7 @@ void ATrDevice_H1::eventOnAnimPlay ( class UAnimNodeSequence* SeqNode )
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85773 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85772 ];
 
     ATrDevice_H1_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -82896,7 +82896,7 @@ void ATrDevice_H1::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode, float Play
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85769 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85768 ];
 
     ATrDevice_H1_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -82915,7 +82915,7 @@ void ATrDevice_H1::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85768 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85767 ];
 
     ATrDevice_H1_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -82931,7 +82931,7 @@ void ATrDevice_H1::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85767 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85766 ];
 
     ATrDevice_H1_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -82948,7 +82948,7 @@ void ATrDevice_H1::EnableAmbientSound ( unsigned long bEnabled )
     static UFunction* pFnEnableAmbientSound = NULL;
 
     if ( ! pFnEnableAmbientSound )
-        pFnEnableAmbientSound = (UFunction*) UObject::GObjObjects()->Data[ 85764 ];
+        pFnEnableAmbientSound = (UFunction*) UObject::GObjObjects()->Data[ 85763 ];
 
     ATrDevice_H1_execEnableAmbientSound_Parms EnableAmbientSound_Parms;
     EnableAmbientSound_Parms.bEnabled = bEnabled;
@@ -82969,7 +82969,7 @@ float ATrDevice_H1::ModifyInstantHitDamage ( unsigned char FiringMode, struct FI
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85756 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 85755 ];
 
     ATrDevice_H1_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -82990,7 +82990,7 @@ void ATrDevice_H1::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85755 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 85754 ];
 
     ATrDevice_H1_execInstantFire_Parms InstantFire_Parms;
 
@@ -83006,7 +83006,7 @@ void ATrDevice_HeavyBoltLauncher::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85816 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85815 ];
 
     ATrDevice_HeavyBoltLauncher_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -83022,7 +83022,7 @@ void ATrDevice_HeavyBoltLauncher::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85815 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85814 ];
 
     ATrDevice_HeavyBoltLauncher_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -83038,7 +83038,7 @@ void ATrDevice_HeavyBoltLauncher::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85814 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85813 ];
 
     ATrDevice_HeavyBoltLauncher_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -83054,7 +83054,7 @@ void ATrDevice_HeavyBoltLauncher::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85813 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85812 ];
 
     ATrDevice_HeavyBoltLauncher_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -83073,7 +83073,7 @@ void ATrDevice_HeavyBoltLauncher::eventOnAnimEnd ( class UAnimNodeSequence* SeqN
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85809 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85808 ];
 
     ATrDevice_HeavyBoltLauncher_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -83093,7 +83093,7 @@ void ATrDevice_HeavyBoltLauncher::eventOnAnimPlay ( class UAnimNodeSequence* Seq
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85807 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85806 ];
 
     ATrDevice_HeavyBoltLauncher_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -83111,7 +83111,7 @@ void ATrDevice_HeavyBoltLauncher::eventPostInitAnimTree ( class USkeletalMeshCom
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85805 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85804 ];
 
     ATrDevice_HeavyBoltLauncher_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -83129,7 +83129,7 @@ void ATrDevice_HeavyBoltLauncher::SetBoltIdle ( unsigned long bEnabled )
     static UFunction* pFnSetBoltIdle = NULL;
 
     if ( ! pFnSetBoltIdle )
-        pFnSetBoltIdle = (UFunction*) UObject::GObjObjects()->Data[ 85802 ];
+        pFnSetBoltIdle = (UFunction*) UObject::GObjObjects()->Data[ 85801 ];
 
     ATrDevice_HeavyBoltLauncher_execSetBoltIdle_Parms SetBoltIdle_Parms;
     SetBoltIdle_Parms.bEnabled = bEnabled;
@@ -83146,7 +83146,7 @@ void ATrDevice_Spinfusor::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85865 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85864 ];
 
     ATrDevice_Spinfusor_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -83162,7 +83162,7 @@ void ATrDevice_Spinfusor::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85864 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85863 ];
 
     ATrDevice_Spinfusor_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -83178,7 +83178,7 @@ void ATrDevice_Spinfusor::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85863 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85862 ];
 
     ATrDevice_Spinfusor_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -83195,7 +83195,7 @@ void ATrDevice_Spinfusor::SetDiscSpinning ( unsigned long bEnabled )
     static UFunction* pFnSetDiscSpinning = NULL;
 
     if ( ! pFnSetDiscSpinning )
-        pFnSetDiscSpinning = (UFunction*) UObject::GObjObjects()->Data[ 85860 ];
+        pFnSetDiscSpinning = (UFunction*) UObject::GObjObjects()->Data[ 85859 ];
 
     ATrDevice_Spinfusor_execSetDiscSpinning_Parms SetDiscSpinning_Parms;
     SetDiscSpinning_Parms.bEnabled = bEnabled;
@@ -83213,7 +83213,7 @@ void ATrDevice_Spinfusor::SetDiscVisibility ( unsigned long bVisible )
     static UFunction* pFnSetDiscVisibility = NULL;
 
     if ( ! pFnSetDiscVisibility )
-        pFnSetDiscVisibility = (UFunction*) UObject::GObjObjects()->Data[ 85858 ];
+        pFnSetDiscVisibility = (UFunction*) UObject::GObjObjects()->Data[ 85857 ];
 
     ATrDevice_Spinfusor_execSetDiscVisibility_Parms SetDiscVisibility_Parms;
     SetDiscVisibility_Parms.bVisible = bVisible;
@@ -83230,7 +83230,7 @@ void ATrDevice_Spinfusor::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85857 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85856 ];
 
     ATrDevice_Spinfusor_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -83248,7 +83248,7 @@ void ATrDevice_Spinfusor::PlayFireEffects ( unsigned char FireModeNum, struct FV
     static UFunction* pFnPlayFireEffects = NULL;
 
     if ( ! pFnPlayFireEffects )
-        pFnPlayFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 85854 ];
+        pFnPlayFireEffects = (UFunction*) UObject::GObjObjects()->Data[ 85853 ];
 
     ATrDevice_Spinfusor_execPlayFireEffects_Parms PlayFireEffects_Parms;
     PlayFireEffects_Parms.FireModeNum = FireModeNum;
@@ -83269,7 +83269,7 @@ void ATrDevice_Spinfusor::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode, flo
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85850 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85849 ];
 
     ATrDevice_Spinfusor_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -83289,7 +83289,7 @@ void ATrDevice_Spinfusor::eventOnAnimPlay ( class UAnimNodeSequence* SeqNode )
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85848 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85847 ];
 
     ATrDevice_Spinfusor_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -83307,7 +83307,7 @@ void ATrDevice_Spinfusor::eventPostInitAnimTree ( class USkeletalMeshComponent* 
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85846 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85845 ];
 
     ATrDevice_Spinfusor_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -83324,7 +83324,7 @@ void ATrDevice_Spinfusor::UpdateReplicatedCarriedAmmo ( )
     static UFunction* pFnUpdateReplicatedCarriedAmmo = NULL;
 
     if ( ! pFnUpdateReplicatedCarriedAmmo )
-        pFnUpdateReplicatedCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85845 ];
+        pFnUpdateReplicatedCarriedAmmo = (UFunction*) UObject::GObjObjects()->Data[ 85844 ];
 
     ATrDevice_Spinfusor_execUpdateReplicatedCarriedAmmo_Parms UpdateReplicatedCarriedAmmo_Parms;
 
@@ -83340,7 +83340,7 @@ void ATrDevice_Twinfusor::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85913 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 85912 ];
 
     ATrDevice_Twinfusor_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -83356,7 +83356,7 @@ void ATrDevice_Twinfusor::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85912 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 85911 ];
 
     ATrDevice_Twinfusor_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -83372,7 +83372,7 @@ void ATrDevice_Twinfusor::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85911 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 85910 ];
 
     ATrDevice_Twinfusor_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -83388,7 +83388,7 @@ void ATrDevice_Twinfusor::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85910 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 85909 ];
 
     ATrDevice_Twinfusor_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -83405,7 +83405,7 @@ void ATrDevice_Twinfusor::SetDiscSpinning ( unsigned long bEnabled )
     static UFunction* pFnSetDiscSpinning = NULL;
 
     if ( ! pFnSetDiscSpinning )
-        pFnSetDiscSpinning = (UFunction*) UObject::GObjObjects()->Data[ 85907 ];
+        pFnSetDiscSpinning = (UFunction*) UObject::GObjObjects()->Data[ 85906 ];
 
     ATrDevice_Twinfusor_execSetDiscSpinning_Parms SetDiscSpinning_Parms;
     SetDiscSpinning_Parms.bEnabled = bEnabled;
@@ -83425,7 +83425,7 @@ void ATrDevice_Twinfusor::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode, flo
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85903 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 85902 ];
 
     ATrDevice_Twinfusor_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -83445,7 +83445,7 @@ void ATrDevice_Twinfusor::eventOnAnimPlay ( class UAnimNodeSequence* SeqNode )
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85901 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 85900 ];
 
     ATrDevice_Twinfusor_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -83463,7 +83463,7 @@ void ATrDevice_Twinfusor::eventPostInitAnimTree ( class USkeletalMeshComponent* 
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85899 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 85898 ];
 
     ATrDevice_Twinfusor_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -83567,7 +83567,7 @@ void ATrDevice_LightAssaultRifle::ServerStopFire ( unsigned char FireModeNum )
     static UFunction* pFnServerStopFire = NULL;
 
     if ( ! pFnServerStopFire )
-        pFnServerStopFire = (UFunction*) UObject::GObjObjects()->Data[ 86025 ];
+        pFnServerStopFire = (UFunction*) UObject::GObjObjects()->Data[ 86024 ];
 
     ATrDevice_LightAssaultRifle_execServerStopFire_Parms ServerStopFire_Parms;
     ServerStopFire_Parms.FireModeNum = FireModeNum;
@@ -83584,7 +83584,7 @@ void ATrDevice_LightAssaultRifle::PlayFiringSound ( )
     static UFunction* pFnPlayFiringSound = NULL;
 
     if ( ! pFnPlayFiringSound )
-        pFnPlayFiringSound = (UFunction*) UObject::GObjObjects()->Data[ 86024 ];
+        pFnPlayFiringSound = (UFunction*) UObject::GObjObjects()->Data[ 86023 ];
 
     ATrDevice_LightAssaultRifle_execPlayFiringSound_Parms PlayFiringSound_Parms;
 
@@ -83600,7 +83600,7 @@ void ATrDevice_LightAssaultRifle::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86023 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86022 ];
 
     ATrDevice_LightAssaultRifle_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -83617,7 +83617,7 @@ void ATrDevice_LightAssaultRifle::EndFire ( unsigned char FireModeNum )
     static UFunction* pFnEndFire = NULL;
 
     if ( ! pFnEndFire )
-        pFnEndFire = (UFunction*) UObject::GObjObjects()->Data[ 86021 ];
+        pFnEndFire = (UFunction*) UObject::GObjObjects()->Data[ 86020 ];
 
     ATrDevice_LightAssaultRifle_execEndFire_Parms EndFire_Parms;
     EndFire_Parms.FireModeNum = FireModeNum;
@@ -83634,7 +83634,7 @@ void ATrDevice_LightAssaultRifle::RefireTimer ( )
     static UFunction* pFnRefireTimer = NULL;
 
     if ( ! pFnRefireTimer )
-        pFnRefireTimer = (UFunction*) UObject::GObjObjects()->Data[ 86020 ];
+        pFnRefireTimer = (UFunction*) UObject::GObjObjects()->Data[ 86019 ];
 
     ATrDevice_LightAssaultRifle_execRefireTimer_Parms RefireTimer_Parms;
 
@@ -83651,7 +83651,7 @@ void ATrDevice_LightAssaultRifle::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86018 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86017 ];
 
     ATrDevice_LightAssaultRifle_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -83669,7 +83669,7 @@ void ATrDevice_LightAssaultRifle::StopFire ( unsigned char FireModeNum )
     static UFunction* pFnStopFire = NULL;
 
     if ( ! pFnStopFire )
-        pFnStopFire = (UFunction*) UObject::GObjObjects()->Data[ 86016 ];
+        pFnStopFire = (UFunction*) UObject::GObjObjects()->Data[ 86015 ];
 
     ATrDevice_LightAssaultRifle_execStopFire_Parms StopFire_Parms;
     StopFire_Parms.FireModeNum = FireModeNum;
@@ -83686,7 +83686,7 @@ void ATrDevice_LightAssaultRifle::OnReloadComplete ( )
     static UFunction* pFnOnReloadComplete = NULL;
 
     if ( ! pFnOnReloadComplete )
-        pFnOnReloadComplete = (UFunction*) UObject::GObjObjects()->Data[ 86015 ];
+        pFnOnReloadComplete = (UFunction*) UObject::GObjObjects()->Data[ 86014 ];
 
     ATrDevice_LightAssaultRifle_execOnReloadComplete_Parms OnReloadComplete_Parms;
 
@@ -83745,7 +83745,7 @@ void ATrDevice_Melee::AttemptFlagFumble ( class ATrPawn* Victim )
     static UFunction* pFnAttemptFlagFumble = NULL;
 
     if ( ! pFnAttemptFlagFumble )
-        pFnAttemptFlagFumble = (UFunction*) UObject::GObjObjects()->Data[ 86155 ];
+        pFnAttemptFlagFumble = (UFunction*) UObject::GObjObjects()->Data[ 86154 ];
 
     ATrDevice_Melee_execAttemptFlagFumble_Parms AttemptFlagFumble_Parms;
     AttemptFlagFumble_Parms.Victim = Victim;
@@ -83766,7 +83766,7 @@ float ATrDevice_Melee::ModifyInstantHitDamage ( unsigned char FiringMode, struct
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86145 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86144 ];
 
     ATrDevice_Melee_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -83787,7 +83787,7 @@ void ATrDevice_Melee::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86125 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86124 ];
 
     ATrDevice_Melee_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -83804,7 +83804,7 @@ float ATrDevice_Melee::GetBuildUpTime ( )
     static UFunction* pFnGetBuildUpTime = NULL;
 
     if ( ! pFnGetBuildUpTime )
-        pFnGetBuildUpTime = (UFunction*) UObject::GObjObjects()->Data[ 86123 ];
+        pFnGetBuildUpTime = (UFunction*) UObject::GObjObjects()->Data[ 86122 ];
 
     ATrDevice_Melee_execGetBuildUpTime_Parms GetBuildUpTime_Parms;
 
@@ -83825,7 +83825,7 @@ bool ATrDevice_Melee::HasAmmo ( unsigned char FireModeNum, int Amount )
     static UFunction* pFnHasAmmo = NULL;
 
     if ( ! pFnHasAmmo )
-        pFnHasAmmo = (UFunction*) UObject::GObjObjects()->Data[ 86119 ];
+        pFnHasAmmo = (UFunction*) UObject::GObjObjects()->Data[ 86118 ];
 
     ATrDevice_Melee_execHasAmmo_Parms HasAmmo_Parms;
     HasAmmo_Parms.FireModeNum = FireModeNum;
@@ -83846,7 +83846,7 @@ int ATrDevice_Melee::CalcAmountToLoad ( )
     static UFunction* pFnCalcAmountToLoad = NULL;
 
     if ( ! pFnCalcAmountToLoad )
-        pFnCalcAmountToLoad = (UFunction*) UObject::GObjObjects()->Data[ 86117 ];
+        pFnCalcAmountToLoad = (UFunction*) UObject::GObjObjects()->Data[ 86116 ];
 
     ATrDevice_Melee_execCalcAmountToLoad_Parms CalcAmountToLoad_Parms;
 
@@ -83865,7 +83865,7 @@ void ATrDevice_Melee::PlayFireAnimation ( unsigned char FireModeNum )
     static UFunction* pFnPlayFireAnimation = NULL;
 
     if ( ! pFnPlayFireAnimation )
-        pFnPlayFireAnimation = (UFunction*) UObject::GObjObjects()->Data[ 86113 ];
+        pFnPlayFireAnimation = (UFunction*) UObject::GObjObjects()->Data[ 86112 ];
 
     ATrDevice_Melee_execPlayFireAnimation_Parms PlayFireAnimation_Parms;
     PlayFireAnimation_Parms.FireModeNum = FireModeNum;
@@ -83883,7 +83883,7 @@ void ATrDevice_Melee::OwningClientPlayHit ( struct FVector HitLocation )
     static UFunction* pFnOwningClientPlayHit = NULL;
 
     if ( ! pFnOwningClientPlayHit )
-        pFnOwningClientPlayHit = (UFunction*) UObject::GObjObjects()->Data[ 86110 ];
+        pFnOwningClientPlayHit = (UFunction*) UObject::GObjObjects()->Data[ 86109 ];
 
     ATrDevice_Melee_execOwningClientPlayHit_Parms OwningClientPlayHit_Parms;
     memcpy ( &OwningClientPlayHit_Parms.HitLocation, &HitLocation, 0xC );
@@ -83901,7 +83901,7 @@ void ATrDevice_NovaSlug::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86281 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86280 ];
 
     ATrDevice_NovaSlug_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -83918,7 +83918,7 @@ void ATrDevice_NovaSlug::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86280 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86279 ];
 
     ATrDevice_NovaSlug_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -83938,7 +83938,7 @@ float ATrDevice_PhaseRifle::ModifyInstantHitDamage ( unsigned char FiringMode, s
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86304 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86303 ];
 
     ATrDevice_PhaseRifle_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -83959,7 +83959,7 @@ void ATrDevice_PhaseRifle::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86303 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86302 ];
 
     ATrDevice_PhaseRifle_execInstantFire_Parms InstantFire_Parms;
 
@@ -83975,7 +83975,7 @@ void ATrDevice_RemoteArxBuster::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86427 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86426 ];
 
     ATrDevice_RemoteArxBuster_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -83991,7 +83991,7 @@ void ATrDevice_RemoteArxBuster::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 86426 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 86425 ];
 
     ATrDevice_RemoteArxBuster_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -84007,7 +84007,7 @@ void ATrDevice_RemoteArxBuster::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 86425 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 86424 ];
 
     ATrDevice_RemoteArxBuster_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -84023,7 +84023,7 @@ void ATrDevice_RemoteArxBuster::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86424 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86423 ];
 
     ATrDevice_RemoteArxBuster_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -84039,7 +84039,7 @@ void ATrDevice_RemoteArxBuster::OnPlayRetrieveAnim ( )
     static UFunction* pFnOnPlayRetrieveAnim = NULL;
 
     if ( ! pFnOnPlayRetrieveAnim )
-        pFnOnPlayRetrieveAnim = (UFunction*) UObject::GObjObjects()->Data[ 86423 ];
+        pFnOnPlayRetrieveAnim = (UFunction*) UObject::GObjObjects()->Data[ 86422 ];
 
     ATrDevice_RemoteArxBuster_execOnPlayRetrieveAnim_Parms OnPlayRetrieveAnim_Parms;
 
@@ -84058,7 +84058,7 @@ void ATrDevice_RemoteArxBuster::eventOnAnimEnd ( class UAnimNodeSequence* SeqNod
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 86419 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 86418 ];
 
     ATrDevice_RemoteArxBuster_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -84078,7 +84078,7 @@ void ATrDevice_RemoteArxBuster::eventOnAnimPlay ( class UAnimNodeSequence* SeqNo
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 86417 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 86416 ];
 
     ATrDevice_RemoteArxBuster_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -84096,7 +84096,7 @@ void ATrDevice_RemoteArxBuster::OnRemoteProjectileDestroyedByOther ( class ATrPr
     static UFunction* pFnOnRemoteProjectileDestroyedByOther = NULL;
 
     if ( ! pFnOnRemoteProjectileDestroyedByOther )
-        pFnOnRemoteProjectileDestroyedByOther = (UFunction*) UObject::GObjObjects()->Data[ 86412 ];
+        pFnOnRemoteProjectileDestroyedByOther = (UFunction*) UObject::GObjObjects()->Data[ 86411 ];
 
     ATrDevice_RemoteArxBuster_execOnRemoteProjectileDestroyedByOther_Parms OnRemoteProjectileDestroyedByOther_Parms;
     OnRemoteProjectileDestroyedByOther_Parms.DestroyedProjectile = DestroyedProjectile;
@@ -84113,7 +84113,7 @@ void ATrDevice_RemoteArxBuster::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 86401 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 86400 ];
 
     ATrDevice_RemoteArxBuster_eventDestroyed_Parms Destroyed_Parms;
 
@@ -84129,7 +84129,7 @@ void ATrDevice_RemoteArxBuster::HideArmTimer ( )
     static UFunction* pFnHideArmTimer = NULL;
 
     if ( ! pFnHideArmTimer )
-        pFnHideArmTimer = (UFunction*) UObject::GObjObjects()->Data[ 86400 ];
+        pFnHideArmTimer = (UFunction*) UObject::GObjObjects()->Data[ 86399 ];
 
     ATrDevice_RemoteArxBuster_execHideArmTimer_Parms HideArmTimer_Parms;
 
@@ -84146,7 +84146,7 @@ void ATrDevice_RemoteArxBuster::ActivateRemoteRounds ( unsigned long bDoNoDamage
     static UFunction* pFnActivateRemoteRounds = NULL;
 
     if ( ! pFnActivateRemoteRounds )
-        pFnActivateRemoteRounds = (UFunction*) UObject::GObjObjects()->Data[ 86395 ];
+        pFnActivateRemoteRounds = (UFunction*) UObject::GObjObjects()->Data[ 86394 ];
 
     ATrDevice_RemoteArxBuster_execActivateRemoteRounds_Parms ActivateRemoteRounds_Parms;
     ActivateRemoteRounds_Parms.bDoNoDamage = bDoNoDamage;
@@ -84164,7 +84164,7 @@ class AProjectile* ATrDevice_RemoteArxBuster::ProjectileFire ( )
     static UFunction* pFnProjectileFire = NULL;
 
     if ( ! pFnProjectileFire )
-        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 86391 ];
+        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 86390 ];
 
     ATrDevice_RemoteArxBuster_execProjectileFire_Parms ProjectileFire_Parms;
 
@@ -84182,7 +84182,7 @@ void ATrDevice_RemoteArxBuster::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86390 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86389 ];
 
     ATrDevice_RemoteArxBuster_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -84199,7 +84199,7 @@ void ATrDevice_RemoteArxBuster::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86387 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86386 ];
 
     ATrDevice_RemoteArxBuster_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -84217,7 +84217,7 @@ bool ATrDevice_RemoteArxBuster::CanClientRequestReloadNow ( )
     static UFunction* pFnCanClientRequestReloadNow = NULL;
 
     if ( ! pFnCanClientRequestReloadNow )
-        pFnCanClientRequestReloadNow = (UFunction*) UObject::GObjObjects()->Data[ 86385 ];
+        pFnCanClientRequestReloadNow = (UFunction*) UObject::GObjObjects()->Data[ 86384 ];
 
     ATrDevice_RemoteArxBuster_execCanClientRequestReloadNow_Parms CanClientRequestReloadNow_Parms;
 
@@ -84235,7 +84235,7 @@ void ATrDevice_RemoteArxBuster::RequestReload ( )
     static UFunction* pFnRequestReload = NULL;
 
     if ( ! pFnRequestReload )
-        pFnRequestReload = (UFunction*) UObject::GObjObjects()->Data[ 86384 ];
+        pFnRequestReload = (UFunction*) UObject::GObjObjects()->Data[ 86383 ];
 
     ATrDevice_RemoteArxBuster_execRequestReload_Parms RequestReload_Parms;
 
@@ -84251,7 +84251,7 @@ void ATrDevice_RemoteArxBuster::PerformInactiveReload ( )
     static UFunction* pFnPerformInactiveReload = NULL;
 
     if ( ! pFnPerformInactiveReload )
-        pFnPerformInactiveReload = (UFunction*) UObject::GObjObjects()->Data[ 86383 ];
+        pFnPerformInactiveReload = (UFunction*) UObject::GObjObjects()->Data[ 86382 ];
 
     ATrDevice_RemoteArxBuster_execPerformInactiveReload_Parms PerformInactiveReload_Parms;
 
@@ -84269,7 +84269,7 @@ int ATrDevice_RemoteArxBuster::AddAmmo ( int Amount )
     static UFunction* pFnAddAmmo = NULL;
 
     if ( ! pFnAddAmmo )
-        pFnAddAmmo = (UFunction*) UObject::GObjObjects()->Data[ 86380 ];
+        pFnAddAmmo = (UFunction*) UObject::GObjObjects()->Data[ 86379 ];
 
     ATrDevice_RemoteArxBuster_execAddAmmo_Parms AddAmmo_Parms;
     AddAmmo_Parms.Amount = Amount;
@@ -84289,7 +84289,7 @@ void ATrDevice_RemoteArxBuster::eventPostInitAnimTree ( class USkeletalMeshCompo
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86378 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86377 ];
 
     ATrDevice_RemoteArxBuster_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -84307,7 +84307,7 @@ void ATrDevice_RemoteArxBuster::DetPoseActive ( unsigned long bActive )
     static UFunction* pFnDetPoseActive = NULL;
 
     if ( ! pFnDetPoseActive )
-        pFnDetPoseActive = (UFunction*) UObject::GObjObjects()->Data[ 86376 ];
+        pFnDetPoseActive = (UFunction*) UObject::GObjObjects()->Data[ 86375 ];
 
     ATrDevice_RemoteArxBuster_execDetPoseActive_Parms DetPoseActive_Parms;
     DetPoseActive_Parms.bActive = bActive;
@@ -84325,7 +84325,7 @@ void ATrDevice_RemoteArxBuster::SetLeftArmVisible ( unsigned long bVisible )
     static UFunction* pFnSetLeftArmVisible = NULL;
 
     if ( ! pFnSetLeftArmVisible )
-        pFnSetLeftArmVisible = (UFunction*) UObject::GObjObjects()->Data[ 86374 ];
+        pFnSetLeftArmVisible = (UFunction*) UObject::GObjObjects()->Data[ 86373 ];
 
     ATrDevice_RemoteArxBuster_execSetLeftArmVisible_Parms SetLeftArmVisible_Parms;
     SetLeftArmVisible_Parms.bVisible = bVisible;
@@ -84343,7 +84343,7 @@ void ATrDevice_RemoteArxBuster::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 86372 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 86371 ];
 
     ATrDevice_RemoteArxBuster_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -84361,7 +84361,7 @@ void ATrDevice_RemoteArxBuster::SetArxIdle ( unsigned long bEnabled )
     static UFunction* pFnSetArxIdle = NULL;
 
     if ( ! pFnSetArxIdle )
-        pFnSetArxIdle = (UFunction*) UObject::GObjObjects()->Data[ 86369 ];
+        pFnSetArxIdle = (UFunction*) UObject::GObjObjects()->Data[ 86368 ];
 
     ATrDevice_RemoteArxBuster_execSetArxIdle_Parms SetArxIdle_Parms;
     SetArxIdle_Parms.bEnabled = bEnabled;
@@ -84378,7 +84378,7 @@ void ATrDevice_S22Rifle::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86494 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86493 ];
 
     ATrDevice_S22Rifle_execInstantFire_Parms InstantFire_Parms;
 
@@ -84395,7 +84395,7 @@ class ATrSeekingMissileManager* ATrDevice_SaberLauncher::GetSeekingMissileManage
     static UFunction* pFnGetSeekingMissileManager = NULL;
 
     if ( ! pFnGetSeekingMissileManager )
-        pFnGetSeekingMissileManager = (UFunction*) UObject::GObjObjects()->Data[ 86581 ];
+        pFnGetSeekingMissileManager = (UFunction*) UObject::GObjObjects()->Data[ 86580 ];
 
     ATrDevice_SaberLauncher_execGetSeekingMissileManager_Parms GetSeekingMissileManager_Parms;
 
@@ -84413,7 +84413,7 @@ void ATrDevice_SaberLauncher::ServerTryNewPossibleTarget ( )
     static UFunction* pFnServerTryNewPossibleTarget = NULL;
 
     if ( ! pFnServerTryNewPossibleTarget )
-        pFnServerTryNewPossibleTarget = (UFunction*) UObject::GObjObjects()->Data[ 86580 ];
+        pFnServerTryNewPossibleTarget = (UFunction*) UObject::GObjObjects()->Data[ 86579 ];
 
     ATrDevice_SaberLauncher_execServerTryNewPossibleTarget_Parms ServerTryNewPossibleTarget_Parms;
 
@@ -84430,7 +84430,7 @@ class AProjectile* ATrDevice_SaberLauncher::ProjectileFire ( )
     static UFunction* pFnProjectileFire = NULL;
 
     if ( ! pFnProjectileFire )
-        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 86577 ];
+        pFnProjectileFire = (UFunction*) UObject::GObjObjects()->Data[ 86576 ];
 
     ATrDevice_SaberLauncher_execProjectileFire_Parms ProjectileFire_Parms;
 
@@ -84449,7 +84449,7 @@ class UClass* ATrDevice_SaberLauncher::GetProjectileClass ( )
     static UFunction* pFnGetProjectileClass = NULL;
 
     if ( ! pFnGetProjectileClass )
-        pFnGetProjectileClass = (UFunction*) UObject::GObjObjects()->Data[ 86575 ];
+        pFnGetProjectileClass = (UFunction*) UObject::GObjObjects()->Data[ 86574 ];
 
     ATrDevice_SaberLauncher_execGetProjectileClass_Parms GetProjectileClass_Parms;
 
@@ -84467,7 +84467,7 @@ void ATrDevice_SaberLauncher::HolderExitedVehicle ( )
     static UFunction* pFnHolderExitedVehicle = NULL;
 
     if ( ! pFnHolderExitedVehicle )
-        pFnHolderExitedVehicle = (UFunction*) UObject::GObjObjects()->Data[ 86574 ];
+        pFnHolderExitedVehicle = (UFunction*) UObject::GObjObjects()->Data[ 86573 ];
 
     ATrDevice_SaberLauncher_execHolderExitedVehicle_Parms HolderExitedVehicle_Parms;
 
@@ -84483,7 +84483,7 @@ void ATrDevice_SaberLauncher::HolderEnteredVehicle ( )
     static UFunction* pFnHolderEnteredVehicle = NULL;
 
     if ( ! pFnHolderEnteredVehicle )
-        pFnHolderEnteredVehicle = (UFunction*) UObject::GObjObjects()->Data[ 86573 ];
+        pFnHolderEnteredVehicle = (UFunction*) UObject::GObjObjects()->Data[ 86572 ];
 
     ATrDevice_SaberLauncher_execHolderEnteredVehicle_Parms HolderEnteredVehicle_Parms;
 
@@ -84499,7 +84499,7 @@ void ATrDevice_SaberLauncher::OnSwitchToWeapon ( )
     static UFunction* pFnOnSwitchToWeapon = NULL;
 
     if ( ! pFnOnSwitchToWeapon )
-        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86572 ];
+        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86571 ];
 
     ATrDevice_SaberLauncher_execOnSwitchToWeapon_Parms OnSwitchToWeapon_Parms;
 
@@ -84515,7 +84515,7 @@ void ATrDevice_SaberLauncher::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86571 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86570 ];
 
     ATrDevice_SaberLauncher_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -84531,7 +84531,7 @@ void ATrDevice_SaberLauncher::PerformTargeting ( )
     static UFunction* pFnPerformTargeting = NULL;
 
     if ( ! pFnPerformTargeting )
-        pFnPerformTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86558 ];
+        pFnPerformTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86557 ];
 
     ATrDevice_SaberLauncher_execPerformTargeting_Parms PerformTargeting_Parms;
 
@@ -84547,7 +84547,7 @@ void ATrDevice_SaberLauncher::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86557 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86556 ];
 
     ATrDevice_SaberLauncher_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -84564,7 +84564,7 @@ void ATrDevice_SaberLauncher::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 86554 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 86553 ];
 
     ATrDevice_SaberLauncher_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -84581,7 +84581,7 @@ void ATrDevice_SaberLauncher::TargetLockAcquired ( )
     static UFunction* pFnTargetLockAcquired = NULL;
 
     if ( ! pFnTargetLockAcquired )
-        pFnTargetLockAcquired = (UFunction*) UObject::GObjObjects()->Data[ 86553 ];
+        pFnTargetLockAcquired = (UFunction*) UObject::GObjObjects()->Data[ 86552 ];
 
     ATrDevice_SaberLauncher_execTargetLockAcquired_Parms TargetLockAcquired_Parms;
 
@@ -84598,7 +84598,7 @@ void ATrDevice_SaberLauncher::SetNewTrackingTarget ( class AActor* Target )
     static UFunction* pFnSetNewTrackingTarget = NULL;
 
     if ( ! pFnSetNewTrackingTarget )
-        pFnSetNewTrackingTarget = (UFunction*) UObject::GObjObjects()->Data[ 86551 ];
+        pFnSetNewTrackingTarget = (UFunction*) UObject::GObjObjects()->Data[ 86550 ];
 
     ATrDevice_SaberLauncher_execSetNewTrackingTarget_Parms SetNewTrackingTarget_Parms;
     SetNewTrackingTarget_Parms.Target = Target;
@@ -84617,7 +84617,7 @@ void ATrDevice_SaberLauncher::SetTargetActorMissileLockState ( class AActor* Tar
     static UFunction* pFnSetTargetActorMissileLockState = NULL;
 
     if ( ! pFnSetTargetActorMissileLockState )
-        pFnSetTargetActorMissileLockState = (UFunction*) UObject::GObjObjects()->Data[ 86547 ];
+        pFnSetTargetActorMissileLockState = (UFunction*) UObject::GObjObjects()->Data[ 86546 ];
 
     ATrDevice_SaberLauncher_execSetTargetActorMissileLockState_Parms SetTargetActorMissileLockState_Parms;
     SetTargetActorMissileLockState_Parms.Target = Target;
@@ -84638,7 +84638,7 @@ bool ATrDevice_SaberLauncher::ValidateTrackingTarget ( class AActor* Target, uns
     static UFunction* pFnValidateTrackingTarget = NULL;
 
     if ( ! pFnValidateTrackingTarget )
-        pFnValidateTrackingTarget = (UFunction*) UObject::GObjObjects()->Data[ 86542 ];
+        pFnValidateTrackingTarget = (UFunction*) UObject::GObjObjects()->Data[ 86541 ];
 
     ATrDevice_SaberLauncher_execValidateTrackingTarget_Parms ValidateTrackingTarget_Parms;
     ValidateTrackingTarget_Parms.Target = Target;
@@ -84660,7 +84660,7 @@ bool ATrDevice_SaberLauncher::IsActorInLOS ( class AActor* A )
     static UFunction* pFnIsActorInLOS = NULL;
 
     if ( ! pFnIsActorInLOS )
-        pFnIsActorInLOS = (UFunction*) UObject::GObjObjects()->Data[ 86537 ];
+        pFnIsActorInLOS = (UFunction*) UObject::GObjObjects()->Data[ 86536 ];
 
     ATrDevice_SaberLauncher_execIsActorInLOS_Parms IsActorInLOS_Parms;
     IsActorInLOS_Parms.A = A;
@@ -84682,7 +84682,7 @@ bool ATrDevice_SaberLauncher::TargetInsideReticle ( class AActor* Target, unsign
     static UFunction* pFnTargetInsideReticle = NULL;
 
     if ( ! pFnTargetInsideReticle )
-        pFnTargetInsideReticle = (UFunction*) UObject::GObjObjects()->Data[ 86533 ];
+        pFnTargetInsideReticle = (UFunction*) UObject::GObjObjects()->Data[ 86532 ];
 
     ATrDevice_SaberLauncher_execTargetInsideReticle_Parms TargetInsideReticle_Parms;
     TargetInsideReticle_Parms.Target = Target;
@@ -84702,7 +84702,7 @@ void ATrDevice_SaberLauncher::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 86532 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 86531 ];
 
     ATrDevice_SaberLauncher_execDestroyed_Parms Destroyed_Parms;
 
@@ -84718,7 +84718,7 @@ void ATrDevice_SaberLauncher::SuspendTargeting ( )
     static UFunction* pFnSuspendTargeting = NULL;
 
     if ( ! pFnSuspendTargeting )
-        pFnSuspendTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86529 ];
+        pFnSuspendTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86528 ];
 
     ATrDevice_SaberLauncher_execSuspendTargeting_Parms SuspendTargeting_Parms;
 
@@ -84734,7 +84734,7 @@ void ATrDevice_SaberLauncher::ResumeTargeting ( )
     static UFunction* pFnResumeTargeting = NULL;
 
     if ( ! pFnResumeTargeting )
-        pFnResumeTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86528 ];
+        pFnResumeTargeting = (UFunction*) UObject::GObjObjects()->Data[ 86527 ];
 
     ATrDevice_SaberLauncher_execResumeTargeting_Parms ResumeTargeting_Parms;
 
@@ -84750,7 +84750,7 @@ void ATrDevice_SaberLauncher::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 86527 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 86526 ];
 
     ATrDevice_SaberLauncher_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -84767,7 +84767,7 @@ void ATrDevice_SaberLauncher::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 86519 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 86518 ];
 
     ATrDevice_SaberLauncher_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -84784,7 +84784,7 @@ void ATrDevice_SniperRifle::StopScopeRechargeSound ( )
     static UFunction* pFnStopScopeRechargeSound = NULL;
 
     if ( ! pFnStopScopeRechargeSound )
-        pFnStopScopeRechargeSound = (UFunction*) UObject::GObjObjects()->Data[ 86670 ];
+        pFnStopScopeRechargeSound = (UFunction*) UObject::GObjObjects()->Data[ 86669 ];
 
     ATrDevice_SniperRifle_execStopScopeRechargeSound_Parms StopScopeRechargeSound_Parms;
 
@@ -84800,7 +84800,7 @@ void ATrDevice_SniperRifle::PlayScopeRechargeSound ( )
     static UFunction* pFnPlayScopeRechargeSound = NULL;
 
     if ( ! pFnPlayScopeRechargeSound )
-        pFnPlayScopeRechargeSound = (UFunction*) UObject::GObjObjects()->Data[ 86669 ];
+        pFnPlayScopeRechargeSound = (UFunction*) UObject::GObjObjects()->Data[ 86668 ];
 
     ATrDevice_SniperRifle_execPlayScopeRechargeSound_Parms PlayScopeRechargeSound_Parms;
 
@@ -84817,7 +84817,7 @@ void ATrDevice_SniperRifle::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 86664 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 86663 ];
 
     ATrDevice_SniperRifle_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -84835,7 +84835,7 @@ float ATrDevice_SniperRifle::CalcHUDAimChargePercent ( )
     static UFunction* pFnCalcHUDAimChargePercent = NULL;
 
     if ( ! pFnCalcHUDAimChargePercent )
-        pFnCalcHUDAimChargePercent = (UFunction*) UObject::GObjObjects()->Data[ 86662 ];
+        pFnCalcHUDAimChargePercent = (UFunction*) UObject::GObjObjects()->Data[ 86661 ];
 
     ATrDevice_SniperRifle_execCalcHUDAimChargePercent_Parms CalcHUDAimChargePercent_Parms;
 
@@ -84854,7 +84854,7 @@ void ATrDevice_SniperRifle::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86659 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86658 ];
 
     ATrDevice_SniperRifle_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -84875,7 +84875,7 @@ float ATrDevice_SniperRifle::ModifyInstantHitDamage ( unsigned char FiringMode, 
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86652 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 86651 ];
 
     ATrDevice_SniperRifle_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -84896,7 +84896,7 @@ void ATrDevice_SniperRifle::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86651 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 86650 ];
 
     ATrDevice_SniperRifle_execInstantFire_Parms InstantFire_Parms;
 
@@ -84912,7 +84912,7 @@ void ATrDevice_SniperRifle::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86650 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86649 ];
 
     ATrDevice_SniperRifle_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -84928,7 +84928,7 @@ void ATrDevice_SniperRifle::OnSwitchToWeapon ( )
     static UFunction* pFnOnSwitchToWeapon = NULL;
 
     if ( ! pFnOnSwitchToWeapon )
-        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86649 ];
+        pFnOnSwitchToWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86648 ];
 
     ATrDevice_SniperRifle_execOnSwitchToWeapon_Parms OnSwitchToWeapon_Parms;
 
@@ -84944,7 +84944,7 @@ void ATrDevice_SpikeLauncher::OnSwitchAwayFromWeapon ( )
     static UFunction* pFnOnSwitchAwayFromWeapon = NULL;
 
     if ( ! pFnOnSwitchAwayFromWeapon )
-        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86720 ];
+        pFnOnSwitchAwayFromWeapon = (UFunction*) UObject::GObjObjects()->Data[ 86719 ];
 
     ATrDevice_SpikeLauncher_execOnSwitchAwayFromWeapon_Parms OnSwitchAwayFromWeapon_Parms;
 
@@ -84960,7 +84960,7 @@ void ATrDevice_SpikeLauncher::PutDownFast ( )
     static UFunction* pFnPutDownFast = NULL;
 
     if ( ! pFnPutDownFast )
-        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 86719 ];
+        pFnPutDownFast = (UFunction*) UObject::GObjObjects()->Data[ 86718 ];
 
     ATrDevice_SpikeLauncher_execPutDownFast_Parms PutDownFast_Parms;
 
@@ -84976,7 +84976,7 @@ void ATrDevice_SpikeLauncher::PlayWeaponPutDown ( )
     static UFunction* pFnPlayWeaponPutDown = NULL;
 
     if ( ! pFnPlayWeaponPutDown )
-        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 86718 ];
+        pFnPlayWeaponPutDown = (UFunction*) UObject::GObjObjects()->Data[ 86717 ];
 
     ATrDevice_SpikeLauncher_execPlayWeaponPutDown_Parms PlayWeaponPutDown_Parms;
 
@@ -84992,7 +84992,7 @@ void ATrDevice_SpikeLauncher::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86717 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86716 ];
 
     ATrDevice_SpikeLauncher_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -85011,7 +85011,7 @@ void ATrDevice_SpikeLauncher::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode,
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 86713 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 86712 ];
 
     ATrDevice_SpikeLauncher_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -85031,7 +85031,7 @@ void ATrDevice_SpikeLauncher::eventOnAnimPlay ( class UAnimNodeSequence* SeqNode
     static UFunction* pFnOnAnimPlay = NULL;
 
     if ( ! pFnOnAnimPlay )
-        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 86711 ];
+        pFnOnAnimPlay = (UFunction*) UObject::GObjObjects()->Data[ 86710 ];
 
     ATrDevice_SpikeLauncher_eventOnAnimPlay_Parms OnAnimPlay_Parms;
     OnAnimPlay_Parms.SeqNode = SeqNode;
@@ -85049,7 +85049,7 @@ void ATrDevice_SpikeLauncher::eventPostInitAnimTree ( class USkeletalMeshCompone
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86709 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86708 ];
 
     ATrDevice_SpikeLauncher_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -85067,7 +85067,7 @@ void ATrDevice_SpikeLauncher::SetSpikeIdle ( unsigned long bEnabled )
     static UFunction* pFnSetSpikeIdle = NULL;
 
     if ( ! pFnSetSpikeIdle )
-        pFnSetSpikeIdle = (UFunction*) UObject::GObjObjects()->Data[ 86706 ];
+        pFnSetSpikeIdle = (UFunction*) UObject::GObjObjects()->Data[ 86705 ];
 
     ATrDevice_SpikeLauncher_execSetSpikeIdle_Parms SetSpikeIdle_Parms;
     SetSpikeIdle_Parms.bEnabled = bEnabled;
@@ -85085,7 +85085,7 @@ void ATrDevice_ThrowingKnives::StartFire ( unsigned char FireModeNum )
     static UFunction* pFnStartFire = NULL;
 
     if ( ! pFnStartFire )
-        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86823 ];
+        pFnStartFire = (UFunction*) UObject::GObjObjects()->Data[ 86822 ];
 
     ATrDevice_ThrowingKnives_execStartFire_Parms StartFire_Parms;
     StartFire_Parms.FireModeNum = FireModeNum;
@@ -85102,7 +85102,7 @@ void ATrDevice_ThrowingKnives::FireAmmunition ( )
     static UFunction* pFnFireAmmunition = NULL;
 
     if ( ! pFnFireAmmunition )
-        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86822 ];
+        pFnFireAmmunition = (UFunction*) UObject::GObjObjects()->Data[ 86821 ];
 
     ATrDevice_ThrowingKnives_execFireAmmunition_Parms FireAmmunition_Parms;
 
@@ -85118,7 +85118,7 @@ void ATrDevice_ThrowingKnives::PlayWeaponEquip ( )
     static UFunction* pFnPlayWeaponEquip = NULL;
 
     if ( ! pFnPlayWeaponEquip )
-        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86821 ];
+        pFnPlayWeaponEquip = (UFunction*) UObject::GObjObjects()->Data[ 86820 ];
 
     ATrDevice_ThrowingKnives_execPlayWeaponEquip_Parms PlayWeaponEquip_Parms;
 
@@ -85134,7 +85134,7 @@ void ATrDevice_ThrowingKnives::OnSkelControlKnivesAnimNotify ( )
     static UFunction* pFnOnSkelControlKnivesAnimNotify = NULL;
 
     if ( ! pFnOnSkelControlKnivesAnimNotify )
-        pFnOnSkelControlKnivesAnimNotify = (UFunction*) UObject::GObjObjects()->Data[ 86820 ];
+        pFnOnSkelControlKnivesAnimNotify = (UFunction*) UObject::GObjObjects()->Data[ 86819 ];
 
     ATrDevice_ThrowingKnives_execOnSkelControlKnivesAnimNotify_Parms OnSkelControlKnivesAnimNotify_Parms;
 
@@ -85150,7 +85150,7 @@ void ATrDevice_ThrowingKnives::OnFireSkelControlKnivesAnimNotify ( )
     static UFunction* pFnOnFireSkelControlKnivesAnimNotify = NULL;
 
     if ( ! pFnOnFireSkelControlKnivesAnimNotify )
-        pFnOnFireSkelControlKnivesAnimNotify = (UFunction*) UObject::GObjObjects()->Data[ 86819 ];
+        pFnOnFireSkelControlKnivesAnimNotify = (UFunction*) UObject::GObjObjects()->Data[ 86818 ];
 
     ATrDevice_ThrowingKnives_execOnFireSkelControlKnivesAnimNotify_Parms OnFireSkelControlKnivesAnimNotify_Parms;
 
@@ -85167,7 +85167,7 @@ void ATrDevice_ThrowingKnives::UpdateSkelControlKnives ( unsigned long bForceFul
     static UFunction* pFnUpdateSkelControlKnives = NULL;
 
     if ( ! pFnUpdateSkelControlKnives )
-        pFnUpdateSkelControlKnives = (UFunction*) UObject::GObjObjects()->Data[ 86817 ];
+        pFnUpdateSkelControlKnives = (UFunction*) UObject::GObjObjects()->Data[ 86816 ];
 
     ATrDevice_ThrowingKnives_execUpdateSkelControlKnives_Parms UpdateSkelControlKnives_Parms;
     UpdateSkelControlKnives_Parms.bForceFullAmmo = bForceFullAmmo;
@@ -85185,7 +85185,7 @@ void ATrDevice_ThrowingKnives::eventPostInitAnimTree ( class USkeletalMeshCompon
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86815 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 86814 ];
 
     ATrDevice_ThrowingKnives_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -86017,7 +86017,7 @@ void ATrPowerGenerator::AwardUpgradeAssists ( )
     static UFunction* pFnAwardUpgradeAssists = NULL;
 
     if ( ! pFnAwardUpgradeAssists )
-        pFnAwardUpgradeAssists = (UFunction*) UObject::GObjObjects()->Data[ 113865 ];
+        pFnAwardUpgradeAssists = (UFunction*) UObject::GObjObjects()->Data[ 113864 ];
 
     ATrPowerGenerator_execAwardUpgradeAssists_Parms AwardUpgradeAssists_Parms;
 
@@ -86034,7 +86034,7 @@ void ATrPowerGenerator::GiveDestroyAccolade ( class ATrPlayerController* TrPC )
     static UFunction* pFnGiveDestroyAccolade = NULL;
 
     if ( ! pFnGiveDestroyAccolade )
-        pFnGiveDestroyAccolade = (UFunction*) UObject::GObjObjects()->Data[ 113863 ];
+        pFnGiveDestroyAccolade = (UFunction*) UObject::GObjObjects()->Data[ 113862 ];
 
     ATrPowerGenerator_execGiveDestroyAccolade_Parms GiveDestroyAccolade_Parms;
     GiveDestroyAccolade_Parms.TrPC = TrPC;
@@ -86052,7 +86052,7 @@ class UTexture2D* ATrPowerGenerator::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 113861 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 113860 ];
 
     ATrPowerGenerator_execGetMarker_Parms GetMarker_Parms;
 
@@ -86077,7 +86077,7 @@ void ATrPowerGenerator::eventTakeDamage ( int DamageAmount, class AController* E
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 113849 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 113848 ];
 
     ATrPowerGenerator_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -86101,7 +86101,7 @@ void ATrPowerGenerator::AddToPoweredObjectives ( class ATrDeployable* dep )
     static UFunction* pFnAddToPoweredObjectives = NULL;
 
     if ( ! pFnAddToPoweredObjectives )
-        pFnAddToPoweredObjectives = (UFunction*) UObject::GObjObjects()->Data[ 113847 ];
+        pFnAddToPoweredObjectives = (UFunction*) UObject::GObjObjects()->Data[ 113846 ];
 
     ATrPowerGenerator_execAddToPoweredObjectives_Parms AddToPoweredObjectives_Parms;
     AddToPoweredObjectives_Parms.dep = dep;
@@ -86138,7 +86138,7 @@ void ATrPowerGenerator::AutoRestoreHealth ( unsigned long bFullyRestore )
     static UFunction* pFnAutoRestoreHealth = NULL;
 
     if ( ! pFnAutoRestoreHealth )
-        pFnAutoRestoreHealth = (UFunction*) UObject::GObjObjects()->Data[ 113827 ];
+        pFnAutoRestoreHealth = (UFunction*) UObject::GObjObjects()->Data[ 113826 ];
 
     ATrPowerGenerator_execAutoRestoreHealth_Parms AutoRestoreHealth_Parms;
     AutoRestoreHealth_Parms.bFullyRestore = bFullyRestore;
@@ -86156,7 +86156,7 @@ void ATrPowerGenerator::UpdateGeneratorPower ( unsigned long bPowered )
     static UFunction* pFnUpdateGeneratorPower = NULL;
 
     if ( ! pFnUpdateGeneratorPower )
-        pFnUpdateGeneratorPower = (UFunction*) UObject::GObjObjects()->Data[ 113821 ];
+        pFnUpdateGeneratorPower = (UFunction*) UObject::GObjObjects()->Data[ 113820 ];
 
     ATrPowerGenerator_execUpdateGeneratorPower_Parms UpdateGeneratorPower_Parms;
     UpdateGeneratorPower_Parms.bPowered = bPowered;
@@ -86173,7 +86173,7 @@ void ATrPowerGenerator::UpdateGeneratorDowntime ( )
     static UFunction* pFnUpdateGeneratorDowntime = NULL;
 
     if ( ! pFnUpdateGeneratorDowntime )
-        pFnUpdateGeneratorDowntime = (UFunction*) UObject::GObjObjects()->Data[ 113819 ];
+        pFnUpdateGeneratorDowntime = (UFunction*) UObject::GObjObjects()->Data[ 113818 ];
 
     ATrPowerGenerator_execUpdateGeneratorDowntime_Parms UpdateGeneratorDowntime_Parms;
 
@@ -86190,7 +86190,7 @@ void ATrPowerGenerator::PlayRestoreHealthEffects ( float DeltaTime )
     static UFunction* pFnPlayRestoreHealthEffects = NULL;
 
     if ( ! pFnPlayRestoreHealthEffects )
-        pFnPlayRestoreHealthEffects = (UFunction*) UObject::GObjObjects()->Data[ 113812 ];
+        pFnPlayRestoreHealthEffects = (UFunction*) UObject::GObjObjects()->Data[ 113811 ];
 
     ATrPowerGenerator_execPlayRestoreHealthEffects_Parms PlayRestoreHealthEffects_Parms;
     PlayRestoreHealthEffects_Parms.DeltaTime = DeltaTime;
@@ -86208,7 +86208,7 @@ void ATrPowerGenerator::DamageAllMorphs ( float DamageAmount )
     static UFunction* pFnDamageAllMorphs = NULL;
 
     if ( ! pFnDamageAllMorphs )
-        pFnDamageAllMorphs = (UFunction*) UObject::GObjObjects()->Data[ 113806 ];
+        pFnDamageAllMorphs = (UFunction*) UObject::GObjObjects()->Data[ 113805 ];
 
     ATrPowerGenerator_execDamageAllMorphs_Parms DamageAllMorphs_Parms;
     DamageAllMorphs_Parms.DamageAmount = DamageAmount;
@@ -86230,7 +86230,7 @@ void ATrPowerGenerator::DoRepairs ( int HealAmount, class AController* EventInst
     static UFunction* pFnDoRepairs = NULL;
 
     if ( ! pFnDoRepairs )
-        pFnDoRepairs = (UFunction*) UObject::GObjObjects()->Data[ 113800 ];
+        pFnDoRepairs = (UFunction*) UObject::GObjObjects()->Data[ 113799 ];
 
     ATrPowerGenerator_execDoRepairs_Parms DoRepairs_Parms;
     DoRepairs_Parms.HealAmount = HealAmount;
@@ -86253,7 +86253,7 @@ void ATrPowerGenerator::PlayDamageHealthEffects ( int DamageAmount, int HitBoneI
     static UFunction* pFnPlayDamageHealthEffects = NULL;
 
     if ( ! pFnPlayDamageHealthEffects )
-        pFnPlayDamageHealthEffects = (UFunction*) UObject::GObjObjects()->Data[ 113793 ];
+        pFnPlayDamageHealthEffects = (UFunction*) UObject::GObjObjects()->Data[ 113792 ];
 
     ATrPowerGenerator_execPlayDamageHealthEffects_Parms PlayDamageHealthEffects_Parms;
     PlayDamageHealthEffects_Parms.DamageAmount = DamageAmount;
@@ -86272,7 +86272,7 @@ void ATrPowerGenerator::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 113791 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 113790 ];
 
     ATrPowerGenerator_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -86290,7 +86290,7 @@ void ATrPowerGenerator::eventPostInitAnimTree ( class USkeletalMeshComponent* Sk
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 113789 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 113788 ];
 
     ATrPowerGenerator_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -86307,7 +86307,7 @@ void ATrPowerGenerator::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113787 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 113786 ];
 
     ATrPowerGenerator_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -86325,7 +86325,7 @@ bool ATrPowerGenerator::ShouldShowHelpText ( unsigned char HelpTextType )
     static UFunction* pFnShouldShowHelpText = NULL;
 
     if ( ! pFnShouldShowHelpText )
-        pFnShouldShowHelpText = (UFunction*) UObject::GObjObjects()->Data[ 113784 ];
+        pFnShouldShowHelpText = (UFunction*) UObject::GObjObjects()->Data[ 113783 ];
 
     ATrPowerGenerator_execShouldShowHelpText_Parms ShouldShowHelpText_Parms;
     ShouldShowHelpText_Parms.HelpTextType = HelpTextType;
@@ -86345,7 +86345,7 @@ void ATrPowerGenerator::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 113782 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 113781 ];
 
     ATrPowerGenerator_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -86362,7 +86362,7 @@ void ATrPowerGenerator::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 113778 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 113777 ];
 
     ATrPowerGenerator_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -86523,7 +86523,7 @@ void ATrRabbitBase::SpawnHelpTextCollisionProxy ( unsigned char HelpTextType )
     static UFunction* pFnSpawnHelpTextCollisionProxy = NULL;
 
     if ( ! pFnSpawnHelpTextCollisionProxy )
-        pFnSpawnHelpTextCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 116255 ];
+        pFnSpawnHelpTextCollisionProxy = (UFunction*) UObject::GObjObjects()->Data[ 116254 ];
 
     ATrRabbitBase_execSpawnHelpTextCollisionProxy_Parms SpawnHelpTextCollisionProxy_Parms;
     SpawnHelpTextCollisionProxy_Parms.HelpTextType = HelpTextType;
@@ -86540,7 +86540,7 @@ void ATrRabbitBase::OnFlagTaken ( )
     static UFunction* pFnOnFlagTaken = NULL;
 
     if ( ! pFnOnFlagTaken )
-        pFnOnFlagTaken = (UFunction*) UObject::GObjObjects()->Data[ 116254 ];
+        pFnOnFlagTaken = (UFunction*) UObject::GObjObjects()->Data[ 116253 ];
 
     ATrRabbitBase_execOnFlagTaken_Parms OnFlagTaken_Parms;
 
@@ -86556,7 +86556,7 @@ void ATrRabbitBase::OnFlagComesHome ( )
     static UFunction* pFnOnFlagComesHome = NULL;
 
     if ( ! pFnOnFlagComesHome )
-        pFnOnFlagComesHome = (UFunction*) UObject::GObjObjects()->Data[ 116253 ];
+        pFnOnFlagComesHome = (UFunction*) UObject::GObjObjects()->Data[ 116252 ];
 
     ATrRabbitBase_execOnFlagComesHome_Parms OnFlagComesHome_Parms;
 
@@ -86573,7 +86573,7 @@ bool ATrRabbitBase::eventIsActive ( )
     static UFunction* pFnIsActive = NULL;
 
     if ( ! pFnIsActive )
-        pFnIsActive = (UFunction*) UObject::GObjObjects()->Data[ 116251 ];
+        pFnIsActive = (UFunction*) UObject::GObjObjects()->Data[ 116250 ];
 
     ATrRabbitBase_eventIsActive_Parms IsActive_Parms;
 
@@ -86592,7 +86592,7 @@ class AUTCarriedObject* ATrRabbitBase::GetFlag ( )
     static UFunction* pFnGetFlag = NULL;
 
     if ( ! pFnGetFlag )
-        pFnGetFlag = (UFunction*) UObject::GObjObjects()->Data[ 116249 ];
+        pFnGetFlag = (UFunction*) UObject::GObjObjects()->Data[ 116248 ];
 
     ATrRabbitBase_execGetFlag_Parms GetFlag_Parms;
 
@@ -86610,7 +86610,7 @@ void ATrRabbitBase::ObjectiveChanged ( )
     static UFunction* pFnObjectiveChanged = NULL;
 
     if ( ! pFnObjectiveChanged )
-        pFnObjectiveChanged = (UFunction*) UObject::GObjObjects()->Data[ 116247 ];
+        pFnObjectiveChanged = (UFunction*) UObject::GObjObjects()->Data[ 116246 ];
 
     ATrRabbitBase_execObjectiveChanged_Parms ObjectiveChanged_Parms;
 
@@ -86630,7 +86630,7 @@ class USoundNodeWave* ATrRabbitBase::GetLocationSpeechFor ( class APlayerControl
     static UFunction* pFnGetLocationSpeechFor = NULL;
 
     if ( ! pFnGetLocationSpeechFor )
-        pFnGetLocationSpeechFor = (UFunction*) UObject::GObjObjects()->Data[ 116242 ];
+        pFnGetLocationSpeechFor = (UFunction*) UObject::GObjObjects()->Data[ 116241 ];
 
     ATrRabbitBase_execGetLocationSpeechFor_Parms GetLocationSpeechFor_Parms;
     GetLocationSpeechFor_Parms.PC = PC;
@@ -86654,7 +86654,7 @@ int ATrRabbitBase::GetLocationMessageIndex ( class AUTBot* B, class APawn* Statu
     static UFunction* pFnGetLocationMessageIndex = NULL;
 
     if ( ! pFnGetLocationMessageIndex )
-        pFnGetLocationMessageIndex = (UFunction*) UObject::GObjObjects()->Data[ 116236 ];
+        pFnGetLocationMessageIndex = (UFunction*) UObject::GObjObjects()->Data[ 116235 ];
 
     ATrRabbitBase_execGetLocationMessageIndex_Parms GetLocationMessageIndex_Parms;
     GetLocationMessageIndex_Parms.B = B;
@@ -86675,7 +86675,7 @@ class AActor* ATrRabbitBase::eventGetBestViewTarget ( )
     static UFunction* pFnGetBestViewTarget = NULL;
 
     if ( ! pFnGetBestViewTarget )
-        pFnGetBestViewTarget = (UFunction*) UObject::GObjObjects()->Data[ 116234 ];
+        pFnGetBestViewTarget = (UFunction*) UObject::GObjObjects()->Data[ 116233 ];
 
     ATrRabbitBase_eventGetBestViewTarget_Parms GetBestViewTarget_Parms;
 
@@ -86694,7 +86694,7 @@ void ATrRabbitBase::eventPostInitAnimTree ( class USkeletalMeshComponent* SkelCo
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 116232 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 116231 ];
 
     ATrRabbitBase_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -86711,7 +86711,7 @@ void ATrRabbitBase::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 116231 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 116230 ];
 
     ATrRabbitBase_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -86728,7 +86728,7 @@ bool ATrVehicleStation::ShouldPostRenderForCaH ( )
     static UFunction* pFnShouldPostRenderForCaH = NULL;
 
     if ( ! pFnShouldPostRenderForCaH )
-        pFnShouldPostRenderForCaH = (UFunction*) UObject::GObjObjects()->Data[ 121635 ];
+        pFnShouldPostRenderForCaH = (UFunction*) UObject::GObjObjects()->Data[ 121634 ];
 
     ATrVehicleStation_execShouldPostRenderForCaH_Parms ShouldPostRenderForCaH_Parms;
 
@@ -86747,7 +86747,7 @@ class UTexture2D* ATrVehicleStation::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 121633 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 121632 ];
 
     ATrVehicleStation_execGetMarker_Parms GetMarker_Parms;
 
@@ -86767,7 +86767,7 @@ void ATrVehicleStation::AddVehicleToCanSpawnList ( unsigned char VehicleType, in
     static UFunction* pFnAddVehicleToCanSpawnList = NULL;
 
     if ( ! pFnAddVehicleToCanSpawnList )
-        pFnAddVehicleToCanSpawnList = (UFunction*) UObject::GObjObjects()->Data[ 121627 ];
+        pFnAddVehicleToCanSpawnList = (UFunction*) UObject::GObjObjects()->Data[ 121626 ];
 
     ATrVehicleStation_execAddVehicleToCanSpawnList_Parms AddVehicleToCanSpawnList_Parms;
     AddVehicleToCanSpawnList_Parms.VehicleType = VehicleType;
@@ -86808,7 +86808,7 @@ void ATrVehicleStation::AddVehicleToPackedList ( unsigned char VehicleType, int 
     static UFunction* pFnAddVehicleToPackedList = NULL;
 
     if ( ! pFnAddVehicleToPackedList )
-        pFnAddVehicleToPackedList = (UFunction*) UObject::GObjObjects()->Data[ 121621 ];
+        pFnAddVehicleToPackedList = (UFunction*) UObject::GObjObjects()->Data[ 121620 ];
 
     ATrVehicleStation_execAddVehicleToPackedList_Parms AddVehicleToPackedList_Parms;
     AddVehicleToPackedList_Parms.VehicleType = VehicleType;
@@ -86870,7 +86870,7 @@ float ATrVehicleStation::GetVehicleSpawnTime ( unsigned char VehicleType )
     static UFunction* pFnGetVehicleSpawnTime = NULL;
 
     if ( ! pFnGetVehicleSpawnTime )
-        pFnGetVehicleSpawnTime = (UFunction*) UObject::GObjObjects()->Data[ 121612 ];
+        pFnGetVehicleSpawnTime = (UFunction*) UObject::GObjObjects()->Data[ 121611 ];
 
     ATrVehicleStation_execGetVehicleSpawnTime_Parms GetVehicleSpawnTime_Parms;
     GetVehicleSpawnTime_Parms.VehicleType = VehicleType;
@@ -86910,7 +86910,7 @@ void ATrVehicleStation::Unlock ( )
     static UFunction* pFnUnlock = NULL;
 
     if ( ! pFnUnlock )
-        pFnUnlock = (UFunction*) UObject::GObjObjects()->Data[ 121608 ];
+        pFnUnlock = (UFunction*) UObject::GObjObjects()->Data[ 121607 ];
 
     ATrVehicleStation_execUnlock_Parms Unlock_Parms;
 
@@ -86926,7 +86926,7 @@ void ATrVehicleStation::TeleportDriverToVehicle ( )
     static UFunction* pFnTeleportDriverToVehicle = NULL;
 
     if ( ! pFnTeleportDriverToVehicle )
-        pFnTeleportDriverToVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121607 ];
+        pFnTeleportDriverToVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121606 ];
 
     ATrVehicleStation_execTeleportDriverToVehicle_Parms TeleportDriverToVehicle_Parms;
 
@@ -86942,7 +86942,7 @@ void ATrVehicleStation::SpawnVehicle ( )
     static UFunction* pFnSpawnVehicle = NULL;
 
     if ( ! pFnSpawnVehicle )
-        pFnSpawnVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121604 ];
+        pFnSpawnVehicle = (UFunction*) UObject::GObjObjects()->Data[ 121603 ];
 
     ATrVehicleStation_execSpawnVehicle_Parms SpawnVehicle_Parms;
 
@@ -86979,7 +86979,7 @@ void ATrVehicleStation::PlayVehiclePadCollapseAnim ( )
     static UFunction* pFnPlayVehiclePadCollapseAnim = NULL;
 
     if ( ! pFnPlayVehiclePadCollapseAnim )
-        pFnPlayVehiclePadCollapseAnim = (UFunction*) UObject::GObjObjects()->Data[ 121601 ];
+        pFnPlayVehiclePadCollapseAnim = (UFunction*) UObject::GObjObjects()->Data[ 121600 ];
 
     ATrVehicleStation_execPlayVehiclePadCollapseAnim_Parms PlayVehiclePadCollapseAnim_Parms;
 
@@ -86995,7 +86995,7 @@ void ATrVehicleStation::PlayVehiclePadDeployAnim ( )
     static UFunction* pFnPlayVehiclePadDeployAnim = NULL;
 
     if ( ! pFnPlayVehiclePadDeployAnim )
-        pFnPlayVehiclePadDeployAnim = (UFunction*) UObject::GObjObjects()->Data[ 121600 ];
+        pFnPlayVehiclePadDeployAnim = (UFunction*) UObject::GObjObjects()->Data[ 121599 ];
 
     ATrVehicleStation_execPlayVehiclePadDeployAnim_Parms PlayVehiclePadDeployAnim_Parms;
 
@@ -87011,7 +87011,7 @@ void ATrVehicleStation::PlayRetractAnim ( )
     static UFunction* pFnPlayRetractAnim = NULL;
 
     if ( ! pFnPlayRetractAnim )
-        pFnPlayRetractAnim = (UFunction*) UObject::GObjObjects()->Data[ 121599 ];
+        pFnPlayRetractAnim = (UFunction*) UObject::GObjObjects()->Data[ 121598 ];
 
     ATrVehicleStation_execPlayRetractAnim_Parms PlayRetractAnim_Parms;
 
@@ -87027,7 +87027,7 @@ void ATrVehicleStation::PlayStationLeftEffects ( )
     static UFunction* pFnPlayStationLeftEffects = NULL;
 
     if ( ! pFnPlayStationLeftEffects )
-        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 121598 ];
+        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 121597 ];
 
     ATrVehicleStation_execPlayStationLeftEffects_Parms PlayStationLeftEffects_Parms;
 
@@ -87043,7 +87043,7 @@ void ATrVehicleStation::PlayStationEnteredEffects ( )
     static UFunction* pFnPlayStationEnteredEffects = NULL;
 
     if ( ! pFnPlayStationEnteredEffects )
-        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 121596 ];
+        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 121595 ];
 
     ATrVehicleStation_execPlayStationEnteredEffects_Parms PlayStationEnteredEffects_Parms;
 
@@ -87060,7 +87060,7 @@ void ATrVehicleStation::PawnLeftStation ( class ATrPawn* P )
     static UFunction* pFnPawnLeftStation = NULL;
 
     if ( ! pFnPawnLeftStation )
-        pFnPawnLeftStation = (UFunction*) UObject::GObjObjects()->Data[ 121594 ];
+        pFnPawnLeftStation = (UFunction*) UObject::GObjObjects()->Data[ 121593 ];
 
     ATrVehicleStation_execPawnLeftStation_Parms PawnLeftStation_Parms;
     PawnLeftStation_Parms.P = P;
@@ -87078,7 +87078,7 @@ void ATrVehicleStation::PawnEnteredStation ( class ATrPawn* P )
     static UFunction* pFnPawnEnteredStation = NULL;
 
     if ( ! pFnPawnEnteredStation )
-        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 121590 ];
+        pFnPawnEnteredStation = (UFunction*) UObject::GObjObjects()->Data[ 121589 ];
 
     ATrVehicleStation_execPawnEnteredStation_Parms PawnEnteredStation_Parms;
     PawnEnteredStation_Parms.P = P;
@@ -87102,7 +87102,7 @@ void ATrVehicleStation::eventTakeDamage ( int DamageAmount, class AController* E
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 121578 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 121577 ];
 
     ATrVehicleStation_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -87126,7 +87126,7 @@ void ATrVehicleStation::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 121573 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 121572 ];
 
     ATrVehicleStation_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -87143,7 +87143,7 @@ void ATrVehicleStation::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121571 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121570 ];
 
     ATrVehicleStation_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -87160,7 +87160,7 @@ void ATrVehicleStation::eventPostInitAnimTree ( class USkeletalMeshComponent* Sk
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121569 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121568 ];
 
     ATrVehicleStation_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -87178,7 +87178,7 @@ void ATrVehicleStation::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 121567 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 121566 ];
 
     ATrVehicleStation_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -87196,7 +87196,7 @@ class UTexture2D* ATrRepairStation::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 117016 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 117015 ];
 
     ATrRepairStation_execGetMarker_Parms GetMarker_Parms;
 
@@ -87214,7 +87214,7 @@ void ATrRepairStation::CloseStation ( )
     static UFunction* pFnCloseStation = NULL;
 
     if ( ! pFnCloseStation )
-        pFnCloseStation = (UFunction*) UObject::GObjObjects()->Data[ 117015 ];
+        pFnCloseStation = (UFunction*) UObject::GObjObjects()->Data[ 117014 ];
 
     ATrRepairStation_execCloseStation_Parms CloseStation_Parms;
 
@@ -87230,7 +87230,7 @@ void ATrRepairStation::PawnGrabbedRepairTool ( )
     static UFunction* pFnPawnGrabbedRepairTool = NULL;
 
     if ( ! pFnPawnGrabbedRepairTool )
-        pFnPawnGrabbedRepairTool = (UFunction*) UObject::GObjObjects()->Data[ 117014 ];
+        pFnPawnGrabbedRepairTool = (UFunction*) UObject::GObjObjects()->Data[ 117013 ];
 
     ATrRepairStation_execPawnGrabbedRepairTool_Parms PawnGrabbedRepairTool_Parms;
 
@@ -87246,7 +87246,7 @@ void ATrRepairStation::PlayStationLeftEffects ( )
     static UFunction* pFnPlayStationLeftEffects = NULL;
 
     if ( ! pFnPlayStationLeftEffects )
-        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 117013 ];
+        pFnPlayStationLeftEffects = (UFunction*) UObject::GObjObjects()->Data[ 117012 ];
 
     ATrRepairStation_execPlayStationLeftEffects_Parms PlayStationLeftEffects_Parms;
 
@@ -87262,7 +87262,7 @@ void ATrRepairStation::PlayStationEnteredEffects ( )
     static UFunction* pFnPlayStationEnteredEffects = NULL;
 
     if ( ! pFnPlayStationEnteredEffects )
-        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 117012 ];
+        pFnPlayStationEnteredEffects = (UFunction*) UObject::GObjObjects()->Data[ 117011 ];
 
     ATrRepairStation_execPlayStationEnteredEffects_Parms PlayStationEnteredEffects_Parms;
 
@@ -87281,7 +87281,7 @@ void ATrRepairStation::eventOnAnimEnd ( class UAnimNodeSequence* SeqNode, float 
     static UFunction* pFnOnAnimEnd = NULL;
 
     if ( ! pFnOnAnimEnd )
-        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 117008 ];
+        pFnOnAnimEnd = (UFunction*) UObject::GObjObjects()->Data[ 117007 ];
 
     ATrRepairStation_eventOnAnimEnd_Parms OnAnimEnd_Parms;
     OnAnimEnd_Parms.SeqNode = SeqNode;
@@ -87301,7 +87301,7 @@ void ATrRepairStation::eventPostInitAnimTree ( class USkeletalMeshComponent* Ske
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 117006 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 117005 ];
 
     ATrRepairStation_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -87318,7 +87318,7 @@ void ATrRepairStation::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 117005 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 117004 ];
 
     ATrRepairStation_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -87335,7 +87335,7 @@ int ATrGame_TRRabbit::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92911 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92910 ];
 
     ATrGame_TRRabbit_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -87357,7 +87357,7 @@ float ATrGame_TRRabbit::RatePlayerStart ( class APlayerStart* P, unsigned char T
     static UFunction* pFnRatePlayerStart = NULL;
 
     if ( ! pFnRatePlayerStart )
-        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92905 ];
+        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92904 ];
 
     ATrGame_TRRabbit_execRatePlayerStart_Parms RatePlayerStart_Parms;
     RatePlayerStart_Parms.P = P;
@@ -87380,7 +87380,7 @@ void ATrGame_TRRabbit::DiscardInventory ( class APawn* Other, class AController*
     static UFunction* pFnDiscardInventory = NULL;
 
     if ( ! pFnDiscardInventory )
-        pFnDiscardInventory = (UFunction*) UObject::GObjObjects()->Data[ 92900 ];
+        pFnDiscardInventory = (UFunction*) UObject::GObjObjects()->Data[ 92899 ];
 
     ATrGame_TRRabbit_execDiscardInventory_Parms DiscardInventory_Parms;
     DiscardInventory_Parms.Other = Other;
@@ -87398,7 +87398,7 @@ void ATrGame_TRRabbit::PlayEndOfMatchMessage ( )
     static UFunction* pFnPlayEndOfMatchMessage = NULL;
 
     if ( ! pFnPlayEndOfMatchMessage )
-        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 92895 ];
+        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 92894 ];
 
     ATrGame_TRRabbit_execPlayEndOfMatchMessage_Parms PlayEndOfMatchMessage_Parms;
 
@@ -87416,7 +87416,7 @@ unsigned char ATrGame_TRRabbit::PickTeamForMigration ( class AController* C )
     static UFunction* pFnPickTeamForMigration = NULL;
 
     if ( ! pFnPickTeamForMigration )
-        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 92892 ];
+        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 92891 ];
 
     ATrGame_TRRabbit_execPickTeamForMigration_Parms PickTeamForMigration_Parms;
     PickTeamForMigration_Parms.C = C;
@@ -87438,7 +87438,7 @@ unsigned char ATrGame_TRRabbit::PickTeam ( unsigned char Num, class AController*
     static UFunction* pFnPickTeam = NULL;
 
     if ( ! pFnPickTeam )
-        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 92888 ];
+        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 92887 ];
 
     ATrGame_TRRabbit_execPickTeam_Parms PickTeam_Parms;
     PickTeam_Parms.Num = Num;
@@ -87461,7 +87461,7 @@ bool ATrGame_TRRabbit::CheckEndGame ( class APlayerReplicationInfo* Winner, stru
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92881 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92880 ];
 
     ATrGame_TRRabbit_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -87483,7 +87483,7 @@ bool ATrGame_TRRabbit::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92877 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92876 ];
 
     ATrGame_TRRabbit_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -87504,7 +87504,7 @@ bool ATrGame_TRRabbit::SortPlayerScores ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnSortPlayerScores = NULL;
 
     if ( ! pFnSortPlayerScores )
-        pFnSortPlayerScores = (UFunction*) UObject::GObjObjects()->Data[ 92864 ];
+        pFnSortPlayerScores = (UFunction*) UObject::GObjObjects()->Data[ 92863 ];
 
     ATrGame_TRRabbit_execSortPlayerScores_Parms SortPlayerScores_Parms;
     SortPlayerScores_Parms.Scorer = Scorer;
@@ -87526,7 +87526,7 @@ struct FScoreStruct ATrGame_TRRabbit::MakeScoreStruct ( class ATrPlayerControlle
     static UFunction* pFnMakeScoreStruct = NULL;
 
     if ( ! pFnMakeScoreStruct )
-        pFnMakeScoreStruct = (UFunction*) UObject::GObjObjects()->Data[ 92859 ];
+        pFnMakeScoreStruct = (UFunction*) UObject::GObjObjects()->Data[ 92858 ];
 
     ATrGame_TRRabbit_execMakeScoreStruct_Parms MakeScoreStruct_Parms;
     MakeScoreStruct_Parms.C = C;
@@ -87546,7 +87546,7 @@ void ATrGame_TRRabbit::ChangePreviousRabbitTeam ( )
     static UFunction* pFnChangePreviousRabbitTeam = NULL;
 
     if ( ! pFnChangePreviousRabbitTeam )
-        pFnChangePreviousRabbitTeam = (UFunction*) UObject::GObjObjects()->Data[ 92858 ];
+        pFnChangePreviousRabbitTeam = (UFunction*) UObject::GObjObjects()->Data[ 92857 ];
 
     ATrGame_TRRabbit_execChangePreviousRabbitTeam_Parms ChangePreviousRabbitTeam_Parms;
 
@@ -87564,7 +87564,7 @@ void ATrGame_TRRabbit::ScoreKill ( class AController* Killer, class AController*
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92855 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92854 ];
 
     ATrGame_TRRabbit_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -87583,7 +87583,7 @@ void ATrGame_TRRabbit::ScoreFlagHold ( unsigned long firstPass )
     static UFunction* pFnScoreFlagHold = NULL;
 
     if ( ! pFnScoreFlagHold )
-        pFnScoreFlagHold = (UFunction*) UObject::GObjObjects()->Data[ 92852 ];
+        pFnScoreFlagHold = (UFunction*) UObject::GObjObjects()->Data[ 92851 ];
 
     ATrGame_TRRabbit_execScoreFlagHold_Parms ScoreFlagHold_Parms;
     ScoreFlagHold_Parms.firstPass = firstPass;
@@ -87600,7 +87600,7 @@ void ATrGame_TRRabbit::ScoreFlagTimer ( )
     static UFunction* pFnScoreFlagTimer = NULL;
 
     if ( ! pFnScoreFlagTimer )
-        pFnScoreFlagTimer = (UFunction*) UObject::GObjObjects()->Data[ 92851 ];
+        pFnScoreFlagTimer = (UFunction*) UObject::GObjObjects()->Data[ 92850 ];
 
     ATrGame_TRRabbit_execScoreFlagTimer_Parms ScoreFlagTimer_Parms;
 
@@ -87619,7 +87619,7 @@ void ATrGame_TRRabbit::SetTeam ( class AController* Other, class AUTTeamInfo* Ne
     static UFunction* pFnSetTeam = NULL;
 
     if ( ! pFnSetTeam )
-        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92846 ];
+        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92845 ];
 
     ATrGame_TRRabbit_execSetTeam_Parms SetTeam_Parms;
     SetTeam_Parms.Other = Other;
@@ -87638,7 +87638,7 @@ void ATrGame_TRRabbit::DroppedFlag ( )
     static UFunction* pFnDroppedFlag = NULL;
 
     if ( ! pFnDroppedFlag )
-        pFnDroppedFlag = (UFunction*) UObject::GObjObjects()->Data[ 92843 ];
+        pFnDroppedFlag = (UFunction*) UObject::GObjObjects()->Data[ 92842 ];
 
     ATrGame_TRRabbit_execDroppedFlag_Parms DroppedFlag_Parms;
 
@@ -87655,7 +87655,7 @@ void ATrGame_TRRabbit::PickedUpFlag ( class AController* Holder )
     static UFunction* pFnPickedUpFlag = NULL;
 
     if ( ! pFnPickedUpFlag )
-        pFnPickedUpFlag = (UFunction*) UObject::GObjObjects()->Data[ 92840 ];
+        pFnPickedUpFlag = (UFunction*) UObject::GObjObjects()->Data[ 92839 ];
 
     ATrGame_TRRabbit_execPickedUpFlag_Parms PickedUpFlag_Parms;
     PickedUpFlag_Parms.Holder = Holder;
@@ -87673,7 +87673,7 @@ void ATrGame_TRRabbit::RegisterFlag ( class ATrFlagRabbit* F )
     static UFunction* pFnRegisterFlag = NULL;
 
     if ( ! pFnRegisterFlag )
-        pFnRegisterFlag = (UFunction*) UObject::GObjObjects()->Data[ 92837 ];
+        pFnRegisterFlag = (UFunction*) UObject::GObjObjects()->Data[ 92836 ];
 
     ATrGame_TRRabbit_execRegisterFlag_Parms RegisterFlag_Parms;
     RegisterFlag_Parms.F = F;
@@ -87690,7 +87690,7 @@ void ATrGame_TRRabbit::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92835 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92834 ];
 
     ATrGame_TRRabbit_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -87793,7 +87793,7 @@ class APlayerStart* ATrGame_TrCaH::ChoosePlayerStart ( class AController* Player
     static UFunction* pFnChoosePlayerStart = NULL;
 
     if ( ! pFnChoosePlayerStart )
-        pFnChoosePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92657 ];
+        pFnChoosePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92656 ];
 
     ATrGame_TrCaH_execChoosePlayerStart_Parms ChoosePlayerStart_Parms;
     ChoosePlayerStart_Parms.Player = Player;
@@ -87817,7 +87817,7 @@ float ATrGame_TrCaH::RatePlayerStart ( class APlayerStart* P, unsigned char Team
     static UFunction* pFnRatePlayerStart = NULL;
 
     if ( ! pFnRatePlayerStart )
-        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92648 ];
+        pFnRatePlayerStart = (UFunction*) UObject::GObjObjects()->Data[ 92647 ];
 
     ATrGame_TrCaH_execRatePlayerStart_Parms RatePlayerStart_Parms;
     RatePlayerStart_Parms.P = P;
@@ -87840,7 +87840,7 @@ void ATrGame_TrCaH::OnCapturePointOwnershipChanged ( class ATrCaHCapturePoint* P
     static UFunction* pFnOnCapturePointOwnershipChanged = NULL;
 
     if ( ! pFnOnCapturePointOwnershipChanged )
-        pFnOnCapturePointOwnershipChanged = (UFunction*) UObject::GObjObjects()->Data[ 92644 ];
+        pFnOnCapturePointOwnershipChanged = (UFunction*) UObject::GObjObjects()->Data[ 92643 ];
 
     ATrGame_TrCaH_execOnCapturePointOwnershipChanged_Parms OnCapturePointOwnershipChanged_Parms;
     OnCapturePointOwnershipChanged_Parms.PointThatChanged = PointThatChanged;
@@ -87859,7 +87859,7 @@ void ATrGame_TrCaH::OnCapturePointHeld ( class ATrCaHCapturePoint* HeldPoint )
     static UFunction* pFnOnCapturePointHeld = NULL;
 
     if ( ! pFnOnCapturePointHeld )
-        pFnOnCapturePointHeld = (UFunction*) UObject::GObjObjects()->Data[ 92640 ];
+        pFnOnCapturePointHeld = (UFunction*) UObject::GObjObjects()->Data[ 92639 ];
 
     ATrGame_TrCaH_execOnCapturePointHeld_Parms OnCapturePointHeld_Parms;
     OnCapturePointHeld_Parms.HeldPoint = HeldPoint;
@@ -87877,7 +87877,7 @@ int ATrGame_TrCaH::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92638 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92637 ];
 
     ATrGame_TrCaH_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -87896,7 +87896,7 @@ void ATrGame_TrCaH::RestartPlayer ( class AController* NewPlayer )
     static UFunction* pFnRestartPlayer = NULL;
 
     if ( ! pFnRestartPlayer )
-        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92636 ];
+        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92635 ];
 
     ATrGame_TrCaH_execRestartPlayer_Parms RestartPlayer_Parms;
     RestartPlayer_Parms.NewPlayer = NewPlayer;
@@ -87914,7 +87914,7 @@ void ATrGame_TrCaH::AwardPoint ( unsigned char TeamIndex )
     static UFunction* pFnAwardPoint = NULL;
 
     if ( ! pFnAwardPoint )
-        pFnAwardPoint = (UFunction*) UObject::GObjObjects()->Data[ 92627 ];
+        pFnAwardPoint = (UFunction*) UObject::GObjObjects()->Data[ 92626 ];
 
     ATrGame_TrCaH_execAwardPoint_Parms AwardPoint_Parms;
     AwardPoint_Parms.TeamIndex = TeamIndex;
@@ -87934,7 +87934,7 @@ bool ATrGame_TrCaH::CheckEndGame ( class APlayerReplicationInfo* Winner, struct 
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92621 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92620 ];
 
     ATrGame_TrCaH_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -87954,7 +87954,7 @@ void ATrGame_TrCaH::GotoPendingRoundStartTimer ( )
     static UFunction* pFnGotoPendingRoundStartTimer = NULL;
 
     if ( ! pFnGotoPendingRoundStartTimer )
-        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92620 ];
+        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92619 ];
 
     ATrGame_TrCaH_execGotoPendingRoundStartTimer_Parms GotoPendingRoundStartTimer_Parms;
 
@@ -87972,7 +87972,7 @@ bool ATrGame_TrCaH::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92617 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92616 ];
 
     ATrGame_TrCaH_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -87993,7 +87993,7 @@ void ATrGame_TrCaH::ScoreKill ( class AController* Killer, class AController* Ot
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92614 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92613 ];
 
     ATrGame_TrCaH_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -88011,7 +88011,7 @@ void ATrGame_TrCaH::ResetLevel ( )
     static UFunction* pFnResetLevel = NULL;
 
     if ( ! pFnResetLevel )
-        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92613 ];
+        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92612 ];
 
     ATrGame_TrCaH_execResetLevel_Parms ResetLevel_Parms;
 
@@ -88027,7 +88027,7 @@ void ATrGame_TrCaH::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92612 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92611 ];
 
     ATrGame_TrCaH_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -88044,7 +88044,7 @@ void ATrGame_TrCaH::Logout ( class AController* Exiting )
     static UFunction* pFnLogout = NULL;
 
     if ( ! pFnLogout )
-        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92610 ];
+        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92609 ];
 
     ATrGame_TrCaH_execLogout_Parms Logout_Parms;
     Logout_Parms.Exiting = Exiting;
@@ -88064,7 +88064,7 @@ void ATrGame_TrCaH::SetTeam ( class AController* Other, class AUTTeamInfo* NewTe
     static UFunction* pFnSetTeam = NULL;
 
     if ( ! pFnSetTeam )
-        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92606 ];
+        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92605 ];
 
     ATrGame_TrCaH_execSetTeam_Parms SetTeam_Parms;
     SetTeam_Parms.Other = Other;
@@ -88083,7 +88083,7 @@ void ATrGame_TrCaH::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92604 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92603 ];
 
     ATrGame_TrCaH_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -88099,7 +88099,7 @@ void ATrGame_TrCaH::PreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92602 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92601 ];
 
     ATrGame_TrCaH_execPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -88417,7 +88417,7 @@ struct FString UTrPromptMessage::FormatText ( struct FString InString, class ATr
     static UFunction* pFnFormatText = NULL;
 
     if ( ! pFnFormatText )
-        pFnFormatText = (UFunction*) UObject::GObjObjects()->Data[ 115828 ];
+        pFnFormatText = (UFunction*) UObject::GObjObjects()->Data[ 115827 ];
 
     UTrPromptMessage_execFormatText_Parms FormatText_Parms;
     memcpy ( &FormatText_Parms.InString, &InString, 0xC );
@@ -88442,7 +88442,7 @@ void UTrUpgradeMessage::ClientReceive ( class APlayerController* P, int Switch, 
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119979 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119978 ];
 
     UTrUpgradeMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -88469,7 +88469,7 @@ struct FString UTrUpgradeMessage::GetString ( int Switch, unsigned long bPRI1HUD
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119969 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119968 ];
 
     UTrUpgradeMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -88498,7 +88498,7 @@ struct FImpactInfo ATrSubDevice::CalcWeaponFire ( struct FVector StartTrace, str
     static UFunction* pFnCalcWeaponFire = NULL;
 
     if ( ! pFnCalcWeaponFire )
-        pFnCalcWeaponFire = (UFunction*) UObject::GObjObjects()->Data[ 119574 ];
+        pFnCalcWeaponFire = (UFunction*) UObject::GObjObjects()->Data[ 119573 ];
 
     ATrSubDevice_execCalcWeaponFire_Parms CalcWeaponFire_Parms;
     memcpy ( &CalcWeaponFire_Parms.StartTrace, &StartTrace, 0xC );
@@ -88523,7 +88523,7 @@ void ATrSubDevice::Reset ( )
     static UFunction* pFnReset = NULL;
 
     if ( ! pFnReset )
-        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 119573 ];
+        pFnReset = (UFunction*) UObject::GObjObjects()->Data[ 119572 ];
 
     ATrSubDevice_execReset_Parms Reset_Parms;
 
@@ -88619,7 +88619,7 @@ float ATrSubDevice_Turret::GetFireInterval ( unsigned char FireModeNum )
     static UFunction* pFnGetFireInterval = NULL;
 
     if ( ! pFnGetFireInterval )
-        pFnGetFireInterval = (UFunction*) UObject::GObjObjects()->Data[ 119592 ];
+        pFnGetFireInterval = (UFunction*) UObject::GObjObjects()->Data[ 119591 ];
 
     ATrSubDevice_Turret_execGetFireInterval_Parms GetFireInterval_Parms;
     GetFireInterval_Parms.FireModeNum = FireModeNum;
@@ -88640,7 +88640,7 @@ struct FVector ATrSubDevice_Turret::GetPhysicalFireStartLoc ( struct FVector Aim
     static UFunction* pFnGetPhysicalFireStartLoc = NULL;
 
     if ( ! pFnGetPhysicalFireStartLoc )
-        pFnGetPhysicalFireStartLoc = (UFunction*) UObject::GObjObjects()->Data[ 119589 ];
+        pFnGetPhysicalFireStartLoc = (UFunction*) UObject::GObjObjects()->Data[ 119588 ];
 
     ATrSubDevice_Turret_execGetPhysicalFireStartLoc_Parms GetPhysicalFireStartLoc_Parms;
     memcpy ( &GetPhysicalFireStartLoc_Parms.AimDir, &AimDir, 0xC );
@@ -88700,7 +88700,7 @@ void ATrPawnCollisionProxy::OnPawnRemoved ( class APawn* aPawn )
     static UFunction* pFnOnPawnRemoved = NULL;
 
     if ( ! pFnOnPawnRemoved )
-        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 103104 ];
+        pFnOnPawnRemoved = (UFunction*) UObject::GObjObjects()->Data[ 103103 ];
 
     ATrPawnCollisionProxy_execOnPawnRemoved_Parms OnPawnRemoved_Parms;
     OnPawnRemoved_Parms.aPawn = aPawn;
@@ -88718,7 +88718,7 @@ void ATrPawnCollisionProxy::OnPawnAdded ( class APawn* aPawn )
     static UFunction* pFnOnPawnAdded = NULL;
 
     if ( ! pFnOnPawnAdded )
-        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 103101 ];
+        pFnOnPawnAdded = (UFunction*) UObject::GObjObjects()->Data[ 103100 ];
 
     ATrPawnCollisionProxy_execOnPawnAdded_Parms OnPawnAdded_Parms;
     OnPawnAdded_Parms.aPawn = aPawn;
@@ -88772,7 +88772,7 @@ void UTrPawnSoundGroup::PlayBlinkPackSound ( class APawn* P )
     static UFunction* pFnPlayBlinkPackSound = NULL;
 
     if ( ! pFnPlayBlinkPackSound )
-        pFnPlayBlinkPackSound = (UFunction*) UObject::GObjObjects()->Data[ 103149 ];
+        pFnPlayBlinkPackSound = (UFunction*) UObject::GObjObjects()->Data[ 103148 ];
 
     UTrPawnSoundGroup_execPlayBlinkPackSound_Parms PlayBlinkPackSound_Parms;
     PlayBlinkPackSound_Parms.P = P;
@@ -88790,7 +88790,7 @@ void UTrPawnSoundGroup::PlayDyingSound ( class APawn* P )
     static UFunction* pFnPlayDyingSound = NULL;
 
     if ( ! pFnPlayDyingSound )
-        pFnPlayDyingSound = (UFunction*) UObject::GObjObjects()->Data[ 103147 ];
+        pFnPlayDyingSound = (UFunction*) UObject::GObjObjects()->Data[ 103146 ];
 
     UTrPawnSoundGroup_execPlayDyingSound_Parms PlayDyingSound_Parms;
     PlayDyingSound_Parms.P = P;
@@ -88808,7 +88808,7 @@ void UTrPawnSoundGroup::PlayRageDeactivateSound ( class APawn* P )
     static UFunction* pFnPlayRageDeactivateSound = NULL;
 
     if ( ! pFnPlayRageDeactivateSound )
-        pFnPlayRageDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103145 ];
+        pFnPlayRageDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103144 ];
 
     UTrPawnSoundGroup_execPlayRageDeactivateSound_Parms PlayRageDeactivateSound_Parms;
     PlayRageDeactivateSound_Parms.P = P;
@@ -88826,7 +88826,7 @@ void UTrPawnSoundGroup::PlayRageActivateSound ( class APawn* P )
     static UFunction* pFnPlayRageActivateSound = NULL;
 
     if ( ! pFnPlayRageActivateSound )
-        pFnPlayRageActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103143 ];
+        pFnPlayRageActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103142 ];
 
     UTrPawnSoundGroup_execPlayRageActivateSound_Parms PlayRageActivateSound_Parms;
     PlayRageActivateSound_Parms.P = P;
@@ -88844,7 +88844,7 @@ void UTrPawnSoundGroup::PlayJammerPackDeactivateSound ( class APawn* P )
     static UFunction* pFnPlayJammerPackDeactivateSound = NULL;
 
     if ( ! pFnPlayJammerPackDeactivateSound )
-        pFnPlayJammerPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103141 ];
+        pFnPlayJammerPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103140 ];
 
     UTrPawnSoundGroup_execPlayJammerPackDeactivateSound_Parms PlayJammerPackDeactivateSound_Parms;
     PlayJammerPackDeactivateSound_Parms.P = P;
@@ -88862,7 +88862,7 @@ void UTrPawnSoundGroup::PlayJammerPackActivateSound ( class APawn* P )
     static UFunction* pFnPlayJammerPackActivateSound = NULL;
 
     if ( ! pFnPlayJammerPackActivateSound )
-        pFnPlayJammerPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103139 ];
+        pFnPlayJammerPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103138 ];
 
     UTrPawnSoundGroup_execPlayJammerPackActivateSound_Parms PlayJammerPackActivateSound_Parms;
     PlayJammerPackActivateSound_Parms.P = P;
@@ -88880,7 +88880,7 @@ void UTrPawnSoundGroup::PlayStealthPackDeactivateSound ( class APawn* P )
     static UFunction* pFnPlayStealthPackDeactivateSound = NULL;
 
     if ( ! pFnPlayStealthPackDeactivateSound )
-        pFnPlayStealthPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103137 ];
+        pFnPlayStealthPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103136 ];
 
     UTrPawnSoundGroup_execPlayStealthPackDeactivateSound_Parms PlayStealthPackDeactivateSound_Parms;
     PlayStealthPackDeactivateSound_Parms.P = P;
@@ -88898,7 +88898,7 @@ void UTrPawnSoundGroup::PlayStealthPackActivateSound ( class APawn* P )
     static UFunction* pFnPlayStealthPackActivateSound = NULL;
 
     if ( ! pFnPlayStealthPackActivateSound )
-        pFnPlayStealthPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103135 ];
+        pFnPlayStealthPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103134 ];
 
     UTrPawnSoundGroup_execPlayStealthPackActivateSound_Parms PlayStealthPackActivateSound_Parms;
     PlayStealthPackActivateSound_Parms.P = P;
@@ -88916,7 +88916,7 @@ void UTrPawnSoundGroup::PlayShieldPackDeactivateSound ( class APawn* P )
     static UFunction* pFnPlayShieldPackDeactivateSound = NULL;
 
     if ( ! pFnPlayShieldPackDeactivateSound )
-        pFnPlayShieldPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103133 ];
+        pFnPlayShieldPackDeactivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103132 ];
 
     UTrPawnSoundGroup_execPlayShieldPackDeactivateSound_Parms PlayShieldPackDeactivateSound_Parms;
     PlayShieldPackDeactivateSound_Parms.P = P;
@@ -88934,7 +88934,7 @@ void UTrPawnSoundGroup::PlayShieldPackActivateSound ( class APawn* P )
     static UFunction* pFnPlayShieldPackActivateSound = NULL;
 
     if ( ! pFnPlayShieldPackActivateSound )
-        pFnPlayShieldPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103131 ];
+        pFnPlayShieldPackActivateSound = (UFunction*) UObject::GObjObjects()->Data[ 103130 ];
 
     UTrPawnSoundGroup_execPlayShieldPackActivateSound_Parms PlayShieldPackActivateSound_Parms;
     PlayShieldPackActivateSound_Parms.P = P;
@@ -88957,7 +88957,7 @@ struct FString UTrJammerMessage::GetString ( int Switch, unsigned long bPRI1HUD,
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 100751 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 100750 ];
 
     UTrJammerMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -88981,7 +88981,7 @@ void ATrFlagCTF::BroadcastDroppedMessage ( class AController* EventInstigator )
     static UFunction* pFnBroadcastDroppedMessage = NULL;
 
     if ( ! pFnBroadcastDroppedMessage )
-        pFnBroadcastDroppedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90586 ];
+        pFnBroadcastDroppedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90585 ];
 
     ATrFlagCTF_execBroadcastDroppedMessage_Parms BroadcastDroppedMessage_Parms;
     BroadcastDroppedMessage_Parms.EventInstigator = EventInstigator;
@@ -88998,7 +88998,7 @@ void ATrFlagCTF::BroadcastReturnedMessage ( )
     static UFunction* pFnBroadcastReturnedMessage = NULL;
 
     if ( ! pFnBroadcastReturnedMessage )
-        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90583 ];
+        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90582 ];
 
     ATrFlagCTF_execBroadcastReturnedMessage_Parms BroadcastReturnedMessage_Parms;
 
@@ -89015,7 +89015,7 @@ void ATrFlagCTF::BroadcastCapturedMessage ( class AController* EventInstigator )
     static UFunction* pFnBroadcastCapturedMessage = NULL;
 
     if ( ! pFnBroadcastCapturedMessage )
-        pFnBroadcastCapturedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90581 ];
+        pFnBroadcastCapturedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90580 ];
 
     ATrFlagCTF_execBroadcastCapturedMessage_Parms BroadcastCapturedMessage_Parms;
     BroadcastCapturedMessage_Parms.EventInstigator = EventInstigator;
@@ -89033,7 +89033,7 @@ void ATrFlagCTF::BroadcastTakenDroppedMessage ( class AController* EventInstigat
     static UFunction* pFnBroadcastTakenDroppedMessage = NULL;
 
     if ( ! pFnBroadcastTakenDroppedMessage )
-        pFnBroadcastTakenDroppedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90578 ];
+        pFnBroadcastTakenDroppedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90577 ];
 
     ATrFlagCTF_execBroadcastTakenDroppedMessage_Parms BroadcastTakenDroppedMessage_Parms;
     BroadcastTakenDroppedMessage_Parms.EventInstigator = EventInstigator;
@@ -89051,7 +89051,7 @@ void ATrFlagCTF::BroadcastTakenFromBaseMessage ( class AController* EventInstiga
     static UFunction* pFnBroadcastTakenFromBaseMessage = NULL;
 
     if ( ! pFnBroadcastTakenFromBaseMessage )
-        pFnBroadcastTakenFromBaseMessage = (UFunction*) UObject::GObjObjects()->Data[ 90575 ];
+        pFnBroadcastTakenFromBaseMessage = (UFunction*) UObject::GObjObjects()->Data[ 90574 ];
 
     ATrFlagCTF_execBroadcastTakenFromBaseMessage_Parms BroadcastTakenFromBaseMessage_Parms;
     BroadcastTakenFromBaseMessage_Parms.EventInstigator = EventInstigator;
@@ -89068,7 +89068,7 @@ void ATrFlagCTF::RemindPlayerAboutFlagTimer ( )
     static UFunction* pFnRemindPlayerAboutFlagTimer = NULL;
 
     if ( ! pFnRemindPlayerAboutFlagTimer )
-        pFnRemindPlayerAboutFlagTimer = (UFunction*) UObject::GObjObjects()->Data[ 90572 ];
+        pFnRemindPlayerAboutFlagTimer = (UFunction*) UObject::GObjObjects()->Data[ 90571 ];
 
     ATrFlagCTF_execRemindPlayerAboutFlagTimer_Parms RemindPlayerAboutFlagTimer_Parms;
 
@@ -89085,7 +89085,7 @@ void ATrFlagCTF::SendHome ( class AController* Returner )
     static UFunction* pFnSendHome = NULL;
 
     if ( ! pFnSendHome )
-        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90569 ];
+        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90568 ];
 
     ATrFlagCTF_execSendHome_Parms SendHome_Parms;
     SendHome_Parms.Returner = Returner;
@@ -89102,7 +89102,7 @@ void ATrFlagCTF::ClearHolder ( )
     static UFunction* pFnClearHolder = NULL;
 
     if ( ! pFnClearHolder )
-        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90561 ];
+        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90560 ];
 
     ATrFlagCTF_execClearHolder_Parms ClearHolder_Parms;
 
@@ -89119,7 +89119,7 @@ void ATrFlagCTF::LogDropped ( class AController* EventInstigator )
     static UFunction* pFnLogDropped = NULL;
 
     if ( ! pFnLogDropped )
-        pFnLogDropped = (UFunction*) UObject::GObjObjects()->Data[ 90559 ];
+        pFnLogDropped = (UFunction*) UObject::GObjObjects()->Data[ 90558 ];
 
     ATrFlagCTF_execLogDropped_Parms LogDropped_Parms;
     LogDropped_Parms.EventInstigator = EventInstigator;
@@ -89137,7 +89137,7 @@ void ATrFlagCTF::LogTaken ( class AController* EventInstigator )
     static UFunction* pFnLogTaken = NULL;
 
     if ( ! pFnLogTaken )
-        pFnLogTaken = (UFunction*) UObject::GObjObjects()->Data[ 90557 ];
+        pFnLogTaken = (UFunction*) UObject::GObjObjects()->Data[ 90556 ];
 
     ATrFlagCTF_execLogTaken_Parms LogTaken_Parms;
     LogTaken_Parms.EventInstigator = EventInstigator;
@@ -89154,7 +89154,7 @@ void ATrGame_TrArena::SendMatchOver ( )
     static UFunction* pFnSendMatchOver = NULL;
 
     if ( ! pFnSendMatchOver )
-        pFnSendMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 92589 ];
+        pFnSendMatchOver = (UFunction*) UObject::GObjObjects()->Data[ 92588 ];
 
     ATrGame_TrArena_execSendMatchOver_Parms SendMatchOver_Parms;
 
@@ -89171,7 +89171,7 @@ int ATrGame_TrArena::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92587 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92586 ];
 
     ATrGame_TrArena_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -89190,7 +89190,7 @@ void ATrGame_TrArena::OnServerSpawnedPlayer ( class ATrPlayerController* TrPC )
     static UFunction* pFnOnServerSpawnedPlayer = NULL;
 
     if ( ! pFnOnServerSpawnedPlayer )
-        pFnOnServerSpawnedPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92582 ];
+        pFnOnServerSpawnedPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92581 ];
 
     ATrGame_TrArena_execOnServerSpawnedPlayer_Parms OnServerSpawnedPlayer_Parms;
     OnServerSpawnedPlayer_Parms.TrPC = TrPC;
@@ -89209,7 +89209,7 @@ bool ATrGame_TrArena::AllowRespawn ( class ATrPlayerController* TrPC )
     static UFunction* pFnAllowRespawn = NULL;
 
     if ( ! pFnAllowRespawn )
-        pFnAllowRespawn = (UFunction*) UObject::GObjObjects()->Data[ 92576 ];
+        pFnAllowRespawn = (UFunction*) UObject::GObjObjects()->Data[ 92575 ];
 
     ATrGame_TrArena_execAllowRespawn_Parms AllowRespawn_Parms;
     AllowRespawn_Parms.TrPC = TrPC;
@@ -89229,7 +89229,7 @@ void ATrGame_TrArena::SendMatchCountdown ( int Seconds )
     static UFunction* pFnSendMatchCountdown = NULL;
 
     if ( ! pFnSendMatchCountdown )
-        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92571 ];
+        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92570 ];
 
     ATrGame_TrArena_execSendMatchCountdown_Parms SendMatchCountdown_Parms;
     SendMatchCountdown_Parms.Seconds = Seconds;
@@ -89246,7 +89246,7 @@ void ATrGame_TrArena::CheckForAutoBalance ( )
     static UFunction* pFnCheckForAutoBalance = NULL;
 
     if ( ! pFnCheckForAutoBalance )
-        pFnCheckForAutoBalance = (UFunction*) UObject::GObjObjects()->Data[ 92534 ];
+        pFnCheckForAutoBalance = (UFunction*) UObject::GObjObjects()->Data[ 92533 ];
 
     ATrGame_TrArena_execCheckForAutoBalance_Parms CheckForAutoBalance_Parms;
 
@@ -89265,7 +89265,7 @@ bool ATrGame_TrArena::CheckEndGame ( class APlayerReplicationInfo* Winner, struc
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92526 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92525 ];
 
     ATrGame_TrArena_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -89286,7 +89286,7 @@ bool ATrGame_TrArena::IsDiamondSwordOutOfLives ( )
     static UFunction* pFnIsDiamondSwordOutOfLives = NULL;
 
     if ( ! pFnIsDiamondSwordOutOfLives )
-        pFnIsDiamondSwordOutOfLives = (UFunction*) UObject::GObjObjects()->Data[ 92522 ];
+        pFnIsDiamondSwordOutOfLives = (UFunction*) UObject::GObjObjects()->Data[ 92521 ];
 
     ATrGame_TrArena_execIsDiamondSwordOutOfLives_Parms IsDiamondSwordOutOfLives_Parms;
 
@@ -89305,7 +89305,7 @@ bool ATrGame_TrArena::IsBloodEagleOutOfLives ( )
     static UFunction* pFnIsBloodEagleOutOfLives = NULL;
 
     if ( ! pFnIsBloodEagleOutOfLives )
-        pFnIsBloodEagleOutOfLives = (UFunction*) UObject::GObjObjects()->Data[ 92518 ];
+        pFnIsBloodEagleOutOfLives = (UFunction*) UObject::GObjObjects()->Data[ 92517 ];
 
     ATrGame_TrArena_execIsBloodEagleOutOfLives_Parms IsBloodEagleOutOfLives_Parms;
 
@@ -89325,7 +89325,7 @@ int ATrGame_TrArena::GetNumRemainingAlivePlayers ( int TeamIndex )
     static UFunction* pFnGetNumRemainingAlivePlayers = NULL;
 
     if ( ! pFnGetNumRemainingAlivePlayers )
-        pFnGetNumRemainingAlivePlayers = (UFunction*) UObject::GObjObjects()->Data[ 92512 ];
+        pFnGetNumRemainingAlivePlayers = (UFunction*) UObject::GObjObjects()->Data[ 92511 ];
 
     ATrGame_TrArena_execGetNumRemainingAlivePlayers_Parms GetNumRemainingAlivePlayers_Parms;
     GetNumRemainingAlivePlayers_Parms.TeamIndex = TeamIndex;
@@ -89344,7 +89344,7 @@ void ATrGame_TrArena::GotoPendingRoundStartTimer ( )
     static UFunction* pFnGotoPendingRoundStartTimer = NULL;
 
     if ( ! pFnGotoPendingRoundStartTimer )
-        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92511 ];
+        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92510 ];
 
     ATrGame_TrArena_execGotoPendingRoundStartTimer_Parms GotoPendingRoundStartTimer_Parms;
 
@@ -89361,7 +89361,7 @@ void ATrGame_TrArena::EndTheRound ( class APlayerReplicationInfo* RoundWinner )
     static UFunction* pFnEndTheRound = NULL;
 
     if ( ! pFnEndTheRound )
-        pFnEndTheRound = (UFunction*) UObject::GObjObjects()->Data[ 92506 ];
+        pFnEndTheRound = (UFunction*) UObject::GObjObjects()->Data[ 92505 ];
 
     ATrGame_TrArena_execEndTheRound_Parms EndTheRound_Parms;
     EndTheRound_Parms.RoundWinner = RoundWinner;
@@ -89379,7 +89379,7 @@ int ATrGame_TrArena::GetRoundWinningTeam ( )
     static UFunction* pFnGetRoundWinningTeam = NULL;
 
     if ( ! pFnGetRoundWinningTeam )
-        pFnGetRoundWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92502 ];
+        pFnGetRoundWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92501 ];
 
     ATrGame_TrArena_execGetRoundWinningTeam_Parms GetRoundWinningTeam_Parms;
 
@@ -89398,7 +89398,7 @@ int ATrGame_TrArena::DetermineWinningTeam ( )
     static UFunction* pFnDetermineWinningTeam = NULL;
 
     if ( ! pFnDetermineWinningTeam )
-        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92499 ];
+        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92498 ];
 
     ATrGame_TrArena_execDetermineWinningTeam_Parms DetermineWinningTeam_Parms;
 
@@ -89418,7 +89418,7 @@ bool ATrGame_TrArena::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92496 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92495 ];
 
     ATrGame_TrArena_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -89439,7 +89439,7 @@ void ATrGame_TrArena::ScoreKill ( class AController* Killer, class AController* 
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92481 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92480 ];
 
     ATrGame_TrArena_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -89457,7 +89457,7 @@ void ATrGame_TrArena::ResetRound ( )
     static UFunction* pFnResetRound = NULL;
 
     if ( ! pFnResetRound )
-        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92473 ];
+        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92472 ];
 
     ATrGame_TrArena_execResetRound_Parms ResetRound_Parms;
 
@@ -89473,7 +89473,7 @@ void ATrGame_TrArena::RespawnPlayers ( )
     static UFunction* pFnRespawnPlayers = NULL;
 
     if ( ! pFnRespawnPlayers )
-        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92471 ];
+        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92470 ];
 
     ATrGame_TrArena_execRespawnPlayers_Parms RespawnPlayers_Parms;
 
@@ -89489,7 +89489,7 @@ void ATrGame_TrArena::ResetLevel ( )
     static UFunction* pFnResetLevel = NULL;
 
     if ( ! pFnResetLevel )
-        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92470 ];
+        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92469 ];
 
     ATrGame_TrArena_execResetLevel_Parms ResetLevel_Parms;
 
@@ -89505,7 +89505,7 @@ void ATrGame_TrArena::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92469 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92468 ];
 
     ATrGame_TrArena_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -89522,7 +89522,7 @@ void ATrGame_TrArena::Logout ( class AController* Exiting )
     static UFunction* pFnLogout = NULL;
 
     if ( ! pFnLogout )
-        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92465 ];
+        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92464 ];
 
     ATrGame_TrArena_execLogout_Parms Logout_Parms;
     Logout_Parms.Exiting = Exiting;
@@ -89542,7 +89542,7 @@ void ATrGame_TrArena::SetTeam ( class AController* Other, class AUTTeamInfo* New
     static UFunction* pFnSetTeam = NULL;
 
     if ( ! pFnSetTeam )
-        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92459 ];
+        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92458 ];
 
     ATrGame_TrArena_execSetTeam_Parms SetTeam_Parms;
     SetTeam_Parms.Other = Other;
@@ -89561,7 +89561,7 @@ void ATrGame_TrArena::RepopulatePlayerLists ( )
     static UFunction* pFnRepopulatePlayerLists = NULL;
 
     if ( ! pFnRepopulatePlayerLists )
-        pFnRepopulatePlayerLists = (UFunction*) UObject::GObjObjects()->Data[ 92451 ];
+        pFnRepopulatePlayerLists = (UFunction*) UObject::GObjObjects()->Data[ 92450 ];
 
     ATrGame_TrArena_execRepopulatePlayerLists_Parms RepopulatePlayerLists_Parms;
 
@@ -89577,7 +89577,7 @@ void ATrGame_TrArena::ResetScores ( )
     static UFunction* pFnResetScores = NULL;
 
     if ( ! pFnResetScores )
-        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92446 ];
+        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92445 ];
 
     ATrGame_TrArena_execResetScores_Parms ResetScores_Parms;
 
@@ -89593,7 +89593,7 @@ void ATrGame_TrArena::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92442 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92441 ];
 
     ATrGame_TrArena_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -89728,7 +89728,7 @@ class UTexture2D* ATrRadarStation_Neutral::GetMarker ( )
     static UFunction* pFnGetMarker = NULL;
 
     if ( ! pFnGetMarker )
-        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 116860 ];
+        pFnGetMarker = (UFunction*) UObject::GObjObjects()->Data[ 116859 ];
 
     ATrRadarStation_Neutral_execGetMarker_Parms GetMarker_Parms;
 
@@ -89748,7 +89748,7 @@ bool ATrRadarStation_Neutral::ShouldShowHelpText ( unsigned char HelpTextType )
     static UFunction* pFnShouldShowHelpText = NULL;
 
     if ( ! pFnShouldShowHelpText )
-        pFnShouldShowHelpText = (UFunction*) UObject::GObjObjects()->Data[ 116857 ];
+        pFnShouldShowHelpText = (UFunction*) UObject::GObjObjects()->Data[ 116856 ];
 
     ATrRadarStation_Neutral_execShouldShowHelpText_Parms ShouldShowHelpText_Parms;
     ShouldShowHelpText_Parms.HelpTextType = HelpTextType;
@@ -90213,7 +90213,7 @@ bool ATrProj_CallInBase::EffectIsRelevant ( struct FVector SpawnLocation, unsign
     static UFunction* pFnEffectIsRelevant = NULL;
 
     if ( ! pFnEffectIsRelevant )
-        pFnEffectIsRelevant = (UFunction*) UObject::GObjObjects()->Data[ 114502 ];
+        pFnEffectIsRelevant = (UFunction*) UObject::GObjObjects()->Data[ 114501 ];
 
     ATrProj_CallInBase_execEffectIsRelevant_Parms EffectIsRelevant_Parms;
     memcpy ( &EffectIsRelevant_Parms.SpawnLocation, &SpawnLocation, 0xC );
@@ -90236,7 +90236,7 @@ void ATrProj_CallInBase::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114500 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 114499 ];
 
     ATrProj_CallInBase_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -90253,7 +90253,7 @@ void ATrProj_OrbitalStrike::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115178 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115177 ];
 
     ATrProj_OrbitalStrike_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -90594,7 +90594,7 @@ void UTrGameViewportClient::eventPostRender ( class UCanvas* Canvas )
     static UFunction* pFnPostRender = NULL;
 
     if ( ! pFnPostRender )
-        pFnPostRender = (UFunction*) UObject::GObjObjects()->Data[ 97700 ];
+        pFnPostRender = (UFunction*) UObject::GObjObjects()->Data[ 97699 ];
 
     UTrGameViewportClient_eventPostRender_Parms PostRender_Parms;
     PostRender_Parms.Canvas = Canvas;
@@ -90613,7 +90613,7 @@ bool UTrGameViewportClient::eventInit ( struct FString* OutError )
     static UFunction* pFnInit = NULL;
 
     if ( ! pFnInit )
-        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 97697 ];
+        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 97696 ];
 
     UTrGameViewportClient_eventInit_Parms Init_Parms;
 
@@ -90979,7 +90979,7 @@ void ATrWeatherVolume::eventUnTouch ( class AActor* Other )
     static UFunction* pFnUnTouch = NULL;
 
     if ( ! pFnUnTouch )
-        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 122233 ];
+        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 122232 ];
 
     ATrWeatherVolume_eventUnTouch_Parms UnTouch_Parms;
     UnTouch_Parms.Other = Other;
@@ -91000,7 +91000,7 @@ void ATrWeatherVolume::eventTouch ( class AActor* Other, class UPrimitiveCompone
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 122225 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 122224 ];
 
     ATrWeatherVolume_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -91020,7 +91020,7 @@ void ATrMusicManager::PlayerScoredFlag ( )
     static UFunction* pFnPlayerScoredFlag = NULL;
 
     if ( ! pFnPlayerScoredFlag )
-        pFnPlayerScoredFlag = (UFunction*) UObject::GObjObjects()->Data[ 102762 ];
+        pFnPlayerScoredFlag = (UFunction*) UObject::GObjObjects()->Data[ 102761 ];
 
     ATrMusicManager_execPlayerScoredFlag_Parms PlayerScoredFlag_Parms;
 
@@ -91037,7 +91037,7 @@ void ATrMusicManager::SetCurrentState ( unsigned char NewState )
     static UFunction* pFnSetCurrentState = NULL;
 
     if ( ! pFnSetCurrentState )
-        pFnSetCurrentState = (UFunction*) UObject::GObjObjects()->Data[ 102757 ];
+        pFnSetCurrentState = (UFunction*) UObject::GObjObjects()->Data[ 102756 ];
 
     ATrMusicManager_execSetCurrentState_Parms SetCurrentState_Parms;
     SetCurrentState_Parms.NewState = NewState;
@@ -91055,7 +91055,7 @@ void ATrMusicManager::SetPendingState ( unsigned char NewState )
     static UFunction* pFnSetPendingState = NULL;
 
     if ( ! pFnSetPendingState )
-        pFnSetPendingState = (UFunction*) UObject::GObjObjects()->Data[ 102755 ];
+        pFnSetPendingState = (UFunction*) UObject::GObjObjects()->Data[ 102754 ];
 
     ATrMusicManager_execSetPendingState_Parms SetPendingState_Parms;
     SetPendingState_Parms.NewState = NewState;
@@ -91073,7 +91073,7 @@ void ATrMusicManager::MusicEvent ( int NewEventIndex )
     static UFunction* pFnMusicEvent = NULL;
 
     if ( ! pFnMusicEvent )
-        pFnMusicEvent = (UFunction*) UObject::GObjObjects()->Data[ 102749 ];
+        pFnMusicEvent = (UFunction*) UObject::GObjObjects()->Data[ 102748 ];
 
     ATrMusicManager_execMusicEvent_Parms MusicEvent_Parms;
     MusicEvent_Parms.NewEventIndex = NewEventIndex;
@@ -91091,7 +91091,7 @@ void ATrMusicManager::Tick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 102745 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 102744 ];
 
     ATrMusicManager_execTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -91108,7 +91108,7 @@ void ATrMusicManager::SetStateBasedOnGameState ( )
     static UFunction* pFnSetStateBasedOnGameState = NULL;
 
     if ( ! pFnSetStateBasedOnGameState )
-        pFnSetStateBasedOnGameState = (UFunction*) UObject::GObjObjects()->Data[ 102740 ];
+        pFnSetStateBasedOnGameState = (UFunction*) UObject::GObjObjects()->Data[ 102739 ];
 
     ATrMusicManager_execSetStateBasedOnGameState_Parms SetStateBasedOnGameState_Parms;
 
@@ -91124,7 +91124,7 @@ void ATrMusicManager::StartMusic ( )
     static UFunction* pFnStartMusic = NULL;
 
     if ( ! pFnStartMusic )
-        pFnStartMusic = (UFunction*) UObject::GObjObjects()->Data[ 102738 ];
+        pFnStartMusic = (UFunction*) UObject::GObjObjects()->Data[ 102737 ];
 
     ATrMusicManager_execStartMusic_Parms StartMusic_Parms;
 
@@ -91142,7 +91142,7 @@ class UAudioComponent* ATrMusicManager::CreateNewTrack ( class USoundCue* MusicC
     static UFunction* pFnCreateNewTrack = NULL;
 
     if ( ! pFnCreateNewTrack )
-        pFnCreateNewTrack = (UFunction*) UObject::GObjObjects()->Data[ 102733 ];
+        pFnCreateNewTrack = (UFunction*) UObject::GObjObjects()->Data[ 102732 ];
 
     ATrMusicManager_execCreateNewTrack_Parms CreateNewTrack_Parms;
     CreateNewTrack_Parms.MusicCue = MusicCue;
@@ -91161,7 +91161,7 @@ void ATrMusicManager::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102732 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102731 ];
 
     ATrMusicManager_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -91177,7 +91177,7 @@ void ATrGame_TrTraining::PlayEndOfMatchMessage ( )
     static UFunction* pFnPlayEndOfMatchMessage = NULL;
 
     if ( ! pFnPlayEndOfMatchMessage )
-        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 93136 ];
+        pFnPlayEndOfMatchMessage = (UFunction*) UObject::GObjObjects()->Data[ 93135 ];
 
     ATrGame_TrTraining_execPlayEndOfMatchMessage_Parms PlayEndOfMatchMessage_Parms;
 
@@ -91193,7 +91193,7 @@ void ATrGame_TrTraining::AutoEndGame ( )
     static UFunction* pFnAutoEndGame = NULL;
 
     if ( ! pFnAutoEndGame )
-        pFnAutoEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93135 ];
+        pFnAutoEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93134 ];
 
     ATrGame_TrTraining_execAutoEndGame_Parms AutoEndGame_Parms;
 
@@ -91211,7 +91211,7 @@ void ATrGame_TrTraining::EndGame ( class APlayerReplicationInfo* Winner, struct 
     static UFunction* pFnEndGame = NULL;
 
     if ( ! pFnEndGame )
-        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93127 ];
+        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93126 ];
 
     ATrGame_TrTraining_execEndGame_Parms EndGame_Parms;
     EndGame_Parms.Winner = Winner;
@@ -91231,7 +91231,7 @@ unsigned char ATrGame_TrTraining::PickTeamForMigration ( class AController* C )
     static UFunction* pFnPickTeamForMigration = NULL;
 
     if ( ! pFnPickTeamForMigration )
-        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 93124 ];
+        pFnPickTeamForMigration = (UFunction*) UObject::GObjObjects()->Data[ 93123 ];
 
     ATrGame_TrTraining_execPickTeamForMigration_Parms PickTeamForMigration_Parms;
     PickTeamForMigration_Parms.C = C;
@@ -91253,7 +91253,7 @@ unsigned char ATrGame_TrTraining::PickTeam ( unsigned char Num, class AControlle
     static UFunction* pFnPickTeam = NULL;
 
     if ( ! pFnPickTeam )
-        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 93120 ];
+        pFnPickTeam = (UFunction*) UObject::GObjObjects()->Data[ 93119 ];
 
     ATrGame_TrTraining_execPickTeam_Parms PickTeam_Parms;
     PickTeam_Parms.Num = Num;
@@ -91275,7 +91275,7 @@ bool ATrGame_TrTraining::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93117 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93116 ];
 
     ATrGame_TrTraining_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -91357,7 +91357,7 @@ void UTrGameMessage::ClientReceive ( class APlayerController* P, int Switch, cla
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 93153 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 93152 ];
 
     UTrGameMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -91384,7 +91384,7 @@ struct FString UTrGameMessage::GetString ( int Switch, unsigned long bPRI1HUD, c
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 93146 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 93145 ];
 
     UTrGameMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -91407,7 +91407,7 @@ void ATrEmitCameraEffect_Snow::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87777 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87776 ];
 
     ATrEmitCameraEffect_Snow_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -91465,7 +91465,7 @@ void ATrDevice_Blink::OnBlink ( float PercentEffectiveness, unsigned long wasRag
     static UFunction* pFnOnBlink = NULL;
 
     if ( ! pFnOnBlink )
-        pFnOnBlink = (UFunction*) UObject::GObjObjects()->Data[ 85264 ];
+        pFnOnBlink = (UFunction*) UObject::GObjObjects()->Data[ 85263 ];
 
     ATrDevice_Blink_execOnBlink_Parms OnBlink_Parms;
     OnBlink_Parms.PercentEffectiveness = PercentEffectiveness;
@@ -91483,7 +91483,7 @@ void ATrDevice_Blink::ToggleActivate ( )
     static UFunction* pFnToggleActivate = NULL;
 
     if ( ! pFnToggleActivate )
-        pFnToggleActivate = (UFunction*) UObject::GObjObjects()->Data[ 85261 ];
+        pFnToggleActivate = (UFunction*) UObject::GObjObjects()->Data[ 85260 ];
 
     ATrDevice_Blink_execToggleActivate_Parms ToggleActivate_Parms;
 
@@ -91501,7 +91501,7 @@ void ATrPaperDollTransient::SetPosition ( struct FVector ViewPos, struct FRotato
     static UFunction* pFnSetPosition = NULL;
 
     if ( ! pFnSetPosition )
-        pFnSetPosition = (UFunction*) UObject::GObjObjects()->Data[ 103043 ];
+        pFnSetPosition = (UFunction*) UObject::GObjObjects()->Data[ 103042 ];
 
     ATrPaperDollTransient_execSetPosition_Parms SetPosition_Parms;
     memcpy ( &SetPosition_Parms.ViewPos, &ViewPos, 0xC );
@@ -91520,7 +91520,7 @@ void ATrPaperDollTransient::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 103039 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 103038 ];
 
     ATrPaperDollTransient_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -91537,7 +91537,7 @@ void ATrPaperDollTransient::FadeInBackdrop ( )
     static UFunction* pFnFadeInBackdrop = NULL;
 
     if ( ! pFnFadeInBackdrop )
-        pFnFadeInBackdrop = (UFunction*) UObject::GObjObjects()->Data[ 103038 ];
+        pFnFadeInBackdrop = (UFunction*) UObject::GObjObjects()->Data[ 103037 ];
 
     ATrPaperDollTransient_execFadeInBackdrop_Parms FadeInBackdrop_Parms;
 
@@ -91553,7 +91553,7 @@ void ATrPaperDollTransient::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 103035 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 103034 ];
 
     ATrPaperDollTransient_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -91571,7 +91571,7 @@ unsigned char UTrRabbitScoreMessage::AnnouncementLevel ( unsigned char MessageIn
     static UFunction* pFnAnnouncementLevel = NULL;
 
     if ( ! pFnAnnouncementLevel )
-        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 116829 ];
+        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 116828 ];
 
     UTrRabbitScoreMessage_execAnnouncementLevel_Parms AnnouncementLevel_Parms;
     AnnouncementLevel_Parms.MessageIndex = MessageIndex;
@@ -91595,7 +91595,7 @@ void UTrRabbitScoreMessage::ClientReceive ( class APlayerController* P, int Swit
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 116821 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 116820 ];
 
     UTrRabbitScoreMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -91622,7 +91622,7 @@ struct FString UTrRabbitScoreMessage::GetString ( int Switch, unsigned long bPRI
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 116813 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 116812 ];
 
     UTrRabbitScoreMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -91850,7 +91850,7 @@ void UTrSensorMessage::ClientReceive ( class APlayerController* P, int Switch, c
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 117377 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 117376 ];
 
     UTrSensorMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -91877,7 +91877,7 @@ struct FString UTrSensorMessage::GetString ( int Switch, unsigned long bPRI1HUD,
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 117370 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 117369 ];
 
     UTrSensorMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -91901,7 +91901,7 @@ void ATrGame_TrDaD::OnGeneratorPowerChange ( class ATrPowerGenerator* G )
     static UFunction* pFnOnGeneratorPowerChange = NULL;
 
     if ( ! pFnOnGeneratorPowerChange )
-        pFnOnGeneratorPowerChange = (UFunction*) UObject::GObjObjects()->Data[ 92824 ];
+        pFnOnGeneratorPowerChange = (UFunction*) UObject::GObjObjects()->Data[ 92823 ];
 
     ATrGame_TrDaD_execOnGeneratorPowerChange_Parms OnGeneratorPowerChange_Parms;
     OnGeneratorPowerChange_Parms.G = G;
@@ -91919,7 +91919,7 @@ int ATrGame_TrDaD::GetGameTypeId ( )
     static UFunction* pFnGetGameTypeId = NULL;
 
     if ( ! pFnGetGameTypeId )
-        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92822 ];
+        pFnGetGameTypeId = (UFunction*) UObject::GObjObjects()->Data[ 92821 ];
 
     ATrGame_TrDaD_execGetGameTypeId_Parms GetGameTypeId_Parms;
 
@@ -91938,7 +91938,7 @@ void ATrGame_TrDaD::RestartPlayer ( class AController* NewPlayer )
     static UFunction* pFnRestartPlayer = NULL;
 
     if ( ! pFnRestartPlayer )
-        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92820 ];
+        pFnRestartPlayer = (UFunction*) UObject::GObjObjects()->Data[ 92819 ];
 
     ATrGame_TrDaD_execRestartPlayer_Parms RestartPlayer_Parms;
     RestartPlayer_Parms.NewPlayer = NewPlayer;
@@ -91956,7 +91956,7 @@ void ATrGame_TrDaD::SendMatchCountdown ( int Seconds )
     static UFunction* pFnSendMatchCountdown = NULL;
 
     if ( ! pFnSendMatchCountdown )
-        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92816 ];
+        pFnSendMatchCountdown = (UFunction*) UObject::GObjObjects()->Data[ 92815 ];
 
     ATrGame_TrDaD_execSendMatchCountdown_Parms SendMatchCountdown_Parms;
     SendMatchCountdown_Parms.Seconds = Seconds;
@@ -91974,7 +91974,7 @@ void ATrGame_TrDaD::OnCoreBlownUp ( unsigned char Team )
     static UFunction* pFnOnCoreBlownUp = NULL;
 
     if ( ! pFnOnCoreBlownUp )
-        pFnOnCoreBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92796 ];
+        pFnOnCoreBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92795 ];
 
     ATrGame_TrDaD_execOnCoreBlownUp_Parms OnCoreBlownUp_Parms;
     OnCoreBlownUp_Parms.Team = Team;
@@ -91994,7 +91994,7 @@ bool ATrGame_TrDaD::CheckEndGame ( class APlayerReplicationInfo* Winner, struct 
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92792 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92791 ];
 
     ATrGame_TrDaD_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -92014,7 +92014,7 @@ void ATrGame_TrDaD::GotoPendingRoundStartTimer ( )
     static UFunction* pFnGotoPendingRoundStartTimer = NULL;
 
     if ( ! pFnGotoPendingRoundStartTimer )
-        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92791 ];
+        pFnGotoPendingRoundStartTimer = (UFunction*) UObject::GObjObjects()->Data[ 92790 ];
 
     ATrGame_TrDaD_execGotoPendingRoundStartTimer_Parms GotoPendingRoundStartTimer_Parms;
 
@@ -92031,7 +92031,7 @@ int ATrGame_TrDaD::DetermineWinningTeam ( )
     static UFunction* pFnDetermineWinningTeam = NULL;
 
     if ( ! pFnDetermineWinningTeam )
-        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92788 ];
+        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 92787 ];
 
     ATrGame_TrDaD_execDetermineWinningTeam_Parms DetermineWinningTeam_Parms;
 
@@ -92051,7 +92051,7 @@ bool ATrGame_TrDaD::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92785 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 92784 ];
 
     ATrGame_TrDaD_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -92072,7 +92072,7 @@ void ATrGame_TrDaD::ScoreKill ( class AController* Killer, class AController* Ot
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92782 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 92781 ];
 
     ATrGame_TrDaD_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -92090,7 +92090,7 @@ void ATrGame_TrDaD::ResetRound ( )
     static UFunction* pFnResetRound = NULL;
 
     if ( ! pFnResetRound )
-        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92774 ];
+        pFnResetRound = (UFunction*) UObject::GObjObjects()->Data[ 92773 ];
 
     ATrGame_TrDaD_execResetRound_Parms ResetRound_Parms;
 
@@ -92106,7 +92106,7 @@ void ATrGame_TrDaD::RespawnPlayers ( )
     static UFunction* pFnRespawnPlayers = NULL;
 
     if ( ! pFnRespawnPlayers )
-        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92772 ];
+        pFnRespawnPlayers = (UFunction*) UObject::GObjObjects()->Data[ 92771 ];
 
     ATrGame_TrDaD_execRespawnPlayers_Parms RespawnPlayers_Parms;
 
@@ -92122,7 +92122,7 @@ void ATrGame_TrDaD::ResetLevel ( )
     static UFunction* pFnResetLevel = NULL;
 
     if ( ! pFnResetLevel )
-        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92771 ];
+        pFnResetLevel = (UFunction*) UObject::GObjObjects()->Data[ 92770 ];
 
     ATrGame_TrDaD_execResetLevel_Parms ResetLevel_Parms;
 
@@ -92138,7 +92138,7 @@ void ATrGame_TrDaD::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92770 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92769 ];
 
     ATrGame_TrDaD_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -92155,7 +92155,7 @@ void ATrGame_TrDaD::Logout ( class AController* Exiting )
     static UFunction* pFnLogout = NULL;
 
     if ( ! pFnLogout )
-        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92768 ];
+        pFnLogout = (UFunction*) UObject::GObjObjects()->Data[ 92767 ];
 
     ATrGame_TrDaD_execLogout_Parms Logout_Parms;
     Logout_Parms.Exiting = Exiting;
@@ -92175,7 +92175,7 @@ void ATrGame_TrDaD::SetTeam ( class AController* Other, class AUTTeamInfo* NewTe
     static UFunction* pFnSetTeam = NULL;
 
     if ( ! pFnSetTeam )
-        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92764 ];
+        pFnSetTeam = (UFunction*) UObject::GObjObjects()->Data[ 92763 ];
 
     ATrGame_TrDaD_execSetTeam_Parms SetTeam_Parms;
     SetTeam_Parms.Other = Other;
@@ -92194,7 +92194,7 @@ void ATrGame_TrDaD::ResetScores ( )
     static UFunction* pFnResetScores = NULL;
 
     if ( ! pFnResetScores )
-        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92763 ];
+        pFnResetScores = (UFunction*) UObject::GObjObjects()->Data[ 92762 ];
 
     ATrGame_TrDaD_execResetScores_Parms ResetScores_Parms;
 
@@ -92211,7 +92211,7 @@ struct FString UTrSavedMove::GetDebugString ( )
     static UFunction* pFnGetDebugString = NULL;
 
     if ( ! pFnGetDebugString )
-        pFnGetDebugString = (UFunction*) UObject::GObjObjects()->Data[ 117156 ];
+        pFnGetDebugString = (UFunction*) UObject::GObjObjects()->Data[ 117155 ];
 
     UTrSavedMove_execGetDebugString_Parms GetDebugString_Parms;
 
@@ -92232,7 +92232,7 @@ unsigned char UTrSavedMove::SetFlags ( unsigned char Flags, class APlayerControl
     static UFunction* pFnSetFlags = NULL;
 
     if ( ! pFnSetFlags )
-        pFnSetFlags = (UFunction*) UObject::GObjObjects()->Data[ 117151 ];
+        pFnSetFlags = (UFunction*) UObject::GObjObjects()->Data[ 117150 ];
 
     UTrSavedMove_execSetFlags_Parms SetFlags_Parms;
     SetFlags_Parms.Flags = Flags;
@@ -92253,7 +92253,7 @@ unsigned char UTrSavedMove::CompressedFlags ( )
     static UFunction* pFnCompressedFlags = NULL;
 
     if ( ! pFnCompressedFlags )
-        pFnCompressedFlags = (UFunction*) UObject::GObjObjects()->Data[ 117148 ];
+        pFnCompressedFlags = (UFunction*) UObject::GObjObjects()->Data[ 117147 ];
 
     UTrSavedMove_execCompressedFlags_Parms CompressedFlags_Parms;
 
@@ -92275,7 +92275,7 @@ void UTrSavedMove::SetMoveFor ( class APlayerController* P, float DeltaTime, str
     static UFunction* pFnSetMoveFor = NULL;
 
     if ( ! pFnSetMoveFor )
-        pFnSetMoveFor = (UFunction*) UObject::GObjObjects()->Data[ 117142 ];
+        pFnSetMoveFor = (UFunction*) UObject::GObjObjects()->Data[ 117141 ];
 
     UTrSavedMove_execSetMoveFor_Parms SetMoveFor_Parms;
     SetMoveFor_Parms.P = P;
@@ -92299,7 +92299,7 @@ bool UTrSavedMove::CanCombineWith ( class USavedMove* NewMove, class APawn* inPa
     static UFunction* pFnCanCombineWith = NULL;
 
     if ( ! pFnCanCombineWith )
-        pFnCanCombineWith = (UFunction*) UObject::GObjObjects()->Data[ 117136 ];
+        pFnCanCombineWith = (UFunction*) UObject::GObjObjects()->Data[ 117135 ];
 
     UTrSavedMove_execCanCombineWith_Parms CanCombineWith_Parms;
     CanCombineWith_Parms.NewMove = NewMove;
@@ -92321,7 +92321,7 @@ void UTrSavedMove::PostUpdate ( class APlayerController* P )
     static UFunction* pFnPostUpdate = NULL;
 
     if ( ! pFnPostUpdate )
-        pFnPostUpdate = (UFunction*) UObject::GObjObjects()->Data[ 117133 ];
+        pFnPostUpdate = (UFunction*) UObject::GObjObjects()->Data[ 117132 ];
 
     UTrSavedMove_execPostUpdate_Parms PostUpdate_Parms;
     PostUpdate_Parms.P = P;
@@ -92338,7 +92338,7 @@ void UTrSavedMove::Clear ( )
     static UFunction* pFnClear = NULL;
 
     if ( ! pFnClear )
-        pFnClear = (UFunction*) UObject::GObjObjects()->Data[ 117132 ];
+        pFnClear = (UFunction*) UObject::GObjObjects()->Data[ 117131 ];
 
     UTrSavedMove_execClear_Parms Clear_Parms;
 
@@ -92689,7 +92689,7 @@ void ATrGame_TrCTFBlitz::RotateFlag ( class ATrFlagBase* theFlag )
     static UFunction* pFnRotateFlag = NULL;
 
     if ( ! pFnRotateFlag )
-        pFnRotateFlag = (UFunction*) UObject::GObjObjects()->Data[ 92757 ];
+        pFnRotateFlag = (UFunction*) UObject::GObjObjects()->Data[ 92756 ];
 
     ATrGame_TrCTFBlitz_execRotateFlag_Parms RotateFlag_Parms;
     RotateFlag_Parms.theFlag = theFlag;
@@ -92708,7 +92708,7 @@ void ATrGame_TrCTFBlitz::ScoreFlag ( class AController* Scorer, class ATrFlagBas
     static UFunction* pFnScoreFlag = NULL;
 
     if ( ! pFnScoreFlag )
-        pFnScoreFlag = (UFunction*) UObject::GObjObjects()->Data[ 92754 ];
+        pFnScoreFlag = (UFunction*) UObject::GObjObjects()->Data[ 92753 ];
 
     ATrGame_TrCTFBlitz_execScoreFlag_Parms ScoreFlag_Parms;
     ScoreFlag_Parms.Scorer = Scorer;
@@ -92727,7 +92727,7 @@ void ATrGame_TrCTFBlitz::RegisterFlagBase ( class ATrCTFBase* FlagBase )
     static UFunction* pFnRegisterFlagBase = NULL;
 
     if ( ! pFnRegisterFlagBase )
-        pFnRegisterFlagBase = (UFunction*) UObject::GObjObjects()->Data[ 92752 ];
+        pFnRegisterFlagBase = (UFunction*) UObject::GObjObjects()->Data[ 92751 ];
 
     ATrGame_TrCTFBlitz_execRegisterFlagBase_Parms RegisterFlagBase_Parms;
     RegisterFlagBase_Parms.FlagBase = FlagBase;
@@ -92744,7 +92744,7 @@ void ATrGame_TrCTFBlitz::ApplyServerSettings ( )
     static UFunction* pFnApplyServerSettings = NULL;
 
     if ( ! pFnApplyServerSettings )
-        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92749 ];
+        pFnApplyServerSettings = (UFunction*) UObject::GObjObjects()->Data[ 92748 ];
 
     ATrGame_TrCTFBlitz_execApplyServerSettings_Parms ApplyServerSettings_Parms;
 
@@ -92780,7 +92780,7 @@ struct FString ATrFlagCTF_BloodEagle::GetSpectatorName ( )
     static UFunction* pFnGetSpectatorName = NULL;
 
     if ( ! pFnGetSpectatorName )
-        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90593 ];
+        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90592 ];
 
     ATrFlagCTF_BloodEagle_execGetSpectatorName_Parms GetSpectatorName_Parms;
 
@@ -92818,7 +92818,7 @@ struct FString ATrFlagCTF_DiamondSword::GetSpectatorName ( )
     static UFunction* pFnGetSpectatorName = NULL;
 
     if ( ! pFnGetSpectatorName )
-        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90600 ];
+        pFnGetSpectatorName = (UFunction*) UObject::GObjObjects()->Data[ 90599 ];
 
     ATrFlagCTF_DiamondSword_execGetSpectatorName_Parms GetSpectatorName_Parms;
 
@@ -94022,7 +94022,7 @@ void UTrKillerMessage::ClientReceive ( class APlayerController* P, int Switch, c
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 100855 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 100854 ];
 
     UTrKillerMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -94315,7 +94315,7 @@ bool ATrStationCollision::CheckCanPawnUseStationNow ( class ATrPawn* P )
     static UFunction* pFnCheckCanPawnUseStationNow = NULL;
 
     if ( ! pFnCheckCanPawnUseStationNow )
-        pFnCheckCanPawnUseStationNow = (UFunction*) UObject::GObjObjects()->Data[ 100732 ];
+        pFnCheckCanPawnUseStationNow = (UFunction*) UObject::GObjObjects()->Data[ 100731 ];
 
     ATrStationCollision_execCheckCanPawnUseStationNow_Parms CheckCanPawnUseStationNow_Parms;
     CheckCanPawnUseStationNow_Parms.P = P;
@@ -94335,7 +94335,7 @@ void ATrStationCollision::eventUnTouch ( class AActor* Other )
     static UFunction* pFnUnTouch = NULL;
 
     if ( ! pFnUnTouch )
-        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 100728 ];
+        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 100727 ];
 
     ATrStationCollision_eventUnTouch_Parms UnTouch_Parms;
     UnTouch_Parms.Other = Other;
@@ -94356,7 +94356,7 @@ void ATrStationCollision::eventTouch ( class AActor* Other, class UPrimitiveComp
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 100716 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 100715 ];
 
     ATrStationCollision_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -94376,7 +94376,7 @@ void ATrStationCollision::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100715 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 100714 ];
 
     ATrStationCollision_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -94393,7 +94393,7 @@ int ATrStationCollision::GetPawnsInStation ( )
     static UFunction* pFnGetPawnsInStation = NULL;
 
     if ( ! pFnGetPawnsInStation )
-        pFnGetPawnsInStation = (UFunction*) UObject::GObjObjects()->Data[ 100713 ];
+        pFnGetPawnsInStation = (UFunction*) UObject::GObjObjects()->Data[ 100712 ];
 
     ATrStationCollision_execGetPawnsInStation_Parms GetPawnsInStation_Parms;
 
@@ -94413,7 +94413,7 @@ bool ATrInventoryStationCollision::CheckCanPawnUseStationNow ( class ATrPawn* P 
     static UFunction* pFnCheckCanPawnUseStationNow = NULL;
 
     if ( ! pFnCheckCanPawnUseStationNow )
-        pFnCheckCanPawnUseStationNow = (UFunction*) UObject::GObjObjects()->Data[ 100737 ];
+        pFnCheckCanPawnUseStationNow = (UFunction*) UObject::GObjObjects()->Data[ 100736 ];
 
     ATrInventoryStationCollision_execCheckCanPawnUseStationNow_Parms CheckCanPawnUseStationNow_Parms;
     CheckCanPawnUseStationNow_Parms.P = P;
@@ -94553,7 +94553,7 @@ float ATrSubDevice_ForceField::ModifyInstantHitDamage ( unsigned char FiringMode
     static UFunction* pFnModifyInstantHitDamage = NULL;
 
     if ( ! pFnModifyInstantHitDamage )
-        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 119623 ];
+        pFnModifyInstantHitDamage = (UFunction*) UObject::GObjObjects()->Data[ 119622 ];
 
     ATrSubDevice_ForceField_execModifyInstantHitDamage_Parms ModifyInstantHitDamage_Parms;
     ModifyInstantHitDamage_Parms.FiringMode = FiringMode;
@@ -94574,7 +94574,7 @@ void ATrSubDevice_ForceField::InstantFire ( )
     static UFunction* pFnInstantFire = NULL;
 
     if ( ! pFnInstantFire )
-        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 119622 ];
+        pFnInstantFire = (UFunction*) UObject::GObjObjects()->Data[ 119621 ];
 
     ATrSubDevice_ForceField_execInstantFire_Parms InstantFire_Parms;
 
@@ -94711,7 +94711,7 @@ void UTrSeqEvent_TakeDamage::HandleDamage ( class AActor* InOriginator, class AA
     static UFunction* pFnHandleDamage = NULL;
 
     if ( ! pFnHandleDamage )
-        pFnHandleDamage = (UFunction*) UObject::GObjObjects()->Data[ 117422 ];
+        pFnHandleDamage = (UFunction*) UObject::GObjObjects()->Data[ 117421 ];
 
     UTrSeqEvent_TakeDamage_execHandleDamage_Parms HandleDamage_Parms;
     HandleDamage_Parms.InOriginator = InOriginator;
@@ -94732,7 +94732,7 @@ int UTrSeqEvent_TakeDamage::eventGetObjClassVersion ( )
     static UFunction* pFnGetObjClassVersion = NULL;
 
     if ( ! pFnGetObjClassVersion )
-        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117420 ];
+        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117419 ];
 
     UTrSeqEvent_TakeDamage_eventGetObjClassVersion_Parms GetObjClassVersion_Parms;
 
@@ -94751,7 +94751,7 @@ void UTrEffect_AmmoPoolBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87609 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87608 ];
 
     UTrEffect_AmmoPoolBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -94770,7 +94770,7 @@ void UTrEffect_AmmoPoolBuff::Apply ( class AActor* Target, struct FImpactInfo Im
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87606 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87605 ];
 
     UTrEffect_AmmoPoolBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -94789,7 +94789,7 @@ void UTrEffect_Managed::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87602 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87601 ];
 
     UTrEffect_Managed_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -94806,7 +94806,7 @@ void UTrEffect_Managed::RemoveEffect ( )
     static UFunction* pFnRemoveEffect = NULL;
 
     if ( ! pFnRemoveEffect )
-        pFnRemoveEffect = (UFunction*) UObject::GObjObjects()->Data[ 87601 ];
+        pFnRemoveEffect = (UFunction*) UObject::GObjObjects()->Data[ 87600 ];
 
     UTrEffect_Managed_execRemoveEffect_Parms RemoveEffect_Parms;
 
@@ -94824,7 +94824,7 @@ void UTrEffect_Managed::Apply ( class AActor* Target, struct FImpactInfo Impact 
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87597 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87596 ];
 
     UTrEffect_Managed_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -94844,7 +94844,7 @@ bool ATrProj_ArmoredClaymore::MeetsDetonationRequirements ( class APawn* Other )
     static UFunction* pFnMeetsDetonationRequirements = NULL;
 
     if ( ! pFnMeetsDetonationRequirements )
-        pFnMeetsDetonationRequirements = (UFunction*) UObject::GObjObjects()->Data[ 114337 ];
+        pFnMeetsDetonationRequirements = (UFunction*) UObject::GObjObjects()->Data[ 114336 ];
 
     ATrProj_ArmoredClaymore_execMeetsDetonationRequirements_Parms MeetsDetonationRequirements_Parms;
     MeetsDetonationRequirements_Parms.Other = Other;
@@ -94863,7 +94863,7 @@ void ATrProj_Buckler::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114480 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114479 ];
 
     ATrProj_Buckler_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -94880,7 +94880,7 @@ void UTrEffect_DamageBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87622 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87621 ];
 
     UTrEffect_DamageBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -94899,7 +94899,7 @@ void UTrEffect_DamageBuff::Apply ( class AActor* Target, struct FImpactInfo Impa
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87617 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87616 ];
 
     UTrEffect_DamageBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -94917,7 +94917,7 @@ void ATrProj_Spinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114640 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114639 ];
 
     ATrProj_Spinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -94933,7 +94933,7 @@ void ATrProj_TC24::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114669 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114668 ];
 
     ATrProj_TC24_execDestroyed_Parms Destroyed_Parms;
 
@@ -94952,7 +94952,7 @@ void ATrProj_TC24::eventHitWall ( struct FVector HitNormal, class AActor* Wall, 
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114665 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114664 ];
 
     ATrProj_TC24_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -94972,7 +94972,7 @@ void UTrEffect_PowerPoolBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87690 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87689 ];
 
     UTrEffect_PowerPoolBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -94991,7 +94991,7 @@ void UTrEffect_PowerPoolBuff::Apply ( class AActor* Target, struct FImpactInfo I
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87685 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87684 ];
 
     UTrEffect_PowerPoolBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95009,7 +95009,7 @@ void ATrProj_FlareGrenade::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114721 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114720 ];
 
     ATrProj_FlareGrenade_execDestroyed_Parms Destroyed_Parms;
 
@@ -95025,7 +95025,7 @@ void ATrProj_FlareGrenade::HijackMissileGuidance ( )
     static UFunction* pFnHijackMissileGuidance = NULL;
 
     if ( ! pFnHijackMissileGuidance )
-        pFnHijackMissileGuidance = (UFunction*) UObject::GObjObjects()->Data[ 114716 ];
+        pFnHijackMissileGuidance = (UFunction*) UObject::GObjObjects()->Data[ 114715 ];
 
     ATrProj_FlareGrenade_execHijackMissileGuidance_Parms HijackMissileGuidance_Parms;
 
@@ -95041,7 +95041,7 @@ void ATrProj_FlareGrenade::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114715 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114714 ];
 
     ATrProj_FlareGrenade_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -95059,7 +95059,7 @@ float ATrProj_FlareGrenade::CalculateHijackMetric ( class ATrProj_TrackingMissil
     static UFunction* pFnCalculateHijackMetric = NULL;
 
     if ( ! pFnCalculateHijackMetric )
-        pFnCalculateHijackMetric = (UFunction*) UObject::GObjObjects()->Data[ 114710 ];
+        pFnCalculateHijackMetric = (UFunction*) UObject::GObjObjects()->Data[ 114709 ];
 
     ATrProj_FlareGrenade_execCalculateHijackMetric_Parms CalculateHijackMetric_Parms;
     CalculateHijackMetric_Parms.Missile = Missile;
@@ -95079,7 +95079,7 @@ void UTrEffect_HeavyShield::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87642 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87641 ];
 
     UTrEffect_HeavyShield_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95098,7 +95098,7 @@ void UTrEffect_HeavyShield::Apply ( class AActor* Target, struct FImpactInfo Imp
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87637 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87636 ];
 
     UTrEffect_HeavyShield_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95116,7 +95116,7 @@ void ATrProj_HeavySpinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114835 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114834 ];
 
     ATrProj_HeavySpinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95132,7 +95132,7 @@ void ATrProj_Twinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115791 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115790 ];
 
     ATrProj_Twinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95148,7 +95148,7 @@ void ATrProj_HeavyTwinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114855 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114854 ];
 
     ATrProj_HeavyTwinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95165,7 +95165,7 @@ bool ATrDevice_Stealth::CanBeActive ( )
     static UFunction* pFnCanBeActive = NULL;
 
     if ( ! pFnCanBeActive )
-        pFnCanBeActive = (UFunction*) UObject::GObjObjects()->Data[ 85939 ];
+        pFnCanBeActive = (UFunction*) UObject::GObjObjects()->Data[ 85938 ];
 
     ATrDevice_Stealth_execCanBeActive_Parms CanBeActive_Parms;
 
@@ -95183,7 +95183,7 @@ void ATrDevice_Stealth::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 85937 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 85936 ];
 
     ATrDevice_Stealth_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -95200,7 +95200,7 @@ void UTrEffect_Stealth::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87724 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87723 ];
 
     UTrEffect_Stealth_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95219,7 +95219,7 @@ void UTrEffect_Stealth::Apply ( class AActor* Target, struct FImpactInfo Impact 
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87720 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87719 ];
 
     UTrEffect_Stealth_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95237,7 +95237,7 @@ void ATrProj_Honorfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114883 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114882 ];
 
     ATrProj_Honorfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95256,7 +95256,7 @@ bool ATrProj_Honorfusor::ProjectileHurtRadius ( struct FVector HurtOrigin, struc
     static UFunction* pFnProjectileHurtRadius = NULL;
 
     if ( ! pFnProjectileHurtRadius )
-        pFnProjectileHurtRadius = (UFunction*) UObject::GObjObjects()->Data[ 114879 ];
+        pFnProjectileHurtRadius = (UFunction*) UObject::GObjObjects()->Data[ 114878 ];
 
     ATrProj_Honorfusor_execProjectileHurtRadius_Parms ProjectileHurtRadius_Parms;
     memcpy ( &ProjectileHurtRadius_Parms.HurtOrigin, &HurtOrigin, 0xC );
@@ -95277,7 +95277,7 @@ void UTrEffect_Jammer::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87651 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87650 ];
 
     UTrEffect_Jammer_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95296,7 +95296,7 @@ void UTrEffect_Jammer::Apply ( class AActor* Target, struct FImpactInfo Impact )
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87647 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87646 ];
 
     UTrEffect_Jammer_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95315,7 +95315,7 @@ void UTrEffect_RegenBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87659 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87658 ];
 
     UTrEffect_RegenBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95334,7 +95334,7 @@ void UTrEffect_RegenBuff::Apply ( class AActor* Target, struct FImpactInfo Impac
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87655 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87654 ];
 
     UTrEffect_RegenBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95352,7 +95352,7 @@ void ATrProj_LightSpinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114951 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114950 ];
 
     ATrProj_LightSpinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95368,7 +95368,7 @@ void ATrProj_LightSpinfusor_100X::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114961 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 114960 ];
 
     ATrProj_LightSpinfusor_100X_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95387,7 +95387,7 @@ void ATrProj_LightStickyGrenade::ProcessTouch ( class AActor* Other, struct FVec
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114981 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 114980 ];
 
     ATrProj_LightStickyGrenade_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -95409,7 +95409,7 @@ void ATrProj_LightStickyGrenade::eventHitWall ( struct FVector HitNormal, class 
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114977 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 114976 ];
 
     ATrProj_LightStickyGrenade_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -95428,7 +95428,7 @@ void ATrProj_LightStickyGrenade::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114976 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114975 ];
 
     ATrProj_LightStickyGrenade_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -95444,7 +95444,7 @@ void ATrProj_LightTwinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115008 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115007 ];
 
     ATrProj_LightTwinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95461,7 +95461,7 @@ void UTrEffect_MaxPowerPoolBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87669 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87668 ];
 
     UTrEffect_MaxPowerPoolBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95480,7 +95480,7 @@ void UTrEffect_MaxPowerPoolBuff::Apply ( class AActor* Target, struct FImpactInf
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87664 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87663 ];
 
     UTrEffect_MaxPowerPoolBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95499,7 +95499,7 @@ void UTrEffect_MinorPowerPoolBuff::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87678 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87677 ];
 
     UTrEffect_MinorPowerPoolBuff_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -95518,7 +95518,7 @@ void UTrEffect_MinorPowerPoolBuff::Apply ( class AActor* Target, struct FImpactI
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87674 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87673 ];
 
     UTrEffect_MinorPowerPoolBuff_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -95538,7 +95538,7 @@ void ATrProj_MIRVLauncher::Bounce ( class AActor* Other, struct FVector WallNorm
     static UFunction* pFnBounce = NULL;
 
     if ( ! pFnBounce )
-        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 115049 ];
+        pFnBounce = (UFunction*) UObject::GObjObjects()->Data[ 115048 ];
 
     ATrProj_MIRVLauncher_execBounce_Parms Bounce_Parms;
     Bounce_Parms.Other = Other;
@@ -95558,7 +95558,7 @@ void ATrProj_MIRVLauncher::Explode ( struct FVector HitLocation, struct FVector 
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115044 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115043 ];
 
     ATrProj_MIRVLauncher_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -95577,7 +95577,7 @@ void ATrProj_MIRVLauncher::SpawnSecondaryProjectile ( struct FVector Direction )
     static UFunction* pFnSpawnSecondaryProjectile = NULL;
 
     if ( ! pFnSpawnSecondaryProjectile )
-        pFnSpawnSecondaryProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115041 ];
+        pFnSpawnSecondaryProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115040 ];
 
     ATrProj_MIRVLauncher_execSpawnSecondaryProjectile_Parms SpawnSecondaryProjectile_Parms;
     memcpy ( &SpawnSecondaryProjectile_Parms.Direction, &Direction, 0xC );
@@ -95596,7 +95596,7 @@ struct FRotator ATrProj_MIRVLauncher::GetRandomSpread ( struct FRotator BaseDire
     static UFunction* pFnGetRandomSpread = NULL;
 
     if ( ! pFnGetRandomSpread )
-        pFnGetRandomSpread = (UFunction*) UObject::GObjObjects()->Data[ 115031 ];
+        pFnGetRandomSpread = (UFunction*) UObject::GObjObjects()->Data[ 115030 ];
 
     ATrProj_MIRVLauncher_execGetRandomSpread_Parms GetRandomSpread_Parms;
     memcpy ( &GetRandomSpread_Parms.BaseDirection, &BaseDirection, 0xC );
@@ -95616,7 +95616,7 @@ void ATrProj_MotionSensor::DetonateObsolete ( unsigned long bDetonateFromDamage 
     static UFunction* pFnDetonateObsolete = NULL;
 
     if ( ! pFnDetonateObsolete )
-        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 115116 ];
+        pFnDetonateObsolete = (UFunction*) UObject::GObjObjects()->Data[ 115115 ];
 
     ATrProj_MotionSensor_execDetonateObsolete_Parms DetonateObsolete_Parms;
     DetonateObsolete_Parms.bDetonateFromDamage = bDetonateFromDamage;
@@ -95635,7 +95635,7 @@ void ATrProj_MotionSensor::Explode ( struct FVector HitLocation, struct FVector 
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115111 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115110 ];
 
     ATrProj_MotionSensor_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -95656,7 +95656,7 @@ void ATrProj_NovaColt::eventHitWall ( struct FVector HitNormal, class AActor* Wa
     static UFunction* pFnHitWall = NULL;
 
     if ( ! pFnHitWall )
-        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 115157 ];
+        pFnHitWall = (UFunction*) UObject::GObjObjects()->Data[ 115156 ];
 
     ATrProj_NovaColt_eventHitWall_Parms HitWall_Parms;
     memcpy ( &HitWall_Parms.HitNormal, &HitNormal, 0xC );
@@ -95675,7 +95675,7 @@ void ATrProj_PlasmaCannon::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115194 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115193 ];
 
     ATrProj_PlasmaCannon_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95691,7 +95691,7 @@ void ATrProj_PlasmaGun::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115206 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115205 ];
 
     ATrProj_PlasmaGun_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95710,7 +95710,7 @@ class USoundCue* ATrProj_RemoteArxBuster::GetExplosionSound ( class UPhysicalMat
     static UFunction* pFnGetExplosionSound = NULL;
 
     if ( ! pFnGetExplosionSound )
-        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 115312 ];
+        pFnGetExplosionSound = (UFunction*) UObject::GObjObjects()->Data[ 115311 ];
 
     ATrProj_RemoteArxBuster_execGetExplosionSound_Parms GetExplosionSound_Parms;
     GetExplosionSound_Parms.HitMaterial = HitMaterial;
@@ -95732,7 +95732,7 @@ void ATrProj_RemoteArxBuster::SpawnExplosionEffects ( struct FVector HitLocation
     static UFunction* pFnSpawnExplosionEffects = NULL;
 
     if ( ! pFnSpawnExplosionEffects )
-        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115309 ];
+        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115308 ];
 
     ATrProj_RemoteArxBuster_execSpawnExplosionEffects_Parms SpawnExplosionEffects_Parms;
     memcpy ( &SpawnExplosionEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -95750,7 +95750,7 @@ void ATrProj_RemoteArxBuster::eventOnBaseChanged ( )
     static UFunction* pFnOnBaseChanged = NULL;
 
     if ( ! pFnOnBaseChanged )
-        pFnOnBaseChanged = (UFunction*) UObject::GObjObjects()->Data[ 115308 ];
+        pFnOnBaseChanged = (UFunction*) UObject::GObjObjects()->Data[ 115307 ];
 
     ATrProj_RemoteArxBuster_eventOnBaseChanged_Parms OnBaseChanged_Parms;
 
@@ -95766,7 +95766,7 @@ void ATrProj_RemoteArxBuster::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115307 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115306 ];
 
     ATrProj_RemoteArxBuster_eventDestroyed_Parms Destroyed_Parms;
 
@@ -95786,7 +95786,7 @@ bool ATrProj_RemoteArxBuster::StickToTarget ( class AActor* Target, struct FVect
     static UFunction* pFnStickToTarget = NULL;
 
     if ( ! pFnStickToTarget )
-        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 115302 ];
+        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 115301 ];
 
     ATrProj_RemoteArxBuster_execStickToTarget_Parms StickToTarget_Parms;
     StickToTarget_Parms.Target = Target;
@@ -95807,7 +95807,7 @@ void ATrProj_RemoteArxBuster::ReportDestroyedByOtherToParentDevice ( )
     static UFunction* pFnReportDestroyedByOtherToParentDevice = NULL;
 
     if ( ! pFnReportDestroyedByOtherToParentDevice )
-        pFnReportDestroyedByOtherToParentDevice = (UFunction*) UObject::GObjObjects()->Data[ 115298 ];
+        pFnReportDestroyedByOtherToParentDevice = (UFunction*) UObject::GObjObjects()->Data[ 115297 ];
 
     ATrProj_RemoteArxBuster_execReportDestroyedByOtherToParentDevice_Parms ReportDestroyedByOtherToParentDevice_Parms;
 
@@ -95830,7 +95830,7 @@ void ATrProj_RemoteArxBuster::eventTakeDamage ( int DamageAmount, class AControl
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 115290 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 115289 ];
 
     ATrProj_RemoteArxBuster_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -95862,7 +95862,7 @@ void ATrProj_RemoteArxBuster::TakeRadiusDamage ( class AController* EventInstiga
     static UFunction* pFnTakeRadiusDamage = NULL;
 
     if ( ! pFnTakeRadiusDamage )
-        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 115279 ];
+        pFnTakeRadiusDamage = (UFunction*) UObject::GObjObjects()->Data[ 115278 ];
 
     ATrProj_RemoteArxBuster_execTakeRadiusDamage_Parms TakeRadiusDamage_Parms;
     TakeRadiusDamage_Parms.EventInstigator = EventInstigator;
@@ -95887,7 +95887,7 @@ void ATrProj_RemoteArxBuster::PreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115278 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115277 ];
 
     ATrProj_RemoteArxBuster_execPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -95903,7 +95903,7 @@ void ATrProj_RocketLauncher::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115388 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115387 ];
 
     ATrProj_RocketLauncher_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -95922,7 +95922,7 @@ void ATrSeekingMissileManager::PawnEnteredVehicle ( class APawn* EnteringPawn, c
     static UFunction* pFnPawnEnteredVehicle = NULL;
 
     if ( ! pFnPawnEnteredVehicle )
-        pFnPawnEnteredVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117355 ];
+        pFnPawnEnteredVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117354 ];
 
     ATrSeekingMissileManager_execPawnEnteredVehicle_Parms PawnEnteredVehicle_Parms;
     PawnEnteredVehicle_Parms.EnteringPawn = EnteringPawn;
@@ -95943,7 +95943,7 @@ void ATrSeekingMissileManager::PawnLeftVehicle ( class APawn* LeavingPawn, class
     static UFunction* pFnPawnLeftVehicle = NULL;
 
     if ( ! pFnPawnLeftVehicle )
-        pFnPawnLeftVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117347 ];
+        pFnPawnLeftVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117346 ];
 
     ATrSeekingMissileManager_execPawnLeftVehicle_Parms PawnLeftVehicle_Parms;
     PawnLeftVehicle_Parms.LeavingPawn = LeavingPawn;
@@ -95962,7 +95962,7 @@ void ATrSeekingMissileManager::StopMissileTracking ( class ATrPlayerController* 
     static UFunction* pFnStopMissileTracking = NULL;
 
     if ( ! pFnStopMissileTracking )
-        pFnStopMissileTracking = (UFunction*) UObject::GObjObjects()->Data[ 117345 ];
+        pFnStopMissileTracking = (UFunction*) UObject::GObjObjects()->Data[ 117344 ];
 
     ATrSeekingMissileManager_execStopMissileTracking_Parms StopMissileTracking_Parms;
     StopMissileTracking_Parms.VictimController = VictimController;
@@ -95980,7 +95980,7 @@ void ATrSeekingMissileManager::BeginMissileTracking ( class ATrPlayerController*
     static UFunction* pFnBeginMissileTracking = NULL;
 
     if ( ! pFnBeginMissileTracking )
-        pFnBeginMissileTracking = (UFunction*) UObject::GObjObjects()->Data[ 117343 ];
+        pFnBeginMissileTracking = (UFunction*) UObject::GObjObjects()->Data[ 117342 ];
 
     ATrSeekingMissileManager_execBeginMissileTracking_Parms BeginMissileTracking_Parms;
     BeginMissileTracking_Parms.VictimController = VictimController;
@@ -95998,7 +95998,7 @@ void ATrSeekingMissileManager::StopSaberLauncherTargeting ( class ATrPlayerContr
     static UFunction* pFnStopSaberLauncherTargeting = NULL;
 
     if ( ! pFnStopSaberLauncherTargeting )
-        pFnStopSaberLauncherTargeting = (UFunction*) UObject::GObjObjects()->Data[ 117341 ];
+        pFnStopSaberLauncherTargeting = (UFunction*) UObject::GObjObjects()->Data[ 117340 ];
 
     ATrSeekingMissileManager_execStopSaberLauncherTargeting_Parms StopSaberLauncherTargeting_Parms;
     StopSaberLauncherTargeting_Parms.VictimController = VictimController;
@@ -96016,7 +96016,7 @@ void ATrSeekingMissileManager::BeginSaberLauncherTargeting ( class ATrPlayerCont
     static UFunction* pFnBeginSaberLauncherTargeting = NULL;
 
     if ( ! pFnBeginSaberLauncherTargeting )
-        pFnBeginSaberLauncherTargeting = (UFunction*) UObject::GObjObjects()->Data[ 117339 ];
+        pFnBeginSaberLauncherTargeting = (UFunction*) UObject::GObjObjects()->Data[ 117338 ];
 
     ATrSeekingMissileManager_execBeginSaberLauncherTargeting_Parms BeginSaberLauncherTargeting_Parms;
     BeginSaberLauncherTargeting_Parms.VictimController = VictimController;
@@ -96035,7 +96035,7 @@ void ATrSeekingMissileManager::TargetVehicleUpdated ( class ATrVehicle* targetVe
     static UFunction* pFnTargetVehicleUpdated = NULL;
 
     if ( ! pFnTargetVehicleUpdated )
-        pFnTargetVehicleUpdated = (UFunction*) UObject::GObjObjects()->Data[ 117332 ];
+        pFnTargetVehicleUpdated = (UFunction*) UObject::GObjObjects()->Data[ 117331 ];
 
     ATrSeekingMissileManager_execTargetVehicleUpdated_Parms TargetVehicleUpdated_Parms;
     TargetVehicleUpdated_Parms.targetVehicle = targetVehicle;
@@ -96055,7 +96055,7 @@ void ATrSeekingMissileManager::VictimControllerUpdated ( class ATrPlayerControll
     static UFunction* pFnVictimControllerUpdated = NULL;
 
     if ( ! pFnVictimControllerUpdated )
-        pFnVictimControllerUpdated = (UFunction*) UObject::GObjObjects()->Data[ 117327 ];
+        pFnVictimControllerUpdated = (UFunction*) UObject::GObjObjects()->Data[ 117326 ];
 
     ATrSeekingMissileManager_execVictimControllerUpdated_Parms VictimControllerUpdated_Parms;
     VictimControllerUpdated_Parms.VictimController = VictimController;
@@ -96075,7 +96075,7 @@ int ATrSeekingMissileManager::GetNumMissilesTrackingVehicle ( class ATrVehicle* 
     static UFunction* pFnGetNumMissilesTrackingVehicle = NULL;
 
     if ( ! pFnGetNumMissilesTrackingVehicle )
-        pFnGetNumMissilesTrackingVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117322 ];
+        pFnGetNumMissilesTrackingVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117321 ];
 
     ATrSeekingMissileManager_execGetNumMissilesTrackingVehicle_Parms GetNumMissilesTrackingVehicle_Parms;
     GetNumMissilesTrackingVehicle_Parms.targetVehicle = targetVehicle;
@@ -96096,7 +96096,7 @@ int ATrSeekingMissileManager::GetNumMissilesTrackingController ( class ATrPlayer
     static UFunction* pFnGetNumMissilesTrackingController = NULL;
 
     if ( ! pFnGetNumMissilesTrackingController )
-        pFnGetNumMissilesTrackingController = (UFunction*) UObject::GObjObjects()->Data[ 117317 ];
+        pFnGetNumMissilesTrackingController = (UFunction*) UObject::GObjObjects()->Data[ 117316 ];
 
     ATrSeekingMissileManager_execGetNumMissilesTrackingController_Parms GetNumMissilesTrackingController_Parms;
     GetNumMissilesTrackingController_Parms.Controller = Controller;
@@ -96116,7 +96116,7 @@ void ATrSeekingMissileManager::RemoveMissile ( class ATrProj_TrackingMissile* Mi
     static UFunction* pFnRemoveMissile = NULL;
 
     if ( ! pFnRemoveMissile )
-        pFnRemoveMissile = (UFunction*) UObject::GObjObjects()->Data[ 117311 ];
+        pFnRemoveMissile = (UFunction*) UObject::GObjObjects()->Data[ 117310 ];
 
     ATrSeekingMissileManager_execRemoveMissile_Parms RemoveMissile_Parms;
     RemoveMissile_Parms.MissileToRemove = MissileToRemove;
@@ -96134,7 +96134,7 @@ void ATrSeekingMissileManager::AddMissile ( class ATrProj_TrackingMissile* Missi
     static UFunction* pFnAddMissile = NULL;
 
     if ( ! pFnAddMissile )
-        pFnAddMissile = (UFunction*) UObject::GObjObjects()->Data[ 117301 ];
+        pFnAddMissile = (UFunction*) UObject::GObjObjects()->Data[ 117300 ];
 
     ATrSeekingMissileManager_execAddMissile_Parms AddMissile_Parms;
     AddMissile_Parms.MissileToAdd = MissileToAdd;
@@ -96154,7 +96154,7 @@ int ATrSeekingMissileManager::GetNumSaberLaunchersTargetingVehicle ( class ATrVe
     static UFunction* pFnGetNumSaberLaunchersTargetingVehicle = NULL;
 
     if ( ! pFnGetNumSaberLaunchersTargetingVehicle )
-        pFnGetNumSaberLaunchersTargetingVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117295 ];
+        pFnGetNumSaberLaunchersTargetingVehicle = (UFunction*) UObject::GObjObjects()->Data[ 117294 ];
 
     ATrSeekingMissileManager_execGetNumSaberLaunchersTargetingVehicle_Parms GetNumSaberLaunchersTargetingVehicle_Parms;
     GetNumSaberLaunchersTargetingVehicle_Parms.targetVehicle = targetVehicle;
@@ -96177,7 +96177,7 @@ int ATrSeekingMissileManager::GetNumSaberLaunchersTargetingController ( class AT
     static UFunction* pFnGetNumSaberLaunchersTargetingController = NULL;
 
     if ( ! pFnGetNumSaberLaunchersTargetingController )
-        pFnGetNumSaberLaunchersTargetingController = (UFunction*) UObject::GObjObjects()->Data[ 117289 ];
+        pFnGetNumSaberLaunchersTargetingController = (UFunction*) UObject::GObjObjects()->Data[ 117288 ];
 
     ATrSeekingMissileManager_execGetNumSaberLaunchersTargetingController_Parms GetNumSaberLaunchersTargetingController_Parms;
     GetNumSaberLaunchersTargetingController_Parms.Controller = Controller;
@@ -96198,7 +96198,7 @@ void ATrSeekingMissileManager::RemoveSaberLauncher ( class ATrDevice_SaberLaunch
     static UFunction* pFnRemoveSaberLauncher = NULL;
 
     if ( ! pFnRemoveSaberLauncher )
-        pFnRemoveSaberLauncher = (UFunction*) UObject::GObjObjects()->Data[ 117282 ];
+        pFnRemoveSaberLauncher = (UFunction*) UObject::GObjObjects()->Data[ 117281 ];
 
     ATrSeekingMissileManager_execRemoveSaberLauncher_Parms RemoveSaberLauncher_Parms;
     RemoveSaberLauncher_Parms.SaberLauncherToRemove = SaberLauncherToRemove;
@@ -96217,7 +96217,7 @@ void ATrSeekingMissileManager::AddSaberLauncher ( class ATrDevice_SaberLauncher*
     static UFunction* pFnAddSaberLauncher = NULL;
 
     if ( ! pFnAddSaberLauncher )
-        pFnAddSaberLauncher = (UFunction*) UObject::GObjObjects()->Data[ 117272 ];
+        pFnAddSaberLauncher = (UFunction*) UObject::GObjObjects()->Data[ 117271 ];
 
     ATrSeekingMissileManager_execAddSaberLauncher_Parms AddSaberLauncher_Parms;
     AddSaberLauncher_Parms.SaberLauncherToAdd = SaberLauncherToAdd;
@@ -96236,7 +96236,7 @@ void ATrSeekingMissileManager::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 117262 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 117261 ];
 
     ATrSeekingMissileManager_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -96253,7 +96253,7 @@ void ATrProj_TrackingMissile_DumbFire::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115779 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115778 ];
 
     ATrProj_TrackingMissile_DumbFire_execDestroyed_Parms Destroyed_Parms;
 
@@ -96269,7 +96269,7 @@ void ATrProj_TrackingMissile_MKD::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115785 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115784 ];
 
     ATrProj_TrackingMissile_MKD_execDestroyed_Parms Destroyed_Parms;
 
@@ -96286,7 +96286,7 @@ void UTrEffect_Shield::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87716 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87715 ];
 
     UTrEffect_Shield_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -96305,7 +96305,7 @@ void UTrEffect_Shield::Apply ( class AActor* Target, struct FImpactInfo Impact )
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87712 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87711 ];
 
     UTrEffect_Shield_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -96325,7 +96325,7 @@ void ATrProj_SpikeGrenade::SpawnExplosionEffects ( struct FVector HitLocation, s
     static UFunction* pFnSpawnExplosionEffects = NULL;
 
     if ( ! pFnSpawnExplosionEffects )
-        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115468 ];
+        pFnSpawnExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115467 ];
 
     ATrProj_SpikeGrenade_execSpawnExplosionEffects_Parms SpawnExplosionEffects_Parms;
     memcpy ( &SpawnExplosionEffects_Parms.HitLocation, &HitLocation, 0xC );
@@ -96343,7 +96343,7 @@ void ATrProj_SpikeGrenade::EndFractal ( )
     static UFunction* pFnEndFractal = NULL;
 
     if ( ! pFnEndFractal )
-        pFnEndFractal = (UFunction*) UObject::GObjObjects()->Data[ 115467 ];
+        pFnEndFractal = (UFunction*) UObject::GObjObjects()->Data[ 115466 ];
 
     ATrProj_SpikeGrenade_execEndFractal_Parms EndFractal_Parms;
 
@@ -96360,7 +96360,7 @@ void ATrProj_SpikeGrenade::SpawnFractalExplosionEffects ( struct FVector ShotLoc
     static UFunction* pFnSpawnFractalExplosionEffects = NULL;
 
     if ( ! pFnSpawnFractalExplosionEffects )
-        pFnSpawnFractalExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115464 ];
+        pFnSpawnFractalExplosionEffects = (UFunction*) UObject::GObjObjects()->Data[ 115463 ];
 
     ATrProj_SpikeGrenade_execSpawnFractalExplosionEffects_Parms SpawnFractalExplosionEffects_Parms;
     memcpy ( &SpawnFractalExplosionEffects_Parms.ShotLocation, &ShotLocation, 0xC );
@@ -96377,7 +96377,7 @@ void ATrProj_SpikeGrenade::ShootFractalShot ( )
     static UFunction* pFnShootFractalShot = NULL;
 
     if ( ! pFnShootFractalShot )
-        pFnShootFractalShot = (UFunction*) UObject::GObjObjects()->Data[ 115460 ];
+        pFnShootFractalShot = (UFunction*) UObject::GObjObjects()->Data[ 115459 ];
 
     ATrProj_SpikeGrenade_execShootFractalShot_Parms ShootFractalShot_Parms;
 
@@ -96393,7 +96393,7 @@ void ATrProj_SpikeGrenade::StartFractalShots ( )
     static UFunction* pFnStartFractalShots = NULL;
 
     if ( ! pFnStartFractalShots )
-        pFnStartFractalShots = (UFunction*) UObject::GObjObjects()->Data[ 115459 ];
+        pFnStartFractalShots = (UFunction*) UObject::GObjObjects()->Data[ 115458 ];
 
     ATrProj_SpikeGrenade_execStartFractalShots_Parms StartFractalShots_Parms;
 
@@ -96410,7 +96410,7 @@ bool ATrProj_SpikeGrenade::IsFractalActive ( )
     static UFunction* pFnIsFractalActive = NULL;
 
     if ( ! pFnIsFractalActive )
-        pFnIsFractalActive = (UFunction*) UObject::GObjObjects()->Data[ 115457 ];
+        pFnIsFractalActive = (UFunction*) UObject::GObjObjects()->Data[ 115456 ];
 
     ATrProj_SpikeGrenade_execIsFractalActive_Parms IsFractalActive_Parms;
 
@@ -96428,7 +96428,7 @@ void ATrProj_SpikeGrenade::ClientReceivedExplosionLocation ( )
     static UFunction* pFnClientReceivedExplosionLocation = NULL;
 
     if ( ! pFnClientReceivedExplosionLocation )
-        pFnClientReceivedExplosionLocation = (UFunction*) UObject::GObjObjects()->Data[ 115456 ];
+        pFnClientReceivedExplosionLocation = (UFunction*) UObject::GObjObjects()->Data[ 115455 ];
 
     ATrProj_SpikeGrenade_execClientReceivedExplosionLocation_Parms ClientReceivedExplosionLocation_Parms;
 
@@ -96446,7 +96446,7 @@ void ATrProj_SpikeGrenade::Explode ( struct FVector HitLocation, struct FVector 
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115451 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115450 ];
 
     ATrProj_SpikeGrenade_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -96466,7 +96466,7 @@ void ATrProj_SpikeGrenade::InitProjectile ( struct FVector Direction, class UCla
     static UFunction* pFnInitProjectile = NULL;
 
     if ( ! pFnInitProjectile )
-        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115448 ];
+        pFnInitProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115447 ];
 
     ATrProj_SpikeGrenade_execInitProjectile_Parms InitProjectile_Parms;
     memcpy ( &InitProjectile_Parms.Direction, &Direction, 0xC );
@@ -96485,7 +96485,7 @@ void ATrProj_SpikeGrenade::eventPostInitAnimTree ( class USkeletalMeshComponent*
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 115446 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 115445 ];
 
     ATrProj_SpikeGrenade_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -96503,7 +96503,7 @@ void ATrProj_SpikeGrenade::eventReplicatedEvent ( struct FName VarName )
     static UFunction* pFnReplicatedEvent = NULL;
 
     if ( ! pFnReplicatedEvent )
-        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 115444 ];
+        pFnReplicatedEvent = (UFunction*) UObject::GObjObjects()->Data[ 115443 ];
 
     ATrProj_SpikeGrenade_eventReplicatedEvent_Parms ReplicatedEvent_Parms;
     memcpy ( &ReplicatedEvent_Parms.VarName, &VarName, 0x8 );
@@ -96521,7 +96521,7 @@ void ATrProj_SpikeLauncher::SpawnSecondaryProjectile ( struct FVector Direction 
     static UFunction* pFnSpawnSecondaryProjectile = NULL;
 
     if ( ! pFnSpawnSecondaryProjectile )
-        pFnSpawnSecondaryProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115522 ];
+        pFnSpawnSecondaryProjectile = (UFunction*) UObject::GObjObjects()->Data[ 115521 ];
 
     ATrProj_SpikeLauncher_execSpawnSecondaryProjectile_Parms SpawnSecondaryProjectile_Parms;
     memcpy ( &SpawnSecondaryProjectile_Parms.Direction, &Direction, 0xC );
@@ -96540,7 +96540,7 @@ void ATrProj_SpikeLauncher::Explode ( struct FVector HitLocation, struct FVector
     static UFunction* pFnExplode = NULL;
 
     if ( ! pFnExplode )
-        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115519 ];
+        pFnExplode = (UFunction*) UObject::GObjObjects()->Data[ 115518 ];
 
     ATrProj_SpikeLauncher_execExplode_Parms Explode_Parms;
     memcpy ( &Explode_Parms.HitLocation, &HitLocation, 0xC );
@@ -96561,7 +96561,7 @@ void ATrProj_SpikeLauncher::ProcessTouch ( class AActor* Other, struct FVector H
     static UFunction* pFnProcessTouch = NULL;
 
     if ( ! pFnProcessTouch )
-        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 115515 ];
+        pFnProcessTouch = (UFunction*) UObject::GObjObjects()->Data[ 115514 ];
 
     ATrProj_SpikeLauncher_execProcessTouch_Parms ProcessTouch_Parms;
     ProcessTouch_Parms.Other = Other;
@@ -96584,7 +96584,7 @@ bool ATrProj_SpikeLauncher::StickToTarget ( class AActor* Target, struct FVector
     static UFunction* pFnStickToTarget = NULL;
 
     if ( ! pFnStickToTarget )
-        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 115510 ];
+        pFnStickToTarget = (UFunction*) UObject::GObjObjects()->Data[ 115509 ];
 
     ATrProj_SpikeLauncher_execStickToTarget_Parms StickToTarget_Parms;
     StickToTarget_Parms.Target = Target;
@@ -96605,7 +96605,7 @@ void ATrProj_SpikeLauncher::PreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115509 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 115508 ];
 
     ATrProj_SpikeLauncher_execPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -96621,7 +96621,7 @@ void ATrProj_Spinfusor_100X::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115555 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115554 ];
 
     ATrProj_Spinfusor_100X_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -96637,7 +96637,7 @@ void ATrProj_SpinfusorD::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115561 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115560 ];
 
     ATrProj_SpinfusorD_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -96653,7 +96653,7 @@ void ATrProj_StealthSpinfusor::SpawnFlightEffects ( )
     static UFunction* pFnSpawnFlightEffects = NULL;
 
     if ( ! pFnSpawnFlightEffects )
-        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115573 ];
+        pFnSpawnFlightEffects = (UFunction*) UObject::GObjObjects()->Data[ 115572 ];
 
     ATrProj_StealthSpinfusor_execSpawnFlightEffects_Parms SpawnFlightEffects_Parms;
 
@@ -96669,7 +96669,7 @@ void ATrProj_Thumper::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115672 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 115671 ];
 
     ATrProj_Thumper_execDestroyed_Parms Destroyed_Parms;
 
@@ -96686,7 +96686,7 @@ bool ATrVehicle_GravCycle::DoesVehicleHaveEjectionSeat ( )
     static UFunction* pFnDoesVehicleHaveEjectionSeat = NULL;
 
     if ( ! pFnDoesVehicleHaveEjectionSeat )
-        pFnDoesVehicleHaveEjectionSeat = (UFunction*) UObject::GObjObjects()->Data[ 121400 ];
+        pFnDoesVehicleHaveEjectionSeat = (UFunction*) UObject::GObjObjects()->Data[ 121399 ];
 
     ATrVehicle_GravCycle_execDoesVehicleHaveEjectionSeat_Parms DoesVehicleHaveEjectionSeat_Parms;
 
@@ -96704,7 +96704,7 @@ void ATrVehicleWeapon_BeowulfGunner::Activate ( )
     static UFunction* pFnActivate = NULL;
 
     if ( ! pFnActivate )
-        pFnActivate = (UFunction*) UObject::GObjObjects()->Data[ 121906 ];
+        pFnActivate = (UFunction*) UObject::GObjObjects()->Data[ 121905 ];
 
     ATrVehicleWeapon_BeowulfGunner_execActivate_Parms Activate_Parms;
 
@@ -96720,7 +96720,7 @@ void ATrVehicleWeapon_BeowulfGunner::InitVehicleGun ( )
     static UFunction* pFnInitVehicleGun = NULL;
 
     if ( ! pFnInitVehicleGun )
-        pFnInitVehicleGun = (UFunction*) UObject::GObjObjects()->Data[ 121905 ];
+        pFnInitVehicleGun = (UFunction*) UObject::GObjObjects()->Data[ 121904 ];
 
     ATrVehicleWeapon_BeowulfGunner_execInitVehicleGun_Parms InitVehicleGun_Parms;
 
@@ -96736,7 +96736,7 @@ void ATrVehicleWeapon_FullAuto::RefireCheckTimer ( )
     static UFunction* pFnRefireCheckTimer = NULL;
 
     if ( ! pFnRefireCheckTimer )
-        pFnRefireCheckTimer = (UFunction*) UObject::GObjObjects()->Data[ 121881 ];
+        pFnRefireCheckTimer = (UFunction*) UObject::GObjObjects()->Data[ 121880 ];
 
     ATrVehicleWeapon_FullAuto_execRefireCheckTimer_Parms RefireCheckTimer_Parms;
 
@@ -96753,7 +96753,7 @@ void ATrVehicleWeapon_HavocPilot::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 121969 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 121968 ];
 
     ATrVehicleWeapon_HavocPilot_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -96770,7 +96770,7 @@ void ATrVehicleWeapon_HavocPilot::eventDestroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 121968 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 121967 ];
 
     ATrVehicleWeapon_HavocPilot_eventDestroyed_Parms Destroyed_Parms;
 
@@ -96786,7 +96786,7 @@ void ATrVehicleWeapon_HavocPilot::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121967 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121966 ];
 
     ATrVehicleWeapon_HavocPilot_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -96804,7 +96804,7 @@ void UTrEffect_Blink::Apply ( class AActor* Target, struct FImpactInfo Impact )
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87613 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87612 ];
 
     UTrEffect_Blink_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -96823,7 +96823,7 @@ void UTrEffect_GroundSpeed::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87632 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87631 ];
 
     UTrEffect_GroundSpeed_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -96842,7 +96842,7 @@ void UTrEffect_GroundSpeed::Apply ( class AActor* Target, struct FImpactInfo Imp
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87628 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87627 ];
 
     UTrEffect_GroundSpeed_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -96861,7 +96861,7 @@ void UTrEffect_Sensor::Remove ( class AActor* Target )
     static UFunction* pFnRemove = NULL;
 
     if ( ! pFnRemove )
-        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87708 ];
+        pFnRemove = (UFunction*) UObject::GObjObjects()->Data[ 87707 ];
 
     UTrEffect_Sensor_execRemove_Parms Remove_Parms;
     Remove_Parms.Target = Target;
@@ -96880,7 +96880,7 @@ void UTrEffect_Sensor::Apply ( class AActor* Target, struct FImpactInfo Impact )
     static UFunction* pFnApply = NULL;
 
     if ( ! pFnApply )
-        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87704 ];
+        pFnApply = (UFunction*) UObject::GObjObjects()->Data[ 87703 ];
 
     UTrEffect_Sensor_execApply_Parms Apply_Parms;
     Apply_Parms.Target = Target;
@@ -96898,7 +96898,7 @@ void ATrEmitCameraEffect_Ashes::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87766 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87765 ];
 
     ATrEmitCameraEffect_Ashes_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -96914,7 +96914,7 @@ void ATrEmitCameraEffect_Leaves::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87770 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87769 ];
 
     ATrEmitCameraEffect_Leaves_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -96930,7 +96930,7 @@ void ATrEmitCameraEffect_Rain::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87774 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87773 ];
 
     ATrEmitCameraEffect_Rain_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -96946,7 +96946,7 @@ void ATrEmitCameraEffect_Tutorial::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87781 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 87780 ];
 
     ATrEmitCameraEffect_Tutorial_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -96963,7 +96963,7 @@ void ATrPaperDollMainMenu::AddChildrenMeshes ( class UTrMainMenuMeshInfo* Parent
     static UFunction* pFnAddChildrenMeshes = NULL;
 
     if ( ! pFnAddChildrenMeshes )
-        pFnAddChildrenMeshes = (UFunction*) UObject::GObjObjects()->Data[ 103021 ];
+        pFnAddChildrenMeshes = (UFunction*) UObject::GObjObjects()->Data[ 103020 ];
 
     ATrPaperDollMainMenu_execAddChildrenMeshes_Parms AddChildrenMeshes_Parms;
     AddChildrenMeshes_Parms.Parent = Parent;
@@ -96980,7 +96980,7 @@ void ATrPaperDollMainMenu::EmptyChildrenMeshes ( )
     static UFunction* pFnEmptyChildrenMeshes = NULL;
 
     if ( ! pFnEmptyChildrenMeshes )
-        pFnEmptyChildrenMeshes = (UFunction*) UObject::GObjObjects()->Data[ 103019 ];
+        pFnEmptyChildrenMeshes = (UFunction*) UObject::GObjObjects()->Data[ 103018 ];
 
     ATrPaperDollMainMenu_execEmptyChildrenMeshes_Parms EmptyChildrenMeshes_Parms;
 
@@ -96998,7 +96998,7 @@ void ATrPaperDollMainMenu::SetSpinning ( unsigned long bShouldSpin, unsigned lon
     static UFunction* pFnSetSpinning = NULL;
 
     if ( ! pFnSetSpinning )
-        pFnSetSpinning = (UFunction*) UObject::GObjObjects()->Data[ 103016 ];
+        pFnSetSpinning = (UFunction*) UObject::GObjObjects()->Data[ 103015 ];
 
     ATrPaperDollMainMenu_execSetSpinning_Parms SetSpinning_Parms;
     SetSpinning_Parms.bShouldSpin = bShouldSpin;
@@ -97017,7 +97017,7 @@ void ATrPaperDollMainMenu::DetachAndDestroyMeshAttachments ( class USkeletalMesh
     static UFunction* pFnDetachAndDestroyMeshAttachments = NULL;
 
     if ( ! pFnDetachAndDestroyMeshAttachments )
-        pFnDetachAndDestroyMeshAttachments = (UFunction*) UObject::GObjObjects()->Data[ 103013 ];
+        pFnDetachAndDestroyMeshAttachments = (UFunction*) UObject::GObjObjects()->Data[ 103012 ];
 
     ATrPaperDollMainMenu_execDetachAndDestroyMeshAttachments_Parms DetachAndDestroyMeshAttachments_Parms;
     DetachAndDestroyMeshAttachments_Parms.MeshComponent = MeshComponent;
@@ -97036,7 +97036,7 @@ void ATrPaperDollMainMenu::CreateAndAttachParticleSystems ( class USkeletalMeshC
     static UFunction* pFnCreateAndAttachParticleSystems = NULL;
 
     if ( ! pFnCreateAndAttachParticleSystems )
-        pFnCreateAndAttachParticleSystems = (UFunction*) UObject::GObjObjects()->Data[ 103007 ];
+        pFnCreateAndAttachParticleSystems = (UFunction*) UObject::GObjObjects()->Data[ 103006 ];
 
     ATrPaperDollMainMenu_execCreateAndAttachParticleSystems_Parms CreateAndAttachParticleSystems_Parms;
     CreateAndAttachParticleSystems_Parms.MeshComponent = MeshComponent;
@@ -97056,7 +97056,7 @@ void ATrPaperDollMainMenu::SetMainMeshInfo ( class UTrMainMenuMeshInfo* NewMainM
     static UFunction* pFnSetMainMeshInfo = NULL;
 
     if ( ! pFnSetMainMeshInfo )
-        pFnSetMainMeshInfo = (UFunction*) UObject::GObjObjects()->Data[ 103004 ];
+        pFnSetMainMeshInfo = (UFunction*) UObject::GObjObjects()->Data[ 103003 ];
 
     ATrPaperDollMainMenu_execSetMainMeshInfo_Parms SetMainMeshInfo_Parms;
     SetMainMeshInfo_Parms.NewMainMeshInfo = NewMainMeshInfo;
@@ -97078,7 +97078,7 @@ void ATrPaperDollMainMenu::SetFamilyInfo ( class UClass* NewFamilyInfoClass, cla
     static UFunction* pFnSetFamilyInfo = NULL;
 
     if ( ! pFnSetFamilyInfo )
-        pFnSetFamilyInfo = (UFunction*) UObject::GObjObjects()->Data[ 102999 ];
+        pFnSetFamilyInfo = (UFunction*) UObject::GObjObjects()->Data[ 102998 ];
 
     ATrPaperDollMainMenu_execSetFamilyInfo_Parms SetFamilyInfo_Parms;
     SetFamilyInfo_Parms.NewFamilyInfoClass = NewFamilyInfoClass;
@@ -97099,7 +97099,7 @@ void ATrPaperDollMainMenu::SetWeaponOnlyMesh ( class UClass* WeaponClass )
     static UFunction* pFnSetWeaponOnlyMesh = NULL;
 
     if ( ! pFnSetWeaponOnlyMesh )
-        pFnSetWeaponOnlyMesh = (UFunction*) UObject::GObjObjects()->Data[ 102997 ];
+        pFnSetWeaponOnlyMesh = (UFunction*) UObject::GObjObjects()->Data[ 102996 ];
 
     ATrPaperDollMainMenu_execSetWeaponOnlyMesh_Parms SetWeaponOnlyMesh_Parms;
     SetWeaponOnlyMesh_Parms.WeaponClass = WeaponClass;
@@ -97116,7 +97116,7 @@ void ATrPaperDollMainMenu::TryUpdatingPaperDoll ( )
     static UFunction* pFnTryUpdatingPaperDoll = NULL;
 
     if ( ! pFnTryUpdatingPaperDoll )
-        pFnTryUpdatingPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 102996 ];
+        pFnTryUpdatingPaperDoll = (UFunction*) UObject::GObjObjects()->Data[ 102995 ];
 
     ATrPaperDollMainMenu_execTryUpdatingPaperDoll_Parms TryUpdatingPaperDoll_Parms;
 
@@ -97133,7 +97133,7 @@ void ATrPaperDollMainMenu::OnDeviceContentDataClassLoaded ( class UClass* Device
     static UFunction* pFnOnDeviceContentDataClassLoaded = NULL;
 
     if ( ! pFnOnDeviceContentDataClassLoaded )
-        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102994 ];
+        pFnOnDeviceContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102993 ];
 
     ATrPaperDollMainMenu_execOnDeviceContentDataClassLoaded_Parms OnDeviceContentDataClassLoaded_Parms;
     OnDeviceContentDataClassLoaded_Parms.DeviceContentDataClass = DeviceContentDataClass;
@@ -97151,7 +97151,7 @@ void ATrPaperDollMainMenu::OnCharacterMeshContentDataClassLoaded ( class UClass*
     static UFunction* pFnOnCharacterMeshContentDataClassLoaded = NULL;
 
     if ( ! pFnOnCharacterMeshContentDataClassLoaded )
-        pFnOnCharacterMeshContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102992 ];
+        pFnOnCharacterMeshContentDataClassLoaded = (UFunction*) UObject::GObjObjects()->Data[ 102991 ];
 
     ATrPaperDollMainMenu_execOnCharacterMeshContentDataClassLoaded_Parms OnCharacterMeshContentDataClassLoaded_Parms;
     OnCharacterMeshContentDataClassLoaded_Parms.Skin3PDataClass = Skin3PDataClass;
@@ -97169,7 +97169,7 @@ void ATrPaperDollMainMenu::SetMainMesh ( struct FPaperDollInfo NewInfo )
     static UFunction* pFnSetMainMesh = NULL;
 
     if ( ! pFnSetMainMesh )
-        pFnSetMainMesh = (UFunction*) UObject::GObjObjects()->Data[ 102990 ];
+        pFnSetMainMesh = (UFunction*) UObject::GObjObjects()->Data[ 102989 ];
 
     ATrPaperDollMainMenu_execSetMainMesh_Parms SetMainMesh_Parms;
     memcpy ( &SetMainMesh_Parms.NewInfo, &NewInfo, 0x38 );
@@ -97188,7 +97188,7 @@ struct FPaperDollInfo ATrPaperDollMainMenu::GetDevicePaperDollInfo ( class UClas
     static UFunction* pFnGetDevicePaperDollInfo = NULL;
 
     if ( ! pFnGetDevicePaperDollInfo )
-        pFnGetDevicePaperDollInfo = (UFunction*) UObject::GObjObjects()->Data[ 102987 ];
+        pFnGetDevicePaperDollInfo = (UFunction*) UObject::GObjObjects()->Data[ 102986 ];
 
     ATrPaperDollMainMenu_execGetDevicePaperDollInfo_Parms GetDevicePaperDollInfo_Parms;
     GetDevicePaperDollInfo_Parms.WeaponClass = WeaponClass;
@@ -97208,7 +97208,7 @@ void ATrPaperDollMainMenu::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 102985 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 102984 ];
 
     ATrPaperDollMainMenu_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -97225,7 +97225,7 @@ void ATrPaperDollMainMenu::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102984 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 102983 ];
 
     ATrPaperDollMainMenu_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -97242,7 +97242,7 @@ void UTrMainMenuContentData::PreloadTextures ( float ForceDuration )
     static UFunction* pFnPreloadTextures = NULL;
 
     if ( ! pFnPreloadTextures )
-        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 101095 ];
+        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 101094 ];
 
     UTrMainMenuContentData_execPreloadTextures_Parms PreloadTextures_Parms;
     PreloadTextures_Parms.ForceDuration = ForceDuration;
@@ -97261,7 +97261,7 @@ void UTrMainMenuContentData::SendPaperDollANewMesh ( class ATrPaperDollMainMenu*
     static UFunction* pFnSendPaperDollANewMesh = NULL;
 
     if ( ! pFnSendPaperDollANewMesh )
-        pFnSendPaperDollANewMesh = (UFunction*) UObject::GObjObjects()->Data[ 101091 ];
+        pFnSendPaperDollANewMesh = (UFunction*) UObject::GObjObjects()->Data[ 101090 ];
 
     UTrMainMenuContentData_execSendPaperDollANewMesh_Parms SendPaperDollANewMesh_Parms;
     SendPaperDollANewMesh_Parms.MainMenuPaperDoll = MainMenuPaperDoll;
@@ -97283,7 +97283,7 @@ class USoundNodeWave* UTrExplosiveSpreeMessage::AnnouncementSound ( int MessageI
     static UFunction* pFnAnnouncementSound = NULL;
 
     if ( ! pFnAnnouncementSound )
-        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 88158 ];
+        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 88157 ];
 
     UTrExplosiveSpreeMessage_execAnnouncementSound_Parms AnnouncementSound_Parms;
     AnnouncementSound_Parms.MessageIndex = MessageIndex;
@@ -97309,7 +97309,7 @@ void UTrExplosiveSpreeMessage::ClientReceive ( class APlayerController* P, int S
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 88152 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 88151 ];
 
     UTrExplosiveSpreeMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97336,7 +97336,7 @@ struct FString UTrExplosiveSpreeMessage::GetString ( int Switch, unsigned long b
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 88145 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 88144 ];
 
     UTrExplosiveSpreeMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97364,7 +97364,7 @@ int UTrExplosiveSpreeMessage::GetFontSize ( int Switch, class APlayerReplication
     static UFunction* pFnGetFontSize = NULL;
 
     if ( ! pFnGetFontSize )
-        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 88137 ];
+        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 88136 ];
 
     UTrExplosiveSpreeMessage_execGetFontSize_Parms GetFontSize_Parms;
     GetFontSize_Parms.Switch = Switch;
@@ -97388,7 +97388,7 @@ void ATrVehicle_Shrike::SitDriver ( class AUTPawn* UTP, int SeatIndex )
     static UFunction* pFnSitDriver = NULL;
 
     if ( ! pFnSitDriver )
-        pFnSitDriver = (UFunction*) UObject::GObjObjects()->Data[ 121471 ];
+        pFnSitDriver = (UFunction*) UObject::GObjObjects()->Data[ 121470 ];
 
     ATrVehicle_Shrike_execSitDriver_Parms SitDriver_Parms;
     SitDriver_Parms.UTP = UTP;
@@ -97412,7 +97412,7 @@ struct FString UTrFirstBloodMessage::GetString ( int Switch, unsigned long bPRI1
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 88924 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 88923 ];
 
     UTrFirstBloodMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97435,7 +97435,7 @@ void ATrFlagRabbit::BroadcastReturnedMessage ( )
     static UFunction* pFnBroadcastReturnedMessage = NULL;
 
     if ( ! pFnBroadcastReturnedMessage )
-        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90614 ];
+        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90613 ];
 
     ATrFlagRabbit_execBroadcastReturnedMessage_Parms BroadcastReturnedMessage_Parms;
 
@@ -97452,7 +97452,7 @@ void ATrFlagRabbit::SendHome ( class AController* Returner )
     static UFunction* pFnSendHome = NULL;
 
     if ( ! pFnSendHome )
-        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90612 ];
+        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90611 ];
 
     ATrFlagRabbit_execSendHome_Parms SendHome_Parms;
     SendHome_Parms.Returner = Returner;
@@ -97469,7 +97469,7 @@ void ATrFlagRabbit::ClearHolder ( )
     static UFunction* pFnClearHolder = NULL;
 
     if ( ! pFnClearHolder )
-        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90611 ];
+        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90610 ];
 
     ATrFlagRabbit_execClearHolder_Parms ClearHolder_Parms;
 
@@ -97486,7 +97486,7 @@ void ATrFlagRabbit::SetHolder ( class AController* C )
     static UFunction* pFnSetHolder = NULL;
 
     if ( ! pFnSetHolder )
-        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90608 ];
+        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90607 ];
 
     ATrFlagRabbit_execSetHolder_Parms SetHolder_Parms;
     SetHolder_Parms.C = C;
@@ -97503,7 +97503,7 @@ void ATrFlagTeamRabbit::ClientReturnedHome ( )
     static UFunction* pFnClientReturnedHome = NULL;
 
     if ( ! pFnClientReturnedHome )
-        pFnClientReturnedHome = (UFunction*) UObject::GObjObjects()->Data[ 90638 ];
+        pFnClientReturnedHome = (UFunction*) UObject::GObjObjects()->Data[ 90637 ];
 
     ATrFlagTeamRabbit_execClientReturnedHome_Parms ClientReturnedHome_Parms;
 
@@ -97519,7 +97519,7 @@ void ATrFlagTeamRabbit::BroadcastReturnedMessage ( )
     static UFunction* pFnBroadcastReturnedMessage = NULL;
 
     if ( ! pFnBroadcastReturnedMessage )
-        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90629 ];
+        pFnBroadcastReturnedMessage = (UFunction*) UObject::GObjObjects()->Data[ 90628 ];
 
     ATrFlagTeamRabbit_execBroadcastReturnedMessage_Parms BroadcastReturnedMessage_Parms;
 
@@ -97536,7 +97536,7 @@ void ATrFlagTeamRabbit::SendHome ( class AController* Returner )
     static UFunction* pFnSendHome = NULL;
 
     if ( ! pFnSendHome )
-        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90627 ];
+        pFnSendHome = (UFunction*) UObject::GObjObjects()->Data[ 90626 ];
 
     ATrFlagTeamRabbit_execSendHome_Parms SendHome_Parms;
     SendHome_Parms.Returner = Returner;
@@ -97553,7 +97553,7 @@ void ATrFlagTeamRabbit::ClearHolder ( )
     static UFunction* pFnClearHolder = NULL;
 
     if ( ! pFnClearHolder )
-        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90626 ];
+        pFnClearHolder = (UFunction*) UObject::GObjObjects()->Data[ 90625 ];
 
     ATrFlagTeamRabbit_execClearHolder_Parms ClearHolder_Parms;
 
@@ -97570,7 +97570,7 @@ void ATrFlagTeamRabbit::SetHolder ( class AController* C )
     static UFunction* pFnSetHolder = NULL;
 
     if ( ! pFnSetHolder )
-        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90624 ];
+        pFnSetHolder = (UFunction*) UObject::GObjObjects()->Data[ 90623 ];
 
     ATrFlagTeamRabbit_execSetHolder_Parms SetHolder_Parms;
     SetHolder_Parms.C = C;
@@ -97592,7 +97592,7 @@ void UTrMiscellaneousMessage::ClientReceive ( class APlayerController* P, int Sw
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 102674 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 102673 ];
 
     UTrMiscellaneousMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97619,7 +97619,7 @@ struct FString UTrMiscellaneousMessage::GetString ( int Switch, unsigned long bP
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 102667 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 102666 ];
 
     UTrMiscellaneousMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97646,7 +97646,7 @@ class USoundNodeWave* UTrKillingSpreeMessage::AnnouncementSound ( int MessageInd
     static UFunction* pFnAnnouncementSound = NULL;
 
     if ( ! pFnAnnouncementSound )
-        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 100895 ];
+        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 100894 ];
 
     UTrKillingSpreeMessage_execAnnouncementSound_Parms AnnouncementSound_Parms;
     AnnouncementSound_Parms.MessageIndex = MessageIndex;
@@ -97672,7 +97672,7 @@ void UTrKillingSpreeMessage::ClientReceive ( class APlayerController* P, int Swi
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 100889 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 100888 ];
 
     UTrKillingSpreeMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97699,7 +97699,7 @@ struct FString UTrKillingSpreeMessage::GetString ( int Switch, unsigned long bPR
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 100882 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 100881 ];
 
     UTrKillingSpreeMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97727,7 +97727,7 @@ int UTrKillingSpreeMessage::GetFontSize ( int Switch, class APlayerReplicationIn
     static UFunction* pFnGetFontSize = NULL;
 
     if ( ! pFnGetFontSize )
-        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 100874 ];
+        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 100873 ];
 
     UTrKillingSpreeMessage_execGetFontSize_Parms GetFontSize_Parms;
     GetFontSize_Parms.Switch = Switch;
@@ -97751,7 +97751,7 @@ bool ATrGame_TRTDM::CheckScore ( class APlayerReplicationInfo* Scorer )
     static UFunction* pFnCheckScore = NULL;
 
     if ( ! pFnCheckScore )
-        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93037 ];
+        pFnCheckScore = (UFunction*) UObject::GObjObjects()->Data[ 93036 ];
 
     ATrGame_TRTDM_execCheckScore_Parms CheckScore_Parms;
     CheckScore_Parms.Scorer = Scorer;
@@ -97772,7 +97772,7 @@ void ATrGame_TRTDM::ScoreKill ( class AController* Killer, class AController* Ot
     static UFunction* pFnScoreKill = NULL;
 
     if ( ! pFnScoreKill )
-        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 93033 ];
+        pFnScoreKill = (UFunction*) UObject::GObjObjects()->Data[ 93032 ];
 
     ATrGame_TRTDM_execScoreKill_Parms ScoreKill_Parms;
     ScoreKill_Parms.Killer = Killer;
@@ -97795,7 +97795,7 @@ void UTrVictoryMessage::ClientReceive ( class APlayerController* P, int Switch, 
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 122105 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 122104 ];
 
     UTrVictoryMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97822,7 +97822,7 @@ struct FString UTrVictoryMessage::GetString ( int Switch, unsigned long bPRI1HUD
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 122097 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 122096 ];
 
     UTrVictoryMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97850,7 +97850,7 @@ void UTrGameStartMessage::ClientReceive ( class APlayerController* P, int Switch
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 97687 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 97686 ];
 
     UTrGameStartMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97877,7 +97877,7 @@ struct FString UTrGameStartMessage::GetString ( int Switch, unsigned long bPRI1H
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 97680 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 97679 ];
 
     UTrGameStartMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97905,7 +97905,7 @@ void UTrGameNextRoundMessage::ClientReceive ( class APlayerController* P, int Sw
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 93174 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 93173 ];
 
     UTrGameNextRoundMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -97932,7 +97932,7 @@ struct FString UTrGameNextRoundMessage::GetString ( int Switch, unsigned long bP
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 93166 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 93165 ];
 
     UTrGameNextRoundMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -97955,7 +97955,7 @@ void ATrHUDTeam::Timer ( )
     static UFunction* pFnTimer = NULL;
 
     if ( ! pFnTimer )
-        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 98937 ];
+        pFnTimer = (UFunction*) UObject::GObjObjects()->Data[ 98936 ];
 
     ATrHUDTeam_execTimer_Parms Timer_Parms;
 
@@ -97973,7 +97973,7 @@ void ATrGame_TrSiege::EndGame ( class APlayerReplicationInfo* Winner, struct FSt
     static UFunction* pFnEndGame = NULL;
 
     if ( ! pFnEndGame )
-        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92944 ];
+        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 92943 ];
 
     ATrGame_TrSiege_execEndGame_Parms EndGame_Parms;
     EndGame_Parms.Winner = Winner;
@@ -97991,7 +97991,7 @@ void ATrGame_TrSiege::SwapTeams ( )
     static UFunction* pFnSwapTeams = NULL;
 
     if ( ! pFnSwapTeams )
-        pFnSwapTeams = (UFunction*) UObject::GObjObjects()->Data[ 92938 ];
+        pFnSwapTeams = (UFunction*) UObject::GObjObjects()->Data[ 92937 ];
 
     ATrGame_TrSiege_execSwapTeams_Parms SwapTeams_Parms;
 
@@ -98008,7 +98008,7 @@ void ATrGame_TrSiege::SetPhase ( int PhaseNumber )
     static UFunction* pFnSetPhase = NULL;
 
     if ( ! pFnSetPhase )
-        pFnSetPhase = (UFunction*) UObject::GObjObjects()->Data[ 92935 ];
+        pFnSetPhase = (UFunction*) UObject::GObjObjects()->Data[ 92934 ];
 
     ATrGame_TrSiege_execSetPhase_Parms SetPhase_Parms;
     SetPhase_Parms.PhaseNumber = PhaseNumber;
@@ -98025,7 +98025,7 @@ void ATrGame_TrSiege::ResetGame ( )
     static UFunction* pFnResetGame = NULL;
 
     if ( ! pFnResetGame )
-        pFnResetGame = (UFunction*) UObject::GObjObjects()->Data[ 92933 ];
+        pFnResetGame = (UFunction*) UObject::GObjObjects()->Data[ 92932 ];
 
     ATrGame_TrSiege_execResetGame_Parms ResetGame_Parms;
 
@@ -98042,7 +98042,7 @@ void ATrGame_TrSiege::RoundOneOver ( unsigned long bDestroyedCore )
     static UFunction* pFnRoundOneOver = NULL;
 
     if ( ! pFnRoundOneOver )
-        pFnRoundOneOver = (UFunction*) UObject::GObjObjects()->Data[ 92928 ];
+        pFnRoundOneOver = (UFunction*) UObject::GObjObjects()->Data[ 92927 ];
 
     ATrGame_TrSiege_execRoundOneOver_Parms RoundOneOver_Parms;
     RoundOneOver_Parms.bDestroyedCore = bDestroyedCore;
@@ -98060,7 +98060,7 @@ bool ATrGame_TrSiege::IsInRoundOne ( )
     static UFunction* pFnIsInRoundOne = NULL;
 
     if ( ! pFnIsInRoundOne )
-        pFnIsInRoundOne = (UFunction*) UObject::GObjObjects()->Data[ 92926 ];
+        pFnIsInRoundOne = (UFunction*) UObject::GObjObjects()->Data[ 92925 ];
 
     ATrGame_TrSiege_execIsInRoundOne_Parms IsInRoundOne_Parms;
 
@@ -98078,7 +98078,7 @@ void ATrGame_TrSiege::OnCoreBlownUp ( )
     static UFunction* pFnOnCoreBlownUp = NULL;
 
     if ( ! pFnOnCoreBlownUp )
-        pFnOnCoreBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92925 ];
+        pFnOnCoreBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92924 ];
 
     ATrGame_TrSiege_execOnCoreBlownUp_Parms OnCoreBlownUp_Parms;
 
@@ -98095,7 +98095,7 @@ void ATrGame_TrSiege::OnGeneratorBlownUp ( class ATrPowerGenerator_Siege* G )
     static UFunction* pFnOnGeneratorBlownUp = NULL;
 
     if ( ! pFnOnGeneratorBlownUp )
-        pFnOnGeneratorBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92923 ];
+        pFnOnGeneratorBlownUp = (UFunction*) UObject::GObjObjects()->Data[ 92922 ];
 
     ATrGame_TrSiege_execOnGeneratorBlownUp_Parms OnGeneratorBlownUp_Parms;
     OnGeneratorBlownUp_Parms.G = G;
@@ -98112,7 +98112,7 @@ void ATrGame_TrSiege::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92921 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92920 ];
 
     ATrGame_TrSiege_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -98129,7 +98129,7 @@ int ATrGame_TrStorm::DetermineWinningTeam ( )
     static UFunction* pFnDetermineWinningTeam = NULL;
 
     if ( ! pFnDetermineWinningTeam )
-        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 93028 ];
+        pFnDetermineWinningTeam = (UFunction*) UObject::GObjObjects()->Data[ 93027 ];
 
     ATrGame_TrStorm_execDetermineWinningTeam_Parms DetermineWinningTeam_Parms;
 
@@ -98149,7 +98149,7 @@ void ATrGame_TrStorm::EndGame ( class APlayerReplicationInfo* Winner, struct FSt
     static UFunction* pFnEndGame = NULL;
 
     if ( ! pFnEndGame )
-        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93025 ];
+        pFnEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93024 ];
 
     ATrGame_TrStorm_execEndGame_Parms EndGame_Parms;
     EndGame_Parms.Winner = Winner;
@@ -98170,7 +98170,7 @@ bool ATrGame_TrStorm::CheckEndGame ( class APlayerReplicationInfo* Winner, struc
     static UFunction* pFnCheckEndGame = NULL;
 
     if ( ! pFnCheckEndGame )
-        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93019 ];
+        pFnCheckEndGame = (UFunction*) UObject::GObjObjects()->Data[ 93018 ];
 
     ATrGame_TrStorm_execCheckEndGame_Parms CheckEndGame_Parms;
     CheckEndGame_Parms.Winner = Winner;
@@ -98192,7 +98192,7 @@ void ATrGame_TrStorm::TakeDamageFromCore ( unsigned char TeamNum, int DamageAmou
     static UFunction* pFnTakeDamageFromCore = NULL;
 
     if ( ! pFnTakeDamageFromCore )
-        pFnTakeDamageFromCore = (UFunction*) UObject::GObjObjects()->Data[ 92999 ];
+        pFnTakeDamageFromCore = (UFunction*) UObject::GObjObjects()->Data[ 92998 ];
 
     ATrGame_TrStorm_execTakeDamageFromCore_Parms TakeDamageFromCore_Parms;
     TakeDamageFromCore_Parms.TeamNum = TeamNum;
@@ -98211,7 +98211,7 @@ void ATrGame_TrStorm::CarrierDestroyed ( unsigned char TeamNum )
     static UFunction* pFnCarrierDestroyed = NULL;
 
     if ( ! pFnCarrierDestroyed )
-        pFnCarrierDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 92997 ];
+        pFnCarrierDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 92996 ];
 
     ATrGame_TrStorm_execCarrierDestroyed_Parms CarrierDestroyed_Parms;
     CarrierDestroyed_Parms.TeamNum = TeamNum;
@@ -98230,7 +98230,7 @@ void ATrGame_TrStorm::TakeHealthDamage ( unsigned char TeamNum, int DamageAmount
     static UFunction* pFnTakeHealthDamage = NULL;
 
     if ( ! pFnTakeHealthDamage )
-        pFnTakeHealthDamage = (UFunction*) UObject::GObjObjects()->Data[ 92993 ];
+        pFnTakeHealthDamage = (UFunction*) UObject::GObjObjects()->Data[ 92992 ];
 
     ATrGame_TrStorm_execTakeHealthDamage_Parms TakeHealthDamage_Parms;
     TakeHealthDamage_Parms.TeamNum = TeamNum;
@@ -98249,7 +98249,7 @@ void ATrGame_TrStorm::ExplodeMissile ( unsigned char TeamNum )
     static UFunction* pFnExplodeMissile = NULL;
 
     if ( ! pFnExplodeMissile )
-        pFnExplodeMissile = (UFunction*) UObject::GObjObjects()->Data[ 92984 ];
+        pFnExplodeMissile = (UFunction*) UObject::GObjObjects()->Data[ 92983 ];
 
     ATrGame_TrStorm_execExplodeMissile_Parms ExplodeMissile_Parms;
     ExplodeMissile_Parms.TeamNum = TeamNum;
@@ -98267,7 +98267,7 @@ void ATrGame_TrStorm::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 92981 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 92980 ];
 
     ATrGame_TrStorm_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -98287,7 +98287,7 @@ void ATrGame_TrStorm::MissileFired ( class ATrStormControlPoint* FiredFrom, floa
     static UFunction* pFnMissileFired = NULL;
 
     if ( ! pFnMissileFired )
-        pFnMissileFired = (UFunction*) UObject::GObjObjects()->Data[ 92976 ];
+        pFnMissileFired = (UFunction*) UObject::GObjObjects()->Data[ 92975 ];
 
     ATrGame_TrStorm_execMissileFired_Parms MissileFired_Parms;
     MissileFired_Parms.FiredFrom = FiredFrom;
@@ -98306,7 +98306,7 @@ void ATrGame_TrStorm::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92970 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 92969 ];
 
     ATrGame_TrStorm_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -98326,7 +98326,7 @@ void ATrStormCore::eventPostRenderFor ( class APlayerController* PC, class UCanv
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119430 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119429 ];
 
     ATrStormCore_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -98346,7 +98346,7 @@ void ATrStormCore::OnCoreDestroyed ( )
     static UFunction* pFnOnCoreDestroyed = NULL;
 
     if ( ! pFnOnCoreDestroyed )
-        pFnOnCoreDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119429 ];
+        pFnOnCoreDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119428 ];
 
     ATrStormCore_execOnCoreDestroyed_Parms OnCoreDestroyed_Parms;
 
@@ -98363,7 +98363,7 @@ float ATrStormCore::GetShieldAmount ( )
     static UFunction* pFnGetShieldAmount = NULL;
 
     if ( ! pFnGetShieldAmount )
-        pFnGetShieldAmount = (UFunction*) UObject::GObjObjects()->Data[ 119426 ];
+        pFnGetShieldAmount = (UFunction*) UObject::GObjObjects()->Data[ 119425 ];
 
     ATrStormCore_execGetShieldAmount_Parms GetShieldAmount_Parms;
 
@@ -98382,7 +98382,7 @@ float ATrStormCore::GetHealthAmount ( )
     static UFunction* pFnGetHealthAmount = NULL;
 
     if ( ! pFnGetHealthAmount )
-        pFnGetHealthAmount = (UFunction*) UObject::GObjObjects()->Data[ 119423 ];
+        pFnGetHealthAmount = (UFunction*) UObject::GObjObjects()->Data[ 119422 ];
 
     ATrStormCore_execGetHealthAmount_Parms GetHealthAmount_Parms;
 
@@ -98407,7 +98407,7 @@ void ATrStormCore::eventTakeDamage ( int DamageAmount, class AController* EventI
     static UFunction* pFnTakeDamage = NULL;
 
     if ( ! pFnTakeDamage )
-        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 119411 ];
+        pFnTakeDamage = (UFunction*) UObject::GObjObjects()->Data[ 119410 ];
 
     ATrStormCore_eventTakeDamage_Parms TakeDamage_Parms;
     TakeDamage_Parms.DamageAmount = DamageAmount;
@@ -98434,7 +98434,7 @@ void ATrStormCarrierShield::eventTouch ( class AActor* Other, class UPrimitiveCo
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119316 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119315 ];
 
     ATrStormCarrierShield_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -98454,7 +98454,7 @@ void ATrStormCarrierShield::OnShieldsDestroyed ( )
     static UFunction* pFnOnShieldsDestroyed = NULL;
 
     if ( ! pFnOnShieldsDestroyed )
-        pFnOnShieldsDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119315 ];
+        pFnOnShieldsDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 119314 ];
 
     ATrStormCarrierShield_execOnShieldsDestroyed_Parms OnShieldsDestroyed_Parms;
 
@@ -98472,7 +98472,7 @@ struct FString ATrStormControlPoint::GetScreenName ( class APlayerController* PC
     static UFunction* pFnGetScreenName = NULL;
 
     if ( ! pFnGetScreenName )
-        pFnGetScreenName = (UFunction*) UObject::GObjObjects()->Data[ 119366 ];
+        pFnGetScreenName = (UFunction*) UObject::GObjObjects()->Data[ 119365 ];
 
     ATrStormControlPoint_execGetScreenName_Parms GetScreenName_Parms;
     GetScreenName_Parms.PC = PC;
@@ -98495,7 +98495,7 @@ void ATrStormControlPoint::eventPostRenderFor ( class APlayerController* PC, cla
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119355 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119354 ];
 
     ATrStormControlPoint_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -98516,7 +98516,7 @@ unsigned char ATrStormControlPoint::GetControlPointState ( )
     static UFunction* pFnGetControlPointState = NULL;
 
     if ( ! pFnGetControlPointState )
-        pFnGetControlPointState = (UFunction*) UObject::GObjObjects()->Data[ 119340 ];
+        pFnGetControlPointState = (UFunction*) UObject::GObjObjects()->Data[ 119339 ];
 
     ATrStormControlPoint_execGetControlPointState_Parms GetControlPointState_Parms;
 
@@ -98535,7 +98535,7 @@ void ATrStormControlPoint::SetControlPointState ( unsigned char NewControlPointS
     static UFunction* pFnSetControlPointState = NULL;
 
     if ( ! pFnSetControlPointState )
-        pFnSetControlPointState = (UFunction*) UObject::GObjObjects()->Data[ 119350 ];
+        pFnSetControlPointState = (UFunction*) UObject::GObjObjects()->Data[ 119349 ];
 
     ATrStormControlPoint_execSetControlPointState_Parms SetControlPointState_Parms;
     SetControlPointState_Parms.NewControlPointState = NewControlPointState;
@@ -98553,7 +98553,7 @@ void ATrStormControlPoint::BeginTransition ( unsigned char TeamNum )
     static UFunction* pFnBeginTransition = NULL;
 
     if ( ! pFnBeginTransition )
-        pFnBeginTransition = (UFunction*) UObject::GObjObjects()->Data[ 119347 ];
+        pFnBeginTransition = (UFunction*) UObject::GObjObjects()->Data[ 119346 ];
 
     ATrStormControlPoint_execBeginTransition_Parms BeginTransition_Parms;
     BeginTransition_Parms.TeamNum = TeamNum;
@@ -98571,7 +98571,7 @@ void ATrStormControlPoint::FireMissile ( unsigned char TeamNum )
     static UFunction* pFnFireMissile = NULL;
 
     if ( ! pFnFireMissile )
-        pFnFireMissile = (UFunction*) UObject::GObjObjects()->Data[ 119344 ];
+        pFnFireMissile = (UFunction*) UObject::GObjObjects()->Data[ 119343 ];
 
     ATrStormControlPoint_execFireMissile_Parms FireMissile_Parms;
     FireMissile_Parms.TeamNum = TeamNum;
@@ -98589,7 +98589,7 @@ void ATrStormControlPoint::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119342 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119341 ];
 
     ATrStormControlPoint_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -98607,7 +98607,7 @@ void ATrStormControlPoint::OnPawnTouched ( class ATrPawn* TRP )
     static UFunction* pFnOnPawnTouched = NULL;
 
     if ( ! pFnOnPawnTouched )
-        pFnOnPawnTouched = (UFunction*) UObject::GObjObjects()->Data[ 119337 ];
+        pFnOnPawnTouched = (UFunction*) UObject::GObjObjects()->Data[ 119336 ];
 
     ATrStormControlPoint_execOnPawnTouched_Parms OnPawnTouched_Parms;
     OnPawnTouched_Parms.TRP = TRP;
@@ -98630,7 +98630,7 @@ struct FString UTrStormMessage::GetString ( int Switch, unsigned long bPRI1HUD, 
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119492 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119491 ];
 
     UTrStormMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -98658,7 +98658,7 @@ void UTrTeamRabbitMessage::ClientReceive ( class APlayerController* P, int Switc
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119718 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119717 ];
 
     UTrTeamRabbitMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -98685,7 +98685,7 @@ struct FString UTrTeamRabbitMessage::GetString ( int Switch, unsigned long bPRI1
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119711 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119710 ];
 
     UTrTeamRabbitMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -98713,7 +98713,7 @@ void UTrTimerMessage::ClientReceive ( class APlayerController* P, int Switch, cl
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119817 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119816 ];
 
     UTrTimerMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -98740,7 +98740,7 @@ struct FString UTrTimerMessage::GetString ( int Switch, unsigned long bPRI1HUD, 
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119810 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119809 ];
 
     UTrTimerMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -98768,7 +98768,7 @@ void UTrGeneratorMessage::ClientReceive ( class APlayerController* P, int Switch
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 97717 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 97716 ];
 
     UTrGeneratorMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -98795,7 +98795,7 @@ struct FString UTrGeneratorMessage::GetString ( int Switch, unsigned long bPRI1H
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 97710 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 97709 ];
 
     UTrGeneratorMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -98818,7 +98818,7 @@ void ATrHelpTextManager_Training::UpdateHUD ( )
     static UFunction* pFnUpdateHUD = NULL;
 
     if ( ! pFnUpdateHUD )
-        pFnUpdateHUD = (UFunction*) UObject::GObjObjects()->Data[ 97750 ];
+        pFnUpdateHUD = (UFunction*) UObject::GObjObjects()->Data[ 97749 ];
 
     ATrHelpTextManager_Training_execUpdateHUD_Parms UpdateHUD_Parms;
 
@@ -98835,7 +98835,7 @@ void ATrHelpTextManager_Training::RequestHelpText_Training ( unsigned char Reque
     static UFunction* pFnRequestHelpText_Training = NULL;
 
     if ( ! pFnRequestHelpText_Training )
-        pFnRequestHelpText_Training = (UFunction*) UObject::GObjObjects()->Data[ 97747 ];
+        pFnRequestHelpText_Training = (UFunction*) UObject::GObjObjects()->Data[ 97746 ];
 
     ATrHelpTextManager_Training_execRequestHelpText_Training_Parms RequestHelpText_Training_Parms;
     RequestHelpText_Training_Parms.RequestedType = RequestedType;
@@ -98855,7 +98855,7 @@ void ATrHelpTextManager_Training::RemoveHelpText ( unsigned char TypeToRemove, f
     static UFunction* pFnRemoveHelpText = NULL;
 
     if ( ! pFnRemoveHelpText )
-        pFnRemoveHelpText = (UFunction*) UObject::GObjObjects()->Data[ 97743 ];
+        pFnRemoveHelpText = (UFunction*) UObject::GObjObjects()->Data[ 97742 ];
 
     ATrHelpTextManager_Training_execRemoveHelpText_Parms RemoveHelpText_Parms;
     RemoveHelpText_Parms.TypeToRemove = TypeToRemove;
@@ -98876,7 +98876,7 @@ bool ATrHelpTextManager_Training::RequestHelpText ( unsigned char RequestedType 
     static UFunction* pFnRequestHelpText = NULL;
 
     if ( ! pFnRequestHelpText )
-        pFnRequestHelpText = (UFunction*) UObject::GObjObjects()->Data[ 97740 ];
+        pFnRequestHelpText = (UFunction*) UObject::GObjObjects()->Data[ 97739 ];
 
     ATrHelpTextManager_Training_execRequestHelpText_Parms RequestHelpText_Parms;
     RequestHelpText_Parms.RequestedType = RequestedType;
@@ -98896,7 +98896,7 @@ bool ATrHelpTextManager_Training::CheckDestroy ( )
     static UFunction* pFnCheckDestroy = NULL;
 
     if ( ! pFnCheckDestroy )
-        pFnCheckDestroy = (UFunction*) UObject::GObjObjects()->Data[ 97738 ];
+        pFnCheckDestroy = (UFunction*) UObject::GObjObjects()->Data[ 97737 ];
 
     ATrHelpTextManager_Training_execCheckDestroy_Parms CheckDestroy_Parms;
 
@@ -98915,7 +98915,7 @@ void ATrHelpTextManager_Training::UpdateTypesToRemoveOnTimers ( float DeltaTime 
     static UFunction* pFnUpdateTypesToRemoveOnTimers = NULL;
 
     if ( ! pFnUpdateTypesToRemoveOnTimers )
-        pFnUpdateTypesToRemoveOnTimers = (UFunction*) UObject::GObjObjects()->Data[ 97736 ];
+        pFnUpdateTypesToRemoveOnTimers = (UFunction*) UObject::GObjObjects()->Data[ 97735 ];
 
     ATrHelpTextManager_Training_execUpdateTypesToRemoveOnTimers_Parms UpdateTypesToRemoveOnTimers_Parms;
     UpdateTypesToRemoveOnTimers_Parms.DeltaTime = DeltaTime;
@@ -98932,7 +98932,7 @@ void ATrHelpTextManager_Training::InitHelpTextManager ( )
     static UFunction* pFnInitHelpTextManager = NULL;
 
     if ( ! pFnInitHelpTextManager )
-        pFnInitHelpTextManager = (UFunction*) UObject::GObjObjects()->Data[ 97735 ];
+        pFnInitHelpTextManager = (UFunction*) UObject::GObjObjects()->Data[ 97734 ];
 
     ATrHelpTextManager_Training_execInitHelpTextManager_Parms InitHelpTextManager_Parms;
 
@@ -98948,7 +98948,7 @@ void UTrTeamRabbitStats::ForceUpdate ( )
     static UFunction* pFnForceUpdate = NULL;
 
     if ( ! pFnForceUpdate )
-        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119754 ];
+        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 119753 ];
 
     UTrTeamRabbitStats_execForceUpdate_Parms ForceUpdate_Parms;
 
@@ -98966,7 +98966,7 @@ struct FString UTrTeamRabbitStats::FormatTime ( int Seconds )
     static UFunction* pFnFormatTime = NULL;
 
     if ( ! pFnFormatTime )
-        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 119748 ];
+        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 119747 ];
 
     UTrTeamRabbitStats_execFormatTime_Parms FormatTime_Parms;
     FormatTime_Parms.Seconds = Seconds;
@@ -98986,7 +98986,7 @@ void UTrTeamRabbitStats::UpdateTime ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateTime = NULL;
 
     if ( ! pFnUpdateTime )
-        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 119746 ];
+        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 119745 ];
 
     UTrTeamRabbitStats_execUpdateTime_Parms UpdateTime_Parms;
     UpdateTime_Parms.GRI = GRI;
@@ -99004,7 +99004,7 @@ void UTrTeamRabbitStats::UpdateTeamScore ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateTeamScore = NULL;
 
     if ( ! pFnUpdateTeamScore )
-        pFnUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 119743 ];
+        pFnUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 119742 ];
 
     UTrTeamRabbitStats_execUpdateTeamScore_Parms UpdateTeamScore_Parms;
     UpdateTeamScore_Parms.GRI = GRI;
@@ -99022,7 +99022,7 @@ void UTrTeamRabbitStats::UpdateFlagStatus ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateFlagStatus = NULL;
 
     if ( ! pFnUpdateFlagStatus )
-        pFnUpdateFlagStatus = (UFunction*) UObject::GObjObjects()->Data[ 119741 ];
+        pFnUpdateFlagStatus = (UFunction*) UObject::GObjObjects()->Data[ 119740 ];
 
     UTrTeamRabbitStats_execUpdateFlagStatus_Parms UpdateFlagStatus_Parms;
     UpdateFlagStatus_Parms.GRI = GRI;
@@ -99039,7 +99039,7 @@ void UTrTeamRabbitStats::UpdateTeam ( )
     static UFunction* pFnUpdateTeam = NULL;
 
     if ( ! pFnUpdateTeam )
-        pFnUpdateTeam = (UFunction*) UObject::GObjObjects()->Data[ 119740 ];
+        pFnUpdateTeam = (UFunction*) UObject::GObjObjects()->Data[ 119739 ];
 
     UTrTeamRabbitStats_execUpdateTeam_Parms UpdateTeam_Parms;
 
@@ -99055,7 +99055,7 @@ void UTrTeamRabbitStats::Tick ( )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119738 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119737 ];
 
     UTrTeamRabbitStats_execTick_Parms Tick_Parms;
 
@@ -99071,7 +99071,7 @@ void UTrTeamRabbitStats::Hide ( )
     static UFunction* pFnHide = NULL;
 
     if ( ! pFnHide )
-        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 119737 ];
+        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 119736 ];
 
     UTrTeamRabbitStats_execHide_Parms Hide_Parms;
 
@@ -99087,7 +99087,7 @@ void UTrTeamRabbitStats::Show ( )
     static UFunction* pFnShow = NULL;
 
     if ( ! pFnShow )
-        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 119736 ];
+        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 119735 ];
 
     UTrTeamRabbitStats_execShow_Parms Show_Parms;
 
@@ -99105,7 +99105,7 @@ void UTrTeamRabbitStats::Initialize ( class ATrPlayerController* PC, class UGfxT
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119733 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 119732 ];
 
     UTrTeamRabbitStats_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.PC = PC;
@@ -99123,7 +99123,7 @@ void UTrHUDTeamCTFStats::ForceUpdate ( )
     static UFunction* pFnForceUpdate = NULL;
 
     if ( ! pFnForceUpdate )
-        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 98982 ];
+        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 98981 ];
 
     UTrHUDTeamCTFStats_execForceUpdate_Parms ForceUpdate_Parms;
 
@@ -99141,7 +99141,7 @@ struct FString UTrHUDTeamCTFStats::FormatTime ( int Seconds )
     static UFunction* pFnFormatTime = NULL;
 
     if ( ! pFnFormatTime )
-        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 98976 ];
+        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 98975 ];
 
     UTrHUDTeamCTFStats_execFormatTime_Parms FormatTime_Parms;
     FormatTime_Parms.Seconds = Seconds;
@@ -99161,7 +99161,7 @@ void UTrHUDTeamCTFStats::UpdateTime ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateTime = NULL;
 
     if ( ! pFnUpdateTime )
-        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98974 ];
+        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 98973 ];
 
     UTrHUDTeamCTFStats_execUpdateTime_Parms UpdateTime_Parms;
     UpdateTime_Parms.GRI = GRI;
@@ -99179,7 +99179,7 @@ void UTrHUDTeamCTFStats::UpdateTeamScore ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateTeamScore = NULL;
 
     if ( ! pFnUpdateTeamScore )
-        pFnUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 98970 ];
+        pFnUpdateTeamScore = (UFunction*) UObject::GObjObjects()->Data[ 98969 ];
 
     UTrHUDTeamCTFStats_execUpdateTeamScore_Parms UpdateTeamScore_Parms;
     UpdateTeamScore_Parms.GRI = GRI;
@@ -99197,7 +99197,7 @@ void UTrHUDTeamCTFStats::UpdateGeneratorStatus ( class ATrGameReplicationInfo* G
     static UFunction* pFnUpdateGeneratorStatus = NULL;
 
     if ( ! pFnUpdateGeneratorStatus )
-        pFnUpdateGeneratorStatus = (UFunction*) UObject::GObjObjects()->Data[ 98966 ];
+        pFnUpdateGeneratorStatus = (UFunction*) UObject::GObjObjects()->Data[ 98965 ];
 
     UTrHUDTeamCTFStats_execUpdateGeneratorStatus_Parms UpdateGeneratorStatus_Parms;
     UpdateGeneratorStatus_Parms.GRI = GRI;
@@ -99215,7 +99215,7 @@ void UTrHUDTeamCTFStats::UpdateFlagStatus ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateFlagStatus = NULL;
 
     if ( ! pFnUpdateFlagStatus )
-        pFnUpdateFlagStatus = (UFunction*) UObject::GObjObjects()->Data[ 98962 ];
+        pFnUpdateFlagStatus = (UFunction*) UObject::GObjObjects()->Data[ 98961 ];
 
     UTrHUDTeamCTFStats_execUpdateFlagStatus_Parms UpdateFlagStatus_Parms;
     UpdateFlagStatus_Parms.GRI = GRI;
@@ -99234,7 +99234,7 @@ int UTrHUDTeamCTFStats::GetTeamIndex ( int I )
     static UFunction* pFnGetTeamIndex = NULL;
 
     if ( ! pFnGetTeamIndex )
-        pFnGetTeamIndex = (UFunction*) UObject::GObjObjects()->Data[ 98959 ];
+        pFnGetTeamIndex = (UFunction*) UObject::GObjObjects()->Data[ 98958 ];
 
     UTrHUDTeamCTFStats_execGetTeamIndex_Parms GetTeamIndex_Parms;
     GetTeamIndex_Parms.I = I;
@@ -99253,7 +99253,7 @@ void UTrHUDTeamCTFStats::UpdateTeam ( )
     static UFunction* pFnUpdateTeam = NULL;
 
     if ( ! pFnUpdateTeam )
-        pFnUpdateTeam = (UFunction*) UObject::GObjObjects()->Data[ 98958 ];
+        pFnUpdateTeam = (UFunction*) UObject::GObjObjects()->Data[ 98957 ];
 
     UTrHUDTeamCTFStats_execUpdateTeam_Parms UpdateTeam_Parms;
 
@@ -99269,7 +99269,7 @@ void UTrHUDTeamCTFStats::Tick ( )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 98956 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 98955 ];
 
     UTrHUDTeamCTFStats_execTick_Parms Tick_Parms;
 
@@ -99285,7 +99285,7 @@ void UTrHUDTeamCTFStats::Hide ( )
     static UFunction* pFnHide = NULL;
 
     if ( ! pFnHide )
-        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 98955 ];
+        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 98954 ];
 
     UTrHUDTeamCTFStats_execHide_Parms Hide_Parms;
 
@@ -99301,7 +99301,7 @@ void UTrHUDTeamCTFStats::Show ( )
     static UFunction* pFnShow = NULL;
 
     if ( ! pFnShow )
-        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 98954 ];
+        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 98953 ];
 
     UTrHUDTeamCTFStats_execShow_Parms Show_Parms;
 
@@ -99319,7 +99319,7 @@ void UTrHUDTeamCTFStats::Initialize ( class ATrPlayerController* PC, class UGfxT
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 98951 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 98950 ];
 
     UTrHUDTeamCTFStats_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.PC = PC;
@@ -99337,7 +99337,7 @@ void UTrRabbitLeaderboard::ForceUpdate ( )
     static UFunction* pFnForceUpdate = NULL;
 
     if ( ! pFnForceUpdate )
-        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 116297 ];
+        pFnForceUpdate = (UFunction*) UObject::GObjObjects()->Data[ 116296 ];
 
     UTrRabbitLeaderboard_execForceUpdate_Parms ForceUpdate_Parms;
 
@@ -99355,7 +99355,7 @@ struct FString UTrRabbitLeaderboard::FormatTime ( int Seconds )
     static UFunction* pFnFormatTime = NULL;
 
     if ( ! pFnFormatTime )
-        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 116291 ];
+        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 116290 ];
 
     UTrRabbitLeaderboard_execFormatTime_Parms FormatTime_Parms;
     FormatTime_Parms.Seconds = Seconds;
@@ -99375,7 +99375,7 @@ void UTrRabbitLeaderboard::UpdateTime ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateTime = NULL;
 
     if ( ! pFnUpdateTime )
-        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 116289 ];
+        pFnUpdateTime = (UFunction*) UObject::GObjObjects()->Data[ 116288 ];
 
     UTrRabbitLeaderboard_execUpdateTime_Parms UpdateTime_Parms;
     UpdateTime_Parms.GRI = GRI;
@@ -99397,7 +99397,7 @@ bool UTrRabbitLeaderboard::UpdateLeaderboard ( int Index, struct FName PRIName, 
     static UFunction* pFnUpdateLeaderboard = NULL;
 
     if ( ! pFnUpdateLeaderboard )
-        pFnUpdateLeaderboard = (UFunction*) UObject::GObjObjects()->Data[ 116282 ];
+        pFnUpdateLeaderboard = (UFunction*) UObject::GObjObjects()->Data[ 116281 ];
 
     UTrRabbitLeaderboard_execUpdateLeaderboard_Parms UpdateLeaderboard_Parms;
     UpdateLeaderboard_Parms.Index = Index;
@@ -99420,7 +99420,7 @@ void UTrRabbitLeaderboard::UpdatePlayers ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdatePlayers = NULL;
 
     if ( ! pFnUpdatePlayers )
-        pFnUpdatePlayers = (UFunction*) UObject::GObjObjects()->Data[ 116278 ];
+        pFnUpdatePlayers = (UFunction*) UObject::GObjObjects()->Data[ 116277 ];
 
     UTrRabbitLeaderboard_execUpdatePlayers_Parms UpdatePlayers_Parms;
     UpdatePlayers_Parms.GRI = GRI;
@@ -99437,7 +99437,7 @@ void UTrRabbitLeaderboard::Tick ( )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 116276 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 116275 ];
 
     UTrRabbitLeaderboard_execTick_Parms Tick_Parms;
 
@@ -99453,7 +99453,7 @@ void UTrRabbitLeaderboard::Hide ( )
     static UFunction* pFnHide = NULL;
 
     if ( ! pFnHide )
-        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 116275 ];
+        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 116274 ];
 
     UTrRabbitLeaderboard_execHide_Parms Hide_Parms;
 
@@ -99469,7 +99469,7 @@ void UTrRabbitLeaderboard::Show ( )
     static UFunction* pFnShow = NULL;
 
     if ( ! pFnShow )
-        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 116274 ];
+        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 116273 ];
 
     UTrRabbitLeaderboard_execShow_Parms Show_Parms;
 
@@ -99487,7 +99487,7 @@ void UTrRabbitLeaderboard::Initialize ( class ATrPlayerController* PC, class UGf
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 116271 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 116270 ];
 
     UTrRabbitLeaderboard_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.PC = PC;
@@ -99507,7 +99507,7 @@ bool UTrScoreboard::IsValidScoreboardPlayer ( class ATrPlayerReplicationInfo* PR
     static UFunction* pFnIsValidScoreboardPlayer = NULL;
 
     if ( ! pFnIsValidScoreboardPlayer )
-        pFnIsValidScoreboardPlayer = (UFunction*) UObject::GObjObjects()->Data[ 117256 ];
+        pFnIsValidScoreboardPlayer = (UFunction*) UObject::GObjObjects()->Data[ 117255 ];
 
     UTrScoreboard_execIsValidScoreboardPlayer_Parms IsValidScoreboardPlayer_Parms;
     IsValidScoreboardPlayer_Parms.PRI = PRI;
@@ -99527,7 +99527,7 @@ void UTrScoreboard::UpdateHeaders ( class ATrGameReplicationInfo* GRI )
     static UFunction* pFnUpdateHeaders = NULL;
 
     if ( ! pFnUpdateHeaders )
-        pFnUpdateHeaders = (UFunction*) UObject::GObjObjects()->Data[ 117252 ];
+        pFnUpdateHeaders = (UFunction*) UObject::GObjObjects()->Data[ 117251 ];
 
     UTrScoreboard_execUpdateHeaders_Parms UpdateHeaders_Parms;
     UpdateHeaders_Parms.GRI = GRI;
@@ -99546,7 +99546,7 @@ struct FString UTrScoreboard::FormatTime ( int Seconds )
     static UFunction* pFnFormatTime = NULL;
 
     if ( ! pFnFormatTime )
-        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 117246 ];
+        pFnFormatTime = (UFunction*) UObject::GObjObjects()->Data[ 117245 ];
 
     UTrScoreboard_execFormatTime_Parms FormatTime_Parms;
     FormatTime_Parms.Seconds = Seconds;
@@ -99568,7 +99568,7 @@ bool UTrScoreboard::UpdateSlot ( int Index, class ATrPlayerReplicationInfo* PRI 
     static UFunction* pFnUpdateSlot = NULL;
 
     if ( ! pFnUpdateSlot )
-        pFnUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 117242 ];
+        pFnUpdateSlot = (UFunction*) UObject::GObjObjects()->Data[ 117241 ];
 
     UTrScoreboard_execUpdateSlot_Parms UpdateSlot_Parms;
     UpdateSlot_Parms.Index = Index;
@@ -99590,7 +99590,7 @@ bool UTrScoreboard::ClearSlot ( int Index )
     static UFunction* pFnClearSlot = NULL;
 
     if ( ! pFnClearSlot )
-        pFnClearSlot = (UFunction*) UObject::GObjObjects()->Data[ 117239 ];
+        pFnClearSlot = (UFunction*) UObject::GObjObjects()->Data[ 117238 ];
 
     UTrScoreboard_execClearSlot_Parms ClearSlot_Parms;
     ClearSlot_Parms.Index = Index;
@@ -99612,7 +99612,7 @@ int UTrScoreboard::CreditsSort ( class ATrPlayerReplicationInfo* A, class ATrPla
     static UFunction* pFnCreditsSort = NULL;
 
     if ( ! pFnCreditsSort )
-        pFnCreditsSort = (UFunction*) UObject::GObjObjects()->Data[ 117161 ];
+        pFnCreditsSort = (UFunction*) UObject::GObjObjects()->Data[ 117160 ];
 
     UTrScoreboard_execCreditsSort_Parms CreditsSort_Parms;
     CreditsSort_Parms.A = A;
@@ -99635,7 +99635,7 @@ int UTrScoreboard::AssistsSort ( class ATrPlayerReplicationInfo* A, class ATrPla
     static UFunction* pFnAssistsSort = NULL;
 
     if ( ! pFnAssistsSort )
-        pFnAssistsSort = (UFunction*) UObject::GObjObjects()->Data[ 117163 ];
+        pFnAssistsSort = (UFunction*) UObject::GObjObjects()->Data[ 117162 ];
 
     UTrScoreboard_execAssistsSort_Parms AssistsSort_Parms;
     AssistsSort_Parms.A = A;
@@ -99658,7 +99658,7 @@ int UTrScoreboard::KillsSort ( class ATrPlayerReplicationInfo* A, class ATrPlaye
     static UFunction* pFnKillsSort = NULL;
 
     if ( ! pFnKillsSort )
-        pFnKillsSort = (UFunction*) UObject::GObjObjects()->Data[ 117165 ];
+        pFnKillsSort = (UFunction*) UObject::GObjObjects()->Data[ 117164 ];
 
     UTrScoreboard_execKillsSort_Parms KillsSort_Parms;
     KillsSort_Parms.A = A;
@@ -99680,7 +99680,7 @@ int UTrScoreboard::GetRank ( TArray< class APlayerReplicationInfo* > PRIArray )
     static UFunction* pFnGetRank = NULL;
 
     if ( ! pFnGetRank )
-        pFnGetRank = (UFunction*) UObject::GObjObjects()->Data[ 117225 ];
+        pFnGetRank = (UFunction*) UObject::GObjObjects()->Data[ 117224 ];
 
     UTrScoreboard_execGetRank_Parms GetRank_Parms;
     memcpy ( &GetRank_Parms.PRIArray, &PRIArray, 0xC );
@@ -99701,7 +99701,7 @@ TArray< class APlayerReplicationInfo* > UTrScoreboard::GetBestSortArray ( TArray
     static UFunction* pFnGetBestSortArray = NULL;
 
     if ( ! pFnGetBestSortArray )
-        pFnGetBestSortArray = (UFunction*) UObject::GObjObjects()->Data[ 117214 ];
+        pFnGetBestSortArray = (UFunction*) UObject::GObjObjects()->Data[ 117213 ];
 
     UTrScoreboard_execGetBestSortArray_Parms GetBestSortArray_Parms;
     memcpy ( &GetBestSortArray_Parms.PRIArray, &PRIArray, 0xC );
@@ -99721,7 +99721,7 @@ void UTrScoreboard::UpdatePRILists ( class ATrGameReplicationInfo* TrGRI )
     static UFunction* pFnUpdatePRILists = NULL;
 
     if ( ! pFnUpdatePRILists )
-        pFnUpdatePRILists = (UFunction*) UObject::GObjObjects()->Data[ 117206 ];
+        pFnUpdatePRILists = (UFunction*) UObject::GObjObjects()->Data[ 117205 ];
 
     UTrScoreboard_execUpdatePRILists_Parms UpdatePRILists_Parms;
     UpdatePRILists_Parms.TrGRI = TrGRI;
@@ -99739,7 +99739,7 @@ void UTrScoreboard::Tick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 117203 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 117202 ];
 
     UTrScoreboard_execTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -99756,7 +99756,7 @@ void UTrScoreboard::ConfigScoreboard ( )
     static UFunction* pFnConfigScoreboard = NULL;
 
     if ( ! pFnConfigScoreboard )
-        pFnConfigScoreboard = (UFunction*) UObject::GObjObjects()->Data[ 117201 ];
+        pFnConfigScoreboard = (UFunction*) UObject::GObjObjects()->Data[ 117200 ];
 
     UTrScoreboard_execConfigScoreboard_Parms ConfigScoreboard_Parms;
 
@@ -99772,7 +99772,7 @@ void UTrScoreboard::Hide ( )
     static UFunction* pFnHide = NULL;
 
     if ( ! pFnHide )
-        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 117200 ];
+        pFnHide = (UFunction*) UObject::GObjObjects()->Data[ 117199 ];
 
     UTrScoreboard_execHide_Parms Hide_Parms;
 
@@ -99789,7 +99789,7 @@ void UTrScoreboard::Show ( unsigned long bIsTeamGame )
     static UFunction* pFnShow = NULL;
 
     if ( ! pFnShow )
-        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 117198 ];
+        pFnShow = (UFunction*) UObject::GObjObjects()->Data[ 117197 ];
 
     UTrScoreboard_execShow_Parms Show_Parms;
     Show_Parms.bIsTeamGame = bIsTeamGame;
@@ -99808,7 +99808,7 @@ void UTrScoreboard::Initialize ( class ATrPlayerController* PC, class UGfxTrHud*
     static UFunction* pFnInitialize = NULL;
 
     if ( ! pFnInitialize )
-        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 117195 ];
+        pFnInitialize = (UFunction*) UObject::GObjObjects()->Data[ 117194 ];
 
     UTrScoreboard_execInitialize_Parms Initialize_Parms;
     Initialize_Parms.PC = PC;
@@ -99828,7 +99828,7 @@ void ATrInventory::DropFrom ( struct FVector StartLocation, struct FVector Start
     static UFunction* pFnDropFrom = NULL;
 
     if ( ! pFnDropFrom )
-        pFnDropFrom = (UFunction*) UObject::GObjObjects()->Data[ 98987 ];
+        pFnDropFrom = (UFunction*) UObject::GObjObjects()->Data[ 98986 ];
 
     ATrInventory_execDropFrom_Parms DropFrom_Parms;
     memcpy ( &DropFrom_Parms.StartLocation, &StartLocation, 0xC );
@@ -99851,7 +99851,7 @@ void UTrStationMessage::ClientReceive ( class APlayerController* P, int Switch, 
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119178 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119177 ];
 
     UTrStationMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -99878,7 +99878,7 @@ struct FString UTrStationMessage::GetString ( int Switch, unsigned long bPRI1HUD
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119170 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119169 ];
 
     UTrStationMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -99906,7 +99906,7 @@ void UTrLockedStationMessage::ClientReceive ( class APlayerController* P, int Sw
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 101034 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 101033 ];
 
     UTrLockedStationMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -99933,7 +99933,7 @@ struct FString UTrLockedStationMessage::GetString ( int Switch, unsigned long bP
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 101027 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 101026 ];
 
     UTrLockedStationMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -99961,7 +99961,7 @@ struct FColor UTrLockWarningMessage::GetColor ( int Switch, class APlayerReplica
     static UFunction* pFnGetColor = NULL;
 
     if ( ! pFnGetColor )
-        pFnGetColor = (UFunction*) UObject::GObjObjects()->Data[ 101059 ];
+        pFnGetColor = (UFunction*) UObject::GObjObjects()->Data[ 101058 ];
 
     UTrLockWarningMessage_execGetColor_Parms GetColor_Parms;
     GetColor_Parms.Switch = Switch;
@@ -99989,7 +99989,7 @@ struct FString UTrLockWarningMessage::GetString ( int Switch, unsigned long bPRI
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 101052 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 101051 ];
 
     UTrLockWarningMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -100014,7 +100014,7 @@ unsigned char UTrLockWarningMessage::AnnouncementLevel ( unsigned char MessageIn
     static UFunction* pFnAnnouncementLevel = NULL;
 
     if ( ! pFnAnnouncementLevel )
-        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 101049 ];
+        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 101048 ];
 
     UTrLockWarningMessage_execAnnouncementLevel_Parms AnnouncementLevel_Parms;
     AnnouncementLevel_Parms.MessageIndex = MessageIndex;
@@ -100034,7 +100034,7 @@ void UTrMainMenuMeshInfo::PreloadTextures ( float ForceDuration )
     static UFunction* pFnPreloadTextures = NULL;
 
     if ( ! pFnPreloadTextures )
-        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 101108 ];
+        pFnPreloadTextures = (UFunction*) UObject::GObjObjects()->Data[ 101107 ];
 
     UTrMainMenuMeshInfo_execPreloadTextures_Parms PreloadTextures_Parms;
     PreloadTextures_Parms.ForceDuration = ForceDuration;
@@ -100053,7 +100053,7 @@ void UTrMakeQuickMatch::OnJoinGameComplete ( struct FName SessionName, unsigned 
     static UFunction* pFnOnJoinGameComplete = NULL;
 
     if ( ! pFnOnJoinGameComplete )
-        pFnOnJoinGameComplete = (UFunction*) UObject::GObjObjects()->Data[ 102598 ];
+        pFnOnJoinGameComplete = (UFunction*) UObject::GObjObjects()->Data[ 102597 ];
 
     UTrMakeQuickMatch_execOnJoinGameComplete_Parms OnJoinGameComplete_Parms;
     memcpy ( &OnJoinGameComplete_Parms.SessionName, &SessionName, 0x8 );
@@ -100072,7 +100072,7 @@ void UTrMakeQuickMatch::OnSearchComplete ( unsigned long bWasSuccessful )
     static UFunction* pFnOnSearchComplete = NULL;
 
     if ( ! pFnOnSearchComplete )
-        pFnOnSearchComplete = (UFunction*) UObject::GObjObjects()->Data[ 102595 ];
+        pFnOnSearchComplete = (UFunction*) UObject::GObjObjects()->Data[ 102594 ];
 
     UTrMakeQuickMatch_execOnSearchComplete_Parms OnSearchComplete_Parms;
     OnSearchComplete_Parms.bWasSuccessful = bWasSuccessful;
@@ -100091,7 +100091,7 @@ bool UTrMakeQuickMatch::RequestJoin ( struct FOnlineGameSearchResult GameToJoin 
     static UFunction* pFnRequestJoin = NULL;
 
     if ( ! pFnRequestJoin )
-        pFnRequestJoin = (UFunction*) UObject::GObjObjects()->Data[ 102592 ];
+        pFnRequestJoin = (UFunction*) UObject::GObjObjects()->Data[ 102591 ];
 
     UTrMakeQuickMatch_execRequestJoin_Parms RequestJoin_Parms;
     memcpy ( &RequestJoin_Parms.GameToJoin, &GameToJoin, 0x8 );
@@ -100112,7 +100112,7 @@ struct FString UTrMakeQuickMatch::BuildJoinURL ( struct FString ResolvedConnecti
     static UFunction* pFnBuildJoinURL = NULL;
 
     if ( ! pFnBuildJoinURL )
-        pFnBuildJoinURL = (UFunction*) UObject::GObjObjects()->Data[ 102588 ];
+        pFnBuildJoinURL = (UFunction*) UObject::GObjObjects()->Data[ 102587 ];
 
     UTrMakeQuickMatch_execBuildJoinURL_Parms BuildJoinURL_Parms;
     memcpy ( &BuildJoinURL_Parms.ResolvedConnectionURL, &ResolvedConnectionURL, 0xC );
@@ -100133,7 +100133,7 @@ void UTrMakeQuickMatch::ConsoleCommand ( struct FString Cmd, unsigned long bWrit
     static UFunction* pFnConsoleCommand = NULL;
 
     if ( ! pFnConsoleCommand )
-        pFnConsoleCommand = (UFunction*) UObject::GObjObjects()->Data[ 102584 ];
+        pFnConsoleCommand = (UFunction*) UObject::GObjObjects()->Data[ 102583 ];
 
     UTrMakeQuickMatch_execConsoleCommand_Parms ConsoleCommand_Parms;
     memcpy ( &ConsoleCommand_Parms.Cmd, &Cmd, 0xC );
@@ -100152,7 +100152,7 @@ class APlayerController* UTrMakeQuickMatch::GetPC ( )
     static UFunction* pFnGetPC = NULL;
 
     if ( ! pFnGetPC )
-        pFnGetPC = (UFunction*) UObject::GObjObjects()->Data[ 102581 ];
+        pFnGetPC = (UFunction*) UObject::GObjObjects()->Data[ 102580 ];
 
     UTrMakeQuickMatch_execGetPC_Parms GetPC_Parms;
 
@@ -100171,7 +100171,7 @@ class ULocalPlayer* UTrMakeQuickMatch::GetLP ( )
     static UFunction* pFnGetLP = NULL;
 
     if ( ! pFnGetLP )
-        pFnGetLP = (UFunction*) UObject::GObjObjects()->Data[ 102577 ];
+        pFnGetLP = (UFunction*) UObject::GObjObjects()->Data[ 102576 ];
 
     UTrMakeQuickMatch_execGetLP_Parms GetLP_Parms;
 
@@ -100190,7 +100190,7 @@ bool UTrMakeQuickMatch::SubmitGameSearch ( )
     static UFunction* pFnSubmitGameSearch = NULL;
 
     if ( ! pFnSubmitGameSearch )
-        pFnSubmitGameSearch = (UFunction*) UObject::GObjObjects()->Data[ 102575 ];
+        pFnSubmitGameSearch = (UFunction*) UObject::GObjObjects()->Data[ 102574 ];
 
     UTrMakeQuickMatch_execSubmitGameSearch_Parms SubmitGameSearch_Parms;
 
@@ -100208,7 +100208,7 @@ void UTrMakeQuickMatch::Cleanup ( )
     static UFunction* pFnCleanup = NULL;
 
     if ( ! pFnCleanup )
-        pFnCleanup = (UFunction*) UObject::GObjObjects()->Data[ 102574 ];
+        pFnCleanup = (UFunction*) UObject::GObjObjects()->Data[ 102573 ];
 
     UTrMakeQuickMatch_execCleanup_Parms Cleanup_Parms;
 
@@ -100224,7 +100224,7 @@ void UTrMakeQuickMatch::Launch ( )
     static UFunction* pFnLaunch = NULL;
 
     if ( ! pFnLaunch )
-        pFnLaunch = (UFunction*) UObject::GObjObjects()->Data[ 102573 ];
+        pFnLaunch = (UFunction*) UObject::GObjObjects()->Data[ 102572 ];
 
     UTrMakeQuickMatch_execLaunch_Parms Launch_Parms;
 
@@ -100243,7 +100243,7 @@ bool UTrMakeQuickMatch::Init ( unsigned char ControllerIndex, int GameMode )
     static UFunction* pFnInit = NULL;
 
     if ( ! pFnInit )
-        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 102569 ];
+        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 102568 ];
 
     UTrMakeQuickMatch_execInit_Parms Init_Parms;
     Init_Parms.ControllerIndex = ControllerIndex;
@@ -100268,7 +100268,7 @@ bool UTrMultiKillMessage::AddAnnouncement ( class AUTAnnouncer* Announcer, int M
     static UFunction* pFnAddAnnouncement = NULL;
 
     if ( ! pFnAddAnnouncement )
-        pFnAddAnnouncement = (UFunction*) UObject::GObjObjects()->Data[ 102723 ];
+        pFnAddAnnouncement = (UFunction*) UObject::GObjObjects()->Data[ 102722 ];
 
     UTrMultiKillMessage_execAddAnnouncement_Parms AddAnnouncement_Parms;
     AddAnnouncement_Parms.Announcer = Announcer;
@@ -100294,7 +100294,7 @@ bool UTrMultiKillMessage::ShouldBeRemoved ( class AUTQueuedAnnouncement* MyAnnou
     static UFunction* pFnShouldBeRemoved = NULL;
 
     if ( ! pFnShouldBeRemoved )
-        pFnShouldBeRemoved = (UFunction*) UObject::GObjObjects()->Data[ 102718 ];
+        pFnShouldBeRemoved = (UFunction*) UObject::GObjObjects()->Data[ 102717 ];
 
     UTrMultiKillMessage_execShouldBeRemoved_Parms ShouldBeRemoved_Parms;
     ShouldBeRemoved_Parms.MyAnnouncement = MyAnnouncement;
@@ -100320,7 +100320,7 @@ int UTrMultiKillMessage::GetFontSize ( int Switch, class APlayerReplicationInfo*
     static UFunction* pFnGetFontSize = NULL;
 
     if ( ! pFnGetFontSize )
-        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 102712 ];
+        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 102711 ];
 
     UTrMultiKillMessage_execGetFontSize_Parms GetFontSize_Parms;
     GetFontSize_Parms.Switch = Switch;
@@ -100346,7 +100346,7 @@ class USoundNodeWave* UTrMultiKillMessage::AnnouncementSound ( int MessageIndex,
     static UFunction* pFnAnnouncementSound = NULL;
 
     if ( ! pFnAnnouncementSound )
-        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 102707 ];
+        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 102706 ];
 
     UTrMultiKillMessage_execAnnouncementSound_Parms AnnouncementSound_Parms;
     AnnouncementSound_Parms.MessageIndex = MessageIndex;
@@ -100372,7 +100372,7 @@ void UTrMultiKillMessage::ClientReceive ( class APlayerController* P, int Switch
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 102701 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 102700 ];
 
     UTrMultiKillMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -100399,7 +100399,7 @@ struct FString UTrMultiKillMessage::GetString ( int Switch, unsigned long bPRI1H
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 102694 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 102693 ];
 
     UTrMultiKillMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -100422,7 +100422,7 @@ void UTrPartySettings::RefreshMembersList ( )
     static UFunction* pFnRefreshMembersList = NULL;
 
     if ( ! pFnRefreshMembersList )
-        pFnRefreshMembersList = (UFunction*) UObject::GObjObjects()->Data[ 103099 ];
+        pFnRefreshMembersList = (UFunction*) UObject::GObjObjects()->Data[ 103098 ];
 
     UTrPartySettings_execRefreshMembersList_Parms RefreshMembersList_Parms;
 
@@ -100439,7 +100439,7 @@ void UTrPartySettings::OnLoginChange ( unsigned char LocalUserNum )
     static UFunction* pFnOnLoginChange = NULL;
 
     if ( ! pFnOnLoginChange )
-        pFnOnLoginChange = (UFunction*) UObject::GObjObjects()->Data[ 103095 ];
+        pFnOnLoginChange = (UFunction*) UObject::GObjObjects()->Data[ 103094 ];
 
     UTrPartySettings_execOnLoginChange_Parms OnLoginChange_Parms;
     OnLoginChange_Parms.LocalUserNum = LocalUserNum;
@@ -100456,7 +100456,7 @@ void UTrPartySettings::Close ( )
     static UFunction* pFnClose = NULL;
 
     if ( ! pFnClose )
-        pFnClose = (UFunction*) UObject::GObjObjects()->Data[ 103094 ];
+        pFnClose = (UFunction*) UObject::GObjObjects()->Data[ 103093 ];
 
     UTrPartySettings_execClose_Parms Close_Parms;
 
@@ -100473,7 +100473,7 @@ void UTrPartySettings::Init ( class ULocalPlayer* InPlayer )
     static UFunction* pFnInit = NULL;
 
     if ( ! pFnInit )
-        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 103092 ];
+        pFnInit = (UFunction*) UObject::GObjObjects()->Data[ 103091 ];
 
     UTrPartySettings_execInit_Parms Init_Parms;
     Init_Parms.InPlayer = InPlayer;
@@ -100491,7 +100491,7 @@ int UTrSeqEvent_Generator::eventGetObjClassVersion ( )
     static UFunction* pFnGetObjClassVersion = NULL;
 
     if ( ! pFnGetObjClassVersion )
-        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117405 ];
+        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117404 ];
 
     UTrSeqEvent_Generator_eventGetObjClassVersion_Parms GetObjClassVersion_Parms;
 
@@ -100509,7 +100509,7 @@ void ATrProj_AntiAirTurret::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114101 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114100 ];
 
     ATrProj_AntiAirTurret_execDestroyed_Parms Destroyed_Parms;
 
@@ -100525,7 +100525,7 @@ void ATrProj_HavocPilot::Destroyed ( )
     static UFunction* pFnDestroyed = NULL;
 
     if ( ! pFnDestroyed )
-        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114794 ];
+        pFnDestroyed = (UFunction*) UObject::GObjObjects()->Data[ 114793 ];
 
     ATrProj_HavocPilot_execDestroyed_Parms Destroyed_Parms;
 
@@ -100541,7 +100541,7 @@ void ATrProj_HavocPilot::HijackMissileGuidance ( )
     static UFunction* pFnHijackMissileGuidance = NULL;
 
     if ( ! pFnHijackMissileGuidance )
-        pFnHijackMissileGuidance = (UFunction*) UObject::GObjObjects()->Data[ 114792 ];
+        pFnHijackMissileGuidance = (UFunction*) UObject::GObjObjects()->Data[ 114791 ];
 
     ATrProj_HavocPilot_execHijackMissileGuidance_Parms HijackMissileGuidance_Parms;
 
@@ -100557,7 +100557,7 @@ void ATrProj_HavocPilot::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114791 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 114790 ];
 
     ATrProj_HavocPilot_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -100575,7 +100575,7 @@ float ATrProj_HavocPilot::CalculateHijackMetric ( class ATrProj_TrackingMissile*
     static UFunction* pFnCalculateHijackMetric = NULL;
 
     if ( ! pFnCalculateHijackMetric )
-        pFnCalculateHijackMetric = (UFunction*) UObject::GObjObjects()->Data[ 114788 ];
+        pFnCalculateHijackMetric = (UFunction*) UObject::GObjObjects()->Data[ 114787 ];
 
     ATrProj_HavocPilot_execCalculateHijackMetric_Parms CalculateHijackMetric_Parms;
     CalculateHijackMetric_Parms.Tracker = Tracker;
@@ -100595,7 +100595,7 @@ void ATrRepairStationCollision::eventUnTouch ( class AActor* Other )
     static UFunction* pFnUnTouch = NULL;
 
     if ( ! pFnUnTouch )
-        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 117091 ];
+        pFnUnTouch = (UFunction*) UObject::GObjObjects()->Data[ 117090 ];
 
     ATrRepairStationCollision_eventUnTouch_Parms UnTouch_Parms;
     UnTouch_Parms.Other = Other;
@@ -100616,7 +100616,7 @@ void ATrRepairStationCollision::eventTouch ( class AActor* Other, class UPrimiti
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 117084 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 117083 ];
 
     ATrRepairStationCollision_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -100638,7 +100638,7 @@ void ATrRepairStationCollision::CheckNearByPawns ( class ATrPawn* aPawn, unsigne
     static UFunction* pFnCheckNearByPawns = NULL;
 
     if ( ! pFnCheckNearByPawns )
-        pFnCheckNearByPawns = (UFunction*) UObject::GObjObjects()->Data[ 117077 ];
+        pFnCheckNearByPawns = (UFunction*) UObject::GObjObjects()->Data[ 117076 ];
 
     ATrRepairStationCollision_execCheckNearByPawns_Parms CheckNearByPawns_Parms;
     CheckNearByPawns_Parms.aPawn = aPawn;
@@ -100657,7 +100657,7 @@ int ATrRepairStationCollision::GetPawnsInStation ( )
     static UFunction* pFnGetPawnsInStation = NULL;
 
     if ( ! pFnGetPawnsInStation )
-        pFnGetPawnsInStation = (UFunction*) UObject::GObjObjects()->Data[ 117075 ];
+        pFnGetPawnsInStation = (UFunction*) UObject::GObjObjects()->Data[ 117074 ];
 
     ATrRepairStationCollision_execGetPawnsInStation_Parms GetPawnsInStation_Parms;
 
@@ -100675,7 +100675,7 @@ void UTrSeqAct_EndMatch::eventActivated ( )
     static UFunction* pFnActivated = NULL;
 
     if ( ! pFnActivated )
-        pFnActivated = (UFunction*) UObject::GObjObjects()->Data[ 117393 ];
+        pFnActivated = (UFunction*) UObject::GObjObjects()->Data[ 117392 ];
 
     UTrSeqAct_EndMatch_eventActivated_Parms Activated_Parms;
 
@@ -100691,7 +100691,7 @@ void UTrSeqAct_TrainingMessage::eventActivated ( )
     static UFunction* pFnActivated = NULL;
 
     if ( ! pFnActivated )
-        pFnActivated = (UFunction*) UObject::GObjObjects()->Data[ 117401 ];
+        pFnActivated = (UFunction*) UObject::GObjObjects()->Data[ 117400 ];
 
     UTrSeqAct_TrainingMessage_eventActivated_Parms Activated_Parms;
 
@@ -100708,7 +100708,7 @@ int UTrSeqEvent_StormControlPoint::eventGetObjClassVersion ( )
     static UFunction* pFnGetObjClassVersion = NULL;
 
     if ( ! pFnGetObjClassVersion )
-        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117409 ];
+        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117408 ];
 
     UTrSeqEvent_StormControlPoint_eventGetObjClassVersion_Parms GetObjClassVersion_Parms;
 
@@ -100727,7 +100727,7 @@ int UTrSeqEvent_StormCore::eventGetObjClassVersion ( )
     static UFunction* pFnGetObjClassVersion = NULL;
 
     if ( ! pFnGetObjClassVersion )
-        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117413 ];
+        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117412 ];
 
     UTrSeqEvent_StormCore_eventGetObjClassVersion_Parms GetObjClassVersion_Parms;
 
@@ -100746,7 +100746,7 @@ int UTrSeqEvent_StormShield::eventGetObjClassVersion ( )
     static UFunction* pFnGetObjClassVersion = NULL;
 
     if ( ! pFnGetObjClassVersion )
-        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117417 ];
+        pFnGetObjClassVersion = (UFunction*) UObject::GObjObjects()->Data[ 117416 ];
 
     UTrSeqEvent_StormShield_eventGetObjClassVersion_Parms GetObjClassVersion_Parms;
 
@@ -100768,7 +100768,7 @@ class USoundNodeWave* UTrSnipingSpreeMessage::AnnouncementSound ( int MessageInd
     static UFunction* pFnAnnouncementSound = NULL;
 
     if ( ! pFnAnnouncementSound )
-        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 119083 ];
+        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 119082 ];
 
     UTrSnipingSpreeMessage_execAnnouncementSound_Parms AnnouncementSound_Parms;
     AnnouncementSound_Parms.MessageIndex = MessageIndex;
@@ -100794,7 +100794,7 @@ void UTrSnipingSpreeMessage::ClientReceive ( class APlayerController* P, int Swi
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119077 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119076 ];
 
     UTrSnipingSpreeMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -100821,7 +100821,7 @@ struct FString UTrSnipingSpreeMessage::GetString ( int Switch, unsigned long bPR
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119070 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119069 ];
 
     UTrSnipingSpreeMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -100849,7 +100849,7 @@ int UTrSnipingSpreeMessage::GetFontSize ( int Switch, class APlayerReplicationIn
     static UFunction* pFnGetFontSize = NULL;
 
     if ( ! pFnGetFontSize )
-        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 119062 ];
+        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 119061 ];
 
     UTrSnipingSpreeMessage_execGetFontSize_Parms GetFontSize_Parms;
     GetFontSize_Parms.Switch = Switch;
@@ -100875,7 +100875,7 @@ class USoundNodeWave* UTrSpinfusorSpreeMessage::AnnouncementSound ( int MessageI
     static UFunction* pFnAnnouncementSound = NULL;
 
     if ( ! pFnAnnouncementSound )
-        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 119121 ];
+        pFnAnnouncementSound = (UFunction*) UObject::GObjObjects()->Data[ 119120 ];
 
     UTrSpinfusorSpreeMessage_execAnnouncementSound_Parms AnnouncementSound_Parms;
     AnnouncementSound_Parms.MessageIndex = MessageIndex;
@@ -100901,7 +100901,7 @@ void UTrSpinfusorSpreeMessage::ClientReceive ( class APlayerController* P, int S
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119115 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119114 ];
 
     UTrSpinfusorSpreeMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -100928,7 +100928,7 @@ struct FString UTrSpinfusorSpreeMessage::GetString ( int Switch, unsigned long b
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119108 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 119107 ];
 
     UTrSpinfusorSpreeMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -100956,7 +100956,7 @@ int UTrSpinfusorSpreeMessage::GetFontSize ( int Switch, class APlayerReplication
     static UFunction* pFnGetFontSize = NULL;
 
     if ( ! pFnGetFontSize )
-        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 119100 ];
+        pFnGetFontSize = (UFunction*) UObject::GObjObjects()->Data[ 119099 ];
 
     UTrSpinfusorSpreeMessage_execGetFontSize_Parms GetFontSize_Parms;
     GetFontSize_Parms.Switch = Switch;
@@ -100978,7 +100978,7 @@ void ATrStealthResidue::eventPreBeginPlay ( )
     static UFunction* pFnPreBeginPlay = NULL;
 
     if ( ! pFnPreBeginPlay )
-        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119309 ];
+        pFnPreBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 119308 ];
 
     ATrStealthResidue_eventPreBeginPlay_Parms PreBeginPlay_Parms;
 
@@ -100998,7 +100998,7 @@ void ATrStormControlPointGate::eventPostRenderFor ( class APlayerController* PC,
     static UFunction* pFnPostRenderFor = NULL;
 
     if ( ! pFnPostRenderFor )
-        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119388 ];
+        pFnPostRenderFor = (UFunction*) UObject::GObjObjects()->Data[ 119387 ];
 
     ATrStormControlPointGate_eventPostRenderFor_Parms PostRenderFor_Parms;
     PostRenderFor_Parms.PC = PC;
@@ -101022,7 +101022,7 @@ void ATrStormControlPointGate::eventTouch ( class AActor* Other, class UPrimitiv
     static UFunction* pFnTouch = NULL;
 
     if ( ! pFnTouch )
-        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119382 ];
+        pFnTouch = (UFunction*) UObject::GObjObjects()->Data[ 119381 ];
 
     ATrStormControlPointGate_eventTouch_Parms Touch_Parms;
     Touch_Parms.Other = Other;
@@ -101047,7 +101047,7 @@ void UTrTDMScoreMessage::ClientReceive ( class APlayerController* P, int Switch,
     static UFunction* pFnClientReceive = NULL;
 
     if ( ! pFnClientReceive )
-        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119682 ];
+        pFnClientReceive = (UFunction*) UObject::GObjObjects()->Data[ 119681 ];
 
     UTrTDMScoreMessage_execClientReceive_Parms ClientReceive_Parms;
     ClientReceive_Parms.P = P;
@@ -101070,7 +101070,7 @@ unsigned char UTrTDMScoreMessage::AnnouncementLevel ( unsigned char MessageIndex
     static UFunction* pFnAnnouncementLevel = NULL;
 
     if ( ! pFnAnnouncementLevel )
-        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 119679 ];
+        pFnAnnouncementLevel = (UFunction*) UObject::GObjObjects()->Data[ 119678 ];
 
     UTrTDMScoreMessage_execAnnouncementLevel_Parms AnnouncementLevel_Parms;
     AnnouncementLevel_Parms.MessageIndex = MessageIndex;
@@ -101090,7 +101090,7 @@ struct FName ATrTimedPowerup::GetPowerupStatName ( )
     static UFunction* pFnGetPowerupStatName = NULL;
 
     if ( ! pFnGetPowerupStatName )
-        pFnGetPowerupStatName = (UFunction*) UObject::GObjObjects()->Data[ 119802 ];
+        pFnGetPowerupStatName = (UFunction*) UObject::GObjObjects()->Data[ 119801 ];
 
     ATrTimedPowerup_execGetPowerupStatName_Parms GetPowerupStatName_Parms;
 
@@ -101111,7 +101111,7 @@ float ATrTimedPowerup::DetourWeight ( class APawn* Other, float PathWeight )
     static UFunction* pFnDetourWeight = NULL;
 
     if ( ! pFnDetourWeight )
-        pFnDetourWeight = (UFunction*) UObject::GObjObjects()->Data[ 119798 ];
+        pFnDetourWeight = (UFunction*) UObject::GObjObjects()->Data[ 119797 ];
 
     ATrTimedPowerup_execDetourWeight_Parms DetourWeight_Parms;
     DetourWeight_Parms.Other = Other;
@@ -101135,7 +101135,7 @@ float ATrTimedPowerup::BotDesireability ( class AActor* PickupHolder, class APaw
     static UFunction* pFnBotDesireability = NULL;
 
     if ( ! pFnBotDesireability )
-        pFnBotDesireability = (UFunction*) UObject::GObjObjects()->Data[ 119793 ];
+        pFnBotDesireability = (UFunction*) UObject::GObjObjects()->Data[ 119792 ];
 
     ATrTimedPowerup_execBotDesireability_Parms BotDesireability_Parms;
     BotDesireability_Parms.PickupHolder = PickupHolder;
@@ -101156,7 +101156,7 @@ void ATrTimedPowerup::TimeExpired ( )
     static UFunction* pFnTimeExpired = NULL;
 
     if ( ! pFnTimeExpired )
-        pFnTimeExpired = (UFunction*) UObject::GObjObjects()->Data[ 119792 ];
+        pFnTimeExpired = (UFunction*) UObject::GObjObjects()->Data[ 119791 ];
 
     ATrTimedPowerup_execTimeExpired_Parms TimeExpired_Parms;
 
@@ -101175,7 +101175,7 @@ bool ATrTimedPowerup::DenyPickupQuery ( class UClass* ItemClass, class AActor* P
     static UFunction* pFnDenyPickupQuery = NULL;
 
     if ( ! pFnDenyPickupQuery )
-        pFnDenyPickupQuery = (UFunction*) UObject::GObjObjects()->Data[ 119787 ];
+        pFnDenyPickupQuery = (UFunction*) UObject::GObjObjects()->Data[ 119786 ];
 
     ATrTimedPowerup_execDenyPickupQuery_Parms DenyPickupQuery_Parms;
     DenyPickupQuery_Parms.ItemClass = ItemClass;
@@ -101199,7 +101199,7 @@ void ATrTimedPowerup::DisplayPowerup ( class UCanvas* Canvas, class AHUD* HUD, f
     static UFunction* pFnDisplayPowerup = NULL;
 
     if ( ! pFnDisplayPowerup )
-        pFnDisplayPowerup = (UFunction*) UObject::GObjObjects()->Data[ 119782 ];
+        pFnDisplayPowerup = (UFunction*) UObject::GObjObjects()->Data[ 119781 ];
 
     ATrTimedPowerup_execDisplayPowerup_Parms DisplayPowerup_Parms;
     DisplayPowerup_Parms.Canvas = Canvas;
@@ -101221,7 +101221,7 @@ void ATrTimedPowerup::TimeRemaingUpdated ( )
     static UFunction* pFnTimeRemaingUpdated = NULL;
 
     if ( ! pFnTimeRemaingUpdated )
-        pFnTimeRemaingUpdated = (UFunction*) UObject::GObjObjects()->Data[ 119781 ];
+        pFnTimeRemaingUpdated = (UFunction*) UObject::GObjObjects()->Data[ 119780 ];
 
     ATrTimedPowerup_execTimeRemaingUpdated_Parms TimeRemaingUpdated_Parms;
 
@@ -101238,7 +101238,7 @@ void ATrTimedPowerup::ClientSetTimeRemaining ( float NewTimeRemaining )
     static UFunction* pFnClientSetTimeRemaining = NULL;
 
     if ( ! pFnClientSetTimeRemaining )
-        pFnClientSetTimeRemaining = (UFunction*) UObject::GObjObjects()->Data[ 119779 ];
+        pFnClientSetTimeRemaining = (UFunction*) UObject::GObjObjects()->Data[ 119778 ];
 
     ATrTimedPowerup_execClientSetTimeRemaining_Parms ClientSetTimeRemaining_Parms;
     ClientSetTimeRemaining_Parms.NewTimeRemaining = NewTimeRemaining;
@@ -101255,7 +101255,7 @@ void ATrTimedPowerup::ClientLostItem ( )
     static UFunction* pFnClientLostItem = NULL;
 
     if ( ! pFnClientLostItem )
-        pFnClientLostItem = (UFunction*) UObject::GObjObjects()->Data[ 119778 ];
+        pFnClientLostItem = (UFunction*) UObject::GObjObjects()->Data[ 119777 ];
 
     ATrTimedPowerup_execClientLostItem_Parms ClientLostItem_Parms;
 
@@ -101273,7 +101273,7 @@ void ATrTimedPowerup::AdjustPPEffects ( class APawn* P, unsigned long bRemove )
     static UFunction* pFnAdjustPPEffects = NULL;
 
     if ( ! pFnAdjustPPEffects )
-        pFnAdjustPPEffects = (UFunction*) UObject::GObjObjects()->Data[ 119775 ];
+        pFnAdjustPPEffects = (UFunction*) UObject::GObjObjects()->Data[ 119774 ];
 
     ATrTimedPowerup_execAdjustPPEffects_Parms AdjustPPEffects_Parms;
     AdjustPPEffects_Parms.P = P;
@@ -101293,7 +101293,7 @@ void ATrTimedPowerup::ClientGivenTo ( class APawn* NewOwner, unsigned long bDoNo
     static UFunction* pFnClientGivenTo = NULL;
 
     if ( ! pFnClientGivenTo )
-        pFnClientGivenTo = (UFunction*) UObject::GObjObjects()->Data[ 119772 ];
+        pFnClientGivenTo = (UFunction*) UObject::GObjObjects()->Data[ 119771 ];
 
     ATrTimedPowerup_execClientGivenTo_Parms ClientGivenTo_Parms;
     ClientGivenTo_Parms.NewOwner = NewOwner;
@@ -101313,7 +101313,7 @@ void ATrTimedPowerup::GivenTo ( class APawn* NewOwner, unsigned long bDoNotActiv
     static UFunction* pFnGivenTo = NULL;
 
     if ( ! pFnGivenTo )
-        pFnGivenTo = (UFunction*) UObject::GObjObjects()->Data[ 119769 ];
+        pFnGivenTo = (UFunction*) UObject::GObjObjects()->Data[ 119768 ];
 
     ATrTimedPowerup_execGivenTo_Parms GivenTo_Parms;
     GivenTo_Parms.NewOwner = NewOwner;
@@ -101332,7 +101332,7 @@ void ATrTimedPowerup::eventTick ( float DeltaTime )
     static UFunction* pFnTick = NULL;
 
     if ( ! pFnTick )
-        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119767 ];
+        pFnTick = (UFunction*) UObject::GObjObjects()->Data[ 119766 ];
 
     ATrTimedPowerup_eventTick_Parms Tick_Parms;
     Tick_Parms.DeltaTime = DeltaTime;
@@ -101350,7 +101350,7 @@ bool UTrUIDataProvider_MapInfo::eventShouldBeFiltered ( )
     static UFunction* pFnShouldBeFiltered = NULL;
 
     if ( ! pFnShouldBeFiltered )
-        pFnShouldBeFiltered = (UFunction*) UObject::GObjObjects()->Data[ 119964 ];
+        pFnShouldBeFiltered = (UFunction*) UObject::GObjObjects()->Data[ 119963 ];
 
     UTrUIDataProvider_MapInfo_eventShouldBeFiltered_Parms ShouldBeFiltered_Parms;
 
@@ -101374,7 +101374,7 @@ struct FString UTrVehicleMessage::GetString ( int Switch, unsigned long bPRI1HUD
     static UFunction* pFnGetString = NULL;
 
     if ( ! pFnGetString )
-        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 121521 ];
+        pFnGetString = (UFunction*) UObject::GObjObjects()->Data[ 121520 ];
 
     UTrVehicleMessage_execGetString_Parms GetString_Parms;
     GetString_Parms.Switch = Switch;
@@ -101399,7 +101399,7 @@ struct FRotator ATrVehicle_Havoc::GetWeaponAim ( class AUTVehicleWeapon* VWeapon
     static UFunction* pFnGetWeaponAim = NULL;
 
     if ( ! pFnGetWeaponAim )
-        pFnGetWeaponAim = (UFunction*) UObject::GObjObjects()->Data[ 121443 ];
+        pFnGetWeaponAim = (UFunction*) UObject::GObjObjects()->Data[ 121442 ];
 
     ATrVehicle_Havoc_execGetWeaponAim_Parms GetWeaponAim_Parms;
     GetWeaponAim_Parms.VWeapon = VWeapon;
@@ -101418,7 +101418,7 @@ void ATrVehicle_Havoc::PostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121442 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121441 ];
 
     ATrVehicle_Havoc_execPostBeginPlay_Parms PostBeginPlay_Parms;
 
@@ -101435,7 +101435,7 @@ void UTrVehicleInput_Flying::AdjustMouseSensitivity ( float FOVScale )
     static UFunction* pFnAdjustMouseSensitivity = NULL;
 
     if ( ! pFnAdjustMouseSensitivity )
-        pFnAdjustMouseSensitivity = (UFunction*) UObject::GObjObjects()->Data[ 121516 ];
+        pFnAdjustMouseSensitivity = (UFunction*) UObject::GObjObjects()->Data[ 121515 ];
 
     UTrVehicleInput_Flying_execAdjustMouseSensitivity_Parms AdjustMouseSensitivity_Parms;
     AdjustMouseSensitivity_Parms.FOVScale = FOVScale;
@@ -101452,7 +101452,7 @@ void ATrVehiclePad::PlayCollapseAnim ( )
     static UFunction* pFnPlayCollapseAnim = NULL;
 
     if ( ! pFnPlayCollapseAnim )
-        pFnPlayCollapseAnim = (UFunction*) UObject::GObjObjects()->Data[ 121539 ];
+        pFnPlayCollapseAnim = (UFunction*) UObject::GObjObjects()->Data[ 121538 ];
 
     ATrVehiclePad_execPlayCollapseAnim_Parms PlayCollapseAnim_Parms;
 
@@ -101468,7 +101468,7 @@ void ATrVehiclePad::PlayDeployAnim ( )
     static UFunction* pFnPlayDeployAnim = NULL;
 
     if ( ! pFnPlayDeployAnim )
-        pFnPlayDeployAnim = (UFunction*) UObject::GObjObjects()->Data[ 121538 ];
+        pFnPlayDeployAnim = (UFunction*) UObject::GObjObjects()->Data[ 121537 ];
 
     ATrVehiclePad_execPlayDeployAnim_Parms PlayDeployAnim_Parms;
 
@@ -101484,7 +101484,7 @@ void ATrVehiclePad::PlayIdleAnim ( )
     static UFunction* pFnPlayIdleAnim = NULL;
 
     if ( ! pFnPlayIdleAnim )
-        pFnPlayIdleAnim = (UFunction*) UObject::GObjObjects()->Data[ 121537 ];
+        pFnPlayIdleAnim = (UFunction*) UObject::GObjObjects()->Data[ 121536 ];
 
     ATrVehiclePad_execPlayIdleAnim_Parms PlayIdleAnim_Parms;
 
@@ -101501,7 +101501,7 @@ void ATrVehiclePad::eventPostInitAnimTree ( class USkeletalMeshComponent* SkelCo
     static UFunction* pFnPostInitAnimTree = NULL;
 
     if ( ! pFnPostInitAnimTree )
-        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121535 ];
+        pFnPostInitAnimTree = (UFunction*) UObject::GObjObjects()->Data[ 121534 ];
 
     ATrVehiclePad_eventPostInitAnimTree_Parms PostInitAnimTree_Parms;
     PostInitAnimTree_Parms.SkelComp = SkelComp;
@@ -101518,7 +101518,7 @@ void ATrVehiclePad::eventPostBeginPlay ( )
     static UFunction* pFnPostBeginPlay = NULL;
 
     if ( ! pFnPostBeginPlay )
-        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121532 ];
+        pFnPostBeginPlay = (UFunction*) UObject::GObjObjects()->Data[ 121531 ];
 
     ATrVehiclePad_eventPostBeginPlay_Parms PostBeginPlay_Parms;
 

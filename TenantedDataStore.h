@@ -34,13 +34,18 @@ namespace TenantedDataStore {
 
         // Jackal rounds currently out
         std::vector<ATrProj_RemoteArxBuster*> remoteArxRounds;
+
+        std::vector<ATrProj_StickyGrenade*> attachedStickies;
     };
 
     struct ClassSpecificData {
         int maxRegenMoveSpeed = -1;
     };
-    
-    // A thread-safe map which returns the default constructed value if a key isn't found
+
+    struct StickySpecificData {
+        long long attached;
+    };
+
     template <typename KeyType, typename ValueType>
     class DataMap {
     private:
@@ -58,9 +63,14 @@ namespace TenantedDataStore {
             std::lock_guard<decltype(storeMutex)> lock(storeMutex);
             store[k] = v;
         }
-    };
 
+        void remove(KeyType k) {
+            std::lock_guard<decltype(storeMutex)> lock(storeMutex);
+            store.erase(k);
+        }
+    };
     
     extern DataMap<long long, PlayerSpecificData> playerData;
     extern DataMap<int, ClassSpecificData> classData;
+    extern DataMap<ATrProj_StickyGrenade*, StickySpecificData> stickyData;
 }

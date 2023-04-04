@@ -598,6 +598,7 @@ namespace LuaAPI {
                     .addProperty<int, int>("SpinupTime", &getPropId<Items::PropId, Items::PropId::SPINUP_TIME>)
                     .addProperty<int, int>("ShotgunShotCount", &getPropId<Items::PropId, Items::PropId::SHOTGUN_SHOT_COUNT>)
                     .addProperty<int, int>("ShotEnergyCost", &getPropId<Items::PropId, Items::PropId::SHOT_ENERGY_COST>)
+                    .addProperty<int, int>("TimeBeforePassiveReload", &getPropId<Items::PropId, Items::PropId::TIME_BEFORE_PASSIVE_RELOAD>)
                     // Damage / Impact
                     .addProperty<int, int>("Damage", &getPropId<Items::PropId, Items::PropId::DAMAGE>)
                     .addProperty<int, int>("ExplosiveRadius", &getPropId<Items::PropId, Items::PropId::EXPLOSIVE_RADIUS>)
@@ -840,6 +841,8 @@ namespace LuaAPI {
                     .addProperty<int, int>("AccuracyLossOnShot", &getPropId<VehicleWeapons::PropId, VehicleWeapons::PropId::ACCURACY_LOSS_ON_SHOT>)
                     .addProperty<int, int>("AccuracyLossMax", &getPropId<VehicleWeapons::PropId, VehicleWeapons::PropId::ACCURACY_LOSS_MAX>)
                     .addProperty<int, int>("AccuracyCorrectionRate", &getPropId<VehicleWeapons::PropId, VehicleWeapons::PropId::ACCURACY_CORRECTION_RATE>)
+                    // Device projectile
+                    .addProperty<int, int>("DeviceProjectile", &getPropId<VehicleWeapons::PropId, VehicleWeapons::PropId::DEVICE_PROJECTILE>)
                 .endNamespace()
             .endNamespace()
             .beginNamespace("ValueMods")
@@ -1004,6 +1007,8 @@ namespace LuaAPI {
                     .addProperty<int, int>("ProjectileMeshScale", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_MESH_SCALE>)
                     .addProperty<int, int>("ProjectileLightRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_LIGHT_RADIUS>)
                     .addProperty<int, int>("ProjectileTossZ", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_TOSS_Z>)
+                    .addProperty<int, int>("ProjectileAccelRate", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_ACCEL_RATE>)
+                    .addProperty<int, int>("ProjectileBounce", &getPropId<Projectiles::PropId, Projectiles::PropId::PROJECTILE_BOUNCE>)
                     // Grenade
                     .addProperty<int, int>("ThrowDelay", &getPropId<Projectiles::PropId, Projectiles::PropId::THROW_DELAY>)
                     .addProperty<int, int>("ThrowPullPinTime", &getPropId<Projectiles::PropId, Projectiles::PropId::THROW_PULL_PIN_TIME>)
@@ -1021,11 +1026,12 @@ namespace LuaAPI {
                     .addProperty<int, int>("MineCollisionCylinderHeight", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_COLLISION_CYLINDER_HEIGHT>)
                     .addProperty<int, int>("ClaymoreDetonationAngle", &getPropId<Projectiles::PropId, Projectiles::PropId::CLAYMORE_DETONATION_ANGLE>)
                     .addProperty<int, int>("PrismMineTripDistance", &getPropId<Projectiles::PropId, Projectiles::PropId::PRISM_MINE_TRIP_DISTANCE>)
-                    // MIRV and Gladiator
+                    // Misc
                     .addProperty<int, int>("MIRVSecondaryExplosions", &getPropId<Projectiles::PropId, Projectiles::PropId::MIRV_SECONDARY_EXPLOSIONS>)
                     .addProperty<int, int>("MIRVSecondaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::MIRV_SECONDARY_PROJECTILE>)
                     .addProperty<int, int>("GladiatorSecondaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_SECONDARY_PROJECTILE>)
                     .addProperty<int, int>("GladiatorTertiaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_TERTIARY_PROJECTILE>)
+                    .addProperty<int, int>("NovaBounces", &getPropId<Projectiles::PropId, Projectiles::PropId::NOVA_BOUNCES>)
 
                 .endNamespace()
             .endNamespace()

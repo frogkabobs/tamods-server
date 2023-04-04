@@ -42,14 +42,14 @@ void ServerSettings::ApplyToGame(ATrServerSettingsInfo* s) {
     s->bTeamCredits = this->TeamCredits;
 
     s->bFriendlyFire = this->FriendlyFire;
-    s->fFriendlyFireDamageMultiplier = this->FriendlyFireMultiplier * 1000.0f;
+    s->fFriendlyFireDamageMultiplier = this->FriendlyFireMultiplier;// * 1000.0f;
     s->BaseDestructionLimit = this->BaseDestructionKickLimit;
     s->FFDamageLimit = this->FriendlyFireDamageKickLimit;
     s->FFKillLimit = this->FriendlyFireKillKickLimit;
 
-    s->fEnergyMultiplier = this->EnergyMultiplier * 1000.0f;
-    s->fAoESizeMultiplier = this->AoESizeMultiplier * 1000.0f;
-    s->fAoEDamageMultiplier = this->AoEDamageMultiplier * 1000.0f;
+    s->fEnergyMultiplier = this->EnergyMultiplier;//* 1000.0f;
+    s->fAoESizeMultiplier = this->AoESizeMultiplier;// * 1000.0f;
+    s->fAoEDamageMultiplier = this->AoEDamageMultiplier;// * 1000.0f;
 
     // Verify how this indexing works now...
     s->ClassCounts[0] = this->LightCountLimit;
@@ -63,7 +63,7 @@ void ServerSettings::ApplyToGame(ATrServerSettingsInfo* s) {
     s->GameScores[TGT_RAB] = this->RabbitScoreLimit;
     s->GameScores[TGT_CAH] = this->CaHScoreLimit;
 
-    s->fVehicleHealthMultiplier = this->VehicleHealthMultiplier * 1000.0f;
+    s->fVehicleHealthMultiplier = this->VehicleHealthMultiplier;// * 1000.0f;
     s->VehicleLimits[VEHICLE_GravCycle] = this->GravCycleLimit;
     s->VehicleLimits[VEHICLE_Beowulf] = this->BeowulfLimit;
     s->VehicleLimits[VEHICLE_Shrike] = this->ShrikeLimit;

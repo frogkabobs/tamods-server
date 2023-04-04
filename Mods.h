@@ -127,6 +127,22 @@ void ATrDevice_RemoteArxBuster_ActivateRemoteRounds(ATrDevice_RemoteArxBuster* t
 // Fix for ejection seats not working properly
 void ATrVehicle_Died(ATrVehicle* that, ATrVehicle_execDied_Parms* params, bool* result);
 
+// Sticky grenades explode on target suicide
+bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult);
+void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_StickyGrenade_execStickToTarget_Parms* params, bool* result);
+void TrProj_Grenade_ShutDown(ATrProj_Grenade* that, ATrProj_Grenade_execShutDown_Parms* params);
+
+// Fix sticky MAs not registering
+bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult);
+
+// Allow negative damage
+void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* params);
+
+void UTProjectile_Destroyed(AUTProjectile* that, AUTProjectile_execDestroyed_Parms* params);
+
+// Fix saber not doing passive reload
+void TrDevice_SaberLauncher_OnSwitchToWeapon(ATrDevice_SaberLauncher* that, ATrDevice_SaberLauncher_execOnSwitchToWeapon_Parms* params);
+
 // Vehicles cost credits
 void TrVehicleStation_AbleToSpawnVehicleType(ATrVehicleStation* that, ATrVehicleStation_execAbleToSpawnVehicleType_Parms* params, bool* result);
 bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult);

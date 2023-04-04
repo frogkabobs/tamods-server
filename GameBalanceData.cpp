@@ -412,6 +412,18 @@ namespace GameBalance {
                 return true;
             })
         );
+        static const Property TIME_BEFORE_PASSIVE_RELOAD(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+            if (p.valFloat < 0) return false;
+                dev->m_fTimeBeforeInactiveReload = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fTimeBeforeInactiveReload);
+                return true;
+            })
+        );
 
         // Damage
         static const Property DAMAGE(
@@ -1620,6 +1632,7 @@ namespace GameBalance {
             {PropId::SPINUP_TIME, SPINUP_TIME},
             {PropId::SHOTGUN_SHOT_COUNT, SHOTGUN_SHOT_COUNT},
             {PropId::SHOT_ENERGY_COST, SHOT_ENERGY_COST},
+            {PropId::TIME_BEFORE_PASSIVE_RELOAD, TIME_BEFORE_PASSIVE_RELOAD}, //new
 
             // Damage / Impact
             {PropId::DAMAGE, DAMAGE},
@@ -2985,6 +2998,20 @@ namespace GameBalance {
                 return true;
             })
         );
+        static const Property DEVICE_PROJECTILE(
+            ValueType::INTEGER,
+            applierAdapter<ATrVehicleWeapon>([](PropValue p, ATrVehicleWeapon* wep) {
+                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                wep->WeaponProjectiles.Set(0, projClass);
+                return true;
+            }),
+            getterAdapter<ATrVehicleWeapon>([](ATrVehicleWeapon* wep, PropValue& ret) {
+                ATrProjectile* proj = getWeaponDefaultProj<ATrProjectile>(wep);
+                if(!proj) return false;
+                ret = PropValue::fromInt(proj->ObjectInternalInteger);
+                return true;
+            })
+        );
 
         std::map<PropId, Property> properties = {
             // Ammo
@@ -3030,6 +3057,7 @@ namespace GameBalance {
             {PropId::ACCURACY_LOSS_ON_SHOT, ACCURACY_LOSS_ON_SHOT},
             {PropId::ACCURACY_LOSS_MAX, ACCURACY_LOSS_MAX},
             {PropId::ACCURACY_CORRECTION_RATE, ACCURACY_CORRECTION_RATE},
+            {PropId::DEVICE_PROJECTILE, DEVICE_PROJECTILE},
         };
     }
 
@@ -3039,7 +3067,7 @@ namespace GameBalance {
         static const Property DAMAGE(
             ValueType::FLOAT,
             applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
-                if (p.valFloat < 0) return false;
+                //if (p.valFloat < 0) return false;
 
                 proj->Damage = p.valFloat;
                 return true;
@@ -3076,7 +3104,7 @@ namespace GameBalance {
         static const Property IMPACT_MOMENTUM(
             ValueType::FLOAT,
             applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
-                if (p.valFloat < 0) return false;
+                //if (p.valFloat < 0) return false;
                 proj->MomentumTransfer = p.valFloat;
                 return true;
             }),
@@ -3508,6 +3536,28 @@ namespace GameBalance {
                 return true;
             })
         ); 
+        static const Property PROJECTILE_ACCEL_RATE(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->AccelRate = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->TossZ);
+                return true;
+            })
+        ); 
+        static const Property PROJECTILE_BOUNCE(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                proj->bBounce = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->bBounce);
+                return true;
+            })
+        ); 
         
 
         // Grenade
@@ -3709,6 +3759,19 @@ namespace GameBalance {
             })
         );
 
+        // Nova
+        static const Property NOVA_BOUNCES(
+            ValueType::INTEGER,
+            applierAdapter<ATrProj_NovaColt>([](PropValue p, ATrProj_NovaColt* proj) {
+                proj->m_nBouncesAllowed = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrProj_NovaColt>([](ATrProj_NovaColt* proj, PropValue& ret) {
+                ret = PropValue::fromInt(proj->m_nBouncesAllowed);
+                return true;
+            })
+        );
+
 
         // Main mapping
         std::map<PropId, Property> properties = {
@@ -3757,6 +3820,8 @@ namespace GameBalance {
             {PropId::PROJECTILE_MESH_SCALE, PROJECTILE_MESH_SCALE},
             {PropId::PROJECTILE_LIGHT_RADIUS, PROJECTILE_LIGHT_RADIUS},
             {PropId::PROJECTILE_TOSS_Z, PROJECTILE_TOSS_Z},
+            {PropId::PROJECTILE_ACCEL_RATE, PROJECTILE_ACCEL_RATE},
+            {PropId::PROJECTILE_BOUNCE, PROJECTILE_BOUNCE},
 
             // Grenade
             {PropId::STUCK_DAMAGE_MULTIPLIER, STUCK_DAMAGE_MULTIPLIER},
@@ -3775,12 +3840,13 @@ namespace GameBalance {
             {PropId::CLAYMORE_DETONATION_ANGLE, CLAYMORE_DETONATION_ANGLE},
             {PropId::PRISM_MINE_TRIP_DISTANCE, PRISM_MINE_TRIP_DISTANCE},
 
-            // MIRV and Gladiator
+            // Misc
 
             {PropId::MIRV_SECONDARY_EXPLOSIONS, MIRV_SECONDARY_EXPLOSIONS},
             {PropId::MIRV_SECONDARY_PROJECTILE, MIRV_SECONDARY_PROJECTILE},
             {PropId::GLADIATOR_SECONDARY_PROJECTILE, GLADIATOR_SECONDARY_PROJECTILE},
             {PropId::GLADIATOR_TERTIARY_PROJECTILE, GLADIATOR_TERTIARY_PROJECTILE},
+            {PropId::NOVA_BOUNCES, NOVA_BOUNCES},
         };
     }
 }
