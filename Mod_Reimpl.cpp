@@ -1144,45 +1144,16 @@ bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObje
 }
 
 bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
-    std::cout << "FUCK";
+    std::cout << "FUCK" << std::endl;
     ATrPlayerController* that = (ATrPlayerController*)dwCallingObject;
     ATrPawn* pawn = (ATrPawn*)that->Pawn;
-
-    for(int i = 0; i < pawn->Attached.Count; i++) {
-        std::cout << pawn->Attached.GetStd(i) << std::endl;
-    }
-
-    if(pawn) {/*
-        long long playerId = Utils::netIdToLong(pawn->PlayerReplicationInfo->UniqueId); // check if == -1?
-
-        std::cout << playerId << std::endl;
-
-        TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
-
-        std::cout << "Data found" << std::endl;
-
-        for(ATrProj_StickyGrenade* sticky : pData.attachedStickies) {
-            if (that->Role == ROLE_Authority) {
-                if(!sticky || sticky->bDeleteMe) {
-                    std::cout << "invalid pointer" << std::endl;
-                    continue;
-                }
-                std::cout << "Explode: " << sticky << std::endl;
-                std::cout << sizeof(sticky) << std::endl;
-                sticky->ExplodeFromTimeLimit();
-            }
-        }*/
-
+    if(pawn) {
         for(int i = 0; i < pawn->Attached.Count; i++) {
             AActor* stuck = pawn->Attached.GetStd(i);
             if(stuck->IsA(ATrProj_StickyGrenade::StaticClass())) {
                 ((ATrProj_StickyGrenade*)stuck)->ExplodeFromTimeLimit();
             }
         }
-
-        //pData.attachedStickies.clear(); unnecessary bc the stickies get deleted in shutdown
-
-        //TenantedDataStore::playerData.set(playerId, pData);
         if(pawn->Health > 0) {
             that->m_bLastDeathWasUserSuicide = true;
             pawn->Suicide();
@@ -1208,33 +1179,17 @@ static ATrPlayerPawn* lowestPlayerBase(AActor* actor) {
 
 void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_StickyGrenade_execStickToTarget_Parms* params, bool* result) {
     if (that->m_bHasStuckToTarget) {
-        ATrPlayerPawn* lowest = lowestPlayerBase(that);
-        if(lowest) that->ImpactedActor = lowest; // HACK: undo processtouch changing impactedactor when already stuck
 		*result = false;
         std::cout << "False return1" << std::endl;
         return;
     }
-	if( that->ATrProj_Grenade::StickToTarget(params->Target, params->HitLocation, params->HitNormal) ) {
+	if( that->ATrProj_Grenade::StickToTarget(params->Target, params->HitLocation, params->HitNormal) ) { // replace target with target->GetBaseMost?
         AActor* target = params->Target;
 
         // give direct hit if it sticks to something already stuck to the player (e.g. jackal)
         ATrPlayerPawn* lowest = lowestPlayerBase(target);
         if(lowest) that->ImpactedActor = lowest;
-        if(target && target->IsA(ATrPawn::StaticClass())) {
-            ATrPawn* pawn = (ATrPawn*)target;
-            std::cout << "stick" << std::endl;
-            for(int i = 0; i < pawn->Attached.Count; i++) {
-                std::cout << pawn->Attached.GetStd(i) << std::endl;
-            }
-            long long playerId = Utils::netIdToLong(pawn->PlayerReplicationInfo->UniqueId); // check if == -1?
-            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
-            pData.attachedStickies.push_back(that);
-            TenantedDataStore::playerData.set(playerId, pData);
-            TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(that);
-            sData.attached = playerId;
-            TenantedDataStore::stickyData.set(that, sData);
-            std::cout << "Stick: " << that << std::endl;
-        }
+        
 		that->m_bHasStuckToTarget = true;
 		*result = true;
         std::cout << "True return" << std::endl;
@@ -1251,27 +1206,6 @@ bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, 
     return that->m_bHasStuckToTarget;
 }
 
-void TrProj_Grenade_ShutDown(ATrProj_Grenade* that, ATrProj_Grenade_execShutDown_Parms* params) {
-    std::cout << "Shutdown!" << std::endl;/*
-    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
-        std::cout << "Deleting data...." << std::endl;
-        ATrProj_StickyGrenade* sticky = (ATrProj_StickyGrenade*)that;
-        TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(sticky);
-        if(sData.attached) {
-            long long playerId = sData.attached;
-            TenantedDataStore::stickyData.remove(sticky);
-            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
-            std::cout << pData.attachedStickies.size() << std::endl;
-            remove(pData.attachedStickies.begin(), pData.attachedStickies.end(), sticky);
-            std::cout << pData.attachedStickies.size() << std::endl;
-            TenantedDataStore::playerData.set(playerId, pData);
-        } else {
-            std::cout << "No Attachment!" << std::endl;
-        }
-        
-    }*/
-    that->ShutDown();
-}
 
 
 // Allow negative damage projectiles
@@ -1285,25 +1219,6 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
         that->Explode(params->HitLocation, params->HitNormal);
         return;
     }
-    /*
-    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
-        std::cout << "Deleting data...." << std::endl;
-        ATrProj_StickyGrenade* sticky = (ATrProj_StickyGrenade*)that;
-        TenantedDataStore::StickySpecificData sData = TenantedDataStore::stickyData.get(sticky);
-        if(sData.attached) {
-            long long playerId = sData.attached;
-            TenantedDataStore::stickyData.remove(sticky);
-            TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
-            std::cout << pData.attachedStickies.size() << std::endl;
-            remove(pData.attachedStickies.begin(), pData.attachedStickies.end(), sticky);
-            std::cout << pData.attachedStickies.size() << std::endl;
-            TenantedDataStore::playerData.set(playerId, pData);
-        } else {
-            std::cout << "No Attachment!" << std::endl;
-        }
-        
-    }
-    */
 	if( that->m_bFastProjectile )
 	{
 		if (that->Damage < 0 && that->DamageRadius>0)
@@ -1336,17 +1251,53 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
     that->Explode(params->HitLocation, params->HitNormal);
 }
 
-void UTProjectile_Destroyed(AUTProjectile* that, AUTProjectile_execDestroyed_Parms* params) {
-    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
-        std::cout << "Destroyed" << std::endl;
-    }
-    std::cout << "Destroyed2" << std::endl;
-    that->Destroyed();
-}
-
 void TrDevice_SaberLauncher_OnSwitchToWeapon(ATrDevice_SaberLauncher* that, ATrDevice_SaberLauncher_execOnSwitchToWeapon_Parms* params) {
     that->ATrDevice::OnSwitchToWeapon();
     that->ResumeTargeting();
 }
 
 
+void TrAccoladeManager_UpdateSpecialAccolades(UTrAccoladeManager* that, UTrAccoladeManager_execUpdateSpecialAccolades_Parms* params) {
+    ATrPawn* VictimPawn = NULL;
+	UClass* KillType = NULL;
+    ATrPlayerController* KillerPC= NULL;
+
+    KillerPC = that->m_TrPC;
+
+    if (params->Victim) VictimPawn = (ATrPawn*)params->Victim->Pawn;
+    
+    // Get the type of damage that killed and the causer
+    if (VictimPawn) KillType = VictimPawn->LastHitInfo.Type;
+
+    if (VictimPawn && VictimPawn->LastHitInfo.bDirectHit &&
+	   (VictimPawn->Physics == PHYS_Falling || VictimPawn->Physics == PHYS_Flying)) {
+        if (KillType &&
+            (KillType->IsA(UTrDmgType_GravCyclePilot::StaticClass()) || KillType->IsA(UTrDmgType_ShrikePilot::StaticClass()))) {
+			
+            KillerPC->ClientPlayAirMailImpact();
+		    that->QueueAccolade(UTrAccolade_AirMail::StaticClass(), 0);
+	        if (that->Stats) that->Stats->AddMidairKill(KillerPC);
+            
+        }
+	}
+
+    that->UpdateSpecialAccolades(params->Victim);
+}
+
+/*
+TrDevice_RepairTool.CanBeRepaired 
+print whether it can be repaired
+make players repairable
+*/
+
+/*
+TrProj_Grenade.ProcessTouch
+if GetTimerCount > timeBeforeExplodeOnContact then set m_bExplodeOnTouchEvent to true
+call base processtouch
+*/
+
+/*
+TrProj_MIRVLauncher.Explode
+create server setting for allow MIRV secondary explosion on explode on contact
+if setting and direct hit (impactedactor set) then ATrProj_Grenade::Explode
+*/
