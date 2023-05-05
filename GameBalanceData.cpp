@@ -74,6 +74,23 @@ namespace GameBalance {
         return (DepType*)depClass->Default;
     }
 
+    static UClass* getProjClass(std::string name) {
+        std::string clean = Utils::cleanString(name);
+        for (auto const &it : Data::projectile_classes) {
+            if (std::regex_match(clean, std::regex(it.first)))
+                return (it.second);
+        }
+        return NULL;
+    }
+
+    static std::string getProjName(UClass* projClass) {
+        for (auto const &it : Data::projectile_class_to_name) {
+            if (it.first == projClass)
+                return (it.second);
+        }
+        return NULL;
+    }
+
     // Decorators to convert UObject* to some subtype of it
     template <typename T>
     static std::function<bool(PropValue, UObject*)> applierAdapter(std::function<bool(PropValue, T*)> f, bool performCheck = true) {
@@ -900,6 +917,39 @@ namespace GameBalance {
                 return true;
             })
         );
+        static const Property REPAIR_PERCENTAGE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_RepairTool>([](PropValue p, ATrDevice_RepairTool* dev) {
+                dev->m_fRepairPercentage = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_RepairTool>([](ATrDevice_RepairTool* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fRepairPercentage);
+                return true;
+            })
+        );
+        static const Property PAWN_REPAIR_PERCENTAGE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_RepairTool>([](PropValue p, ATrDevice_RepairTool* dev) {
+                dev->m_fPawnRepairPercentage = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_RepairTool>([](ATrDevice_RepairTool* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fPawnRepairPercentage);
+                return true;
+            })
+        );
+        static const Property VEHICLE_REPAIR_PERCENTAGE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_RepairTool>([](PropValue p, ATrDevice_RepairTool* dev) {
+                dev->m_fVehicleRepairPercentage = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_RepairTool>([](ATrDevice_RepairTool* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fVehicleRepairPercentage);
+                return true;
+            })
+        );
 
         // Projectile / Tracer
         static const Property PROJECTILE_SPEED(
@@ -1598,7 +1648,10 @@ namespace GameBalance {
         static const Property DEVICE_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
-                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                UObject* projObj = UObject::GObjObjects()->Data[p.valInt];
+                if(!projObj->IsA(UClass::StaticClass())) return false;
+                UClass* projClass = (UClass*) projObj;
+                if(!projClass->ClassIsChildOf(projClass, ATrProjectile::StaticClass())) return false;
                 dev->WeaponProjectiles.Set(0, projClass);
                 return true;
             }),
@@ -1673,6 +1726,9 @@ namespace GameBalance {
             {PropId::FRACTAL_SHARD_HEIGHT, FRACTAL_SHARD_HEIGHT},
             {PropId::FRACTAL_SHARD_DAMAGE, FRACTAL_SHARD_DAMAGE},
             {PropId::FRACTAL_SHARD_DAMAGE_RADIUS, FRACTAL_SHARD_DAMAGE_RADIUS},
+            {PropId::REPAIR_PERCENTAGE, REPAIR_PERCENTAGE},
+            {PropId::PAWN_REPAIR_PERCENTAGE, PAWN_REPAIR_PERCENTAGE},
+            {PropId::VEHICLE_REPAIR_PERCENTAGE, VEHICLE_REPAIR_PERCENTAGE},
 
             // Projectile / Tracer
             {PropId::PROJECTILE_SPEED, PROJECTILE_SPEED},
@@ -3001,7 +3057,10 @@ namespace GameBalance {
         static const Property DEVICE_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrVehicleWeapon>([](PropValue p, ATrVehicleWeapon* wep) {
-                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                UObject* projObj = UObject::GObjObjects()->Data[p.valInt];
+                if(!projObj->IsA(UClass::StaticClass())) return false;
+                UClass* projClass = (UClass*) projObj;
+                if(!projClass->ClassIsChildOf(projClass, ATrProjectile::StaticClass())) return false;
                 wep->WeaponProjectiles.Set(0, projClass);
                 return true;
             }),
@@ -3722,7 +3781,10 @@ namespace GameBalance {
         static const Property MIRV_SECONDARY_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrProj_MIRVLauncher>([](PropValue p, ATrProj_MIRVLauncher* proj) {
-                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                UObject* projObj = UObject::GObjObjects()->Data[p.valInt];
+                if(!projObj->IsA(UClass::StaticClass())) return false;
+                UClass* projClass = (UClass*) projObj;
+                if(!projClass->ClassIsChildOf(projClass, ATrProjectile::StaticClass())) return false;
                 proj->m_SecondaryProjectile = projClass;
                 return true;
             }),
@@ -3737,7 +3799,10 @@ namespace GameBalance {
         static const Property GLADIATOR_SECONDARY_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrProj_SpikeLauncher>([](PropValue p, ATrProj_SpikeLauncher* proj) {
-                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                UObject* projObj = UObject::GObjObjects()->Data[p.valInt];
+                if(!projObj->IsA(UClass::StaticClass())) return false;
+                UClass* projClass = (UClass*) projObj;
+                if(!projClass->ClassIsChildOf(projClass, ATrProjectile::StaticClass())) return false;
                 proj->m_SecondProjectile = projClass;
                 return true;
             }),
@@ -3749,7 +3814,10 @@ namespace GameBalance {
         static const Property GLADIATOR_TERTIARY_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrProj_SpikeLauncher>([](PropValue p, ATrProj_SpikeLauncher* proj) {
-                UClass* projClass = (UClass*) UObject::GObjObjects()->Data[p.valInt];
+                UObject* projObj = UObject::GObjObjects()->Data[p.valInt];
+                if(!projObj->IsA(UClass::StaticClass())) return false;
+                UClass* projClass = (UClass*) projObj;
+                if(!projClass->ClassIsChildOf(projClass, ATrProjectile::StaticClass())) return false;
                 proj->m_ThirdProjectile = projClass;
                 return true;
             }),

@@ -651,7 +651,7 @@ void TrPlayerController_PlayerWalking_ProcessMove(ATrPlayerController* that, APl
     if (!TrP) return;
 
     if (that->m_bBlink) {
-        
+        //TrP->Location.X += 1000.0;// DEBUG REMOVE
 
         if (TrP->Physics != PHYS_Falling && TrP->Physics != PHYS_Flying) {
             TrP->SetPhysics(PHYS_Falling);
@@ -1159,7 +1159,6 @@ bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunctio
             pawn->Suicide();
         }
     }
-
     return true;
 }
 
@@ -1183,12 +1182,14 @@ void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_Sti
         std::cout << "False return1" << std::endl;
         return;
     }
-	if( that->ATrProj_Grenade::StickToTarget(params->Target, params->HitLocation, params->HitNormal) ) { // replace target with target->GetBaseMost?
-        AActor* target = params->Target;
+    AActor* target = params->Target;
+    AActor* baseMost = target->GetBaseMost();
+    if(baseMost->IsA(ATrPlayerPawn::StaticClass())) target = baseMost;
+	if( that->ATrProj_Grenade::StickToTarget(target, params->HitLocation, params->HitNormal) ) { // replace target with target->GetBaseMost?
 
         // give direct hit if it sticks to something already stuck to the player (e.g. jackal)
-        ATrPlayerPawn* lowest = lowestPlayerBase(target);
-        if(lowest) that->ImpactedActor = lowest;
+        //ATrPlayerPawn* lowest = lowestPlayerBase(target);
+        //if(lowest) that->ImpactedActor = lowest;
         
 		that->m_bHasStuckToTarget = true;
 		*result = true;
@@ -1257,7 +1258,9 @@ void TrDevice_SaberLauncher_OnSwitchToWeapon(ATrDevice_SaberLauncher* that, ATrD
 }
 
 
-void TrAccoladeManager_UpdateSpecialAccolades(UTrAccoladeManager* that, UTrAccoladeManager_execUpdateSpecialAccolades_Parms* params) {
+bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
+    UTrAccoladeManager* that = (UTrAccoladeManager*)dwCallingObject;
+    UTrAccoladeManager_execUpdateSpecialAccolades_Parms* params = (UTrAccoladeManager_execUpdateSpecialAccolades_Parms*)pParams;
     ATrPawn* VictimPawn = NULL;
 	UClass* KillType = NULL;
     ATrPlayerController* KillerPC= NULL;
@@ -1281,7 +1284,7 @@ void TrAccoladeManager_UpdateSpecialAccolades(UTrAccoladeManager* that, UTrAccol
         }
 	}
 
-    that->UpdateSpecialAccolades(params->Victim);
+    return false;
 }
 
 /*

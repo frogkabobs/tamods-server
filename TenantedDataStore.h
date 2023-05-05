@@ -42,6 +42,10 @@ namespace TenantedDataStore {
         int maxRegenMoveSpeed = -1;
     };
 
+    struct DmgTypeSpecificData {
+        bool allowAirmails = false;
+    };
+
     struct StickySpecificData {
         long long attached;
     };

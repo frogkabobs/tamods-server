@@ -497,6 +497,22 @@ static bool setNextMapByFilename(std::string name) {
     return true;
 }
 
+static void movePlayer(std::string playerName, float x, float y, float z) {
+    AActor* player = NULL;
+    {
+        //std::lock_guard<std::mutex> lock(Utils::tr_gri_mutex);
+        ATrPlayerReplicationInfo* pri = Utils::getPRIForPlayerName(playerName);
+        if (pri) {
+            player = pri->Owner;
+        }
+    }
+    if (!player) return;
+
+    player->Location.X += x;
+    player->Location.Y += y;
+    player->Location.Z += z;
+}
+
 static int argTypeBool = (int)ServerCommand::CommandArgType::BOOL;
 static int argTypeInt = (int)ServerCommand::CommandArgType::INT;
 static int argTypeFloat = (int)ServerCommand::CommandArgType::FLOAT;
@@ -532,6 +548,9 @@ namespace LuaAPI {
                     .addFunction("NextMap", &setNextMapById)
                     .addFunction("NextMapById", &setNextMapById)
                     .addFunction("NextMapByFilename", &setNextMapByFilename)
+                .endNamespace()
+                .beginNamespace("Debug")
+                    .addFunction("MovePlayer", &movePlayer)
                 .endNamespace()
             .endNamespace();
     }

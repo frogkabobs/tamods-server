@@ -192,6 +192,12 @@
 #define CONST_PROJ_ID_SPIKE_LAUNCHER_THIRD      10120
 #define CONST_PROJ_ID_WALL_TURRET               10121
 
+// Subdevices (not real game-defined constants)
+
+#define CONST_SUBDEVICE_ID_EXR_TURRET           11000
+#define CONST_SUBDEVICE_ID_BASE_TURRET          11001
+#define CONST_SUBDEVICE_ID_FORCE_FIELD          11002
+#define CONST_SUBDEVICE_ID_LIGHT_TURRET         11003
 
 
 namespace Data
@@ -234,4 +240,8 @@ namespace Data
     extern std::map<int, std::string> map_id_to_filename;
     extern std::map<std::string, int> projectiles;
     extern std::map<int, std::string> projectile_id_to_name;
+    extern std::map<std::string, UClass*> projectile_classes;
+    extern std::map<UClass*, std::string> projectile_class_to_name;
+    extern std::map<std::string, int> subdevices;
+    extern std::map<int, std::string> subdevice_id_to_name;
 }

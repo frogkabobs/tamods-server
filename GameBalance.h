@@ -7,6 +7,7 @@
 #include <map>
 
 #include "Utils.h"
+#include "Data.h"
 #include "Lua.h"
 #include "TenantedDataStore.h"
 
@@ -244,6 +245,9 @@ namespace GameBalance {
             FRACTAL_SHARD_HEIGHT = 3035,
             FRACTAL_SHARD_DAMAGE = 3036,
             FRACTAL_SHARD_DAMAGE_RADIUS = 3037,
+            REPAIR_PERCENTAGE = 3038,
+            PAWN_REPAIR_PERCENTAGE = 3039,
+            VEHICLE_REPAIR_PERCENTAGE = 3040,
 
             // Projectile / Tracer
             PROJECTILE_SPEED = 4000,

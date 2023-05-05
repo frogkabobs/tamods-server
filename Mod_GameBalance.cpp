@@ -114,6 +114,9 @@ static std::vector<UObject*> getDefaultObjectsForProps(int elemId) {
         if (Data::perk_id_to_name.find(elemId) != Data::perk_id_to_name.end()) {
             prefix = "TrPerk";
         }
+        if (Data::subdevice_id_to_name.find(elemId) != Data::subdevice_id_to_name.end()) {
+            prefix = "TrSubDevice";
+        }
         return getDefaultObjects<ATrDevice>(relevantClassNames, prefix, variants, elemId);
     }
     else if (isClassCase) {
@@ -346,7 +349,7 @@ static LuaRef getVehicleWeaponProp(std::string vehicleWeaponName, int intPropId)
 }
 
 static LuaRef getProjectileProp(std::string projectileName, int intPropId) {
-    int projectileId = Utils::searchMapId(Data::projectiles, projectileName, "", false); //CREATE DATA PROJECTILES
+    int projectileId = Utils::searchMapId(Data::projectiles, projectileName, "", false);
     if (projectileId == 0) {
         Logger::error("Unable to get property config; invalid projectile %s", projectileName.c_str());
         return LuaRef(g_config.lua.getState());
@@ -360,6 +363,27 @@ static LuaRef getProjectileProp(std::string projectileName, int intPropId) {
 
     return getProp(Projectiles::properties, propMap, projectileId, intPropId);
 }
+
+static UClass* getProjClass(std::string name) {
+    std::string clean = Utils::cleanString(name);
+    for (auto const &it : Data::projectile_classes) {
+        if (std::regex_match(clean, std::regex(it.first)))
+            return (it.second);
+    }
+    return NULL;
+}
+
+static LuaRef getProjectileId(std::string projectileName) {
+    UClass* projClass = getProjClass(projectileName);
+    if(!projClass) {
+        Logger::error("Unable to get property id; invalid projectile %s", projectileName.c_str());
+        return LuaRef(g_config.lua.getState());
+    }
+
+    return LuaRef(g_config.lua.getState(), projClass->ObjectInternalInteger);
+}
+
+
 
 static LuaRef getDeviceValueMod(std::string className, std::string itemName) {
     int itemId = Data::getItemId(className, itemName);
@@ -571,6 +595,11 @@ static std::string getStringVal() {
     return std::string(s);
 }
 
+template <UObject* obj>
+static int getInternalId() {
+    return obj->ObjectInternalInteger;
+}
+
 namespace LuaAPI {
     void addGameBalanceAPI(luabridge::Namespace ns) {
         ns
@@ -638,6 +667,9 @@ namespace LuaAPI {
                     .addProperty<int, int>("FractalShardHeight", &getPropId<Items::PropId, Items::PropId::FRACTAL_SHARD_HEIGHT>)
                     .addProperty<int, int>("FractalShardDamage", &getPropId<Items::PropId, Items::PropId::FRACTAL_SHARD_DAMAGE>)
                     .addProperty<int, int>("FractalShardDamageRadius", &getPropId<Items::PropId, Items::PropId::FRACTAL_SHARD_DAMAGE_RADIUS>)
+                    .addProperty<int, int>("RepairPercentage", &getPropId<Items::PropId, Items::PropId::REPAIR_PERCENTAGE>)
+                    .addProperty<int, int>("PawnRepairPercentage", &getPropId<Items::PropId, Items::PropId::PAWN_REPAIR_PERCENTAGE>)
+                    .addProperty<int, int>("VehicleRepairPercentage", &getPropId<Items::PropId, Items::PropId::VEHICLE_REPAIR_PERCENTAGE>)
                     // Projectile / Tracer
                     .addProperty<int, int>("ProjectileSpeed", &getPropId<Items::PropId, Items::PropId::PROJECTILE_SPEED>)
                     .addProperty<int, int>("ProjectileMaxSpeed", &getPropId<Items::PropId, Items::PropId::PROJECTILE_MAX_SPEED>)
@@ -962,6 +994,7 @@ namespace LuaAPI {
             .beginNamespace("Projectiles")
                 .addFunction("setProperty", &setProjectileProp)
                 .addFunction("getProperty", &getProjectileProp)
+                .addFunction("getId", &getProjectileId)
                 .beginNamespace("Properties")
                     .addProperty<int, int>("Invalid", &getPropId<Projectiles::PropId, Projectiles::PropId::INVALID>)
                     // Damage / Impact

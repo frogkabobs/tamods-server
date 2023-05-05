@@ -22,6 +22,7 @@ namespace Data
             { R"rx(^(phase|phaserifle)$)rx", CONST_WEAPON_ID_RIFLE_PHASE },
             { R"rx(^(sap(20)?(rifle)?)$)rx", CONST_WEAPON_ID_SAP20 },
             { R"rx(^(melee|knife|sword)$)rx", CONST_WEAPON_ID_MELEE },
+            { R"rx(^(defaultrepairtool)$)rx", CONST_WEAPON_ID_REPAIR_TOOL },
             // Bullet
             { R"rx(^(falcon)$)rx", CONST_WEAPON_ID_PISTOL_FALCON },
             { R"rx(^(lightassaultrifle|lar|ar|assaultrifle|rifle)$)rx", CONST_WEAPON_ID_RIFLE_ASSAULT_LIGHT },
@@ -68,6 +69,7 @@ namespace Data
             { R"rx(^(longrangerepairtool)$)rx", CONST_WEAPON_ID_REPAIR_TOOL_SD_MKD },
             { R"rx(^(elf(projector)?)$)rx", CONST_WEAPON_ID_ELFPROJECTOR },
             { R"rx(^(melee|knife|sword)$)rx", CONST_WEAPON_ID_MELEE },
+            { R"rx(^(defaultrepairtool)$)rx", CONST_WEAPON_ID_REPAIR_TOOL },
             // Bullet
             { R"rx(^(assaultrifle|rifle|ar)$)rx", CONST_WEAPON_ID_RIFLE_ASSAULT },
             { R"rx(^(gast('s)?(rifle)?)$)rx", CONST_WEAPON_ID_RIFLE_ASSAULT_MKD },
@@ -117,6 +119,7 @@ namespace Data
             { R"rx(^(titanlauncher|titan)$)rx", CONST_WEAPON_ID_LAUNCHER_SABER_MKD },
             { R"rx(^(gladiator)$)rx", CONST_WEAPON_ID_SPIKELAUNCHER },
             { R"rx(^(melee|knife|sword)$)rx", CONST_WEAPON_ID_MELEE },
+            { R"rx(^(defaultrepairtool)$)rx", CONST_WEAPON_ID_REPAIR_TOOL },
             // Bullet
             { R"rx(^(chaingun)$)rx", CONST_WEAPON_ID_CHAINGUN },
             { R"rx(^(chaincannon)$)rx", CONST_WEAPON_ID_CHAINGUN_MKD },
@@ -246,7 +249,11 @@ namespace Data
     };
 
     std::map<int, std::string> item_id_to_name = {
+        // Melee
         { CONST_WEAPON_ID_MELEE, "Melee" },
+        // Default Repair Tool
+        { CONST_WEAPON_ID_REPAIR_TOOL, "RepairTool"},
+
 
         // Light
         // Impact
@@ -391,6 +398,12 @@ namespace Data
         { CONST_ITEM_PACK_SURVIVAL, "SurvivalPack" },
         { CONST_ITEM_PACK_ENERGY_JUGGERNAUT, "EnergyPack_Juggernaut" },
         { CONST_ITEM_PACK_REGEN, "RegenPack" },
+
+        // Subdevices
+        { CONST_SUBDEVICE_ID_EXR_TURRET, "AntiAirTurret"},
+        { CONST_SUBDEVICE_ID_BASE_TURRET, "BaseTurret"},
+        { CONST_SUBDEVICE_ID_FORCE_FIELD, "ForceField"},
+        { CONST_SUBDEVICE_ID_LIGHT_TURRET, "LightTurret"}, 
 
         // Perks
         { CONST_ITEM_PERK_SURVIVALIST, "Survivalist" },
@@ -1500,12 +1513,278 @@ namespace Data
 
     };
 
+    std::map<std::string, UClass*> projectile_classes = {
+        { R"rx(^(fraggrenades?|frags?)$)rx", ATrProj_Grenade::StaticClass() }, 
+        { R"rx(^(stickygrenades?|sticky|stickies)$)rx", ATrProj_StickyGrenade::StaticClass() },
+        { R"rx(^(lacerator)$)rx", ATrProj_Lacerator::StaticClass() }, // Trivial regex
+        { R"rx(^(mines?)$)rx", ATrProj_Mine::StaticClass() },
+        { R"rx(^(claymores?|claymoremines?)$)rx", ATrProj_Claymore::StaticClass() },
+        { R"rx(^(prismmines?|mines?)$)rx", ATrProj_PrismMine::StaticClass() },
+        { R"rx(^(repairkits?)$)rx", ATrProj_RepairDeployable::StaticClass() },
+        { R"rx(^(throwdeployable)$)rx", ATrProj_ThrowDeployable::StaticClass() }, // Trivial regex
+        { R"rx(^(saberlauncher|saber)$)rx", ATrProj_TrackingMissile::StaticClass() },
+        { R"rx(^(tracer)$)rx", ATrProj_Tracer::StaticClass() }, // Trivial regex
+        { R"rx(^(clienttracer)$)rx", ATrProj_ClientTracer::StaticClass() }, // Trivial regex
+        { R"rx(^(callinbase)$)rx", ATrProj_CallInBase::StaticClass() }, // Trivial regex
+        { R"rx(^(orbitalstrike)$)rx", ATrProj_OrbitalStrike::StaticClass() }, // Trivial regex //Audio crash?
+        { R"rx(^(tacticalstrike)$)rx", ATrProj_TacticalStrike::StaticClass() }, // Trivial regex //Audio crash
+        { R"rx(^(anti-?personnelgrenades?|aps?|apgrenades?)$)rx", ATrProj_APGrenade::StaticClass() },
+        { R"rx(^(arc8)$)rx", ATrProj_ARC8::StaticClass() }, // Trivial regex
+        { R"rx(^(motionmines?)$)rx", ATrProj_ArmoredClaymore::StaticClass() },
+        { R"rx(^(arxbuster|arx)$)rx", ATrProj_ArxBuster::StaticClass() },
+        { R"rx(^(dustdevil)$)rx", ATrProj_ArxBuster_MKD::StaticClass() },
+        { R"rx(^(arxshotgun)$)rx", ATrProj_ArxShotgun::StaticClass() }, // Trivial regex, what is this?
+        { R"rx(^(assaultrifle|rifle|ar)$)rx", ATrProj_AssaultRifle::StaticClass() },
+        { R"rx(^(gast('s)?(rifle)?)$)rx", ATrProj_AssaultRifle_MKD::StaticClass() },
+        { R"rx(^(avmine)$)rx", ATrProj_AVMine::StaticClass() }, // Trivial regex
+        { R"rx(^(bolt|boltlauncher)$)rx", ATrProj_BoltLauncher::StaticClass() },
+        { R"rx(^(buckler)$)rx", ATrProj_Buckler::StaticClass() }, // Trivial regex, actually a spinfusor
+        { R"rx(^(chaingun)$)rx", ATrProj_Chaingun::StaticClass() },
+        { R"rx(^(chaincannon)$)rx", ATrProj_Chaingun_MKD::StaticClass() },
+        { R"rx(^(claymoremkd)$)rx", ATrProj_Claymore_MKD::StaticClass() }, // Trivial regex
+        { R"rx(^(nitrons?|impactnitrons?|impacts?)$)rx", ATrProj_ConcussionGrenade::StaticClass() },
+        { R"rx(^(compactnitrons?|compacts?)$)rx", ATrProj_ConcussionGrenade_MKD::StaticClass() },
+        { R"rx(^(spinfusordisks?|spinfusordiscs?|spins?|disks?|discs?|spindisks?|spindiscs?)$)rx", ATrProj_DiskToss::StaticClass() },
+        { R"rx(^(spinfusor|spin)$)rx", ATrProj_Spinfusor::StaticClass() },
+        { R"rx(^(flak(cannon)?)$)rx", ATrProj_TC24::StaticClass() },
+        { R"rx(^(efg)$)rx", ATrProj_ElfFlak::StaticClass() },
+        { R"rx(^(emps?|empgrenades?)$)rx", ATrProj_EMPGrenade::StaticClass() },
+        { R"rx(^(emps?xls?|emps?xlgrenades?)$)rx", ATrProj_EMPGrenade_MKD::StaticClass() },
+        { R"rx(^(falcon)$)rx", ATrProj_Falcon::StaticClass() },
+        { R"rx(^(flare(grenade)?)$)rx", ATrProj_FlareGrenade::StaticClass() }, 
+        { R"rx(^(grenademkd)$)rx", ATrProj_Grenade_MKD::StaticClass() }, // Trivial regex
+        { R"rx(^(grenadelauncher|nadelauncher|launcher|gl)$)rx", ATrProj_GrenadeLauncher::StaticClass() },
+        { R"rx(^(light(gre?)nadelauncher)$)rx", ATrProj_GrenadeLauncher_Light::StaticClass() },
+        { R"rx(^(t5s?(grenades?)?)$)rx", ATrProj_GrenadeT5::StaticClass() },
+        { R"rx(^(fraggrenades?(xl)?|frags?(xl)?|grenades?(xl)?)$)rx", ATrProj_GrenadeXL::StaticClass() },
+        { R"rx(^(short-?fusefrags?(grenades?)?|short-?fuses?)$)rx", ATrProj_GrenadeXL_MKD::StaticClass() },
+        { R"rx(^(heavyaps?(grenades?)?)$)rx", ATrProj_HeavyAPGrenade::StaticClass() },
+        { R"rx(^(heavyaps?-?xls?(grenades?)?)$)rx", ATrProj_HeavyAPGrenade_MKD::StaticClass() },
+        { R"rx(^(heavyboltlauncher|boltlauncher|bolt)$)rx", ATrProj_HeavyBoltLauncher::StaticClass() },
+        { R"rx(^(heavyimpactnitron)$)rx", ATrProj_HeavyImpactNitron::StaticClass() }, // Trivial regex
+        { R"rx(^(heavy(spin)?(fusor)?|spin(fusor)?|fusor)$)rx", ATrProj_HeavySpinfusor::StaticClass() },
+        { R"rx(^((heavy)?blinks?(fusor)?)$)rx", ATrProj_HeavySpinfusor_MKD::StaticClass() },
+        { R"rx(^(twinfusor)$)rx", ATrProj_Twinfusor::StaticClass() },
+        { R"rx(^(heavytwinfusor|twinfusor|twin)$)rx", ATrProj_HeavyTwinfusor::StaticClass() },
+        { R"rx(^(honorfusor|honourfusor|honor)$)rx", ATrProj_Honorfusor::StaticClass() },
+        { R"rx(^(impactbomblets)$)rx", ATrProj_ImpactBomblets::StaticClass() }, // Trivial regex
+        { R"rx(^(lightassaultrifle|lar|ar|assaultrifle|rifle)$)rx", ATrProj_LightAssaultRifle::StaticClass() },
+        { R"rx(^(spin(fusor)?|light(spin)?(fusor)?)$)rx", ATrProj_LightSpinfusor::StaticClass() },
+        { R"rx(^(blinks?|blinks?fusor)$)rx", ATrProj_LightSpinfusor_100X::StaticClass() },
+        { R"rx(^(dueling(spin)?(fusor)?)$)rx", ATrProj_LightSpinfusor_MKD::StaticClass() },
+        { R"rx(^((heavy|light)sticky(grenades?)?|lightstickies)$)rx", ATrProj_LightStickyGrenade::StaticClass() },
+        { R"rx(^(twin|twinfusor|lighttwinfusor)$)rx", ATrProj_LightTwinfusor::StaticClass() },
+        { R"rx(^(lr1mortar)$)rx", ATrProj_LR1Mortar::StaticClass() }, // Trivial regex
+        { R"rx(^(clustergrenades?|clusters?)$)rx", ATrProj_MIRVGrenade::StaticClass() },
+        { R"rx(^(mirvlauncher|mirv)$)rx", ATrProj_MIRVLauncher::StaticClass() },
+        { R"rx(^(fusionmortar|mortar)$)rx", ATrProj_MortarLauncher::StaticClass() },
+        { R"rx(^((fusion)?mortardeluxe)$)rx", ATrProj_MortarLauncher_MKD::StaticClass() },
+        { R"rx(^(motionsensors?)$)rx", ATrProj_MotionSensor::StaticClass() },
+        { R"rx(^(chaffs?(grenades?)?)$)rx", ATrProj_NinjaSmoke::StaticClass() },
+        { R"rx(^(nj4smg|nj4)$)rx", ATrProj_NJ4SMG::StaticClass() },
+        { R"rx(^(desertnj4|desertnj4smg)$)rx", ATrProj_NJ4SMG_MKD::StaticClass() },
+        { R"rx(^(nj5(-?b)?(smg)?)$)rx", ATrProj_NJ5SMG::StaticClass() },
+        { R"rx(^(nova|blaster|novablaster)$)rx", ATrProj_NovaColt::StaticClass() },
+        { R"rx(^(mx|novablastermx|novamx|blaster(mx)?)$)rx", ATrProj_NovaColt_MKD::StaticClass() },
+        { R"rx(^(plasmacannon)$)rx", ATrProj_PlasmaCannon::StaticClass() },
+        { R"rx(^(plasmagun|plasma)$)rx", ATrProj_PlasmaGun::StaticClass() },
+        { R"rx(^(proximitys?(grenades?)?|proxies|proxys?)$)rx", ATrProj_ProximityGrenade::StaticClass() },
+        { R"rx(^(jackal)$)rx", ATrProj_RemoteArxBuster::StaticClass() },
+        { R"rx(^(rhino(smg)?)$)rx", ATrProj_RhinoSMG::StaticClass() },
+        { R"rx(^(arcticrhino(smg)?)$)rx", ATrProj_RhinoSMG_MKD::StaticClass() },
+        { R"rx(^(rocketlauncher)$)rx", ATrProj_RocketLauncher::StaticClass() }, // Trivial regex, actually a spinfusor
+        { R"rx(^(saber(launcher)?dumbfire)$)rx", ATrProj_TrackingMissile_DumbFire::StaticClass() }, // Trivial regex
+        { R"rx(^(titanlauncher|titan)$)rx", ATrProj_TrackingMissile_MKD::StaticClass() },
+        { R"rx(^(sn7(silenced)?(pistol)?)$)rx", ATrProj_SN7::StaticClass() },
+        { R"rx(^(arcticsn7(silenced)?(pistol)?)$)rx", ATrProj_SN7_MKD::StaticClass() },
+        { R"rx(^(fractals?|fractalgrenades?)$)rx", ATrProj_SpikeGrenade::StaticClass() },
+        { R"rx(^(extendedfractals?(grenades?)?)$)rx", ATrProj_SpikeGrenade_MKD::StaticClass() },
+        { R"rx(^(gladiator)$)rx", ATrProj_SpikeLauncher::StaticClass() },
+        { R"rx(^(blinks?|blinks?fusor|sparespin(fusor)?)$)rx", ATrProj_Spinfusor_100X::StaticClass() },
+        { R"rx(^(spinfusormkd)$)rx", ATrProj_SpinfusorD::StaticClass() },
+        { R"rx(^(spinfusormk-?x)$)rx", ATrProj_SpinfusorD_MKD::StaticClass() },
+        { R"rx(^(stealth(spin)?(fusor)?)$)rx", ATrProj_StealthSpinfusor::StaticClass() },
+        { R"rx(^(explosivenitrons?|explosives?)$)rx", ATrProj_STGrenade::StaticClass() },
+        { R"rx(^(stickygrenades?xl|stickyxl|stickiesxl)$)rx", ATrProj_StickyGrenade_MKD::StaticClass() },
+        { R"rx(^(targetingbeacon)$)rx", ATrProj_TargetingBeacon::StaticClass() }, // Trivial regex, what is this?
+        { R"rx(^(tcn4(smg)?)$)rx", ATrProj_TCN4SMG::StaticClass() },
+        { R"rx(^(tcn4rockwind(smg)?)$)rx", ATrProj_TCN4SMG_MKD::StaticClass() },
+        { R"rx(^(tcng(grenade)?)$)rx", ATrProj_TCNG::StaticClass() },
+        { R"rx(^(tcng(quick|short)?-?fuse(grenade)?)$)rx", ATrProj_TCNG_MKD::StaticClass() },
+        { R"rx(^(throwingknives|knives)$)rx", ATrProj_ThrowingKnives::StaticClass() },
+        { R"rx(^(thumper)$)rx", ATrProj_Thumper::StaticClass() },
+        { R"rx(^(thumperd)$)rx", ATrProj_ThumperD::StaticClass() },
+        { R"rx(^(thumperdx)$)rx", ATrProj_ThumperD_MKD::StaticClass() },
+        { R"rx(^(blackouts?|blackoutgrenades?)$)rx", ATrProj_WhiteOut::StaticClass() },
+        { R"rx(^(x1|lmg|x1lmg)$)rx", ATrProj_X1Rifle::StaticClass() },
+        { R"rx(^(exr(turret)?)$)rx", ATrProj_AntiAirTurret::StaticClass() }, 
+        { R"rx(^(baseturret)$)rx", ATrProj_BaseTurret::StaticClass() }, // Trivial regex
+        { R"rx(^(beowulfgunner)$)rx", ATrProj_BeowulfGunner::StaticClass() }, // Trivial regex
+        { R"rx(^(beowulfpilot)$)rx", ATrProj_BeowulfPilot::StaticClass() }, // Trivial regex
+        { R"rx(^(bxt)$)rx", ATrProj_BXT::StaticClass() }, // Trivial regex
+        { R"rx(^(chaingunbullettracer)$)rx", ATrProj_ChaingunBulletTracer::StaticClass() }, // Trivial regex
+        { R"rx(^(gravcyclepilot)$)rx", ATrProj_GravCyclePilot::StaticClass() }, // Trivial regex
+        { R"rx(^(havocpilot)$)rx", ATrProj_HavocPilot::StaticClass() }, // Trivial regex
+        { R"rx(^(hercgunner)$)rx", ATrProj_HERCGunner::StaticClass() }, // Trivial regex
+        { R"rx(^(hercpilot)$)rx", ATrProj_HERCPilot::StaticClass() }, // Trivial regex
+        { R"rx(^(lightturret)$)rx", ATrProj_LightTurret::StaticClass() }, // Trivial regex
+        { R"rx(^(mirv(launcher)?secondary)$)rx", ATrProj_MIRVLauncherSecondary::StaticClass() }, 
+        { R"rx(^(clusterecondary)$)rx", ATrProj_MIRVGrenadeSecondary::StaticClass() }, 
+        { R"rx(^(pistolbullettracer)$)rx", ATrProj_PistolBulletTracer::StaticClass() }, // Trivial regex
+        { R"rx(^(sap20)$)rx", ATrProj_SAP20::StaticClass() }, // Trivial regex
+        { R"rx(^(shrikepilot)$)rx", ATrProj_ShrikePilot::StaticClass() }, // Trivial regex
+        { R"rx(^(gladiatorsecond(ary)?)$)rx", ATrProj_SpikeLauncherSecondary::StaticClass() }, 
+        { R"rx(^(gladiator(third|tertiary))$)rx", ATrProj_SpikeLauncherThird::StaticClass() }, 
+        { R"rx(^(wallturret)$)rx", ATrProj_WallTurret::StaticClass() }, // Trivial regex 
+    };
+
+    std::map<UClass*, std::string> projectile_class_to_name = {
+        { ATrProj_Grenade::StaticClass(), "Frag Grenade" }, 
+        { ATrProj_StickyGrenade::StaticClass(), "Sticky Grenade" },
+        { ATrProj_Lacerator::StaticClass(), "Lacerator" }, // Trivial regex
+        { ATrProj_Mine::StaticClass(), "Mine" },
+        { ATrProj_Claymore::StaticClass(), "Claymore" },
+        { ATrProj_PrismMine::StaticClass(), "Prism Mine" },
+        { ATrProj_RepairDeployable::StaticClass(), "Repair Kit" },
+        { ATrProj_ThrowDeployable::StaticClass(), "Throw Deployable" }, // Trivial regex
+        { ATrProj_TrackingMissile::StaticClass(), "Saber Launcher" },
+        { ATrProj_Tracer::StaticClass(), "Tracer" }, // Trivial regex
+        { ATrProj_ClientTracer::StaticClass(), "Client Tracer" }, // Trivial regex
+        { ATrProj_CallInBase::StaticClass(), "Callin Base" }, // Trivial regex
+        { ATrProj_OrbitalStrike::StaticClass(), "Orbital Strike" }, // Trivial regex //Audio crash?
+        { ATrProj_TacticalStrike::StaticClass(), "Tactical Strike" }, // Trivial regex //Audio crash
+        { ATrProj_APGrenade::StaticClass(), "AP Grenade" },
+        { ATrProj_ARC8::StaticClass(), "ACR8" }, // Trivial regex
+        { ATrProj_ArmoredClaymore::StaticClass(), "Motion Mine" },
+        { ATrProj_ArxBuster::StaticClass(), "Arx Buster" },
+        { ATrProj_ArxBuster_MKD::StaticClass(), "Dust Devil" },
+        { ATrProj_ArxShotgun::StaticClass(), "Arx Shotgun" }, // Trivial regex, what is this?
+        { ATrProj_AssaultRifle::StaticClass(), "Assault Rifle" },
+        { ATrProj_AssaultRifle_MKD::StaticClass(), "Gast's Rifle" },
+        { ATrProj_AVMine::StaticClass(), "AV Mine" }, // Trivial regex
+        { ATrProj_BoltLauncher::StaticClass(), "Bolt Launcher" },
+        { ATrProj_Buckler::StaticClass(), "Buckler" }, // Trivial regex, actually a spinfusor
+        { ATrProj_Chaingun::StaticClass(), "Chain Gun" },
+        { ATrProj_Chaingun_MKD::StaticClass(), "Chain Cannon" },
+        { ATrProj_Claymore_MKD::StaticClass(), "Claymore MKD" }, // Trivial regex
+        { ATrProj_ConcussionGrenade::StaticClass(), "Impact Nitron" },
+        { ATrProj_ConcussionGrenade_MKD::StaticClass(), "Compact Nitron" },
+        { ATrProj_DiskToss::StaticClass(), "Spin Disk" },
+        { ATrProj_Spinfusor::StaticClass(), "Spinfusor" },
+        { ATrProj_TC24::StaticClass(), "Flak Cannon" },
+        { ATrProj_ElfFlak::StaticClass(), "EFG" },
+        { ATrProj_EMPGrenade::StaticClass(), "EMP grenade" },
+        { ATrProj_EMPGrenade_MKD::StaticClass(), "EMP XL Grenade" },
+        { ATrProj_Falcon::StaticClass(), "Falcon" },
+        { ATrProj_FlareGrenade::StaticClass(), "Flare grenade" }, 
+        { ATrProj_Grenade_MKD::StaticClass(), "Grenade MKD" }, // Trivial regex
+        { ATrProj_GrenadeLauncher::StaticClass(), "Grenade Launcher" },
+        { ATrProj_GrenadeLauncher_Light::StaticClass(), "Light Grenade Launcher" },
+        { ATrProj_GrenadeT5::StaticClass(), "T5 grenade" },
+        { ATrProj_GrenadeXL::StaticClass(), "Frag Grenade XL" },
+        { ATrProj_GrenadeXL_MKD::StaticClass(), "Short Fuse Frag" },
+        { ATrProj_HeavyAPGrenade::StaticClass(), "Heavy AP Grenade" },
+        { ATrProj_HeavyAPGrenade_MKD::StaticClass(), "Heavy AP XL Grenade" },
+        { ATrProj_HeavyBoltLauncher::StaticClass(), "Heavy Bolt Launcher" },
+        { ATrProj_HeavyImpactNitron::StaticClass(), "Heavy Impact Nitron" }, // Trivial regex
+        { ATrProj_HeavySpinfusor::StaticClass(), "Heavy Spinfusor" },
+        { ATrProj_HeavySpinfusor_MKD::StaticClass(), "Heavy Blinksfusor" },
+        { ATrProj_Twinfusor::StaticClass(), "Twinfusor" },
+        { ATrProj_HeavyTwinfusor::StaticClass(), "Heavy Twinfusor" },
+        { ATrProj_Honorfusor::StaticClass(), "Honorfusor" },
+        { ATrProj_ImpactBomblets::StaticClass(), "Impact Bomblets" }, // Trivial regex
+        { ATrProj_LightAssaultRifle::StaticClass(), "Light Assault Rifle" },
+        { ATrProj_LightSpinfusor::StaticClass(), "Light Spinfusor" },
+        { ATrProj_LightSpinfusor_100X::StaticClass(), "Light Blinksfusor" },
+        { ATrProj_LightSpinfusor_MKD::StaticClass(), "Dueling Spinfusor" },
+        { ATrProj_LightStickyGrenade::StaticClass(), "Heavy Sticky Grenade" },
+        { ATrProj_LightTwinfusor::StaticClass(), "Light Twinfusor" },
+        { ATrProj_LR1Mortar::StaticClass(), "LR1 Mortar" }, // Trivial regex
+        { ATrProj_MIRVGrenade::StaticClass(), "Cluster Grenade" },
+        { ATrProj_MIRVLauncher::StaticClass(), "MIRV Launcher" },
+        { ATrProj_MortarLauncher::StaticClass(), "Fusion Mortar" },
+        { ATrProj_MortarLauncher_MKD::StaticClass(), "Fusion Mortar Deluxe" },
+        { ATrProj_MotionSensor::StaticClass(), "Motion Sensor" },
+        { ATrProj_NinjaSmoke::StaticClass(), "Chaff Grenade" },
+        { ATrProj_NJ4SMG::StaticClass(), "NJ4 SMG" },
+        { ATrProj_NJ4SMG_MKD::StaticClass(), "Desert NJ4 SMG" },
+        { ATrProj_NJ5SMG::StaticClass(), "NJ5 SMG" },
+        { ATrProj_NovaColt::StaticClass(), "Nova Blaster" },
+        { ATrProj_NovaColt_MKD::StaticClass(), "Nova Blaster MX" },
+        { ATrProj_PlasmaCannon::StaticClass(), "Plasma Cannon" },
+        { ATrProj_PlasmaGun::StaticClass(), "Plasma Gun" },
+        { ATrProj_ProximityGrenade::StaticClass(), "Proximity Grenade" },
+        { ATrProj_RemoteArxBuster::StaticClass(), "Jackal" },
+        { ATrProj_RhinoSMG::StaticClass(), "Rhino SMG" },
+        { ATrProj_RhinoSMG_MKD::StaticClass(), "Arctic Rhino SMG" },
+        { ATrProj_RocketLauncher::StaticClass(), "Rocket Launcher" }, // Trivial regex, actually a spinfusor
+        { ATrProj_TrackingMissile_DumbFire::StaticClass(), "Saber Launcher Dumbfire" }, // Trivial regex
+        { ATrProj_TrackingMissile_MKD::StaticClass(), "Titan Launcher" },
+        { ATrProj_SN7::StaticClass(), "SN7" },
+        { ATrProj_SN7_MKD::StaticClass(), "Arctic SN7" },
+        { ATrProj_SpikeGrenade::StaticClass(), "Fractal Grenade" },
+        { ATrProj_SpikeGrenade_MKD::StaticClass(), "Extended Fractal Grenade" },
+        { ATrProj_SpikeLauncher::StaticClass(), "Gladiator" },
+        { ATrProj_Spinfusor_100X::StaticClass(), "Blinksfusor" },
+        { ATrProj_SpinfusorD::StaticClass(), "Spinfusor MKD" },
+        { ATrProj_SpinfusorD_MKD::StaticClass(), "Spinfusor MKX" },
+        { ATrProj_StealthSpinfusor::StaticClass(), "Stealth Spinfusor" },
+        { ATrProj_STGrenade::StaticClass(), "Explosive Nitron" },
+        { ATrProj_StickyGrenade_MKD::StaticClass(), "Sticky Grenade XL" },
+        { ATrProj_TargetingBeacon::StaticClass(), "Targeting Beacon" }, // Trivial regex, what is this?
+        { ATrProj_TCN4SMG::StaticClass(), "TCN4" },
+        { ATrProj_TCN4SMG_MKD::StaticClass(), "TCN4 Rockwind" },
+        { ATrProj_TCNG::StaticClass(), "TCNG" },
+        { ATrProj_TCNG_MKD::StaticClass(), "TCNG Short Fuse" },
+        { ATrProj_ThrowingKnives::StaticClass(), "Throwing Knives" },
+        { ATrProj_Thumper::StaticClass(), "Thumper" },
+        { ATrProj_ThumperD::StaticClass(), "Thumper D" },
+        { ATrProj_ThumperD_MKD::StaticClass(), "Thumper DX" },
+        { ATrProj_WhiteOut::StaticClass(), "Blackout Grenade" },
+        { ATrProj_X1Rifle::StaticClass(), "X1" },
+        { ATrProj_AntiAirTurret::StaticClass(), "EXR Turret" }, 
+        { ATrProj_BaseTurret::StaticClass(), "Base Turret" }, // Trivial regex
+        { ATrProj_BeowulfGunner::StaticClass(), "Beowulf Gunner" }, // Trivial regex
+        { ATrProj_BeowulfPilot::StaticClass(), "Beowulf Pilot" }, // Trivial regex
+        { ATrProj_BXT::StaticClass(), "BXT" }, // Trivial regex
+        { ATrProj_ChaingunBulletTracer::StaticClass(), "Chain Gun Bullet Tracer" }, // Trivial regex
+        { ATrProj_GravCyclePilot::StaticClass(), "Grav Cycle Pilot" }, // Trivial regex
+        { ATrProj_HavocPilot::StaticClass(), "Havoc Pilot" }, // Trivial regex
+        { ATrProj_HERCGunner::StaticClass(), "HERC Gunner" }, // Trivial regex
+        { ATrProj_HERCPilot::StaticClass(), "HERC Pilot" }, // Trivial regex
+        { ATrProj_LightTurret::StaticClass(), "Light Turret" }, // Trivial regex
+        { ATrProj_MIRVLauncherSecondary::StaticClass(), "MIRV Launcher Secondary" }, 
+        { ATrProj_MIRVGrenadeSecondary::StaticClass(), "Cluster Secondary" }, 
+        { ATrProj_PistolBulletTracer::StaticClass(), "Pistol Bullet Tracer" }, // Trivial regex
+        { ATrProj_SAP20::StaticClass(), "SAP20" }, // Trivial regex
+        { ATrProj_ShrikePilot::StaticClass(), "Shrike Pilot" }, // Trivial regex
+        { ATrProj_SpikeLauncherSecondary::StaticClass(), "Gladiator Secondary" }, 
+        { ATrProj_SpikeLauncherThird::StaticClass(), "Gladiator Tertiary" }, 
+        { ATrProj_WallTurret::StaticClass(), "Wall Turret" }, // Trivial regex 
+    };
+
+    std::map<std::string, int> subdevices = {
+        { R"rx(^(exr(turret)?)$)rx", CONST_SUBDEVICE_ID_EXR_TURRET},
+        { R"rx(^(base(turret)?)$)rx", CONST_SUBDEVICE_ID_BASE_TURRET},
+        { R"rx(^(forcefield)$)rx", CONST_SUBDEVICE_ID_FORCE_FIELD},
+        { R"rx(^((light)?turret)$)rx", CONST_SUBDEVICE_ID_LIGHT_TURRET}, 
+    };
+
+    std::map<int, std::string> subdevice_id_to_name = {
+        { CONST_SUBDEVICE_ID_EXR_TURRET, "AntiAirTurret"},
+        { CONST_SUBDEVICE_ID_BASE_TURRET, "BaseTurret"},
+        { CONST_SUBDEVICE_ID_FORCE_FIELD, "ForceField"},
+        { CONST_SUBDEVICE_ID_LIGHT_TURRET, "LightTurret"},
+    };
 }
 
 namespace Data {
     int getItemId(const std::string& className, const std::string &itemName) {
         if (Utils::cleanString(className) == "vehicle")
             return Utils::searchMapId(vehicle_weapons, itemName, "", false);
+
+        if (Utils::cleanString(className) == "subdevice")
+            return Utils::searchMapId(subdevices, itemName, "", false);
 
         int classId = Utils::searchMapId(classes, className, "", false) - 1;
         if (classId == -1) return 0;
