@@ -1144,7 +1144,6 @@ bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObje
 }
 
 bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
-    std::cout << "FUCK" << std::endl;
     ATrPlayerController* that = (ATrPlayerController*)dwCallingObject;
     ATrPawn* pawn = (ATrPawn*)that->Pawn;
     if(pawn) {
@@ -1179,7 +1178,6 @@ static ATrPlayerPawn* lowestPlayerBase(AActor* actor) {
 void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_StickyGrenade_execStickToTarget_Parms* params, bool* result) {
     if (that->m_bHasStuckToTarget) {
 		*result = false;
-        std::cout << "False return1" << std::endl;
         return;
     }
     AActor* target = params->Target;
@@ -1193,11 +1191,9 @@ void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_Sti
         
 		that->m_bHasStuckToTarget = true;
 		*result = true;
-        std::cout << "True return" << std::endl;
         return;
 	}
 	*result = false;
-    std::cout << "False return2" << std::endl;
     return;
 }
     
@@ -1212,7 +1208,6 @@ bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, 
 // Allow negative damage projectiles
 
 void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* params) {
-    std::cout << "Proj explode" << std::endl;
     
 	if (that->bShuttingDown) return;
 
@@ -1237,10 +1232,8 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
 	}
 	else
 	{
-        std::cout << "Proj explode2" << std::endl;
 		if( that->Damage < 0 )
 		{
-            std::cout << "Proj explode3" << std::endl;
 			if ( that->Role == ROLE_Authority )
 				that->MakeNoise(1.0f, NULL);
 			if ( !that->bShuttingDown )

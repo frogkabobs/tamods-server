@@ -211,7 +211,7 @@ static void addHooks() {
     Hooks::addUScript(&TrProjectile_Explode, "Function TribesGame.TrProjectile.Explode");
 
     // Allow shrike/grav MAs
-    Hooks::add(&TrAccoladeManager_UpdateSpecialAccolades, "Function TribesGame.TrAccoladeManager.UpdateSpecialAccolades");
+    //Hooks::add(&TrAccoladeManager_UpdateSpecialAccolades, "Function TribesGame.TrAccoladeManager.UpdateSpecialAccolades");
 
     // Fix saber passive reload
     Hooks::addUScript(&TrDevice_SaberLauncher_OnSwitchToWeapon, "Function TribesGame.TrDevice_SaberLauncher.OnSwitchToWeapon");
