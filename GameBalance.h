@@ -248,6 +248,9 @@ namespace GameBalance {
             REPAIR_PERCENTAGE = 3038,
             PAWN_REPAIR_PERCENTAGE = 3039,
             VEHICLE_REPAIR_PERCENTAGE = 3040,
+            ELF_AIM_ASSIST_ANGLE = 3041,
+            ELF_AIM_ASSIST_COSINE = 3042,
+            ELF_ENERGY_CONSUMPTION_PERCENTAGE = 3043,
 
             // Projectile / Tracer
             PROJECTILE_SPEED = 4000,

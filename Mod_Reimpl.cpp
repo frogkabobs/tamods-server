@@ -1151,6 +1151,8 @@ bool TrPlayerController_ServerSuicide(int ID, UObject *dwCallingObject, UFunctio
             AActor* stuck = pawn->Attached.GetStd(i);
             if(stuck->IsA(ATrProj_StickyGrenade::StaticClass())) {
                 ((ATrProj_StickyGrenade*)stuck)->ExplodeFromTimeLimit();
+            } else if(stuck->IsA(ATrProj_LightStickyGrenade::StaticClass())) {
+                ((ATrProj_LightStickyGrenade*)stuck)->ExplodeFromTimeLimit();
             }
         }
         if(pawn->Health > 0) {
@@ -1268,7 +1270,7 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
     if (VictimPawn && VictimPawn->LastHitInfo.bDirectHit &&
 	   (VictimPawn->Physics == PHYS_Falling || VictimPawn->Physics == PHYS_Flying)) {
         if (KillType &&
-            (KillType->IsA(UTrDmgType_GravCyclePilot::StaticClass()) || KillType->IsA(UTrDmgType_ShrikePilot::StaticClass()))) {
+            (KillType->ClassIsChildOf(KillType, UTrDmgType_GravCyclePilot::StaticClass()) || KillType->ClassIsChildOf(KillType, UTrDmgType_ShrikePilot::StaticClass()))) {
 			
             KillerPC->ClientPlayAirMailImpact();
 		    that->QueueAccolade(UTrAccolade_AirMail::StaticClass(), 0);
@@ -1280,11 +1282,10 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
     return false;
 }
 
-/*
-TrDevice_RepairTool.CanBeRepaired 
-print whether it can be repaired
-make players repairable
-*/
+void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params) {
+    // damage radius
+    that->HijackMissileGuidance();
+}
 
 /*
 TrProj_Grenade.ProcessTouch

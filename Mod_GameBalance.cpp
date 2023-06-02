@@ -670,6 +670,9 @@ namespace LuaAPI {
                     .addProperty<int, int>("RepairPercentage", &getPropId<Items::PropId, Items::PropId::REPAIR_PERCENTAGE>)
                     .addProperty<int, int>("PawnRepairPercentage", &getPropId<Items::PropId, Items::PropId::PAWN_REPAIR_PERCENTAGE>)
                     .addProperty<int, int>("VehicleRepairPercentage", &getPropId<Items::PropId, Items::PropId::VEHICLE_REPAIR_PERCENTAGE>)
+                    .addProperty<int, int>("ElfAimAssistAngle", &getPropId<Items::PropId, Items::PropId::ELF_AIM_ASSIST_ANGLE>)
+                    .addProperty<int, int>("ElfAimAssistCosine", &getPropId<Items::PropId, Items::PropId::ELF_AIM_ASSIST_COSINE>)
+                    .addProperty<int, int>("ElfEnergyConsumptionPercentage", &getPropId<Items::PropId, Items::PropId::ELF_ENERGY_CONSUMPTION_PERCENTAGE>)
                     // Projectile / Tracer
                     .addProperty<int, int>("ProjectileSpeed", &getPropId<Items::PropId, Items::PropId::PROJECTILE_SPEED>)
                     .addProperty<int, int>("ProjectileMaxSpeed", &getPropId<Items::PropId, Items::PropId::PROJECTILE_MAX_SPEED>)

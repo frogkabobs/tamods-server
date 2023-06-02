@@ -446,7 +446,7 @@ namespace GameBalance {
         static const Property DAMAGE(
             ValueType::FLOAT,
             applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
-                if (p.valFloat < 0) return false;
+                //if (p.valFloat < 0) return false;
 
                 if (dev->IsA(ATrDevice_Deployable::StaticClass())) {
                     ATrDeployable* dep = getDefaultDeployable<ATrDeployable>(dev);
@@ -514,7 +514,7 @@ namespace GameBalance {
         static const Property IMPACT_MOMENTUM(
             ValueType::FLOAT,
             applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
-                if (p.valFloat < 0) return false;
+                //if (p.valFloat < 0) return false;
 
                 ATrProjectile* defProj = getWeaponDefaultProj<ATrProjectile>(dev);
 
@@ -947,6 +947,39 @@ namespace GameBalance {
             }),
             getterAdapter<ATrDevice_RepairTool>([](ATrDevice_RepairTool* dev, PropValue& ret) {
                 ret = PropValue::fromFloat(dev->m_fVehicleRepairPercentage);
+                return true;
+            })
+        );
+        static const Property ELF_AIM_ASSIST_ANGLE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_ElfProjector>([](PropValue p, ATrDevice_ElfProjector* dev) {
+                dev->m_fAimAssistAngle = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_ElfProjector>([](ATrDevice_ElfProjector* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fAimAssistAngle);
+                return true;
+            })
+        );
+        static const Property ELF_AIM_ASSIST_COSINE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_ElfProjector>([](PropValue p, ATrDevice_ElfProjector* dev) {
+                dev->m_fAimAssistCosine = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_ElfProjector>([](ATrDevice_ElfProjector* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fAimAssistCosine);
+                return true;
+            })
+        );
+        static const Property ELF_ENERGY_CONSUMPTION_PERCENTAGE(
+            ValueType::FLOAT,
+            applierAdapter<ATrDevice_ElfProjector>([](PropValue p, ATrDevice_ElfProjector* dev) {
+                dev->m_fPawnEnergyConsumptionPercentage = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrDevice_ElfProjector>([](ATrDevice_ElfProjector* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_fPawnEnergyConsumptionPercentage);
                 return true;
             })
         );
@@ -1729,6 +1762,10 @@ namespace GameBalance {
             {PropId::REPAIR_PERCENTAGE, REPAIR_PERCENTAGE},
             {PropId::PAWN_REPAIR_PERCENTAGE, PAWN_REPAIR_PERCENTAGE},
             {PropId::VEHICLE_REPAIR_PERCENTAGE, VEHICLE_REPAIR_PERCENTAGE},
+            {PropId::ELF_AIM_ASSIST_ANGLE, ELF_AIM_ASSIST_ANGLE},
+            {PropId::ELF_AIM_ASSIST_COSINE, ELF_AIM_ASSIST_COSINE},
+            {PropId::ELF_ENERGY_CONSUMPTION_PERCENTAGE, ELF_ENERGY_CONSUMPTION_PERCENTAGE},
+
 
             // Projectile / Tracer
             {PropId::PROJECTILE_SPEED, PROJECTILE_SPEED},

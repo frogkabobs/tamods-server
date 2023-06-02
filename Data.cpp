@@ -48,6 +48,8 @@ namespace Data
             { R"rx(^(motionmines?)$)rx", CONST_WEAPON_ID_MINE_ARMOREDCLAYMORE },
             { R"rx(^(prismmines?|mines?)$)rx", CONST_WEAPON_ID_MINE_PRISM },
             { R"rx(^(chaffs?(grenades?)?)$)rx", CONST_WEAPON_ID_GRENADE_NINJASMOKE },
+            { R"rx(^(impactbomblets)$)rx", CONST_WEAPON_ID_IMPACTBOMBLETS },
+            { R"rx(^(heavyimpact(nitron))$)rx", CONST_WEAPON_ID_GRENADE_NITRON_HEAVY },
         },
 
         // Medium
@@ -60,6 +62,7 @@ namespace Data
             { R"rx(^(twinfusor)$)rx", CONST_WEAPON_ID_TWINFUSOR },
             { R"rx(^(blinks?|blinks?fusor|sparespin(fusor)?)$)rx", CONST_WEAPON_ID_SPINFUSOR_100X },
             { R"rx(^(honorfusor|honourfusor|honor)$)rx", CONST_WEAPON_ID_HONORFUSOR },
+            { R"rx(^(buckler)$)rx", CONST_WEAPON_ID_BUCKLER },
             // Timed
             { R"rx(^(arxbuster|arx)$)rx", CONST_WEAPON_ID_ARX_BUSTER },
             { R"rx(^(dustdevil)$)rx", CONST_WEAPON_ID_ARX_BUSTER_MKD },
@@ -85,6 +88,7 @@ namespace Data
             // Short range
             { R"rx(^(sawed-?offshotgun|shotgun|sawed-?off)$)rx", CONST_WEAPON_ID_SHOTGUN_SAWED_OFF },
             { R"rx(^(flak(cannon)?)$)rx", CONST_WEAPON_ID_TC24 },
+            { R"rx(^(arxshotgun)$)rx", CONST_WEAPON_ID_SHOTGUN_ARX },
             // Belt
             { R"rx(^(emps?|empgrenades?)$)rx", CONST_WEAPON_ID_GRENADE_EMP },
             { R"rx(^(emps?xls?|emps?xlgrenades?)$)rx", CONST_WEAPON_ID_GRENADE_EMP_MKD },
@@ -98,6 +102,8 @@ namespace Data
             { R"rx(^(tcng(quick|short)?-?fuse(grenade)?)$)rx", CONST_WEAPON_ID_TCNG_MKD },
             { R"rx(^(motionsensors?)$)rx", CONST_WEAPON_ID_MOTIONALARM },
             { R"rx(^(repairkits?)$)rx", CONST_WEAPON_ID_REPAIR_DEPLOYABLE },
+            { R"rx(^(flare(grenade)?)$)rx", CONST_WEAPON_ID_GRENADE_FLARE },
+            { R"rx(^(defectivefrag)$)rx", CONST_WEAPON_ID_GRENADE_MKD },
         },
 
         // Heavy
@@ -110,10 +116,12 @@ namespace Data
             { R"rx(^(heavyboltlauncher|boltlauncher|bolt)$)rx", CONST_WEAPON_ID_LAUNCHER_BOLT_HEAVY },
             { R"rx(^((heavy)?blinks?(fusor)?)$)rx", CONST_WEAPON_ID_SPINFUSOR_HEAVY_MKD },
             { R"rx(^(heavytwinfusor|twinfusor|twin)$)rx", CONST_WEAPON_ID_HEAVYTWINFUSOR },
+            { R"rx(^(rocketlauncher)$)rx", CONST_WEAPON_ID_ROCKETLAUNCHER },
             // Timed
             { R"rx(^((fusion)?mortardeluxe)$)rx", CONST_WEAPON_ID_LAUNCHER_MORTAR_MKD },
             { R"rx(^(fusionmortar|mortar)$)rx", CONST_WEAPON_ID_LAUNCHER_MORTAR },
             { R"rx(^(mirvlauncher|mirv)$)rx", CONST_WEAPON_ID_LAUNCHER_MIRV },
+            { R"rx(^(lr1mortar)$)rx", CONST_WEAPON_ID_LR1MORTAR },
             // Speciality
             { R"rx(^(saberlauncher|saber)$)rx", CONST_WEAPON_ID_LAUNCHER_SABER },
             { R"rx(^(titanlauncher|titan)$)rx", CONST_WEAPON_ID_LAUNCHER_SABER_MKD },
@@ -140,6 +148,7 @@ namespace Data
             { R"rx(^((heavy|light)sticky(grenades?)?|lightstickies)$)rx", CONST_WEAPON_ID_GRENADE_STICKY_LIGHT },
             { R"rx(^(mines?)$)rx", CONST_WEAPON_ID_MINE },
             { R"rx(^(spinfusordisks?|spinfusordiscs?|spins?|disks?|discs?|spindisks?|spindiscs?)$)rx", CONST_WEAPON_ID_SPINFUSOR_TOSS },
+            { R"rx(^(targetingbeacon)$)rx", CONST_WEAPON_ID_TARGETINGBEACON },
         },
     };
 
@@ -148,6 +157,7 @@ namespace Data
             { R"rx(^(thrust(pack)?)$)rx", CONST_ITEM_PACK_BLINK },
             { R"rx(^((light)?energy(pack)?)$)rx", CONST_ITEM_PACK_RECHARGE_PATHFINDER },
             { R"rx(^(stealth(pack)?)$)rx", CONST_ITEM_PACK_STEALTH },
+            { R"rx(^(highspeedstealth(pack)?)$)rx", CONST_ITEM_PACK_HIGHSPEEDSTEALTH },
             { R"rx(^((light)?utility(pack)?)$)rx", CONST_ITEM_PACK_RECHARGE_SENTINEL }
         }, 
         {
@@ -158,6 +168,9 @@ namespace Data
             { R"rx(^(util(ity)?(pack)?)$)rx", CONST_ITEM_PACK_UTILITY_SOLDIER },
             { R"rx(^(jammer(pack)?)$)rx", CONST_ITEM_PACK_JAMMER },
             { R"rx(^(exr(turret)?)$)rx", CONST_WEAPON_ID_TURRET_EXR }
+            { R"rx(^(wallturret)$)rx", CONST_WEAPON_ID_TURRET_WALL }
+            { R"rx(^(damage(pack)?)$)rx", CONST_ITEM_PACK_DAMAGE }
+            { R"rx(^(personalforcefield)$)rx", CONST_WEAPON_ID_FORCEFIELD_PERSONAL }
 
         }, 
         {
@@ -296,11 +309,14 @@ namespace Data
         { CONST_WEAPON_ID_MINE_ARMOREDCLAYMORE, "ArmoredClaymore" },
         { CONST_WEAPON_ID_MINE_PRISM, "PrismMineDeployable" },
         { CONST_WEAPON_ID_GRENADE_NINJASMOKE, "NinjaSmoke" },
+        { CONST_WEAPON_ID_IMPACTBOMBLETS, "ImpactBomblets" },
+        { CONST_WEAPON_ID_GRENADE_NITRON_HEAVY, "HeavyImpactNitron" },
         // Pack
         { CONST_ITEM_PACK_BLINK, "Blink" },
         { CONST_ITEM_PACK_RECHARGE_PATHFINDER, "ERechargePack_Pathfinder" },
         { CONST_ITEM_PACK_STEALTH, "Stealth" },
         { CONST_ITEM_PACK_RECHARGE_SENTINEL, "ERechargePack_Sentinel" },
+        { CONST_ITEM_PACK_HIGHSPEEDSTEALTH, "HighSpeedStealth" },
 
         // Medium
         // Impact
@@ -311,6 +327,7 @@ namespace Data
         { CONST_WEAPON_ID_TWINFUSOR, "Twinfusor" },
         { CONST_WEAPON_ID_SPINFUSOR_100X, "Spinfusor_100X" },
         { CONST_WEAPON_ID_HONORFUSOR, "Honorfusor" },
+        { CONST_WEAPON_ID_BUCKLER, "Buckler" },
         // Timed
         { CONST_WEAPON_ID_ARX_BUSTER, "ArxBuster" },
         { CONST_WEAPON_ID_ARX_BUSTER_MKD, "ArxBuster_MKD" },
@@ -333,6 +350,7 @@ namespace Data
         // Short range
         { CONST_WEAPON_ID_SHOTGUN_SAWED_OFF, "SawedOffShotgun" },
         { CONST_WEAPON_ID_TC24, "TC24" },
+        { CONST_WEAPON_ID_SHOTGUN_ARX, "ArxShotgun" },
         // Belt
         { CONST_WEAPON_ID_GRENADE_EMP, "EMPGrenade" },
         { CONST_WEAPON_ID_GRENADE_EMP_MKD, "EMPGrenade_MKD" },
@@ -346,6 +364,8 @@ namespace Data
         { CONST_WEAPON_ID_TCNG_MKD, "TCNG_MKD" },
         { CONST_WEAPON_ID_MOTIONALARM, "MotionSensorDeployable" },
         { CONST_WEAPON_ID_REPAIR_DEPLOYABLE, "RepairDeployable" },
+        { CONST_WEAPON_ID_GRENADE_MKD, "Grenade_MKD" },
+        { CONST_WEAPON_ID_GRENADE_FLARE, "FlareGrenade" },
         // Pack
         { CONST_WEAPON_ID_TURRET_LIGHT, "LightTurretDeployable" },
         { CONST_WEAPON_ID_DROPJAMMER, "DropJammerDeployable" },
@@ -354,6 +374,9 @@ namespace Data
         { CONST_ITEM_PACK_UTILITY_SOLDIER, "UtilityPack_Soldier" },
         { CONST_ITEM_PACK_JAMMER, "JammerPack" },
         { CONST_WEAPON_ID_TURRET_EXR, "AntiAirTurretDeployable" },
+        { CONST_WEAPON_ID_TURRET_WALL, "WallTurretDeployable" },
+        { CONST_ITEM_PACK_DAMAGE, "DamagePack" },
+        { CONST_WEAPON_ID_FORCEFIELD_PERSONAL, "PersonalForceField" },
 
         // Heavy
         // Impact
@@ -363,10 +386,12 @@ namespace Data
         { CONST_WEAPON_ID_SPINFUSOR_HEAVY_MKD, "HeavySpinfusor_MKD" },
         { CONST_WEAPON_ID_LAUNCHER_BOLT_HEAVY, "HeavyBoltLauncher" },
         { CONST_WEAPON_ID_HEAVYTWINFUSOR, "HeavyTwinfusor" },
+        { CONST_WEAPON_ID_ROCKETLAUNCHER, "RocketLauncher" },
         // Timed
         { CONST_WEAPON_ID_LAUNCHER_MORTAR_MKD, "MortarLauncher_MKD" },
         { CONST_WEAPON_ID_LAUNCHER_MORTAR, "MortarLauncher" },
         { CONST_WEAPON_ID_LAUNCHER_MIRV, "MIRVLauncher" },
+        { CONST_WEAPON_ID_LR1MORTAR, "LR1Mortar" },
         // Speciality
         { CONST_WEAPON_ID_LAUNCHER_SABER, "SaberLauncher" },
         { CONST_WEAPON_ID_LAUNCHER_SABER_MKD, "SaberLauncher_MKD" },
@@ -391,6 +416,7 @@ namespace Data
         { CONST_WEAPON_ID_GRENADE_STICKY_LIGHT, "LightStickyGrenade" },
         { CONST_WEAPON_ID_MINE, "Mine" },
         { CONST_WEAPON_ID_SPINFUSOR_TOSS, "DiskToss" },
+        { CONST_WEAPON_ID_TARGETINGBEACON, "TargetingBeacon" },
         // Pack
         { CONST_WEAPON_ID_FORCEFIELD, "ForceFieldDeployable" },
         { CONST_ITEM_PACK_ENERGY_BRUTE, "EnergyPack_Brute" },
