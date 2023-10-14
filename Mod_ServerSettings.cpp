@@ -11,7 +11,9 @@ void ServerSettings::ApplyToGame(ATrServerSettingsInfo* s) {
     ATrFlagCTF* defCTFFlag = (ATrFlagCTF*)(ATrFlagCTF::StaticClass()->Default);
     ATrFlagCTF_BloodEagle* defCTFFlag_BE = (ATrFlagCTF_BloodEagle*)(ATrFlagCTF_BloodEagle::StaticClass()->Default);
     ATrFlagCTF_DiamondSword* defCTFFlag_DS = (ATrFlagCTF_DiamondSword*)(ATrFlagCTF_DiamondSword::StaticClass()->Default);
-    //Static class is broken, SDK offset needs to be fixed, grabbing as UObject and recasting as respective class
+    
+
+    //SDK offset is fixed!! Change this to improve performance!!
     UObject* defRadarStation_BE = UObject::FindObject<UObject>("TrRadarStation_BloodEagle TribesGame.Default__TrRadarStation_BloodEagle");
     UObject* defRadarStation_DS = UObject::FindObject<UObject>("TrRadarStation_DiamondSword TribesGame.Default__TrRadarStation_DiamondSword");
 
@@ -109,6 +111,19 @@ void ServerSettings::ApplyToGame(ATrServerSettingsInfo* s) {
 
     s->bSkiEnabled = this->SkiingEnabled;
     s->bCTFBlitzAllFlagsMove = this->CTFBlitzAllFlagsMove;
+
+    if(this->ExperimentalMixerSettings) {
+        // Light turret becomes a drop jammer. This could be done with the Drop Invo, but would require giving it a TrTurretPawn and an existing TrSubDevice
+        /*
+        ATrSubDevice_LightTurret* defLightTurretDevice = (ATrSubDevice_LightTurret*)ATrSubDevice_LightTurret::StaticClass()->Default;
+        
+        defLightTurretDevice->m_EffectInfo.Add(FEffectInfo{0, UTrEffect_Jammer::StaticClass(), ET_Fire, 0, 0, 0});
+    
+        ATrTurretPawn* defTurretPawn = (ATrTurretPawn*)ATrTurretPawn::StaticClass()->Default;
+        defTurretPawn->m_fJamEffectRadius = 8000; */
+
+        // Flare name needs to be in TAMods client
+    }
 
     ApplyGameBalanceProperties();
 }
@@ -336,6 +351,8 @@ SETTING_GETTERSETTER(float, BE_SensorRadius)
 SETTING_GETTERSETTER(float, DS_SensorRadius)
 
 SETTING_GETTERSETTER(bool, VotingEnabled)
+
+SETTING_GETTERSETTER(bool, ExperimentalMixerSettings)
 
 static void addCustomToMapRotation(std::string mapName) {
     g_config.serverSettings.mapRotation.push_back(mapName);
@@ -595,6 +612,9 @@ namespace LuaAPI {
 
                 .SETTING_LUAPROP(BE_SensorRadius)
                 .SETTING_LUAPROP(DS_SensorRadius)
+
+                .SETTING_LUAPROP(ExperimentalMixerSettings)
+
                 .beginNamespace("GameSettingModes")
                     .addVariable("OOTB", &gameSettingModeOOTB, false)
                     .addVariable("GOTY", &gameSettingModeGOTY, false)

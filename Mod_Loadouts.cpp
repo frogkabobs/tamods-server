@@ -86,6 +86,23 @@ static void applyTAServerLoadout(ATrPlayerReplicationInfo* that, int classId, in
             }
         }
     }
+
+    long long playerId = Utils::netIdToLong(that->UniqueId);
+
+    TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);\
+    for(TR_EQUIP_POINT tep : {EQP_Primary, EQP_Secondary, EQP_Tertiary}) {
+        UClass* devClass = that->InvHelper->GetEquipClass(that->r_EquipLevels[tep].EquipId);
+        if(devClass && devClass->ClassIsChildOf(devClass, ATrDevice_Spinfusor::StaticClass())) {
+            ATrProjectile* proj = (ATrProjectile*)((ATrDevice*)devClass->Default)->WeaponProjectiles.GetStd(0)->Default;
+\
+            // match the inheritance of the other equiped spinfusor
+            pData.defaultInheritance = proj->m_fProjInheritVelocityPct;
+            pData.defaultInheritanceZ = proj->m_fProjInheritVelocityPctZ;
+            break;
+        }
+    }
+
+    TenantedDataStore::playerData.set(playerId, pData);
 }
 
 static void applyWeaponBans(ATrPlayerReplicationInfo* that, int classId) {

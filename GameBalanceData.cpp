@@ -1674,10 +1674,6 @@ namespace GameBalance {
             })
         );
 
-        // TODO: Projectile replacement
-        // ValueType::INTEGER
-        // Add Data/Util function to convert between UObj id and class
-
         static const Property DEVICE_PROJECTILE(
             ValueType::INTEGER,
             applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
@@ -1693,6 +1689,92 @@ namespace GameBalance {
                 if(!proj) return false;
                 ret = PropValue::fromInt(proj->ObjectInternalInteger);
                 return true;
+            })
+        );
+
+        // Using a valuemod with ValueType::STRING will cause a server crash !! DO NOT USE
+        
+        
+        // This implemenation only allows ASCII names!!
+        static const Property NAME(
+            ValueType::STRING,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                // Don't allow non-ASCII strings
+                for (auto c: p.valString) {
+                    if (static_cast<unsigned char>(c) > 127) return false;
+                }
+                
+                dev->ItemName = FString(const_cast<wchar_t*>(std::wstring(p.valString.begin(), p.valString.end()).c_str()));
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                // Converting FString to std::string is too much work, so we don't allow a getter
+                return false;
+            })
+        );
+
+        static const Property INFO_PANEL_DESCRIPTION(
+            ValueType::STRING,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                // Don't allow non-ASCII strings
+                for (auto c: p.valString) {
+                    if (static_cast<unsigned char>(c) > 127) return false;
+                }
+
+                dev->InfoPanelDescription = FString(const_cast<wchar_t*>(std::wstring(p.valString.begin(), p.valString.end()).c_str()));
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                // Converting FString to std::string is too much work, so we don't allow a getter
+                return false;
+            })
+        );
+        
+        static const Property INFO_PANEL_DAMAGE(
+            ValueType::INTEGER,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                dev->InfoPanelDamage = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromInt(dev->InfoPanelDamage);
+                return false;
+            })
+        );
+        
+        static const Property INFO_PANEL_RADIUS(
+            ValueType::INTEGER,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                dev->InfoPanelRadius = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromInt(dev->InfoPanelRadius);
+                return false;
+            })
+        );
+
+        static const Property INFO_PANEL_FIRE_RATE(
+            ValueType::INTEGER,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                dev->InfoPanelFireRate = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromInt(dev->InfoPanelFireRate);
+                return false;
+            })
+        );
+
+        static const Property INFO_PANEL_CLIP_SIZE(
+            ValueType::INTEGER,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                dev->InfoPanelClipSize = p.valInt;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromInt(dev->InfoPanelClipSize);
+                return false;
             })
         );
 
@@ -1840,6 +1922,14 @@ namespace GameBalance {
 
             // Device projectile
             {PropId::DEVICE_PROJECTILE, DEVICE_PROJECTILE},
+
+            // Menu Info
+            {PropId::NAME, NAME},
+            {PropId::INFO_PANEL_DESCRIPTION, INFO_PANEL_DESCRIPTION},
+            {PropId::INFO_PANEL_DAMAGE, INFO_PANEL_DAMAGE},
+            {PropId::INFO_PANEL_RADIUS, INFO_PANEL_RADIUS},
+            {PropId::INFO_PANEL_FIRE_RATE, INFO_PANEL_FIRE_RATE},
+            {PropId::INFO_PANEL_CLIP_SIZE, INFO_PANEL_CLIP_SIZE},
         };
 
     }
@@ -3877,6 +3967,32 @@ namespace GameBalance {
             })
         );
 
+        // Grav give airmail
+        static const Property GRAV_GIVES_AIRMAIL(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProj_GravCyclePilot>([](PropValue p, ATrProj_GravCyclePilot* proj) {
+                proj->MyDamageType = p.valBool ? UTrDmgType_BeowulfPilot::StaticClass() : UTrDmgType_GravCyclePilot::StaticClass();
+                return true;
+            }),
+            getterAdapter<ATrProj_GravCyclePilot>([](ATrProj_GravCyclePilot* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->MyDamageType != UTrDmgType_GravCyclePilot::StaticClass());
+                return true;
+            })
+        );
+
+        // Shrike give airmail
+        static const Property SHRIKE_GIVES_AIRMAIL(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProj_ShrikePilot>([](PropValue p, ATrProj_ShrikePilot* proj) {
+                proj->MyDamageType = p.valBool ? UTrDmgType_BeowulfPilot::StaticClass() : UTrDmgType_ShrikePilot::StaticClass();
+                return true;
+            }),
+            getterAdapter<ATrProj_ShrikePilot>([](ATrProj_ShrikePilot* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->MyDamageType != UTrDmgType_ShrikePilot::StaticClass());
+                return true;
+            })
+        );
+
 
         // Main mapping
         std::map<PropId, Property> properties = {
@@ -3952,6 +4068,8 @@ namespace GameBalance {
             {PropId::GLADIATOR_SECONDARY_PROJECTILE, GLADIATOR_SECONDARY_PROJECTILE},
             {PropId::GLADIATOR_TERTIARY_PROJECTILE, GLADIATOR_TERTIARY_PROJECTILE},
             {PropId::NOVA_BOUNCES, NOVA_BOUNCES},
+            {PropId::GRAV_GIVES_AIRMAIL, GRAV_GIVES_AIRMAIL},
+            {PropId::SHRIKE_GIVES_AIRMAIL, SHRIKE_GIVES_AIRMAIL},
         };
     }
 }

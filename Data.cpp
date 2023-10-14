@@ -167,9 +167,9 @@ namespace Data
             { R"rx(^(energy(pack)?)$)rx", CONST_ITEM_PACK_ENERGY_SOLDIER },
             { R"rx(^(util(ity)?(pack)?)$)rx", CONST_ITEM_PACK_UTILITY_SOLDIER },
             { R"rx(^(jammer(pack)?)$)rx", CONST_ITEM_PACK_JAMMER },
-            { R"rx(^(exr(turret)?)$)rx", CONST_WEAPON_ID_TURRET_EXR }
-            { R"rx(^(wallturret)$)rx", CONST_WEAPON_ID_TURRET_WALL }
-            { R"rx(^(damage(pack)?)$)rx", CONST_ITEM_PACK_DAMAGE }
+            { R"rx(^(exr(turret)?)$)rx", CONST_WEAPON_ID_TURRET_EXR },
+            { R"rx(^(wallturret)$)rx", CONST_WEAPON_ID_TURRET_WALL },
+            { R"rx(^(damage(pack)?)$)rx", CONST_ITEM_PACK_DAMAGE },
             { R"rx(^(personalforcefield)$)rx", CONST_WEAPON_ID_FORCEFIELD_PERSONAL }
 
         }, 
@@ -982,7 +982,7 @@ namespace Data
         { "MeleeCausesFlagDrop", CONST_MOD_TYPE_VICTIMDROPFLAGONMELEE },
             { "SonicPunchFlagDrop", CONST_MOD_TYPE_VICTIMDROPFLAGONMELEE },
             { "ConcussiveMelee", CONST_MOD_TYPE_VICTIMDROPFLAGONMELEE },
-        { "PrimaryRangeBugg", CONST_MOD_TYPE_PRIMARYWEAPONRANGEPCT },
+        { "PrimaryRangeBuff", CONST_MOD_TYPE_PRIMARYWEAPONRANGEPCT },
         { "BeltDamageRadiusBuff", CONST_MOD_TYPE_OFFHANDDAMAGERADIUSPCT },
         { "TurretTargetAcquisitionBuff", CONST_MOD_TYPE_TURRETACQUIRETARGETPCT },
         { "BlackoutLengthReduction", CONST_MOD_TYPE_WHITEOUTINTERPSPEEDPCT },

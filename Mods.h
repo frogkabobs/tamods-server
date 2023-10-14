@@ -148,6 +148,9 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
 void TrVehicleStation_AbleToSpawnVehicleType(ATrVehicleStation* that, ATrVehicleStation_execAbleToSpawnVehicleType_Parms* params, bool* result);
 bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult);
 
+void TrProjectile_ApplyInheritance(ATrProjectile* that, ATrProjectile_execApplyInheritance_Parms* params);
+void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params);
+
 // Hooked StatsInterface functions for match screen
 void TrStatsInterface_AddKill(UTrStatsInterface* that, UTrStatsInterface_execAddKill_Parms* params);
 void TrStatsInterface_AddDeath(UTrStatsInterface* that, UTrStatsInterface_execAddDeath_Parms* params);

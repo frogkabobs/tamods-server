@@ -782,7 +782,11 @@ void TrPawn_RefreshInventory(ATrPawn* that, ATrPawn_execRefreshInventory_Parms* 
     if (!params->bIsRespawn && g_config.serverSettings.InventoryStationsRestoreEnergy) {
         that->ConsumePowerPool(-1.0 * that->r_fMaxPowerPool);
     }
-    that->RefreshInventory(params->bIsRespawn, params->bCallin);    
+    that->RefreshInventory(params->bIsRespawn, params->bCallin);
+    if(that->m_fSplatDamageFromLandMin < 0) that->m_fSplatDamageFromLandMin = 0;
+    if(that->m_fSplatDamageFromLandMax < 0) that->m_fSplatDamageFromLandMax = 0;
+    if(that->m_fSplatDamageFromWallMin < 0) that->m_fSplatDamageFromWallMin = 0;
+    if(that->m_fSplatDamageFromWallMax < 0) that->m_fSplatDamageFromWallMax = 0;    
 }
 
 ////////////////////////
@@ -1185,12 +1189,7 @@ void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_Sti
     AActor* target = params->Target;
     AActor* baseMost = target->GetBaseMost();
     if(baseMost->IsA(ATrPlayerPawn::StaticClass())) target = baseMost;
-	if( that->ATrProj_Grenade::StickToTarget(target, params->HitLocation, params->HitNormal) ) { // replace target with target->GetBaseMost?
-
-        // give direct hit if it sticks to something already stuck to the player (e.g. jackal)
-        //ATrPlayerPawn* lowest = lowestPlayerBase(target);
-        //if(lowest) that->ImpactedActor = lowest;
-        
+	if( that->ATrProj_Grenade::StickToTarget(target, params->HitLocation, params->HitNormal) ) {
 		that->m_bHasStuckToTarget = true;
 		*result = true;
         return;
@@ -1201,8 +1200,24 @@ void TrProj_StickyGrenade_StickToTarget(ATrProj_StickyGrenade* that, ATrProj_Sti
     
 // Prevent bug where stickies are no longer a direct hit if the stuck player passes through another hitbox
 bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult) {
-    ATrProj_StickyGrenade* that = (ATrProj_StickyGrenade*)dwCallingObject;
-    return that->m_bHasStuckToTarget;
+    ATrProjectile* that = (ATrProjectile*)dwCallingObject;
+    if(that->IsA(ATrProj_StickyGrenade::StaticClass())) {
+        ATrProj_StickyGrenade* that = (ATrProj_StickyGrenade*)dwCallingObject;
+        return that->m_bHasStuckToTarget;
+    }
+    if(that->IsA(ATrProj_LightStickyGrenade::StaticClass())) {
+        ATrProj_LightStickyGrenade* that = (ATrProj_LightStickyGrenade*)dwCallingObject;
+        return that->Base != NULL;
+    }
+    
+    //TrProjectile_Touch can be called twice! Add logic to prevent this!
+    /*
+    if(that->WorldInfo->TimeSeconds - that->CreationTime > 2.5f) { // replace 2.5f with config val
+        that->m_fDirectHitMultiplier *= 4.0f/3.0f; // Replace with config val
+    }
+    */
+    //std::cout << that->GetTimerCount("ExplodeFromTimeLimit", NULL) << std::endl;
+    return false;
 }
 
 
@@ -1217,7 +1232,10 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
         that->Explode(params->HitLocation, params->HitNormal);
         return;
     }
-	if( that->m_bFastProjectile )
+
+    if(g_config.serverSettings.ExperimentalMixerSettings && that->WorldInfo->TimeSeconds - that->CreationTime > 2.5f) that->m_fDirectHitMultiplier *= 4.0f/3.0f; // add to config
+	
+    if( that->m_bFastProjectile )
 	{
 		if (that->Damage < 0 && that->DamageRadius>0)
 		{
@@ -1283,10 +1301,33 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
 }
 
 void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params) {
-    // damage radius
+    that->ProjectileHurtRadius(that->Location, FVector(0, 0, 1));
+    //try projectile hurtradius?
+    std::cout << "burn" << std::endl;
     that->HijackMissileGuidance();
 }
 
+
+void TrProjectile_ApplyInheritance(ATrProjectile* that, ATrProjectile_execApplyInheritance_Parms* params) {
+    // Are we a throwing disk or honorfusor?
+    if(that->IsA(ATrProj_DiskToss::StaticClass()) || that->IsA(ATrProj_Honorfusor::StaticClass())) {
+        if(that->Instigator->IsA(ATrPawn::StaticClass())) {
+            ATrPawn* owner = (ATrPawn*) that->Instigator;
+            if(owner) {
+                ATrPlayerReplicationInfo* trp = owner->GetTribesReplicationInfo();
+                if(trp) {
+                    long long playerId = Utils::netIdToLong(trp->UniqueId);
+
+                    TenantedDataStore::PlayerSpecificData pData = TenantedDataStore::playerData.get(playerId);
+                    // use default inheritance set by other spinfusors
+                    that->m_fProjInheritVelocityPct = pData.defaultInheritance;
+                    that->m_fProjInheritVelocityPctZ = pData.defaultInheritanceZ;
+                }
+            }
+        }
+    }
+    that->ApplyInheritance(params->ProjectileDir);
+}
 /*
 TrProj_Grenade.ProcessTouch
 if GetTimerCount > timeBeforeExplodeOnContact then set m_bExplodeOnTouchEvent to true

@@ -35,7 +35,8 @@ namespace TenantedDataStore {
         // Jackal rounds currently out
         std::vector<ATrProj_RemoteArxBuster*> remoteArxRounds;
 
-        std::vector<ATrProj_StickyGrenade*> attachedStickies;
+        float defaultInheritance = 0.5f;
+        float defaultInheritanceZ = 0.5f;
     };
 
     struct ClassSpecificData {
@@ -44,10 +45,6 @@ namespace TenantedDataStore {
 
     struct DmgTypeSpecificData {
         bool allowAirmails = false;
-    };
-
-    struct StickySpecificData {
-        long long attached;
     };
 
     template <typename KeyType, typename ValueType>
@@ -76,5 +73,4 @@ namespace TenantedDataStore {
     
     extern DataMap<long long, PlayerSpecificData> playerData;
     extern DataMap<int, ClassSpecificData> classData;
-    extern DataMap<ATrProj_StickyGrenade*, StickySpecificData> stickyData;
 }

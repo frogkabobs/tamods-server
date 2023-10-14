@@ -205,7 +205,7 @@ static void addHooks() {
     
 
     // Fix sticky MAs not registering
-    Hooks::add(&TrProjectile_Touch, "Function TribesGame.TrProjectile.Touch", Hooks::PRE, ATrProj_StickyGrenade::StaticClass());
+    Hooks::add(&TrProjectile_Touch, "Function TribesGame.TrProjectile.Touch");
 
     // Allow negative damage
     Hooks::addUScript(&TrProjectile_Explode, "Function TribesGame.TrProjectile.Explode");
@@ -215,6 +215,10 @@ static void addHooks() {
 
     // Fix saber passive reload
     Hooks::addUScript(&TrDevice_SaberLauncher_OnSwitchToWeapon, "Function TribesGame.TrDevice_SaberLauncher.OnSwitchToWeapon");
+
+    Hooks::addUScript(&TrProjectile_ApplyInheritance, "Function TribesGame.TrProjectile.ApplyInheritance");
+
+    //Hooks::addUScript(&TrProj_FlareGrenade_HijackMissileGuidance, "Function TribesGame.TrProj_FlareGrenade.HijackMissileGuidance");
 
     addStatsFunctionHooks();
 }

@@ -326,7 +326,15 @@ namespace GameBalance {
             PRISM_MINE_TRIP_DISTANCE = 9005,
 
             // Device projectile
-            DEVICE_PROJECTILE = 10000, //new
+            DEVICE_PROJECTILE = 10000,
+
+            // Menu
+            NAME = 10001, // not in use
+            INFO_PANEL_DESCRIPTION = 10002, // not in use
+            INFO_PANEL_DAMAGE = 10003,
+            INFO_PANEL_RADIUS = 10004,
+            INFO_PANEL_FIRE_RATE = 10005,
+            INFO_PANEL_CLIP_SIZE = 10006,
 
         };
 
@@ -584,6 +592,8 @@ namespace GameBalance {
             GLADIATOR_SECONDARY_PROJECTILE = 10002, //new
             GLADIATOR_TERTIARY_PROJECTILE = 100003, //new
             NOVA_BOUNCES = 10004, //new
+            GRAV_GIVES_AIRMAIL = 10005,
+            SHRIKE_GIVES_AIRMAIL = 10006,
 
         };
 

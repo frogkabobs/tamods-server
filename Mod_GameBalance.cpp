@@ -740,6 +740,15 @@ namespace LuaAPI {
                     // Device projectile
                     .addProperty<int, int>("DeviceProjectile", &getPropId<Items::PropId, Items::PropId::DEVICE_PROJECTILE>)
 
+                    // Server crash with ValueType::STRING 
+
+                    //.addProperty<int, int>("Name", &getPropId<Items::PropId, Items::PropId::NAME>)
+                    //.addProperty<int, int>("InfoPanelDescription", &getPropId<Items::PropId, Items::PropId::INFO_PANEL_DESCRIPTION>)
+                    .addProperty<int, int>("InfoPanelDamage", &getPropId<Items::PropId, Items::PropId::INFO_PANEL_DAMAGE>)
+                    .addProperty<int, int>("InfoPanelRadius", &getPropId<Items::PropId, Items::PropId::INFO_PANEL_RADIUS>)
+                    .addProperty<int, int>("InfoPanelFireRate", &getPropId<Items::PropId, Items::PropId::INFO_PANEL_FIRE_RATE>)
+                    .addProperty<int, int>("InfoPanelClipSize", &getPropId<Items::PropId, Items::PropId::INFO_PANEL_CLIP_SIZE>)
+
                 .endNamespace()
             .endNamespace()
             .beginNamespace("Classes")
@@ -1068,6 +1077,8 @@ namespace LuaAPI {
                     .addProperty<int, int>("GladiatorSecondaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_SECONDARY_PROJECTILE>)
                     .addProperty<int, int>("GladiatorTertiaryProjectile", &getPropId<Projectiles::PropId, Projectiles::PropId::GLADIATOR_TERTIARY_PROJECTILE>)
                     .addProperty<int, int>("NovaBounces", &getPropId<Projectiles::PropId, Projectiles::PropId::NOVA_BOUNCES>)
+                    .addProperty<int, int>("GravGivesAirmail", &getPropId<Projectiles::PropId, Projectiles::PropId::GRAV_GIVES_AIRMAIL>)
+                    .addProperty<int, int>("ShrikeGivesAirmail", &getPropId<Projectiles::PropId, Projectiles::PropId::SHRIKE_GIVES_AIRMAIL>)
 
                 .endNamespace()
             .endNamespace()

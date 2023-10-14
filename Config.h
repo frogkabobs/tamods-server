@@ -203,6 +203,9 @@ struct ServerSettings {
     // Whether map voting is enabled
     bool VotingEnabled = false;
 
+    // Whether to allow hard-coded mixer settings (these settings should eventually become part of GameBalance)
+    bool ExperimentalMixerSettings = false;
+
     MapRotationMode mapRotationMode = MapRotationMode::SEQUENTIAL;
     std::vector<std::string> mapRotation;
     int mapRotationIndex = -1;
