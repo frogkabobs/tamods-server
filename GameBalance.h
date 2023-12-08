@@ -595,6 +595,15 @@ namespace GameBalance {
             GRAV_GIVES_AIRMAIL = 10005,
             SHRIKE_GIVES_AIRMAIL = 10006,
 
+            DISTANCE_BONUS = 10007,
+            DISTANCE_BONUS_TIME = 10008,
+            EXPLODE_ON_CONTACT_TIME = 10009
+        };
+
+        struct CustomProps {
+            float distBonus;
+            float distBonusTime; // 0 = not set
+            float explodeOnContactTime; // 0 = not set
         };
 
         // Item property definitions
@@ -602,6 +611,8 @@ namespace GameBalance {
 
         typedef std::map<PropId, PropValue> PropMapping;
         typedef std::map<int, PropMapping> ProjectilesConfig;
+
+        typedef std::map<UClass*, CustomProps> CustomPropConfig;
 
     }
 

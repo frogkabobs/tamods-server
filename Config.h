@@ -228,6 +228,8 @@ struct ServerSettings {
     GameBalance::Vehicles::VehiclesConfig vehicleProperties;
     GameBalance::VehicleWeapons::VehicleWeaponsConfig vehicleWeaponProperties;
     GameBalance::Projectiles::ProjectilesConfig projectileProperties;
+
+    GameBalance::Projectiles::CustomPropConfig customProjectileProperties;
     void ApplyGameBalanceProperties();
 
     void ApplyAsDefaults();

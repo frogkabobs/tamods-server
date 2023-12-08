@@ -1079,6 +1079,9 @@ namespace LuaAPI {
                     .addProperty<int, int>("NovaBounces", &getPropId<Projectiles::PropId, Projectiles::PropId::NOVA_BOUNCES>)
                     .addProperty<int, int>("GravGivesAirmail", &getPropId<Projectiles::PropId, Projectiles::PropId::GRAV_GIVES_AIRMAIL>)
                     .addProperty<int, int>("ShrikeGivesAirmail", &getPropId<Projectiles::PropId, Projectiles::PropId::SHRIKE_GIVES_AIRMAIL>)
+                    .addProperty<int, int>("DistanceBonus", &getPropId<Projectiles::PropId, Projectiles::PropId::DISTANCE_BONUS>)
+                    .addProperty<int, int>("DistanceBonusTime", &getPropId<Projectiles::PropId, Projectiles::PropId::DISTANCE_BONUS_TIME>)
+                    //.addProperty<int, int>("ExplodeOnContactTime", &getPropId<Projectiles::PropId, Projectiles::PropId::EXPLODE_ON_CONTACT_TIME>)
 
                 .endNamespace()
             .endNamespace()

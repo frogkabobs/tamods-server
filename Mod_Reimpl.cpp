@@ -1209,14 +1209,19 @@ bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, 
         ATrProj_LightStickyGrenade* that = (ATrProj_LightStickyGrenade*)dwCallingObject;
         return that->Base != NULL;
     }
-    
-    //TrProjectile_Touch can be called twice! Add logic to prevent this!
     /*
-    if(that->WorldInfo->TimeSeconds - that->CreationTime > 2.5f) { // replace 2.5f with config val
-        that->m_fDirectHitMultiplier *= 4.0f/3.0f; // Replace with config val
+    if(that->IsA(ATrProj_Grenade::StaticClass())) {
+        ATrProj_Grenade* that = (ATrProj_Grenade*)dwCallingObject;
+        if(!that->m_bExplodeOnTouchEvent) {
+            auto it = g_config.serverSettings.customProjectileProperties.find(that->Class);
+
+            // Only explode on contact after time if set (0 = not set)
+            if(it != g_config.serverSettings.customProjectileProperties.end() && it->second.explodeOnContactTime > 0 && that->WorldInfo->TimeSeconds - that->CreationTime > it->second.explodeOnContactTime)
+                that->m_bExplodeOnTouchEvent = true;
+        }
     }
     */
-    //std::cout << that->GetTimerCount("ExplodeFromTimeLimit", NULL) << std::endl;
+
     return false;
 }
 
@@ -1233,8 +1238,14 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
         return;
     }
 
-    if(g_config.serverSettings.ExperimentalMixerSettings && that->WorldInfo->TimeSeconds - that->CreationTime > 2.5f) that->m_fDirectHitMultiplier *= 4.0f/3.0f; // add to config
-	
+    if(g_config.serverSettings.ExperimentalMixerSettings) {
+        auto it = g_config.serverSettings.customProjectileProperties.find(that->Class);
+        // Only give dist bonus if paramaters are set (0 = not set)
+        if(it != g_config.serverSettings.customProjectileProperties.end() && it->second.distBonusTime > 0 && that->WorldInfo->TimeSeconds - that->CreationTime > it->second.distBonusTime)
+            that->m_fDirectHitMultiplier *= it->second.distBonus;  
+    }
+   
+
     if( that->m_bFastProjectile )
 	{
 		if (that->Damage < 0 && that->DamageRadius>0)
@@ -1300,6 +1311,7 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
     return false;
 }
 
+// needs a C++ and Uscript hook
 void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params) {
     that->ProjectileHurtRadius(that->Location, FVector(0, 0, 1));
     //try projectile hurtradius?
@@ -1328,6 +1340,7 @@ void TrProjectile_ApplyInheritance(ATrProjectile* that, ATrProjectile_execApplyI
     }
     that->ApplyInheritance(params->ProjectileDir);
 }
+
 /*
 TrProj_Grenade.ProcessTouch
 if GetTimerCount > timeBeforeExplodeOnContact then set m_bExplodeOnTouchEvent to true
@@ -1339,3 +1352,11 @@ TrProj_MIRVLauncher.Explode
 create server setting for allow MIRV secondary explosion on explode on contact
 if setting and direct hit (impactedactor set) then ATrProj_Grenade::Explode
 */
+
+// Don't spawn secondary projectiles on midair
+void TrProj_MIRVLauncher_Explode(ATrProj_MIRVLauncher* that, ATrProj_MIRVLauncher_execExplode_Parms* params) {
+    if(that->ImpactedActor != NULL) {// not a good check
+        that->ATrProjectile::Explode(params->HitLocation, params->HitNormal);
+    }
+    else that->Explode(params->HitLocation, params->HitNormal);
+}

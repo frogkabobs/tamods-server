@@ -1,4 +1,5 @@
 #include "GameBalance.h"
+#include "Config.h"
 
 namespace GameBalance {
 
@@ -3993,6 +3994,51 @@ namespace GameBalance {
             })
         );
 
+        // Extra direct damage after time
+        static const Property DISTANCE_BONUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                g_config.serverSettings.customProjectileProperties[proj->Class].distBonus = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                auto it = g_config.serverSettings.customProjectileProperties.find(proj->Class);
+                if(it == g_config.serverSettings.customProjectileProperties.end()) return false;
+                ret = PropValue::fromFloat(it->second.distBonus);
+                return true;
+            })
+        );
+
+        // Extra direct damage after time
+        static const Property DISTANCE_BONUS_TIME(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                g_config.serverSettings.customProjectileProperties[proj->Class].distBonusTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                auto it = g_config.serverSettings.customProjectileProperties.find(proj->Class);
+                if(it == g_config.serverSettings.customProjectileProperties.end()) return false;
+                ret = PropValue::fromFloat(it->second.distBonusTime);
+                return true;
+            })
+        );
+
+        // Explode on contact after given time
+        static const Property EXPLODE_ON_CONTACT_TIME(
+            ValueType::FLOAT,
+            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
+                g_config.serverSettings.customProjectileProperties[proj->Class].explodeOnContactTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
+                auto it = g_config.serverSettings.customProjectileProperties.find(proj->Class);
+                if(it == g_config.serverSettings.customProjectileProperties.end()) return false;
+                ret = PropValue::fromFloat(it->second.explodeOnContactTime);
+                return true;
+            })
+        );
+
 
         // Main mapping
         std::map<PropId, Property> properties = {
@@ -4070,6 +4116,9 @@ namespace GameBalance {
             {PropId::NOVA_BOUNCES, NOVA_BOUNCES},
             {PropId::GRAV_GIVES_AIRMAIL, GRAV_GIVES_AIRMAIL},
             {PropId::SHRIKE_GIVES_AIRMAIL, SHRIKE_GIVES_AIRMAIL},
+            {PropId::DISTANCE_BONUS, DISTANCE_BONUS},
+            {PropId::DISTANCE_BONUS_TIME, DISTANCE_BONUS_TIME},
+            {PropId::EXPLODE_ON_CONTACT_TIME, EXPLODE_ON_CONTACT_TIME},
         };
     }
 }

@@ -220,6 +220,8 @@ static void addHooks() {
 
     //Hooks::addUScript(&TrProj_FlareGrenade_HijackMissileGuidance, "Function TribesGame.TrProj_FlareGrenade.HijackMissileGuidance");
 
+    //Hooks::addUScript(&TrProj_MIRVLauncher_Explode, "Function TribesGame.TrProj_MIRVLauncher.Explode");
+
     addStatsFunctionHooks();
 }
 
