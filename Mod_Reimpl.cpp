@@ -1209,18 +1209,6 @@ bool TrProjectile_Touch(int ID, UObject *dwCallingObject, UFunction* pFunction, 
         ATrProj_LightStickyGrenade* that = (ATrProj_LightStickyGrenade*)dwCallingObject;
         return that->Base != NULL;
     }
-    /*
-    if(that->IsA(ATrProj_Grenade::StaticClass())) {
-        ATrProj_Grenade* that = (ATrProj_Grenade*)dwCallingObject;
-        if(!that->m_bExplodeOnTouchEvent) {
-            auto it = g_config.serverSettings.customProjectileProperties.find(that->Class);
-
-            // Only explode on contact after time if set (0 = not set)
-            if(it != g_config.serverSettings.customProjectileProperties.end() && it->second.explodeOnContactTime > 0 && that->WorldInfo->TimeSeconds - that->CreationTime > it->second.explodeOnContactTime)
-                that->m_bExplodeOnTouchEvent = true;
-        }
-    }
-    */
 
     return false;
 }
@@ -1238,12 +1226,11 @@ void TrProjectile_Explode(ATrProjectile* that, ATrProjectile_execExplode_Parms* 
         return;
     }
 
-    if(g_config.serverSettings.ExperimentalMixerSettings) {
-        auto it = g_config.serverSettings.customProjectileProperties.find(that->Class);
-        // Only give dist bonus if paramaters are set (0 = not set)
-        if(it != g_config.serverSettings.customProjectileProperties.end() && it->second.distBonusTime > 0 && that->WorldInfo->TimeSeconds - that->CreationTime > it->second.distBonusTime)
-            that->m_fDirectHitMultiplier *= it->second.distBonus;  
-    }
+    auto it = g_config.serverSettings.customProjectileProperties.find(that->Class);
+    // Only give dist bonus if paramaters are set (0 = not set)
+    if(it != g_config.serverSettings.customProjectileProperties.end() && it->second.distBonusTime > 0 && that->WorldInfo->TimeSeconds - that->CreationTime > it->second.distBonusTime)
+        that->m_fDirectHitMultiplier *= it->second.distBonus;  
+
    
 
     if( that->m_bFastProjectile )
@@ -1311,14 +1298,6 @@ bool TrAccoladeManager_UpdateSpecialAccolades(int ID, UObject *dwCallingObject, 
     return false;
 }
 
-// needs a C++ and Uscript hook
-void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params) {
-    that->ProjectileHurtRadius(that->Location, FVector(0, 0, 1));
-    //try projectile hurtradius?
-    std::cout << "burn" << std::endl;
-    that->HijackMissileGuidance();
-}
-
 
 void TrProjectile_ApplyInheritance(ATrProjectile* that, ATrProjectile_execApplyInheritance_Parms* params) {
     // Are we a throwing disk or honorfusor?
@@ -1348,15 +1327,21 @@ call base processtouch
 */
 
 /*
-TrProj_MIRVLauncher.Explode
-create server setting for allow MIRV secondary explosion on explode on contact
-if setting and direct hit (impactedactor set) then ATrProj_Grenade::Explode
+TrProj_Grenade.PostPeginPlay (FlareGrenade)
+if FlareBurn
+SetTimer(burnrate, true, "Timer", NULL)
+
+TrProj_Grenade.Timer (FlareGrenade)
+ProjectileHurtRadius(Location, FVect(1, 0, 0))
+add check for explosiontime?
 */
 
 // Don't spawn secondary projectiles on midair
 void TrProj_MIRVLauncher_Explode(ATrProj_MIRVLauncher* that, ATrProj_MIRVLauncher_execExplode_Parms* params) {
-    if(that->ImpactedActor != NULL) {// not a good check
-        that->ATrProjectile::Explode(params->HitLocation, params->HitNormal);
+    // Is this an early explosion?
+    
+    if(that->WorldInfo->TimeSeconds - that->CreationTime < that->m_fExplosionTime && that->ImpactedActor != NULL) {
+        that->ATrProj_Grenade::Explode(params->HitLocation, params->HitNormal);
     }
     else that->Explode(params->HitLocation, params->HitNormal);
 }

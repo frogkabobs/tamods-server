@@ -121,7 +121,16 @@ void ServerSettings::ApplyToGame(ATrServerSettingsInfo* s) {
     
         ATrTurretPawn* defTurretPawn = (ATrTurretPawn*)ATrTurretPawn::StaticClass()->Default;
         defTurretPawn->m_fJamEffectRadius = 8000; */
+        /*
+        ATrDevice_LightSpinfusor* defLSpin = (ATrDevice_LightSpinfusor*)ATrDevice_LightSpinfusor::StaticClass()->Default;
+        defLSpin->m_EffectInfo.Add(FEffectInfo{0, UTrEffect_Jammer::StaticClass(), ET_Fire, 10, 0, 0});
 
+        ATrDevice_LightSpinfusor_100X* defLSpin1 = (ATrDevice_LightSpinfusor_100X*)ATrDevice_LightSpinfusor_100X::StaticClass()->Default;
+        defLSpin1->m_EffectInfo.Add(FEffectInfo{0, UTrEffect_Jammer::StaticClass(), ET_Equip, 10, 0, 0});
+
+        ATrDevice_ElfProjector* defLSpin2 = (ATrDevice_ElfProjector*)ATrDevice_ElfProjector::StaticClass()->Default;
+        defLSpin2->m_EffectInfo.Add(FEffectInfo{0, UTrEffect_Jammer::StaticClass(), ET_Hit, 10, 0, 0});
+        */
         // Flare name needs to be in TAMods client
     }
 

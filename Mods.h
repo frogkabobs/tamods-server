@@ -149,7 +149,6 @@ void TrVehicleStation_AbleToSpawnVehicleType(ATrVehicleStation* that, ATrVehicle
 bool TrPlayerController_ServerRequestSpawnVehicle(int ID, UObject *dwCallingObject, UFunction* pFunction, void* pParams, void* pResult);
 
 void TrProjectile_ApplyInheritance(ATrProjectile* that, ATrProjectile_execApplyInheritance_Parms* params);
-void TrProj_FlareGrenade_HijackMissileGuidance(ATrProj_FlareGrenade* that, ATrProj_FlareGrenade_execHijackMissileGuidance_Parms* params);
 void TrProj_MIRVLauncher_Explode(ATrProj_MIRVLauncher* that, ATrProj_MIRVLauncher_execExplode_Parms* params);
 
 // Hooked StatsInterface functions for match screen

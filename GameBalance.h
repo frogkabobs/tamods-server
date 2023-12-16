@@ -205,6 +205,7 @@ namespace GameBalance {
             SHOTGUN_SHOT_COUNT = 2009,
             SHOT_ENERGY_COST = 2010,
             TIME_BEFORE_PASSIVE_RELOAD = 2011,
+            ALLOW_RELOADS = 2012,
 
             // Damage / Impact
             DAMAGE = 3000,
@@ -577,6 +578,10 @@ namespace GameBalance {
             EXPLODE_ON_FUSE = 6006,
             MUST_BOUNCE_BEFORE_EXPLODE = 6007,
             FULLY_INHERIT_VELOCITY = 6008, //new
+            PAWN_EXPLOSION_TIME = 6009,
+            COLLISION_PROXY = 6010,
+            PROXY_RADIUS = 6011,
+            PROXY_HEIGHT = 6012,
 
             // Mines
             MINE_DEPLOY_TIME = 9000,
@@ -596,14 +601,12 @@ namespace GameBalance {
             SHRIKE_GIVES_AIRMAIL = 10006,
 
             DISTANCE_BONUS = 10007,
-            DISTANCE_BONUS_TIME = 10008,
-            EXPLODE_ON_CONTACT_TIME = 10009
+            DISTANCE_BONUS_TIME = 10008
         };
 
         struct CustomProps {
             float distBonus;
             float distBonusTime; // 0 = not set
-            float explodeOnContactTime; // 0 = not set
         };
 
         // Item property definitions

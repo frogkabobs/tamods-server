@@ -442,6 +442,18 @@ namespace GameBalance {
                 return true;
             })
         );
+        static const Property ALLOW_RELOADS(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrDevice>([](PropValue p, ATrDevice* dev) {
+                dev->m_bAllowReloads = p.valBool;
+                return true;
+            }),
+            getterAdapter<ATrDevice>([](ATrDevice* dev, PropValue& ret) {
+                ret = PropValue::fromFloat(dev->m_bAllowReloads);
+                return true;
+            })
+        );
+        
 
         // Damage
         static const Property DAMAGE(
@@ -1802,6 +1814,8 @@ namespace GameBalance {
             {PropId::SHOTGUN_SHOT_COUNT, SHOTGUN_SHOT_COUNT},
             {PropId::SHOT_ENERGY_COST, SHOT_ENERGY_COST},
             {PropId::TIME_BEFORE_PASSIVE_RELOAD, TIME_BEFORE_PASSIVE_RELOAD}, //new
+            {PropId::ALLOW_RELOADS, ALLOW_RELOADS},
+            
 
             // Damage / Impact
             {PropId::DAMAGE, DAMAGE},
@@ -3825,6 +3839,53 @@ namespace GameBalance {
                 return true;
             })
         );
+        static const Property PAWN_EXPLOSION_TIME(
+            ValueType::FLOAT,
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fPawnExplosionTime = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromFloat(proj->m_fPawnExplosionTime);
+                return true;
+            })
+        );
+        static const Property COLLISION_PROXY(
+            ValueType::BOOLEAN,
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_bSpawnProxyOnInit = p.valBool;
+                proj->m_bScanProxyOnInit = p.valBool;
+                proj->m_CollisionProxyClass = p.valBool ? ATrProximityGrenadeCollisionProxy::StaticClass() : NULL;
+                return true;
+            }),
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_bSpawnProxyOnInit);
+                return true;
+            })
+        );
+        static const Property PROXY_RADIUS(
+            ValueType::FLOAT,
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fProxyDetonationRadius = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_fProxyDetonationRadius);
+                return true;
+            })
+        );
+        static const Property PROXY_HEIGHT(
+            ValueType::FLOAT,
+            applierAdapter<ATrProj_Grenade>([](PropValue p, ATrProj_Grenade* proj) {
+                proj->m_fProxyDetonationHeight = p.valFloat;
+                return true;
+            }),
+            getterAdapter<ATrProj_Grenade>([](ATrProj_Grenade* proj, PropValue& ret) {
+                ret = PropValue::fromBool(proj->m_fProxyDetonationHeight);
+                return true;
+            })
+        );
+
 
         // Mines
         static const Property MINE_DEPLOY_TIME(
@@ -4024,21 +4085,6 @@ namespace GameBalance {
             })
         );
 
-        // Explode on contact after given time
-        static const Property EXPLODE_ON_CONTACT_TIME(
-            ValueType::FLOAT,
-            applierAdapter<ATrProjectile>([](PropValue p, ATrProjectile* proj) {
-                g_config.serverSettings.customProjectileProperties[proj->Class].explodeOnContactTime = p.valFloat;
-                return true;
-            }),
-            getterAdapter<ATrProjectile>([](ATrProjectile* proj, PropValue& ret) {
-                auto it = g_config.serverSettings.customProjectileProperties.find(proj->Class);
-                if(it == g_config.serverSettings.customProjectileProperties.end()) return false;
-                ret = PropValue::fromFloat(it->second.explodeOnContactTime);
-                return true;
-            })
-        );
-
 
         // Main mapping
         std::map<PropId, Property> properties = {
@@ -4098,6 +4144,10 @@ namespace GameBalance {
             {PropId::EXPLODE_ON_FUSE, EXPLODE_ON_FUSE},
             {PropId::MUST_BOUNCE_BEFORE_EXPLODE, MUST_BOUNCE_BEFORE_EXPLODE},
             {PropId::FULLY_INHERIT_VELOCITY, FULLY_INHERIT_VELOCITY},
+            {PropId::PAWN_EXPLOSION_TIME, PAWN_EXPLOSION_TIME},
+            {PropId::COLLISION_PROXY, COLLISION_PROXY},
+            {PropId::PROXY_RADIUS, PROXY_RADIUS},
+            {PropId::PROXY_HEIGHT, PROXY_HEIGHT},
 
             // Mines
             {PropId::MINE_DEPLOY_TIME, MINE_DEPLOY_TIME},
@@ -4118,7 +4168,6 @@ namespace GameBalance {
             {PropId::SHRIKE_GIVES_AIRMAIL, SHRIKE_GIVES_AIRMAIL},
             {PropId::DISTANCE_BONUS, DISTANCE_BONUS},
             {PropId::DISTANCE_BONUS_TIME, DISTANCE_BONUS_TIME},
-            {PropId::EXPLODE_ON_CONTACT_TIME, EXPLODE_ON_CONTACT_TIME},
         };
     }
 }

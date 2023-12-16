@@ -218,9 +218,7 @@ static void addHooks() {
 
     Hooks::addUScript(&TrProjectile_ApplyInheritance, "Function TribesGame.TrProjectile.ApplyInheritance");
 
-    //Hooks::addUScript(&TrProj_FlareGrenade_HijackMissileGuidance, "Function TribesGame.TrProj_FlareGrenade.HijackMissileGuidance");
-
-    //Hooks::addUScript(&TrProj_MIRVLauncher_Explode, "Function TribesGame.TrProj_MIRVLauncher.Explode");
+    Hooks::addUScript(&TrProj_MIRVLauncher_Explode, "Function TribesGame.TrProj_MIRVLauncher.Explode");
 
     addStatsFunctionHooks();
 }

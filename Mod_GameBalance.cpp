@@ -628,6 +628,7 @@ namespace LuaAPI {
                     .addProperty<int, int>("ShotgunShotCount", &getPropId<Items::PropId, Items::PropId::SHOTGUN_SHOT_COUNT>)
                     .addProperty<int, int>("ShotEnergyCost", &getPropId<Items::PropId, Items::PropId::SHOT_ENERGY_COST>)
                     .addProperty<int, int>("TimeBeforePassiveReload", &getPropId<Items::PropId, Items::PropId::TIME_BEFORE_PASSIVE_RELOAD>)
+                    .addProperty<int, int>("AllowReloads", &getPropId<Items::PropId, Items::PropId::ALLOW_RELOADS>)
                     // Damage / Impact
                     .addProperty<int, int>("Damage", &getPropId<Items::PropId, Items::PropId::DAMAGE>)
                     .addProperty<int, int>("ExplosiveRadius", &getPropId<Items::PropId, Items::PropId::EXPLOSIVE_RADIUS>)
@@ -1064,6 +1065,10 @@ namespace LuaAPI {
                     .addProperty<int, int>("ExplodeOnFuse", &getPropId<Projectiles::PropId, Projectiles::PropId::EXPLODE_ON_FUSE>)
                     .addProperty<int, int>("MustBounceBeforeExplode", &getPropId<Projectiles::PropId, Projectiles::PropId::MUST_BOUNCE_BEFORE_EXPLODE>)
                     .addProperty<int, int>("FullyInheritVelocity", &getPropId<Projectiles::PropId, Projectiles::PropId::FULLY_INHERIT_VELOCITY>)
+                    .addProperty<int, int>("PawnExplosionTime", &getPropId<Projectiles::PropId, Projectiles::PropId::PAWN_EXPLOSION_TIME>)
+                    .addProperty<int, int>("CollisionProxy", &getPropId<Projectiles::PropId, Projectiles::PropId::COLLISION_PROXY>)
+                    .addProperty<int, int>("ProxyRadius", &getPropId<Projectiles::PropId, Projectiles::PropId::PROXY_RADIUS>)
+                    .addProperty<int, int>("ProxyHeight", &getPropId<Projectiles::PropId, Projectiles::PropId::PROXY_HEIGHT>)
                     // Mines
                     .addProperty<int, int>("MineDeployTime", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_DEPLOY_TIME>)
                     .addProperty<int, int>("MineMaxAllowed", &getPropId<Projectiles::PropId, Projectiles::PropId::MINE_MAX_ALLOWED>)
